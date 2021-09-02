@@ -7,4 +7,87 @@
 /*  https://www.redhat.com
 /* ========================================================================================== */
 
-.fill-none{fill:none}.fill-gray-300{fill:#e7e7e7}.fill-gray-350{fill:#dfdede}.fill-gray-400{fill:#bdbdbd}.fill-gray-450{fill:#c9c9c9}.fill-gray-480{fill:#ababab}.fill-gray-700{fill:#404040}.fill-gray-800{fill:#333}.fill-gray-900{fill:#131313}.fill-red{fill:red}.fill-white{fill:#fff}.stroke-white{stroke:#fff}.fill-pink-100{fill:#fcdbdb}.fill-pink-400{fill:#f26d6d}.stroke-pink-100{stroke:#fcdbdb}.stroke-pink-400{stroke:#f26d6d}.stroke-red{stroke:red}.stroke-gray-400{stroke:#bdbdbd}.stroke-gray-800{stroke:#333}.stroke-black{stroke:#000}.stroke-width-2{stroke-width:2}.stroke-width-3{stroke-width:3}.stroke-width-4{stroke-width:4}.stroke-width-5{stroke-width:5}.stroke-miter-10{stroke-miterlimit:10}.linecap-round{stroke-linecap:round}.linejoin-round{stroke-linejoin:round}.hover-gray-600:hover{background-color:#646464!important}
+.fill-none {
+  fill: none;
+}
+.fill-gray-300 {
+  fill: #e7e7e7;
+}
+.fill-gray-350 {
+  fill: #dfdede;
+}
+.fill-gray-400 {
+  fill: #bdbdbd;
+}
+.fill-gray-450 {
+  fill: #c9c9c9;
+}
+.fill-gray-480 {
+  fill: #ababab;
+}
+.fill-gray-700 {
+  fill: #404040;
+}
+.fill-gray-800 {
+  fill: #333;
+}
+.fill-gray-900 {
+  fill: #131313;
+}
+.fill-red {
+  fill: red;
+}
+.fill-white {
+  fill: #fff;
+}
+.stroke-white {
+  stroke: #fff;
+}
+.fill-pink-100 {
+  fill: #fcdbdb;
+}
+.fill-pink-400 {
+  fill: #f26d6d;
+}
+.stroke-pink-100 {
+  stroke: #fcdbdb;
+}
+.stroke-pink-400 {
+  stroke: #f26d6d;
+}
+.stroke-red {
+  stroke: red;
+}
+.stroke-gray-400 {
+  stroke: #bdbdbd;
+}
+.stroke-gray-800 {
+  stroke: #333;
+}
+.stroke-black {
+  stroke: #000;
+}
+.stroke-width-2 {
+  stroke-width: 2;
+}
+.stroke-width-3 {
+  stroke-width: 3;
+}
+.stroke-width-4 {
+  stroke-width: 4;
+}
+.stroke-width-5 {
+  stroke-width: 5;
+}
+.stroke-miter-10 {
+  stroke-miterlimit: 10;
+}
+.linecap-round {
+  stroke-linecap: round;
+}
+.linejoin-round {
+  stroke-linejoin: round;
+}
+.hover-gray-600:hover {
+  background-color: #646464 !important;
+}

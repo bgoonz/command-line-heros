@@ -7,4 +7,483 @@
 /*  https://www.redhat.com
 /* ========================================================================================== */
 
-.dms-band h1,.dms-band h2,.dms-band h3,.dms-band h4,.dms-band h5,.dms-band h6,[class*=clh-tabs-] .nav-link{font-family:"Overpass Mono",Consolas,Monaco,Andale Mono,monospace}.clh-nav-shelf .accordion-toggle.collapsed,[class*=clh-tabs-] .nav-link,[class*=clh-tabs-] .nav-link.active,[class*=clh-tabs-] .nav-link.active:hover{font-weight:400}@font-face{font-family:"Overpass Mono";font-weight:300;font-style:normal;src:url(http://www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-light.eot);src:url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-light.eot?#iefix) format("embedded-opentype"),url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-light.woff2) format("woff2"),url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-light.woff) format("woff"),url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-light.ttf) format("truetype")}@font-face{font-family:"Overpass Mono";font-weight:400;font-style:normal;src:url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-regular.eot);src:url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-regular.eot?#iefix) format("embedded-opentype"),url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-regular.woff2) format("woff2"),url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-regular.woff) format("woff"),url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-regular.ttf) format("truetype")}@font-face{font-family:"Overpass Mono";font-weight:500;font-style:normal;src:url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-semibold.eot);src:url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-semibold.eot?#iefix) format("embedded-opentype"),url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-semibold.woff2) format("woff2"),url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-semibold.woff) format("woff"),url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-semibold.ttf) format("truetype")}@font-face{font-family:"Overpass Mono";font-weight:600;font-style:normal;src:url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-bold.eot);src:url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-bold.eot?#iefix) format("embedded-opentype"),url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-bold.woff2) format("woff2"),url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-bold.woff) format("woff"),url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-bold.ttf) format("truetype")}.text-blue{color:#005986}.text-blue-light{color:#0093c6}.text-blue-lighter{color:#00b1ec}.text-blue-dark{color:#002238}.text-gray{color:#4c4c4c}.clh-tabs-episodes .card .card-body a:hover,.text-gray-light{color:#d9d9d9}.text-gray-dark{color:#1a1a2e}.text-green{color:#97ca88}.text-purple{color:#21173f}.text-purple-dark{color:#0e0e23}.text-purple-light{color:#402975}.text-yellow{color:#fdbc50}@-webkit-keyframes cursorBlink{0%,50%{opacity:0}100%,51%{opacity:1}}@keyframes cursorBlink{0%,50%{opacity:0}100%,51%{opacity:1}}@-webkit-keyframes expandIt{100%{width:275px}}@keyframes expandIt{100%{width:275px}}@-webkit-keyframes shrinkDown{100%{width:75px;height:75px;opacity:1}}@keyframes shrinkDown{100%{width:75px;height:75px;opacity:1}}@-webkit-keyframes shrinkDownSmall{100%{width:74px;height:74px;opacity:1}}@keyframes shrinkDownSmall{100%{width:74px;height:74px;opacity:1}}@-webkit-keyframes shrinkDownLarge{100%{width:96px;height:96px;opacity:1}}@keyframes shrinkDownLarge{100%{width:96px;height:96px;opacity:1}}@-webkit-keyframes slideIt{100%{margin-left:0}}@keyframes slideIt{100%{margin-left:0}}.bg-blue{background-color:#005986!important}.bg-blue-light{background-color:#0093c6!important}.bg-blue-lighter{background-color:#00b1ec!important}.bg-blue-dark{background-color:#002238!important}.bg-gray{background-color:#4c4c4c!important}.bg-gray-light{background-color:#d9d9d9!important}.bg-gray-dark{background-color:#1a1a2e!important}.bg-green{background-color:#97ca88!important}.bg-purple{background-color:#21173f!important}.bg-purple-dark{background-color:#0e0e23!important}.bg-purple-light{background-color:#402975!important}.bg-yellow{background-color:#fdbc50!important}.clh-s3 .clh-featured .card{background-image:-webkit-gradient(linear,left top,left bottom,from(#402975),to(#21173f));background-image:linear-gradient(to bottom,#402975 0,#21173f 100%);background-repeat:repeat-x}.clh-s3 .clh-newsletter{background-image:-webkit-gradient(linear,left top,left bottom,from(#0e0e23),to(#6a489e));background-image:linear-gradient(to bottom,#0e0e23 0,#6a489e 100%);background-repeat:repeat-x}.clh-logo{width:294px;height:75px}.clh-logo path{fill:#fff}[data-ux-theme~=s2] .clh-logo path{fill:#252527}.clh-logo-icon{width:150px;height:150px;-webkit-animation:.7s .7s forwards shrinkDown;animation:.7s .7s forwards shrinkDown;opacity:0}.clh-nav-shelf,.clh-nav-shelf-screen,.clh-nav-top{position:fixed;width:100%}.clh-logo-icon-cursor{-webkit-animation:1s 1.4s 4 forwards cursorBlink;animation:1s 1.4s 4 forwards cursorBlink}.clh-logo-text{left:80px;overflow:hidden;height:75px;-webkit-animation:.1s 1s forwards expandIt;animation:.1s 1s forwards expandIt}.clh-logo-text-content{height:75px;margin-left:-215px;-webkit-animation:1s 1.4s forwards slideIt;animation:1s 1.4s forwards slideIt}[class*=clh-tabs-] .nav-link.active:hover,[class*=clh-tabs-] .nav-link:focus,[class*=clh-tabs-] .nav-link:hover{-webkit-transition:color .3s;transition:color .3s}[class*=clh-tabs-] .nav-link.active:focus,[class*=clh-tabs-] .nav-link.active:hover{color:#fff!important}[class*=clh-tabs-] .nav-link.active:hover{border-color:#e00}.clh-tabs-episodes .card .card-body a{-webkit-transition:.3s;transition:.3s}.clh-nav-top{background:#000;z-index:var(--pfe-theme--zindex--navigation,103)}.clh-nav-toggle-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.clh-nav-toggle-wrapper .btn-toggle{display:-ms-inline-flexbox;display:-webkit-inline-box;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0 5px;margin-bottom:0;color:#fff;-webkit-transition:.3s ease-in-out;transition:.3s ease-in-out;right:0}.clh-nav-toggle-wrapper .btn-toggle .menu-bar{width:30px;height:3px;background:#fff;display:block;margin:8px 6px;-webkit-transition:.4s ease-in-out;transition:.4s ease-in-out;border-radius:3px}.clh-nav-toggle-wrapper .btn-toggle.active .menu-bar{margin:5px 6px}.clh-nav-toggle-wrapper .btn-toggle.active .menu-bar:nth-child(1){-webkit-transform:rotate(45deg) translate(6px,5px);transform:rotate(45deg) translate(6px,5px)}.clh-nav-toggle-wrapper .btn-toggle.active .menu-bar:nth-child(2){opacity:0}.clh-nav-toggle-wrapper .btn-toggle.active .menu-bar:nth-child(3){-webkit-transform:rotate(-45deg) translate(6px,-5px);transform:rotate(-45deg) translate(6px,-5px)}.clh-nav-toggle-wrapper .btn-toggle:focus{outline:dotted 1px;outline-offset:2px}.clh-nav-shelf{top:86px;bottom:0;right:-100%;z-index:var(--pfe-theme--zindex--modal,1001);background-color:#222;color:#fff;-webkit-transition:.4s ease-in-out;transition:.4s ease-in-out}.clh-nav-shelf.shelf-open{right:0}.clh-nav-shelf a:not(.btn),.clh-nav-shelf button{color:#fff;font-family:"Overpass Mono",RedHatText,"Red Hat Text",Overpass,Overpass,"Helvetica Neue",Arial,sans-serif}.clh-nav-shelf .nav-container{height:100%;overflow-y:scroll}.clh-nav-shelf .nav-group-wrapper{background-size:cover;background-position:right 100px;background-repeat:no-repeat;-webkit-transition:.4s ease-in-out;transition:.4s ease-in-out}.clh-nav-shelf .accordion-panel.collapsing.showing,.clh-nav-shelf .accordion-panel.show,.clh-nav-shelf .accordion-toggle,.clh-nav-shelf .accordion-toggle.collapsed{background:0 0;border:none;-webkit-box-shadow:none;box-shadow:none}.clh-nav-shelf .accordion-toggle{font-weight:700}.clh-nav-shelf .accordion-toggle:focus{text-decoration:none}.clh-nav-shelf .accordion-panel.collapsing,.clh-nav-shelf .accordion-toggle:hover{border:none}.clh-nav-shelf-screen{top:0;height:100%;z-index:var(--pfe-theme--zindex--overlay,97);background-color:rgba(0,0,0,.3);opacity:0;pointer-events:none;-webkit-transition:opacity .4s cubic-bezier(.5,0,.5,1);transition:opacity .4s cubic-bezier(.5,0,.5,1)}.clh-nav-shelf-screen.shelf-open{opacity:1;pointer-events:initial}.clh-nav-shelf .language-switcher{width:435px}.clh-nav-shelf .language-active{background-color:#4d4d4d}.clh-nav-shelf .language-inactive{background-color:#313131}@media (min-width:576px){.clh-nav-shelf{width:450px;right:-450px}}@media (min-width:768px){.clh-featured .featured-background{min-height:306px}.clh-tabs-episodes .card .card-header{width:100%;min-height:240px}}@media (min-width:992px){.clh-s3 .clh-featured .featured-background{background:url(//www.redhat.com/cms/managed-files/bkgd-featured-blog.svg) bottom center no-repeat}}@media (max-width:991px){.clh-s3 .clh-hero-home{background:url(//www.redhat.com/cms/managed-files/bkgd-waves-mobile.png) center center}}@media (max-width:767px){.clh-tabs-episodes .card{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row;flex-flow:row}.clh-tabs-episodes .card .card-header{-webkit-box-flex:0;-ms-flex:0 0 120px;flex:0 0 120px;min-height:110px}}@media (max-width:479px){.clh-tabs-episodes .card .card-body h4{font-size:16px}}
+.dms-band h1,
+.dms-band h2,
+.dms-band h3,
+.dms-band h4,
+.dms-band h5,
+.dms-band h6,
+[class*="clh-tabs-"] .nav-link {
+  font-family: "Overpass Mono", Consolas, Monaco, Andale Mono, monospace;
+}
+.clh-nav-shelf .accordion-toggle.collapsed,
+[class*="clh-tabs-"] .nav-link,
+[class*="clh-tabs-"] .nav-link.active,
+[class*="clh-tabs-"] .nav-link.active:hover {
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Overpass Mono";
+  font-weight: 300;
+  font-style: normal;
+  src: url(http://www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-light.eot);
+  src: url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-light.eot?#iefix)
+      format("embedded-opentype"),
+    url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-light.woff2)
+      format("woff2"),
+    url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-light.woff)
+      format("woff"),
+    url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-light.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: "Overpass Mono";
+  font-weight: 400;
+  font-style: normal;
+  src: url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-regular.eot);
+  src: url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-regular.eot?#iefix)
+      format("embedded-opentype"),
+    url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-regular.woff2)
+      format("woff2"),
+    url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-regular.woff)
+      format("woff"),
+    url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-regular.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: "Overpass Mono";
+  font-weight: 500;
+  font-style: normal;
+  src: url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-semibold.eot);
+  src: url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-semibold.eot?#iefix)
+      format("embedded-opentype"),
+    url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-semibold.woff2)
+      format("woff2"),
+    url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-semibold.woff)
+      format("woff"),
+    url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-semibold.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: "Overpass Mono";
+  font-weight: 600;
+  font-style: normal;
+  src: url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-bold.eot);
+  src: url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-bold.eot?#iefix)
+      format("embedded-opentype"),
+    url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-bold.woff2)
+      format("woff2"),
+    url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-bold.woff)
+      format("woff"),
+    url(//www.redhat.com/files/assets/fonts/overpass/3.0.2/overpass-mono-webfont/overpass-mono-bold.ttf)
+      format("truetype");
+}
+.text-blue {
+  color: #005986;
+}
+.text-blue-light {
+  color: #0093c6;
+}
+.text-blue-lighter {
+  color: #00b1ec;
+}
+.text-blue-dark {
+  color: #002238;
+}
+.text-gray {
+  color: #4c4c4c;
+}
+.clh-tabs-episodes .card .card-body a:hover,
+.text-gray-light {
+  color: #d9d9d9;
+}
+.text-gray-dark {
+  color: #1a1a2e;
+}
+.text-green {
+  color: #97ca88;
+}
+.text-purple {
+  color: #21173f;
+}
+.text-purple-dark {
+  color: #0e0e23;
+}
+.text-purple-light {
+  color: #402975;
+}
+.text-yellow {
+  color: #fdbc50;
+}
+@-webkit-keyframes cursorBlink {
+  0%,
+  50% {
+    opacity: 0;
+  }
+  100%,
+  51% {
+    opacity: 1;
+  }
+}
+@keyframes cursorBlink {
+  0%,
+  50% {
+    opacity: 0;
+  }
+  100%,
+  51% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes expandIt {
+  100% {
+    width: 275px;
+  }
+}
+@keyframes expandIt {
+  100% {
+    width: 275px;
+  }
+}
+@-webkit-keyframes shrinkDown {
+  100% {
+    width: 75px;
+    height: 75px;
+    opacity: 1;
+  }
+}
+@keyframes shrinkDown {
+  100% {
+    width: 75px;
+    height: 75px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes shrinkDownSmall {
+  100% {
+    width: 74px;
+    height: 74px;
+    opacity: 1;
+  }
+}
+@keyframes shrinkDownSmall {
+  100% {
+    width: 74px;
+    height: 74px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes shrinkDownLarge {
+  100% {
+    width: 96px;
+    height: 96px;
+    opacity: 1;
+  }
+}
+@keyframes shrinkDownLarge {
+  100% {
+    width: 96px;
+    height: 96px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slideIt {
+  100% {
+    margin-left: 0;
+  }
+}
+@keyframes slideIt {
+  100% {
+    margin-left: 0;
+  }
+}
+.bg-blue {
+  background-color: #005986 !important;
+}
+.bg-blue-light {
+  background-color: #0093c6 !important;
+}
+.bg-blue-lighter {
+  background-color: #00b1ec !important;
+}
+.bg-blue-dark {
+  background-color: #002238 !important;
+}
+.bg-gray {
+  background-color: #4c4c4c !important;
+}
+.bg-gray-light {
+  background-color: #d9d9d9 !important;
+}
+.bg-gray-dark {
+  background-color: #1a1a2e !important;
+}
+.bg-green {
+  background-color: #97ca88 !important;
+}
+.bg-purple {
+  background-color: #21173f !important;
+}
+.bg-purple-dark {
+  background-color: #0e0e23 !important;
+}
+.bg-purple-light {
+  background-color: #402975 !important;
+}
+.bg-yellow {
+  background-color: #fdbc50 !important;
+}
+.clh-s3 .clh-featured .card {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#402975),
+    to(#21173f)
+  );
+  background-image: linear-gradient(to bottom, #402975 0, #21173f 100%);
+  background-repeat: repeat-x;
+}
+.clh-s3 .clh-newsletter {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#0e0e23),
+    to(#6a489e)
+  );
+  background-image: linear-gradient(to bottom, #0e0e23 0, #6a489e 100%);
+  background-repeat: repeat-x;
+}
+.clh-logo {
+  width: 294px;
+  height: 75px;
+}
+.clh-logo path {
+  fill: #fff;
+}
+[data-ux-theme~="s2"] .clh-logo path {
+  fill: #252527;
+}
+.clh-logo-icon {
+  width: 150px;
+  height: 150px;
+  -webkit-animation: 0.7s 0.7s forwards shrinkDown;
+  animation: 0.7s 0.7s forwards shrinkDown;
+  opacity: 0;
+}
+.clh-nav-shelf,
+.clh-nav-shelf-screen,
+.clh-nav-top {
+  position: fixed;
+  width: 100%;
+}
+.clh-logo-icon-cursor {
+  -webkit-animation: 1s 1.4s 4 forwards cursorBlink;
+  animation: 1s 1.4s 4 forwards cursorBlink;
+}
+.clh-logo-text {
+  left: 80px;
+  overflow: hidden;
+  height: 75px;
+  -webkit-animation: 0.1s 1s forwards expandIt;
+  animation: 0.1s 1s forwards expandIt;
+}
+.clh-logo-text-content {
+  height: 75px;
+  margin-left: -215px;
+  -webkit-animation: 1s 1.4s forwards slideIt;
+  animation: 1s 1.4s forwards slideIt;
+}
+[class*="clh-tabs-"] .nav-link.active:hover,
+[class*="clh-tabs-"] .nav-link:focus,
+[class*="clh-tabs-"] .nav-link:hover {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+[class*="clh-tabs-"] .nav-link.active:focus,
+[class*="clh-tabs-"] .nav-link.active:hover {
+  color: #fff !important;
+}
+[class*="clh-tabs-"] .nav-link.active:hover {
+  border-color: #e00;
+}
+.clh-tabs-episodes .card .card-body a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.clh-nav-top {
+  background: #000;
+  z-index: var(--pfe-theme--zindex--navigation, 103);
+}
+.clh-nav-toggle-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.clh-nav-toggle-wrapper .btn-toggle {
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 5px;
+  margin-bottom: 0;
+  color: #fff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  right: 0;
+}
+.clh-nav-toggle-wrapper .btn-toggle .menu-bar {
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  display: block;
+  margin: 8px 6px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  border-radius: 3px;
+}
+.clh-nav-toggle-wrapper .btn-toggle.active .menu-bar {
+  margin: 5px 6px;
+}
+.clh-nav-toggle-wrapper .btn-toggle.active .menu-bar:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(6px, 5px);
+  transform: rotate(45deg) translate(6px, 5px);
+}
+.clh-nav-toggle-wrapper .btn-toggle.active .menu-bar:nth-child(2) {
+  opacity: 0;
+}
+.clh-nav-toggle-wrapper .btn-toggle.active .menu-bar:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translate(6px, -5px);
+  transform: rotate(-45deg) translate(6px, -5px);
+}
+.clh-nav-toggle-wrapper .btn-toggle:focus {
+  outline: dotted 1px;
+  outline-offset: 2px;
+}
+.clh-nav-shelf {
+  top: 86px;
+  bottom: 0;
+  right: -100%;
+  z-index: var(--pfe-theme--zindex--modal, 1001);
+  background-color: #222;
+  color: #fff;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+.clh-nav-shelf.shelf-open {
+  right: 0;
+}
+.clh-nav-shelf a:not(.btn),
+.clh-nav-shelf button {
+  color: #fff;
+  font-family: "Overpass Mono", RedHatText, "Red Hat Text", Overpass, Overpass,
+    "Helvetica Neue", Arial, sans-serif;
+}
+.clh-nav-shelf .nav-container {
+  height: 100%;
+  overflow-y: scroll;
+}
+.clh-nav-shelf .nav-group-wrapper {
+  background-size: cover;
+  background-position: right 100px;
+  background-repeat: no-repeat;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+.clh-nav-shelf .accordion-panel.collapsing.showing,
+.clh-nav-shelf .accordion-panel.show,
+.clh-nav-shelf .accordion-toggle,
+.clh-nav-shelf .accordion-toggle.collapsed {
+  background: 0 0;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.clh-nav-shelf .accordion-toggle {
+  font-weight: 700;
+}
+.clh-nav-shelf .accordion-toggle:focus {
+  text-decoration: none;
+}
+.clh-nav-shelf .accordion-panel.collapsing,
+.clh-nav-shelf .accordion-toggle:hover {
+  border: none;
+}
+.clh-nav-shelf-screen {
+  top: 0;
+  height: 100%;
+  z-index: var(--pfe-theme--zindex--overlay, 97);
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity 0.4s cubic-bezier(0.5, 0, 0.5, 1);
+  transition: opacity 0.4s cubic-bezier(0.5, 0, 0.5, 1);
+}
+.clh-nav-shelf-screen.shelf-open {
+  opacity: 1;
+  pointer-events: initial;
+}
+.clh-nav-shelf .language-switcher {
+  width: 435px;
+}
+.clh-nav-shelf .language-active {
+  background-color: #4d4d4d;
+}
+.clh-nav-shelf .language-inactive {
+  background-color: #313131;
+}
+@media (min-width: 576px) {
+  .clh-nav-shelf {
+    width: 450px;
+    right: -450px;
+  }
+}
+@media (min-width: 768px) {
+  .clh-featured .featured-background {
+    min-height: 306px;
+  }
+  .clh-tabs-episodes .card .card-header {
+    width: 100%;
+    min-height: 240px;
+  }
+}
+@media (min-width: 992px) {
+  .clh-s3 .clh-featured .featured-background {
+    background: url(//www.redhat.com/cms/managed-files/bkgd-featured-blog.svg)
+      bottom center no-repeat;
+  }
+}
+@media (max-width: 991px) {
+  .clh-s3 .clh-hero-home {
+    background: url(//www.redhat.com/cms/managed-files/bkgd-waves-mobile.png)
+      center center;
+  }
+}
+@media (max-width: 767px) {
+  .clh-tabs-episodes .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+  }
+  .clh-tabs-episodes .card .card-header {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 120px;
+    flex: 0 0 120px;
+    min-height: 110px;
+  }
+}
+@media (max-width: 479px) {
+  .clh-tabs-episodes .card .card-body h4 {
+    font-size: 16px;
+  }
+}

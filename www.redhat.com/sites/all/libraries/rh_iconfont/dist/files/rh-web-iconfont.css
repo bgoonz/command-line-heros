@@ -1,8 +1,13 @@
 @charset "UTF-8";
 @font-face {
-  font-family: 'rh-web-iconfont';
+  font-family: "rh-web-iconfont";
   src: url("https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/fonts/web_icon/rh-web-iconfont.eot");
-  src: url("https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/fonts/web_icon/rh-web-iconfont.eot?#iefix") format("embedded-opentype"), url("https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/fonts/web_icon/rh-web-iconfont.woff") format("woff"), url("https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/fonts/web_icon/rh-web-iconfont.ttf") format("truetype");
+  src: url("https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/fonts/web_icon/rh-web-iconfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/fonts/web_icon/rh-web-iconfont.woff")
+      format("woff"),
+    url("https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/fonts/web_icon/rh-web-iconfont.ttf")
+      format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -11,7 +16,7 @@
 [class$="web-icon"]:before,
 [class*="web-icon"]:before,
 [class^="web-icon"]:before {
-  font-family: 'rh-web-iconfont';
+  font-family: "rh-web-iconfont";
   speak: none;
   font-style: normal;
   font-weight: normal;

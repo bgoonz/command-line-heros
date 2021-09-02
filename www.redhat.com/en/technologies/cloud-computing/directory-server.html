@@ -1,801 +1,2543 @@
 <!DOCTYPE html>
 <!--[if IE 8]><html lang="en" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
-  
-<!-- Mirrored from www.redhat.com/en/technologies/cloud-computing/directory-server by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:37:20 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
-    <!--[if IE]><![endif]-->
-<script id="trustarc" type="text/javascript" src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"></script>
-<script id="ddo" type="text/javascript">
-<!--//--><![CDATA[//><!--
-    var digitalData = {"cart":[],"event":[],"listing":{"browseFilter":"","query":"","queryMethod":"","refinementType":"","refinementValue":"","resultCount":"","searchType":""},"page":{"attributes":{"queryParameters":"","referringSearchEngine":"","analyticsTitle":"product | red hat directory server 1","taxonomyPageSubType":["4671"],"taxonomyProduct":["1941"],"taxonomyRegion":["4521"],"taxonomySolution":["1071"],"taxonomyTopic":["27081"],"taxonomyMetaHreflang":["29051"]},"category":{"contentType":"","keyPage":"false","keyPageType":"","pageType":"page","primaryCategory":"technologies","subCategories":["cloud-computing","directory-server"]},"pageInfo":{"cms":"RH CMS 2021.12.0","contentFindingMethod":"","contentID":"2771","contentPortal":"","destinationURL":"https:\/\/www.redhat.com\/en\/technologies\/cloud-computing\/directory-server","errorMessage":"","errorType":"","language":"en","pageName":"","referringDomain":"","referringURL":"","sysEnv":"","template":"","title":"Red Hat Directory Server"}},"product":[],"user":[{"profile":[{"profileInfo":{"daysSinceLastPurchase":"","demandbaseSID":"","eloquaGUID":"","lastLoginDate":"","lastPurchaseDate":"","loggedIn":"false","profileID":"","subscriptionFrequency":"","subscriptionLevel":""}}]}]};
-    !function(a,b,c){"use strict";function d(a){var c="; "+b.cookie,d=c.split("; "+a+"=");if(2===d.length)return d.pop().split(";").shift()}if(b.referrer){var e=b.createElement("a");e.href=b.referrer,c.page.pageInfo.referringDomain=e.hostname,c.page.pageInfo.referringURL=e.href}c.page.pageInfo.sysEnv=a.innerWidth<=768?"tablet":"desktop";var f=c.user[0].profile[0].profileInfo,g=d("rh_elqCustomerGUID");g&&(f.eloquaGUID=g);var h=d("rh_user");if(h){var i=h.split("\\|");i[0]&&(f.loggedIn="true")}var j=d("s_dmdbase");j&&(f.demandbaseSID=j)}(window,document,digitalData);
-//--><!]]>
-</script>
-<script src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm.js" data-domain="www.redhat.com"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-functional.js" class="trustecm" data-tracker-type="functional"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-advertising.js" class="trustecm" data-tracker-type="advertising"></script><script id="dpal" type="text/javascript" src="http://www.redhat.com/dtm.js"></script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="content-language" content="en" />
-<link href="https://www.redhat.com/en/technologies/cloud-computing/directory-server" rel="alternate" hreflang="en" />
-<link href="https://www.redhat.com/de/technologies/cloud-computing/directory-server" rel="alternate" hreflang="de" />
-<link href="https://www.redhat.com/ja/technologies/cloud-computing/directory-server" rel="alternate" hreflang="ja" />
-<link href="https://www.redhat.com/es/technologies/cloud-computing/directory-server" rel="alternate" hreflang="es" />
-<link href="https://www.redhat.com/zh/technologies/cloud-computing/directory-server" rel="alternate" hreflang="zh" />
-<link href="https://www.redhat.com/fr/technologies/cloud-computing/directory-server" rel="alternate" hreflang="fr" />
-<link href="https://www.redhat.com/it/technologies/cloud-computing/directory-server" rel="alternate" hreflang="it" />
-<link href="https://www.redhat.com/ko/technologies/cloud-computing/directory-server" rel="alternate" hreflang="ko" />
-<link href="https://www.redhat.com/pt-br/technologies/cloud-computing/directory-server" rel="alternate" hreflang="pt-br" />
-<script type="application/ld+json">{
-    "@context": "https://schema.org",
-    "availableLanguages": {
-        "en": {
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+  <!--<![endif]-->
+
+  <!-- Mirrored from www.redhat.com/en/technologies/cloud-computing/directory-server by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:37:20 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <!--[if IE]> <![endif]-->
+    <script
+      id="trustarc"
+      type="text/javascript"
+      src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"
+    ></script>
+    <script id="ddo" type="text/javascript">
+      <!--//--><![CDATA[//><!--
+      var digitalData = {
+        cart: [],
+        event: [],
+        listing: {
+          browseFilter: "",
+          query: "",
+          queryMethod: "",
+          refinementType: "",
+          refinementValue: "",
+          resultCount: "",
+          searchType: "",
+        },
+        page: {
+          attributes: {
+            queryParameters: "",
+            referringSearchEngine: "",
+            analyticsTitle: "product | red hat directory server 1",
+            taxonomyPageSubType: ["4671"],
+            taxonomyProduct: ["1941"],
+            taxonomyRegion: ["4521"],
+            taxonomySolution: ["1071"],
+            taxonomyTopic: ["27081"],
+            taxonomyMetaHreflang: ["29051"],
+          },
+          category: {
+            contentType: "",
+            keyPage: "false",
+            keyPageType: "",
+            pageType: "page",
+            primaryCategory: "technologies",
+            subCategories: ["cloud-computing", "directory-server"],
+          },
+          pageInfo: {
+            cms: "RH CMS 2021.12.0",
+            contentFindingMethod: "",
+            contentID: "2771",
+            contentPortal: "",
+            destinationURL:
+              "https:\/\/www.redhat.com\/en\/technologies\/cloud-computing\/directory-server",
+            errorMessage: "",
+            errorType: "",
+            language: "en",
+            pageName: "",
+            referringDomain: "",
+            referringURL: "",
+            sysEnv: "",
+            template: "",
+            title: "Red Hat Directory Server",
+          },
+        },
+        product: [],
+        user: [
+          {
+            profile: [
+              {
+                profileInfo: {
+                  daysSinceLastPurchase: "",
+                  demandbaseSID: "",
+                  eloquaGUID: "",
+                  lastLoginDate: "",
+                  lastPurchaseDate: "",
+                  loggedIn: "false",
+                  profileID: "",
+                  subscriptionFrequency: "",
+                  subscriptionLevel: "",
+                },
+              },
+            ],
+          },
+        ],
+      };
+      !(function (a, b, c) {
+        "use strict";
+        function d(a) {
+          var c = "; " + b.cookie,
+            d = c.split("; " + a + "=");
+          if (2 === d.length) return d.pop().split(";").shift();
+        }
+        if (b.referrer) {
+          var e = b.createElement("a");
+          (e.href = b.referrer),
+            (c.page.pageInfo.referringDomain = e.hostname),
+            (c.page.pageInfo.referringURL = e.href);
+        }
+        c.page.pageInfo.sysEnv = a.innerWidth <= 768 ? "tablet" : "desktop";
+        var f = c.user[0].profile[0].profileInfo,
+          g = d("rh_elqCustomerGUID");
+        g && (f.eloquaGUID = g);
+        var h = d("rh_user");
+        if (h) {
+          var i = h.split("\\|");
+          i[0] && (f.loggedIn = "true");
+        }
+        var j = d("s_dmdbase");
+        j && (f.demandbaseSID = j);
+      })(window, document, digitalData);
+      //--><!]]>
+    </script>
+    <script
+      src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm.js"
+      data-domain="www.redhat.com"
+    ></script>
+    <script
+      data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-functional.js"
+      class="trustecm"
+      data-tracker-type="functional"
+    ></script>
+    <script
+      data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-advertising.js"
+      class="trustecm"
+      data-tracker-type="advertising"
+    ></script>
+    <script
+      id="dpal"
+      type="text/javascript"
+      src="http://www.redhat.com/dtm.js"
+    ></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="en" />
+    <link
+      href="https://www.redhat.com/en/technologies/cloud-computing/directory-server"
+      rel="alternate"
+      hreflang="en"
+    />
+    <link
+      href="https://www.redhat.com/de/technologies/cloud-computing/directory-server"
+      rel="alternate"
+      hreflang="de"
+    />
+    <link
+      href="https://www.redhat.com/ja/technologies/cloud-computing/directory-server"
+      rel="alternate"
+      hreflang="ja"
+    />
+    <link
+      href="https://www.redhat.com/es/technologies/cloud-computing/directory-server"
+      rel="alternate"
+      hreflang="es"
+    />
+    <link
+      href="https://www.redhat.com/zh/technologies/cloud-computing/directory-server"
+      rel="alternate"
+      hreflang="zh"
+    />
+    <link
+      href="https://www.redhat.com/fr/technologies/cloud-computing/directory-server"
+      rel="alternate"
+      hreflang="fr"
+    />
+    <link
+      href="https://www.redhat.com/it/technologies/cloud-computing/directory-server"
+      rel="alternate"
+      hreflang="it"
+    />
+    <link
+      href="https://www.redhat.com/ko/technologies/cloud-computing/directory-server"
+      rel="alternate"
+      hreflang="ko"
+    />
+    <link
+      href="https://www.redhat.com/pt-br/technologies/cloud-computing/directory-server"
+      rel="alternate"
+      hreflang="pt-br"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "availableLanguages": {
+          "en": {
             "@type": "Language",
             "name": "English",
             "href": "/en/technologies/cloud-computing/directory-server",
             "current_lang": true
-        },
-        "de": {
+          },
+          "de": {
             "@type": "Language",
             "name": "Deutsch",
             "href": "/de/technologies/cloud-computing/directory-server"
-        },
-        "ja": {
+          },
+          "ja": {
             "@type": "Language",
             "name": "日本語",
             "href": "/ja/technologies/cloud-computing/directory-server"
-        },
-        "es": {
+          },
+          "es": {
             "@type": "Language",
             "name": "Español",
             "href": "/es/technologies/cloud-computing/directory-server"
-        },
-        "zh": {
+          },
+          "zh": {
             "@type": "Language",
             "name": "简体中文",
             "href": "/zh/technologies/cloud-computing/directory-server"
-        },
-        "fr": {
+          },
+          "fr": {
             "@type": "Language",
             "name": "Français",
             "href": "/fr/technologies/cloud-computing/directory-server"
-        },
-        "it": {
+          },
+          "it": {
             "@type": "Language",
             "name": "Italiano",
             "href": "/it/technologies/cloud-computing/directory-server"
-        },
-        "ko": {
+          },
+          "ko": {
             "@type": "Language",
             "name": "한국어",
             "href": "/ko/technologies/cloud-computing/directory-server"
-        },
-        "pt-br": {
+          },
+          "pt-br": {
             "@type": "Language",
             "name": "Português",
             "href": "/pt-br/technologies/cloud-computing/directory-server"
+          }
         }
-    }
-}</script><link rel="prefetch" href="https://www.redhat.com/en/redhat_www_menu/ajax/menus-nav2" />
-<meta name="last-publish-date" content="Fri, 02 Jul 2021 17:28:24 GMT" />
-<meta name="node-type" content="page" />
-<meta name="source" content="rhdc_drupal" />
-<meta name="rhdc_key" content="ede9313d5083f98188c29aa4ed0664fe" />
-<meta name="taxonomy-page-sub-type" content="Product" />
-<meta name="taxonomy-page-sub-type-tid" content="4671" />
-<meta name="taxonomy-product" content="Red Hat Directory Server" />
-<meta name="taxonomy-product-tid" content="1941" />
-<meta name="taxonomy-region" content="Global" />
-<meta name="taxonomy-region-tid" content="4521" />
-<meta name="taxonomy-solution" content="Infrastructure" />
-<meta name="taxonomy-solution-tid" content="1071" />
-<meta name="taxonomy-topic" content="Operations" />
-<meta name="taxonomy-topic-tid" content="27081" />
-<meta name="taxonomy-meta-hreflang" content="en" />
-<meta name="taxonomy-meta-hreflang-tid" content="29051" />
-<link rel="shortcut icon" href="https://www.redhat.com/misc/favicon.ico" type="image/x-icon" />
-<meta property="og:description" content="An LDAP-based directory that makes it easier to manage user access to multiple systems." />
-<meta name="description" content="An LDAP-based directory that makes it easier to manage user access to multiple systems." />
-<meta name="generator" content="Drupal 7 (http://drupal.org)" />
-<link rel="image_src" href="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/red-hat-social-share.jpg" />
-<link rel="canonical" href="https://www.redhat.com/en/technologies/cloud-computing/directory-server" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.redhat.com/en/technologies/cloud-computing/directory-server" />
-<meta property="og:title" content="Red Hat Directory Server - centralize user identity" />
-<meta property="og:image" content="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/red-hat-social-share.jpg" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Red Hat Directory Server - centralize user identity" />
-<meta name="twitter:image" content="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/red-hat-social-share.jpg" />
+      }
+    </script>
+    <link
+      rel="prefetch"
+      href="https://www.redhat.com/en/redhat_www_menu/ajax/menus-nav2"
+    />
+    <meta name="last-publish-date" content="Fri, 02 Jul 2021 17:28:24 GMT" />
+    <meta name="node-type" content="page" />
+    <meta name="source" content="rhdc_drupal" />
+    <meta name="rhdc_key" content="ede9313d5083f98188c29aa4ed0664fe" />
+    <meta name="taxonomy-page-sub-type" content="Product" />
+    <meta name="taxonomy-page-sub-type-tid" content="4671" />
+    <meta name="taxonomy-product" content="Red Hat Directory Server" />
+    <meta name="taxonomy-product-tid" content="1941" />
+    <meta name="taxonomy-region" content="Global" />
+    <meta name="taxonomy-region-tid" content="4521" />
+    <meta name="taxonomy-solution" content="Infrastructure" />
+    <meta name="taxonomy-solution-tid" content="1071" />
+    <meta name="taxonomy-topic" content="Operations" />
+    <meta name="taxonomy-topic-tid" content="27081" />
+    <meta name="taxonomy-meta-hreflang" content="en" />
+    <meta name="taxonomy-meta-hreflang-tid" content="29051" />
+    <link
+      rel="shortcut icon"
+      href="https://www.redhat.com/misc/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta
+      property="og:description"
+      content="An LDAP-based directory that makes it easier to manage user access to multiple systems."
+    />
+    <meta
+      name="description"
+      content="An LDAP-based directory that makes it easier to manage user access to multiple systems."
+    />
+    <meta name="generator" content="Drupal 7 (http://drupal.org)" />
+    <link
+      rel="image_src"
+      href="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/red-hat-social-share.jpg"
+    />
+    <link
+      rel="canonical"
+      href="https://www.redhat.com/en/technologies/cloud-computing/directory-server"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.redhat.com/en/technologies/cloud-computing/directory-server"
+    />
+    <meta
+      property="og:title"
+      content="Red Hat Directory Server - centralize user identity"
+    />
+    <meta
+      property="og:image"
+      content="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/red-hat-social-share.jpg"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Red Hat Directory Server - centralize user identity"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/red-hat-social-share.jpg"
+    />
     <title>Red Hat Directory Server</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://static.redhat.com/">
-    <link rel="preload" href="https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/fonts/web_icon/rh-web-iconfont.woff" as="font" type="font/woff" crossorigin>
-    <link rel="preload" href="https://static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatTextVFModified.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="https://static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatDisplayVFModified.woff2" as="font" type="font/woff2" crossorigin>
-    <link type="text/css" rel="stylesheet" href="https://www.redhat.com/sites/default/files/advagg_css/css__k9aoxkMyjUtSX9AXGCPExPgTYjM0Xv5OYNfbFGDRafY__N9sjJtGj85lXtvOptw2e_YZ01FXbTXcJywP8EaKBijU__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://www.redhat.com/sites/all/libraries/webrh/dist/css/webrh.webcomponents.min.css?qy3uiv" media="all" />
-<link type="text/css" rel="stylesheet" href="https://www.redhat.com/sites/all/libraries/webrh/dist/css/webrh.min.css?qy3uiv" media="all" />
-<link type="text/css" rel="stylesheet" href="https://www.redhat.com/sites/default/files/advagg_css/css__tGiEQsQDn6crQYTrB0M12yBnTK1h9gNiW2X_q2dZgIs__aiWKfx-dekcWjaWc8aH83BM7xjUDTIuDIt2oJOILfqs__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://www.redhat.com/sites/default/files/advagg_css/css__wpajrf8pWA19ifT2xQXPB3J1TByoCXqZVtt6kXfl4Ow__PFQbFxxWsZl0yTnfrpPiA-o5Pvtu-CXh7nICx08JW0c__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.css" media="print" />
-<link type="text/css" rel="stylesheet" href="https://www.redhat.com/ux/webux/css/product-detail/product-v3.css?qy3uiv" media="all" />
-<link type="text/css" rel="stylesheet" href="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/css/trustecm.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://static.redhat.com/libs/redhat/redhat-theme/6/advanced-theme.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://static.redhat.com/libs/redhat/redhat-font/4/webfonts/red-hat-font.min.css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://static.redhat.com/" />
+    <link
+      rel="preload"
+      href="https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/fonts/web_icon/rh-web-iconfont.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatTextVFModified.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatDisplayVFModified.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.redhat.com/sites/default/files/advagg_css/css__k9aoxkMyjUtSX9AXGCPExPgTYjM0Xv5OYNfbFGDRafY__N9sjJtGj85lXtvOptw2e_YZ01FXbTXcJywP8EaKBijU__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.redhat.com/sites/all/libraries/webrh/dist/css/webrh.webcomponents.min.css?qy3uiv"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.redhat.com/sites/all/libraries/webrh/dist/css/webrh.min.css?qy3uiv"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.redhat.com/sites/default/files/advagg_css/css__tGiEQsQDn6crQYTrB0M12yBnTK1h9gNiW2X_q2dZgIs__aiWKfx-dekcWjaWc8aH83BM7xjUDTIuDIt2oJOILfqs__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.redhat.com/sites/default/files/advagg_css/css__wpajrf8pWA19ifT2xQXPB3J1TByoCXqZVtt6kXfl4Ow__PFQbFxxWsZl0yTnfrpPiA-o5Pvtu-CXh7nICx08JW0c__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.css"
+      media="print"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.redhat.com/ux/webux/css/product-detail/product-v3.css?qy3uiv"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/css/trustecm.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://static.redhat.com/libs/redhat/redhat-theme/6/advanced-theme.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://static.redhat.com/libs/redhat/redhat-font/4/webfonts/red-hat-font.min.css"
+      media="all"
+    />
     <!--[if lt IE 9]>
-      <script src="/profiles/rh/themes/redhatdotcom/js/selectivizr-min.js" type="text/javascript"></script>
-      <script src="/profiles/rh/themes/redhatdotcom/js/nwmatcher-min.js" type="text/javascript"></script>
-      <script src="/profiles/rh/themes/redhatdotcom/js/respond.js" type="text/javascript"></script>
+      <script
+        src="/profiles/rh/themes/redhatdotcom/js/selectivizr-min.js"
+        type="text/javascript"
+      ></script>
+      <script
+        src="/profiles/rh/themes/redhatdotcom/js/nwmatcher-min.js"
+        type="text/javascript"
+      ></script>
+      <script
+        src="/profiles/rh/themes/redhatdotcom/js/respond.js"
+        type="text/javascript"
+      ></script>
     <![endif]-->
-    <script type="text/javascript" src="https://www.redhat.com/sites/default/files/advagg_js/js__B6wED6l5P_XUdxVmb7Nvh5d9zn074QukFqJa2HLXS6c__VzWs8XZBHHsPW77egi-W-FQw2mAEr5F-GgCJU0wn3Nc__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.js"></script>
-<script type="text/javascript" src="https://www.redhat.com/sites/all/libraries/webrh/dist/js/webrh.vendor.min.js?qy3uiv"></script>
-<script type="text/javascript" src="https://www.redhat.com/sites/all/libraries/webrh/dist/js/webrh.webcomponents.min.js?qy3uiv"></script>
-<script type="text/javascript" src="https://www.redhat.com/sites/all/libraries/webrh/dist/js/webrh.min.js?qy3uiv"></script>
-<script type="text/javascript" src="https://www.redhat.com/sites/default/files/advagg_js/js__pDOiYGKaYbdKNp1gvMxR0fWhWZnfUemYDUhADyCn3oM__jCrCuWCJIPYPe1FzZoUvsJWEjkNMmRIQHYek1h7idBE__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.js"></script>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-document.createElement( "picture" );
-//--><!]]>
-</script>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-window.rh = window.rh || {}; window.rh.drupalTrustArcLoaded = true;
-//--><!]]>
-</script>
-<script type="text/javascript" src="https://www.redhat.com/sites/default/files/advagg_js/js__yriiYgbbyhgJ8W9rMT_zaOuZIYtfDRrocxs9PzEKTik__mre_T7KNWtjPlqBYH-u5FrbK9Zrsh5CEqU2Y4zkdQgM__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.js"></script>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"redhatdotcom","theme_token":"hevocWTa_Moy4_V1mjE496q-YTGpXTSoBmRFEAGnCuo","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.webcomponents.min.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.min.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/marketing\/latest\/trustarc\/trustecm\/css\/trustecm.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-theme\/6\/advanced-theme.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-font\/4\/webfonts\/red-hat-font.min.css":1,"modules\/locale\/locale.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-iconfont.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-web-iconfont.css":1,"sites\/all\/libraries\/patternfly-elements\/pfe-styles\/pfe-typography-classes.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/site-switcher.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/chrome.css":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/print.css":1,"ux\/webux\/css\/product-detail\/product-v3.css":1},"js":{"\/ux\/webux\/js\/product-detail\/product-v3.js":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/rh\/modules\/redhat_www_ddo\/dist\/post-jquery.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.vendor.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.webcomponents.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"profiles\/rh\/modules\/redhat_www_menu\/js\/rh_nav.js":1,"profiles\/rh\/modules\/redhat_www_share\/js\/rh_share.js":1,"profiles\/rh\/modules\/redhat_www_utility\/js\/redhat_www_utility.js":1,"sites\/all\/libraries\/jquery-cookie\/jquery.cookie-1.4.1.min.js":1,"profiles\/rh\/modules\/redhat_www_solr\/js\/rh_solr.js":1,"profiles\/rh\/modules\/redhat_www_solr\/js\/redhat_www_solr_suggestions.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.pushmenu.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery-scrolltofixed.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/rh-chrome.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.fitvids.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.switchIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.viewport\/jquery.viewport.min.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/sass-bootstrap.min.js":1}},"redhat_www_menu":{"path":"node\/2771"},"rh_analytics_enabled":false,"urlIsAjaxTrusted":{"\/en\/search\/node":true}});
-//--><!]]>
-</script>
+    <script
+      type="text/javascript"
+      src="https://www.redhat.com/sites/default/files/advagg_js/js__B6wED6l5P_XUdxVmb7Nvh5d9zn074QukFqJa2HLXS6c__VzWs8XZBHHsPW77egi-W-FQw2mAEr5F-GgCJU0wn3Nc__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.redhat.com/sites/all/libraries/webrh/dist/js/webrh.vendor.min.js?qy3uiv"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.redhat.com/sites/all/libraries/webrh/dist/js/webrh.webcomponents.min.js?qy3uiv"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.redhat.com/sites/all/libraries/webrh/dist/js/webrh.min.js?qy3uiv"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.redhat.com/sites/default/files/advagg_js/js__pDOiYGKaYbdKNp1gvMxR0fWhWZnfUemYDUhADyCn3oM__jCrCuWCJIPYPe1FzZoUvsJWEjkNMmRIQHYek1h7idBE__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.js"
+    ></script>
+    <script type="text/javascript">
+      <!--//--><![CDATA[//><!--
+      document.createElement("picture");
+      //--><!]]>
+    </script>
+    <script type="text/javascript">
+      <!--//--><![CDATA[//><!--
+      window.rh = window.rh || {};
+      window.rh.drupalTrustArcLoaded = true;
+      //--><!]]>
+    </script>
+    <script
+      type="text/javascript"
+      src="https://www.redhat.com/sites/default/files/advagg_js/js__yriiYgbbyhgJ8W9rMT_zaOuZIYtfDRrocxs9PzEKTik__mre_T7KNWtjPlqBYH-u5FrbK9Zrsh5CEqU2Y4zkdQgM__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.js"
+    ></script>
+    <script type="text/javascript">
+      <!--//--><![CDATA[//><!--
+      jQuery.extend(Drupal.settings, {
+        basePath: "\/",
+        pathPrefix: "en\/",
+        ajaxPageState: {
+          theme: "redhatdotcom",
+          theme_token: "hevocWTa_Moy4_V1mjE496q-YTGpXTSoBmRFEAGnCuo",
+          css: {
+            "modules\/system\/system.base.css": 1,
+            "modules\/system\/system.menus.css": 1,
+            "modules\/system\/system.messages.css": 1,
+            "modules\/system\/system.theme.css": 1,
+            "misc\/ui\/jquery.ui.core.css": 1,
+            "misc\/ui\/jquery.ui.theme.css": 1,
+            "sites\/all\/libraries\/webrh\/dist\/css\/webrh.webcomponents.min.css": 1,
+            "sites\/all\/libraries\/webrh\/dist\/css\/webrh.min.css": 1,
+            "https:\/\/static.redhat.com\/libs\/redhat\/marketing\/latest\/trustarc\/trustecm\/css\/trustecm.css": 1,
+            "https:\/\/static.redhat.com\/libs\/redhat\/redhat-theme\/6\/advanced-theme.css": 1,
+            "https:\/\/static.redhat.com\/libs\/redhat\/redhat-font\/4\/webfonts\/red-hat-font.min.css": 1,
+            "modules\/locale\/locale.css": 1,
+            "sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-iconfont.css": 1,
+            "sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-web-iconfont.css": 1,
+            "sites\/all\/libraries\/patternfly-elements\/pfe-styles\/pfe-typography-classes.css": 1,
+            "profiles\/rh\/themes\/redhatdotcom\/css\/site-switcher.css": 1,
+            "profiles\/rh\/themes\/redhatdotcom\/css\/chrome.css": 1,
+            "profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.css": 1,
+            "profiles\/rh\/themes\/redhatdotcom\/css\/print.css": 1,
+            "ux\/webux\/css\/product-detail\/product-v3.css": 1,
+          },
+          js: {
+            "\/ux\/webux\/js\/product-detail\/product-v3.js": 1,
+            "sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js": 1,
+            "misc\/jquery-extend-3.4.0.js": 1,
+            "misc\/jquery-html-prefilter-3.5.0-backport.js": 1,
+            "misc\/jquery.once.js": 1,
+            "misc\/drupal.js": 1,
+            "profiles\/rh\/modules\/redhat_www_ddo\/dist\/post-jquery.min.js": 1,
+            "sites\/all\/libraries\/webrh\/dist\/js\/webrh.vendor.min.js": 1,
+            "sites\/all\/libraries\/webrh\/dist\/js\/webrh.webcomponents.min.js": 1,
+            "sites\/all\/libraries\/webrh\/dist\/js\/webrh.min.js": 1,
+            "sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js": 1,
+            "sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js": 1,
+            "profiles\/rh\/modules\/redhat_www_menu\/js\/rh_nav.js": 1,
+            "profiles\/rh\/modules\/redhat_www_share\/js\/rh_share.js": 1,
+            "profiles\/rh\/modules\/redhat_www_utility\/js\/redhat_www_utility.js": 1,
+            "sites\/all\/libraries\/jquery-cookie\/jquery.cookie-1.4.1.min.js": 1,
+            "profiles\/rh\/modules\/redhat_www_solr\/js\/rh_solr.js": 1,
+            "profiles\/rh\/modules\/redhat_www_solr\/js\/redhat_www_solr_suggestions.js": 1,
+            "profiles\/rh\/themes\/redhatdotcom\/js\/jquery.pushmenu.js": 1,
+            "profiles\/rh\/themes\/redhatdotcom\/js\/jquery-scrolltofixed.js": 1,
+            "profiles\/rh\/themes\/redhatdotcom\/js\/rh-chrome.js": 1,
+            "profiles\/rh\/themes\/redhatdotcom\/js\/jquery.fitvids.js": 1,
+            "profiles\/rh\/themes\/redhatdotcom\/js\/jquery.switchIt.js": 1,
+            "profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.js": 1,
+            "profiles\/rh\/themes\/redhatdotcom\/js\/jquery.viewport\/jquery.viewport.min.js": 1,
+            "profiles\/rh\/themes\/redhatdotcom\/js\/sass-bootstrap.min.js": 1,
+          },
+        },
+        redhat_www_menu: { path: "node\/2771" },
+        rh_analytics_enabled: false,
+        urlIsAjaxTrusted: { "\/en\/search\/node": true },
+      });
+      //--><!]]>
+    </script>
     <noscript>
-        <link href="https://www.redhat.com/sites/all/libraries/webrh/dist/css/webrh.webcomponents.noscript.min.css" rel="stylesheet" >
+      <link
+        href="https://www.redhat.com/sites/all/libraries/webrh/dist/css/webrh.webcomponents.noscript.min.css"
+        rel="stylesheet"
+      />
     </noscript>
   </head>
-  <body unresolved class="bands-index html not-front not-logged-in no-sidebars page-node page-node- page-node-2771 node-type-page i18n-en " >
+  <body
+    unresolved
+    class="
+      bands-index
+      html
+      not-front not-logged-in
+      no-sidebars
+      page-node page-node- page-node-2771
+      node-type-page
+      i18n-en
+    "
+  >
     <div class="page">
-            
+      <div class="header-background-image"></div>
+      <style>
+        body[unresolved] pfe-navigation {
+          display: none;
+        }
+        .no-js body pfe-navigation,
+        body:not(unresolved) pfe-navigation {
+          display: block;
+        }
+        .no-js #main-menu {
+          background: #000 !important;
+          padding: 10px;
+        }
+        [unresolved] pfe-navigation {
+          background: #000 !important;
+          color: #fff;
+          display: block;
+          width: 100%;
+        }
+        [unresolved] pfe-navigation [slot="logo"],
+        [unresolved] pfe-navigation [slot="skip"],
+        [unresolved] pfe-navigation ul li,
+        [unresolved] pfe-navigation-item,
+        [unresolved] pfe-navigation-main {
+          padding: 0 7px 6px;
+          display: inline-block;
+        }
+        [unresolved] pfe-navigation [slot="skip"] a {
+          font-size: 0;
+        }
+        [unresolved] pfe-navigation [slot="skip"] a:focus {
+          font-size: 14px;
+        }
+        [unresolved] pfe-navigation [slot="logo"] {
+          vertical-align: middle;
+        }
+        [unresolved] pfe-navigation a {
+          font-size: 14px;
+          color: #fff;
+        }
+        [unresolved] pfe-navigation-item [slot] > a:focus {
+          outline-offset: 1px;
+          outline-style: dotted;
+          outline-width: 1px;
+          outline-color: #d2d3d4;
+        }
+      </style>
+      <pfe-navigation
+        id="main-menu"
+        class="main-header"
+        pfe-sticky
+        pfe-full-width
+        pfe-close-on-click="external"
+        pfe-menu-label="Menu"
+      >
+        <!-- Skip navigation -->
+        <div slot="skip">
+          <ul>
+            <li><a href="#rh-main-content">Skip to content</a></li>
+          </ul>
+        </div>
 
-<div class="header-background-image"></div>
-<style>
-body[unresolved] pfe-navigation {display: none;}.no-js body pfe-navigation,body:not(unresolved) pfe-navigation {display: block;}.no-js #main-menu{background:#000!important;padding:10px}[unresolved] pfe-navigation{background:#000!important;color:#fff;display:block;width:100%}[unresolved] pfe-navigation [slot=logo],[unresolved] pfe-navigation [slot=skip],[unresolved] pfe-navigation ul li,[unresolved] pfe-navigation-item,[unresolved] pfe-navigation-main{padding:0 7px 6px;display:inline-block}[unresolved] pfe-navigation [slot=skip] a{font-size:0}[unresolved] pfe-navigation [slot=skip] a:focus{font-size:14px}[unresolved] pfe-navigation [slot=logo]{vertical-align:middle}[unresolved] pfe-navigation a{font-size:14px;color:#fff}[unresolved] pfe-navigation-item [slot]>a:focus{outline-offset:1px;outline-style:dotted;outline-width:1px;outline-color:#d2d3d4}
-</style>
-<pfe-navigation  id="main-menu" class="main-header" pfe-sticky pfe-full-width pfe-close-on-click="external" pfe-menu-label="Menu">
- 
-  <!-- Skip navigation -->
-  <div slot="skip">
-    <ul>
-      <li><a href="#rh-main-content">Skip to content</a></li>
-    </ul>
-  </div>
+        <!-- Site logo -->
+        <p slot="logo">
+          <a href="https://www.redhat.com/en" title="Red Hat">
+            <img
+              class="redhat-logo"
+              src="https://static.redhat.com/libs/redhat/brand-assets/2/corp/logo--200.png"
+              class="screen"
+              alt=""
+              aria-hidden="true"
+              style="margin: 0; width: 135px"
+            />
+          </a>
+        </p>
 
-  <!-- Site logo -->
-  <p slot="logo">
-    <a href="https://www.redhat.com/en" title="Red Hat">
-      <img class="redhat-logo" src="https://static.redhat.com/libs/redhat/brand-assets/2/corp/logo--200.png" class="screen" alt="" aria-hidden="true" style="margin:0;width: 135px;"/>
-    </a>
-  </p>
-
-  <!-- Search -->
-  <pfe-navigation-item slot="search" pfe-icon="web-search" id="utility-search">
-    <div slot="trigger">
-      <a href="https://www.redhat.com/en/search" data-analytics-region="utility" data-analytics="Search" data-analytics-label="Search">Search</a>    </div>
-    <div slot="tray" hidden>
-      <div class="pfe-navigation-item__tray--container">
-        <form class="search-form" autocomplete="off" action="https://www.redhat.com/en/search/node" method="post" id="redhat-www-solr-search-box" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-basic"><div class="form-item form-type-textfield form-item-keys">
-  <label class="element-invisible" for="edit-keys">Enter your keywords </label>
- <input maxlength="128" size="15" placeholder="Enter your search term" type="text" id="edit-keys" name="keys" value="" class="form-text" />
-</div>
-<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div></div><input type="hidden" name="form_build_id" value="form-wczGrY5UmQYvX3QBFDyBwmY7S7jziV982kZFZcUTTwg" />
-<input type="hidden" name="form_id" value="redhat_www_solr_search_box" />
-</div></form>      </div>
-    </div>
-  </pfe-navigation-item>
-  <form class="search-form" autocomplete="off" slot="mobile-search" hidden="" action="https://www.redhat.com/en/search/node" method="post" id="redhat-www-solr-search-box--2" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-basic--2"><div class="form-item form-type-textfield form-item-keys">
-  <label class="element-invisible" for="edit-keys--2">Enter your keywords </label>
- <input maxlength="128" size="15" placeholder="Enter your search term" type="text" id="edit-keys--2" name="keys" value="" class="form-text" />
-</div>
-<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit--2" name="op" value="Search" class="form-submit" /></div></div><input type="hidden" name="form_build_id" value="form-rfj61KXRbqMeCBTbrYCJaVJA9CStSdulBqtX5iCQ21w" />
-<input type="hidden" name="form_id" value="redhat_www_solr_search_box" />
-</div></form>
-  <!-- Main navigation -->
-  <pfe-navigation-main>
-    <ul>
-              <li>
-          <pfe-navigation-item>
-            <div slot="trigger">
-              <a href="https://www.redhat.com/en/technologies" class="active" data-analytics-region="nav" data-analytics="Products" data-analytics-label="Products" data-analytics-level="1">Products</a>
-            </div>
-            <div slot="tray" data-column="10311" hidden>
-            </div>
-          </pfe-navigation-item>
-        </li>        <li>
-          <pfe-navigation-item>
-            <div slot="trigger">
-              <a href="https://www.redhat.com/en/solutions" data-analytics-region="nav" data-analytics="Solutions" data-analytics-label="Solutions" data-analytics-level="1">Solutions</a>
-            </div>
-            <div slot="tray" data-column="10331" hidden>
-            </div>
-          </pfe-navigation-item>
-        </li>        <li>
-          <pfe-navigation-item>
-            <div slot="trigger">
-              <a href="https://www.redhat.com/en/services" data-analytics-region="nav" data-analytics="Services &amp; support" data-analytics-label="Services &amp; support" data-analytics-level="1">Services & support</a>
-            </div>
-            <div slot="tray" data-column="138281" hidden>
-            </div>
-          </pfe-navigation-item>
-        </li>        <li>
-          <pfe-navigation-item>
-            <div slot="trigger">
-              <a href="https://www.redhat.com/en/resources" data-analytics-region="nav" data-analytics="Resources" data-analytics-label="Resources" data-analytics-level="1">Resources</a>
-            </div>
-            <div slot="tray" data-column="169591" hidden>
-            </div>
-          </pfe-navigation-item>
-        </li>        <li>
-          <pfe-navigation-item>
-            <div slot="trigger">
-              <a href="https://www.redhat.com/en/about" data-analytics-region="nav" data-analytics="Red Hat &amp; open source" data-analytics-label="Red Hat &amp; open source" data-analytics-level="1">Red Hat & open source</a>
-            </div>
-            <div slot="tray" data-column="10351" hidden>
-            </div>
-          </pfe-navigation-item>
-        </li>    </ul>
-  </pfe-navigation-main>
-
-  <!-- Language -->
-  <pfe-navigation-item slot="language" pfe-icon="web-globe" id="utility-globe">
-    <div slot="trigger">
-      <a href="https://www.redhat.com/en/select-language" data-analytics-region="utility" data-analytics="Language" data-analytics-label="Language">English</a>    </div>
-    <div slot="tray" hidden>
-      <div class="pfe-navigation-item__tray--container">
-        <div class="language-picker">
-  <h3 class="pfe-headline-2">Select a language</h3>
-  <ul><li class="pfe-headline-5"><a href="https://www.redhat.com/zh/technologies/cloud-computing/directory-server" class="language-link" xml:lang="zh" hreflang="zh" title="product | red hat directory server">简体中文</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/en/technologies/cloud-computing/directory-server" class="language-link active" xml:lang="en" hreflang="en" title="product | red hat directory server">English</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/fr/technologies/cloud-computing/directory-server" class="language-link" xml:lang="fr" hreflang="fr" title="product | red hat directory server">Français</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/de/technologies/cloud-computing/directory-server" class="language-link" xml:lang="de" hreflang="de" title="product | red hat directory server">Deutsch</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/it/technologies/cloud-computing/directory-server" class="language-link" xml:lang="it" hreflang="it" title="product | red hat directory server">Italiano</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/ja/technologies/cloud-computing/directory-server" class="language-link" xml:lang="ja" hreflang="ja" title="product | red hat directory server">日本語</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/ko/technologies/cloud-computing/directory-server" class="language-link" xml:lang="ko" hreflang="ko" title="product | red hat directory server">한국어</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/pt-br/technologies/cloud-computing/directory-server" class="language-link" xml:lang="pt-br" hreflang="pt-br" title="product | red hat directory server">Português</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/es/technologies/cloud-computing/directory-server" class="language-link" xml:lang="es" hreflang="es" title="product | red hat directory server">Español</a></li></ul></div>      </div>
-    </div>
-  </pfe-navigation-item>
-  <div slot="mobile-language" pfe-icon="web-globe" data-analytics-region="utility" data-analytics="Language" data-analytics-label="Language"><a id="pfe-modal--trigger" tabindex="0">English</a></div>
-  <!-- Log in -->
-  <pfe-navigation-item slot="login" pfe-icon="web-user" id="utility-account">
-    <div slot="trigger">
-      <a href="https://sso.redhat.com/auth/realms/redhat-external/protocol/saml/clients/legacy-idp-servlets" class="rh-user-loggedout" data-analytics-region="utility" data-analytics="login" data-analytics-label="login">Log in</a>      <a href="https://sso.redhat.com/auth/realms/redhat-external/logout" class="rh-user-loggedin" data-analytics-region="utility" data-analytics="login" data-analytics-label="login">Account</a>    </div>
-    <div slot="tray" hidden>
-      <div class="pfe-navigation-item__tray--container">
-        <section class="account-tray">
-  <header>
-    <div class="container">
-              <p class="rh-login-heading rh-user-loggedin">Welcome, <span class='rh-name'></span></p>
-                    <p class="rh-login-heading rh-user-loggedout">Log in to your Red Hat account</p>
+        <!-- Search -->
+        <pfe-navigation-item
+          slot="search"
+          pfe-icon="web-search"
+          id="utility-search"
+        >
+          <div slot="trigger">
+            <a
+              href="https://www.redhat.com/en/search"
+              data-analytics-region="utility"
+              data-analytics="Search"
+              data-analytics-label="Search"
+              >Search</a
+            >
           </div>
-  </header>
-  <div class="content">
-    <div class="container">
-      <section class="account-login rh-user-loggedout">
-        <div class="account-login-wrapper">
-                      <a href="https://sso.redhat.com/auth/realms/redhat-external/protocol/saml/clients/legacy-idp-servlets" id="redhat-account-login-link" class="account-login-link utility-user-login-link" data-analytics-region="utility" data-analytics="Log in" data-analytics-label="Log in">Log in</a>                                <p>Your Red Hat account gives you access to your member profile and preferences, and the following services based on your customer status:</p>
-                                <div class="utility-user-additional-links"><div class="item-list"><ul><li class="first">Customer Portal</li>
-<li class="last">Red Hat Connect for Business Partners</li>
-</ul></div><div class="item-list"><ul><li class="first">User management</li>
-<li class="last">Certification Central</li>
-</ul></div></div>                  </div>
-        <div class="account-register-wrapper">
-                      <a href="https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/registrations?client_id=https%3A%2F%2Fwww.redhat.com%2Fwapps%2Fugc-oidc&amp;redirect_uri=https%3A%2F%2Fwww.redhat.com%2Fwapps%2Fugc%2Fprotected%2Faccount.html&amp;response_type=code&amp;scope=openid" class="account-register-link" data-analytics-region="utility" data-analytics="Register now" data-analytics-label="Register now">Register now</a>                                <p class="account-register-heading">Not registered yet? Here are a few reasons why you should be:</p><div class="item-list"><ul><li class="first">Browse Knowledgebase articles, manage support cases and subscriptions, download updates, and more from one place.</li>
-<li>View users in your organization, and edit their account information, preferences, and permissions.</li>
-<li class="last">Manage your Red Hat certifications, view exam history, and download certification-related logos and documents.</li>
-</ul></div>                  </div>
-      </section>
-      <section class="account-logout rh-user-loggedin">
-        <div class="account-welcome-wrapper">
-                      <a href="https://www.redhat.com/wapps/ugc/protected/account.html" class="account-edit-link" data-analytics-region="utility" data-analytics="Edit your profile and preferences" data-analytics-label="Edit your profile and preferences">Edit your profile and preferences</a>                                <p>Your Red Hat account gives you access to your member profile, preferences, and other services depending on your customer status.</p>
-                            </div>
-        <div class="account-logout-wrapper">
-                      <p>For your security, if you&#039;re on a public computer and have finished using your Red Hat services, please be sure to log out.</p>
-                                <a href="https://sso.redhat.com/auth/realms/redhat-external/logout" id="redhat-account-logout-link" class="account-logout-link" data-analytics-region="utility" data-analytics="Log out" data-analytics-label="Log out">Log out</a>                  </div>
-      </section>
-    </div>
-  </div>
-</section>
-      </div>
-    </div>
-  </pfe-navigation-item>
-  <a href="https://sso.redhat.com/auth/realms/redhat-external/protocol/saml/clients/legacy-idp-servlets" class="rh-user-loggedout" slot="mobile-login" pfe-icon="web-user">Log in / Register</a>  <a href="https://www.redhat.com/wapps/ugc/protected/account.html" class="rh-user-loggedin" slot="mobile-login" pfe-icon="web-user">Account</a>
-  <!-- Site switcher -->
-  <pfe-navigation-item slot="site-switcher" pfe-icon="web-grid-3x3" id="site-switcher">
-    <div slot="trigger">
-      <a href="https://www.redhat.com/en/cms/ajax/site-switcher" id="355871" data-analytics-region="utility" data-analytics="Websites" data-analytics-label="Websites">All Red Hat</a>    </div>
-    <div slot="tray" hidden>
-      <div class="pfe-navigation-item__tray--container">
-        <!-- Added via JS -->
+          <div slot="tray" hidden>
+            <div class="pfe-navigation-item__tray--container">
+              <form
+                class="search-form"
+                autocomplete="off"
+                action="https://www.redhat.com/en/search/node"
+                method="post"
+                id="redhat-www-solr-search-box"
+                accept-charset="UTF-8"
+              >
+                <div>
+                  <div class="container-inline form-wrapper" id="edit-basic">
+                    <div class="form-item form-type-textfield form-item-keys">
+                      <label class="element-invisible" for="edit-keys"
+                        >Enter your keywords
+                      </label>
+                      <input
+                        maxlength="128"
+                        size="15"
+                        placeholder="Enter your search term"
+                        type="text"
+                        id="edit-keys"
+                        name="keys"
+                        value=""
+                        class="form-text"
+                      />
+                    </div>
+                    <div class="form-actions form-wrapper" id="edit-actions">
+                      <input
+                        type="submit"
+                        id="edit-submit"
+                        name="op"
+                        value="Search"
+                        class="form-submit"
+                      />
+                    </div>
+                  </div>
+                  <input
+                    type="hidden"
+                    name="form_build_id"
+                    value="form-wczGrY5UmQYvX3QBFDyBwmY7S7jziV982kZFZcUTTwg"
+                  />
+                  <input
+                    type="hidden"
+                    name="form_id"
+                    value="redhat_www_solr_search_box"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </pfe-navigation-item>
+        <form
+          class="search-form"
+          autocomplete="off"
+          slot="mobile-search"
+          hidden=""
+          action="https://www.redhat.com/en/search/node"
+          method="post"
+          id="redhat-www-solr-search-box--2"
+          accept-charset="UTF-8"
+        >
+          <div>
+            <div class="container-inline form-wrapper" id="edit-basic--2">
+              <div class="form-item form-type-textfield form-item-keys">
+                <label class="element-invisible" for="edit-keys--2"
+                  >Enter your keywords
+                </label>
+                <input
+                  maxlength="128"
+                  size="15"
+                  placeholder="Enter your search term"
+                  type="text"
+                  id="edit-keys--2"
+                  name="keys"
+                  value=""
+                  class="form-text"
+                />
               </div>
-    </div>
-  </pfe-navigation-item>
-</pfe-navigation>
-
-<!-- Language switcher modal, must be outside the navigation component -->
-<pfe-modal class="language-picker" id="language-picker" hidden>
-  <h3 class="pfe-headline-2">Select a language</h3>
-  <ul><li class="pfe-headline-5"><a href="https://www.redhat.com/zh/technologies/cloud-computing/directory-server" class="language-link" xml:lang="zh" hreflang="zh" title="product | red hat directory server">简体中文</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/en/technologies/cloud-computing/directory-server" class="language-link active" xml:lang="en" hreflang="en" title="product | red hat directory server">English</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/fr/technologies/cloud-computing/directory-server" class="language-link" xml:lang="fr" hreflang="fr" title="product | red hat directory server">Français</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/de/technologies/cloud-computing/directory-server" class="language-link" xml:lang="de" hreflang="de" title="product | red hat directory server">Deutsch</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/it/technologies/cloud-computing/directory-server" class="language-link" xml:lang="it" hreflang="it" title="product | red hat directory server">Italiano</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/ja/technologies/cloud-computing/directory-server" class="language-link" xml:lang="ja" hreflang="ja" title="product | red hat directory server">日本語</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/ko/technologies/cloud-computing/directory-server" class="language-link" xml:lang="ko" hreflang="ko" title="product | red hat directory server">한국어</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/pt-br/technologies/cloud-computing/directory-server" class="language-link" xml:lang="pt-br" hreflang="pt-br" title="product | red hat directory server">Português</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/es/technologies/cloud-computing/directory-server" class="language-link" xml:lang="es" hreflang="es" title="product | red hat directory server">Español</a></li></ul></pfe-modal>
-  <div id="main-content">
-
-            <span id="rh-main-content"></span>
-                                                  <div class="region region-content">
-    <div id="block-system-main" class="block block-system">
-
-      
-  <article class="node-2771 node node-page clearfix">
-
-  
-  <div class="field field-name-body field-type-text-with-summary field-label-hidden">
-    <div class="field-items">
-          <div class="field-item even"><!-- *********************** CONTENT *********************** -->
-<div class="webux-markup">
-
-<!-- Hero -->
-<section class="ux-band" data-ux-band-collapse="bottom" data-ux-band-background="transparent">
-    <header>
-        <div class="ux-band-container">
-            <div class="ux-group" data-ux-layout-special="7 1 4">
-                <div class="ux-band-header" itemscope itemtype="http://schema.org/Product">
-                    <p class="ux-band-header-title" itemprop="category">Cloud computing</p>
-                    <h1 class="ux-band-header-headline" itemprop="name">Red Hat Directory Server</h1>
-                    <h2 class="ux-band-header-subheadline">Easily manage access across partner, supplier, and customer relationships</h2>
-                    <p class="ux-band-header-summary" itemprop="description">Managing user access to multiple systems is a challenge. In a UNIX environment, providing access based on locally stored information becomes unmanageable as the number of systems and users increases. Storing the user information in a Lightweight Directory Access Protocol (LDAP)-based directory&mdash;like Red Hat&reg; Directory Server&mdash;makes the system scalable, manageable, and secure.</p>
-
-                <!--animation slices-->
-                    <div class="ux-image-embed" data-ux-layout="absolute" data-ux-hide="xxs xs">
-                        <div class="ux-image-embed-container">
-                            <!--slice1-->
-                            <div class="media media-element-container media-default"><img class="media-element file-default" src="https://www.redhat.com/cms/managed-files/product-directory-server-slice1.png" width="672" height="600" alt="" /></div>
-                        </div>
-                    </div>
-                    <div class="ux-image-embed" data-ux-layout="absolute" data-ux-animation="delayedFadeIn" data-ux-hide="xxs xs">
-                        <div class="ux-image-embed-container">
-                            <!--slice2-->
-                            <div class="media media-element-container media-default"><img class="media-element file-default" src="https://www.redhat.com/cms/managed-files/product-directory-server-slice2.png" width="672" height="600" alt="" /></div>
-                        </div>
-                    </div>
-
-                <!--for mobile devices-->
-                <div class="ux-image-embed" data-ux-hide="sm md lg" data-ux-align="both">
-                    <div class="ux-image-embed-container">
-                         <div class="media media-element-container media-default"><img class="media-element file-default" src="https://www.redhat.com/cms/managed-files/product-directory-server-mobile.png" width="500" height="415" alt="" /></div>
-                    </div>
-                </div>
-                </div> <!--end ux-band-header-->
-            </div> <!--end ux-group-->
-        </div><!-- container -->
-    </header>
-</section>
-
-<!-- CTA dropdown -->
-<section class="ux-band" data-ux-band-collapse="half" data-ux-band-background="transparent">
-    <div class="ux-band-container">
-        <div class="ux-band-body">
-            <div class="ux-group" data-ux-layout="left-on-mobile-center" data-ux-text-align="center">
-
-                <div class="ux-cta" data-ux-toggle-open="click" data-ux-toggle-id="buy-it-band" data-ux-arrow-color="dark">
-                    <a class="ux-cta-link" data-ux-cta-type="ghost-product" aria-label="Buy it, drop down menu">Buy it</a>
-                </div>
-                <div class="ux-cta">
-                    <a class="ux-cta-link" data-ux-cta-type="ghost-product" href="https://rhn.redhat.com/rhn/software/channel/downloads/Download.do?cid=12680">Download it*</a> <small>&nbsp;&nbsp;*Active subscription required</small>
-                </div>
+              <div class="form-actions form-wrapper" id="edit-actions">
+                <input
+                  type="submit"
+                  id="edit-submit--2"
+                  name="op"
+                  value="Search"
+                  class="form-submit"
+                />
+              </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<section class="ux-band" id="buy-it-band" data-ux-band-background="product" data-ux-state="closed" data-ux-toggle-target style="display:none" data-ux-band-collapse="half">
-    <div class="ux-band-container">
-        <div class="ux-group" data-ux-layout="left-on-mobile-center" data-ux-theme="dark">
-
-            <div class="ux-cta">
-                <a class="ux-cta-link" data-ux-cta-type="secondary" href="https://www.redhat.com/en/contact">From a Red Hatter</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Features and benefits -->
-
-<section class="ux-band" data-ux-band-background="gray" data-ux-band-collapse="bottom">
-    <div class="ux-band-container">
-        <header class="ux-band-header" data-ux-text-align="center">
-            <h2 class="ux-band-header-headline">Features &amp; benefits </h2>
-                <div class="ux-cta-group">
-		    <ul class="ux-cta-list">
-		        <li class="ux-cta-list-item">
-			    <a href="https://access.redhat.com/documentation/en-US/Red_Hat_Directory_Server/11/" class="ux-cta-list-item-link">Get product documentation</a>
-			</li>
-		    </ul>
-		</div>
-        </header>
-    </div>
-</section>
-<section class="ux-band" data-ux-band-background="gray">
-    <div class="ux-band-container">
-        <div class="ux-band-body" data-ux-layout="gallery3" data-ux-align="horizontal">
-
-<!------------ FEATURE CARD -->
-             <div class="ux-card" data-ux-theme="light white" data-ux-spacing="half">
-                <div class="ux-card-body">
-                    <div class="ux-icon-panel" data-ux-icon-position="stack" data-ux-align="horizontal" data-ux-text-align="center" data-ux-align="both">
-                       <div class="ux-icon-panel-image">
-                      <!--  SVG BEGIN -->
-<div class="ux-image-embed-container"  
-    style="--ux-custom-image-width:80px">
-    <div class="ux-image-embed media-element-container">
-
-        <svg  class="ux-image-embed-svg" id="Icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><defs><style>.cls-1{fill:#e00;}</style></defs><title>Icon-Red_Hat-Objects-Control_Panel-A-Red-RGB</title><path class="cls-1" d="M8.47,12.55a.75.75,0,0,0,1.06,0,1,1,0,0,0,.16-.25A.67.67,0,0,0,9.75,12a.72.72,0,0,0-.06-.29.82.82,0,0,0-.16-.25,1,1,0,0,0-.24-.16.83.83,0,0,0-.58,0,1,1,0,0,0-.24.16.67.67,0,0,0-.16.25.72.72,0,0,0-.06.29.67.67,0,0,0,.06.28A.76.76,0,0,0,8.47,12.55Z"/><path class="cls-1" d="M8.47,18.55a.75.75,0,0,0,1.06,0,1,1,0,0,0,.16-.25A.67.67,0,0,0,9.75,18a.75.75,0,0,0-.22-.53.81.81,0,0,0-.24-.17.77.77,0,0,0-.82.17.75.75,0,0,0-.22.53.67.67,0,0,0,.06.28A.76.76,0,0,0,8.47,18.55Z"/><path class="cls-1" d="M8.47,24.55a.75.75,0,0,0,1.06,0,1,1,0,0,0,.16-.25A.67.67,0,0,0,9.75,24a.75.75,0,0,0-.22-.53.81.81,0,0,0-.24-.17.77.77,0,0,0-.82.17.75.75,0,0,0-.22.53.67.67,0,0,0,.06.28A.76.76,0,0,0,8.47,24.55Z"/><path class="cls-1" d="M8.47,21.55a.75.75,0,0,0,1.06,0,1,1,0,0,0,.16-.25A.67.67,0,0,0,9.75,21a.75.75,0,0,0-.22-.53.81.81,0,0,0-.24-.17.77.77,0,0,0-.82.17.75.75,0,0,0-.22.53.67.67,0,0,0,.06.28A.76.76,0,0,0,8.47,21.55Z"/><path class="cls-1" d="M8.47,15.55a.75.75,0,0,0,1.06,0,1,1,0,0,0,.16-.25A.67.67,0,0,0,9.75,15a.75.75,0,0,0-.22-.53.81.81,0,0,0-.24-.17.77.77,0,0,0-.82.17.75.75,0,0,0-.22.53.67.67,0,0,0,.06.28A.76.76,0,0,0,8.47,15.55Z"/><path class="cls-1" d="M30.75,27V9.08A.76.76,0,0,0,30,8.33H6a.75.75,0,0,0-.75.75V27a.75.75,0,0,0,.75.75h5.94a.85.85,0,0,0,.17,0,.85.85,0,0,0,.17,0H30A.76.76,0,0,0,30.75,27Zm-19.39-.75H6.75V9.83h4.61Zm17.89,0H12.86V9.83H29.25Z"/><path class="cls-1" d="M15,14.77h.25V24a.75.75,0,0,0,1.5,0V14.77H17a.75.75,0,0,0,0-1.5h-.25V12a.75.75,0,0,0-1.5,0v1.25H15a.75.75,0,0,0,0,1.5Z"/><path class="cls-1" d="M20,21.77h.25V24a.75.75,0,0,0,1.5,0V21.77H22a.75.75,0,0,0,0-1.5h-.25V12a.75.75,0,1,0-1.5,0v8.25H20a.75.75,0,0,0,0,1.5Z"/><path class="cls-1" d="M25,18.77h.25V24a.75.75,0,0,0,1.5,0V18.77H27a.75.75,0,0,0,0-1.5h-.25V12a.75.75,0,1,0-1.5,0v5.25H25a.75.75,0,0,0,0,1.5Z"/></svg>
-
-    </div>
-</div>
-                    
-<!--  SVG END-->
-                       </div>
-                       <div class="ux-icon-panel-content">
-                           <h3 class="ux-icon-panel-headline">Deep control</h3>
-                           <p class="ux-icon-panel-description">Gives you centralized, fine-grained access control, including control based on user identity, group membership, role identity, IP address, domain name, or pattern-based rules.</p>
-                       </div>
-                   </div>
+            <input
+              type="hidden"
+              name="form_build_id"
+              value="form-rfj61KXRbqMeCBTbrYCJaVJA9CStSdulBqtX5iCQ21w"
+            />
+            <input
+              type="hidden"
+              name="form_id"
+              value="redhat_www_solr_search_box"
+            />
+          </div>
+        </form>
+        <!-- Main navigation -->
+        <pfe-navigation-main>
+          <ul>
+            <li>
+              <pfe-navigation-item>
+                <div slot="trigger">
+                  <a
+                    href="https://www.redhat.com/en/technologies"
+                    class="active"
+                    data-analytics-region="nav"
+                    data-analytics="Products"
+                    data-analytics-label="Products"
+                    data-analytics-level="1"
+                    >Products</a
+                  >
                 </div>
-            </div>
-
-<!------------ FEATURE CARD -->
-             <div class="ux-card" data-ux-theme="light white" data-ux-spacing="half">
-                <div class="ux-card-body">
-                    <div class="ux-icon-panel" data-ux-icon-position="stack" data-ux-align="horizontal" data-ux-text-align="center" data-ux-align="both">
-                       <div class="ux-icon-panel-image">
-                           <!--  SVG BEGIN -->
-<div class="ux-image-embed-container"  
-    style="--ux-custom-image-width:80px">
-    <div class="ux-image-embed media-element-container">
-    
-        <svg  class="ux-image-embed-svg" id="b02ee856-b8b5-4296-a2db-219befdcce65" data-name="Icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><defs><style>.bb4af0a8-a6d0-4a7e-b302-34f40346d067{fill:#e00;}</style></defs><title>Icon-Red_Hat-Objects-Bank_safe-A-Red-RGB</title><path class="bb4af0a8-a6d0-4a7e-b302-34f40346d067" d="M23.71,11.69a.72.72,0,0,0,.29.06.75.75,0,0,0,.29-.06.78.78,0,0,0,.24-.16.75.75,0,0,0,0-1.06.63.63,0,0,0-.24-.16.73.73,0,0,0-.58,0,.63.63,0,0,0-.24.16.78.78,0,0,0-.16.24.74.74,0,0,0,.16.82A.78.78,0,0,0,23.71,11.69ZM29,6.25H7A.76.76,0,0,0,6.27,7V29a.76.76,0,0,0,.75.75H29a.76.76,0,0,0,.75-.75V7A.76.76,0,0,0,29,6.25Zm-.75,22H7.77V7.75H28.23ZM12.73,18a4.51,4.51,0,0,0,1.62,3.44L13,23.77a.75.75,0,0,0,.26,1,.67.67,0,0,0,.38.11.74.74,0,0,0,.64-.36l1.39-2.31a4.45,4.45,0,0,0,6-3.46h2.72a.75.75,0,1,0,0-1.5H21.67a4.46,4.46,0,0,0-6-3.46l-1.35-2.35a.75.75,0,0,0-1.31.74l1.36,2.36A4.5,4.5,0,0,0,12.73,18Zm4.51-3a3,3,0,0,1,2.91,2.26l-2.47,0-1.24-2.16A3,3,0,0,1,17.24,15Zm.47,3.78,2.43,0a2.95,2.95,0,0,1-3.7,2.14Zm-2.57-2.92,1.26,2.19-1.27,2.1a3,3,0,0,1,0-4.29Z"/></svg>
-
-    </div>
-</div>
-<!--  SVG END -->
-                       </div>
-                       <div class="ux-icon-panel-content">
-                           <h3 class="ux-icon-panel-headline">Data protection</h3>
-                           <p class="ux-icon-panel-description">Restricts access to directory data with control down to the attribute value level.</p>
-                       </div>
-                   </div>
+                <div slot="tray" data-column="10311" hidden></div>
+              </pfe-navigation-item>
+            </li>
+            <li>
+              <pfe-navigation-item>
+                <div slot="trigger">
+                  <a
+                    href="https://www.redhat.com/en/solutions"
+                    data-analytics-region="nav"
+                    data-analytics="Solutions"
+                    data-analytics-label="Solutions"
+                    data-analytics-level="1"
+                    >Solutions</a
+                  >
                 </div>
-            </div>
-
-<!------------ FEATURE CARD -->
-             <div class="ux-card" data-ux-theme="light white" data-ux-spacing="half">
-                <div class="ux-card-body">
-                    <div class="ux-icon-panel" data-ux-icon-position="stack" data-ux-align="horizontal" data-ux-text-align="center" data-ux-align="both">
-                       <div class="ux-icon-panel-image">
-                        <!--   <span class="rh-icon-instructor" aria-label="Instructor icon"></span> -->
-<!--  SVG BEGIN -->
-
-<div class="ux-image-embed-container"  
-    style="--ux-custom-image-width:80px">
-    <div class="ux-image-embed media-element-container">
-    
-        <svg  class="ux-image-embed-svg" id="f76727aa-e63d-43a2-974d-d5421eccf8b9" data-name="Icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><defs><style>.a5e0372b-1780-4e59-af7b-a85246889d33{fill:#e00;}</style></defs><title>Icon-Red_Hat-Hardware-Mobile_Devices-A-Red-RGB</title><path class="a5e0372b-1780-4e59-af7b-a85246889d33" d="M14,7.75a.75.75,0,0,0,.53-1.28.78.78,0,0,0-.24-.16.73.73,0,0,0-.58,0,.78.78,0,0,0-.24.16A.75.75,0,0,0,14,7.75Zm2,16.5H12a.75.75,0,0,0,0,1.5h4a.75.75,0,0,0,0-1.5ZM31,12.25H23.71V4A.76.76,0,0,0,23,3.25H5A.75.75,0,0,0,4.21,4V28a.75.75,0,0,0,.75.75H19.21V32a.75.75,0,0,0,.75.75H31a.75.75,0,0,0,.75-.75V13A.75.75,0,0,0,31,12.25ZM19.21,13V27.25H5.71V4.75h16.5v7.5H20A.75.75,0,0,0,19.21,13ZM30.29,31.25H20.71V13.75h9.58ZM25,15.9a.71.71,0,0,0,.53.22.93.93,0,0,0,.29-.05A.66.66,0,0,0,26,15.9a.63.63,0,0,0,.16-.24.67.67,0,0,0,.06-.28.73.73,0,0,0-.22-.53.76.76,0,0,0-1.06,0,.67.67,0,0,0-.16.24.72.72,0,0,0-.06.29.67.67,0,0,0,.06.28A.78.78,0,0,0,25,15.9Zm-1,14.48h3.16a.75.75,0,0,0,.75-.76.74.74,0,0,0-.75-.74H23.92a.74.74,0,0,0-.75.74A.75.75,0,0,0,23.92,30.38Z"/></svg>
-
-    </div>
-</div>
-
-<!--  SVG END -->
-                       </div>
-                       <div class="ux-icon-panel-content">
-                           <h3 class="ux-icon-panel-headline">Multiple access methods</h3>
-                           <p class="ux-icon-panel-description">Allows access anonymously or via authentication methods, like user ID and password or X.509v3 public key certificates.</p>
-                       </div>
-                   </div>
+                <div slot="tray" data-column="10331" hidden></div>
+              </pfe-navigation-item>
+            </li>
+            <li>
+              <pfe-navigation-item>
+                <div slot="trigger">
+                  <a
+                    href="https://www.redhat.com/en/services"
+                    data-analytics-region="nav"
+                    data-analytics="Services &amp; support"
+                    data-analytics-label="Services &amp; support"
+                    data-analytics-level="1"
+                    >Services & support</a
+                  >
                 </div>
-            </div>
-
-<!------------ FEATURE CARD -->
-             <div class="ux-card" data-ux-theme="light white" data-ux-spacing="half">
-                <div class="ux-card-body">
-                    <div class="ux-icon-panel" data-ux-icon-position="stack" data-ux-align="horizontal" data-ux-text-align="center" data-ux-align="both">
-                       <div class="ux-icon-panel-image">
-                        <!--   <span class="rh-icon-instructor" aria-label="Instructor icon"></span> -->
-<!--  SVG BEGIN -->
-
-<div class="ux-image-embed-container"  
-    style="--ux-custom-image-width:80px">
-    <div class="ux-image-embed media-element-container">
-    
-        <svg  class="ux-image-embed-svg" id="Icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><defs><style>.cls-1{fill:#e00;}</style></defs><title>Icon-Red_Hat-Documents-Paper_Checklist-A-Red-RGB</title><path class="cls-1" d="M26.75,7A.75.75,0,0,0,26,6.27H14a.63.63,0,0,0-.19,0l-.07,0a.66.66,0,0,0-.22.15l-4,4a.66.66,0,0,0-.15.22.14.14,0,0,0,0,.07.58.58,0,0,0,0,.19s0,0,0,0V29a.75.75,0,0,0,.75.75H26a.76.76,0,0,0,.75-.75ZM13.25,8.83v1.44H11.81Zm12,19.44H10.75V11.77H14a.76.76,0,0,0,.75-.75V7.77h10.5Z"/><path class="cls-1" d="M13.25,15v8a.75.75,0,0,0,.75.75h8a.76.76,0,0,0,.75-.75V20.35a.75.75,0,0,0-1.5,0v1.92h-6.5v-6.5h4.58a.75.75,0,0,0,0-1.5H14A.74.74,0,0,0,13.25,15Z"/><path class="cls-1" d="M17.2,18.49a.75.75,0,0,0-1.06,1.06l1.33,1.33a.75.75,0,0,0,1.06,0l4-4a.75.75,0,0,0-1.06-1.06L18,19.29Z"/></svg>
-        
-    </div>
-</div>
-
-<!--  SVG END -->
-                       </div>
-                       <div class="ux-icon-panel-content">
-                           <h3 class="ux-icon-panel-headline">Policy replication</h3>
-                           <p class="ux-icon-panel-description">Stores access control list (ACL) information with each entry so that security policy is replicated with the data.</p>
-                       </div>
-                   </div>
+                <div slot="tray" data-column="138281" hidden></div>
+              </pfe-navigation-item>
+            </li>
+            <li>
+              <pfe-navigation-item>
+                <div slot="trigger">
+                  <a
+                    href="https://www.redhat.com/en/resources"
+                    data-analytics-region="nav"
+                    data-analytics="Resources"
+                    data-analytics-label="Resources"
+                    data-analytics-level="1"
+                    >Resources</a
+                  >
                 </div>
-            </div>
-
-<!------------ FEATURE CARD -->
-             <div class="ux-card" data-ux-theme="light white" data-ux-spacing="half">
-                <div class="ux-card-body">
-                    <div class="ux-icon-panel" data-ux-icon-position="stack" data-ux-align="horizontal" data-ux-text-align="center" data-ux-align="both">
-                       <div class="ux-icon-panel-image">
-                           <!--  SVG BEGIN -->
-
-<div class="ux-image-embed-container"  
-    style="--ux-custom-image-width:80px">
-    <div class="ux-image-embed media-element-container">
-    
-        <svg  class="ux-image-embed-svg" id="Icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><defs><style>.cls-1{fill:#e00;}</style></defs><title>Icon-Red_Hat-Objects-Padlock_Locked-A-Red-RGB</title><path class="cls-1" d="M18,6.27A5.76,5.76,0,0,0,12.25,12v2.39H10a.75.75,0,0,0-.75.75v14a.75.75,0,0,0,.75.75H26a.76.76,0,0,0,.75-.75v-14a.76.76,0,0,0-.75-.75H23.75V12A5.76,5.76,0,0,0,18,6.27ZM13.75,12a4.25,4.25,0,0,1,8.5,0v2.39h-8.5Zm11.5,3.89v2.5H19a.75.75,0,0,0,0,1.5h6.25v1.5H19a.75.75,0,0,0,0,1.5h6.25v1.5H19a.75.75,0,0,0,0,1.5h6.25v2.5H10.75V15.91Z"/></svg>
-
-    </div>
-</div>
-
-<!--  SVG END -->
-                       </div>
-                       <div class="ux-icon-panel-content">
-                           <h3 class="ux-icon-panel-headline">Certificate-based authentication</h3>
-                           <p class="ux-icon-panel-description">Provides the foundation for strong certificate-based authentication when used in conjunction with <a href="https://www.redhat.com/en/technologies/cloud-computing/certificate-system">Red Hat Certificate System</a>.</p>
-                       </div>
-                   </div>
+                <div slot="tray" data-column="169591" hidden></div>
+              </pfe-navigation-item>
+            </li>
+            <li>
+              <pfe-navigation-item>
+                <div slot="trigger">
+                  <a
+                    href="https://www.redhat.com/en/about"
+                    data-analytics-region="nav"
+                    data-analytics="Red Hat &amp; open source"
+                    data-analytics-label="Red Hat &amp; open source"
+                    data-analytics-level="1"
+                    >Red Hat & open source</a
+                  >
                 </div>
-            </div>
-<!--end ux-card-->
-        </div>
+                <div slot="tray" data-column="10351" hidden></div>
+              </pfe-navigation-item>
+            </li>
+          </ul>
+        </pfe-navigation-main>
 
-    </div>
-</section>
-
-
-<section class="ux-band" data-ux-band-background="white">
-  <div class="ux-band-container">
-      <div class="ux-group" data-ux-layout="9 3">
-            <header class="ux-band-header">
-                <h2 class="ux-band-header-title">Product details</h2>
-                <h3 class="ux-band-header-headline">Centralize identity information in a network-based registry</h3>
-            </header>
-        </div>
-        <div class="ux-band-body" data-ux-layout="12">
-            <div class="ux-accordion">
-               <div class="ux-accordion-item" data-ux-state="open">
-                   <div class="ux-accordion-header">
-                       <a class="ux-accordion-headline">Let users work from any computer</a>
-                   </div>
-                   <div class="ux-group ux-accordion-content" data-ux-layout="8 4">
-                       <div class="ux-generic">
-                           <p>Red Hat Directory Server is an operating system-independent, network-based registry that lets administrators centrally store user identity and application information, like:</p>
-                           <ul>
-                             <li>Application settings</li>
-                             <li>User profiles</li>
-                             <li>Group data</li>
-                             <li>Policies</li>
-                             <li>Access control information</li>
-                           </ul>
-                           <p>Applications can achieve location independence by storing and retrieving preferences in the directory instead of reading separate files on a user’s desktop. This lets users work at virtually any computer—as if they were at their own desktops. It also lets IT administrators manage user credentials and profiles in 1 place, regardless of the size or number of apps that use the information.</p>
-                       </div>
-                        </div> <!--end group-->
-               </div>
-               <div class="ux-accordion-item">
-                   <div class="ux-accordion-header">
-                       <a class="ux-accordion-headline" >Increased availability</a>
-                   </div>
-                   <div class="ux-group ux-accordion-content" data-ux-layout="8 4">
-                       <div class="ux-generic">
-                           <p>4-way multimaster replication of data across the enterprise helps ensure high availability. Deploying multiple master servers eliminates write availability as a single point of failure. Red Hat Directory Server also minimizes downtime for administration and maintenance by allowing backups, configuration changes, schema updates, indexing, and restoration of data to occur while the directory is online.</p>
-                       </div>
-                   </div> <!--end group-->
-               </div>     
-
-               <div class="ux-accordion-item">
-                   <div class="ux-accordion-header">
-                       <a class="ux-accordion-headline" >Simple management</a>
-                   </div>
-                   <div class="ux-group ux-accordion-content" data-ux-layout="8 4">
-                       <div class="ux-generic">
-                           <p>Red Hat Directory Server simplifies user management by eliminating data redundancy and automating data maintenance. 4-way multimaster replication also makes architecting and designing the directory deployment more flexible. Scripts for monitoring and troubleshooting replication simplify the process for administrators. Updates can be simultaneously applied to 1 or more directories, and changes automatically propagate to other participating servers.</p>
-                       </div>
-                   </div> <!--end group-->
-               </div> 
-
-               <div class="ux-accordion-item">
-                   <div class="ux-accordion-header">
-                       <a class="ux-accordion-headline" >Low administration costs</a>
-                   </div>
-                   <div class="ux-group ux-accordion-content" data-ux-layout="8 4">
-                       <div class="ux-generic">
-                           <p>By centralizing the management of people and their profiles, Red Hat Directory Server cuts administrative costs. It also allows personalization by acting as a central repository for user profiles and preferences.</p>
-                       </div>
-                   </div> <!--end group-->
-               </div>                  
-                
-        </div>
-    </div>
-   
-    </div>
-</section>
-
-
-<!--PROMO-->
-
-
-
-<!-- Rely on Red Hat band -->
-<section class="ux-band" data-ux-band-background="darker-gray" data-ux-band-collapse="half" data-ux-theme="dark desaturated">
-    <div class="ux-band-container">
-        <div class="ux-band-header" data-ux-text-align="center">
-            <h2 class="ux-band-header-headline">Rely on Red Hat</h2>
-        </div>
-        <div class="ux-band-body" data-ux-align="horizontal" data-ux-text-align="center" data-ux-layout="9">
-            <div class="ux-generic">
-                <p>Our subscriptions come with award-winning <a href="https://www.redhat.com/en/services/support">support;</a> the industry's <a href="https://access.redhat.com/ecosystem">largest ecosystem</a> of partners, customers, and experts; hardware certifications; and a connection to <a href="https://www.redhat.com/en/old-open-source">open source</a> communities where we source the best features and harden them for our enterprise products.</p>
-                <p>Need more support? You can also rely on our <a href="https://www.redhat.com/en/services/support/technical-account-management">Technical Account Managers</a> to help you solve your IT challenges.</p>
-            </div>
-        </div>
-        <footer class="ux-band-footer" data-ux-text-align="center">
-            <div class="ux-cta">
-                <a href="https://www.redhat.com/en/about/value-of-subscription" class="ux-cta-link" data-ux-cta-type="ghost">Learn about subscriptions</a>
-            </div>
-        </footer>
-    </div>
-</section>
-
-<section class="ux-band" data-ux-band-background="gray">
-    <div class="ux-band-container">
-        <header class="ux-band-header">
-            <p class="ux-band-header-title">Services &amp; programs</p>
-            <h2 class="ux-band-header-headline">More ways to improve your Red Hat experience</h2>
-        </header>
-        <div class="ux-group" data-ux-layout="6 6 flex">
-            <div class="ux-card" data-ux-card-background="white" data-ux-layout="card-min-stacked" data-ux-justify="justify">
-                <div class="ux-card-body">
-                    <div class="ux-generic">
-                        <h3>Consulting</h3>
-                       <p>Our strategic advisers can help you find ways to use Red Hat Ceph Storage to scale performance and save on data storage costs.</p>
-
-                    </div>
-                </div>
-                <div class="ux-card-footer">
-                    <div class="ux-cta">
-                        <a href="https://www.redhat.com/en/services/consulting-overview" class="ux-cta-link" data-ux-cta-type="secondary">Learn more</a>
-                    </div>
-                </div>
-            </div><!--end ux-card-->
-            <div class="ux-card" data-ux-card-background="white" data-ux-justify="justify" data-ux-layout="card-min-stacked">
-                <div class="ux-card-body">
-                    <div class="ux-generic">
-                        <h3>Partner program</h3>
-                        <p>Red Hat Connect is a partner community where we work together to build ideal customer solutions and support the services you provide with our products. So let’s do something great&mdash;together.</p>
-                    </div>
-                </div>
-                <div class="ux-card-footer">
-                    <div class="ux-cta">
-                        <a href="https://connect.redhat.com/" class="ux-cta-link" data-ux-cta-type="secondary">See how</a>
-                    </div>
-                </div>
-            </div><!--end ux-card-->
-
-        </div>
-    </div>
-</section>
-
-</div>
-
-<section class="ux-band" data-ux-text-align="center">
-    <div class="ux-band-container">
-        <h2 class="ux-band-header-headline" data-ux-text-align="center">
-            Ready to learn more about Red Hat Directory Server?
-        </h2>
-        <div class="ux-cta" data-ux-align="horizontal">
-            <a class="ux-cta-link" data-ux-cta-type="primary" href="https://www.redhat.com/en/contact">Talk to a Red Hatter</a>
-        </div>
-    </div>
-</section>
-
-</div>
-      </div>
-</div>
-
-  
-  
-</article>
-
-</div>
-  </div>
-          
-    
-  </div>
-
-  <footer>
-      <section class="rc-footer-menu" data-rc-toggle-id="footer-extended" >
-      <div class="container rc-footer-menu-container">
-        <nav class="row rc-footer-menu-about-items"><div class="rc-footer-menu-about-col foot-about foot-about"><div class="rc-footer-menu-list-header"><h3 class="rc-footer-menu-list-header-title">About</h3></div><p class="rc-footer-menu-about-description">We’re the world’s leading provider of enterprise open source solutions, using a community-powered approach to deliver high-performing Linux, cloud, container, and Kubernetes technologies. We help you standardize across environments, develop cloud-native applications, and integrate, automate, secure, and manage complex environments with award-winning support, training, and consulting services.</p><ul class="rc-footer-menu-about-list"><li><a href="https://www.redhat.com/en/about/company">Company information</a></li>
-<li><a href="https://www.redhat.com/en/jobs-overview">Jobs</a></li>
-<li><a href="https://www.redhat.com/en/about/office-locations">Locations</a></li>
-<li><a href="https://www.redhat.com/en/about/development-model">Development model</a></li>
-<li><a href="https://www.redhat.com/en/events">Events</a></li>
-<li><a href="https://www.redhat.com/en/about/newsroom">Newsroom</a></li>
-<li><a href="https://www.redhat.com/en/blog">Blog</a></li>
-<li><a href="https://coolstuff.redhat.com/">Cool Stuff Store</a></li>
-</ul><div class="rc-footer-menu-social-links"><nav id="foot-social"><ul><li class="first leaf"><a href="http://www.linkedin.com/company/red-hat" class="icon-linkedin-sign"></a></li>
-<li class="leaf"><a href="http://www.youtube.com/user/RedHatVideos" class="icon-youtube"></a></li>
-<li class="leaf"><a href="https://www.facebook.com/redhatinc" class="icon-facebook"></a></li>
-<li class="last leaf"><a href="https://twitter.com/RedHat" class="icon-twitter"></a></li>
-</ul></nav></div></div>
-</nav>        <nav class="row rc-footer-menu-items"><div class="rc-footer-menu-col foot-products"><div class="rc-footer-menu-list-header" data-rc-state="closed" data-rc-toggle-visuals="xxs xs sm " aria-expanded="false" tabindex="0"><span class="rc-footer-menu-list-header-indicator" data-rc-indicator-symbol="plus" data-rc-hidden-at="lg "></span><h3 class="rc-footer-menu-list-header-title">Products</h3></div><ul class="rc-footer-menu-list" data-rc-toggle-target="xxs xs sm" data-rc-state="closed" data-rc-toggle="hide" aria-expanded="false"><li><a href="https://www.redhat.com/en/technologies/management/ansible">Red Hat Ansible Automation Platform</a></li>
-<li><a href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux">Red Hat Enterprise Linux</a></li>
-<li><a href="https://www.redhat.com/en/technologies/cloud-computing/openshift">Red Hat OpenShift</a></li>
-<li><a href="https://www.redhat.com/en/technologies/cloud-computing/openshift-data-foundation">Red Hat OpenShift Data Foundation</a></li>
-<li><a href="https://www.redhat.com/en/technologies/linux-platforms/openstack-platform">Red Hat  OpenStack Platform</a></li>
-<li><a href="https://www.redhat.com/en/technologies/all-products">See all products</a></li>
-</ul></div>
-<div class="rc-footer-menu-col foot-tools"><div class="rc-footer-menu-list-header" data-rc-state="closed" data-rc-toggle-visuals="xxs xs sm " aria-expanded="false" tabindex="0"><span class="rc-footer-menu-list-header-indicator" data-rc-indicator-symbol="plus" data-rc-hidden-at="lg "></span><h3 class="rc-footer-menu-list-header-title">Tools</h3></div><ul class="rc-footer-menu-list" data-rc-toggle-target="xxs xs sm" data-rc-state="closed" data-rc-toggle="hide" aria-expanded="false"><li><a href="https://sso.redhat.com/">My account</a></li>
-<li><a href="https://access.redhat.com/">Customer support</a></li>
-<li><a href="https://connect.redhat.com/">Partner resources</a></li>
-<li><a href="https://developers.redhat.com/">Developer resources</a></li>
-<li><a href="https://www.redhat.com/en/services/training-and-certification">Training and certification</a></li>
-<li><a href="https://catalog.redhat.com/">Red Hat Ecosystem Catalog</a></li>
-<li><a href="https://www.redhat.com/en/resources">Resource library</a></li>
-</ul></div>
-<div class="rc-footer-menu-col foot-try-buy-sell"><div class="rc-footer-menu-list-header" data-rc-state="closed" data-rc-toggle-visuals="xxs xs sm " aria-expanded="false" tabindex="0"><span class="rc-footer-menu-list-header-indicator" data-rc-indicator-symbol="plus" data-rc-hidden-at="lg "></span><h3 class="rc-footer-menu-list-header-title">Try, buy, sell</h3></div><ul class="rc-footer-menu-list" data-rc-toggle-target="xxs xs sm" data-rc-state="closed" data-rc-toggle="hide" aria-expanded="false"><li><a href="https://www.redhat.com/en/products/trials">Product trial center</a></li>
-<li><a href="https://www.redhat.com/en/store">Red Hat Store</a></li>
-<li><a href="https://marketplace.redhat.com/">Red Hat Marketplace</a></li>
-<li><a href="https://www.redhat.com/en/about/japan-buy">Buy online (Japan)</a></li>
-<li><a href="http://redhat.force.com/finder/">Find a partner</a></li>
-<li><a href="https://www.redhat.com/en/contact">Contact sales</a></li>
-<li><a href="https://www.redhat.com/en/services/training-and-certification/contact-us">Contact training</a></li>
-<li><a href="https://www.redhat.com/en/services/consulting-overview#contact-form">Contact consulting</a></li>
-</ul></div>
-<div class="rc-footer-menu-col foot-communicate"><div class="rc-footer-menu-list-header" data-rc-state="closed" data-rc-toggle-visuals="xxs xs sm " aria-expanded="false" tabindex="0"><span class="rc-footer-menu-list-header-indicator" data-rc-indicator-symbol="plus" data-rc-hidden-at="lg "></span><h3 class="rc-footer-menu-list-header-title">Communicate</h3></div><ul class="rc-footer-menu-list" data-rc-toggle-target="xxs xs sm" data-rc-state="closed" data-rc-toggle="hide" aria-expanded="false"><li><a href="https://www.redhat.com/en/contact">Contact us</a></li>
-<li><a href="https://www.redhat.com/en/about/feedback">Feedback</a></li>
-<li><a href="https://www.redhat.com/en/about/social">Social</a></li>
-<li><a href="https://engage.redhat.com/Global-Preference-Center?newsletter=RH-Shares&amp;intcmp=7016000000154xCAAQ">Red Hat newsletter</a></li>
-</ul></div>
-</nav>      </div>
-    </section>
-        <section class="rc-footer-traditional">
-      <div class="container rc-footer-traditional-container">
-        <section class="rc-footer-traditional-section">
-          <div class="rc-footer-traditional-logo">
-            <div class="row">
-              <a href="https://www.redhat.com/en">
-                <img src="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo.svg" class="screen" title="Red Hat" />
-                </a>
+        <!-- Language -->
+        <pfe-navigation-item
+          slot="language"
+          pfe-icon="web-globe"
+          id="utility-globe"
+        >
+          <div slot="trigger">
+            <a
+              href="https://www.redhat.com/en/select-language"
+              data-analytics-region="utility"
+              data-analytics="Language"
+              data-analytics-label="Language"
+              >English</a
+            >
+          </div>
+          <div slot="tray" hidden>
+            <div class="pfe-navigation-item__tray--container">
+              <div class="language-picker">
+                <h3 class="pfe-headline-2">Select a language</h3>
+                <ul>
+                  <li class="pfe-headline-5">
+                    <a
+                      href="https://www.redhat.com/zh/technologies/cloud-computing/directory-server"
+                      class="language-link"
+                      xml:lang="zh"
+                      hreflang="zh"
+                      title="product | red hat directory server"
+                      >简体中文</a
+                    >
+                  </li>
+                  <li class="pfe-headline-5">
+                    <a
+                      href="https://www.redhat.com/en/technologies/cloud-computing/directory-server"
+                      class="language-link active"
+                      xml:lang="en"
+                      hreflang="en"
+                      title="product | red hat directory server"
+                      >English</a
+                    >
+                  </li>
+                  <li class="pfe-headline-5">
+                    <a
+                      href="https://www.redhat.com/fr/technologies/cloud-computing/directory-server"
+                      class="language-link"
+                      xml:lang="fr"
+                      hreflang="fr"
+                      title="product | red hat directory server"
+                      >Français</a
+                    >
+                  </li>
+                  <li class="pfe-headline-5">
+                    <a
+                      href="https://www.redhat.com/de/technologies/cloud-computing/directory-server"
+                      class="language-link"
+                      xml:lang="de"
+                      hreflang="de"
+                      title="product | red hat directory server"
+                      >Deutsch</a
+                    >
+                  </li>
+                  <li class="pfe-headline-5">
+                    <a
+                      href="https://www.redhat.com/it/technologies/cloud-computing/directory-server"
+                      class="language-link"
+                      xml:lang="it"
+                      hreflang="it"
+                      title="product | red hat directory server"
+                      >Italiano</a
+                    >
+                  </li>
+                  <li class="pfe-headline-5">
+                    <a
+                      href="https://www.redhat.com/ja/technologies/cloud-computing/directory-server"
+                      class="language-link"
+                      xml:lang="ja"
+                      hreflang="ja"
+                      title="product | red hat directory server"
+                      >日本語</a
+                    >
+                  </li>
+                  <li class="pfe-headline-5">
+                    <a
+                      href="https://www.redhat.com/ko/technologies/cloud-computing/directory-server"
+                      class="language-link"
+                      xml:lang="ko"
+                      hreflang="ko"
+                      title="product | red hat directory server"
+                      >한국어</a
+                    >
+                  </li>
+                  <li class="pfe-headline-5">
+                    <a
+                      href="https://www.redhat.com/pt-br/technologies/cloud-computing/directory-server"
+                      class="language-link"
+                      xml:lang="pt-br"
+                      hreflang="pt-br"
+                      title="product | red hat directory server"
+                      >Português</a
+                    >
+                  </li>
+                  <li class="pfe-headline-5">
+                    <a
+                      href="https://www.redhat.com/es/technologies/cloud-computing/directory-server"
+                      class="language-link"
+                      xml:lang="es"
+                      hreflang="es"
+                      title="product | red hat directory server"
+                      >Español</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div id="legal" class="rc-footer-traditional-legal">
-            <div class="row">
-              <div class="copyright">©2021 Red Hat, Inc.</div>
-              <div >
-                <ul class="menu"><li class="first leaf"><a href="https://www.redhat.com/en/about/privacy-policy">Privacy statement</a></li>
-<li class="leaf"><a href="https://www.redhat.com/en/about/terms-use">Terms of use</a></li>
-<li class="leaf"><a href="https://www.redhat.com/en/about/all-policies-guidelines">All policies and guidelines</a></li>
-<li class="leaf"><a href="https://www.redhat.com/en/about/digital-accessibility">Digital accessibility</a></li>
-<li class="last leaf"><span id="teconsent" class="nolink">|</span></li>
-</ul>              </div>
-            </div>
+        </pfe-navigation-item>
+        <div
+          slot="mobile-language"
+          pfe-icon="web-globe"
+          data-analytics-region="utility"
+          data-analytics="Language"
+          data-analytics-label="Language"
+        >
+          <a id="pfe-modal--trigger" tabindex="0">English</a>
+        </div>
+        <!-- Log in -->
+        <pfe-navigation-item
+          slot="login"
+          pfe-icon="web-user"
+          id="utility-account"
+        >
+          <div slot="trigger">
+            <a
+              href="https://sso.redhat.com/auth/realms/redhat-external/protocol/saml/clients/legacy-idp-servlets"
+              class="rh-user-loggedout"
+              data-analytics-region="utility"
+              data-analytics="login"
+              data-analytics-label="login"
+              >Log in</a
+            >
+            <a
+              href="https://sso.redhat.com/auth/realms/redhat-external/logout"
+              class="rh-user-loggedin"
+              data-analytics-region="utility"
+              data-analytics="login"
+              data-analytics-label="login"
+              >Account</a
+            >
+          </div>
+          <div slot="tray" hidden>
+            <div class="pfe-navigation-item__tray--container">
+              <section class="account-tray">
+                <header>
+                  <div class="container">
+                    <p class="rh-login-heading rh-user-loggedin">
+                      Welcome, <span class="rh-name"></span>
+                    </p>
+                    <p class="rh-login-heading rh-user-loggedout">
+                      Log in to your Red Hat account
+                    </p>
+                  </div>
+                </header>
+                <div class="content">
+                  <div class="container">
+                    <section class="account-login rh-user-loggedout">
+                      <div class="account-login-wrapper">
+                        <a
+                          href="https://sso.redhat.com/auth/realms/redhat-external/protocol/saml/clients/legacy-idp-servlets"
+                          id="redhat-account-login-link"
+                          class="account-login-link utility-user-login-link"
+                          data-analytics-region="utility"
+                          data-analytics="Log in"
+                          data-analytics-label="Log in"
+                          >Log in</a
+                        >
+                        <p>
+                          Your Red Hat account gives you access to your member
+                          profile and preferences, and the following services
+                          based on your customer status:
+                        </p>
+                        <div class="utility-user-additional-links">
+                          <div class="item-list">
+                            <ul>
+                              <li class="first">Customer Portal</li>
+                              <li class="last">
+                                Red Hat Connect for Business Partners
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="item-list">
+                            <ul>
+                              <li class="first">User management</li>
+                              <li class="last">Certification Central</li>
+                            </ul>
+                          </div>
+                        </div>
                       </div>
-          <div class="rc-footer-traditional-event-logo">
-            <div id="block-block-5" class="block block-block block-footer-promote">
+                      <div class="account-register-wrapper">
+                        <a
+                          href="https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/registrations?client_id=https%3A%2F%2Fwww.redhat.com%2Fwapps%2Fugc-oidc&amp;redirect_uri=https%3A%2F%2Fwww.redhat.com%2Fwapps%2Fugc%2Fprotected%2Faccount.html&amp;response_type=code&amp;scope=openid"
+                          class="account-register-link"
+                          data-analytics-region="utility"
+                          data-analytics="Register now"
+                          data-analytics-label="Register now"
+                          >Register now</a
+                        >
+                        <p class="account-register-heading">
+                          Not registered yet? Here are a few reasons why you
+                          should be:
+                        </p>
+                        <div class="item-list">
+                          <ul>
+                            <li class="first">
+                              Browse Knowledgebase articles, manage support
+                              cases and subscriptions, download updates, and
+                              more from one place.
+                            </li>
+                            <li>
+                              View users in your organization, and edit their
+                              account information, preferences, and permissions.
+                            </li>
+                            <li class="last">
+                              Manage your Red Hat certifications, view exam
+                              history, and download certification-related logos
+                              and documents.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="account-logout rh-user-loggedin">
+                      <div class="account-welcome-wrapper">
+                        <a
+                          href="https://www.redhat.com/wapps/ugc/protected/account.html"
+                          class="account-edit-link"
+                          data-analytics-region="utility"
+                          data-analytics="Edit your profile and preferences"
+                          data-analytics-label="Edit your profile and preferences"
+                          >Edit your profile and preferences</a
+                        >
+                        <p>
+                          Your Red Hat account gives you access to your member
+                          profile, preferences, and other services depending on
+                          your customer status.
+                        </p>
+                      </div>
+                      <div class="account-logout-wrapper">
+                        <p>
+                          For your security, if you&#039;re on a public computer
+                          and have finished using your Red Hat services, please
+                          be sure to log out.
+                        </p>
+                        <a
+                          href="https://sso.redhat.com/auth/realms/redhat-external/logout"
+                          id="redhat-account-logout-link"
+                          class="account-logout-link"
+                          data-analytics-region="utility"
+                          data-analytics="Log out"
+                          data-analytics-label="Log out"
+                          >Log out</a
+                        >
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </pfe-navigation-item>
+        <a
+          href="https://sso.redhat.com/auth/realms/redhat-external/protocol/saml/clients/legacy-idp-servlets"
+          class="rh-user-loggedout"
+          slot="mobile-login"
+          pfe-icon="web-user"
+          >Log in / Register</a
+        >
+        <a
+          href="https://www.redhat.com/wapps/ugc/protected/account.html"
+          class="rh-user-loggedin"
+          slot="mobile-login"
+          pfe-icon="web-user"
+          >Account</a
+        >
+        <!-- Site switcher -->
+        <pfe-navigation-item
+          slot="site-switcher"
+          pfe-icon="web-grid-3x3"
+          id="site-switcher"
+        >
+          <div slot="trigger">
+            <a
+              href="https://www.redhat.com/en/cms/ajax/site-switcher"
+              id="355871"
+              data-analytics-region="utility"
+              data-analytics="Websites"
+              data-analytics-label="Websites"
+              >All Red Hat</a
+            >
+          </div>
+          <div slot="tray" hidden>
+            <div class="pfe-navigation-item__tray--container">
+              <!-- Added via JS -->
+            </div>
+          </div>
+        </pfe-navigation-item>
+      </pfe-navigation>
 
-      
-  <a href="https://www.redhat.com/summit"><img src="https://www.redhat.com/cms/managed-files/Logo-Red_Hat-Summit-A-Standard-RGB-02_0.svg" alt="Red Hat Summit" style="float: right;" width="72px"></a>
-</div>
+      <!-- Language switcher modal, must be outside the navigation component -->
+      <pfe-modal class="language-picker" id="language-picker" hidden>
+        <h3 class="pfe-headline-2">Select a language</h3>
+        <ul>
+          <li class="pfe-headline-5">
+            <a
+              href="https://www.redhat.com/zh/technologies/cloud-computing/directory-server"
+              class="language-link"
+              xml:lang="zh"
+              hreflang="zh"
+              title="product | red hat directory server"
+              >简体中文</a
+            >
+          </li>
+          <li class="pfe-headline-5">
+            <a
+              href="https://www.redhat.com/en/technologies/cloud-computing/directory-server"
+              class="language-link active"
+              xml:lang="en"
+              hreflang="en"
+              title="product | red hat directory server"
+              >English</a
+            >
+          </li>
+          <li class="pfe-headline-5">
+            <a
+              href="https://www.redhat.com/fr/technologies/cloud-computing/directory-server"
+              class="language-link"
+              xml:lang="fr"
+              hreflang="fr"
+              title="product | red hat directory server"
+              >Français</a
+            >
+          </li>
+          <li class="pfe-headline-5">
+            <a
+              href="https://www.redhat.com/de/technologies/cloud-computing/directory-server"
+              class="language-link"
+              xml:lang="de"
+              hreflang="de"
+              title="product | red hat directory server"
+              >Deutsch</a
+            >
+          </li>
+          <li class="pfe-headline-5">
+            <a
+              href="https://www.redhat.com/it/technologies/cloud-computing/directory-server"
+              class="language-link"
+              xml:lang="it"
+              hreflang="it"
+              title="product | red hat directory server"
+              >Italiano</a
+            >
+          </li>
+          <li class="pfe-headline-5">
+            <a
+              href="https://www.redhat.com/ja/technologies/cloud-computing/directory-server"
+              class="language-link"
+              xml:lang="ja"
+              hreflang="ja"
+              title="product | red hat directory server"
+              >日本語</a
+            >
+          </li>
+          <li class="pfe-headline-5">
+            <a
+              href="https://www.redhat.com/ko/technologies/cloud-computing/directory-server"
+              class="language-link"
+              xml:lang="ko"
+              hreflang="ko"
+              title="product | red hat directory server"
+              >한국어</a
+            >
+          </li>
+          <li class="pfe-headline-5">
+            <a
+              href="https://www.redhat.com/pt-br/technologies/cloud-computing/directory-server"
+              class="language-link"
+              xml:lang="pt-br"
+              hreflang="pt-br"
+              title="product | red hat directory server"
+              >Português</a
+            >
+          </li>
+          <li class="pfe-headline-5">
+            <a
+              href="https://www.redhat.com/es/technologies/cloud-computing/directory-server"
+              class="language-link"
+              xml:lang="es"
+              hreflang="es"
+              title="product | red hat directory server"
+              >Español</a
+            >
+          </li>
+        </ul></pfe-modal
+      >
+      <div id="main-content">
+        <span id="rh-main-content"></span>
+        <div class="region region-content">
+          <div id="block-system-main" class="block block-system">
+            <article class="node-2771 node node-page clearfix">
+              <div
+                class="
+                  field
+                  field-name-body
+                  field-type-text-with-summary
+                  field-label-hidden
+                "
+              >
+                <div class="field-items">
+                  <div class="field-item even">
+                    <!-- *********************** CONTENT *********************** -->
+                    <div class="webux-markup">
+                      <!-- Hero -->
+                      <section
+                        class="ux-band"
+                        data-ux-band-collapse="bottom"
+                        data-ux-band-background="transparent"
+                      >
+                        <header>
+                          <div class="ux-band-container">
+                            <div
+                              class="ux-group"
+                              data-ux-layout-special="7 1 4"
+                            >
+                              <div
+                                class="ux-band-header"
+                                itemscope
+                                itemtype="http://schema.org/Product"
+                              >
+                                <p
+                                  class="ux-band-header-title"
+                                  itemprop="category"
+                                >
+                                  Cloud computing
+                                </p>
+                                <h1
+                                  class="ux-band-header-headline"
+                                  itemprop="name"
+                                >
+                                  Red Hat Directory Server
+                                </h1>
+                                <h2 class="ux-band-header-subheadline">
+                                  Easily manage access across partner, supplier,
+                                  and customer relationships
+                                </h2>
+                                <p
+                                  class="ux-band-header-summary"
+                                  itemprop="description"
+                                >
+                                  Managing user access to multiple systems is a
+                                  challenge. In a UNIX environment, providing
+                                  access based on locally stored information
+                                  becomes unmanageable as the number of systems
+                                  and users increases. Storing the user
+                                  information in a Lightweight Directory Access
+                                  Protocol (LDAP)-based directory&mdash;like Red
+                                  Hat&reg; Directory Server&mdash;makes the
+                                  system scalable, manageable, and secure.
+                                </p>
+
+                                <!--animation slices-->
+                                <div
+                                  class="ux-image-embed"
+                                  data-ux-layout="absolute"
+                                  data-ux-hide="xxs xs"
+                                >
+                                  <div class="ux-image-embed-container">
+                                    <!--slice1-->
+                                    <div
+                                      class="
+                                        media
+                                        media-element-container
+                                        media-default
+                                      "
+                                    >
+                                      <img
+                                        class="media-element file-default"
+                                        src="https://www.redhat.com/cms/managed-files/product-directory-server-slice1.png"
+                                        width="672"
+                                        height="600"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="ux-image-embed"
+                                  data-ux-layout="absolute"
+                                  data-ux-animation="delayedFadeIn"
+                                  data-ux-hide="xxs xs"
+                                >
+                                  <div class="ux-image-embed-container">
+                                    <!--slice2-->
+                                    <div
+                                      class="
+                                        media
+                                        media-element-container
+                                        media-default
+                                      "
+                                    >
+                                      <img
+                                        class="media-element file-default"
+                                        src="https://www.redhat.com/cms/managed-files/product-directory-server-slice2.png"
+                                        width="672"
+                                        height="600"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <!--for mobile devices-->
+                                <div
+                                  class="ux-image-embed"
+                                  data-ux-hide="sm md lg"
+                                  data-ux-align="both"
+                                >
+                                  <div class="ux-image-embed-container">
+                                    <div
+                                      class="
+                                        media
+                                        media-element-container
+                                        media-default
+                                      "
+                                    >
+                                      <img
+                                        class="media-element file-default"
+                                        src="https://www.redhat.com/cms/managed-files/product-directory-server-mobile.png"
+                                        width="500"
+                                        height="415"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!--end ux-band-header-->
+                            </div>
+                            <!--end ux-group-->
+                          </div>
+                          <!-- container -->
+                        </header>
+                      </section>
+
+                      <!-- CTA dropdown -->
+                      <section
+                        class="ux-band"
+                        data-ux-band-collapse="half"
+                        data-ux-band-background="transparent"
+                      >
+                        <div class="ux-band-container">
+                          <div class="ux-band-body">
+                            <div
+                              class="ux-group"
+                              data-ux-layout="left-on-mobile-center"
+                              data-ux-text-align="center"
+                            >
+                              <div
+                                class="ux-cta"
+                                data-ux-toggle-open="click"
+                                data-ux-toggle-id="buy-it-band"
+                                data-ux-arrow-color="dark"
+                              >
+                                <a
+                                  class="ux-cta-link"
+                                  data-ux-cta-type="ghost-product"
+                                  aria-label="Buy it, drop down menu"
+                                  >Buy it</a
+                                >
+                              </div>
+                              <div class="ux-cta">
+                                <a
+                                  class="ux-cta-link"
+                                  data-ux-cta-type="ghost-product"
+                                  href="https://rhn.redhat.com/rhn/software/channel/downloads/Download.do?cid=12680"
+                                  >Download it*</a
+                                >
+                                <small
+                                  >&nbsp;&nbsp;*Active subscription
+                                  required</small
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section
+                        class="ux-band"
+                        id="buy-it-band"
+                        data-ux-band-background="product"
+                        data-ux-state="closed"
+                        data-ux-toggle-target
+                        style="display: none"
+                        data-ux-band-collapse="half"
+                      >
+                        <div class="ux-band-container">
+                          <div
+                            class="ux-group"
+                            data-ux-layout="left-on-mobile-center"
+                            data-ux-theme="dark"
+                          >
+                            <div class="ux-cta">
+                              <a
+                                class="ux-cta-link"
+                                data-ux-cta-type="secondary"
+                                href="https://www.redhat.com/en/contact"
+                                >From a Red Hatter</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+
+                      <!-- Features and benefits -->
+
+                      <section
+                        class="ux-band"
+                        data-ux-band-background="gray"
+                        data-ux-band-collapse="bottom"
+                      >
+                        <div class="ux-band-container">
+                          <header
+                            class="ux-band-header"
+                            data-ux-text-align="center"
+                          >
+                            <h2 class="ux-band-header-headline">
+                              Features &amp; benefits
+                            </h2>
+                            <div class="ux-cta-group">
+                              <ul class="ux-cta-list">
+                                <li class="ux-cta-list-item">
+                                  <a
+                                    href="https://access.redhat.com/documentation/en-US/Red_Hat_Directory_Server/11/"
+                                    class="ux-cta-list-item-link"
+                                    >Get product documentation</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </header>
+                        </div>
+                      </section>
+                      <section class="ux-band" data-ux-band-background="gray">
+                        <div class="ux-band-container">
+                          <div
+                            class="ux-band-body"
+                            data-ux-layout="gallery3"
+                            data-ux-align="horizontal"
+                          >
+                            <!------------ FEATURE CARD -->
+                            <div
+                              class="ux-card"
+                              data-ux-theme="light white"
+                              data-ux-spacing="half"
+                            >
+                              <div class="ux-card-body">
+                                <div
+                                  class="ux-icon-panel"
+                                  data-ux-icon-position="stack"
+                                  data-ux-align="horizontal"
+                                  data-ux-text-align="center"
+                                  data-ux-align="both"
+                                >
+                                  <div class="ux-icon-panel-image">
+                                    <!--  SVG BEGIN -->
+                                    <div
+                                      class="ux-image-embed-container"
+                                      style="--ux-custom-image-width: 80px"
+                                    >
+                                      <div
+                                        class="
+                                          ux-image-embed
+                                          media-element-container
+                                        "
+                                      >
+                                        <svg
+                                          class="ux-image-embed-svg"
+                                          id="Icons"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 36 36"
+                                        >
+                                          <defs>
+                                            <style>
+                                              .cls-1 {
+                                                fill: #e00;
+                                              }
+                                            </style>
+                                          </defs>
+                                          <title>
+                                            Icon-Red_Hat-Objects-Control_Panel-A-Red-RGB
+                                          </title>
+                                          <path
+                                            class="cls-1"
+                                            d="M8.47,12.55a.75.75,0,0,0,1.06,0,1,1,0,0,0,.16-.25A.67.67,0,0,0,9.75,12a.72.72,0,0,0-.06-.29.82.82,0,0,0-.16-.25,1,1,0,0,0-.24-.16.83.83,0,0,0-.58,0,1,1,0,0,0-.24.16.67.67,0,0,0-.16.25.72.72,0,0,0-.06.29.67.67,0,0,0,.06.28A.76.76,0,0,0,8.47,12.55Z"
+                                          />
+                                          <path
+                                            class="cls-1"
+                                            d="M8.47,18.55a.75.75,0,0,0,1.06,0,1,1,0,0,0,.16-.25A.67.67,0,0,0,9.75,18a.75.75,0,0,0-.22-.53.81.81,0,0,0-.24-.17.77.77,0,0,0-.82.17.75.75,0,0,0-.22.53.67.67,0,0,0,.06.28A.76.76,0,0,0,8.47,18.55Z"
+                                          />
+                                          <path
+                                            class="cls-1"
+                                            d="M8.47,24.55a.75.75,0,0,0,1.06,0,1,1,0,0,0,.16-.25A.67.67,0,0,0,9.75,24a.75.75,0,0,0-.22-.53.81.81,0,0,0-.24-.17.77.77,0,0,0-.82.17.75.75,0,0,0-.22.53.67.67,0,0,0,.06.28A.76.76,0,0,0,8.47,24.55Z"
+                                          />
+                                          <path
+                                            class="cls-1"
+                                            d="M8.47,21.55a.75.75,0,0,0,1.06,0,1,1,0,0,0,.16-.25A.67.67,0,0,0,9.75,21a.75.75,0,0,0-.22-.53.81.81,0,0,0-.24-.17.77.77,0,0,0-.82.17.75.75,0,0,0-.22.53.67.67,0,0,0,.06.28A.76.76,0,0,0,8.47,21.55Z"
+                                          />
+                                          <path
+                                            class="cls-1"
+                                            d="M8.47,15.55a.75.75,0,0,0,1.06,0,1,1,0,0,0,.16-.25A.67.67,0,0,0,9.75,15a.75.75,0,0,0-.22-.53.81.81,0,0,0-.24-.17.77.77,0,0,0-.82.17.75.75,0,0,0-.22.53.67.67,0,0,0,.06.28A.76.76,0,0,0,8.47,15.55Z"
+                                          />
+                                          <path
+                                            class="cls-1"
+                                            d="M30.75,27V9.08A.76.76,0,0,0,30,8.33H6a.75.75,0,0,0-.75.75V27a.75.75,0,0,0,.75.75h5.94a.85.85,0,0,0,.17,0,.85.85,0,0,0,.17,0H30A.76.76,0,0,0,30.75,27Zm-19.39-.75H6.75V9.83h4.61Zm17.89,0H12.86V9.83H29.25Z"
+                                          />
+                                          <path
+                                            class="cls-1"
+                                            d="M15,14.77h.25V24a.75.75,0,0,0,1.5,0V14.77H17a.75.75,0,0,0,0-1.5h-.25V12a.75.75,0,0,0-1.5,0v1.25H15a.75.75,0,0,0,0,1.5Z"
+                                          />
+                                          <path
+                                            class="cls-1"
+                                            d="M20,21.77h.25V24a.75.75,0,0,0,1.5,0V21.77H22a.75.75,0,0,0,0-1.5h-.25V12a.75.75,0,1,0-1.5,0v8.25H20a.75.75,0,0,0,0,1.5Z"
+                                          />
+                                          <path
+                                            class="cls-1"
+                                            d="M25,18.77h.25V24a.75.75,0,0,0,1.5,0V18.77H27a.75.75,0,0,0,0-1.5h-.25V12a.75.75,0,1,0-1.5,0v5.25H25a.75.75,0,0,0,0,1.5Z"
+                                          />
+                                        </svg>
+                                      </div>
+                                    </div>
+
+                                    <!--  SVG END-->
+                                  </div>
+                                  <div class="ux-icon-panel-content">
+                                    <h3 class="ux-icon-panel-headline">
+                                      Deep control
+                                    </h3>
+                                    <p class="ux-icon-panel-description">
+                                      Gives you centralized, fine-grained access
+                                      control, including control based on user
+                                      identity, group membership, role identity,
+                                      IP address, domain name, or pattern-based
+                                      rules.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!------------ FEATURE CARD -->
+                            <div
+                              class="ux-card"
+                              data-ux-theme="light white"
+                              data-ux-spacing="half"
+                            >
+                              <div class="ux-card-body">
+                                <div
+                                  class="ux-icon-panel"
+                                  data-ux-icon-position="stack"
+                                  data-ux-align="horizontal"
+                                  data-ux-text-align="center"
+                                  data-ux-align="both"
+                                >
+                                  <div class="ux-icon-panel-image">
+                                    <!--  SVG BEGIN -->
+                                    <div
+                                      class="ux-image-embed-container"
+                                      style="--ux-custom-image-width: 80px"
+                                    >
+                                      <div
+                                        class="
+                                          ux-image-embed
+                                          media-element-container
+                                        "
+                                      >
+                                        <svg
+                                          class="ux-image-embed-svg"
+                                          id="b02ee856-b8b5-4296-a2db-219befdcce65"
+                                          data-name="Icon"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="36"
+                                          height="36"
+                                          viewBox="0 0 36 36"
+                                        >
+                                          <defs>
+                                            <style>
+                                              .bb4af0a8-a6d0-4a7e-b302-34f40346d067 {
+                                                fill: #e00;
+                                              }
+                                            </style>
+                                          </defs>
+                                          <title>
+                                            Icon-Red_Hat-Objects-Bank_safe-A-Red-RGB
+                                          </title>
+                                          <path
+                                            class="
+                                              bb4af0a8-a6d0-4a7e-b302-34f40346d067
+                                            "
+                                            d="M23.71,11.69a.72.72,0,0,0,.29.06.75.75,0,0,0,.29-.06.78.78,0,0,0,.24-.16.75.75,0,0,0,0-1.06.63.63,0,0,0-.24-.16.73.73,0,0,0-.58,0,.63.63,0,0,0-.24.16.78.78,0,0,0-.16.24.74.74,0,0,0,.16.82A.78.78,0,0,0,23.71,11.69ZM29,6.25H7A.76.76,0,0,0,6.27,7V29a.76.76,0,0,0,.75.75H29a.76.76,0,0,0,.75-.75V7A.76.76,0,0,0,29,6.25Zm-.75,22H7.77V7.75H28.23ZM12.73,18a4.51,4.51,0,0,0,1.62,3.44L13,23.77a.75.75,0,0,0,.26,1,.67.67,0,0,0,.38.11.74.74,0,0,0,.64-.36l1.39-2.31a4.45,4.45,0,0,0,6-3.46h2.72a.75.75,0,1,0,0-1.5H21.67a4.46,4.46,0,0,0-6-3.46l-1.35-2.35a.75.75,0,0,0-1.31.74l1.36,2.36A4.5,4.5,0,0,0,12.73,18Zm4.51-3a3,3,0,0,1,2.91,2.26l-2.47,0-1.24-2.16A3,3,0,0,1,17.24,15Zm.47,3.78,2.43,0a2.95,2.95,0,0,1-3.7,2.14Zm-2.57-2.92,1.26,2.19-1.27,2.1a3,3,0,0,1,0-4.29Z"
+                                          />
+                                        </svg>
+                                      </div>
+                                    </div>
+                                    <!--  SVG END -->
+                                  </div>
+                                  <div class="ux-icon-panel-content">
+                                    <h3 class="ux-icon-panel-headline">
+                                      Data protection
+                                    </h3>
+                                    <p class="ux-icon-panel-description">
+                                      Restricts access to directory data with
+                                      control down to the attribute value level.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!------------ FEATURE CARD -->
+                            <div
+                              class="ux-card"
+                              data-ux-theme="light white"
+                              data-ux-spacing="half"
+                            >
+                              <div class="ux-card-body">
+                                <div
+                                  class="ux-icon-panel"
+                                  data-ux-icon-position="stack"
+                                  data-ux-align="horizontal"
+                                  data-ux-text-align="center"
+                                  data-ux-align="both"
+                                >
+                                  <div class="ux-icon-panel-image">
+                                    <!--   <span class="rh-icon-instructor" aria-label="Instructor icon"></span> -->
+                                    <!--  SVG BEGIN -->
+
+                                    <div
+                                      class="ux-image-embed-container"
+                                      style="--ux-custom-image-width: 80px"
+                                    >
+                                      <div
+                                        class="
+                                          ux-image-embed
+                                          media-element-container
+                                        "
+                                      >
+                                        <svg
+                                          class="ux-image-embed-svg"
+                                          id="f76727aa-e63d-43a2-974d-d5421eccf8b9"
+                                          data-name="Icon"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="36"
+                                          height="36"
+                                          viewBox="0 0 36 36"
+                                        >
+                                          <defs>
+                                            <style>
+                                              .a5e0372b-1780-4e59-af7b-a85246889d33 {
+                                                fill: #e00;
+                                              }
+                                            </style>
+                                          </defs>
+                                          <title>
+                                            Icon-Red_Hat-Hardware-Mobile_Devices-A-Red-RGB
+                                          </title>
+                                          <path
+                                            class="
+                                              a5e0372b-1780-4e59-af7b-a85246889d33
+                                            "
+                                            d="M14,7.75a.75.75,0,0,0,.53-1.28.78.78,0,0,0-.24-.16.73.73,0,0,0-.58,0,.78.78,0,0,0-.24.16A.75.75,0,0,0,14,7.75Zm2,16.5H12a.75.75,0,0,0,0,1.5h4a.75.75,0,0,0,0-1.5ZM31,12.25H23.71V4A.76.76,0,0,0,23,3.25H5A.75.75,0,0,0,4.21,4V28a.75.75,0,0,0,.75.75H19.21V32a.75.75,0,0,0,.75.75H31a.75.75,0,0,0,.75-.75V13A.75.75,0,0,0,31,12.25ZM19.21,13V27.25H5.71V4.75h16.5v7.5H20A.75.75,0,0,0,19.21,13ZM30.29,31.25H20.71V13.75h9.58ZM25,15.9a.71.71,0,0,0,.53.22.93.93,0,0,0,.29-.05A.66.66,0,0,0,26,15.9a.63.63,0,0,0,.16-.24.67.67,0,0,0,.06-.28.73.73,0,0,0-.22-.53.76.76,0,0,0-1.06,0,.67.67,0,0,0-.16.24.72.72,0,0,0-.06.29.67.67,0,0,0,.06.28A.78.78,0,0,0,25,15.9Zm-1,14.48h3.16a.75.75,0,0,0,.75-.76.74.74,0,0,0-.75-.74H23.92a.74.74,0,0,0-.75.74A.75.75,0,0,0,23.92,30.38Z"
+                                          />
+                                        </svg>
+                                      </div>
+                                    </div>
+
+                                    <!--  SVG END -->
+                                  </div>
+                                  <div class="ux-icon-panel-content">
+                                    <h3 class="ux-icon-panel-headline">
+                                      Multiple access methods
+                                    </h3>
+                                    <p class="ux-icon-panel-description">
+                                      Allows access anonymously or via
+                                      authentication methods, like user ID and
+                                      password or X.509v3 public key
+                                      certificates.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!------------ FEATURE CARD -->
+                            <div
+                              class="ux-card"
+                              data-ux-theme="light white"
+                              data-ux-spacing="half"
+                            >
+                              <div class="ux-card-body">
+                                <div
+                                  class="ux-icon-panel"
+                                  data-ux-icon-position="stack"
+                                  data-ux-align="horizontal"
+                                  data-ux-text-align="center"
+                                  data-ux-align="both"
+                                >
+                                  <div class="ux-icon-panel-image">
+                                    <!--   <span class="rh-icon-instructor" aria-label="Instructor icon"></span> -->
+                                    <!--  SVG BEGIN -->
+
+                                    <div
+                                      class="ux-image-embed-container"
+                                      style="--ux-custom-image-width: 80px"
+                                    >
+                                      <div
+                                        class="
+                                          ux-image-embed
+                                          media-element-container
+                                        "
+                                      >
+                                        <svg
+                                          class="ux-image-embed-svg"
+                                          id="Icons"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 36 36"
+                                        >
+                                          <defs>
+                                            <style>
+                                              .cls-1 {
+                                                fill: #e00;
+                                              }
+                                            </style>
+                                          </defs>
+                                          <title>
+                                            Icon-Red_Hat-Documents-Paper_Checklist-A-Red-RGB
+                                          </title>
+                                          <path
+                                            class="cls-1"
+                                            d="M26.75,7A.75.75,0,0,0,26,6.27H14a.63.63,0,0,0-.19,0l-.07,0a.66.66,0,0,0-.22.15l-4,4a.66.66,0,0,0-.15.22.14.14,0,0,0,0,.07.58.58,0,0,0,0,.19s0,0,0,0V29a.75.75,0,0,0,.75.75H26a.76.76,0,0,0,.75-.75ZM13.25,8.83v1.44H11.81Zm12,19.44H10.75V11.77H14a.76.76,0,0,0,.75-.75V7.77h10.5Z"
+                                          />
+                                          <path
+                                            class="cls-1"
+                                            d="M13.25,15v8a.75.75,0,0,0,.75.75h8a.76.76,0,0,0,.75-.75V20.35a.75.75,0,0,0-1.5,0v1.92h-6.5v-6.5h4.58a.75.75,0,0,0,0-1.5H14A.74.74,0,0,0,13.25,15Z"
+                                          />
+                                          <path
+                                            class="cls-1"
+                                            d="M17.2,18.49a.75.75,0,0,0-1.06,1.06l1.33,1.33a.75.75,0,0,0,1.06,0l4-4a.75.75,0,0,0-1.06-1.06L18,19.29Z"
+                                          />
+                                        </svg>
+                                      </div>
+                                    </div>
+
+                                    <!--  SVG END -->
+                                  </div>
+                                  <div class="ux-icon-panel-content">
+                                    <h3 class="ux-icon-panel-headline">
+                                      Policy replication
+                                    </h3>
+                                    <p class="ux-icon-panel-description">
+                                      Stores access control list (ACL)
+                                      information with each entry so that
+                                      security policy is replicated with the
+                                      data.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!------------ FEATURE CARD -->
+                            <div
+                              class="ux-card"
+                              data-ux-theme="light white"
+                              data-ux-spacing="half"
+                            >
+                              <div class="ux-card-body">
+                                <div
+                                  class="ux-icon-panel"
+                                  data-ux-icon-position="stack"
+                                  data-ux-align="horizontal"
+                                  data-ux-text-align="center"
+                                  data-ux-align="both"
+                                >
+                                  <div class="ux-icon-panel-image">
+                                    <!--  SVG BEGIN -->
+
+                                    <div
+                                      class="ux-image-embed-container"
+                                      style="--ux-custom-image-width: 80px"
+                                    >
+                                      <div
+                                        class="
+                                          ux-image-embed
+                                          media-element-container
+                                        "
+                                      >
+                                        <svg
+                                          class="ux-image-embed-svg"
+                                          id="Icons"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 36 36"
+                                        >
+                                          <defs>
+                                            <style>
+                                              .cls-1 {
+                                                fill: #e00;
+                                              }
+                                            </style>
+                                          </defs>
+                                          <title>
+                                            Icon-Red_Hat-Objects-Padlock_Locked-A-Red-RGB
+                                          </title>
+                                          <path
+                                            class="cls-1"
+                                            d="M18,6.27A5.76,5.76,0,0,0,12.25,12v2.39H10a.75.75,0,0,0-.75.75v14a.75.75,0,0,0,.75.75H26a.76.76,0,0,0,.75-.75v-14a.76.76,0,0,0-.75-.75H23.75V12A5.76,5.76,0,0,0,18,6.27ZM13.75,12a4.25,4.25,0,0,1,8.5,0v2.39h-8.5Zm11.5,3.89v2.5H19a.75.75,0,0,0,0,1.5h6.25v1.5H19a.75.75,0,0,0,0,1.5h6.25v1.5H19a.75.75,0,0,0,0,1.5h6.25v2.5H10.75V15.91Z"
+                                          />
+                                        </svg>
+                                      </div>
+                                    </div>
+
+                                    <!--  SVG END -->
+                                  </div>
+                                  <div class="ux-icon-panel-content">
+                                    <h3 class="ux-icon-panel-headline">
+                                      Certificate-based authentication
+                                    </h3>
+                                    <p class="ux-icon-panel-description">
+                                      Provides the foundation for strong
+                                      certificate-based authentication when used
+                                      in conjunction with
+                                      <a
+                                        href="https://www.redhat.com/en/technologies/cloud-computing/certificate-system"
+                                        >Red Hat Certificate System</a
+                                      >.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end ux-card-->
+                          </div>
+                        </div>
+                      </section>
+
+                      <section class="ux-band" data-ux-band-background="white">
+                        <div class="ux-band-container">
+                          <div class="ux-group" data-ux-layout="9 3">
+                            <header class="ux-band-header">
+                              <h2 class="ux-band-header-title">
+                                Product details
+                              </h2>
+                              <h3 class="ux-band-header-headline">
+                                Centralize identity information in a
+                                network-based registry
+                              </h3>
+                            </header>
+                          </div>
+                          <div class="ux-band-body" data-ux-layout="12">
+                            <div class="ux-accordion">
+                              <div
+                                class="ux-accordion-item"
+                                data-ux-state="open"
+                              >
+                                <div class="ux-accordion-header">
+                                  <a class="ux-accordion-headline"
+                                    >Let users work from any computer</a
+                                  >
+                                </div>
+                                <div
+                                  class="ux-group ux-accordion-content"
+                                  data-ux-layout="8 4"
+                                >
+                                  <div class="ux-generic">
+                                    <p>
+                                      Red Hat Directory Server is an operating
+                                      system-independent, network-based registry
+                                      that lets administrators centrally store
+                                      user identity and application information,
+                                      like:
+                                    </p>
+                                    <ul>
+                                      <li>Application settings</li>
+                                      <li>User profiles</li>
+                                      <li>Group data</li>
+                                      <li>Policies</li>
+                                      <li>Access control information</li>
+                                    </ul>
+                                    <p>
+                                      Applications can achieve location
+                                      independence by storing and retrieving
+                                      preferences in the directory instead of
+                                      reading separate files on a user’s
+                                      desktop. This lets users work at virtually
+                                      any computer—as if they were at their own
+                                      desktops. It also lets IT administrators
+                                      manage user credentials and profiles in 1
+                                      place, regardless of the size or number of
+                                      apps that use the information.
+                                    </p>
+                                  </div>
+                                </div>
+                                <!--end group-->
+                              </div>
+                              <div class="ux-accordion-item">
+                                <div class="ux-accordion-header">
+                                  <a class="ux-accordion-headline"
+                                    >Increased availability</a
+                                  >
+                                </div>
+                                <div
+                                  class="ux-group ux-accordion-content"
+                                  data-ux-layout="8 4"
+                                >
+                                  <div class="ux-generic">
+                                    <p>
+                                      4-way multimaster replication of data
+                                      across the enterprise helps ensure high
+                                      availability. Deploying multiple master
+                                      servers eliminates write availability as a
+                                      single point of failure. Red Hat Directory
+                                      Server also minimizes downtime for
+                                      administration and maintenance by allowing
+                                      backups, configuration changes, schema
+                                      updates, indexing, and restoration of data
+                                      to occur while the directory is online.
+                                    </p>
+                                  </div>
+                                </div>
+                                <!--end group-->
+                              </div>
+
+                              <div class="ux-accordion-item">
+                                <div class="ux-accordion-header">
+                                  <a class="ux-accordion-headline"
+                                    >Simple management</a
+                                  >
+                                </div>
+                                <div
+                                  class="ux-group ux-accordion-content"
+                                  data-ux-layout="8 4"
+                                >
+                                  <div class="ux-generic">
+                                    <p>
+                                      Red Hat Directory Server simplifies user
+                                      management by eliminating data redundancy
+                                      and automating data maintenance. 4-way
+                                      multimaster replication also makes
+                                      architecting and designing the directory
+                                      deployment more flexible. Scripts for
+                                      monitoring and troubleshooting replication
+                                      simplify the process for administrators.
+                                      Updates can be simultaneously applied to 1
+                                      or more directories, and changes
+                                      automatically propagate to other
+                                      participating servers.
+                                    </p>
+                                  </div>
+                                </div>
+                                <!--end group-->
+                              </div>
+
+                              <div class="ux-accordion-item">
+                                <div class="ux-accordion-header">
+                                  <a class="ux-accordion-headline"
+                                    >Low administration costs</a
+                                  >
+                                </div>
+                                <div
+                                  class="ux-group ux-accordion-content"
+                                  data-ux-layout="8 4"
+                                >
+                                  <div class="ux-generic">
+                                    <p>
+                                      By centralizing the management of people
+                                      and their profiles, Red Hat Directory
+                                      Server cuts administrative costs. It also
+                                      allows personalization by acting as a
+                                      central repository for user profiles and
+                                      preferences.
+                                    </p>
+                                  </div>
+                                </div>
+                                <!--end group-->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+
+                      <!--PROMO-->
+
+                      <!-- Rely on Red Hat band -->
+                      <section
+                        class="ux-band"
+                        data-ux-band-background="darker-gray"
+                        data-ux-band-collapse="half"
+                        data-ux-theme="dark desaturated"
+                      >
+                        <div class="ux-band-container">
+                          <div
+                            class="ux-band-header"
+                            data-ux-text-align="center"
+                          >
+                            <h2 class="ux-band-header-headline">
+                              Rely on Red Hat
+                            </h2>
+                          </div>
+                          <div
+                            class="ux-band-body"
+                            data-ux-align="horizontal"
+                            data-ux-text-align="center"
+                            data-ux-layout="9"
+                          >
+                            <div class="ux-generic">
+                              <p>
+                                Our subscriptions come with award-winning
+                                <a
+                                  href="https://www.redhat.com/en/services/support"
+                                  >support;</a
+                                >
+                                the industry's
+                                <a href="https://access.redhat.com/ecosystem"
+                                  >largest ecosystem</a
+                                >
+                                of partners, customers, and experts; hardware
+                                certifications; and a connection to
+                                <a
+                                  href="https://www.redhat.com/en/old-open-source"
+                                  >open source</a
+                                >
+                                communities where we source the best features
+                                and harden them for our enterprise products.
+                              </p>
+                              <p>
+                                Need more support? You can also rely on our
+                                <a
+                                  href="https://www.redhat.com/en/services/support/technical-account-management"
+                                  >Technical Account Managers</a
+                                >
+                                to help you solve your IT challenges.
+                              </p>
+                            </div>
+                          </div>
+                          <footer
+                            class="ux-band-footer"
+                            data-ux-text-align="center"
+                          >
+                            <div class="ux-cta">
+                              <a
+                                href="https://www.redhat.com/en/about/value-of-subscription"
+                                class="ux-cta-link"
+                                data-ux-cta-type="ghost"
+                                >Learn about subscriptions</a
+                              >
+                            </div>
+                          </footer>
+                        </div>
+                      </section>
+
+                      <section class="ux-band" data-ux-band-background="gray">
+                        <div class="ux-band-container">
+                          <header class="ux-band-header">
+                            <p class="ux-band-header-title">
+                              Services &amp; programs
+                            </p>
+                            <h2 class="ux-band-header-headline">
+                              More ways to improve your Red Hat experience
+                            </h2>
+                          </header>
+                          <div class="ux-group" data-ux-layout="6 6 flex">
+                            <div
+                              class="ux-card"
+                              data-ux-card-background="white"
+                              data-ux-layout="card-min-stacked"
+                              data-ux-justify="justify"
+                            >
+                              <div class="ux-card-body">
+                                <div class="ux-generic">
+                                  <h3>Consulting</h3>
+                                  <p>
+                                    Our strategic advisers can help you find
+                                    ways to use Red Hat Ceph Storage to scale
+                                    performance and save on data storage costs.
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="ux-card-footer">
+                                <div class="ux-cta">
+                                  <a
+                                    href="https://www.redhat.com/en/services/consulting-overview"
+                                    class="ux-cta-link"
+                                    data-ux-cta-type="secondary"
+                                    >Learn more</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                            <!--end ux-card-->
+                            <div
+                              class="ux-card"
+                              data-ux-card-background="white"
+                              data-ux-justify="justify"
+                              data-ux-layout="card-min-stacked"
+                            >
+                              <div class="ux-card-body">
+                                <div class="ux-generic">
+                                  <h3>Partner program</h3>
+                                  <p>
+                                    Red Hat Connect is a partner community where
+                                    we work together to build ideal customer
+                                    solutions and support the services you
+                                    provide with our products. So let’s do
+                                    something great&mdash;together.
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="ux-card-footer">
+                                <div class="ux-cta">
+                                  <a
+                                    href="https://connect.redhat.com/"
+                                    class="ux-cta-link"
+                                    data-ux-cta-type="secondary"
+                                    >See how</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                            <!--end ux-card-->
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+
+                    <section class="ux-band" data-ux-text-align="center">
+                      <div class="ux-band-container">
+                        <h2
+                          class="ux-band-header-headline"
+                          data-ux-text-align="center"
+                        >
+                          Ready to learn more about Red Hat Directory Server?
+                        </h2>
+                        <div class="ux-cta" data-ux-align="horizontal">
+                          <a
+                            class="ux-cta-link"
+                            data-ux-cta-type="primary"
+                            href="https://www.redhat.com/en/contact"
+                            >Talk to a Red Hatter</a
+                          >
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <section class="rc-footer-menu" data-rc-toggle-id="footer-extended">
+          <div class="container rc-footer-menu-container">
+            <nav class="row rc-footer-menu-about-items">
+              <div class="rc-footer-menu-about-col foot-about foot-about">
+                <div class="rc-footer-menu-list-header">
+                  <h3 class="rc-footer-menu-list-header-title">About</h3>
+                </div>
+                <p class="rc-footer-menu-about-description">
+                  We’re the world’s leading provider of enterprise open source
+                  solutions, using a community-powered approach to deliver
+                  high-performing Linux, cloud, container, and Kubernetes
+                  technologies. We help you standardize across environments,
+                  develop cloud-native applications, and integrate, automate,
+                  secure, and manage complex environments with award-winning
+                  support, training, and consulting services.
+                </p>
+                <ul class="rc-footer-menu-about-list">
+                  <li>
+                    <a href="https://www.redhat.com/en/about/company"
+                      >Company information</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.redhat.com/en/jobs-overview">Jobs</a>
+                  </li>
+                  <li>
+                    <a href="https://www.redhat.com/en/about/office-locations"
+                      >Locations</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.redhat.com/en/about/development-model"
+                      >Development model</a
+                    >
+                  </li>
+                  <li><a href="https://www.redhat.com/en/events">Events</a></li>
+                  <li>
+                    <a href="https://www.redhat.com/en/about/newsroom"
+                      >Newsroom</a
+                    >
+                  </li>
+                  <li><a href="https://www.redhat.com/en/blog">Blog</a></li>
+                  <li>
+                    <a href="https://coolstuff.redhat.com/">Cool Stuff Store</a>
+                  </li>
+                </ul>
+                <div class="rc-footer-menu-social-links">
+                  <nav id="foot-social">
+                    <ul>
+                      <li class="first leaf">
+                        <a
+                          href="http://www.linkedin.com/company/red-hat"
+                          class="icon-linkedin-sign"
+                        ></a>
+                      </li>
+                      <li class="leaf">
+                        <a
+                          href="http://www.youtube.com/user/RedHatVideos"
+                          class="icon-youtube"
+                        ></a>
+                      </li>
+                      <li class="leaf">
+                        <a
+                          href="https://www.facebook.com/redhatinc"
+                          class="icon-facebook"
+                        ></a>
+                      </li>
+                      <li class="last leaf">
+                        <a
+                          href="https://twitter.com/RedHat"
+                          class="icon-twitter"
+                        ></a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </nav>
+            <nav class="row rc-footer-menu-items">
+              <div class="rc-footer-menu-col foot-products">
+                <div
+                  class="rc-footer-menu-list-header"
+                  data-rc-state="closed"
+                  data-rc-toggle-visuals="xxs xs sm "
+                  aria-expanded="false"
+                  tabindex="0"
+                >
+                  <span
+                    class="rc-footer-menu-list-header-indicator"
+                    data-rc-indicator-symbol="plus"
+                    data-rc-hidden-at="lg "
+                  ></span>
+                  <h3 class="rc-footer-menu-list-header-title">Products</h3>
+                </div>
+                <ul
+                  class="rc-footer-menu-list"
+                  data-rc-toggle-target="xxs xs sm"
+                  data-rc-state="closed"
+                  data-rc-toggle="hide"
+                  aria-expanded="false"
+                >
+                  <li>
+                    <a
+                      href="https://www.redhat.com/en/technologies/management/ansible"
+                      >Red Hat Ansible Automation Platform</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux"
+                      >Red Hat Enterprise Linux</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.redhat.com/en/technologies/cloud-computing/openshift"
+                      >Red Hat OpenShift</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.redhat.com/en/technologies/cloud-computing/openshift-data-foundation"
+                      >Red Hat OpenShift Data Foundation</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.redhat.com/en/technologies/linux-platforms/openstack-platform"
+                      >Red Hat OpenStack Platform</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.redhat.com/en/technologies/all-products"
+                      >See all products</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="rc-footer-menu-col foot-tools">
+                <div
+                  class="rc-footer-menu-list-header"
+                  data-rc-state="closed"
+                  data-rc-toggle-visuals="xxs xs sm "
+                  aria-expanded="false"
+                  tabindex="0"
+                >
+                  <span
+                    class="rc-footer-menu-list-header-indicator"
+                    data-rc-indicator-symbol="plus"
+                    data-rc-hidden-at="lg "
+                  ></span>
+                  <h3 class="rc-footer-menu-list-header-title">Tools</h3>
+                </div>
+                <ul
+                  class="rc-footer-menu-list"
+                  data-rc-toggle-target="xxs xs sm"
+                  data-rc-state="closed"
+                  data-rc-toggle="hide"
+                  aria-expanded="false"
+                >
+                  <li><a href="https://sso.redhat.com/">My account</a></li>
+                  <li>
+                    <a href="https://access.redhat.com/">Customer support</a>
+                  </li>
+                  <li>
+                    <a href="https://connect.redhat.com/">Partner resources</a>
+                  </li>
+                  <li>
+                    <a href="https://developers.redhat.com/"
+                      >Developer resources</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.redhat.com/en/services/training-and-certification"
+                      >Training and certification</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://catalog.redhat.com/"
+                      >Red Hat Ecosystem Catalog</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.redhat.com/en/resources"
+                      >Resource library</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="rc-footer-menu-col foot-try-buy-sell">
+                <div
+                  class="rc-footer-menu-list-header"
+                  data-rc-state="closed"
+                  data-rc-toggle-visuals="xxs xs sm "
+                  aria-expanded="false"
+                  tabindex="0"
+                >
+                  <span
+                    class="rc-footer-menu-list-header-indicator"
+                    data-rc-indicator-symbol="plus"
+                    data-rc-hidden-at="lg "
+                  ></span>
+                  <h3 class="rc-footer-menu-list-header-title">
+                    Try, buy, sell
+                  </h3>
+                </div>
+                <ul
+                  class="rc-footer-menu-list"
+                  data-rc-toggle-target="xxs xs sm"
+                  data-rc-state="closed"
+                  data-rc-toggle="hide"
+                  aria-expanded="false"
+                >
+                  <li>
+                    <a href="https://www.redhat.com/en/products/trials"
+                      >Product trial center</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.redhat.com/en/store">Red Hat Store</a>
+                  </li>
+                  <li>
+                    <a href="https://marketplace.redhat.com/"
+                      >Red Hat Marketplace</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.redhat.com/en/about/japan-buy"
+                      >Buy online (Japan)</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://redhat.force.com/finder/">Find a partner</a>
+                  </li>
+                  <li>
+                    <a href="https://www.redhat.com/en/contact"
+                      >Contact sales</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.redhat.com/en/services/training-and-certification/contact-us"
+                      >Contact training</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.redhat.com/en/services/consulting-overview#contact-form"
+                      >Contact consulting</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="rc-footer-menu-col foot-communicate">
+                <div
+                  class="rc-footer-menu-list-header"
+                  data-rc-state="closed"
+                  data-rc-toggle-visuals="xxs xs sm "
+                  aria-expanded="false"
+                  tabindex="0"
+                >
+                  <span
+                    class="rc-footer-menu-list-header-indicator"
+                    data-rc-indicator-symbol="plus"
+                    data-rc-hidden-at="lg "
+                  ></span>
+                  <h3 class="rc-footer-menu-list-header-title">Communicate</h3>
+                </div>
+                <ul
+                  class="rc-footer-menu-list"
+                  data-rc-toggle-target="xxs xs sm"
+                  data-rc-state="closed"
+                  data-rc-toggle="hide"
+                  aria-expanded="false"
+                >
+                  <li>
+                    <a href="https://www.redhat.com/en/contact">Contact us</a>
+                  </li>
+                  <li>
+                    <a href="https://www.redhat.com/en/about/feedback"
+                      >Feedback</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.redhat.com/en/about/social">Social</a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://engage.redhat.com/Global-Preference-Center?newsletter=RH-Shares&amp;intcmp=7016000000154xCAAQ"
+                      >Red Hat newsletter</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
           </div>
         </section>
-      </div>
-    </section>
-  </footer>
-      <script type="text/javascript" src="https://www.redhat.com/ux/webux/js/product-detail/product-v3.js"></script>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-  if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
-      _satellite.pageBottom();
-  }
-//--><!]]>
-</script>
+        <section class="rc-footer-traditional">
+          <div class="container rc-footer-traditional-container">
+            <section class="rc-footer-traditional-section">
+              <div class="rc-footer-traditional-logo">
+                <div class="row">
+                  <a href="https://www.redhat.com/en">
+                    <img
+                      src="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo.svg"
+                      class="screen"
+                      title="Red Hat"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div id="legal" class="rc-footer-traditional-legal">
+                <div class="row">
+                  <div class="copyright">©2021 Red Hat, Inc.</div>
+                  <div>
+                    <ul class="menu">
+                      <li class="first leaf">
+                        <a href="https://www.redhat.com/en/about/privacy-policy"
+                          >Privacy statement</a
+                        >
+                      </li>
+                      <li class="leaf">
+                        <a href="https://www.redhat.com/en/about/terms-use"
+                          >Terms of use</a
+                        >
+                      </li>
+                      <li class="leaf">
+                        <a
+                          href="https://www.redhat.com/en/about/all-policies-guidelines"
+                          >All policies and guidelines</a
+                        >
+                      </li>
+                      <li class="leaf">
+                        <a
+                          href="https://www.redhat.com/en/about/digital-accessibility"
+                          >Digital accessibility</a
+                        >
+                      </li>
+                      <li class="last leaf">
+                        <span id="teconsent" class="nolink">|</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="rc-footer-traditional-event-logo">
+                <div
+                  id="block-block-5"
+                  class="block block-block block-footer-promote"
+                >
+                  <a href="https://www.redhat.com/summit"
+                    ><img
+                      src="https://www.redhat.com/cms/managed-files/Logo-Red_Hat-Summit-A-Standard-RGB-02_0.svg"
+                      alt="Red Hat Summit"
+                      style="float: right"
+                      width="72px"
+                  /></a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+      </footer>
+      <script
+        type="text/javascript"
+        src="https://www.redhat.com/ux/webux/js/product-detail/product-v3.js"
+      ></script>
+      <script type="text/javascript">
+        <!--//--><![CDATA[//><!--
+        if (
+          "undefined" !== typeof _satellite &&
+          "function" === typeof _satellite.pageBottom
+        ) {
+          _satellite.pageBottom();
+        }
+        //--><!]]>
+      </script>
     </div>
-  <script type="text/javascript"  src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"></script></body>
+    <script
+      type="text/javascript"
+      src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"
+    ></script>
+  </body>
 
-<!-- Mirrored from www.redhat.com/en/technologies/cloud-computing/directory-server by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:37:20 GMT -->
+  <!-- Mirrored from www.redhat.com/en/technologies/cloud-computing/directory-server by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:37:20 GMT -->
 </html>
