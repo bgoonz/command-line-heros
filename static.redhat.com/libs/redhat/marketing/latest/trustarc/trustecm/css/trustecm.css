@@ -14,7 +14,8 @@
 }
 
 .trustecm-embed__placeholder .trustecm-embed__placeholder--wrapper {
-  background: #000 no-repeat url('../images/TrustArc-Unable-to-Play-Video-BG-Sm-min.png') center;
+  background: #000 no-repeat
+    url("../images/TrustArc-Unable-to-Play-Video-BG-Sm-min.png") center;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -23,7 +24,7 @@
 .trustecm-embed__placeholder .trustecm-embed__placeholder--wrapper:before {
   /* 16:9 aspect ratio. */
   display: block;
-  content: '';
+  content: "";
   width: 100%;
   padding-top: calc((9 / 16) * 100%);
 }
@@ -45,83 +46,96 @@
 }
 
 .trustecm-embed__placeholder .trustecm-embed__placeholder--icon {
-  background: no-repeat url('https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/images/Warning-Icon-sm.svg') center;
+  background: no-repeat
+    url("https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/images/Warning-Icon-sm.svg")
+    center;
   height: 24px;
   width: 27px;
 }
 
 .trustecm-embed__placeholder .trustecm-embed__placeholder--label,
 .trustecm-embed__placeholder .trustecm-embed__placeholder--desc {
-  color: #FFF !important;
+  color: #fff !important;
 }
 
 .trustecm-embed__placeholder .trustecm-embed__placeholder--label {
   padding: 10px 0 10px 0;
-  font-family: 'RedHatDisplay', Helvetica, helvetica, arial, sans-serif;
+  font-family: "RedHatDisplay", Helvetica, helvetica, arial, sans-serif;
   font-weight: 400;
   font-size: large;
 }
 
 .trustecm-embed__placeholder .trustecm-embed__placeholder--desc {
-  font-family: 'Red Hat Text', 'RedHatText', 'Overpass', Overpass, Arial, sans-serif;
+  font-family: "Red Hat Text", "RedHatText", "Overpass", Overpass, Arial,
+    sans-serif;
   font-size: medium;
 }
 
 /* --- Embeds --- */
 
-iframe[data-trustecm='blocked'].trustecm-embed__advertising.trustecm-embed__advertising--video,
-iframe[data-trustecm='blocked'].trustecm-embed__functional.trustecm-embed__functional--video {
+iframe[data-trustecm="blocked"].trustecm-embed__advertising.trustecm-embed__advertising--video,
+iframe[data-trustecm="blocked"].trustecm-embed__functional.trustecm-embed__functional--video {
 }
 
 /* --- Responsive --- */
 
 /* Small. */
-.trustecm-embed__placeholder[data-size='small'] .trustecm-embed__placeholder--label {
+.trustecm-embed__placeholder[data-size="small"]
+  .trustecm-embed__placeholder--label {
   padding: 20px 0 40px 0;
 }
 
-.trustecm-embed__placeholder[data-size='small'] .trustecm-embed__placeholder--desc {
+.trustecm-embed__placeholder[data-size="small"]
+  .trustecm-embed__placeholder--desc {
   padding: 0 10%;
 }
 
 /* Medium. */
-.trustecm-embed__placeholder[data-size='medium'] .trustecm-embed__placeholder--wrapper {
-  background-image: url('../images/TrustArc-Unable-to-Play-Video-BG-Md-min.png');
+.trustecm-embed__placeholder[data-size="medium"]
+  .trustecm-embed__placeholder--wrapper {
+  background-image: url("../images/TrustArc-Unable-to-Play-Video-BG-Md-min.png");
 }
 
-.trustecm-embed__placeholder[data-size='medium'] .trustecm-embed__placeholder--icon {
-  background-image: url('https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/images/Warning-Icon-md.svg');
+.trustecm-embed__placeholder[data-size="medium"]
+  .trustecm-embed__placeholder--icon {
+  background-image: url("https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/images/Warning-Icon-md.svg");
   height: 48px;
   width: 54px;
 }
 
-.trustecm-embed__placeholder[data-size='medium'] .trustecm-embed__placeholder--label {
+.trustecm-embed__placeholder[data-size="medium"]
+  .trustecm-embed__placeholder--label {
   padding: 40px 0 80px 0;
   font-size: x-large;
 }
 
-.trustecm-embed__placeholder[data-size='medium'] .trustecm-embed__placeholder--desc {
+.trustecm-embed__placeholder[data-size="medium"]
+  .trustecm-embed__placeholder--desc {
   padding: 0 20%;
   font-size: large;
 }
 
 /* Large. */
-.trustecm-embed__placeholder[data-size='large'] .trustecm-embed__placeholder--wrapper {
-  background: url('../images/TrustArc-Unable-to-Play-Video-BG-Lg-min.png');
+.trustecm-embed__placeholder[data-size="large"]
+  .trustecm-embed__placeholder--wrapper {
+  background: url("../images/TrustArc-Unable-to-Play-Video-BG-Lg-min.png");
 }
 
-.trustecm-embed__placeholder[data-size='large'] .trustecm-embed__placeholder--icon {
-  background-image: url('https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/images/Warning-Icon-lg.svg');
+.trustecm-embed__placeholder[data-size="large"]
+  .trustecm-embed__placeholder--icon {
+  background-image: url("https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/images/Warning-Icon-lg.svg");
   height: 72px;
   width: 81px;
 }
 
-.trustecm-embed__placeholder[data-size='large'] .trustecm-embed__placeholder--label {
+.trustecm-embed__placeholder[data-size="large"]
+  .trustecm-embed__placeholder--label {
   padding: 80px 0 160px 0;
   font-size: xx-large;
 }
 
-.trustecm-embed__placeholder[data-size='large'] .trustecm-embed__placeholder--desc {
+.trustecm-embed__placeholder[data-size="large"]
+  .trustecm-embed__placeholder--desc {
   padding: 0 30%;
   font-size: x-large;
 }

@@ -6,30 +6,30 @@
 
 // Validate domain.
 var trustecmDomain =
-  document.currentScript.getAttribute('data-domain') || 'redhat.com';
+  document.currentScript.getAttribute("data-domain") || "redhat.com";
 // Convert debug to boolean.
 var trustecmDebug =
-  document.currentScript.getAttribute('data-debug') || 'false';
-trustecmDebug = trustecmDebug === 'true';
+  document.currentScript.getAttribute("data-debug") || "false";
+trustecmDebug = trustecmDebug === "true";
 // Get browser language.
 var trustecmLangcode =
-  document.currentScript.getAttribute('data-langcode') || 'browser';
-if (trustecmLangcode === 'browser') {
+  document.currentScript.getAttribute("data-langcode") || "browser";
+if (trustecmLangcode === "browser") {
   trustecmLangcode = navigator.language || navigator.userLanguage;
 }
 // Truncate ISO code, or default to English.
-trustecmLangcode = trustecmLangcode ? trustecmLangcode.substring(0, 2) : 'en';
+trustecmLangcode = trustecmLangcode ? trustecmLangcode.substring(0, 2) : "en";
 // Convert asserted to boolean.
 var trustecmRequireAsserted =
-  document.currentScript.getAttribute('data-asserted') || 'true';
-trustecmRequireAsserted = trustecmRequireAsserted === 'true';
+  document.currentScript.getAttribute("data-asserted") || "true";
+trustecmRequireAsserted = trustecmRequireAsserted === "true";
 var trustecmState = {};
 
 // Init.
 if (trustecmDomain) {
   // Run before assets (i.e. iframes) load.
   window.addEventListener(
-    'DOMContentLoaded',
+    "DOMContentLoaded",
     function () {
       trustecmInit();
     },
@@ -44,7 +44,7 @@ if (trustecmDomain) {
  */
 function trustecmInit() {
   if (trustecmDebug) {
-    console.log('trustecmInit');
+    console.log("trustecmInit");
   }
   var schemas = trustecmGetSchemas();
   trustecmRewriteElements(schemas);
@@ -58,9 +58,9 @@ function trustecmInit() {
  */
 function trustecmRewriteElements(schemas) {
   if (trustecmDebug) {
-    console.log('rewriteElements', schemas);
+    console.log("rewriteElements", schemas);
   }
-  var elements = document.querySelectorAll('iframe');
+  var elements = document.querySelectorAll("iframe");
   if (elements.length <= 0) {
     return;
   }
@@ -74,44 +74,44 @@ function trustecmRewriteElements(schemas) {
   for (var element of elements) {
     for (var key of Object.keys(schemas)) {
       var schema = schemas[key],
-        tag = schema['tag'];
+        tag = schema["tag"];
       // Validate tag.
       if (![tag].includes(element.tagName)) {
         continue;
       }
       // Skip entire element if has already been rewritten or processed.
-      var dataTrustecm = element.getAttribute('data-trustecm');
-      if (dataTrustecm === 'rewritten' || dataTrustecm === 'processed') {
+      var dataTrustecm = element.getAttribute("data-trustecm");
+      if (dataTrustecm === "rewritten" || dataTrustecm === "processed") {
         break;
       }
       // Validate domains.
       var regexValid = false,
-        src = element.getAttribute('src');
-      if (schema.hasOwnProperty('domains')) {
-        var domains = schema['domains'].replace(/[.]/g, '\\$&'),
+        src = element.getAttribute("src");
+      if (schema.hasOwnProperty("domains")) {
+        var domains = schema["domains"].replace(/[.]/g, "\\$&"),
           regexDomainsParts = [
             /^(https?:\/\/|(\/[a-z]{2}(-[a-z]{2})?)?\/media\/oembed\?url=https?%3A\/\/)?(www\.)?/,
-            '(' + domains + ')',
+            "(" + domains + ")",
             /\/.+$/,
           ],
           regexDomains = new RegExp(
             regexDomainsParts[0].source +
               regexDomainsParts[1] +
               regexDomainsParts[2].source,
-            'g'
+            "g"
           );
         if (regexDomains.test(src)) {
           regexValid = true;
         }
       }
-      if (schema.hasOwnProperty('directories')) {
-        var directories = schema['directories'].replace(/[\/]/g, '\\$&'),
-          regexDirectoriesParts = [/^\//, '(' + directories + ')', /\/.+$/],
+      if (schema.hasOwnProperty("directories")) {
+        var directories = schema["directories"].replace(/[\/]/g, "\\$&"),
+          regexDirectoriesParts = [/^\//, "(" + directories + ")", /\/.+$/],
           regexDirectories = new RegExp(
             regexDirectoriesParts[0].source +
               regexDirectoriesParts[1] +
               regexDirectoriesParts[2].source,
-            'g'
+            "g"
           );
         if (regexDirectories.test(src)) {
           regexValid = true;
@@ -121,70 +121,70 @@ function trustecmRewriteElements(schemas) {
       if (!regexValid) {
         break;
       }
-      var type = schema['type'],
-        category = schema['category'],
-        typeLabel = trustecmGetObjectLanguage(types[type]['label']),
-        typeAction = trustecmGetObjectLanguage(types[type]['action']),
+      var type = schema["type"],
+        category = schema["category"],
+        typeLabel = trustecmGetObjectLanguage(types[type]["label"]),
+        typeAction = trustecmGetObjectLanguage(types[type]["action"]),
         categoryLabel = trustecmGetObjectLanguage(
-          categories[category]['label']
+          categories[category]["label"]
         );
       // Replace tokens or variation.
       var placeholderDescReplace, placeholderLabelReplace;
-      if (placeholderLabel.hasOwnProperty('token')) {
-        placeholderLabelReplace = placeholderLabel['token'].replace(
-          '%typeLabel',
+      if (placeholderLabel.hasOwnProperty("token")) {
+        placeholderLabelReplace = placeholderLabel["token"].replace(
+          "%typeLabel",
           typeLabel
         );
         placeholderLabelReplace = placeholderLabelReplace.replace(
-          '%typeAction',
+          "%typeAction",
           typeAction
         );
       } else {
         placeholderLabelReplace = placeholderLabel[type];
       }
-      if (placeholderDesc.hasOwnProperty('token')) {
-        placeholderDescReplace = placeholderDesc['token'].replace(
-          '%categoryLabel',
+      if (placeholderDesc.hasOwnProperty("token")) {
+        placeholderDescReplace = placeholderDesc["token"].replace(
+          "%categoryLabel",
           categoryLabel
         );
       } else {
         placeholderDescReplace = placeholderDesc[category];
       }
-      element.setAttribute('data-trustecm', 'rewritten');
-      element.setAttribute('data-src', src);
-      element.setAttribute('src', 'about:blank');
+      element.setAttribute("data-trustecm", "rewritten");
+      element.setAttribute("data-src", src);
+      element.setAttribute("src", "about:blank");
       // Process tags differently.
-      if (tag === 'IFRAME') {
-        var classValue = element.getAttribute('class'),
-          title = element.getAttribute('title');
+      if (tag === "IFRAME") {
+        var classValue = element.getAttribute("class"),
+          title = element.getAttribute("title");
         classValue = classValue
           ? classValue +
-            ' trustecm-embed__' +
+            " trustecm-embed__" +
             category +
-            ' trustecm-embed__' +
+            " trustecm-embed__" +
             category +
-            '--' +
+            "--" +
             type
-          : 'trustecm-embed__' +
+          : "trustecm-embed__" +
             category +
-            ' trustecm-embed__' +
+            " trustecm-embed__" +
             category +
-            '--' +
+            "--" +
             type;
         title = title
-          ? placeholderLabelReplace + '. ' + title
+          ? placeholderLabelReplace + ". " + title
           : placeholderLabelReplace;
-        element.setAttribute('class', classValue);
-        element.setAttribute('title', title);
+        element.setAttribute("class", classValue);
+        element.setAttribute("title", title);
         // Add placeholder.
         var elementRect = element.getBoundingClientRect(),
           elementPos = getComputedStyle(element, null).position,
           top =
-            elementPos === 'absolute'
+            elementPos === "absolute"
               ? 0
-              : -1 * (elementRect.height + 7) + 'px',
+              : -1 * (elementRect.height + 7) + "px",
           height =
-            elementPos === 'absolute' ? 'auto' : elementRect.height + 'px';
+            elementPos === "absolute" ? "auto" : elementRect.height + "px";
         // Hide by default to prevent flicker (ITMKTGCMS-1670).
         var placeholder =
           '<div class="trustecm-embed__placeholder" style="display: none; top: ' +
@@ -197,14 +197,14 @@ function trustecmRewriteElements(schemas) {
           '<div class="trustecm-embed__placeholder--icon"></div>' +
           '<div class="trustecm-embed__placeholder--label">' +
           placeholderLabelReplace +
-          '</div>' +
+          "</div>" +
           '<div class="trustecm-embed__placeholder--desc">' +
           placeholderDescReplace +
-          '</div>' +
-          '</div>' +
-          '</div>' +
-          '</div>';
-        element.insertAdjacentHTML('afterend', placeholder);
+          "</div>" +
+          "</div>" +
+          "</div>" +
+          "</div>";
+        element.insertAdjacentHTML("afterend", placeholder);
       }
       // Skip entire element once rewritten.
       break;
@@ -212,7 +212,7 @@ function trustecmRewriteElements(schemas) {
   }
   // Detect placeholder wrapper resize.
   var placeholderWrappers = document.getElementsByClassName(
-    'trustecm-embed__placeholder--wrapper'
+    "trustecm-embed__placeholder--wrapper"
   );
   if (placeholderWrappers.length > 0) {
     var resize_ob = new ResizeObserver(function (entries) {
@@ -224,13 +224,13 @@ function trustecmRewriteElements(schemas) {
           break;
         }
         if (entryRect.width <= 480) {
-          placeholder.setAttribute('data-size', 'mobile');
+          placeholder.setAttribute("data-size", "mobile");
         } else if (entryRect.width <= 640) {
-          placeholder.setAttribute('data-size', 'small');
+          placeholder.setAttribute("data-size", "small");
         } else if (entryRect.width <= 1280) {
-          placeholder.setAttribute('data-size', 'medium');
+          placeholder.setAttribute("data-size", "medium");
         } else {
-          placeholder.setAttribute('data-size', 'large');
+          placeholder.setAttribute("data-size", "large");
         }
       }
     });
@@ -245,11 +245,11 @@ function trustecmRewriteElements(schemas) {
  */
 function trustecmDisplayPlaceholder() {
   var placeholders = document.getElementsByClassName(
-    'trustecm-embed__placeholder'
+    "trustecm-embed__placeholder"
   );
   if (placeholders.length > 0) {
     for (var placeholder of placeholders) {
-      placeholder.style.display = 'block';
+      placeholder.style.display = "block";
     }
   }
 }
@@ -262,7 +262,7 @@ function trustecmDisplayPlaceholder() {
 function trustecmGetObjectLanguage(object) {
   return object.hasOwnProperty(trustecmLangcode)
     ? object[trustecmLangcode]
-    : object['en'];
+    : object["en"];
 }
 
 /**
@@ -275,30 +275,30 @@ function trustecmProcessEmbeds(elements) {
     return;
   }
   if (trustecmDebug) {
-    console.log('trustecmProcessEmbeds');
+    console.log("trustecmProcessEmbeds");
   }
   for (var i = 0; i < elements.length; i++) {
     var element = elements[i],
-      dataTrustecm = element.getAttribute('data-trustecm');
+      dataTrustecm = element.getAttribute("data-trustecm");
     // Skip element if has already been processed.
-    if (dataTrustecm === 'processed') {
+    if (dataTrustecm === "processed") {
       continue;
     }
     // Skip element if hasn't been rewritten.
     if (!dataTrustecm) {
-      element.setAttribute('data-trustecm', 'processed');
+      element.setAttribute("data-trustecm", "processed");
       continue;
     }
-    var src = element.getAttribute('src'),
-      dataSrc = element.getAttribute('data-src');
-    element.setAttribute('src', dataSrc);
-    element.setAttribute('data-src', src);
-    element.setAttribute('data-trustecm', 'processed');
+    var src = element.getAttribute("src"),
+      dataSrc = element.getAttribute("data-src");
+    element.setAttribute("src", dataSrc);
+    element.setAttribute("data-src", src);
+    element.setAttribute("data-trustecm", "processed");
     // Remove placeholder, if exists.
     var placeholder = element.nextSibling;
     if (
       placeholder &&
-      placeholder.className === 'trustecm-embed__placeholder'
+      placeholder.className === "trustecm-embed__placeholder"
     ) {
       element.parentNode.removeChild(placeholder);
     }
@@ -310,7 +310,7 @@ function trustecmProcessEmbeds(elements) {
  */
 function trustecmAPI() {
   if (trustecmDebug) {
-    console.log('trustecmAPI', trustecmDomain);
+    console.log("trustecmAPI", trustecmDomain);
   }
   /**
    * Different pages add the Consent Manager in different locations, so all callers of the API must wait till
@@ -327,18 +327,18 @@ function trustecmAPI() {
     // CHECK: for API exists on the page.
     if (!trustecmState.hasRunOnce && window.PrivacyManagerAPI) {
       if (trustecmDebug) {
-        console.log('runOnce');
+        console.log("runOnce");
       }
       // Register with the API for automatic updates of user preferences (for the settings you care about)
       // --OR-- if the API is loading, then this will send an update when the API is done and has loaded the user preferences.
       window.addEventListener(
-        'message',
+        "message",
         function (e) {
           try {
             var json = JSON.parse(e.data);
             json.PrivacyManagerAPI && handleAPIResponse(json.PrivacyManagerAPI);
           } catch (e) {
-            e.name !== 'SyntaxError' && console.log(e);
+            e.name !== "SyntaxError" && console.log(e);
           }
         },
         false
@@ -346,21 +346,21 @@ function trustecmAPI() {
       var apiObject = {
         PrivacyManagerAPI: {
           self: trustecmDomain,
-          action: 'getConsent',
+          action: "getConsent",
           timestamp: new Date().getTime(),
-          type: 'functional',
+          type: "functional",
         },
       };
-      window.top.postMessage(JSON.stringify(apiObject), '*');
+      window.top.postMessage(JSON.stringify(apiObject), "*");
       apiObject = {
         PrivacyManagerAPI: {
           self: trustecmDomain,
-          action: 'getConsent',
+          action: "getConsent",
           timestamp: new Date().getTime(),
-          type: 'advertising',
+          type: "advertising",
         },
       };
-      window.top.postMessage(JSON.stringify(apiObject), '*');
+      window.top.postMessage(JSON.stringify(apiObject), "*");
       trustecmState.hasRunOnce = true;
       trustecmState.i && clearInterval(trustecmState.i);
     }
@@ -370,8 +370,8 @@ function trustecmAPI() {
    * When no notice_behavior cookie exists, this returns a blank string.
    */
   function getBehavior() {
-    var result = '';
-    var rx = new RegExp('\\s*notice_behavior\\s*=\\s*([^;]*)').exec(
+    var result = "";
+    var rx = new RegExp("\\s*notice_behavior\\s*=\\s*([^;]*)").exec(
       document.cookie
     );
     if (rx && rx.length > 1) {
@@ -394,7 +394,7 @@ function trustecmAPI() {
       return;
     }
     if (trustecmDebug) {
-      console.log('handleAPIResponse', response);
+      console.log("handleAPIResponse", response);
     }
     // Required trackers/cookies are always allowed, no need to ask permission.
     if (!trustecmState.hasLoadedRequired) {
@@ -407,7 +407,7 @@ function trustecmAPI() {
     // Check if behavior manager is EU.
     var isEU = /.*(,|)eu/i.test(getBehavior());
     // Case where we don't want to do anything till the user has made a preference.
-    if (isEU && trustecmRequireAsserted && response.source !== 'asserted') {
+    if (isEU && trustecmRequireAsserted && response.source !== "asserted") {
       trustecmDisplayPlaceholder();
       return;
     }
@@ -417,13 +417,13 @@ function trustecmAPI() {
     var setting = null;
     if (!trustecmState.hasLoadedAdvertising) {
       setting = PrivacyManagerAPI.callApi(
-        'getConsent',
+        "getConsent",
         trustecmDomain,
         null,
         null,
-        'advertising'
+        "advertising"
       );
-      if (setting.consent === 'approved') {
+      if (setting.consent === "approved") {
         var advertisingElements = document.querySelectorAll(
           '.trustecm[data-tracker-type="advertising"]'
         );
@@ -433,18 +433,18 @@ function trustecmAPI() {
         trustecmDisplayPlaceholder();
       }
       if (trustecmDebug) {
-        console.log('advertising', setting);
+        console.log("advertising", setting);
       }
     }
     if (!trustecmState.hasLoadedFunctional) {
       setting = PrivacyManagerAPI.callApi(
-        'getConsent',
+        "getConsent",
         trustecmDomain,
         null,
         null,
-        'functional'
+        "functional"
       );
-      if (setting.consent === 'approved') {
+      if (setting.consent === "approved") {
         var functionalElements = document.querySelectorAll(
           '.trustecm[data-tracker-type="functional"]'
         );
@@ -454,7 +454,7 @@ function trustecmAPI() {
         trustecmDisplayPlaceholder();
       }
       if (trustecmDebug) {
-        console.log('functional', setting);
+        console.log("functional", setting);
       }
     }
     // No additional checking, this always fires, but only after a user has consented.
@@ -471,24 +471,24 @@ function trustecmAPI() {
     );
     for (var i = 0; i < vendors.length; i++) {
       var currentVendor = vendors[i];
-      var vDomain = currentVendor.getAttribute('vsrc');
-      if (vDomain && !trustecmState['hasLoaded' + vDomain]) {
+      var vDomain = currentVendor.getAttribute("vsrc");
+      if (vDomain && !trustecmState["hasLoaded" + vDomain]) {
         setting = PrivacyManagerAPI.callApi(
-          'getConsent',
+          "getConsent",
           trustecmDomain,
           vDomain
         );
-        if (setting.consent === 'approved') {
+        if (setting.consent === "approved") {
           var vendorElements = document.querySelectorAll(
             '.trustecm[data-tracker-type="vendor"][vsrc="' + vDomain + '"]'
           );
           activateElement(vendorElements);
-          trustecmState['hasLoaded' + vDomain] = true;
+          trustecmState["hasLoaded" + vDomain] = true;
         } else {
           trustecmDisplayPlaceholder();
         }
         if (trustecmDebug) {
-          console.log('vendor', setting);
+          console.log("vendor", setting);
         }
       }
     }
@@ -500,19 +500,19 @@ function trustecmAPI() {
    */
   function activateElement(list) {
     if (!(list instanceof Array || list instanceof NodeList)) {
-      throw 'Illegal argument - must be an array';
+      throw "Illegal argument - must be an array";
     }
     if (trustecmDebug) {
-      console.log('activateElement', list);
+      console.log("activateElement", list);
     }
     for (var item, i = list.length; i-- > 0; ) {
       item = list[i];
-      item.class = 'trustecm_done';
+      item.class = "trustecm_done";
       switch (item.nodeName.toLowerCase()) {
-        case 'script':
-          var z = item.getAttribute('data-src');
+        case "script":
+          var z = item.getAttribute("data-src");
           if (z) {
-            var y = document.createElement('script');
+            var y = document.createElement("script");
             y.src = z;
             y.async = item.async;
             item.parentNode.insertBefore(y, item);
@@ -529,24 +529,24 @@ function trustecmAPI() {
 function trustecmGetSchemas() {
   return {
     youtube: {
-      tag: 'IFRAME',
-      domains: 'youtube.com|youtu.be',
-      type: 'video',
-      category: 'advertising',
+      tag: "IFRAME",
+      domains: "youtube.com|youtu.be",
+      type: "video",
+      category: "advertising",
     },
     vimeo: {
-      tag: 'IFRAME',
-      domains: 'player.vimeo.com|vimeo.com',
-      type: 'video',
-      category: 'functional',
+      tag: "IFRAME",
+      domains: "player.vimeo.com|vimeo.com",
+      type: "video",
+      category: "functional",
     },
     jwplayer: {
-      tag: 'IFRAME',
-      domains: 'cdn.jwplayer.com|jwplayer.com',
+      tag: "IFRAME",
+      domains: "cdn.jwplayer.com|jwplayer.com",
       directories:
-        'rol/vtc/rvideo_class_player|rol-stage/vtc/rvideo_class_player|rol-rhu/vtc/rvideo_class_player',
-      type: 'video',
-      category: 'functional',
+        "rol/vtc/rvideo_class_player|rol-stage/vtc/rvideo_class_player|rol-rhu/vtc/rvideo_class_player",
+      type: "video",
+      category: "functional",
     },
   };
 }
@@ -558,26 +558,26 @@ function trustecmGetTypes() {
   return {
     video: {
       label: {
-        en: 'video',
-        de: '',
-        es: '',
-        fr: '',
-        it: '',
-        ja: '',
-        ko: '',
-        pt: '',
-        zh: '',
+        en: "video",
+        de: "",
+        es: "",
+        fr: "",
+        it: "",
+        ja: "",
+        ko: "",
+        pt: "",
+        zh: "",
       },
       action: {
-        en: 'play',
-        de: '',
-        es: '',
-        fr: '',
-        it: '',
-        ja: '',
-        ko: '',
-        pt: '',
-        zh: '',
+        en: "play",
+        de: "",
+        es: "",
+        fr: "",
+        it: "",
+        ja: "",
+        ko: "",
+        pt: "",
+        zh: "",
       },
     },
   };
@@ -590,28 +590,28 @@ function trustecmGetCategories() {
   return {
     advertising: {
       label: {
-        en: 'Advertising',
-        de: 'Werbe-',
-        es: 'Publicitarias',
-        fr: 'publicitaires',
-        it: 'pubblicitari',
-        ja: '「広告',
-        ko: '광고',
-        pt: 'publicitários',
-        zh: '广告',
+        en: "Advertising",
+        de: "Werbe-",
+        es: "Publicitarias",
+        fr: "publicitaires",
+        it: "pubblicitari",
+        ja: "「広告",
+        ko: "광고",
+        pt: "publicitários",
+        zh: "广告",
       },
     },
     functional: {
       label: {
-        en: 'Functional',
-        de: 'Funktionale ',
-        es: 'Funcionales',
-        fr: 'fonctionnels',
-        it: 'funzionali',
-        ja: '「機能',
-        ko: '기능',
-        pt: 'funcionais',
-        zh: '功能',
+        en: "Functional",
+        de: "Funktionale ",
+        es: "Funcionales",
+        fr: "fonctionnels",
+        it: "funzionali",
+        ja: "「機能",
+        ko: "기능",
+        pt: "funcionais",
+        zh: "功能",
       },
     },
   };
@@ -627,32 +627,32 @@ function trustecmGetPlaceholderLabel() {
     },
     de: {
       video:
-        'Dieses Video kann aufgrund der Datenschutzeinstellungen nicht abgespielt werden.',
+        "Dieses Video kann aufgrund der Datenschutzeinstellungen nicht abgespielt werden.",
     },
     es: {
       video:
-        'Este video no se puede reproducir debido a la configuración de privacidad',
+        "Este video no se puede reproducir debido a la configuración de privacidad",
     },
     fr: {
       video:
-        'Il est impossible de lire cette vidéo en raison de vos paramètres de confidentialité',
+        "Il est impossible de lire cette vidéo en raison de vos paramètres de confidentialité",
     },
     it: {
       video:
-        'Per riprodurre il video, modifica le tue preferenze sulla privacy',
+        "Per riprodurre il video, modifica le tue preferenze sulla privacy",
     },
     ja: {
-      video: 'この動画はプライバシー設定により再生できません。',
+      video: "この動画はプライバシー設定により再生できません。",
     },
     ko: {
-      video: '개인정보보호 설정에 의해 이 동영상을 재생할 수 없습니다',
+      video: "개인정보보호 설정에 의해 이 동영상을 재생할 수 없습니다",
     },
     pt: {
       video:
-        'Este vídeo não pode ser reproduzido devido às configurações de privacidade.',
+        "Este vídeo não pode ser reproduzido devido às configurações de privacidade.",
     },
     zh: {
-      video: '由于隐私设置，该视频无法播放',
+      video: "由于隐私设置，该视频无法播放",
     },
   };
 }
@@ -668,7 +668,7 @@ function trustecmGetPlaceholderDesc() {
     },
     de: {
       token:
-        'Um Ihre Einstellungen zu ändern, wählen Sie den Link „Cookie-Einstellungen“ in der Fußzeile und aktivieren Sie die Option „%categoryLabelCookies“.',
+        "Um Ihre Einstellungen zu ändern, wählen Sie den Link „Cookie-Einstellungen“ in der Fußzeile und aktivieren Sie die Option „%categoryLabelCookies“.",
     },
     es: {
       token:
@@ -684,7 +684,7 @@ function trustecmGetPlaceholderDesc() {
     },
     ja: {
       token:
-        '設定を変更するには、ページ下部の「Cookie 選択設定」をクリックし、%categoryLabel Cookie」を「イン」(許可) に設定してください。',
+        "設定を変更するには、ページ下部の「Cookie 選択設定」をクリックし、%categoryLabel Cookie」を「イン」(許可) に設定してください。",
     },
     ko: {
       token:
@@ -696,7 +696,7 @@ function trustecmGetPlaceholderDesc() {
     },
     zh: {
       token:
-        '要更改您的设置，请选择页脚的“Cookie 偏好设置”链接，并选择“%categoryLabel Cookie”。',
+        "要更改您的设置，请选择页脚的“Cookie 偏好设置”链接，并选择“%categoryLabel Cookie”。",
     },
   };
 }

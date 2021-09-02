@@ -1,8 +1,13 @@
 @charset "UTF-8";
 @font-face {
-  font-family: 'rh-iconfont';
+  font-family: "rh-iconfont";
   src: url("https://static.redhat.com/libs/redhat/rh-iconfont/4/fonts/rh_icon/rh-iconfont.eot");
-  src: url("https://static.redhat.com/libs/redhat/rh-iconfont/4/fonts/rh_icon/rh-iconfont.eot?#iefix") format("embedded-opentype"), url("https://static.redhat.com/libs/redhat/rh-iconfont/4/fonts/rh_icon/rh-iconfont.woff") format("woff"), url("https://static.redhat.com/libs/redhat/rh-iconfont/4/fonts/rh_icon/rh-iconfont.ttf") format("truetype");
+  src: url("https://static.redhat.com/libs/redhat/rh-iconfont/4/fonts/rh_icon/rh-iconfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://static.redhat.com/libs/redhat/rh-iconfont/4/fonts/rh_icon/rh-iconfont.woff")
+      format("woff"),
+    url("https://static.redhat.com/libs/redhat/rh-iconfont/4/fonts/rh_icon/rh-iconfont.ttf")
+      format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -11,7 +16,7 @@
 [class$="rh-icon"]:before,
 [class*="rh-icon"]:before,
 [class^="rh-icon"]:before {
-  font-family: 'rh-iconfont';
+  font-family: "rh-iconfont";
   speak: none;
   font-style: normal;
   font-weight: normal;
