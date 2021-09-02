@@ -1,141 +1,474 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
-  
-<!-- Mirrored from www.redhat.com/en/open-source-stories/road-to-ai by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:34:11 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-    <script id="rhdc_analytics_get_top_eddl_js" type="text/javascript">var pageData = {"pageCategory":"open-source-stories","pageName":"road to ai","pageTitle":"Open Source Stories: Road to A.I.","analyticsTitle":"open source stories | road to ai","pageType":"campaign","pageSubType":"","siteExperience":"","siteLanguage":"en","subsection":"road-to-ai","subsection2":"","subsection3":"","cms":"RH CMS 1.0","contentID":"203951","contentType":"","destinationURL":"https:\/\/www.redhat.com\/en\/open-source-stories\/road-to-ai","errorType":"","gated":false};!function(e,a){"use strict";e.appEventData=e.appEventData||[],e.pageData=e.pageData||[];var t={event:"Page Load Started",page:pageData};if(a.referrer){let e=a.createElement("a");e.href=a.referrer,t.page.previousPage=e.href}t.page.siteExperience=e.innerWidth<=768?"tablet":"desktop",appEventData.push(t)}(window,document);</script>
-<script id="ddo" type="text/javascript">digitalData = {"cart":[],"event":[],"listing":{"browseFilter":"","query":"","queryMethod":"","refinementType":"","refinementValue":"","resultCount":"","searchType":""},"page":{"attributes":{"queryParameters":{"sc_cid":"7016000000127pXAAQ"},"referringSearchEngine":"","analyticsTitle":"open source stories | road to ai"},"category":{"contentType":"","keyPage":"false","keyPageType":"","pageType":"campaign","primaryCategory":"open-source-stories","subCategories":["road-to-ai"]},"pageInfo":{"cms":"RH CMS 1.0","contentFindingMethod":"","contentID":"203951","contentPortal":"","destinationURL":"https:\/\/www.redhat.com\/en\/open-source-stories\/road-to-ai","errorMessage":"","errorType":"","language":"en","pageName":"","referringDomain":"","referringURL":"","sysEnv":"","template":"","title":"Open Source Stories: Road to A.I."}},"product":[],"user":[{"profile":[{"profileInfo":{"daysSinceLastPurchase":"","demandbaseSID":"","eloquaGUID":"","lastLoginDate":"","lastPurchaseDate":"","loggedIn":"false","profileID":"","subscriptionFrequency":"","subscriptionLevel":""}}]}]};!function(e,a,r){"use strict";function n(e){var r=("; "+a.cookie).split("; "+e+"=");if(2===r.length)return r.pop().split(";").shift()}if(a.referrer){var t=a.createElement("a");t.href=a.referrer,r.page.pageInfo.referringDomain=t.hostname,r.page.pageInfo.referringURL=t.href}r.page.pageInfo.sysEnv=e.innerWidth<=768?"tablet":"desktop";var i=r.user[0].profile[0].profileInfo,o=n("rh_elqCustomerGUID");o&&(i.eloquaGUID=o);var f=n("rh_user");f&&f.split("\\|")[0]&&(i.loggedIn="true");var s=n("s_dmdbase");s&&(i.demandbaseSID=s)}(window,document,digitalData);</script>
-<script id="trustarc" type="text/javascript" src="../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"></script>
-<script src="../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm.js" data-domain="www.redhat.com"></script>
-<script class="trustecm" data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-functional.js" data-tracker-type="functional"></script>
-<script class="trustecm" data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-advertising.js" data-tracker-type="advertising"></script>
-<script id="dpal" type="text/javascript" src="../../dtm.js"></script>
-<meta charset="utf-8" />
-<script type="text/javascript" src="../../core/assets/vendor/jquery/jquery.minf77b.js?v=3.2.1"></script>
-<script type="text/javascript" src="../../core/misc/drupal.js"></script>
-<meta name="twitter:card" content="summary" />
-<link rel="canonical" href="road-to-ai.html" />
-<meta name="twitter:title" content="Open Source Stories: Road to A.I." />
-<meta property="og:type" content="website" />
-<meta name="description" content="How do you teach a car to drive?" />
-<meta property="og:url" content="https://www.redhat.com/en/open-source-stories/road-to-ai" />
-<meta property="og:title" content="Open Source Stories: Road to A.I." />
-<link rel="image_src" href="../../profiles/rh/themes/redhatdotcom/img/logo-rh-og-image.png" />
-<meta property="og:description" content="How do you teach a car to drive?" />
-<meta property="og:image" content="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo-rh-og-image.png" />
-<meta name="og:description" content="How do you teach a car to drive?" />
-<meta name="og:image" content="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo-rh-og-image.png" />
-<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
-<meta name="MobileOptimized" content="width" />
-<meta name="HandheldFriendly" content="true" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta http-equiv="content-language" content="en" />
-<meta name="last-publish-date" content="Wed, 16 Jun 2021 06:34:34 GMT" />
-<meta name="node-type" content="campaign" />
-<meta name="source" content="rhdc_drupal" />
-<meta name="rhdc_key" content="fb93533914014821c2042a43f6096219" />
-<meta name="dateline" content="2017-12-01T00:00:00.00Z" />
-<link rel="shortcut icon" href="https://www.redhat.com/themes/custom/rhdc/favicon.ico" type="image/x-icon" />
-<link rel="alternate" hreflang="zh" href="https://www.redhat.com/zh/open-source-stories/road-to-ai" />
-<link rel="alternate" hreflang="en" href="road-to-ai.html" />
-<link rel="alternate" hreflang="fr" href="https://www.redhat.com/fr/open-source-stories/road-to-ai" />
-<link rel="alternate" hreflang="de" href="https://www.redhat.com/de/open-source-stories/road-to-ai" />
-<link rel="alternate" hreflang="it" href="https://www.redhat.com/it/open-source-stories/road-to-ai" />
-<link rel="alternate" hreflang="ja" href="https://www.redhat.com/ja/open-source-stories/road-to-ai" />
-<link rel="alternate" hreflang="ko" href="https://www.redhat.com/ko/open-source-stories/road-to-ai" />
-<link rel="alternate" hreflang="pt-br" href="https://www.redhat.com/pt-br/open-source-stories/road-to-ai" />
-<link rel="alternate" hreflang="es" href="https://www.redhat.com/es/open-source-stories/road-to-ai" />
-<link rel="revision" href="road-to-ai.html" />
-<link type="text/css" rel="stylesheet" href="../../profiles/rh/themes/redhatdotcom/css/chrome.css" media="all" />
-<link type="text/css" rel="stylesheet" href="../../../static.redhat.com/libs/redhat/redhat-font/2/webfonts/red-hat-font.css" media="all" />
-<link type="text/css" rel="stylesheet" href="../../sites/all/libraries/rh_iconfont/dist/files/rh-web-iconfont.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://static.redhat.com/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all" />
-<link type="text/css" rel="stylesheet" href="../../ux/webdms/css/styles.min.css" media="all" />
-<link type="text/css" rel="stylesheet" href="../../ux/webdms/css/projects/open-source-stories.min.css" media="all" />
-<link type="text/css" rel="stylesheet" href="../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.min.css" media="all" />
+  <!-- Mirrored from www.redhat.com/en/open-source-stories/road-to-ai by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:34:11 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=UTF-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <script id="rhdc_analytics_get_top_eddl_js" type="text/javascript">
+      var pageData = {
+        pageCategory: "open-source-stories",
+        pageName: "road to ai",
+        pageTitle: "Open Source Stories: Road to A.I.",
+        analyticsTitle: "open source stories | road to ai",
+        pageType: "campaign",
+        pageSubType: "",
+        siteExperience: "",
+        siteLanguage: "en",
+        subsection: "road-to-ai",
+        subsection2: "",
+        subsection3: "",
+        cms: "RH CMS 1.0",
+        contentID: "203951",
+        contentType: "",
+        destinationURL:
+          "https:\/\/www.redhat.com\/en\/open-source-stories\/road-to-ai",
+        errorType: "",
+        gated: false,
+      };
+      !(function (e, a) {
+        "use strict";
+        (e.appEventData = e.appEventData || []),
+          (e.pageData = e.pageData || []);
+        var t = { event: "Page Load Started", page: pageData };
+        if (a.referrer) {
+          let e = a.createElement("a");
+          (e.href = a.referrer), (t.page.previousPage = e.href);
+        }
+        (t.page.siteExperience = e.innerWidth <= 768 ? "tablet" : "desktop"),
+          appEventData.push(t);
+      })(window, document);
+    </script>
+    <script id="ddo" type="text/javascript">
+      digitalData = {
+        cart: [],
+        event: [],
+        listing: {
+          browseFilter: "",
+          query: "",
+          queryMethod: "",
+          refinementType: "",
+          refinementValue: "",
+          resultCount: "",
+          searchType: "",
+        },
+        page: {
+          attributes: {
+            queryParameters: { sc_cid: "7016000000127pXAAQ" },
+            referringSearchEngine: "",
+            analyticsTitle: "open source stories | road to ai",
+          },
+          category: {
+            contentType: "",
+            keyPage: "false",
+            keyPageType: "",
+            pageType: "campaign",
+            primaryCategory: "open-source-stories",
+            subCategories: ["road-to-ai"],
+          },
+          pageInfo: {
+            cms: "RH CMS 1.0",
+            contentFindingMethod: "",
+            contentID: "203951",
+            contentPortal: "",
+            destinationURL:
+              "https:\/\/www.redhat.com\/en\/open-source-stories\/road-to-ai",
+            errorMessage: "",
+            errorType: "",
+            language: "en",
+            pageName: "",
+            referringDomain: "",
+            referringURL: "",
+            sysEnv: "",
+            template: "",
+            title: "Open Source Stories: Road to A.I.",
+          },
+        },
+        product: [],
+        user: [
+          {
+            profile: [
+              {
+                profileInfo: {
+                  daysSinceLastPurchase: "",
+                  demandbaseSID: "",
+                  eloquaGUID: "",
+                  lastLoginDate: "",
+                  lastPurchaseDate: "",
+                  loggedIn: "false",
+                  profileID: "",
+                  subscriptionFrequency: "",
+                  subscriptionLevel: "",
+                },
+              },
+            ],
+          },
+        ],
+      };
+      !(function (e, a, r) {
+        "use strict";
+        function n(e) {
+          var r = ("; " + a.cookie).split("; " + e + "=");
+          if (2 === r.length) return r.pop().split(";").shift();
+        }
+        if (a.referrer) {
+          var t = a.createElement("a");
+          (t.href = a.referrer),
+            (r.page.pageInfo.referringDomain = t.hostname),
+            (r.page.pageInfo.referringURL = t.href);
+        }
+        r.page.pageInfo.sysEnv = e.innerWidth <= 768 ? "tablet" : "desktop";
+        var i = r.user[0].profile[0].profileInfo,
+          o = n("rh_elqCustomerGUID");
+        o && (i.eloquaGUID = o);
+        var f = n("rh_user");
+        f && f.split("\\|")[0] && (i.loggedIn = "true");
+        var s = n("s_dmdbase");
+        s && (i.demandbaseSID = s);
+      })(window, document, digitalData);
+    </script>
+    <script
+      id="trustarc"
+      type="text/javascript"
+      src="../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"
+    ></script>
+    <script
+      src="../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm.js"
+      data-domain="www.redhat.com"
+    ></script>
+    <script
+      class="trustecm"
+      data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-functional.js"
+      data-tracker-type="functional"
+    ></script>
+    <script
+      class="trustecm"
+      data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-advertising.js"
+      data-tracker-type="advertising"
+    ></script>
+    <script id="dpal" type="text/javascript" src="../../dtm.js"></script>
+    <meta charset="utf-8" />
+    <script
+      type="text/javascript"
+      src="../../core/assets/vendor/jquery/jquery.minf77b.js?v=3.2.1"
+    ></script>
+    <script type="text/javascript" src="../../core/misc/drupal.js"></script>
+    <meta name="twitter:card" content="summary" />
+    <link rel="canonical" href="road-to-ai.html" />
+    <meta name="twitter:title" content="Open Source Stories: Road to A.I." />
+    <meta property="og:type" content="website" />
+    <meta name="description" content="How do you teach a car to drive?" />
+    <meta
+      property="og:url"
+      content="https://www.redhat.com/en/open-source-stories/road-to-ai"
+    />
+    <meta property="og:title" content="Open Source Stories: Road to A.I." />
+    <link
+      rel="image_src"
+      href="../../profiles/rh/themes/redhatdotcom/img/logo-rh-og-image.png"
+    />
+    <meta
+      property="og:description"
+      content="How do you teach a car to drive?"
+    />
+    <meta
+      property="og:image"
+      content="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo-rh-og-image.png"
+    />
+    <meta name="og:description" content="How do you teach a car to drive?" />
+    <meta
+      name="og:image"
+      content="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo-rh-og-image.png"
+    />
+    <meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="last-publish-date" content="Wed, 16 Jun 2021 06:34:34 GMT" />
+    <meta name="node-type" content="campaign" />
+    <meta name="source" content="rhdc_drupal" />
+    <meta name="rhdc_key" content="fb93533914014821c2042a43f6096219" />
+    <meta name="dateline" content="2017-12-01T00:00:00.00Z" />
+    <link
+      rel="shortcut icon"
+      href="https://www.redhat.com/themes/custom/rhdc/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="alternate"
+      hreflang="zh"
+      href="https://www.redhat.com/zh/open-source-stories/road-to-ai"
+    />
+    <link rel="alternate" hreflang="en" href="road-to-ai.html" />
+    <link
+      rel="alternate"
+      hreflang="fr"
+      href="https://www.redhat.com/fr/open-source-stories/road-to-ai"
+    />
+    <link
+      rel="alternate"
+      hreflang="de"
+      href="https://www.redhat.com/de/open-source-stories/road-to-ai"
+    />
+    <link
+      rel="alternate"
+      hreflang="it"
+      href="https://www.redhat.com/it/open-source-stories/road-to-ai"
+    />
+    <link
+      rel="alternate"
+      hreflang="ja"
+      href="https://www.redhat.com/ja/open-source-stories/road-to-ai"
+    />
+    <link
+      rel="alternate"
+      hreflang="ko"
+      href="https://www.redhat.com/ko/open-source-stories/road-to-ai"
+    />
+    <link
+      rel="alternate"
+      hreflang="pt-br"
+      href="https://www.redhat.com/pt-br/open-source-stories/road-to-ai"
+    />
+    <link
+      rel="alternate"
+      hreflang="es"
+      href="https://www.redhat.com/es/open-source-stories/road-to-ai"
+    />
+    <link rel="revision" href="road-to-ai.html" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="../../profiles/rh/themes/redhatdotcom/css/chrome.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="../../../static.redhat.com/libs/redhat/redhat-font/2/webfonts/red-hat-font.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="../../sites/all/libraries/rh_iconfont/dist/files/rh-web-iconfont.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://static.redhat.com/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="../../ux/webdms/css/styles.min.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="../../ux/webdms/css/projects/open-source-stories.min.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.min.css"
+      media="all"
+    />
 
     <title>Open Source Stories: Road to A.I.</title>
-    <link rel="stylesheet" media="all" href="../../rhdc/system-files/css/css_4D9f3Met0vL7kZZ2e2OuEDhTsb7q4FxLyV5OgqRIiEU.css" />
+    <link
+      rel="stylesheet"
+      media="all"
+      href="../../rhdc/system-files/css/css_4D9f3Met0vL7kZZ2e2OuEDhTsb7q4FxLyV5OgqRIiEU.css"
+    />
 
-    
     <noscript>
-      <link href="../../patterns/webrh/css/webrh.webcomponents.noscript.min.html" rel="stylesheet">
+      <link
+        href="../../patterns/webrh/css/webrh.webcomponents.noscript.min.html"
+        rel="stylesheet"
+      />
     </noscript>
     <style>
-      body[unresolved] pfe-navigation {display: none;}.no-js body pfe-navigation,body:not(unresolved) pfe-navigation {display: block;}.no-js #main-menu{background:#000!important;padding:10px}[unresolved] pfe-navigation{background:#000!important;color:#fff;display:block;width:100%}[unresolved] pfe-navigation [slot=logo],[unresolved] pfe-navigation [slot=skip],[unresolved] pfe-navigation ul li,[unresolved] pfe-navigation-item,[unresolved] pfe-navigation-main{padding:0 7px 6px;display:inline-block}[unresolved] pfe-navigation [slot=skip] a{font-size:0}[unresolved] pfe-navigation [slot=skip] a:focus{font-size:14px}[unresolved] pfe-navigation [slot=logo]{vertical-align:middle}[unresolved] pfe-navigation a{font-size:14px;color:#fff}[unresolved] pfe-navigation-item [slot]>a:focus{outline-offset:1px;outline-style:dotted;outline-width:1px;outline-color:#d2d3d4}
+      body[unresolved] pfe-navigation {
+        display: none;
+      }
+      .no-js body pfe-navigation,
+      body:not(unresolved) pfe-navigation {
+        display: block;
+      }
+      .no-js #main-menu {
+        background: #000 !important;
+        padding: 10px;
+      }
+      [unresolved] pfe-navigation {
+        background: #000 !important;
+        color: #fff;
+        display: block;
+        width: 100%;
+      }
+      [unresolved] pfe-navigation [slot="logo"],
+      [unresolved] pfe-navigation [slot="skip"],
+      [unresolved] pfe-navigation ul li,
+      [unresolved] pfe-navigation-item,
+      [unresolved] pfe-navigation-main {
+        padding: 0 7px 6px;
+        display: inline-block;
+      }
+      [unresolved] pfe-navigation [slot="skip"] a {
+        font-size: 0;
+      }
+      [unresolved] pfe-navigation [slot="skip"] a:focus {
+        font-size: 14px;
+      }
+      [unresolved] pfe-navigation [slot="logo"] {
+        vertical-align: middle;
+      }
+      [unresolved] pfe-navigation a {
+        font-size: 14px;
+        color: #fff;
+      }
+      [unresolved] pfe-navigation-item [slot] > a:focus {
+        outline-offset: 1px;
+        outline-style: dotted;
+        outline-width: 1px;
+        outline-color: #d2d3d4;
+      }
     </style>
   </head>
-  <body class="bg-gray-800 path-node rhdc-node-type-campaign" unresolved >
-    
-    
-  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
-    
-  <div class="rhdc-header--background-image"></div>
-  <article role="article">
-
-  
-    
-
-  
-  <div>
-    <article role="article" class="node-shared">
-
-  
-    
-
-  
-  
+  <body class="bg-gray-800 path-node rhdc-node-type-campaign" unresolved>
+    <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+      <div class="rhdc-header--background-image"></div>
+      <article role="article">
+        <div>
+          <article role="article" class="node-shared">
             <!-- Header -->
-<header class="header bg-black-film-20">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 py-1 py-md-2 py-lg-4 d-flex align-items-center">
-                <a href="../open-source-stories.html" title="Open Source Stories">
-                    <img class="img-fluid mt-1 pr-2" src="https://www.redhat.com/rhdc/managed-files/OSS-logo-white-horizontal.svg" width="248" alt="Open Source Stories logo">
-                </a>
+            <header class="header bg-black-film-20">
+              <div class="container">
+                <div class="row">
+                  <div
+                    class="
+                      col-12
+                      py-1 py-md-2 py-lg-4
+                      d-flex
+                      align-items-center
+                    "
+                  >
+                    <a
+                      href="../open-source-stories.html"
+                      title="Open Source Stories"
+                    >
+                      <img
+                        class="img-fluid mt-1 pr-2"
+                        src="https://www.redhat.com/rhdc/managed-files/OSS-logo-white-horizontal.svg"
+                        width="248"
+                        alt="Open Source Stories logo"
+                      />
+                    </a>
 
-                <a class="ml-auto" href="https://www.redhat.com/" title="Red Hat">
-                    <img class="img-fluid pl-1" src="https://static.redhat.com/libs/redhat/brand-assets/2.5.0/corp/logo--on-dark.svg" width="135" height="71" alt="Red Hat logo">
-                </a>
-            </div>
-        </div>
-    </div>
-</header>
-      
-
-</article>
-
-
-
-<!-- Hero -->
-<section class="dms-band hero blackout py-0 bg-black bg-no-repeat bg-pos-cb bg-size-cover text-center" data-bg-image="/rhdc/managed-files/road-to-ai-bg.png">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="video-poster-replace d-flex text-white align-items-center">
-                    <div class="poster">
-                        <img src="../../rhdc/managed-files/rh-oss-road-to-ai_film-title-UPDATED_0.png" alt="OSS Road to A.I." width="400" class="img-fluid mb-3">
-                        <p class="cta-group"><a class="btn btn-primary" href="#" title="Watch now">Watch now <i class="fa fa-play-circle-o font-size-20" aria-hidden="true"></i></a></p>
-                    </div>
-
-                    <div class="video-embed embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" width="560" height="315" data-src="https://www.youtube.com/embed/_sNNSEP-P7A?hl=en&cc_lang_pref=en&cc=1&cc_load_policy=1&autoplay=1&rel=0&modestbranding=1&playsinline=1&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                    </div>
+                    <a
+                      class="ml-auto"
+                      href="https://www.redhat.com/"
+                      title="Red Hat"
+                    >
+                      <img
+                        class="img-fluid pl-1"
+                        src="https://static.redhat.com/libs/redhat/brand-assets/2.5.0/corp/logo--on-dark.svg"
+                        width="135"
+                        height="71"
+                        alt="Red Hat logo"
+                      />
+                    </a>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
+              </div>
+            </header>
+          </article>
 
-<!-- Language/Share -->
-<section class="dms-band py-0 bg-gray-800">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 d-flex text-white">
-                <div class="navbar mx-auto mr-md-0 ml-md-auto p-0">
-                    <div class="navbar-header py-3 d-flex align-items-center justify-content-between">
-                        <!-- <button class="navbar-toggler py-2 px-1 p-md-2 d-flex align-items-center float-none position-relative border-0 rounded-0 mr-md-n1 pr-md-3" type="button" data-target="#select-lang" data-toggle="collapse">
+          <!-- Hero -->
+          <section
+            class="
+              dms-band
+              hero
+              blackout
+              py-0
+              bg-black bg-no-repeat bg-pos-cb bg-size-cover
+              text-center
+            "
+            data-bg-image="/rhdc/managed-files/road-to-ai-bg.png"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div
+                    class="
+                      video-poster-replace
+                      d-flex
+                      text-white
+                      align-items-center
+                    "
+                  >
+                    <div class="poster">
+                      <img
+                        src="../../rhdc/managed-files/rh-oss-road-to-ai_film-title-UPDATED_0.png"
+                        alt="OSS Road to A.I."
+                        width="400"
+                        class="img-fluid mb-3"
+                      />
+                      <p class="cta-group">
+                        <a class="btn btn-primary" href="#" title="Watch now"
+                          >Watch now
+                          <i
+                            class="fa fa-play-circle-o font-size-20"
+                            aria-hidden="true"
+                          ></i
+                        ></a>
+                      </p>
+                    </div>
+
+                    <div
+                      class="
+                        video-embed
+                        embed-responsive embed-responsive-16by9
+                      "
+                    >
+                      <iframe
+                        class="embed-responsive-item"
+                        width="560"
+                        height="315"
+                        data-src="https://www.youtube.com/embed/_sNNSEP-P7A?hl=en&cc_lang_pref=en&cc=1&cc_load_policy=1&autoplay=1&rel=0&modestbranding=1&playsinline=1&showinfo=0"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen=""
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Language/Share -->
+          <section class="dms-band py-0 bg-gray-800">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 d-flex text-white">
+                  <div class="navbar mx-auto mr-md-0 ml-md-auto p-0">
+                    <div
+                      class="
+                        navbar-header
+                        py-3
+                        d-flex
+                        align-items-center
+                        justify-content-between
+                      "
+                    >
+                      <!-- <button class="navbar-toggler py-2 px-1 p-md-2 d-flex align-items-center float-none position-relative border-0 rounded-0 mr-md-n1 pr-md-3" type="button" data-target="#select-lang" data-toggle="collapse">
                             <div class="icon-globe mr-1">
                                 <img class="svg svg-white" src="/rhdc/managed-files/icon-globe.svg" width="20" height="20" alt="Globe icon">
                             </div>
@@ -147,35 +480,128 @@
                             <span class="navbar-toggler-text font-size-14 font-weight-bold text-white">English</span>
                         </button> -->
 
-                        <div class="pl-1 px-sm-2">
-                            <ul class="social-list mb-0 pl-0 d-flex align-items-center list-unstyled">
-                                <li class="social-item mr-1 mr-sm-2 mb-0 d-inline-block font-size-14 font-weight-bold">Share</li>
+                      <div class="pl-1 px-sm-2">
+                        <ul
+                          class="
+                            social-list
+                            mb-0
+                            pl-0
+                            d-flex
+                            align-items-center
+                            list-unstyled
+                          "
+                        >
+                          <li
+                            class="
+                              social-item
+                              mr-1 mr-sm-2
+                              mb-0
+                              d-inline-block
+                              font-size-14 font-weight-bold
+                            "
+                          >
+                            Share
+                          </li>
 
-                                <li class="social-item d-inline-block font-size-14">
-                                    <a class="social-link d-flex align-items-center justify-content-center bg-white text-gray-800 rounded-circle" href="http://www.facebook.com/sharer.php?u=http%3A//red.ht/2nPfScb" target="_blank" title="Facebook" onclick="return !window.open(this.href, 'Facebook', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
-                                        <span class="web-icon-facebook" aria-label="true"></span>
-                                    </a>
-                                </li>
+                          <li class="social-item d-inline-block font-size-14">
+                            <a
+                              class="
+                                social-link
+                                d-flex
+                                align-items-center
+                                justify-content-center
+                                bg-white
+                                text-gray-800
+                                rounded-circle
+                              "
+                              href="http://www.facebook.com/sharer.php?u=http%3A//red.ht/2nPfScb"
+                              target="_blank"
+                              title="Facebook"
+                              onclick="return !window.open(this.href, 'Facebook', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')"
+                            >
+                              <span
+                                class="web-icon-facebook"
+                                aria-label="true"
+                              ></span>
+                            </a>
+                          </li>
 
-                                <li class="social-item ml-1 d-inline-block font-size-14">
-                                    <a class="social-link d-flex align-items-center justify-content-center bg-white text-gray-800 rounded-circle" href="https://twitter.com/share?url=http%3A//red.ht/2nzm6uK&amp;text=How%20can%20%23opendata%20help%20make%20%23selfdrivingcars%20safer%3F%20Watch%20%23RedHat%27s%20new%20film%20arriving%20May%202%20%23opensourcestories" target="_blank" title="Twitter" onclick="return !window.open(this.href, 'Twitter', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
-                                        <span class="web-icon-twitter" aria-label="true"></span>
-                                    </a>
-                                </li>
+                          <li
+                            class="social-item ml-1 d-inline-block font-size-14"
+                          >
+                            <a
+                              class="
+                                social-link
+                                d-flex
+                                align-items-center
+                                justify-content-center
+                                bg-white
+                                text-gray-800
+                                rounded-circle
+                              "
+                              href="https://twitter.com/share?url=http%3A//red.ht/2nzm6uK&amp;text=How%20can%20%23opendata%20help%20make%20%23selfdrivingcars%20safer%3F%20Watch%20%23RedHat%27s%20new%20film%20arriving%20May%202%20%23opensourcestories"
+                              target="_blank"
+                              title="Twitter"
+                              onclick="return !window.open(this.href, 'Twitter', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')"
+                            >
+                              <span
+                                class="web-icon-twitter"
+                                aria-label="true"
+                              ></span>
+                            </a>
+                          </li>
 
-                                <li class="social-item ml-1 d-inline-block font-size-14">
-                                    <a class="social-link d-flex align-items-center justify-content-center bg-white text-gray-800 rounded-circle" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A//red.ht/2oeCow9&amp;title=Road%20to%20A.I.&amp;summary=How%20do%20you%20teach%20a%20car%20to%20drive%3F%20Red%20Hat%E2%80%99s%20new%20film%20looks%20at%20how%20open%20data%20can%20impact%20the%20self-driving%20car%20industry.%20Road%20to%20AI%20arrives%20May%202.&amp;source=Red%20Hat" target="_blank" title="LinkedIn" onclick="return !window.open(this.href, 'LinkedIn', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
-                                        <span class="web-icon-linkedin" aria-label="true"></span>
-                                    </a>
-                                </li>
+                          <li
+                            class="social-item ml-1 d-inline-block font-size-14"
+                          >
+                            <a
+                              class="
+                                social-link
+                                d-flex
+                                align-items-center
+                                justify-content-center
+                                bg-white
+                                text-gray-800
+                                rounded-circle
+                              "
+                              href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A//red.ht/2oeCow9&amp;title=Road%20to%20A.I.&amp;summary=How%20do%20you%20teach%20a%20car%20to%20drive%3F%20Red%20Hat%E2%80%99s%20new%20film%20looks%20at%20how%20open%20data%20can%20impact%20the%20self-driving%20car%20industry.%20Road%20to%20AI%20arrives%20May%202.&amp;source=Red%20Hat"
+                              target="_blank"
+                              title="LinkedIn"
+                              onclick="return !window.open(this.href, 'LinkedIn', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')"
+                            >
+                              <span
+                                class="web-icon-linkedin"
+                                aria-label="true"
+                              ></span>
+                            </a>
+                          </li>
 
-                                <li class="social-item ml-1 d-inline-block font-size-14">
-                                    <a class="social-link d-flex align-items-center justify-content-center bg-white text-gray-800 rounded-circle" href="mailto:?subject=Red Hat's new film about self-driving cars and AI&amp;body=Here’s the trailer for Red Hat’s newest film about self-driving cars, artificial intelligence, and the importance of open data. http%3A//red.ht/2mSHxK4" target="_blank" title="Email" aria-current="page">
-                                        <span class="web-icon-envelope" aria-label="true"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                          <li
+                            class="social-item ml-1 d-inline-block font-size-14"
+                          >
+                            <a
+                              class="
+                                social-link
+                                d-flex
+                                align-items-center
+                                justify-content-center
+                                bg-white
+                                text-gray-800
+                                rounded-circle
+                              "
+                              href="mailto:?subject=Red Hat's new film about self-driving cars and AI&amp;body=Here’s the trailer for Red Hat’s newest film about self-driving cars, artificial intelligence, and the importance of open data. http%3A//red.ht/2mSHxK4"
+                              target="_blank"
+                              title="Email"
+                              aria-current="page"
+                            >
+                              <span
+                                class="web-icon-envelope"
+                                aria-label="true"
+                              ></span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
 
                     <!-- <div id="select-lang" class="select-lang collapse position-absolute w-100">
@@ -193,331 +619,681 @@
                             </ul>
                         </div>
                     </div> -->
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
-</section>
+          </section>
 
-<!-- Lead-in -->
-<section class="dms-band bg-black-film-20 pb-0">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-9 col-lg-7 col-xl-6 mx-auto text-white text-center reveal pb-8">
-                <p class="mb-0">How do you teach a car to drive? For many self-driving car makers and artificial intelligence researchers, the answer starts with data and sharing. </p>
+          <!-- Lead-in -->
+          <section class="dms-band bg-black-film-20 pb-0">
+            <div class="container">
+              <div class="row">
+                <div
+                  class="
+                    col-12 col-md-9 col-lg-7 col-xl-6
+                    mx-auto
+                    text-white text-center
+                    reveal
+                    pb-8
+                  "
+                >
+                  <p class="mb-0">
+                    How do you teach a car to drive? For many self-driving car
+                    makers and artificial intelligence researchers, the answer
+                    starts with data and sharing.
+                  </p>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
-</section>
+          </section>
 
-<!-- From the film -->
-<section class="dms-band pb-0 pb-md-3 bg-black-film-20">
-    <div class="container">
-        <h2 class="text-center mb-2 mb-md-4 text-white">From the film</h2>
-        <div class="row">
-            <div class="col-md-6 col-lg-7 d-flex">
-                <div class="card card-vslide overflow-hidden text-white bg-pos-ct bg-size-cover reveal" data-bg-image="../../rhdc/managed-files/DukeRobotics-7388_MaryMissyCummings.png">
+          <!-- From the film -->
+          <section class="dms-band pb-0 pb-md-3 bg-black-film-20">
+            <div class="container">
+              <h2 class="text-center mb-2 mb-md-4 text-white">From the film</h2>
+              <div class="row">
+                <div class="col-md-6 col-lg-7 d-flex">
+                  <div
+                    class="
+                      card card-vslide
+                      overflow-hidden
+                      text-white
+                      bg-pos-ct bg-size-cover
+                      reveal
+                    "
+                    data-bg-image="../../rhdc/managed-files/DukeRobotics-7388_MaryMissyCummings.png"
+                  >
                     <div class="card-header bg-gray-800 py-2">
-                        <h4 class="mb-0">Mary "Missy" Cummings<span class="web-icon-caret-thin-up font-size-18 float-right"></span></h4>
+                      <h4 class="mb-0">
+                        Mary "Missy" Cummings<span
+                          class="
+                            web-icon-caret-thin-up
+                            font-size-18
+                            float-right
+                          "
+                        ></span>
+                      </h4>
                     </div>
                     <div class="card-body bg-gray-800 overflow-hidden">
-                        <a class="float-right text-white"><i class="web-icon-close"></i></a>
-                        <h3>Mary "Missy" Cummings</h3>
-                        <h4>Professor, Duke University</h4>
-                        <p>Dr. Cummings is a professor in the Department of Mechanical Engineering and Materials Science at Duke University. From 1988-1999, she was a naval officer and military pilot—one of the U.S. Navy’s first female fighter pilots. In addition to research and teaching, she now serves as the director of Duke University's Humans and Autonomy Lab and Duke Robotics.</p>
-                        <p><a href="http://www.tedmed.com/talks/show?id=7355" target="_blank" class="btn btn-link text-white">Watch Dr. Cummings’ TEDMED talk</a></p>
+                      <a class="float-right text-white"
+                        ><i class="web-icon-close"></i
+                      ></a>
+                      <h3>Mary "Missy" Cummings</h3>
+                      <h4>Professor, Duke University</h4>
+                      <p>
+                        Dr. Cummings is a professor in the Department of
+                        Mechanical Engineering and Materials Science at Duke
+                        University. From 1988-1999, she was a naval officer and
+                        military pilot—one of the U.S. Navy’s first female
+                        fighter pilots. In addition to research and teaching,
+                        she now serves as the director of Duke University's
+                        Humans and Autonomy Lab and Duke Robotics.
+                      </p>
+                      <p>
+                        <a
+                          href="http://www.tedmed.com/talks/show?id=7355"
+                          target="_blank"
+                          class="btn btn-link text-white"
+                          >Watch Dr. Cummings’ TEDMED talk</a
+                        >
+                      </p>
                     </div>
+                  </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-lg-5 d-flex">
-                <div class="card card-vslide overflow-hidden text-white bg-pos-ct bg-size-cover reveal" data-bg-image="../../rhdc/managed-files/card-rta-francois_0.png">
+                <div class="col-md-6 col-lg-5 d-flex">
+                  <div
+                    class="
+                      card card-vslide
+                      overflow-hidden
+                      text-white
+                      bg-pos-ct bg-size-cover
+                      reveal
+                    "
+                    data-bg-image="../../rhdc/managed-files/card-rta-francois_0.png"
+                  >
                     <div class="card-header bg-gray-800 py-2">
-                        <h4 class="mb-0">François Chollet<span class="web-icon-caret-thin-up font-size-18 float-right"></span></h4>
+                      <h4 class="mb-0">
+                        François Chollet<span
+                          class="
+                            web-icon-caret-thin-up
+                            font-size-18
+                            float-right
+                          "
+                        ></span>
+                      </h4>
                     </div>
                     <div class="card-body bg-gray-800 overflow-hidden">
-                        <a class="float-right text-white"><i class="web-icon-close"></i></a>
-                        <h3>François Chollet</h3>
-                        <h4>A.I. Researcher</h4>
-                        <p>François is an artificial intelligence researcher and the author of Keras, an open source deep learning framework. Keras is used at many startups, research labs, and large companies—including Netflix, Square, and Google.</p>
-                        <p><a href="https://fetchrobotics.com/" target="_blank" class="btn btn-link text-white">Follow François on Twitter</a></p>
+                      <a class="float-right text-white"
+                        ><i class="web-icon-close"></i
+                      ></a>
+                      <h3>François Chollet</h3>
+                      <h4>A.I. Researcher</h4>
+                      <p>
+                        François is an artificial intelligence researcher and
+                        the author of Keras, an open source deep learning
+                        framework. Keras is used at many startups, research
+                        labs, and large companies—including Netflix, Square, and
+                        Google.
+                      </p>
+                      <p>
+                        <a
+                          href="https://fetchrobotics.com/"
+                          target="_blank"
+                          class="btn btn-link text-white"
+                          >Follow François on Twitter</a
+                        >
+                      </p>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
-</section>
-<section class="dms-band py-0 pb-md-3 bg-black-film-20">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-5 d-flex">
-                <div class="card card-vslide overflow-hidden text-white bg-pos-ct bg-size-cover reveal" data-bg-image="../../rhdc/managed-files/OpenSanFran-5734_ChrisNicholson.png">
+          </section>
+          <section class="dms-band py-0 pb-md-3 bg-black-film-20">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 col-lg-5 d-flex">
+                  <div
+                    class="
+                      card card-vslide
+                      overflow-hidden
+                      text-white
+                      bg-pos-ct bg-size-cover
+                      reveal
+                    "
+                    data-bg-image="../../rhdc/managed-files/OpenSanFran-5734_ChrisNicholson.png"
+                  >
                     <div class="card-header bg-gray-800 py-2">
-                        <h4 class="mb-0">Chris Nicholson<span class="web-icon-caret-thin-up font-size-18 float-right"></span></h4>
+                      <h4 class="mb-0">
+                        Chris Nicholson<span
+                          class="
+                            web-icon-caret-thin-up
+                            font-size-18
+                            float-right
+                          "
+                        ></span>
+                      </h4>
                     </div>
                     <div class="card-body bg-gray-800 overflow-hidden">
-                        <a class="float-right text-white"><i class="web-icon-close"></i></a>
-                        <h3>Chris Nicholson</h3>
-                        <h4>Co-Founder and CEO, Skymind </h4>
-                        <p>Chris is the CEO and co-founder of Skymind, an open source artificial intelligence company. From 2004 to 2013, Chris worked as a journalist, reporting on business for The New York Times, the International Herald Tribune, and Bloomberg Businessweek.</p>
-                        <p><a href="ai-revolutionaries/right-side-robots.html" target="_blank" class="btn btn-link text-white">Read how Skymind got started</a></p>
+                      <a class="float-right text-white"
+                        ><i class="web-icon-close"></i
+                      ></a>
+                      <h3>Chris Nicholson</h3>
+                      <h4>Co-Founder and CEO, Skymind</h4>
+                      <p>
+                        Chris is the CEO and co-founder of Skymind, an open
+                        source artificial intelligence company. From 2004 to
+                        2013, Chris worked as a journalist, reporting on
+                        business for The New York Times, the International
+                        Herald Tribune, and Bloomberg Businessweek.
+                      </p>
+                      <p>
+                        <a
+                          href="ai-revolutionaries/right-side-robots.html"
+                          target="_blank"
+                          class="btn btn-link text-white"
+                          >Read how Skymind got started</a
+                        >
+                      </p>
                     </div>
+                  </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-lg-7 d-flex">
-                <div class="card card-vslide overflow-hidden text-white bg-pos-ct bg-size-cover reveal" data-bg-image="../../rhdc/managed-files/Karl.png">
+                <div class="col-md-6 col-lg-7 d-flex">
+                  <div
+                    class="
+                      card card-vslide
+                      overflow-hidden
+                      text-white
+                      bg-pos-ct bg-size-cover
+                      reveal
+                    "
+                    data-bg-image="../../rhdc/managed-files/Karl.png"
+                  >
                     <div class="card-header bg-gray-800 py-2">
-                        <h4 class="mb-0">Karl Iagnemma<span class="web-icon-caret-thin-up font-size-18 float-right"></span></h4>
+                      <h4 class="mb-0">
+                        Karl Iagnemma<span
+                          class="
+                            web-icon-caret-thin-up
+                            font-size-18
+                            float-right
+                          "
+                        ></span>
+                      </h4>
                     </div>
                     <div class="card-body bg-gray-800 overflow-hidden">
-                        <a class="float-right text-white"><i class="web-icon-close"></i></a>
-                        <h3>Karl Iagnemma</h3>
-                        <h4>Co-Founder and CEO, nuTonomy</h4>
-                        <p>Karl is the co-founder and CEO of nuTonomy, a startup tackling one of the most difficult challenges in self-driving cars: urban driving. As former director of the Robotics Mobility Group at MIT, Karl’s technical research resulted in more than 150 technical papers, 20 issued or filed patents, and numerous edited volumes.</p>
-                        <p><a href="http://nutonomy.com/" target="_blank" class="btn btn-link text-white">Learn more about nuTonomy</a></p>
+                      <a class="float-right text-white"
+                        ><i class="web-icon-close"></i
+                      ></a>
+                      <h3>Karl Iagnemma</h3>
+                      <h4>Co-Founder and CEO, nuTonomy</h4>
+                      <p>
+                        Karl is the co-founder and CEO of nuTonomy, a startup
+                        tackling one of the most difficult challenges in
+                        self-driving cars: urban driving. As former director of
+                        the Robotics Mobility Group at MIT, Karl’s technical
+                        research resulted in more than 150 technical papers, 20
+                        issued or filed patents, and numerous edited volumes.
+                      </p>
+                      <p>
+                        <a
+                          href="http://nutonomy.com/"
+                          target="_blank"
+                          class="btn btn-link text-white"
+                          >Learn more about nuTonomy</a
+                        >
+                      </p>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
-</section>
-<section class="dms-band pt-0 bg-black-film-20">
-    <div class="container">
-        <div class="row">
-            <div class="col d-flex">
-                <div class="card card-vslide overflow-hidden text-white bg-pos-ct bg-size-cover reveal" data-bg-image="../../rhdc/managed-files/Duckietown.png">
+          </section>
+          <section class="dms-band pt-0 bg-black-film-20">
+            <div class="container">
+              <div class="row">
+                <div class="col d-flex">
+                  <div
+                    class="
+                      card card-vslide
+                      overflow-hidden
+                      text-white
+                      bg-pos-ct bg-size-cover
+                      reveal
+                    "
+                    data-bg-image="../../rhdc/managed-files/Duckietown.png"
+                  >
                     <div class="card-header bg-gray-800 py-2">
-                        <h4 class="mb-0">Duckietown<span class="web-icon-caret-thin-up font-size-18 float-right"></span></h4>
+                      <h4 class="mb-0">
+                        Duckietown<span
+                          class="
+                            web-icon-caret-thin-up
+                            font-size-18
+                            float-right
+                          "
+                        ></span>
+                      </h4>
                     </div>
-                    <div class="card-body bg-gray-800 overflow-hidden pb-lg-8 pb-xl-12">
-                        <a class="float-right text-white"><i class="web-icon-close"></i></a>
-                        <div class="row">
-                            <div class="col-12 col-md-7">
-                                <h3>Duckietown</h3>
-                                <h4>Course at MIT</h4>
-                                <p>Duckietown is a hands-on, project-based course at MIT that focuses on self-driving vehicles and high-level autonomy. In Spring 2016, Liam Paull served as Duckietown’s CEO and Teddy Ort worked as a vehicle autonomy engineer in training. Since the course began at MIT, it has spread to other universities around the globe, and is now taught in universities from Beijing to Zurich.</p>
-                                <p><a href="http://duckietown.mit.edu/materials.html" target="_blank" class="btn btn-link text-white">Get the course materials</a></p>                                    
-                            </div>
+                    <div
+                      class="
+                        card-body
+                        bg-gray-800
+                        overflow-hidden
+                        pb-lg-8 pb-xl-12
+                      "
+                    >
+                      <a class="float-right text-white"
+                        ><i class="web-icon-close"></i
+                      ></a>
+                      <div class="row">
+                        <div class="col-12 col-md-7">
+                          <h3>Duckietown</h3>
+                          <h4>Course at MIT</h4>
+                          <p>
+                            Duckietown is a hands-on, project-based course at
+                            MIT that focuses on self-driving vehicles and
+                            high-level autonomy. In Spring 2016, Liam Paull
+                            served as Duckietown’s CEO and Teddy Ort worked as a
+                            vehicle autonomy engineer in training. Since the
+                            course began at MIT, it has spread to other
+                            universities around the globe, and is now taught in
+                            universities from Beijing to Zurich.
+                          </p>
+                          <p>
+                            <a
+                              href="http://duckietown.mit.edu/materials.html"
+                              target="_blank"
+                              class="btn btn-link text-white"
+                              >Get the course materials</a
+                            >
+                          </p>
                         </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
-</section>
-<section class="dms-band pb-0 pb-md-3 bg-black-film-20">
-    <div class="container">
-        <div class="row">
-
-
+          </section>
+          <section class="dms-band pb-0 pb-md-3 bg-black-film-20">
+            <div class="container">
+              <div class="row">
                 <div class="col-md-7 col-lg-8 d-flex mr-md-n4 mr-lg-n8">
-                    <img src="../../cms/managed-files/oss-common-connections_charlie-caren_film-page-card.jpg" class="img-fluid">
+                  <img
+                    src="../../cms/managed-files/oss-common-connections_charlie-caren_film-page-card.jpg"
+                    class="img-fluid"
+                  />
                 </div>
                 <div class="col-md-5 col-lg-4 d-flex my-auto">
-  
-                   <div class="card-body bg-black-film-90 text-white">
-
-                        <div class="font-size-22 pb-2">Common Connections</div>
-                        <div class="font-size-18 pb-2">To do the grand tasks society needs from them, robots need to master the mundane. Leila Takayama and Chris Nicholson explain why.</div>
-                        <a class="text-white" href="common-connections/making-robots-boring.html">Watch their conversation <i class="fa fa-play-circle font-size-20" aria-hidden="true"></i></a>
-
+                  <div class="card-body bg-black-film-90 text-white">
+                    <div class="font-size-22 pb-2">Common Connections</div>
+                    <div class="font-size-18 pb-2">
+                      To do the grand tasks society needs from them, robots need
+                      to master the mundane. Leila Takayama and Chris Nicholson
+                      explain why.
                     </div>
-
+                    <a
+                      class="text-white"
+                      href="common-connections/making-robots-boring.html"
+                      >Watch their conversation
+                      <i
+                        class="fa fa-play-circle font-size-20"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
+                  </div>
                 </div>
-
-        </div>
-    </div>
-</section> 
-<!-- See more stories -->
-<section class="dms-band bg-black-film-20 ">
-    <div class="container">
-        <h2 class="text-center mb-4 mb-md-8 text-white">See more stories</h2>
-        <div class="row no-gutters justify-content-center reveal">
-            <div class="col-sm-8 col-md-4 mb-3 mb-md-0 d-flex">
-                <!-- AI Revolution -->
+              </div>
+            </div>
+          </section>
+          <!-- See more stories -->
+          <section class="dms-band bg-black-film-20">
+            <div class="container">
+              <h2 class="text-center mb-4 mb-md-8 text-white">
+                See more stories
+              </h2>
+              <div class="row no-gutters justify-content-center reveal">
+                <div class="col-sm-8 col-md-4 mb-3 mb-md-0 d-flex">
+                  <!-- AI Revolution -->
                   <article role="article" class="node-shared">
-
-  
-    
-
-  
-  
-            <div class="card card-half-slide h-100" data-bg-image="../../rhdc/managed-files/ai-revolutionaries.png">
-    <div class="card-header text-center">
-        <img src="https://www.redhat.com/rhdc/managed-files/ai-revolutionaries.svg" alt="Collective discovery" class="img-fluid mb-6">
-        <p class="font-weight-bold mt-1"><a href="ai-revolutionaries.html" class="text-white">Read the articles <i class="fa fa-play-circle font-size-20" aria-hidden="true"></i></a></p>
-    </div>
-    <div class="card-body text-center">
-        <img src="https://www.redhat.com/rhdc/managed-files/ai-revolutionaries.svg" alt="Collective discovery" class="img-fluid svg svg-black mb-2" width="200">
-        <p class="font-size-16">Robotics isn’t the only field undergoing a revolution. Meet the people advancing artificial intelligence.</p>
-        <p class="font-weight-bold mt-1"><a href="ai-revolutionaries.html">Read the articles <i class="fa fa-play-circle font-size-20" aria-hidden="true"></i></a></p>
-    </div>
-</div>
-      
-
-</article>
-
-            </div>
-            <div class="col-sm-8 col-md-4 mb-3 mb-md-0 d-flex">
-                <!-- Open Patient -->
-                  <article role="article" class="node-shared">
-
-  
-    
-
-  
-  
-             <div class="card card-half-slide h-100" data-bg-image="../../rhdc/managed-files/bg_open-patient.jpg">
-                    <div class="card-header text-center">
-                        <img src="https://www.redhat.com/rhdc/managed-files/logo_open-patient.svg" alt="Open Patient" class="img-fluid mb-3">
-                        <p class="font-weight-bold mt-1"><a href="open-patient.html" class="text-white">Watch the film <i class="fa fa-play-circle font-size-20" aria-hidden="true"></i></a></p>
-                    </div>
-                    <div class="card-body text-center">
-                        <img src="https://www.redhat.com/rhdc/managed-files/logo_open-patient_black_0.svg" alt="Open Patient" class="img-fluid mb-2" width="200">
-                        <p class="font-size-16">What happens when patients take data―and their care―into their own hands?</p>
-                        <p class="font-weight-bold mt-1"><a href="open-patient.html">Watch the film <i class="fa fa-play-circle font-size-20" aria-hidden="true"></i></a></p>
-                    </div>
-                </div>
-      
-
-</article>
-
-            </div>
-            <div class="col-sm-8 col-md-4 mb-3 mb-md-0 d-flex">
-                <!-- E-nable -->
-                <article role="article" class="node-shared">
-
-  
-    
-
-  
-  
-            <div class="card card-half-slide h-100" data-bg-image="../../rhdc/managed-files/e-nable-shaded.jpg">
-    <div class="card-header text-center">
-        <img src="https://www.redhat.com/rhdc/managed-files/e-nable-logo.svg" alt="E-nable" class="img-fluid mb-3">
-        <p class="font-weight-bold mt-1"><a href="e-nable.html" class="text-white">Watch the film <i class="fa fa-play-circle font-size-20" aria-hidden="true"></i></a></p>
-    </div>
-    <div class="card-body text-center">
-        <img src="https://www.redhat.com/rhdc/managed-files/e-nable_black.svg" alt="E-nable" class="img-fluid mb-2">
-        <p class="font-size-16">A global community of volunteers design, fabricate, and distribute open source 3-D-printed prosthetics for free. </p>
-        <p class="font-weight-bold mt-1"><a href="e-nable.html">Watch the film <i class="fa fa-play-circle font-size-20" aria-hidden="true"></i></a></p>
-    </div>
-</div>
-      
-
-</article>
-
-            </div>
-        </div>
-    </div>
-</section>
-<section class="dms-band py-0 bg-black-film-20 "><div class="container"><hr class="m-0"></div></section>
-
-<!-- Newsletter -->
-<article role="article" class="node-shared">
-
-  
-    
-
-  
-  
-            <!-- Newsletter -->
-<section class="dms-band pt-4 bg-black-film-20">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-6 col-xl-5 mb-4 mb-lg-0 text-white">
-                <img class="img-fluid mb-3" src="https://www.redhat.com/rhdc/managed-files/OSS-logo-white-horizontal.svg" width="248" alt="Open Source Stories logo">
-
-                <h2>What's the next story?</h2>
-
-                <p>Open Source Stories, an original series from Red Hat, celebrates the innovators who bring the power of open source to everything people do.</p>
-
-                <a class="btn btn-primary mt-1" href="opensource-newsletter-signup82cd.html?sc_cid=70160000000wxWUAAY" title="Get the newsletter">Get the newsletter</a>
-            </div>
-
-            <div class="col-12 col-lg-6 offset-xl-1">
-                <div class="card mb-0 bg-white rounded-0">
-                    <div class="card-body p-2 p-md-4">
-                        <h2 class="text-red">We're committed to the open source&nbsp;way</h2>
-
-                        <p>Learn more about open source. Understand our community-to-enterprise development model. Discover The Open Organization.</p>
-
-                        <a class="btn btn-link" href="../about/open-source.html" title="Find out more">Find out more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-      
-
-</article>
-
-
-<!-- universal footer -->
-<article role="article" class="node-shared">
-
-  
-    
-
-  
-  
-            <section class="rc-footer-traditional">
-      <div class="container rc-footer-traditional-container">
-        <section class="rc-footer-traditional-section">
-          <div class="rc-footer-traditional-logo">
-            <div class="row">
-              <a href="https://www.redhat.com/">
-                <img src="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo.svg" class="screen" title="Red Hat">
-                </a>
-            </div>
-          </div>
-          <div id="legal" class="rc-footer-traditional-legal">
-            <div class="row">
-              <div class="copyright">Copyright ©2021 Red Hat, Inc.</div>
-              <div>
-                <ul class="menu"><li class="first leaf"><a href="../about/privacy-policy.html">Privacy statement</a></li>
-<li class="leaf"><a href="../about/terms-use.html">Terms of use</a></li>
-<li class="leaf"><a href="../about/all-policies-guidelines.html">All policies and guidelines</a></li>
-<li class="last leaf"><span id="teconsent" class="nolink">|</span></li>
-</ul>              </div>
-            </div>
+                    <div
+                      class="card card-half-slide h-100"
+                      data-bg-image="../../rhdc/managed-files/ai-revolutionaries.png"
+                    >
+                      <div class="card-header text-center">
+                        <img
+                          src="https://www.redhat.com/rhdc/managed-files/ai-revolutionaries.svg"
+                          alt="Collective discovery"
+                          class="img-fluid mb-6"
+                        />
+                        <p class="font-weight-bold mt-1">
+                          <a href="ai-revolutionaries.html" class="text-white"
+                            >Read the articles
+                            <i
+                              class="fa fa-play-circle font-size-20"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                        </p>
                       </div>
-          <div class="rc-footer-traditional-event-logo">
-            <div id="block-block-5" class="block block-block block-footer-promote">
+                      <div class="card-body text-center">
+                        <img
+                          src="https://www.redhat.com/rhdc/managed-files/ai-revolutionaries.svg"
+                          alt="Collective discovery"
+                          class="img-fluid svg svg-black mb-2"
+                          width="200"
+                        />
+                        <p class="font-size-16">
+                          Robotics isn’t the only field undergoing a revolution.
+                          Meet the people advancing artificial intelligence.
+                        </p>
+                        <p class="font-weight-bold mt-1">
+                          <a href="ai-revolutionaries.html"
+                            >Read the articles
+                            <i
+                              class="fa fa-play-circle font-size-20"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-sm-8 col-md-4 mb-3 mb-md-0 d-flex">
+                  <!-- Open Patient -->
+                  <article role="article" class="node-shared">
+                    <div
+                      class="card card-half-slide h-100"
+                      data-bg-image="../../rhdc/managed-files/bg_open-patient.jpg"
+                    >
+                      <div class="card-header text-center">
+                        <img
+                          src="https://www.redhat.com/rhdc/managed-files/logo_open-patient.svg"
+                          alt="Open Patient"
+                          class="img-fluid mb-3"
+                        />
+                        <p class="font-weight-bold mt-1">
+                          <a href="open-patient.html" class="text-white"
+                            >Watch the film
+                            <i
+                              class="fa fa-play-circle font-size-20"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                        </p>
+                      </div>
+                      <div class="card-body text-center">
+                        <img
+                          src="https://www.redhat.com/rhdc/managed-files/logo_open-patient_black_0.svg"
+                          alt="Open Patient"
+                          class="img-fluid mb-2"
+                          width="200"
+                        />
+                        <p class="font-size-16">
+                          What happens when patients take data―and their
+                          care―into their own hands?
+                        </p>
+                        <p class="font-weight-bold mt-1">
+                          <a href="open-patient.html"
+                            >Watch the film
+                            <i
+                              class="fa fa-play-circle font-size-20"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-sm-8 col-md-4 mb-3 mb-md-0 d-flex">
+                  <!-- E-nable -->
+                  <article role="article" class="node-shared">
+                    <div
+                      class="card card-half-slide h-100"
+                      data-bg-image="../../rhdc/managed-files/e-nable-shaded.jpg"
+                    >
+                      <div class="card-header text-center">
+                        <img
+                          src="https://www.redhat.com/rhdc/managed-files/e-nable-logo.svg"
+                          alt="E-nable"
+                          class="img-fluid mb-3"
+                        />
+                        <p class="font-weight-bold mt-1">
+                          <a href="e-nable.html" class="text-white"
+                            >Watch the film
+                            <i
+                              class="fa fa-play-circle font-size-20"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                        </p>
+                      </div>
+                      <div class="card-body text-center">
+                        <img
+                          src="https://www.redhat.com/rhdc/managed-files/e-nable_black.svg"
+                          alt="E-nable"
+                          class="img-fluid mb-2"
+                        />
+                        <p class="font-size-16">
+                          A global community of volunteers design, fabricate,
+                          and distribute open source 3-D-printed prosthetics for
+                          free.
+                        </p>
+                        <p class="font-weight-bold mt-1">
+                          <a href="e-nable.html"
+                            >Watch the film
+                            <i
+                              class="fa fa-play-circle font-size-20"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="dms-band py-0 bg-black-film-20">
+            <div class="container"><hr class="m-0" /></div>
+          </section>
 
-      
-  <a href="../summit.html"><img src="https://www.redhat.com/rhdc/managed-files/Logo-Red_Hat-Summit-A-Standard-RGB-02_0.svg" alt="Red Hat Summit" style="float: right;" width="72px"></a>
+          <!-- Newsletter -->
+          <article role="article" class="node-shared">
+            <!-- Newsletter -->
+            <section class="dms-band pt-4 bg-black-film-20">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-lg-6 col-xl-5 mb-4 mb-lg-0 text-white">
+                    <img
+                      class="img-fluid mb-3"
+                      src="https://www.redhat.com/rhdc/managed-files/OSS-logo-white-horizontal.svg"
+                      width="248"
+                      alt="Open Source Stories logo"
+                    />
 
-</div>
-          </div>
-        </section>
-      </div>
-    </section>
+                    <h2>What's the next story?</h2>
 
-<script type="text/javascript" src="../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"></script>
-<div id="consent_blackbar" style="position: fixed;bottom: 0;width: 100%;z-index: 5;padding: 10px;"></div>
-      
+                    <p>
+                      Open Source Stories, an original series from Red Hat,
+                      celebrates the innovators who bring the power of open
+                      source to everything people do.
+                    </p>
 
-</article>
+                    <a
+                      class="btn btn-primary mt-1"
+                      href="opensource-newsletter-signup82cd.html?sc_cid=70160000000wxWUAAY"
+                      title="Get the newsletter"
+                      >Get the newsletter</a
+                    >
+                  </div>
 
-  </div>
+                  <div class="col-12 col-lg-6 offset-xl-1">
+                    <div class="card mb-0 bg-white rounded-0">
+                      <div class="card-body p-2 p-md-4">
+                        <h2 class="text-red">
+                          We're committed to the open source&nbsp;way
+                        </h2>
 
-</article>
+                        <p>
+                          Learn more about open source. Understand our
+                          community-to-enterprise development model. Discover
+                          The Open Organization.
+                        </p>
 
+                        <a
+                          class="btn btn-link"
+                          href="../about/open-source.html"
+                          title="Find out more"
+                          >Find out more</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </article>
 
-<footer class="rhb-region__footer"><div class="rhb-footer"></div></footer>
-  </div>
+          <!-- universal footer -->
+          <article role="article" class="node-shared">
+            <section class="rc-footer-traditional">
+              <div class="container rc-footer-traditional-container">
+                <section class="rc-footer-traditional-section">
+                  <div class="rc-footer-traditional-logo">
+                    <div class="row">
+                      <a href="https://www.redhat.com/">
+                        <img
+                          src="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo.svg"
+                          class="screen"
+                          title="Red Hat"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div id="legal" class="rc-footer-traditional-legal">
+                    <div class="row">
+                      <div class="copyright">Copyright ©2021 Red Hat, Inc.</div>
+                      <div>
+                        <ul class="menu">
+                          <li class="first leaf">
+                            <a href="../about/privacy-policy.html"
+                              >Privacy statement</a
+                            >
+                          </li>
+                          <li class="leaf">
+                            <a href="../about/terms-use.html">Terms of use</a>
+                          </li>
+                          <li class="leaf">
+                            <a href="../about/all-policies-guidelines.html"
+                              >All policies and guidelines</a
+                            >
+                          </li>
+                          <li class="last leaf">
+                            <span id="teconsent" class="nolink">|</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rc-footer-traditional-event-logo">
+                    <div
+                      id="block-block-5"
+                      class="block block-block block-footer-promote"
+                    >
+                      <a href="../summit.html"
+                        ><img
+                          src="https://www.redhat.com/rhdc/managed-files/Logo-Red_Hat-Summit-A-Standard-RGB-02_0.svg"
+                          alt="Red Hat Summit"
+                          style="float: right"
+                          width="72px"
+                      /></a>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </section>
 
-    <script type="text/javascript" src="../../ux/webdms/js/vendors/jquery.waypoints.min.js"></script>
-<script type="text/javascript" src="../../ux/webdms/js/scripts.min.js"></script>
-<script type="text/javascript" src="../../ux/webdms/js/projects/open-source-stories.min.js"></script>
-<script type="text/javascript" src="../../sites/all/libraries/webrh/dist/js/webrh.webcomponents.min.js"></script>
-<script id="rhdc_analytics_get_bottom_eddl_js" type="text/javascript">!function(a){"use strict";a.appEventData=a.appEventData||[],appEventData.push({event:"Page Load Completed"})}(window);</script>
-<script type="text/javascript">if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {_satellite.pageBottom();}</script>
+            <script
+              type="text/javascript"
+              src="../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"
+            ></script>
+            <div
+              id="consent_blackbar"
+              style="
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                z-index: 5;
+                padding: 10px;
+              "
+            ></div>
+          </article>
+        </div>
+      </article>
 
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"en\/","currentPath":"node\/203951","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","user":{"uid":0,"permissionsHash":"925c93e5e058a38840206e2faeb20be77d5863a368189af16a0faa928225c714"}}</script>
+      <footer class="rhb-region__footer"><div class="rhb-footer"></div></footer>
+    </div>
 
-  <script type="text/javascript"  src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"></script></body>
+    <script
+      type="text/javascript"
+      src="../../ux/webdms/js/vendors/jquery.waypoints.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../ux/webdms/js/scripts.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../ux/webdms/js/projects/open-source-stories.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../sites/all/libraries/webrh/dist/js/webrh.webcomponents.min.js"
+    ></script>
+    <script id="rhdc_analytics_get_bottom_eddl_js" type="text/javascript">
+      !(function (a) {
+        "use strict";
+        (a.appEventData = a.appEventData || []),
+          appEventData.push({ event: "Page Load Completed" });
+      })(window);
+    </script>
+    <script type="text/javascript">
+      if (
+        "undefined" !== typeof _satellite &&
+        "function" === typeof _satellite.pageBottom
+      ) {
+        _satellite.pageBottom();
+      }
+    </script>
 
-<!-- Mirrored from www.redhat.com/en/open-source-stories/road-to-ai by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:34:23 GMT -->
+    <script type="application/json" data-drupal-selector="drupal-settings-json">
+      {
+        "path": {
+          "baseUrl": "\/",
+          "scriptPath": null,
+          "pathPrefix": "en\/",
+          "currentPath": "node\/203951",
+          "currentPathIsAdmin": false,
+          "isFront": false,
+          "currentLanguage": "en"
+        },
+        "pluralDelimiter": "\u0003",
+        "user": {
+          "uid": 0,
+          "permissionsHash": "925c93e5e058a38840206e2faeb20be77d5863a368189af16a0faa928225c714"
+        }
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"
+    ></script>
+  </body>
+
+  <!-- Mirrored from www.redhat.com/en/open-source-stories/road-to-ai by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:34:23 GMT -->
 </html>

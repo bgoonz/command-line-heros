@@ -1,278 +1,782 @@
 <!DOCTYPE html>
 <html>
-  
-<!-- Mirrored from www.redhat.com/en/engage/modernize-apps-containers-20171117 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:37:21 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--[if IE]><![endif]-->
-<script id="trustarc" type="text/javascript" src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"></script>
-<script id="ddo" type="text/javascript">
-<!--//--><![CDATA[//><!--
-    var digitalData = {"cart":[],"event":[],"listing":{"browseFilter":"","query":"","queryMethod":"","refinementType":"","refinementValue":"","resultCount":"","searchType":""},"page":{"attributes":{"queryParameters":"","referringSearchEngine":"","analyticsTitle":"engage | modernize apps containers 20171117"},"category":{"contentType":"","keyPage":"false","keyPageType":"","pageType":"campaign","primaryCategory":"engage","subCategories":["modernize-apps-containers-20171117"]},"pageInfo":{"cms":"RH CMS 2021.12.0","contentFindingMethod":"","contentID":"239591","contentPortal":"","destinationURL":"https:\/\/www.redhat.com\/en\/engage\/modernize-apps-containers-20171117","errorMessage":"","errorType":"","language":"en","pageName":"","referringDomain":"","referringURL":"","sysEnv":"","template":"","title":"Whitepaper - Modernizing application delivery with container platforms"}},"product":[],"user":[{"profile":[{"profileInfo":{"daysSinceLastPurchase":"","demandbaseSID":"","eloquaGUID":"","lastLoginDate":"","lastPurchaseDate":"","loggedIn":"false","profileID":"","subscriptionFrequency":"","subscriptionLevel":""}}]}]};
-    !function(a,b,c){"use strict";function d(a){var c="; "+b.cookie,d=c.split("; "+a+"=");if(2===d.length)return d.pop().split(";").shift()}if(b.referrer){var e=b.createElement("a");e.href=b.referrer,c.page.pageInfo.referringDomain=e.hostname,c.page.pageInfo.referringURL=e.href}c.page.pageInfo.sysEnv=a.innerWidth<=768?"tablet":"desktop";var f=c.user[0].profile[0].profileInfo,g=d("rh_elqCustomerGUID");g&&(f.eloquaGUID=g);var h=d("rh_user");if(h){var i=h.split("\\|");i[0]&&(f.loggedIn="true")}var j=d("s_dmdbase");j&&(f.demandbaseSID=j)}(window,document,digitalData);
-//--><!]]>
-</script>
-<script src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm.js" data-domain="www.redhat.com"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-functional.js" class="trustecm" data-tracker-type="functional"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-advertising.js" class="trustecm" data-tracker-type="advertising"></script><script id="dpal" type="text/javascript" src="http://www.redhat.com/dtm.js"></script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="content-language" content="en" />
-<link href="https://www.redhat.com/en/engage/modernize-apps-containers-20171117" rel="alternate" hreflang="en" />
-<script type="application/ld+json">{
-    "@context": "https://schema.org",
-    "availableLanguages": {
-        "zh": {
+  <!-- Mirrored from www.redhat.com/en/engage/modernize-apps-containers-20171117 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:37:21 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if IE]> <![endif]-->
+    <script
+      id="trustarc"
+      type="text/javascript"
+      src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"
+    ></script>
+    <script id="ddo" type="text/javascript">
+      <!--//--><![CDATA[//><!--
+      var digitalData = {
+        cart: [],
+        event: [],
+        listing: {
+          browseFilter: "",
+          query: "",
+          queryMethod: "",
+          refinementType: "",
+          refinementValue: "",
+          resultCount: "",
+          searchType: "",
+        },
+        page: {
+          attributes: {
+            queryParameters: "",
+            referringSearchEngine: "",
+            analyticsTitle: "engage | modernize apps containers 20171117",
+          },
+          category: {
+            contentType: "",
+            keyPage: "false",
+            keyPageType: "",
+            pageType: "campaign",
+            primaryCategory: "engage",
+            subCategories: ["modernize-apps-containers-20171117"],
+          },
+          pageInfo: {
+            cms: "RH CMS 2021.12.0",
+            contentFindingMethod: "",
+            contentID: "239591",
+            contentPortal: "",
+            destinationURL:
+              "https:\/\/www.redhat.com\/en\/engage\/modernize-apps-containers-20171117",
+            errorMessage: "",
+            errorType: "",
+            language: "en",
+            pageName: "",
+            referringDomain: "",
+            referringURL: "",
+            sysEnv: "",
+            template: "",
+            title:
+              "Whitepaper - Modernizing application delivery with container platforms",
+          },
+        },
+        product: [],
+        user: [
+          {
+            profile: [
+              {
+                profileInfo: {
+                  daysSinceLastPurchase: "",
+                  demandbaseSID: "",
+                  eloquaGUID: "",
+                  lastLoginDate: "",
+                  lastPurchaseDate: "",
+                  loggedIn: "false",
+                  profileID: "",
+                  subscriptionFrequency: "",
+                  subscriptionLevel: "",
+                },
+              },
+            ],
+          },
+        ],
+      };
+      !(function (a, b, c) {
+        "use strict";
+        function d(a) {
+          var c = "; " + b.cookie,
+            d = c.split("; " + a + "=");
+          if (2 === d.length) return d.pop().split(";").shift();
+        }
+        if (b.referrer) {
+          var e = b.createElement("a");
+          (e.href = b.referrer),
+            (c.page.pageInfo.referringDomain = e.hostname),
+            (c.page.pageInfo.referringURL = e.href);
+        }
+        c.page.pageInfo.sysEnv = a.innerWidth <= 768 ? "tablet" : "desktop";
+        var f = c.user[0].profile[0].profileInfo,
+          g = d("rh_elqCustomerGUID");
+        g && (f.eloquaGUID = g);
+        var h = d("rh_user");
+        if (h) {
+          var i = h.split("\\|");
+          i[0] && (f.loggedIn = "true");
+        }
+        var j = d("s_dmdbase");
+        j && (f.demandbaseSID = j);
+      })(window, document, digitalData);
+      //--><!]]>
+    </script>
+    <script
+      src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm.js"
+      data-domain="www.redhat.com"
+    ></script>
+    <script
+      data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-functional.js"
+      class="trustecm"
+      data-tracker-type="functional"
+    ></script>
+    <script
+      data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-advertising.js"
+      class="trustecm"
+      data-tracker-type="advertising"
+    ></script>
+    <script
+      id="dpal"
+      type="text/javascript"
+      src="http://www.redhat.com/dtm.js"
+    ></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="en" />
+    <link
+      href="https://www.redhat.com/en/engage/modernize-apps-containers-20171117"
+      rel="alternate"
+      hreflang="en"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "availableLanguages": {
+          "zh": {
             "@type": "Language",
             "name": "简体中文",
             "href": "/zh/engage/modernize-apps-containers-20171117"
-        },
-        "en": {
+          },
+          "en": {
             "@type": "Language",
             "name": "English",
             "href": "/en/engage/modernize-apps-containers-20171117",
             "current_lang": true
-        },
-        "fr": {
+          },
+          "fr": {
             "@type": "Language",
             "name": "Français",
             "href": "/fr/engage/modernize-apps-containers-20171117"
-        },
-        "de": {
+          },
+          "de": {
             "@type": "Language",
             "name": "Deutsch",
             "href": "/de/engage/modernize-apps-containers-20171117"
-        },
-        "it": {
+          },
+          "it": {
             "@type": "Language",
             "name": "Italiano",
             "href": "/it/engage/modernize-apps-containers-20171117"
-        },
-        "ja": {
+          },
+          "ja": {
             "@type": "Language",
             "name": "日本語",
             "href": "/ja/engage/modernize-apps-containers-20171117"
-        },
-        "ko": {
+          },
+          "ko": {
             "@type": "Language",
             "name": "한국어",
             "href": "/ko/engage/modernize-apps-containers-20171117"
-        },
-        "pt-br": {
+          },
+          "pt-br": {
             "@type": "Language",
             "name": "Português",
             "href": "/pt-br/engage/modernize-apps-containers-20171117"
-        },
-        "es": {
+          },
+          "es": {
             "@type": "Language",
             "name": "Español",
             "href": "/es/engage/modernize-apps-containers-20171117"
+          }
         }
-    }
-}</script><meta name="last-publish-date" content="Fri, 27 Apr 2018 04:00:00 GMT" />
-<meta name="node-type" content="campaign" />
-<meta name="source" content="rhdc_drupal" />
-<meta name="rhdc_key" content="6a4a12217ee1c510a35c8dd7959851a5" />
-<link rel="shortcut icon" href="https://www.redhat.com/misc/favicon.ico" type="image/x-icon" />
-<meta property="og:description" content="] RED HAT CONSULTING Change the way you deliver apps with a container platform Download our guide to modernizing application delivery Get The Whitepaper Red Hat can help you revolutionize how you deliver apps, with the right technology, platform, and processes. Everyone in IT is under pressure to do things faster—provision faster, build faster, and go to market with new apps and offerings faster. To support these efforts, while managing stagnant and shrinking budgets, organizations are turning to modern, efficient technologies that make development easier, more collaborative, and scalable. Linux® containers and a container application platform, like Red Hat® OpenShift® Container Platform, can help you deliver apps that are thoroughly tested, quickly released, frequently updated, widely replicated, and efficiently maintained and monitored. An effective adoption program—using practices guided by experience—can lead organizations to successful container-based software delivery infrastructure. The “Modernizing application delivery with container platforms” whitepaper shows how adopting container technologies and modern methodologies, like DevOps, can help you achieve efficient software delivery—the key to success. Container application platforms make difficult, time-consuming operational tasks easier through: Persistent storage access for stateful apps and app services Simplified load balancing, scheduling, and scaling Streamlined deployment of complex apps to physical or virtual and public, private, or hybrid cloud Learn how Red Hat OpenShift can help modernize how you deliver apps. ] Containers provide a common framework and language that tie development, operations, security, quality assurance (QA), and other teams together. Whitepaper: Modernizing Application Delivery with Container Platforms Free Whitepaper Download “Modernizing Application Delivery with Container Platforms” ]" />
-<meta name="description" content="] RED HAT CONSULTING Change the way you deliver apps with a container platform Download our guide to modernizing application delivery Get The Whitepaper Red Hat can help you revolutionize how you deliver apps, with the right technology, platform, and processes. Everyone in IT is under pressure to do things faster—provision faster, build faster, and go to market with new apps and offerings faster. To support these efforts, while managing stagnant and shrinking budgets, organizations are turning to modern, efficient technologies that make development easier, more collaborative, and scalable. Linux® containers and a container application platform, like Red Hat® OpenShift® Container Platform, can help you deliver apps that are thoroughly tested, quickly released, frequently updated, widely replicated, and efficiently maintained and monitored. An effective adoption program—using practices guided by experience—can lead organizations to successful container-based software delivery infrastructure. The “Modernizing application delivery with container platforms” whitepaper shows how adopting container technologies and modern methodologies, like DevOps, can help you achieve efficient software delivery—the key to success. Container application platforms make difficult, time-consuming operational tasks easier through: Persistent storage access for stateful apps and app services Simplified load balancing, scheduling, and scaling Streamlined deployment of complex apps to physical or virtual and public, private, or hybrid cloud Learn how Red Hat OpenShift can help modernize how you deliver apps. ] Containers provide a common framework and language that tie development, operations, security, quality assurance (QA), and other teams together. Whitepaper: Modernizing Application Delivery with Container Platforms Free Whitepaper Download “Modernizing Application Delivery with Container Platforms” ]" />
-<meta name="robots" content="noarchive, nofollow, noimageindex, noindex, noodp, nosnippet, notranslate, noydir" />
-<meta name="generator" content="Drupal 7 (http://drupal.org)" />
-<link rel="image_src" href="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/red-hat-social-share.jpg" />
-<link rel="canonical" href="https://www.redhat.com/en/engage/modernize-apps-containers-20171117" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.redhat.com/en/engage/modernize-apps-containers-20171117" />
-<meta property="og:title" content="SOLP Modernize App Delivery with Containers - enhanced" />
-<meta property="og:image" content="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/red-hat-social-share.jpg" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="SOLP Modernize App Delivery with Containers - enhanced" />
-<meta name="twitter:image" content="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/red-hat-social-share.jpg" />
-    <title>Whitepaper - Modernizing application delivery with container platforms</title>
+      }
+    </script>
+    <meta name="last-publish-date" content="Fri, 27 Apr 2018 04:00:00 GMT" />
+    <meta name="node-type" content="campaign" />
+    <meta name="source" content="rhdc_drupal" />
+    <meta name="rhdc_key" content="6a4a12217ee1c510a35c8dd7959851a5" />
+    <link
+      rel="shortcut icon"
+      href="https://www.redhat.com/misc/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta
+      property="og:description"
+      content="] RED HAT CONSULTING Change the way you deliver apps with a container platform Download our guide to modernizing application delivery Get The Whitepaper Red Hat can help you revolutionize how you deliver apps, with the right technology, platform, and processes. Everyone in IT is under pressure to do things faster—provision faster, build faster, and go to market with new apps and offerings faster. To support these efforts, while managing stagnant and shrinking budgets, organizations are turning to modern, efficient technologies that make development easier, more collaborative, and scalable. Linux® containers and a container application platform, like Red Hat® OpenShift® Container Platform, can help you deliver apps that are thoroughly tested, quickly released, frequently updated, widely replicated, and efficiently maintained and monitored. An effective adoption program—using practices guided by experience—can lead organizations to successful container-based software delivery infrastructure. The “Modernizing application delivery with container platforms” whitepaper shows how adopting container technologies and modern methodologies, like DevOps, can help you achieve efficient software delivery—the key to success. Container application platforms make difficult, time-consuming operational tasks easier through: Persistent storage access for stateful apps and app services Simplified load balancing, scheduling, and scaling Streamlined deployment of complex apps to physical or virtual and public, private, or hybrid cloud Learn how Red Hat OpenShift can help modernize how you deliver apps. ] Containers provide a common framework and language that tie development, operations, security, quality assurance (QA), and other teams together. Whitepaper: Modernizing Application Delivery with Container Platforms Free Whitepaper Download “Modernizing Application Delivery with Container Platforms” ]"
+    />
+    <meta
+      name="description"
+      content="] RED HAT CONSULTING Change the way you deliver apps with a container platform Download our guide to modernizing application delivery Get The Whitepaper Red Hat can help you revolutionize how you deliver apps, with the right technology, platform, and processes. Everyone in IT is under pressure to do things faster—provision faster, build faster, and go to market with new apps and offerings faster. To support these efforts, while managing stagnant and shrinking budgets, organizations are turning to modern, efficient technologies that make development easier, more collaborative, and scalable. Linux® containers and a container application platform, like Red Hat® OpenShift® Container Platform, can help you deliver apps that are thoroughly tested, quickly released, frequently updated, widely replicated, and efficiently maintained and monitored. An effective adoption program—using practices guided by experience—can lead organizations to successful container-based software delivery infrastructure. The “Modernizing application delivery with container platforms” whitepaper shows how adopting container technologies and modern methodologies, like DevOps, can help you achieve efficient software delivery—the key to success. Container application platforms make difficult, time-consuming operational tasks easier through: Persistent storage access for stateful apps and app services Simplified load balancing, scheduling, and scaling Streamlined deployment of complex apps to physical or virtual and public, private, or hybrid cloud Learn how Red Hat OpenShift can help modernize how you deliver apps. ] Containers provide a common framework and language that tie development, operations, security, quality assurance (QA), and other teams together. Whitepaper: Modernizing Application Delivery with Container Platforms Free Whitepaper Download “Modernizing Application Delivery with Container Platforms” ]"
+    />
+    <meta
+      name="robots"
+      content="noarchive, nofollow, noimageindex, noindex, noodp, nosnippet, notranslate, noydir"
+    />
+    <meta name="generator" content="Drupal 7 (http://drupal.org)" />
+    <link
+      rel="image_src"
+      href="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/red-hat-social-share.jpg"
+    />
+    <link
+      rel="canonical"
+      href="https://www.redhat.com/en/engage/modernize-apps-containers-20171117"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.redhat.com/en/engage/modernize-apps-containers-20171117"
+    />
+    <meta
+      property="og:title"
+      content="SOLP Modernize App Delivery with Containers - enhanced"
+    />
+    <meta
+      property="og:image"
+      content="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/red-hat-social-share.jpg"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="SOLP Modernize App Delivery with Containers - enhanced"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/red-hat-social-share.jpg"
+    />
+    <title>
+      Whitepaper - Modernizing application delivery with container platforms
+    </title>
     <style type="text/css" media="all">
-/* <![CDATA[ */
-.hidden-xs{display:none}.visible-xs{display:block}.ux-card{padding:30px!important;margin:0 auto!important;float:none!important}.ux-band[data-ux-band-background=gray-squares]{background-color:#262c30;background-repeat:no-repeat;background-position:center top}section#form a.btn.cta-primary{width:auto;padding:.5em 2.2222222222em;}@media (min-width:480px){[data-ux-layout="2 1 flex"]>:nth-child(2),[data-ux-layout="2 1"]>:nth-child(2){clear:none}}@media (max-width:768px){.ux-band[data-ux-band-type=hero] h1.ux-custom-band-header-headline{font-size:1.6em}}@media (min-width:768px){.hidden-xs{display:block}.visible-xs{display:none}.ux-band[data-ux-band-type=hero] .ux-band-container{min-height:50vh;max-height:740px}}//
-section.form-header{display:none;}section.form-content,section.form-footer{padding:0;color:$gray-500;font-weight:bold;}section.form-content label:before{content:'*';color:$red;font-weight:bold;margin-right:3px;}section.form-content .controls.dropdown{overflow:hidden;position:relative;&:after{content:"";padding:12px 0;position:absolute;right:10px;top:50%;margin-top:-4px;z-index:1;text-align:center;pointer-events:none;width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-top:10px solid $gray-500;}}section.form-content select,section.form-content input{-webkit-appearance:none;border:1px solid #dbdcdd;border-left:3px solid #f2e4e4;}// *** RADIO BUTTONS *** //
-.controls.radio-option{padding:5px 0;background:0 0;position:relative;box-sizing:border-box;}.controls.radio-option input{border-radius:100% !important;visibility:visible;-webkit-appearance:none;cursor:pointer;position:absolute;margin:0 !important;top:5px !important;left:0 !important;width:14px !important;height:14px !important;box-sizing:border-box;}.controls.radio-option label{display:block;position:relative;top:auto;left:0;margin:0;padding:0 0 0 calc(14px + 10px);font-size:14px;font-weight:400;line-height:1.2;}.controls.radio-option label:before,.controls.radio-option label:after{content:"";position:absolute;left:0;top:0;border-radius:50%;}.controls.radio-option label:before{width:14px !important;height:14px !important;border:2px solid #252527;background-color:#fff;box-sizing:content-box;}.controls.radio-option label:after{background-color:transparent;width:12px !important;height:12px !Important;margin:3px;}.controls.radio-option input[type=radio]:checked+label::after{background-color:#252527;}#elqFormSubmitFrame+form .control-label.required:before,#elqFormSubmitFrame+form .form-content>.form-group:not(#FormSubmitButton-form-group)>.required:first-child:not([type=hidden]):before{color:#c00;}.controls.radio-option input:focus{box-shadow:none !important;}.controls.radio-option input{top:10px !important;}
+      /* <![CDATA[ */
+      .hidden-xs {
+        display: none;
+      }
+      .visible-xs {
+        display: block;
+      }
+      .ux-card {
+        padding: 30px !important;
+        margin: 0 auto !important;
+        float: none !important;
+      }
+      .ux-band[data-ux-band-background="gray-squares"] {
+        background-color: #262c30;
+        background-repeat: no-repeat;
+        background-position: center top;
+      }
+      section#form a.btn.cta-primary {
+        width: auto;
+        padding: 0.5em 2.2222222222em;
+      }
+      @media (min-width: 480px) {
+        [data-ux-layout="2 1 flex"] > :nth-child(2),
+        [data-ux-layout="2 1"] > :nth-child(2) {
+          clear: none;
+        }
+      }
+      @media (max-width: 768px) {
+        .ux-band[data-ux-band-type="hero"] h1.ux-custom-band-header-headline {
+          font-size: 1.6em;
+        }
+      }
+      @media (min-width: 768px) {
+        .hidden-xs {
+          display: block;
+        }
+        .visible-xs {
+          display: none;
+        }
+        .ux-band[data-ux-band-type="hero"] .ux-band-container {
+          min-height: 50vh;
+          max-height: 740px;
+        }
+      } //
+      section.form-header {
+        display: none;
+      }
+      section.form-content,
+      section.form-footer {
+        padding: 0;
+        color: $gray-500;
+        font-weight: bold;
+      }
+      section.form-content label:before {
+        content: "*";
+        color: $red;
+        font-weight: bold;
+        margin-right: 3px;
+      }
+      section.form-content .controls.dropdown {
+        overflow: hidden;
+        position: relative;
+        &:after {
+          content: "";
+          padding: 12px 0;
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          margin-top: -4px;
+          z-index: 1;
+          text-align: center;
+          pointer-events: none;
+          width: 0;
+          height: 0;
+          border-left: 7px solid transparent;
+          border-right: 7px solid transparent;
+          border-top: 10px solid $gray-500;
+        }
+      }
+      section.form-content select,
+      section.form-content input {
+        -webkit-appearance: none;
+        border: 1px solid #dbdcdd;
+        border-left: 3px solid #f2e4e4;
+      } // *** RADIO BUTTONS *** //
+      .controls.radio-option {
+        padding: 5px 0;
+        background: 0 0;
+        position: relative;
+        box-sizing: border-box;
+      }
+      .controls.radio-option input {
+        border-radius: 100% !important;
+        visibility: visible;
+        -webkit-appearance: none;
+        cursor: pointer;
+        position: absolute;
+        margin: 0 !important;
+        top: 5px !important;
+        left: 0 !important;
+        width: 14px !important;
+        height: 14px !important;
+        box-sizing: border-box;
+      }
+      .controls.radio-option label {
+        display: block;
+        position: relative;
+        top: auto;
+        left: 0;
+        margin: 0;
+        padding: 0 0 0 calc(14px + 10px);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.2;
+      }
+      .controls.radio-option label:before,
+      .controls.radio-option label:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 50%;
+      }
+      .controls.radio-option label:before {
+        width: 14px !important;
+        height: 14px !important;
+        border: 2px solid #252527;
+        background-color: #fff;
+        box-sizing: content-box;
+      }
+      .controls.radio-option label:after {
+        background-color: transparent;
+        width: 12px !important;
+        height: 12px !important;
+        margin: 3px;
+      }
+      .controls.radio-option input[type="radio"]:checked + label::after {
+        background-color: #252527;
+      }
+      #elqFormSubmitFrame + form .control-label.required:before,
+      #elqFormSubmitFrame
+        + form
+        .form-content
+        > .form-group:not(#FormSubmitButton-form-group)
+        > .required:first-child:not([type="hidden"]):before {
+        color: #c00;
+      }
+      .controls.radio-option input:focus {
+        box-shadow: none !important;
+      }
+      .controls.radio-option input {
+        top: 10px !important;
+      }
 
-/* ]]> */
-</style>
-<link type="text/css" rel="stylesheet" href="https://www.redhat.com/ux/webux/css/single-offer-landing-page/solp2.css?qy3uiv" media="all" />
-<link type="text/css" rel="stylesheet" href="https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/files/rh-iconfont.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/files/rh-web-iconfont.css" media="all" />
-    <script type="text/javascript" src="https://www.redhat.com/sites/default/files/advagg_js/js__VZLjLgGBAK_KjYSsO-Z7ucOF8hgz51ddXUDuA7VWz1Y__49OB-gHITEyalGa39LLfPfTbHvMvoZ2vlRbuOY6ryhc__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.js"></script>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","rh_analytics_enabled":false,"ajaxPageState":{"js":{"\/ux\/webux\/js\/single-offer-landing-page\/solp.js":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/drupal.js":1}}});
-//--><!]]>
-</script>
+      /* ]]> */
+    </style>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.redhat.com/ux/webux/css/single-offer-landing-page/solp2.css?qy3uiv"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/files/rh-iconfont.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/files/rh-web-iconfont.css"
+      media="all"
+    />
+    <script
+      type="text/javascript"
+      src="https://www.redhat.com/sites/default/files/advagg_js/js__VZLjLgGBAK_KjYSsO-Z7ucOF8hgz51ddXUDuA7VWz1Y__49OB-gHITEyalGa39LLfPfTbHvMvoZ2vlRbuOY6ryhc__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.js"
+    ></script>
+    <script type="text/javascript">
+      <!--//--><![CDATA[//><!--
+      jQuery.extend(Drupal.settings, {
+        basePath: "\/",
+        pathPrefix: "en\/",
+        rh_analytics_enabled: false,
+        ajaxPageState: {
+          js: {
+            "\/ux\/webux\/js\/single-offer-landing-page\/solp.js": 1,
+            "sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js": 1,
+            "misc\/drupal.js": 1,
+          },
+        },
+      });
+      //--><!]]>
+    </script>
   </head>
-  <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-239591 node-type-campaign i18n-en" >
-    <section class="ux-band" data-ux-band-background="gray-squares" data-ux-theme="dark" data-ux-band-type="hero" style="background-image: url(https://www.redhat.com/cms/managed-files/hdr_gray-square-pattern.gif);">
-
-        <div class="ux-band-container">
-            <div class="ux-group">
-                
-                <div class="ux-image-embed visible-xs">
-                    <div class="ux-image-embed-container">
-                        <a href="http://www.redhat.com/">
-                              <div class="media media-element-container media-default">
-                                  <img class="media-element file-default ux-image-embed-img" alt="The Red Hat logo, a shadowy figure with a red hat." title="Red Hat" src="https://www.redhat.com/cms/managed-files/shadowman-logo.png" width="138" height="44">
-                                  <p>&nbsp;</p>
-                              </div>
-                        </a>
-                    </div>
+  <body
+    class="
+      html
+      not-front not-logged-in
+      no-sidebars
+      page-node page-node- page-node-239591
+      node-type-campaign
+      i18n-en
+    "
+  >
+    <section
+      class="ux-band"
+      data-ux-band-background="gray-squares"
+      data-ux-theme="dark"
+      data-ux-band-type="hero"
+      style="
+        background-image: url(https://www.redhat.com/cms/managed-files/hdr_gray-square-pattern.gif);
+      "
+    >
+      <div class="ux-band-container">
+        <div class="ux-group">
+          <div class="ux-image-embed visible-xs">
+            <div class="ux-image-embed-container">
+              <a href="http://www.redhat.com/">
+                <div class="media media-element-container media-default">
+                  <img
+                    class="media-element file-default ux-image-embed-img"
+                    alt="The Red Hat logo, a shadowy figure with a red hat."
+                    title="Red Hat"
+                    src="https://www.redhat.com/cms/managed-files/shadowman-logo.png"
+                    width="138"
+                    height="44"
+                  />
+                  <p>&nbsp;</p>
                 </div>
-                
-                <div class="ux-image-embed hidden-xs">
-                    <div class="ux-image-embed-container">
-                        <div class="media media-element-container media-default"><div class="media media-element-container media-default"><img class="media-element file-default" width="275" height="71" src="https://www.redhat.com/cms/managed-files/openshift-logo-white-text-550x142.png" alt="Red Hat Open Shift Container Platform" /></div></div>
-                    </div>
-                </div>
-                
-                <div class="ux-band-container" data-ux-layout="2 8 2 nobreak" data-ux-text-align="center" data-ux-align="vertical">
-                    <div><!-- offset --></div>
-                    <header class="ux-band-header">
-                        <div class="ux-custom-band-header">
-                            <h2 class="ux-custom-band-header-title">RED HAT CONSULTING</h2>
-                        </div>
-                        <h1 class="ux-band-header-headline ux-custom-band-header-headline">Change the way you deliver apps with a container platform</h1>
-                        <p class="ux-band-header-summary">Download our guide to modernizing application delivery</p>
-                        <p><a class="ux-cta-link" data-ux-cta-type="primary" href="#form">Get The Whitepaper</a></p>
-                    </header>
-                </div>
-                
-                <div class="ux-image-embed hidden-xs" data-ux-align="right">
-                    <div class="ux-image-embed-container">
-                        <a href="http://www.redhat.com/">
-                              <div class="media media-element-container media-default"><img class="media-element file-default ux-image-embed-img" alt="The Red Hat logo, a shadowy figure with a red hat." title="Red Hat" src="https://www.redhat.com/cms/managed-files/shadowman-logo.png" width="138" height="44"></div>
-                        </a>
-                    </div>
-                </div>
+              </a>
             </div>
+          </div>
+
+          <div class="ux-image-embed hidden-xs">
+            <div class="ux-image-embed-container">
+              <div class="media media-element-container media-default">
+                <div class="media media-element-container media-default">
+                  <img
+                    class="media-element file-default"
+                    width="275"
+                    height="71"
+                    src="https://www.redhat.com/cms/managed-files/openshift-logo-white-text-550x142.png"
+                    alt="Red Hat Open Shift Container Platform"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="ux-band-container"
+            data-ux-layout="2 8 2 nobreak"
+            data-ux-text-align="center"
+            data-ux-align="vertical"
+          >
+            <div><!-- offset --></div>
+            <header class="ux-band-header">
+              <div class="ux-custom-band-header">
+                <h2 class="ux-custom-band-header-title">RED HAT CONSULTING</h2>
+              </div>
+              <h1
+                class="ux-band-header-headline ux-custom-band-header-headline"
+              >
+                Change the way you deliver apps with a container platform
+              </h1>
+              <p class="ux-band-header-summary">
+                Download our guide to modernizing application delivery
+              </p>
+              <p>
+                <a class="ux-cta-link" data-ux-cta-type="primary" href="#form"
+                  >Get The Whitepaper</a
+                >
+              </p>
+            </header>
+          </div>
+
+          <div class="ux-image-embed hidden-xs" data-ux-align="right">
+            <div class="ux-image-embed-container">
+              <a href="http://www.redhat.com/">
+                <div class="media media-element-container media-default">
+                  <img
+                    class="media-element file-default ux-image-embed-img"
+                    alt="The Red Hat logo, a shadowy figure with a red hat."
+                    title="Red Hat"
+                    src="https://www.redhat.com/cms/managed-files/shadowman-logo.png"
+                    width="138"
+                    height="44"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    
-    
+
     <section class="ux-band">
-        <div class="ux-band-container">
-            <div class="ux-group" data-ux-layout="2 1 flex">
-                <div class="ux-generic">
-                    <h3>Red Hat can help you revolutionize how you deliver apps, with the right technology, platform, and processes.</h3>
-    
-                    <p>Everyone in IT is under pressure to do things faster—provision faster, build faster, and go to market with new apps and offerings faster. To support these efforts, while managing stagnant and shrinking budgets, organizations are turning to modern, efficient technologies that make development easier, more collaborative, and scalable.</p>
-                    
-                    <p>Linux<sup>&reg;</sup> containers and a container application platform, like Red Hat<sup>&reg;</sup> OpenShift<sup>&reg;</sup> Container Platform, can help you deliver apps that are thoroughly tested, quickly released, frequently updated, widely replicated, and efficiently maintained and monitored. An effective adoption program—using practices guided by experience—can lead organizations to successful container-based software delivery infrastructure.</p>
-                    
-                    <p>The “Modernizing application delivery with container platforms” whitepaper shows how adopting container technologies and modern methodologies, like DevOps, can help you achieve efficient software delivery—the key to success.</p>
-                    
-                    <p><strong>Container application platforms make difficult, time-consuming operational tasks easier through:</strong></p>
-                    
-                    <ul>
-                        <li>Persistent storage access for stateful apps and app services</li>
-                        <li>Simplified load balancing, scheduling, and scaling</li>
-                        <li>Streamlined deployment of complex apps to physical or virtual and public, private, or hybrid cloud</li>
-                    </ul>
-                        
-                    <p><strong>Learn how Red Hat OpenShift can help modernize how you deliver apps.</strong></p>
-                </div>
-                
-                <div class="ux-group">
-                    <div class="ux-card" data-ux-theme="gray">
-                        <div class="ux-card-body">
-                            <a href="#form"><div class="media media-element-container media-default"><img class="media-element file-default" width="100%" height="" src="https://www.redhat.com/cms/managed-files/thumb_modernize-with-containers.png" alt="Modernizing Application Delivery with Container Platforms - Whitepaper PDF Download" title="Modernizing Application Delivery with Container Platforms - Whitepaper PDF Download" /></div></a>
-                        </div>
-                    </div>
-                    
-                    <div class="ux-card" data-ux-theme="dark rich-black">
-                        <div class="ux-card-body">
-                            <div class="ux-quote">
-                                <blockquote class="ux-quote-container">
-                                    <p class="ux-quote-quotation web-icon web-icon-open-quote">Containers provide a common framework and language that tie development, operations, security, quality assurance (QA), and other teams together.</p>
-                                    <footer class="ux-quote-reference">
-                                        Whitepaper: Modernizing Application Delivery with Container Platforms [PDF]
-                                    </footer>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
+      <div class="ux-band-container">
+        <div class="ux-group" data-ux-layout="2 1 flex">
+          <div class="ux-generic">
+            <h3>
+              Red Hat can help you revolutionize how you deliver apps, with the
+              right technology, platform, and processes.
+            </h3>
+
+            <p>
+              Everyone in IT is under pressure to do things faster—provision
+              faster, build faster, and go to market with new apps and offerings
+              faster. To support these efforts, while managing stagnant and
+              shrinking budgets, organizations are turning to modern, efficient
+              technologies that make development easier, more collaborative, and
+              scalable.
+            </p>
+
+            <p>
+              Linux<sup>&reg;</sup> containers and a container application
+              platform, like Red Hat<sup>&reg;</sup> OpenShift<sup>&reg;</sup>
+              Container Platform, can help you deliver apps that are thoroughly
+              tested, quickly released, frequently updated, widely replicated,
+              and efficiently maintained and monitored. An effective adoption
+              program—using practices guided by experience—can lead
+              organizations to successful container-based software delivery
+              infrastructure.
+            </p>
+
+            <p>
+              The “Modernizing application delivery with container platforms”
+              whitepaper shows how adopting container technologies and modern
+              methodologies, like DevOps, can help you achieve efficient
+              software delivery—the key to success.
+            </p>
+
+            <p>
+              <strong
+                >Container application platforms make difficult, time-consuming
+                operational tasks easier through:</strong
+              >
+            </p>
+
+            <ul>
+              <li>
+                Persistent storage access for stateful apps and app services
+              </li>
+              <li>Simplified load balancing, scheduling, and scaling</li>
+              <li>
+                Streamlined deployment of complex apps to physical or virtual
+                and public, private, or hybrid cloud
+              </li>
+            </ul>
+
+            <p>
+              <strong
+                >Learn how Red Hat OpenShift can help modernize how you deliver
+                apps.</strong
+              >
+            </p>
+          </div>
+
+          <div class="ux-group">
+            <div class="ux-card" data-ux-theme="gray">
+              <div class="ux-card-body">
+                <a href="#form"
+                  ><div class="media media-element-container media-default">
+                    <img
+                      class="media-element file-default"
+                      width="100%"
+                      height=""
+                      src="https://www.redhat.com/cms/managed-files/thumb_modernize-with-containers.png"
+                      alt="Modernizing Application Delivery with Container Platforms - Whitepaper PDF Download"
+                      title="Modernizing Application Delivery with Container Platforms - Whitepaper PDF Download"
+                    /></div
+                ></a>
+              </div>
             </div>
+
+            <div class="ux-card" data-ux-theme="dark rich-black">
+              <div class="ux-card-body">
+                <div class="ux-quote">
+                  <blockquote class="ux-quote-container">
+                    <p class="ux-quote-quotation web-icon web-icon-open-quote">
+                      Containers provide a common framework and language that
+                      tie development, operations, security, quality assurance
+                      (QA), and other teams together.
+                    </p>
+                    <footer class="ux-quote-reference">
+                      Whitepaper: Modernizing Application Delivery with
+                      Container Platforms [PDF]
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    
+
     <section id="form" class="ux-band" data-ux-band-background="gray">
-        <div class="ux-band-container">
-            <div class="ux-band-body">
-                <div class="ux-group" data-ux-layout="8">
-                    <div class="ux-card">
-                        <div class="ux-band-header" data-ux-text-align="center">
-                            <h3 class="ux-band-header-title">Free Whitepaper Download</h3>
-                            <p class="ux-band-header-summary">“Modernizing Application Delivery with Container Platforms”</p>
-                        </div>
-                        
-                        <div id="Loading" class="ajax-loader" style="width: auto; text-align: center; display: none;"><img src="https://www.redhat.com/forms/img/spinner.gif" alt="Loading" title="Loading"></div>
-                        <div class="ux-form" id="GatedFormContainer" data-ux-form-host="eloqua" data-form-layout="stacked" data-eq-pts="small: 0, medium: 600, large: 900" style="display: block;"></div>
-                    </div>
-                </div>
+      <div class="ux-band-container">
+        <div class="ux-band-body">
+          <div class="ux-group" data-ux-layout="8">
+            <div class="ux-card">
+              <div class="ux-band-header" data-ux-text-align="center">
+                <h3 class="ux-band-header-title">Free Whitepaper Download</h3>
+                <p class="ux-band-header-summary">
+                  “Modernizing Application Delivery with Container Platforms”
+                </p>
+              </div>
+
+              <div
+                id="Loading"
+                class="ajax-loader"
+                style="width: auto; text-align: center; display: none"
+              >
+                <img
+                  src="https://www.redhat.com/forms/img/spinner.gif"
+                  alt="Loading"
+                  title="Loading"
+                />
+              </div>
+              <div
+                class="ux-form"
+                id="GatedFormContainer"
+                data-ux-form-host="eloqua"
+                data-form-layout="stacked"
+                data-eq-pts="small: 0, medium: 600, large: 900"
+                style="display: block"
+              ></div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-<article class="node-shared">
-      <footer class="ux-band" data-ux-band-background="rich-black" data-ux-band-collapse="both">
-    <div class="ux-band-container">
-        <section class="ux-band-content">
-            <div class="ux-band-footer" data-ux-layout="flex-footer-variant" data-ux-theme="dark">
-                <div class="ux-group">
-                    <div class="ux-group-body" data-ux-layout="flex-center">
-                        <!-- Footnote Component -->
-                        <div class="ux-footnote" data-ux-theme="dark">
-                            <ul class="ux-footnote-container">
-                                <li class="ux-footnote-item">Copyright &copy; 2021 Red Hat, Inc.</li>
-                            </ul>
-                        </div>
-                        <!-- Footnote Component -->
-                        <div class="ux-footnote">
-                            <ul class="ux-footnote-container">
-                                <li class="ux-footnote-item"> <a class="ux-footnote-item-link" href="https://www.redhat.com/en/about/privacy-policy" title="Privacy statement ">Privacy statement</a> &nbsp;&nbsp;|&nbsp;&nbsp;  <a class="ux-footnote-item-link" href="https://www.redhat.com/en/about/terms-use" title="Terms of use">Terms of use</a> &nbsp;&nbsp;|&nbsp;&nbsp;  <a class="ux-footnote-item-link" href="https://www.redhat.com/en/about/all-policies-guidelines" title="All policies and guidelines">All policies and guidelines</a></li>
-<li class="last leaf"><span id="teconsent" style="line-height: 1.1;"></span></li>
-                            </ul>
-                        </div>
-                    </div>
+    <article class="node-shared">
+      <footer
+        class="ux-band"
+        data-ux-band-background="rich-black"
+        data-ux-band-collapse="both"
+      >
+        <div class="ux-band-container">
+          <section class="ux-band-content">
+            <div
+              class="ux-band-footer"
+              data-ux-layout="flex-footer-variant"
+              data-ux-theme="dark"
+            >
+              <div class="ux-group">
+                <div class="ux-group-body" data-ux-layout="flex-center">
+                  <!-- Footnote Component -->
+                  <div class="ux-footnote" data-ux-theme="dark">
+                    <ul class="ux-footnote-container">
+                      <li class="ux-footnote-item">
+                        Copyright &copy; 2021 Red Hat, Inc.
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Footnote Component -->
+                  <div class="ux-footnote">
+                    <ul class="ux-footnote-container">
+                      <li class="ux-footnote-item">
+                        <a
+                          class="ux-footnote-item-link"
+                          href="https://www.redhat.com/en/about/privacy-policy"
+                          title="Privacy statement "
+                          >Privacy statement</a
+                        >
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a
+                          class="ux-footnote-item-link"
+                          href="https://www.redhat.com/en/about/terms-use"
+                          title="Terms of use"
+                          >Terms of use</a
+                        >
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a
+                          class="ux-footnote-item-link"
+                          href="https://www.redhat.com/en/about/all-policies-guidelines"
+                          title="All policies and guidelines"
+                          >All policies and guidelines</a
+                        >
+                      </li>
+                      <li class="last leaf">
+                        <span id="teconsent" style="line-height: 1.1"></span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
-    </div>
-</footer>  
-  </article>
-
-
+          </section>
+        </div>
+      </footer>
+    </article>
 
     <script type="text/javascript">
-<!--//--><![CDATA[//><!--
-window.DynamicFormConfig = {"showAdditionalFields": [],
-    "hideStandardFields": [],
-    "CustomQuestions": [],
-    "offer_id": "70160000000lfDdAAI",
-    "language": "en",
-    "FormTitle": " ",
-    "FormIntro": " ",
-    "NameOrder": "western",
-    "FormCallToAction": "DOWNLOAD NOW",
-    "ShowThanksButton": "true",
-    "leadActivity": 1,
-    "disableVisitorContactLookups": false,
-    "no_css": true
-}
-//--><!]]>
-</script>
-<script type="text/javascript" src="https://www.redhat.com/ux/webux/js/single-offer-landing-page/solp.js"></script>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-  if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
-      _satellite.pageBottom();
-  }
-//--><!]]>
-</script>
-  <script type="text/javascript"  src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"></script></body>
+      <!--//--><![CDATA[//><!--
+      window.DynamicFormConfig = {
+        showAdditionalFields: [],
+        hideStandardFields: [],
+        CustomQuestions: [],
+        offer_id: "70160000000lfDdAAI",
+        language: "en",
+        FormTitle: " ",
+        FormIntro: " ",
+        NameOrder: "western",
+        FormCallToAction: "DOWNLOAD NOW",
+        ShowThanksButton: "true",
+        leadActivity: 1,
+        disableVisitorContactLookups: false,
+        no_css: true,
+      };
+      //--><!]]>
+    </script>
+    <script
+      type="text/javascript"
+      src="https://www.redhat.com/ux/webux/js/single-offer-landing-page/solp.js"
+    ></script>
+    <script type="text/javascript">
+      <!--//--><![CDATA[//><!--
+      if (
+        "undefined" !== typeof _satellite &&
+        "function" === typeof _satellite.pageBottom
+      ) {
+        _satellite.pageBottom();
+      }
+      //--><!]]>
+    </script>
+    <script
+      type="text/javascript"
+      src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"
+    ></script>
+  </body>
 
-<!-- Mirrored from www.redhat.com/en/engage/modernize-apps-containers-20171117 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:37:21 GMT -->
+  <!-- Mirrored from www.redhat.com/en/engage/modernize-apps-containers-20171117 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:37:21 GMT -->
 </html>

@@ -1,880 +1,2734 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
-  
-<!-- Mirrored from www.redhat.com/en/open-source-stories/ai-revolutionaries/right-side-robots by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:37:15 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-    <script id="rhdc_analytics_get_top_eddl_js" type="text/javascript">var pageData = {"pageCategory":"open-source-stories","pageName":"right side robots","pageTitle":"Open Source Stories: The Right Side of the Robots","analyticsTitle":"open source stories | ai revolutionaries | right side robots","pageType":"campaign","pageSubType":"","siteExperience":"","siteLanguage":"en","subsection":"ai-revolutionaries","subsection2":"right-side-robots","subsection3":"","cms":"RH CMS 1.0","contentID":"205661","contentType":"","destinationURL":"https:\/\/www.redhat.com\/en\/open-source-stories\/ai-revolutionaries\/right-side-robots","errorType":"","gated":false};!function(e,a){"use strict";e.appEventData=e.appEventData||[],e.pageData=e.pageData||[];var t={event:"Page Load Started",page:pageData};if(a.referrer){let e=a.createElement("a");e.href=a.referrer,t.page.previousPage=e.href}t.page.siteExperience=e.innerWidth<=768?"tablet":"desktop",appEventData.push(t)}(window,document);</script>
-<script id="ddo" type="text/javascript">digitalData = {"cart":[],"event":[],"listing":{"browseFilter":"","query":"","queryMethod":"","refinementType":"","refinementValue":"","resultCount":"","searchType":""},"page":{"attributes":{"queryParameters":"","referringSearchEngine":"","analyticsTitle":"open source stories | ai revolutionaries | right side robots"},"category":{"contentType":"","keyPage":"false","keyPageType":"","pageType":"campaign","primaryCategory":"open-source-stories","subCategories":["ai-revolutionaries","right-side-robots"]},"pageInfo":{"cms":"RH CMS 1.0","contentFindingMethod":"","contentID":"205661","contentPortal":"","destinationURL":"https:\/\/www.redhat.com\/en\/open-source-stories\/ai-revolutionaries\/right-side-robots","errorMessage":"","errorType":"","language":"en","pageName":"","referringDomain":"","referringURL":"","sysEnv":"","template":"","title":"Open Source Stories: The Right Side of the Robots"}},"product":[],"user":[{"profile":[{"profileInfo":{"daysSinceLastPurchase":"","demandbaseSID":"","eloquaGUID":"","lastLoginDate":"","lastPurchaseDate":"","loggedIn":"false","profileID":"","subscriptionFrequency":"","subscriptionLevel":""}}]}]};!function(e,a,r){"use strict";function n(e){var r=("; "+a.cookie).split("; "+e+"=");if(2===r.length)return r.pop().split(";").shift()}if(a.referrer){var t=a.createElement("a");t.href=a.referrer,r.page.pageInfo.referringDomain=t.hostname,r.page.pageInfo.referringURL=t.href}r.page.pageInfo.sysEnv=e.innerWidth<=768?"tablet":"desktop";var i=r.user[0].profile[0].profileInfo,o=n("rh_elqCustomerGUID");o&&(i.eloquaGUID=o);var f=n("rh_user");f&&f.split("\\|")[0]&&(i.loggedIn="true");var s=n("s_dmdbase");s&&(i.demandbaseSID=s)}(window,document,digitalData);</script>
-<script id="trustarc" type="text/javascript" src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"></script>
-<script src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm.js" data-domain="www.redhat.com"></script>
-<script class="trustecm" data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-functional.js" data-tracker-type="functional"></script>
-<script class="trustecm" data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-advertising.js" data-tracker-type="advertising"></script>
-<script id="dpal" type="text/javascript" src="https://www.redhat.com/dtm.js"></script>
-<meta charset="utf-8" />
-<script type="text/javascript" src="https://www.redhat.com/modules/custom/rhdc_campaign/libraries/src/js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="https://www.redhat.com/modules/custom/rhdc_campaign/libraries/src/js/drupal.js"></script>
-<meta name="twitter:card" content="summary" />
-<link rel="canonical" href="https://www.redhat.com/en/open-source-stories/ai-revolutionaries/right-side-robots" />
-<meta name="twitter:title" content="Open Source Stories: The Right Side of the Robots" />
-<meta property="og:type" content="website" />
-<meta name="description" content="Learn why a journalist quit his job, moved to San Francisco, and started an AI company." />
-<meta property="og:url" content="https://www.redhat.com/en/open-source-stories/ai-revolutionaries/right-side-robots" />
-<meta property="og:title" content="Open Source Stories: The Right Side of the Robots" />
-<link rel="image_src" href="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo-rh-og-image.png" />
-<meta property="og:description" content="Learn why a journalist quit his job, moved to San Francisco, and started an AI company." />
-<meta property="og:image" content="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo-rh-og-image.png" />
-<meta name="og:description" content="Learn why a journalist quit his job, moved to San Francisco, and started an AI company." />
-<meta name="og:image" content="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo-rh-og-image.png" />
-<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
-<meta name="MobileOptimized" content="width" />
-<meta name="HandheldFriendly" content="true" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta http-equiv="content-language" content="en" />
-<meta name="last-publish-date" content="Fri, 24 Jan 2020 18:19:37 GMT" />
-<meta name="node-type" content="campaign" />
-<meta name="source" content="rhdc_drupal" />
-<meta name="rhdc_key" content="86d49d0c7316175642245a6475b19126" />
-<meta name="dateline" content="2017-04-26T00:00:00.00Z" />
-<link type="text/css" rel="stylesheet" href="https://www.redhat.com/ux/webux/css/open-source-stories/ai-revolutionaries/right-robots.css" />
-<link rel="shortcut icon" href="https://www.redhat.com/themes/custom/rhdc/favicon.ico" type="image/x-icon" />
-<link rel="alternate" hreflang="en" href="https://www.redhat.com/en/open-source-stories/ai-revolutionaries/right-side-robots" />
-<link rel="revision" href="https://www.redhat.com/open-source-stories/ai-revolutionaries/right-side-robots" />
-<link type="text/css" rel="stylesheet" href="https://www.redhat.com/profiles/rh/themes/redhatdotcom/css/overpass.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/files/rh-web-iconfont.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/files/rh-iconfont.css" media="all" />
+  <!-- Mirrored from www.redhat.com/en/open-source-stories/ai-revolutionaries/right-side-robots by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:37:15 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=UTF-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <script id="rhdc_analytics_get_top_eddl_js" type="text/javascript">
+      var pageData = {
+        pageCategory: "open-source-stories",
+        pageName: "right side robots",
+        pageTitle: "Open Source Stories: The Right Side of the Robots",
+        analyticsTitle:
+          "open source stories | ai revolutionaries | right side robots",
+        pageType: "campaign",
+        pageSubType: "",
+        siteExperience: "",
+        siteLanguage: "en",
+        subsection: "ai-revolutionaries",
+        subsection2: "right-side-robots",
+        subsection3: "",
+        cms: "RH CMS 1.0",
+        contentID: "205661",
+        contentType: "",
+        destinationURL:
+          "https:\/\/www.redhat.com\/en\/open-source-stories\/ai-revolutionaries\/right-side-robots",
+        errorType: "",
+        gated: false,
+      };
+      !(function (e, a) {
+        "use strict";
+        (e.appEventData = e.appEventData || []),
+          (e.pageData = e.pageData || []);
+        var t = { event: "Page Load Started", page: pageData };
+        if (a.referrer) {
+          let e = a.createElement("a");
+          (e.href = a.referrer), (t.page.previousPage = e.href);
+        }
+        (t.page.siteExperience = e.innerWidth <= 768 ? "tablet" : "desktop"),
+          appEventData.push(t);
+      })(window, document);
+    </script>
+    <script id="ddo" type="text/javascript">
+      digitalData = {
+        cart: [],
+        event: [],
+        listing: {
+          browseFilter: "",
+          query: "",
+          queryMethod: "",
+          refinementType: "",
+          refinementValue: "",
+          resultCount: "",
+          searchType: "",
+        },
+        page: {
+          attributes: {
+            queryParameters: "",
+            referringSearchEngine: "",
+            analyticsTitle:
+              "open source stories | ai revolutionaries | right side robots",
+          },
+          category: {
+            contentType: "",
+            keyPage: "false",
+            keyPageType: "",
+            pageType: "campaign",
+            primaryCategory: "open-source-stories",
+            subCategories: ["ai-revolutionaries", "right-side-robots"],
+          },
+          pageInfo: {
+            cms: "RH CMS 1.0",
+            contentFindingMethod: "",
+            contentID: "205661",
+            contentPortal: "",
+            destinationURL:
+              "https:\/\/www.redhat.com\/en\/open-source-stories\/ai-revolutionaries\/right-side-robots",
+            errorMessage: "",
+            errorType: "",
+            language: "en",
+            pageName: "",
+            referringDomain: "",
+            referringURL: "",
+            sysEnv: "",
+            template: "",
+            title: "Open Source Stories: The Right Side of the Robots",
+          },
+        },
+        product: [],
+        user: [
+          {
+            profile: [
+              {
+                profileInfo: {
+                  daysSinceLastPurchase: "",
+                  demandbaseSID: "",
+                  eloquaGUID: "",
+                  lastLoginDate: "",
+                  lastPurchaseDate: "",
+                  loggedIn: "false",
+                  profileID: "",
+                  subscriptionFrequency: "",
+                  subscriptionLevel: "",
+                },
+              },
+            ],
+          },
+        ],
+      };
+      !(function (e, a, r) {
+        "use strict";
+        function n(e) {
+          var r = ("; " + a.cookie).split("; " + e + "=");
+          if (2 === r.length) return r.pop().split(";").shift();
+        }
+        if (a.referrer) {
+          var t = a.createElement("a");
+          (t.href = a.referrer),
+            (r.page.pageInfo.referringDomain = t.hostname),
+            (r.page.pageInfo.referringURL = t.href);
+        }
+        r.page.pageInfo.sysEnv = e.innerWidth <= 768 ? "tablet" : "desktop";
+        var i = r.user[0].profile[0].profileInfo,
+          o = n("rh_elqCustomerGUID");
+        o && (i.eloquaGUID = o);
+        var f = n("rh_user");
+        f && f.split("\\|")[0] && (i.loggedIn = "true");
+        var s = n("s_dmdbase");
+        s && (i.demandbaseSID = s);
+      })(window, document, digitalData);
+    </script>
+    <script
+      id="trustarc"
+      type="text/javascript"
+      src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"
+    ></script>
+    <script
+      src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm.js"
+      data-domain="www.redhat.com"
+    ></script>
+    <script
+      class="trustecm"
+      data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-functional.js"
+      data-tracker-type="functional"
+    ></script>
+    <script
+      class="trustecm"
+      data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-advertising.js"
+      data-tracker-type="advertising"
+    ></script>
+    <script
+      id="dpal"
+      type="text/javascript"
+      src="https://www.redhat.com/dtm.js"
+    ></script>
+    <meta charset="utf-8" />
+    <script
+      type="text/javascript"
+      src="https://www.redhat.com/modules/custom/rhdc_campaign/libraries/src/js/jquery-1.10.2.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.redhat.com/modules/custom/rhdc_campaign/libraries/src/js/drupal.js"
+    ></script>
+    <meta name="twitter:card" content="summary" />
+    <link
+      rel="canonical"
+      href="https://www.redhat.com/en/open-source-stories/ai-revolutionaries/right-side-robots"
+    />
+    <meta
+      name="twitter:title"
+      content="Open Source Stories: The Right Side of the Robots"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      name="description"
+      content="Learn why a journalist quit his job, moved to San Francisco, and started an AI company."
+    />
+    <meta
+      property="og:url"
+      content="https://www.redhat.com/en/open-source-stories/ai-revolutionaries/right-side-robots"
+    />
+    <meta
+      property="og:title"
+      content="Open Source Stories: The Right Side of the Robots"
+    />
+    <link
+      rel="image_src"
+      href="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo-rh-og-image.png"
+    />
+    <meta
+      property="og:description"
+      content="Learn why a journalist quit his job, moved to San Francisco, and started an AI company."
+    />
+    <meta
+      property="og:image"
+      content="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo-rh-og-image.png"
+    />
+    <meta
+      name="og:description"
+      content="Learn why a journalist quit his job, moved to San Francisco, and started an AI company."
+    />
+    <meta
+      name="og:image"
+      content="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo-rh-og-image.png"
+    />
+    <meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="last-publish-date" content="Fri, 24 Jan 2020 18:19:37 GMT" />
+    <meta name="node-type" content="campaign" />
+    <meta name="source" content="rhdc_drupal" />
+    <meta name="rhdc_key" content="86d49d0c7316175642245a6475b19126" />
+    <meta name="dateline" content="2017-04-26T00:00:00.00Z" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.redhat.com/ux/webux/css/open-source-stories/ai-revolutionaries/right-robots.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://www.redhat.com/themes/custom/rhdc/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://www.redhat.com/en/open-source-stories/ai-revolutionaries/right-side-robots"
+    />
+    <link
+      rel="revision"
+      href="https://www.redhat.com/open-source-stories/ai-revolutionaries/right-side-robots"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.redhat.com/profiles/rh/themes/redhatdotcom/css/overpass.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/files/rh-web-iconfont.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/files/rh-iconfont.css"
+      media="all"
+    />
 
     <title>Open Source Stories: The Right Side of the Robots</title>
-    <link rel="stylesheet" media="all" href="https://www.redhat.com/rhdc/system-files/css/css_4D9f3Met0vL7kZZ2e2OuEDhTsb7q4FxLyV5OgqRIiEU.css" />
+    <link
+      rel="stylesheet"
+      media="all"
+      href="https://www.redhat.com/rhdc/system-files/css/css_4D9f3Met0vL7kZZ2e2OuEDhTsb7q4FxLyV5OgqRIiEU.css"
+    />
 
-    
     <noscript>
-      <link href="https://www.redhat.com/patterns/webrh/css/webrh.webcomponents.noscript.min.css" rel="stylesheet">
+      <link
+        href="https://www.redhat.com/patterns/webrh/css/webrh.webcomponents.noscript.min.css"
+        rel="stylesheet"
+      />
     </noscript>
     <style>
-      body[unresolved] pfe-navigation {display: none;}.no-js body pfe-navigation,body:not(unresolved) pfe-navigation {display: block;}.no-js #main-menu{background:#000!important;padding:10px}[unresolved] pfe-navigation{background:#000!important;color:#fff;display:block;width:100%}[unresolved] pfe-navigation [slot=logo],[unresolved] pfe-navigation [slot=skip],[unresolved] pfe-navigation ul li,[unresolved] pfe-navigation-item,[unresolved] pfe-navigation-main{padding:0 7px 6px;display:inline-block}[unresolved] pfe-navigation [slot=skip] a{font-size:0}[unresolved] pfe-navigation [slot=skip] a:focus{font-size:14px}[unresolved] pfe-navigation [slot=logo]{vertical-align:middle}[unresolved] pfe-navigation a{font-size:14px;color:#fff}[unresolved] pfe-navigation-item [slot]>a:focus{outline-offset:1px;outline-style:dotted;outline-width:1px;outline-color:#d2d3d4}
+      body[unresolved] pfe-navigation {
+        display: none;
+      }
+      .no-js body pfe-navigation,
+      body:not(unresolved) pfe-navigation {
+        display: block;
+      }
+      .no-js #main-menu {
+        background: #000 !important;
+        padding: 10px;
+      }
+      [unresolved] pfe-navigation {
+        background: #000 !important;
+        color: #fff;
+        display: block;
+        width: 100%;
+      }
+      [unresolved] pfe-navigation [slot="logo"],
+      [unresolved] pfe-navigation [slot="skip"],
+      [unresolved] pfe-navigation ul li,
+      [unresolved] pfe-navigation-item,
+      [unresolved] pfe-navigation-main {
+        padding: 0 7px 6px;
+        display: inline-block;
+      }
+      [unresolved] pfe-navigation [slot="skip"] a {
+        font-size: 0;
+      }
+      [unresolved] pfe-navigation [slot="skip"] a:focus {
+        font-size: 14px;
+      }
+      [unresolved] pfe-navigation [slot="logo"] {
+        vertical-align: middle;
+      }
+      [unresolved] pfe-navigation a {
+        font-size: 14px;
+        color: #fff;
+      }
+      [unresolved] pfe-navigation-item [slot] > a:focus {
+        outline-offset: 1px;
+        outline-style: dotted;
+        outline-width: 1px;
+        outline-color: #d2d3d4;
+      }
     </style>
   </head>
-  <body class="ux-oss-ai path-node rhdc-node-type-campaign" unresolved >
-    
-    
-  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
-    
-  <div class="rhdc-header--background-image"></div>
-  <article role="article">
-
-  
-    
-
-  
-  <div>
-    <style>
-@media(max-width: 767px) {
-    .ux-band[data-ux-band-background~=article-hero], 
-    .ux-oss-article-hero-overlay {background-attachment: scroll;}
-}
-@media(device-width: 768px) and (orientation: portrait) {
-    .ux-band[data-ux-band-background~=article-hero],
-    .ux-oss-article-hero-overlay {background-attachment: scroll;}
-}
-@media(device-width: 768px) and (orientation: landscape) {
-    .ux-band[data-ux-band-background~=article-hero],
-    .ux-oss-article-hero-overlay {background-attachment: scroll;}
-}
-@media(device-width: 1024px) and (orientation: portrait) {
-    .ux-band[data-ux-band-background~=article-hero],
-    .ux-oss-article-hero-overlay {background-attachment: scroll;}
-}
-@media(device-width: 1024px) and (orientation: landscape) {
-    .ux-band[data-ux-band-background~=article-hero],
-    .ux-oss-article-hero-overlay {background-attachment: scroll;}
-}
-.ux-oss-card[data-ux-background=airev-4] { background-image: url(https://www.redhat.com/rhdc/managed-files/card-airev4-711x400.jpg);}
-</style>
-<header class="ux-oss-header-v2" data-ux-theme="dark">
-    <div class="ux-band-container">
-        <div class="ux-oss-nav" data-ux-oss-nav-variant="home">
-            <a class="ux-oss-nav-main" href="https://www.redhat.com/en/open-source-stories"> <div class="ux-oss-nav-main-image"><img src='https://www.redhat.com/rhdc/managed-files/OSS-logo-white-horizontal.svg' alt='Open Source Stories' class='img-fluid'  width="200"/></div></a>
-            <a class="ux-oss-nav-universal" href="https://www.redhat.com/"><img class="ux-oss-nav-universal-image" src="https://www.redhat.com/rhdc/managed-files/logo--on-dark.png"></a>
-        </div>
-        <div class="ux-oss-article-nav">
-            <div class="ux-oss-airev-header">
-                <a class="ux-oss-nav-trigger" href="https://www.redhat.com/en/open-source-stories/ai-revolutionaries">&#9776; A.I. Revolutionaries</a>
+  <body class="ux-oss-ai path-node rhdc-node-type-campaign" unresolved>
+    <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+      <div class="rhdc-header--background-image"></div>
+      <article role="article">
+        <div>
+          <style>
+            @media (max-width: 767px) {
+              .ux-band[data-ux-band-background~="article-hero"],
+              .ux-oss-article-hero-overlay {
+                background-attachment: scroll;
+              }
+            }
+            @media (device-width: 768px) and (orientation: portrait) {
+              .ux-band[data-ux-band-background~="article-hero"],
+              .ux-oss-article-hero-overlay {
+                background-attachment: scroll;
+              }
+            }
+            @media (device-width: 768px) and (orientation: landscape) {
+              .ux-band[data-ux-band-background~="article-hero"],
+              .ux-oss-article-hero-overlay {
+                background-attachment: scroll;
+              }
+            }
+            @media (device-width: 1024px) and (orientation: portrait) {
+              .ux-band[data-ux-band-background~="article-hero"],
+              .ux-oss-article-hero-overlay {
+                background-attachment: scroll;
+              }
+            }
+            @media (device-width: 1024px) and (orientation: landscape) {
+              .ux-band[data-ux-band-background~="article-hero"],
+              .ux-oss-article-hero-overlay {
+                background-attachment: scroll;
+              }
+            }
+            .ux-oss-card[data-ux-background="airev-4"] {
+              background-image: url(https://www.redhat.com/rhdc/managed-files/card-airev4-711x400.jpg);
+            }
+          </style>
+          <header class="ux-oss-header-v2" data-ux-theme="dark">
+            <div class="ux-band-container">
+              <div class="ux-oss-nav" data-ux-oss-nav-variant="home">
+                <a
+                  class="ux-oss-nav-main"
+                  href="https://www.redhat.com/en/open-source-stories"
+                >
+                  <div class="ux-oss-nav-main-image">
+                    <img
+                      src="https://www.redhat.com/rhdc/managed-files/OSS-logo-white-horizontal.svg"
+                      alt="Open Source Stories"
+                      class="img-fluid"
+                      width="200"
+                    /></div
+                ></a>
+                <a class="ux-oss-nav-universal" href="https://www.redhat.com/"
+                  ><img
+                    class="ux-oss-nav-universal-image"
+                    src="https://www.redhat.com/rhdc/managed-files/logo--on-dark.png"
+                /></a>
+              </div>
+              <div class="ux-oss-article-nav">
+                <div class="ux-oss-airev-header">
+                  <a
+                    class="ux-oss-nav-trigger"
+                    href="https://www.redhat.com/en/open-source-stories/ai-revolutionaries"
+                    >&#9776; A.I. Revolutionaries</a
+                  >
+                </div>
+                <div class="ux-oss-share">
+                  <h3 class="ux-oss-share-label">Share:</h3>
+                  <ul class="ux-oss-share-group">
+                    <li class="ux-oss-share-item">
+                      <a
+                        href="http://www.facebook.com/sharer.php?u=http://red.ht/2mSMLoY"
+                        class="ux-oss-share-link"
+                        ><span
+                          class="web-icon-facebook"
+                          aria-label="true"
+                        ></span
+                      ></a>
+                    </li>
+                    <li class="ux-oss-share-item">
+                      <a
+                        href="https://twitter.com/share?url=http://red.ht/2oCpRPc&amp;text=How%20do%20you%20get%20on%20the%20right%20side%20of%20the%20robots%3F%20For%20one%20former%20journalist%2C%20it%20meant%20building%20an%20%23AI%20startup%3A"
+                        class="ux-oss-share-link"
+                        ><span class="web-icon-twitter" aria-label="true"></span
+                      ></a>
+                    </li>
+                    <li class="ux-oss-share-item">
+                      <a
+                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://red.ht/2nzsUbF&amp;title=The%20Right%20Side%20of%20the%20Robots&amp;summary=How%20do%20you%20get%20on%20the%20right%20side%20of%20the%20robots%3F%20For%20one%20journalist%2C%20it%20meant%20quitting%20his%20job%2C%20moving%20to%20San%20Francisco%2C%20and%20starting%20an%20open%20source%20AI%20company.&amp;source=Red%20Hat"
+                        class="ux-oss-share-link"
+                        ><span
+                          class="web-icon-linkedin"
+                          aria-label="true"
+                        ></span
+                      ></a>
+                    </li>
+                    <li class="ux-oss-share-item">
+                      <a
+                        href="mailto:?subject=The right side of the robots&body=This article follows Chris Nicholson, a former journalist, as he moves to San Francisco and starts an AI company called Skymind. http://red.ht/2nzc8JW"
+                        class="ux-oss-share-link"
+                        ><span
+                          class="web-icon-envelope"
+                          aria-label="true"
+                        ></span
+                      ></a>
+                    </li>
+                    <li class="ux-oss-share-item">
+                      <a
+                        href="javascript:window.print();"
+                        class="ux-oss-share-link"
+                        ><span class="web-icon-print" aria-label="true"></span
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="ux-oss-share">
-                <h3 class="ux-oss-share-label">Share:</h3>
-                <ul class="ux-oss-share-group">
-                    <li class="ux-oss-share-item"><a href="http://www.facebook.com/sharer.php?u=http://red.ht/2mSMLoY" class="ux-oss-share-link"><span class="web-icon-facebook" aria-label="true"></span></a></li>
-                    <li class="ux-oss-share-item"><a href="https://twitter.com/share?url=http://red.ht/2oCpRPc&amp;text=How%20do%20you%20get%20on%20the%20right%20side%20of%20the%20robots%3F%20For%20one%20former%20journalist%2C%20it%20meant%20building%20an%20%23AI%20startup%3A" class="ux-oss-share-link"><span class="web-icon-twitter" aria-label="true"></span></a></li>
-                    <li class="ux-oss-share-item"><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://red.ht/2nzsUbF&amp;title=The%20Right%20Side%20of%20the%20Robots&amp;summary=How%20do%20you%20get%20on%20the%20right%20side%20of%20the%20robots%3F%20For%20one%20journalist%2C%20it%20meant%20quitting%20his%20job%2C%20moving%20to%20San%20Francisco%2C%20and%20starting%20an%20open%20source%20AI%20company.&amp;source=Red%20Hat" class="ux-oss-share-link"><span class="web-icon-linkedin" aria-label="true"></span></a></li>
-                    <li class="ux-oss-share-item"><a href="mailto:?subject=The right side of the robots&body=This article follows Chris Nicholson, a former journalist, as he moves to San Francisco and starts an AI company called Skymind. http://red.ht/2nzc8JW" class="ux-oss-share-link"><span class="web-icon-envelope" aria-label="true"></span></a></li>
-                    <li class="ux-oss-share-item"><a href="javascript:window.print();" class="ux-oss-share-link"><span class="web-icon-print" aria-label="true"></span></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</header>
+          </header>
 
-<div class="ux-oss-airev-nav-wrap" data-ux-theme="dark">
-<div class="ux-band" data-ux-band-background="transparent" data-ux-state="off">
-    <div class="ux-band-container">
-        <div class="ux-oss-close">
-            <a href="#" class="ux-oss-close-button">&#x2715;</a>
-        </div>
-        <header class="ux-band-header">
-            <h2 class="ux-oss-general-headline">A.I. Revolutionaries</h2>
-        </header>
-            <div class="ux-group" data-ux-layout="gallery4">
-                <!-- 4 blocks -->
-                <div class="ux-oss-card" data-ux-theme="dark" data-ux-background="airev-1">
-                    <h2 class="ux-oss-card-headline-smaller">The People Behind Open AI</h2>
+          <div class="ux-oss-airev-nav-wrap" data-ux-theme="dark">
+            <div
+              class="ux-band"
+              data-ux-band-background="transparent"
+              data-ux-state="off"
+            >
+              <div class="ux-band-container">
+                <div class="ux-oss-close">
+                  <a href="#" class="ux-oss-close-button">&#x2715;</a>
+                </div>
+                <header class="ux-band-header">
+                  <h2 class="ux-oss-general-headline">A.I. Revolutionaries</h2>
+                </header>
+                <div class="ux-group" data-ux-layout="gallery4">
+                  <!-- 4 blocks -->
+                  <div
+                    class="ux-oss-card"
+                    data-ux-theme="dark"
+                    data-ux-background="airev-1"
+                  >
+                    <h2 class="ux-oss-card-headline-smaller">
+                      The People Behind Open AI
+                    </h2>
                     <div class="ux-oss-card-footer">
-                        <p class="ux-oss-card-description">How video games and an old German horse are changing AI.</p>
-                        <div class="ux-cta">
-                            <a class="ux-oss-card-cta" data-ux-cta-type="secondary" href="https://www.redhat.com/en/open-source-stories/ai-revolutionaries/people-behind-openai">Read it</a>
-                        </div>
+                      <p class="ux-oss-card-description">
+                        How video games and an old German horse are changing AI.
+                      </p>
+                      <div class="ux-cta">
+                        <a
+                          class="ux-oss-card-cta"
+                          data-ux-cta-type="secondary"
+                          href="https://www.redhat.com/en/open-source-stories/ai-revolutionaries/people-behind-openai"
+                          >Read it</a
+                        >
+                      </div>
                     </div>
-                </div>
-                <div class="ux-oss-card" data-ux-theme="dark" data-ux-background="airev-2">
-                    <h2 class="ux-oss-card-headline-smaller">Origins: AI + Open Source</h2>
+                  </div>
+                  <div
+                    class="ux-oss-card"
+                    data-ux-theme="dark"
+                    data-ux-background="airev-2"
+                  >
+                    <h2 class="ux-oss-card-headline-smaller">
+                      Origins: AI + Open Source
+                    </h2>
                     <div class="ux-oss-card-footer">
-                        <p class="ux-oss-card-description">A faulty printer and a conversation. This is how it all started.</p>
-                        <div class="ux-cta">
-                            <a class="ux-oss-card-cta" data-ux-cta-type="secondary" href="https://www.redhat.com/en/open-source-stories/ai-revolutionaries/origins-ai-open-source">Read it</a>
-                        </div>
+                      <p class="ux-oss-card-description">
+                        A faulty printer and a conversation. This is how it all
+                        started.
+                      </p>
+                      <div class="ux-cta">
+                        <a
+                          class="ux-oss-card-cta"
+                          data-ux-cta-type="secondary"
+                          href="https://www.redhat.com/en/open-source-stories/ai-revolutionaries/origins-ai-open-source"
+                          >Read it</a
+                        >
+                      </div>
                     </div>
-                </div>
-                <div class="ux-oss-card" data-ux-theme="dark" data-ux-background="airev-3">
-                    <h2 class="ux-oss-card-headline-smaller">The Right Side of the Robots</h2>
+                  </div>
+                  <div
+                    class="ux-oss-card"
+                    data-ux-theme="dark"
+                    data-ux-background="airev-3"
+                  >
+                    <h2 class="ux-oss-card-headline-smaller">
+                      The Right Side of the Robots
+                    </h2>
                     <div class="ux-oss-card-footer">
-                        <p class="ux-oss-card-description">Chris's life was anything but normal. Then he launched an AI startup.</p>
-                        <div class="ux-cta">
-                            <a class="ux-oss-card-cta" data-ux-cta-type="secondary" href="#">Read it</a>
-                        </div>
+                      <p class="ux-oss-card-description">
+                        Chris's life was anything but normal. Then he launched
+                        an AI startup.
+                      </p>
+                      <div class="ux-cta">
+                        <a
+                          class="ux-oss-card-cta"
+                          data-ux-cta-type="secondary"
+                          href="#"
+                          >Read it</a
+                        >
+                      </div>
                     </div>
+                  </div>
+                  <div
+                    class="ux-oss-card"
+                    data-ux-theme="dark"
+                    data-ux-background="airev-4"
+                  >
+                    <h2 class="ux-oss-card-headline-smaller">
+                      Possible Futures
+                    </h2>
+                    <div class="ux-oss-card-footer">
+                      <p class="ux-oss-card-description">
+                        Chris's life was anything but normal. Then he launched
+                        an AI startup.
+                      </p>
+                      <div class="ux-cta">
+                        <a
+                          class="ux-oss-card-cta"
+                          data-ux-cta-type="secondary"
+                          href="https://www.redhat.com/en/open-source-stories/ai-revolutionaries/possible-futures"
+                          >Read it</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card -->
                 </div>
-                <div class="ux-oss-card" data-ux-theme="dark" data-ux-background="airev-4">
-                    <h2 class="ux-oss-card-headline-smaller">Possible Futures</h2>
-<div class="ux-oss-card-footer">
-                        <p class="ux-oss-card-description">Chris's life was anything but normal. Then he launched an AI startup.</p>
-                        <div class="ux-cta">
-                            <a class="ux-oss-card-cta" data-ux-cta-type="secondary" href="https://www.redhat.com/en/open-source-stories/ai-revolutionaries/possible-futures">Read it</a>
-                        </div>
-                    </div>
-                </div><!-- card -->
-            </div><!-- group -->
-        <div class="ux-cta" data-ux-align="horizontal">
-            <a href="https://www.redhat.com/en/open-source-stories/ai-revolutionaries" class="ux-cta-link" data-ux-cta-type="primary">See the whole series</a>
-        </div>
-    </div>
-</div>
-</div>
-
-<div class="ux-oss-peek-nav">
-    <div class="ux-oss-share rev" data-ux-align="horizontal">
-        <h3 class="ux-oss-share-label">Share:</h3>
-        <ul class="ux-oss-share-group">
-            <li class="ux-oss-share-item"><a href="http://www.facebook.com/sharer.php?u=http://red.ht/2mSMLoY" class="ux-oss-share-link"><span class="web-icon-facebook" aria-label="true"></span></a></li>
-            <li class="ux-oss-share-item"><a href="https://twitter.com/share?url=http://red.ht/2oCpRPc&amp;text=How%20do%20you%20get%20on%20the%20right%20side%20of%20the%20robots%3F%20For%20one%20former%20journalist%2C%20it%20meant%20building%20an%20%23AI%20startup%3A" class="ux-oss-share-link"><span class="web-icon-twitter" aria-label="true"></span></a></li>
-            <li class="ux-oss-share-item"><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://red.ht/2nzsUbF&amp;title=The%20Right%20Side%20of%20the%20Robots&amp;summary=How%20do%20you%20get%20on%20the%20right%20side%20of%20the%20robots%3F%20For%20one%20journalist%2C%20it%20meant%20quitting%20his%20job%2C%20moving%20to%20San%20Francisco%2C%20and%20starting%20an%20open%20source%20AI%20company.&amp;source=Red%20Hat" class="ux-oss-share-link"><span class="web-icon-linkedin" aria-label="true"></span></a></li>
-            <li class="ux-oss-share-item"><a href="mailto:?subject=The right side of the robots&body=This article follows Chris Nicholson, a former journalist, as he moves to San Francisco and starts an AI company called Skymind. http://red.ht/2nzc8JW" class="ux-oss-share-link"><span class="web-icon-envelope" aria-label="true"></span></a></li>
-            <li class="ux-oss-share-item"><a href="javascript:window.print();" class="ux-oss-share-link"><span class="web-icon-print" aria-label="true"></span></a></li>
-        </ul>
-    </div>
-</div>
-
-<!-- article-hero -->
-<section class="ux-band" data-ux-band-background="article-hero" data-ux-oss-band-type="article-hero">
-<div class="ux-oss-article-hero-overlay"></div>
-    <div class="ux-band-container">
-        <header class="ux-band-header" data-ux-layout="10" data-ux-align="stacked" data-ux-theme="airev3-dark" data-ux-oss-separation="top">
-            <h1 class="ux-oss-airev3-title">The Right Side of the Robots</h1>
-            <h2 class="ux-oss-airev-subtitle">A.I. Revolutionaries | Part III</h2>
-        </header>
-    </div>
-</section>
-
-<section class="ux-band" data-ux-band-collapse="both" data-ux-band-background="alt">
-    <div class="ux-band-container" data-ux-oss-relative="yes">
-        <div class="ux-band-body" data-ux-theme="airev3-dark">
-            <p class="ux-oss-airev-byline" data-ux-oss-location="hero">by <a href="https://medium.com/@bsimoneaux">Brent Simoneaux</a></p>
-        </div>
-    </div>
-</section>
-
-<section class="ux-band" data-ux-band-collapse="expand-bottom" data-ux-band-background="alt">
-    <div class="ux-band-container" data-ux-oss-relative="yes">
-        <div class="ux-band-body" data-ux-layout="6" data-ux-align="horizontal" data-ux-theme="airev3-dark">
-            <div class="ux-oss-generic">
-
-<p>When Chris Nicholson moved to San Francisco, he did what a lot of aspiring tech workers do: He moved into a hacker hostel.</p>
-
-<p>It wasn't exactly the home he'd hoped for, especially in his late 30s. But it was exactly where he wanted to be.</p>
-
-<p>Chris had spent the better part of a decade as a journalist in Paris. He reported on business for The New York Times and Bloomberg. He had good friends in the city. He even lived in the same building where, in the early 1970s, Bernardo Bertolucci filmed "Last Tango in Paris." It was this small, circular apartment overlooking the Seine. He could look out the window and see the Eiffel Tower.</p>
-
-<p>Chris had a good life in Paris. Except one thing.</p>
-
-            </div>
-        </div>
-        <div class="ux-band-body" data-ux-layout="8" data-ux-align="horizontal" data-ux-theme="airev3-dark">
-            <div class="ux-oss-airev-quote">
-                <blockquote class="ux-oss-airev-quote-container" data-ux-layout="stacked">
-                    <p class="ux-oss-airev-quote-quotation">He started to realize he was on the wrong side of the robots.</p>
-                </blockquote>
-            </div>
-        </div>
-
-        <div class="ux-band-body" data-ux-layout="6" data-ux-align="horizontal" data-ux-theme="airev3-dark">
-            <div class="ux-oss-generic">
-
-<p>This was a realization that would upend Chris' life. Because, for him, getting on the right side of the robots meant leaving journalism. It meant getting out of Paris and moving to San Francisco. It meant learning to write computer code and starting a new life. </p>
-
-<p>Turns out, being on the right side of the robots also meant sleeping in an old sex toy warehouse for a year.</p>
-
-<p>If you spend enough time in Silicon Valley, you'll find a lot of people like Chris, people who are "crammed into cheap bunks, dreaming of future glory," as the title of a 2012 New York Times article once described the phenomenon. For years, they've been flocking to the area, hoping to start a new life in the tech industry. And the housing market can't keep up.</p>
-
-<p>"Humans move faster than real estate," Chris says. "So warehouses are turned into living spaces and you end up paying around $1,000 for the lower bunk in a room full of snoring guys." </p>
-
-<p>The hacker hostel Chris moved into? It used to be a warehouse for a company called Good Vibrations.</p>
-
-<p>Sure, it wasn't ideal. But the high density of tech workers at the hacker hostel&mdash;some of whom would go on to work for big tech companies like YouTube, or form their own startups&mdash;meant that there was a built-in community. More than being just a place to sleep, it was a place to meet new people, exchange ideas, and maybe even start a company together. </p>
-
-<p>This is exactly what Chris wanted. In his late 30s and with virtually no tech experience, he had a lot of catching up to do. </p>
-            </div>
-        </div>
-        <div class="ux-band-body" data-ux-layout="8" data-ux-align="horizontal" data-ux-theme="airev3-dark">
-            <div class="ux-oss-generic">
-
-                <div class="ux-image-embed" data-ux-oss-spacing="standard" data-ux-align="center">
-                    <div class="ux-image-embed-container">
-                        <img class="ux-image-embed-img" src="https://www.redhat.com/rhdc/managed-files/chris-hackerhouse.jpg" title="Chris Nicholson" alt="">
-                        <div class="ux-image-embed-cc">Chris Nicholson and the hacker hostel</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="ux-band-body" data-ux-layout="6" data-ux-align="horizontal" data-ux-theme="airev3-dark">
-            <div class="ux-oss-generic">
-
-<p>So, month after month, Chris went to his day job and, in the evening, he'd return to the hacker hostel and work some more. While many others were playing guitar and watching movies and drinking (yes, it was a lot like a college dorm), Chris was reading everything he could about starting a company.</p>
-
-<p>And that's how Chris noticed Adam Gibson, a quiet guy with glasses who had a wry sensibility, and who happened to bunk in the room next to Chris. </p>
-
-<p>Adam was working on a Java-based deep learning library and, like Chris, he'd often work late into the night.</p>
-
-<p>So they started hanging out. They went out to dinner together. They talked about AI and they traded ideas. They even began talking about starting a company together.</p>
-
-<p>They were a formidable pair. Adam would be the builder. Chris would be the seller. And, together, they would spend the next few years creating an open source deep learning company called Skymind. They'd help companies get into AI&mdash;and, in the process, quietly change how you and I experience the world.</p>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="ux-band" data-ux-band-collapse="expand-bottom" data-ux-band-background="synapses">
-    <div class="ux-oss-band-overlay"></div>
-    <div class="ux-band-container" data-ux-oss-relative="yes">
-        <header class="ux-band-header" data-ux-layout="8" data-ux-align="horizontal" data-ux-theme="airev3-light">
-            <div class="ux-band-header">
-                <h2 class="ux-oss-band-header-title">The Mind<span class="ux-oss-linebreak"> Wave</span></h2>
-            </div>
-        </header>
-    </div>
-
-    <div class="ux-oss-overflow-mask" data-ux-oss-overflow="x-hidden">
-    <div class="ux-band-container" data-ux-oss-relative="yes">
-        <div class="ux-band-body" data-ux-layout="6" data-ux-align="horizontal" data-ux-theme="airev3-light">
-            <div class="ux-oss-generic">
-<p>If you ask Chris about the name Skymind, he'll let out a big, hearty laugh. It's one of those laughs that, even if he never says it out loud, lets you know that he gets this question all the time&mdash;and has no idea how to answer it.</p>
-
-<svg class="ux-oss-synapse" data-ux-oss-position="collide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 341 286.38095">
-  <g>
-    <circle class="a" cx="235.45238" cy="68.64286" r="4.42857"/>
-    <circle class="a2" cx="336.57143" cy="39.11905" r="4.42857"/>
-    <circle class="a" cx="303.61905" cy="156.2619" r="4.42857"/>
-    <circle class="a2" cx="235.45238" cy="281.95238" r="4.42857"/>
-    <circle class="a" cx="152.04762" cy="132.11905" r="4.42857"/>
-    <circle class="a2" cx="97.04762" cy="104.11905" r="4.42857"/>
-    <circle class="a" cx="160.16667" cy="212.57143" r="4.42857"/>
-    <circle class="a2" cx="293.7619" cy="100.38095" r="4.42857"/>
-    <circle class="a" cx="216.7619" cy="99.38095" r="4.42857"/>
-    <circle class="a2" cx="117.35714" cy="42.80952" r="4.42857"/>
-    <circle class="a" cx="4.42857" cy="129.16667" r="4.42857"/>
-    <circle class="a2" cx="228.80952" cy="4.42857" r="4.42857"/>
-    <line class="b" x1="121.41667" y1="43.17857" x2="231.39286" y2="67.53571"/>
-    <line class="b" x1="238.77381" y1="70.4881" x2="290.44048" y2="97.79762"/>
-    <line class="b" x1="295.5" y1="99.19048" x2="334.72619" y2="42.44048"/>
-    <line class="b" x1="232.86905" y1="71.22619" x2="153.5" y2="130.19048"/>
-    <line class="b" x1="117.5" y1="44.19048" x2="151.5" y2="130.19048"/>
-    <line class="b" x1="238.77381" y1="66.79762" x2="336.5" y2="39.19048"/>
-    <line class="b" x1="294.13095" y1="105.17857" x2="303.5" y2="154.19048"/>
-    <line class="b" x1="156.10714" y1="133.96429" x2="302.5" y2="155.19048"/>
-    <line class="b" x1="224.75" y1="5.53571" x2="118.83333" y2="39.85714"/>
-    <line class="b" x1="232.5" y1="4.42857" x2="337.5" y2="37.19048"/>
-    <line class="b" x1="151.67857" y1="136.17857" x2="160.53571" y2="208.5119"/>
-    <line class="b" x1="115.5" y1="43.19048" x2="5.5" y2="127.19048"/>
-    <line class="b" x1="151" y1="132.19048" x2="7" y2="130.19048"/>
-    <line class="b" x1="157.5" y1="213.19048" x2="5.5" y2="132.19048"/>
-    <line class="b" x1="228.44048" y1="8.4881" x2="235.5" y2="67.19048"/>
-    <line class="b" x1="160.5" y1="215.19048" x2="232.13095" y2="279.36905"/>
-    <polyline class="b" points="237.5 280.19 304.095 158.69 214.5 98.19 289.702 101.488 154.5 132.19"/>
-    <polyline class="b" points="4 128.69 98 103.69 161.5 212.19 301.512 158.321"/>
-  </g>
-</svg>
-
-<p>But that doesn't stop him from trying.</p>
-
-                <div class="ux-image-embed" data-ux-oss-spacing="standard" data-ux-align="center">
-                    <div class="ux-image-embed-container">
-                        <img class="ux-image-embed-img" src="https://www.redhat.com/rhdc/managed-files/chris-skymind.jpg" title="Chris Nicholson" alt="">
-                    </div>
-                </div>
-
-<p>"There are trends in startup names," Chris says. "In this case, startups that include the word <em>mind</em> tend to be machine learning companies." </p>
-
-<svg class="ux-oss-synapse" data-ux-oss-position="right-collide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 326.0147 288.75375">
-  <g>
-    <circle class="a" cx="95.42016" cy="5700.46928" r="4.42857" transform="translate(-4358.98098 -3582.78302) rotate(-49.39512)"/>
-    <circle class="a2" cx="68.83954" cy="5806.76354" r="4.42857" transform="translate(-4448.9622 -3565.84962) rotate(-49.39512)"/>
-    <circle class="a" cx="155.39822" cy="5751.88555" r="4.42857" transform="translate(-4377.07501 -3519.29416) rotate(-49.39512)"/>
-    <circle class="a2" cx="195.1974" cy="5872.93523" r="4.42857" transform="translate(-4455.08154 -3446.81214) rotate(-49.39512)"/>
-    <circle class="a" cx="114.1974" cy="5929.93523" r="4.42857" transform="translate(-4526.6389 -3488.40645) rotate(-49.39512)"/>
-    <circle class="a2" cx="143.1974" cy="5817.93523" r="4.42857" transform="translate(-4431.48104 -3505.49524) rotate(-49.39512)"/>
-    <circle class="a" cx="298.1974" cy="5856.93523" r="4.42857" transform="translate(-4406.97048 -3374.19948) rotate(-49.39512)"/>
-    <circle class="a2" cx="227.74222" cy="5788.87671" r="4.42857" transform="translate(-4379.89958 -3451.45357) rotate(-49.39512)"/>
-    <circle class="a" cx="385.99694" cy="5725.65137" r="4.42857" transform="translate(-4276.64149 -3353.3799) rotate(-49.39512)"/>
-    <circle class="a2" cx="292.99694" cy="5792.65137" r="4.42857" transform="translate(-4359.98095 -3400.59318) rotate(-49.39512)"/>
-    <circle class="a" cx="290.11379" cy="5723.80147" r="4.42857" transform="matrix(0.65084, -0.75922, 0.75922, 0.65084, -4308.71569, -3426.82182)"/>
-    <circle class="a2" cx="232.11379" cy="5710.80147" r="4.42857" transform="matrix(0.65084, -0.75922, 0.75922, 0.65084, -4319.09723, -3475.39544)"/>
-    <circle class="a" cx="188.70341" cy="5650.03878" r="4.42857" transform="translate(-4288.12245 -3529.56927) rotate(-49.39512)"/>
-    <path class="b" d="M94.92689,5700.64228" transform="translate(-64.41089 -5645.61012)"/>
-    <polyline class="b" points="321.798 80.16 164.194 142.626 124.504 4.547 91.199 106.394 31.113 53.568 4.64 161.272 91.199 106.394 131.649 226.685 164.194 142.626"/>
-    <line class="b" x1="30.46182" y1="54.32712" x2="124.50428" y2="4.54746"/>
-    <polyline class="b" points="124.396 3.137 225.915 78.31 322.449 79.401 233.454 211.39 131.757 228.095 3.339 162.791 49.454 286.39 79.454 170.39 130.454 227.39"/>
-    <polyline class="b" points="162.784 142.735 90.331 104.333 167.454 64.39 162.892 144.145"/>
-    <line class="b" x1="162.89225" y1="144.14461" x2="225.26382" y2="79.06937"/>
-    <line class="b" x1="162.45418" y1="142.38988" x2="236.45418" y2="212.38988"/>
-    <path class="b" d="M298.36507,5857.5c0-6-7-66-7-66l95-66" transform="translate(-64.41089 -5645.61012)"/>
-  </g>
-</svg>
-
-<p>It's true: if you catalog machine learning companies out in the wild, like some sort of tech-industry taxonomist, Chris' system holds up… mostly. There's Google's DeepMind. There's MetaMind, which was bought by Salesforce. There are a bunch of them. </p>
-
-<p>"We were part of that mind wave," Chris says, "when companies were starting to realize that machine learning had business applications."</p>
-
-<p>In the summer of 2013, the same year that Chris and Adam met at the hacker hostel, Google hired a guy named Geoffrey Hinton. At the time, Hinton was a professor at the University of Toronto and had, for years, been making important progress with artificial neural networks, mathematical functions that are modeled after the huge network of neurons in the human brain.  </p>
-
-<p>Hinton knew that everything the brain does is an impressive feat, even when it comes to the most mundane tasks. Think about how the brain can isolate a whisper, even in a crowded room. Or recognize a face in a sea of people. Or pick up on the subtleties of humor when talking to a co-worker. According to Hinton, though, the brain's most impressive feat is how it learns&mdash;without explicit instructions.</p>
-
-<svg class="ux-oss-synapse" data-ux-oss-position="collide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 261.08349">
-  <circle class="a" cx="265.01728" cy="6583.28742" r="3.10818" transform="translate(-5982.04768 -2026.71155) rotate(-69.1652)"/>
-  <circle class="a2" cx="346.89098" cy="6657.52659" r="3.10818" transform="translate(-5998.67904 -1902.3574) rotate(-69.1652)"/>
-  <circle class="a" cx="247.49704" cy="6650.74096" r="3.10818" transform="translate(-6056.37915 -1999.62411) rotate(-69.1652)"/>
-  <circle class="a2" cx="162.95783" cy="6519.28687" r="3.10818" transform="translate(-5987.99162 -2163.33447) rotate(-69.1652)"/>
-  <circle class="a" cx="234.01725" cy="6774.15232" r="3.10818" transform="translate(-6180.40598 -1932.70539) rotate(-69.1652)"/>
-  <circle class="a2" cx="186.29161" cy="6699.75646" r="3.10818" transform="translate(-6141.62572 -2025.24538) rotate(-69.1652)"/>
-  <circle class="a" cx="139.23714" cy="6625.51362" r="3.10818" transform="translate(-6102.55603 -2117.05948) rotate(-69.1652)"/>
-  <circle class="a2" cx="60.01019" cy="6645.78646" r="3.10818" transform="translate(-6172.55114 -2178.04346) rotate(-69.1652)"/>
-  <circle class="a" cx="178.00793" cy="6583.98328" r="3.10818" transform="translate(-6255.36946 -1343.63994) rotate(-76.077)"/>
-  <circle class="a2" cx="96.79743" cy="6766.80927" r="3.10818" transform="translate(-6261.9573 -2065.68369) rotate(-69.1652)"/>
-  <circle class="a" cx="3.10902" cy="6584.73013" r="3.10818" transform="translate(-6152.15016 -2270.564) rotate(-69.1652)"/>
-  <circle class="a2" cx="309.68066" cy="6537.40166" r="3.10818" transform="translate(-5910.38465 -2014.53406) rotate(-69.1652)"/>
-  <polyline class="b" points="96.412 250.517 1.855 67.572 138.852 109.222 234.167 257.773 247.561 134.661 346.955 141.446 265.081 67.207 309.745 21.321 160.328 1.937 264.421 67.445 139.064 108.773 247.561 134.661 96.201 250.966 234.167 257.773"/>
-  <path class="b" d="M59.4137,6646.12142" transform="translate(0 -6516.17785)"/>
-  <polyline class="b" points="162.784 2.546 138.403 109.01 60.074 129.706 96.201 250.966"/>
-  <path class="b" d="M138.878,6626.50907" transform="translate(0 -6516.17785)"/>
-  <polygon class="b" points="309.745 21.321 346.955 141.446 177.835 67.243 309.745 21.321"/>
-  <line class="b" x1="58.7049" y1="130.0367" x2="185.73934" y2="183.37712"/>
-</svg>
-            </div>
-        </div>
-        <div class="ux-band-body" data-ux-layout="8" data-ux-align="horizontal" data-ux-theme="airev3-light">
-            <div class="ux-oss-airev-quote" data-ux-oss-layer="over-svg">
-                <blockquote class="ux-oss-airev-quote-container" data-ux-layout="stacked">
-                    <p class="ux-oss-airev-quote-quotation web-icon web-icon-open-quote">The brain is a remarkable computer.</p>
-                    <div class="ux-oss-airev-quote-reference" data-ux-align="horizontal">
-                        <p><span class="ux-oss-airev-quote-attribution">&mdash;Geoffrey Hinton, Scientific American, 1992</span></p>
-                    </div>
-                </blockquote>
-            </div>
-        </div>
-
-        <div class="ux-band-body" data-ux-layout="6" data-ux-align="horizontal" data-ux-theme="airev3-light">
-            <div class="ux-oss-generic">
-<p>Hinton's big breakthrough was getting computer hardware and software to mimic the brain's learning process, something that AI researchers had been trying to do for a long time. This is why he's often credited with creating the "Big Bang" of machine learning.</p>
-
-<p>Using artificial neural networks, machines could sift through huge amounts of data and recognize patterns. Instead of just acting on explicit instructions, machines could learn on their own&mdash;much like the human brain learns. This meant that machines were getting significantly better at understanding speech, recognizing objects, and other seemingly mundane tasks humans perform instinctively.</p>
-
-<p>The interesting thing about Hinton was that Google didn't hire him to work at Google X, the company's "moonshot factory," as they describe it. Rather, they hired him to improve some of their core products by making sense of the huge amounts of data Google is always collecting. With Hinton on board, features like Android's voice search could get a lot more reliable.</p>
-
-<svg class="ux-oss-synapse" data-ux-oss-position="right-collide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 387.08013 386.85954">
-  <circle class="a" cx="2453.37482" cy="7600.28708" r="4.42857" transform="translate(-7897.47649 -405.85197) rotate(-69.1652)"/>
-  <circle class="a2" cx="2637.37482" cy="7669.28708" r="4.42857" transform="translate(-7843.40871 -189.42532) rotate(-69.1652)"/>
-  <circle class="a" cx="2618.37482" cy="7759.28708" r="4.42857" transform="translate(-7939.76578 -149.19363) rotate(-69.1652)"/>
-  <circle class="a2" cx="2505.37482" cy="7786.28708" r="4.42857" transform="translate(-8037.809 -237.40776) rotate(-69.1652)"/>
-  <circle class="a" cx="2379.37482" cy="7792.28708" r="4.42857" transform="translate(-8124.60165 -351.30264) rotate(-69.1652)"/>
-  <circle class="a2" cx="2606.37482" cy="7949.28708" r="4.42857" transform="translate(-8125.07355 -37.98715) rotate(-69.1652)"/>
-  <circle class="a" cx="2405.37482" cy="7978.28708" r="4.42857" transform="translate(-8281.68661 -207.15828) rotate(-69.1652)"/>
-  <circle class="a2" cx="2757.37482" cy="7901.28708" r="4.42857" transform="translate(-7982.91916 72.21132) rotate(-69.1652)"/>
-  <polygon class="b" points="78.143 4.643 262.143 73.643 130.143 190.643 231.143 353.643 4.143 196.643 78.143 4.643"/>
-  <polyline class="b" points="77.643 4.143 129.643 190.143 3.643 196.143"/>
-  <path class="b" d="M2405.08794,7978.5c7-6,213-221,213-221l143,145-155,47Z" transform="translate(-2374.94506 -7595.85731)"/>
-</svg>
-
-            </div>
-        </div>
-        <div class="ux-band-body" data-ux-layout="8" data-ux-align="horizontal" data-ux-theme="airev3-light" data-ux-oss-layer="over-svg">
-            <div class="ux-oss-airev-quote" data-ux-oss-layer="over-svg">
-                <blockquote class="ux-oss-airev-quote-container" data-ux-layout="stacked">
-                    <p class="ux-oss-airev-quote-quotation">Machines were getting significantly better at understanding speech, recognizing objects, and other seemingly mundane tasks humans perform instinctively.</p>
-                </blockquote>
-            </div>
-        </div>
-
-        <div class="ux-band-body" data-ux-layout="6" data-ux-align="horizontal" data-ux-theme="airev3-light">
-            <div class="ux-oss-generic">
-<p>Shortly after Google hired Hinton, another big event happened. Facebook hired Yann LeCun.</p>
-
-<p>LeCun is most famous for his work with convolutional neural networks&mdash;a type of neural net that's modelled on the visual cortex. It's not hyperbole to say that all of the machine vision work that's making headlines today is the result of LeCun's work. Wherever you see a machine vision application&mdash;self-driving cars, dating apps, or anything else&mdash;it's probably using an algorithm LeCun touched. </p>
-
-<p>Again, LeCun's work at Facebook would influence some of the core features of their product, like facial recognition.</p>
-
-<p>So Google hired Hinton and Facebook hired LeCun, two enormous hires in a very short time. And other big companies like Baidu and Microsoft were starting to get into the game as well.</p>
-
-<p>These hires signalled to the rest of the world that machine learning was leaving the university lab and making its way into the industry. In other words, machine learning had business applications. </p>
-
-<p>Suddenly, companies big and small were starting to wake up and ask themselves, "Could machine learning help <em>me</em>?" Like Chris, companies began to realize they were on the wrong side of the robots.</p>
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
-
-<section class="ux-band" data-ux-band-collapse="expand-bottom" data-ux-band-background="city">
-    <div class="ux-band-container" data-ux-oss-relative="yes">
-        <header class="ux-band-header" data-ux-layout="8" data-ux-align="horizontal" data-ux-theme="airev3-dark">
-            <div class="ux-band-header">
-                <h2 class="ux-oss-band-header-title">Java Was His <span class="ux-oss-linebreak">Native Language</span></h2>
-            </div>
-        </header>
-    </div>
-    <div class="ux-oss-overflow-mask" data-ux-oss-overflow="x-hidden">
-    <div class="ux-band-container" data-ux-oss-relative="yes">
-        <div class="ux-band-body" data-ux-layout="6" data-ux-align="horizontal" data-ux-theme="airev3-dark">
-            <div class="ux-oss-generic">
-
-<p>Like a lot of Silicon Valley talent, Adam Gibson dropped out of college. For a while, though, he was at Michigan Tech. He spent three years in the upper peninsula studying computer science and business.  </p>
-
-<p>Michigan Tech is a Java shop. If you're studying computer science there, you're learning to code in Java, a programming language invented in the early 1990s. So when Adam dropped out of college, moved out west, and eventually set his suitcase down in the room next to Chris' at the hacker hostel, he took the programming language with him.</p>
-            </div>
-        </div>
-        <div class="ux-band-body" data-ux-layout="8" data-ux-align="horizontal" data-ux-theme="airev3-dark">
-            <div class="ux-oss-airev-quote">
-                <blockquote class="ux-oss-airev-quote-container" data-ux-layout="stacked">
-                    <p class="ux-oss-airev-quote-quotation web-icon web-icon-open-quote">Java is Adam's native language. He speaks Java more fluently than he speaks English some days.</p>
-                    <div class="ux-oss-airev-quote-reference" data-ux-align="horizontal">
-                        <p><span class="ux-oss-airev-quote-attribution">&mdash;Chris Nicholson</span></p>
-                    </div>
-                </blockquote>
-            </div>
-        </div>
-
-        <div class="ux-band-body" data-ux-layout="6" data-ux-align="horizontal" data-ux-theme="airev3-dark">
-            <div class="ux-oss-generic">
-
-<p>In late 2013, Adam noticed that there weren't any deep learning tools that worked well in Java. In fact, the last time anyone had made a neural net library in Java was in the 1990s, around the last big AI wave. </p>
-
-<p>A lot had changed since then. Graphics processing units (GPUs) had come on board. Distributed computing had become a reality. Researchers had made significant advances in the algorithms used for deep learning. The whole technology landscape had changed and the old Java libraries didn't account for any of it. </p>
-
-<p>This presented a problem to any company looking to follow Google and Facebook into deep learning. Because, in many ways, Java is the dominant language of corporate IT. If a deep learning library doesn't work in Java, it won't work in corporate America.</p>
-
-<p>Without the resources of big tech giants like Google and Facebook, most companies couldn't hire teams of AI experts to build these libraries for them.</p>
-            </div>
-        </div>
-        <div class="ux-band-body" data-ux-layout="8" data-ux-align="horizontal" data-ux-theme="airev3-dark">
-            <div class="ux-oss-airev-quote">
-                <blockquote class="ux-oss-airev-quote-container" data-ux-layout="stacked">
-                    <p class="ux-oss-airev-quote-quotation">In other words, the vast majority of companies who wanted to get on the right side of the robots needed help getting there.</p>
-                </blockquote>
-            </div>
-        </div>
-
-        <div class="ux-band-body" data-ux-layout="6" data-ux-align="horizontal" data-ux-theme="airev3-dark">
-            <div class="ux-oss-generic">
-
-<p>Adam and Chris wanted to be right there waiting for them.</p>
-
-<p>So Adam started building a deep learning library for Java. He coded late into the night at the hacker hostel while almost everyone else was sleeping&mdash;everyone, that is, except Chris.</p>
-
-<p>Adam spent 2014 writing more and more code while Chris learned more and more about starting a company. All the while, they were working day jobs. Chris was doing PR for FutureAdvisor and Adam was teaching at a data science academy. The money they earned from these jobs was funding their new startup. </p>
-
-<p>It wasn't exactly a sustainable solution. If their company was going to grow, they needed more money.</p>
-
-<p>So Chris did what a lot of people do in this situation: He started meeting with investors during his lunch hour.</p>
-
-<p>"Asking people to shower you with money isn't an easy proposition," Chris says. "It takes a long time to convince them." And it didn't help that, at least in the beginning, Chris didn't know how to pitch the company. There were a lot of questions he didn't have answers for. </p>
-
-<p>Sure, he could talk about the technology Adam was building and why businesses were hungry for deep learning solutions. Chris' background in journalism helped him communicate complex technical subjects clearly. </p>
-
-<p>But the business model? That took a little more explaining. </p>
-
-<p>Chris and Adam had decided to build an open source company. It wasn't a typical business model. And investors wanted to know how the company was going to make money. </p>
-
-<p>Chris' pitch got a little better each time he gave it.</p>
-            </div>
-        </div>
-        <div class="ux-band-body" data-ux-layout="8" data-ux-align="horizontal" data-ux-theme="airev3-dark">
-            <div class="ux-oss-airev-quote">
-                <blockquote class="ux-oss-airev-quote-container" data-ux-layout="stacked">
-                    <p class="ux-oss-airev-quote-quotation">Time after time, the investors said no.</p>
-                </blockquote>
-            </div>
-        </div>
-
-        <div class="ux-band-body" data-ux-layout="6" data-ux-align="horizontal" data-ux-theme="airev3-dark">
-            <div class="ux-oss-generic">
-
-<p>That started to change in late 2014, after Wired ran an article on Skymind. The piece featured Adam talking about how he wanted to "give people machine learning without hiring a data scientist." In other words, they wanted to "give Google's AI to the rest of the world," as the title of the article phrased it.</p>
-
-<p>After the article was published, a major Chinese company contacted Chris and Adam. They wanted to send someone over to talk about Skymind.</p>
-
-<p>The company was called Tencent. If you live in China, or have a connection to the country, you almost certainly know about Tencent. It's the company behind QQ, the popular instant messenger, and a lot of other popular services.</p>
-
-<p>At the time, Tencent was a nearly $139 billion company with almost a billion users. The company rivals Facebook and Amazon, but most westerners have never heard of it. In fact, Fast Company once described Tencent's founder, Pony Ma, as perhaps "the least known multibillionaire in the tech world." </p>
-
-<p>The guy Tencent sent over was named Louis Fu Tong. He was young, in his twenties, and he was really excited to talk to Chris about Skymind. Chris, once again, found himself giving his pitch, the one he'd been perfecting over all those lunch-hour meetings with investors.</p>
-
-<p>This time, it worked. In early 2015, Tencent decided to invest $200,000. </p>
-
-<p>This was Skymind's first outside investment, and it was cause to celebrate. It was also cause to make some drastic changes.</p>
-
-<p>With this new money, Chris was able to leave his day job and work full time at Skymind. He and Adam were also able to hire their first employee, an engineer to help Adam make their product better. They needed to accelerate the development of their product, Deeplearing4j. </p>
-
-<p>After the initial investment, Chris thought he could go out and raise a lot more. But he was wrong. He kept meeting with investors. He kept giving the pitch. But they kept turning him down.</p>
-
-<p>So there were Chris and Adam, living on virtually nothing.</p>
-            </div>
-        </div>
-        <div class="ux-band-body" data-ux-layout="8" data-ux-align="horizontal" data-ux-theme="airev3-dark">
-            <div class="ux-oss-airev-quote">
-                <blockquote class="ux-oss-airev-quote-container" data-ux-layout="stacked">
-                    <p class="ux-oss-airev-quote-quotation">Chris had quit his job. They had a new employee. And they knew the $200k was going to run out.</p>
-                </blockquote>
-            </div>
-        </div>
-
-        <div class="ux-band-body" data-ux-layout="6" data-ux-align="horizontal" data-ux-theme="airev3-dark">
-            <div class="ux-oss-generic">
-
-<p>Somehow, they made it until the end of 2015. And by that time, all the coding Adam was doing while Chris was out trying to raise money began to pay off. Their product was getting faster and more reliable. The number of people making improvements through their open source community was growing.</p>
-
-<p>And then something big happened, something that would change the course of their company: They got into Y Combinator, a well-known startup accelerator that helps founders like Chris and Adam develop their ideas and build a solid business model. Think of it as a startup bootcamp. </p>
-
-<p>All that time that Chris spent knocking on doors and asking for money? Suddenly, people started knocking on <em>his</em> door and asking, "How much money do you need?" </p>
-
-<p>When they finished Y Combinator, they had raised $3 million and grown the company to 10 people. </p>
-
-<p>"I'll just tell you," Chris says. "Having people knock on your door after begging for a year? <em>That's</em> a weird feeling."</p>
-
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
-
-<section class="ux-band" data-ux-band-collapse="expand-bottom" data-ux-band-background="data-in-out">
-    <div class="ux-band-container" data-ux-oss-relative="yes">
-        <header class="ux-band-header" data-ux-layout="8" data-ux-align="horizontal" data-ux-theme="airev3-light">
-            <div class="ux-band-header">
-                <h2 class="ux-oss-band-header-title">Data Goes In<span class="ux-oss-linebreak">Decisions Come Out</span></h2>
-            </div>
-        </header>
-        <div class="ux-band-body" data-ux-layout="6" data-ux-align="horizontal" data-ux-theme="airev3-light">
-            <div class="ux-oss-generic">
-                <p>Skymind now has an office in a nondescript building on the edge of SOMA, not far from the Tenderloin in San Francisco. It's just far enough from where startups tend to cluster to be affordable. And the team has a decent amount of space&mdash;even if it does feel a little like a converted apartment.</p>
-                <div class="ux-image-embed" data-ux-oss-spacing="standard" data-ux-align="center">
-                    <div class="ux-image-embed-container">
-                        <img class="ux-image-embed-img" src="https://www.redhat.com/rhdc/managed-files/Chris-desk.jpg" title="Chris Nicholson" alt="">
-                    </div>
-                </div>
-<p>There's a reception desk at the front of the office and two large staircases to the right that lead up to a few conference rooms. There are a few workstations up there, as well, and a treadmill for walking while you work.</p>
-
-<p>On the bottom floor, there's a table near the kitchen with a bunch of office chairs around it. This is where Chris camps out. Like any startup CEO, Chris is doing a little bit of everything&mdash;from writing technical documentation to handling HR issues. He does almost all of it from this table. </p>
-
-<p>The open space near the kitchen is also where they host potential customers. Whenever they have someone coming in, Chris pushes the table against the wall and sets up a dozen beige folding chairs, like a pop-up seminar at a local library. </p>
-
-<p>Skymind's success can, at least in part, be attributed to Chris' ability to connect with people and explain how deep learning works. He has a reporter's knack for breaking down any concept down into its basic components and patiently explaining each part to you.</p>
-
-<p>"AI is just math and code that makes decisions about data," Chris says. "If you drew it out on a whiteboard, there would be three parts: AI is in the middle. Data is on the left. Decisions are on the right. You push data into the AI and decisions come out of the other side." </p>
-            </div>
-        </div>
-        <div class="ux-band-body" data-ux-layout="9" data-ux-align="horizontal" data-ux-theme="airev3-light">
-            <div class="ux-oss-generic">
-                <div class="ux-image-embed" data-ux-oss-spacing="standard" data-ux-align="center">
-                    <div class="ux-image-embed-container">
-                        <img class="ux-image-embed-img" src="https://www.redhat.com/rhdc/managed-files/OM-A3-data-in-out-NEW.png" title="" alt="laptop illustration">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="ux-band-body" data-ux-layout="6" data-ux-align="horizontal" data-ux-theme="airev3-light">
-            <div class="ux-oss-generic">
-
-<p>That means that if you're a business that wants to build a deep learning solution, you need two things: You need to know what you care about, and you need data.</p>
-
-<p>Most large companies struggle with old, hard business problems. It might be fraud. It might be market forecasting. It might be figuring out why certain computer chips are flawed when they come off the line&mdash;and others aren't. </p>
-
-<p>Companies care very deeply about these problems because a lot of money is at stake. "If they're a large company," Chris says, "this could be millions of dollars, tens of millions&mdash;even hundreds of millions." </p>
-
-<p>It turns out, these are all problems that deep learning can help with. If you think about it, they're basically just decision problems: Does this transaction look like fraud, yes or no?</p>
-
-<p>For the AI to not just recognize fraud, but learn what fraud looks like, you need data. You can't train an algorithm to identify fraud if you don't have a bunch of transactions it can learn from.</p>
-
-<p>So, if you give the AI data&mdash;a set of fraudulent and legitimate transactions, for instance, with each kind labeled&mdash;it can quickly look at the set as a whole and determine the characteristics of fraud. </p>
-
-<p>That is, it can learn what fraud looks like. And once it knows what fraud looks like, you can give it very, very large sets of transactions that it's never seen, and it can spot the ones that look suspicious.</p>
-
-<p>The promise of AI is that it can do all of this faster and more accurately than any human can. It can take on simple tasks that humans flub because of boredom or fatigue and it can perform them over and over and over and over and over. And every time it correctly identifies fraud, the company saves money.</p>
-
-<p>That's the moment that Chris is going for, when mountains of data that companies aren't necessarily using become a valuable asset. The moment when data becomes gold.</p>
-
-<p>Chris had spent years trying to get on the right side of the robots. And by getting companies to care about this moment, that's when he had finally done it.</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<section class="ux-band" data-ux-band-collapse="expand-bottom" data-ux-band-background="dark">
-    <div class="ux-band-container" data-ux-oss-relative="yes">
-        <header class="ux-band-header" data-ux-layout="8" data-ux-align="horizontal" data-ux-theme="airev3-dark">
-            <div class="ux-band-header">
-                <h2 class="ux-oss-band-header-title">The Quiet <span class="ux-oss-linebreak">A.I. Revolution</span></h2>
-            </div>
-        </header>
-        <div class="ux-band-body" data-ux-layout="6" data-ux-align="horizontal" data-ux-theme="airev3-dark">
-            <div class="ux-oss-generic">
-<p>There's a quiet AI revolution happening all around us. And companies like Skymind are behind a lot of it.</p>
-
-<p>When companies saw that AI had business applications, that AI wasn't just robots and self-driving cars, they wanted to get in on the game. Even old-school behemoths like automakers and big banks saw the potential. </p>
-            </div>
-        </div>
-        <div class="ux-band-body" data-ux-layout="8" data-ux-align="horizontal" data-ux-theme="airev3-dark">
-            <div class="ux-oss-airev-quote">
-                <blockquote class="ux-oss-airev-quote-container" data-ux-layout="stacked">
-                    <p class="ux-oss-airev-quote-quotation">All of those tiny, behind-the-scenes decisions that AI is making eventually reach people like you and me.</p>
-                </blockquote>
-            </div>
-        </div>
-
-        <div class="ux-band-body" data-ux-layout="6" data-ux-align="horizontal" data-ux-theme="airev3-dark">
-            <div class="ux-oss-generic">
-
-<p>So, when your bank uses AI to determine whether a transaction is fraud, you benefit from it. That call you get from your bank asking you if you actually bought a $2,000 television on the other side of the world? That's AI. </p>
-
-<p>It's the same when Gmail automatically filters certain emails into your spam filter. And when Facebook asks if you want to tag your mom in the photo you just uploaded. And when Alexa tells you that, yes, in fact, she will set a timer for you. All of it is AI.</p>
-
-<p>It goes completely unnoticed by most, but it's happening all around us. And bit by bit, our lives are getting a little easier. Chris likens this to a thermostat, regulating our environment, making our daily lives just a little bit better.</p>
-
-<p>"People don't quite realize how this is going to open up their world," Chris says.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="ux-band" data-ux-band-background="light" data-ux-band-collapse="bottom">
-    <div class="ux-band-container" data-ux-oss-relative="yes">
-        <header class="ux-band-header" data-ux-layout="8" data-ux-align="horizontal" data-ux-theme="airev3-light">
-            <div class="ux-band-header">
-                <h2 class="ux-oss-band-header-title">TO BE CONTINUED....</h2>
-            </div>
-        </header>
-        <div class="ux-band-body" data-ux-layout="6" data-ux-align="horizontal" data-ux-theme="airev3-light">
-            <div class="ux-oss-share" data-ux-align="horizontal">
-                <h3 class="ux-oss-share-label">Share:</h3>
-                <ul class="ux-oss-share-group">
-                    <li class="ux-oss-share-item"><a href="http://www.facebook.com/sharer.php?u=http://red.ht/2mSMLoY" class="ux-oss-share-link"><span class="web-icon-facebook" aria-label="true"></span></a></li>
-                    <li class="ux-oss-share-item"><a href="https://twitter.com/share?url=http://red.ht/2oCpRPc&amp;text=How%20do%20you%20get%20on%20the%20right%20side%20of%20the%20robots%3F%20For%20one%20former%20journalist%2C%20it%20meant%20building%20an%20%23AI%20startup%3A" class="ux-oss-share-link"><span class="web-icon-twitter" aria-label="true"></span></a></li>
-                    <li class="ux-oss-share-item"><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://red.ht/2nzsUbF&amp;title=The%20Right%20Side%20of%20the%20Robots&amp;summary=How%20do%20you%20get%20on%20the%20right%20side%20of%20the%20robots%3F%20For%20one%20journalist%2C%20it%20meant%20quitting%20his%20job%2C%20moving%20to%20San%20Francisco%2C%20and%20starting%20an%20open%20source%20AI%20company.&amp;source=Red%20Hat" class="ux-oss-share-link"><span class="web-icon-linkedin" aria-label="true"></span></a></li>
-                    <li class="ux-oss-share-item"><a href="mailto:?subject=The right side of the robots&body=This article follows Chris Nicholson, a former journalist, as he moves to San Francisco and starts an AI company called Skymind. http://red.ht/2nzc8JW" class="ux-oss-share-link"><span class="web-icon-envelope" aria-label="true"></span></a></li>
-                    <li class="ux-oss-share-item"><a href="javascript:window.print();" class="ux-oss-share-link"><span class="web-icon-print" aria-label="true"></span></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="ux-band-body">
-            <p class="ux-oss-airev-byline">Words by Brent Simoneaux<br />
-            Visuals by Wes Leonard, Liz Wetzel, and Aaron Williamson</p>
-        </div>
-    </div>
-</section>
-
-<section class="ux-band" data-ux-band-background="light" data-ux-theme="airev3-light">
-    <div class="ux-band-container">
-        <div class="ux-band-body" data-ux-layout="6 6 flex">
-            <div class="ux-group" data-ux-layout="stacked">
-                <h2 class="ux-oss-general-headline" data-ux-align="horizontal">Next up:<br> Possible Futures</h2>
-                <div class="ux-oss-generic" data-ux-text-align="center">
-                <p>How one mathematician is trying to make AI uncool again. And why that matters.</p>
-                </div>
+                <!-- group -->
                 <div class="ux-cta" data-ux-align="horizontal">
-                    <a class="ux-cta-link" href="https://www.redhat.com/en/open-source-stories/ai-revolutionaries/possible-futures" data-ux-cta-type="primary">Read on</a>
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/ai-revolutionaries"
+                    class="ux-cta-link"
+                    data-ux-cta-type="primary"
+                    >See the whole series</a
+                  >
                 </div>
-                <div class="ux-cta" data-ux-align="horizontal">
-                    <a class="ux-cta-link" href="https://www.redhat.com/en/open-source-stories/ai-revolutionaries" data-ux-cta-type="secondary">See the whole series</a>
-                </div>
+              </div>
             </div>
-            <div class="ux-group">
-                <h2 class="ux-oss-general-headline" data-ux-align="horizontal">More reading</h2>
+          </div>
+
+          <div class="ux-oss-peek-nav">
+            <div class="ux-oss-share rev" data-ux-align="horizontal">
+              <h3 class="ux-oss-share-label">Share:</h3>
+              <ul class="ux-oss-share-group">
+                <li class="ux-oss-share-item">
+                  <a
+                    href="http://www.facebook.com/sharer.php?u=http://red.ht/2mSMLoY"
+                    class="ux-oss-share-link"
+                    ><span class="web-icon-facebook" aria-label="true"></span
+                  ></a>
+                </li>
+                <li class="ux-oss-share-item">
+                  <a
+                    href="https://twitter.com/share?url=http://red.ht/2oCpRPc&amp;text=How%20do%20you%20get%20on%20the%20right%20side%20of%20the%20robots%3F%20For%20one%20former%20journalist%2C%20it%20meant%20building%20an%20%23AI%20startup%3A"
+                    class="ux-oss-share-link"
+                    ><span class="web-icon-twitter" aria-label="true"></span
+                  ></a>
+                </li>
+                <li class="ux-oss-share-item">
+                  <a
+                    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://red.ht/2nzsUbF&amp;title=The%20Right%20Side%20of%20the%20Robots&amp;summary=How%20do%20you%20get%20on%20the%20right%20side%20of%20the%20robots%3F%20For%20one%20journalist%2C%20it%20meant%20quitting%20his%20job%2C%20moving%20to%20San%20Francisco%2C%20and%20starting%20an%20open%20source%20AI%20company.&amp;source=Red%20Hat"
+                    class="ux-oss-share-link"
+                    ><span class="web-icon-linkedin" aria-label="true"></span
+                  ></a>
+                </li>
+                <li class="ux-oss-share-item">
+                  <a
+                    href="mailto:?subject=The right side of the robots&body=This article follows Chris Nicholson, a former journalist, as he moves to San Francisco and starts an AI company called Skymind. http://red.ht/2nzc8JW"
+                    class="ux-oss-share-link"
+                    ><span class="web-icon-envelope" aria-label="true"></span
+                  ></a>
+                </li>
+                <li class="ux-oss-share-item">
+                  <a href="javascript:window.print();" class="ux-oss-share-link"
+                    ><span class="web-icon-print" aria-label="true"></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- article-hero -->
+          <section
+            class="ux-band"
+            data-ux-band-background="article-hero"
+            data-ux-oss-band-type="article-hero"
+          >
+            <div class="ux-oss-article-hero-overlay"></div>
+            <div class="ux-band-container">
+              <header
+                class="ux-band-header"
+                data-ux-layout="10"
+                data-ux-align="stacked"
+                data-ux-theme="airev3-dark"
+                data-ux-oss-separation="top"
+              >
+                <h1 class="ux-oss-airev3-title">
+                  The Right Side of the Robots
+                </h1>
+                <h2 class="ux-oss-airev-subtitle">
+                  A.I. Revolutionaries | Part III
+                </h2>
+              </header>
+            </div>
+          </section>
+
+          <section
+            class="ux-band"
+            data-ux-band-collapse="both"
+            data-ux-band-background="alt"
+          >
+            <div class="ux-band-container" data-ux-oss-relative="yes">
+              <div class="ux-band-body" data-ux-theme="airev3-dark">
+                <p class="ux-oss-airev-byline" data-ux-oss-location="hero">
+                  by
+                  <a href="https://medium.com/@bsimoneaux">Brent Simoneaux</a>
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="ux-band"
+            data-ux-band-collapse="expand-bottom"
+            data-ux-band-background="alt"
+          >
+            <div class="ux-band-container" data-ux-oss-relative="yes">
+              <div
+                class="ux-band-body"
+                data-ux-layout="6"
+                data-ux-align="horizontal"
+                data-ux-theme="airev3-dark"
+              >
                 <div class="ux-oss-generic">
-                    <p class="ux-oss-intro-header-summary" data-ux-align="horizontal">Here are some more sources on the topics discussed in this article:</p>
-                    <ul>
-                    <li><strong><a class="ux-cta-link" href="http://www.nytimes.com/2012/07/06/technology/at-hacker-hostels-living-on-the-cheap-and-dreaming-of-digital-glory.html">Crammed into cheap bunks, dreaming of future digital glory</a></strong> by Brian X. Chen, The New York Times</li>
-                    <li><strong><a class="ux-cta-link" href="https://www.wired.com/2014/01/geoffrey-hinton-deep-learning/">Meet the man Google hired to make AI a reality</a></strong> by Daniela Hernandez, Wired</li>
-                    <li><strong><a class="ux-cta-link" href="https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html">The great AI awakening</a></strong> by Gideon Lewis-Kraus, The New York Times Magazine</li>
-                    </ul>
+                  <p>
+                    When Chris Nicholson moved to San Francisco, he did what a
+                    lot of aspiring tech workers do: He moved into a hacker
+                    hostel.
+                  </p>
+
+                  <p>
+                    It wasn't exactly the home he'd hoped for, especially in his
+                    late 30s. But it was exactly where he wanted to be.
+                  </p>
+
+                  <p>
+                    Chris had spent the better part of a decade as a journalist
+                    in Paris. He reported on business for The New York Times and
+                    Bloomberg. He had good friends in the city. He even lived in
+                    the same building where, in the early 1970s, Bernardo
+                    Bertolucci filmed "Last Tango in Paris." It was this small,
+                    circular apartment overlooking the Seine. He could look out
+                    the window and see the Eiffel Tower.
+                  </p>
+
+                  <p>Chris had a good life in Paris. Except one thing.</p>
                 </div>
+              </div>
+              <div
+                class="ux-band-body"
+                data-ux-layout="8"
+                data-ux-align="horizontal"
+                data-ux-theme="airev3-dark"
+              >
+                <div class="ux-oss-airev-quote">
+                  <blockquote
+                    class="ux-oss-airev-quote-container"
+                    data-ux-layout="stacked"
+                  >
+                    <p class="ux-oss-airev-quote-quotation">
+                      He started to realize he was on the wrong side of the
+                      robots.
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
+
+              <div
+                class="ux-band-body"
+                data-ux-layout="6"
+                data-ux-align="horizontal"
+                data-ux-theme="airev3-dark"
+              >
+                <div class="ux-oss-generic">
+                  <p>
+                    This was a realization that would upend Chris' life.
+                    Because, for him, getting on the right side of the robots
+                    meant leaving journalism. It meant getting out of Paris and
+                    moving to San Francisco. It meant learning to write computer
+                    code and starting a new life.
+                  </p>
+
+                  <p>
+                    Turns out, being on the right side of the robots also meant
+                    sleeping in an old sex toy warehouse for a year.
+                  </p>
+
+                  <p>
+                    If you spend enough time in Silicon Valley, you'll find a
+                    lot of people like Chris, people who are "crammed into cheap
+                    bunks, dreaming of future glory," as the title of a 2012 New
+                    York Times article once described the phenomenon. For years,
+                    they've been flocking to the area, hoping to start a new
+                    life in the tech industry. And the housing market can't keep
+                    up.
+                  </p>
+
+                  <p>
+                    "Humans move faster than real estate," Chris says. "So
+                    warehouses are turned into living spaces and you end up
+                    paying around $1,000 for the lower bunk in a room full of
+                    snoring guys."
+                  </p>
+
+                  <p>
+                    The hacker hostel Chris moved into? It used to be a
+                    warehouse for a company called Good Vibrations.
+                  </p>
+
+                  <p>
+                    Sure, it wasn't ideal. But the high density of tech workers
+                    at the hacker hostel&mdash;some of whom would go on to work
+                    for big tech companies like YouTube, or form their own
+                    startups&mdash;meant that there was a built-in community.
+                    More than being just a place to sleep, it was a place to
+                    meet new people, exchange ideas, and maybe even start a
+                    company together.
+                  </p>
+
+                  <p>
+                    This is exactly what Chris wanted. In his late 30s and with
+                    virtually no tech experience, he had a lot of catching up to
+                    do.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="ux-band-body"
+                data-ux-layout="8"
+                data-ux-align="horizontal"
+                data-ux-theme="airev3-dark"
+              >
+                <div class="ux-oss-generic">
+                  <div
+                    class="ux-image-embed"
+                    data-ux-oss-spacing="standard"
+                    data-ux-align="center"
+                  >
+                    <div class="ux-image-embed-container">
+                      <img
+                        class="ux-image-embed-img"
+                        src="https://www.redhat.com/rhdc/managed-files/chris-hackerhouse.jpg"
+                        title="Chris Nicholson"
+                        alt=""
+                      />
+                      <div class="ux-image-embed-cc">
+                        Chris Nicholson and the hacker hostel
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ux-band-body"
+                data-ux-layout="6"
+                data-ux-align="horizontal"
+                data-ux-theme="airev3-dark"
+              >
+                <div class="ux-oss-generic">
+                  <p>
+                    So, month after month, Chris went to his day job and, in the
+                    evening, he'd return to the hacker hostel and work some
+                    more. While many others were playing guitar and watching
+                    movies and drinking (yes, it was a lot like a college dorm),
+                    Chris was reading everything he could about starting a
+                    company.
+                  </p>
+
+                  <p>
+                    And that's how Chris noticed Adam Gibson, a quiet guy with
+                    glasses who had a wry sensibility, and who happened to bunk
+                    in the room next to Chris.
+                  </p>
+
+                  <p>
+                    Adam was working on a Java-based deep learning library and,
+                    like Chris, he'd often work late into the night.
+                  </p>
+
+                  <p>
+                    So they started hanging out. They went out to dinner
+                    together. They talked about AI and they traded ideas. They
+                    even began talking about starting a company together.
+                  </p>
+
+                  <p>
+                    They were a formidable pair. Adam would be the builder.
+                    Chris would be the seller. And, together, they would spend
+                    the next few years creating an open source deep learning
+                    company called Skymind. They'd help companies get into
+                    AI&mdash;and, in the process, quietly change how you and I
+                    experience the world.
+                  </p>
+                </div>
+              </div>
             </div>
+          </section>
+
+          <section
+            class="ux-band"
+            data-ux-band-collapse="expand-bottom"
+            data-ux-band-background="synapses"
+          >
+            <div class="ux-oss-band-overlay"></div>
+            <div class="ux-band-container" data-ux-oss-relative="yes">
+              <header
+                class="ux-band-header"
+                data-ux-layout="8"
+                data-ux-align="horizontal"
+                data-ux-theme="airev3-light"
+              >
+                <div class="ux-band-header">
+                  <h2 class="ux-oss-band-header-title">
+                    The Mind<span class="ux-oss-linebreak"> Wave</span>
+                  </h2>
+                </div>
+              </header>
+            </div>
+
+            <div class="ux-oss-overflow-mask" data-ux-oss-overflow="x-hidden">
+              <div class="ux-band-container" data-ux-oss-relative="yes">
+                <div
+                  class="ux-band-body"
+                  data-ux-layout="6"
+                  data-ux-align="horizontal"
+                  data-ux-theme="airev3-light"
+                >
+                  <div class="ux-oss-generic">
+                    <p>
+                      If you ask Chris about the name Skymind, he'll let out a
+                      big, hearty laugh. It's one of those laughs that, even if
+                      he never says it out loud, lets you know that he gets this
+                      question all the time&mdash;and has no idea how to answer
+                      it.
+                    </p>
+
+                    <svg
+                      class="ux-oss-synapse"
+                      data-ux-oss-position="collide"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 341 286.38095"
+                    >
+                      <g>
+                        <circle
+                          class="a"
+                          cx="235.45238"
+                          cy="68.64286"
+                          r="4.42857"
+                        />
+                        <circle
+                          class="a2"
+                          cx="336.57143"
+                          cy="39.11905"
+                          r="4.42857"
+                        />
+                        <circle
+                          class="a"
+                          cx="303.61905"
+                          cy="156.2619"
+                          r="4.42857"
+                        />
+                        <circle
+                          class="a2"
+                          cx="235.45238"
+                          cy="281.95238"
+                          r="4.42857"
+                        />
+                        <circle
+                          class="a"
+                          cx="152.04762"
+                          cy="132.11905"
+                          r="4.42857"
+                        />
+                        <circle
+                          class="a2"
+                          cx="97.04762"
+                          cy="104.11905"
+                          r="4.42857"
+                        />
+                        <circle
+                          class="a"
+                          cx="160.16667"
+                          cy="212.57143"
+                          r="4.42857"
+                        />
+                        <circle
+                          class="a2"
+                          cx="293.7619"
+                          cy="100.38095"
+                          r="4.42857"
+                        />
+                        <circle
+                          class="a"
+                          cx="216.7619"
+                          cy="99.38095"
+                          r="4.42857"
+                        />
+                        <circle
+                          class="a2"
+                          cx="117.35714"
+                          cy="42.80952"
+                          r="4.42857"
+                        />
+                        <circle
+                          class="a"
+                          cx="4.42857"
+                          cy="129.16667"
+                          r="4.42857"
+                        />
+                        <circle
+                          class="a2"
+                          cx="228.80952"
+                          cy="4.42857"
+                          r="4.42857"
+                        />
+                        <line
+                          class="b"
+                          x1="121.41667"
+                          y1="43.17857"
+                          x2="231.39286"
+                          y2="67.53571"
+                        />
+                        <line
+                          class="b"
+                          x1="238.77381"
+                          y1="70.4881"
+                          x2="290.44048"
+                          y2="97.79762"
+                        />
+                        <line
+                          class="b"
+                          x1="295.5"
+                          y1="99.19048"
+                          x2="334.72619"
+                          y2="42.44048"
+                        />
+                        <line
+                          class="b"
+                          x1="232.86905"
+                          y1="71.22619"
+                          x2="153.5"
+                          y2="130.19048"
+                        />
+                        <line
+                          class="b"
+                          x1="117.5"
+                          y1="44.19048"
+                          x2="151.5"
+                          y2="130.19048"
+                        />
+                        <line
+                          class="b"
+                          x1="238.77381"
+                          y1="66.79762"
+                          x2="336.5"
+                          y2="39.19048"
+                        />
+                        <line
+                          class="b"
+                          x1="294.13095"
+                          y1="105.17857"
+                          x2="303.5"
+                          y2="154.19048"
+                        />
+                        <line
+                          class="b"
+                          x1="156.10714"
+                          y1="133.96429"
+                          x2="302.5"
+                          y2="155.19048"
+                        />
+                        <line
+                          class="b"
+                          x1="224.75"
+                          y1="5.53571"
+                          x2="118.83333"
+                          y2="39.85714"
+                        />
+                        <line
+                          class="b"
+                          x1="232.5"
+                          y1="4.42857"
+                          x2="337.5"
+                          y2="37.19048"
+                        />
+                        <line
+                          class="b"
+                          x1="151.67857"
+                          y1="136.17857"
+                          x2="160.53571"
+                          y2="208.5119"
+                        />
+                        <line
+                          class="b"
+                          x1="115.5"
+                          y1="43.19048"
+                          x2="5.5"
+                          y2="127.19048"
+                        />
+                        <line
+                          class="b"
+                          x1="151"
+                          y1="132.19048"
+                          x2="7"
+                          y2="130.19048"
+                        />
+                        <line
+                          class="b"
+                          x1="157.5"
+                          y1="213.19048"
+                          x2="5.5"
+                          y2="132.19048"
+                        />
+                        <line
+                          class="b"
+                          x1="228.44048"
+                          y1="8.4881"
+                          x2="235.5"
+                          y2="67.19048"
+                        />
+                        <line
+                          class="b"
+                          x1="160.5"
+                          y1="215.19048"
+                          x2="232.13095"
+                          y2="279.36905"
+                        />
+                        <polyline
+                          class="b"
+                          points="237.5 280.19 304.095 158.69 214.5 98.19 289.702 101.488 154.5 132.19"
+                        />
+                        <polyline
+                          class="b"
+                          points="4 128.69 98 103.69 161.5 212.19 301.512 158.321"
+                        />
+                      </g>
+                    </svg>
+
+                    <p>But that doesn't stop him from trying.</p>
+
+                    <div
+                      class="ux-image-embed"
+                      data-ux-oss-spacing="standard"
+                      data-ux-align="center"
+                    >
+                      <div class="ux-image-embed-container">
+                        <img
+                          class="ux-image-embed-img"
+                          src="https://www.redhat.com/rhdc/managed-files/chris-skymind.jpg"
+                          title="Chris Nicholson"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+
+                    <p>
+                      "There are trends in startup names," Chris says. "In this
+                      case, startups that include the word <em>mind</em> tend to
+                      be machine learning companies."
+                    </p>
+
+                    <svg
+                      class="ux-oss-synapse"
+                      data-ux-oss-position="right-collide"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 326.0147 288.75375"
+                    >
+                      <g>
+                        <circle
+                          class="a"
+                          cx="95.42016"
+                          cy="5700.46928"
+                          r="4.42857"
+                          transform="translate(-4358.98098 -3582.78302) rotate(-49.39512)"
+                        />
+                        <circle
+                          class="a2"
+                          cx="68.83954"
+                          cy="5806.76354"
+                          r="4.42857"
+                          transform="translate(-4448.9622 -3565.84962) rotate(-49.39512)"
+                        />
+                        <circle
+                          class="a"
+                          cx="155.39822"
+                          cy="5751.88555"
+                          r="4.42857"
+                          transform="translate(-4377.07501 -3519.29416) rotate(-49.39512)"
+                        />
+                        <circle
+                          class="a2"
+                          cx="195.1974"
+                          cy="5872.93523"
+                          r="4.42857"
+                          transform="translate(-4455.08154 -3446.81214) rotate(-49.39512)"
+                        />
+                        <circle
+                          class="a"
+                          cx="114.1974"
+                          cy="5929.93523"
+                          r="4.42857"
+                          transform="translate(-4526.6389 -3488.40645) rotate(-49.39512)"
+                        />
+                        <circle
+                          class="a2"
+                          cx="143.1974"
+                          cy="5817.93523"
+                          r="4.42857"
+                          transform="translate(-4431.48104 -3505.49524) rotate(-49.39512)"
+                        />
+                        <circle
+                          class="a"
+                          cx="298.1974"
+                          cy="5856.93523"
+                          r="4.42857"
+                          transform="translate(-4406.97048 -3374.19948) rotate(-49.39512)"
+                        />
+                        <circle
+                          class="a2"
+                          cx="227.74222"
+                          cy="5788.87671"
+                          r="4.42857"
+                          transform="translate(-4379.89958 -3451.45357) rotate(-49.39512)"
+                        />
+                        <circle
+                          class="a"
+                          cx="385.99694"
+                          cy="5725.65137"
+                          r="4.42857"
+                          transform="translate(-4276.64149 -3353.3799) rotate(-49.39512)"
+                        />
+                        <circle
+                          class="a2"
+                          cx="292.99694"
+                          cy="5792.65137"
+                          r="4.42857"
+                          transform="translate(-4359.98095 -3400.59318) rotate(-49.39512)"
+                        />
+                        <circle
+                          class="a"
+                          cx="290.11379"
+                          cy="5723.80147"
+                          r="4.42857"
+                          transform="matrix(0.65084, -0.75922, 0.75922, 0.65084, -4308.71569, -3426.82182)"
+                        />
+                        <circle
+                          class="a2"
+                          cx="232.11379"
+                          cy="5710.80147"
+                          r="4.42857"
+                          transform="matrix(0.65084, -0.75922, 0.75922, 0.65084, -4319.09723, -3475.39544)"
+                        />
+                        <circle
+                          class="a"
+                          cx="188.70341"
+                          cy="5650.03878"
+                          r="4.42857"
+                          transform="translate(-4288.12245 -3529.56927) rotate(-49.39512)"
+                        />
+                        <path
+                          class="b"
+                          d="M94.92689,5700.64228"
+                          transform="translate(-64.41089 -5645.61012)"
+                        />
+                        <polyline
+                          class="b"
+                          points="321.798 80.16 164.194 142.626 124.504 4.547 91.199 106.394 31.113 53.568 4.64 161.272 91.199 106.394 131.649 226.685 164.194 142.626"
+                        />
+                        <line
+                          class="b"
+                          x1="30.46182"
+                          y1="54.32712"
+                          x2="124.50428"
+                          y2="4.54746"
+                        />
+                        <polyline
+                          class="b"
+                          points="124.396 3.137 225.915 78.31 322.449 79.401 233.454 211.39 131.757 228.095 3.339 162.791 49.454 286.39 79.454 170.39 130.454 227.39"
+                        />
+                        <polyline
+                          class="b"
+                          points="162.784 142.735 90.331 104.333 167.454 64.39 162.892 144.145"
+                        />
+                        <line
+                          class="b"
+                          x1="162.89225"
+                          y1="144.14461"
+                          x2="225.26382"
+                          y2="79.06937"
+                        />
+                        <line
+                          class="b"
+                          x1="162.45418"
+                          y1="142.38988"
+                          x2="236.45418"
+                          y2="212.38988"
+                        />
+                        <path
+                          class="b"
+                          d="M298.36507,5857.5c0-6-7-66-7-66l95-66"
+                          transform="translate(-64.41089 -5645.61012)"
+                        />
+                      </g>
+                    </svg>
+
+                    <p>
+                      It's true: if you catalog machine learning companies out
+                      in the wild, like some sort of tech-industry taxonomist,
+                      Chris' system holds up… mostly. There's Google's DeepMind.
+                      There's MetaMind, which was bought by Salesforce. There
+                      are a bunch of them.
+                    </p>
+
+                    <p>
+                      "We were part of that mind wave," Chris says, "when
+                      companies were starting to realize that machine learning
+                      had business applications."
+                    </p>
+
+                    <p>
+                      In the summer of 2013, the same year that Chris and Adam
+                      met at the hacker hostel, Google hired a guy named
+                      Geoffrey Hinton. At the time, Hinton was a professor at
+                      the University of Toronto and had, for years, been making
+                      important progress with artificial neural networks,
+                      mathematical functions that are modeled after the huge
+                      network of neurons in the human brain.
+                    </p>
+
+                    <p>
+                      Hinton knew that everything the brain does is an
+                      impressive feat, even when it comes to the most mundane
+                      tasks. Think about how the brain can isolate a whisper,
+                      even in a crowded room. Or recognize a face in a sea of
+                      people. Or pick up on the subtleties of humor when talking
+                      to a co-worker. According to Hinton, though, the brain's
+                      most impressive feat is how it learns&mdash;without
+                      explicit instructions.
+                    </p>
+
+                    <svg
+                      class="ux-oss-synapse"
+                      data-ux-oss-position="collide"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 350 261.08349"
+                    >
+                      <circle
+                        class="a"
+                        cx="265.01728"
+                        cy="6583.28742"
+                        r="3.10818"
+                        transform="translate(-5982.04768 -2026.71155) rotate(-69.1652)"
+                      />
+                      <circle
+                        class="a2"
+                        cx="346.89098"
+                        cy="6657.52659"
+                        r="3.10818"
+                        transform="translate(-5998.67904 -1902.3574) rotate(-69.1652)"
+                      />
+                      <circle
+                        class="a"
+                        cx="247.49704"
+                        cy="6650.74096"
+                        r="3.10818"
+                        transform="translate(-6056.37915 -1999.62411) rotate(-69.1652)"
+                      />
+                      <circle
+                        class="a2"
+                        cx="162.95783"
+                        cy="6519.28687"
+                        r="3.10818"
+                        transform="translate(-5987.99162 -2163.33447) rotate(-69.1652)"
+                      />
+                      <circle
+                        class="a"
+                        cx="234.01725"
+                        cy="6774.15232"
+                        r="3.10818"
+                        transform="translate(-6180.40598 -1932.70539) rotate(-69.1652)"
+                      />
+                      <circle
+                        class="a2"
+                        cx="186.29161"
+                        cy="6699.75646"
+                        r="3.10818"
+                        transform="translate(-6141.62572 -2025.24538) rotate(-69.1652)"
+                      />
+                      <circle
+                        class="a"
+                        cx="139.23714"
+                        cy="6625.51362"
+                        r="3.10818"
+                        transform="translate(-6102.55603 -2117.05948) rotate(-69.1652)"
+                      />
+                      <circle
+                        class="a2"
+                        cx="60.01019"
+                        cy="6645.78646"
+                        r="3.10818"
+                        transform="translate(-6172.55114 -2178.04346) rotate(-69.1652)"
+                      />
+                      <circle
+                        class="a"
+                        cx="178.00793"
+                        cy="6583.98328"
+                        r="3.10818"
+                        transform="translate(-6255.36946 -1343.63994) rotate(-76.077)"
+                      />
+                      <circle
+                        class="a2"
+                        cx="96.79743"
+                        cy="6766.80927"
+                        r="3.10818"
+                        transform="translate(-6261.9573 -2065.68369) rotate(-69.1652)"
+                      />
+                      <circle
+                        class="a"
+                        cx="3.10902"
+                        cy="6584.73013"
+                        r="3.10818"
+                        transform="translate(-6152.15016 -2270.564) rotate(-69.1652)"
+                      />
+                      <circle
+                        class="a2"
+                        cx="309.68066"
+                        cy="6537.40166"
+                        r="3.10818"
+                        transform="translate(-5910.38465 -2014.53406) rotate(-69.1652)"
+                      />
+                      <polyline
+                        class="b"
+                        points="96.412 250.517 1.855 67.572 138.852 109.222 234.167 257.773 247.561 134.661 346.955 141.446 265.081 67.207 309.745 21.321 160.328 1.937 264.421 67.445 139.064 108.773 247.561 134.661 96.201 250.966 234.167 257.773"
+                      />
+                      <path
+                        class="b"
+                        d="M59.4137,6646.12142"
+                        transform="translate(0 -6516.17785)"
+                      />
+                      <polyline
+                        class="b"
+                        points="162.784 2.546 138.403 109.01 60.074 129.706 96.201 250.966"
+                      />
+                      <path
+                        class="b"
+                        d="M138.878,6626.50907"
+                        transform="translate(0 -6516.17785)"
+                      />
+                      <polygon
+                        class="b"
+                        points="309.745 21.321 346.955 141.446 177.835 67.243 309.745 21.321"
+                      />
+                      <line
+                        class="b"
+                        x1="58.7049"
+                        y1="130.0367"
+                        x2="185.73934"
+                        y2="183.37712"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div
+                  class="ux-band-body"
+                  data-ux-layout="8"
+                  data-ux-align="horizontal"
+                  data-ux-theme="airev3-light"
+                >
+                  <div class="ux-oss-airev-quote" data-ux-oss-layer="over-svg">
+                    <blockquote
+                      class="ux-oss-airev-quote-container"
+                      data-ux-layout="stacked"
+                    >
+                      <p
+                        class="
+                          ux-oss-airev-quote-quotation
+                          web-icon web-icon-open-quote
+                        "
+                      >
+                        The brain is a remarkable computer.
+                      </p>
+                      <div
+                        class="ux-oss-airev-quote-reference"
+                        data-ux-align="horizontal"
+                      >
+                        <p>
+                          <span class="ux-oss-airev-quote-attribution"
+                            >&mdash;Geoffrey Hinton, Scientific American,
+                            1992</span
+                          >
+                        </p>
+                      </div>
+                    </blockquote>
+                  </div>
+                </div>
+
+                <div
+                  class="ux-band-body"
+                  data-ux-layout="6"
+                  data-ux-align="horizontal"
+                  data-ux-theme="airev3-light"
+                >
+                  <div class="ux-oss-generic">
+                    <p>
+                      Hinton's big breakthrough was getting computer hardware
+                      and software to mimic the brain's learning process,
+                      something that AI researchers had been trying to do for a
+                      long time. This is why he's often credited with creating
+                      the "Big Bang" of machine learning.
+                    </p>
+
+                    <p>
+                      Using artificial neural networks, machines could sift
+                      through huge amounts of data and recognize patterns.
+                      Instead of just acting on explicit instructions, machines
+                      could learn on their own&mdash;much like the human brain
+                      learns. This meant that machines were getting
+                      significantly better at understanding speech, recognizing
+                      objects, and other seemingly mundane tasks humans perform
+                      instinctively.
+                    </p>
+
+                    <p>
+                      The interesting thing about Hinton was that Google didn't
+                      hire him to work at Google X, the company's "moonshot
+                      factory," as they describe it. Rather, they hired him to
+                      improve some of their core products by making sense of the
+                      huge amounts of data Google is always collecting. With
+                      Hinton on board, features like Android's voice search
+                      could get a lot more reliable.
+                    </p>
+
+                    <svg
+                      class="ux-oss-synapse"
+                      data-ux-oss-position="right-collide"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 387.08013 386.85954"
+                    >
+                      <circle
+                        class="a"
+                        cx="2453.37482"
+                        cy="7600.28708"
+                        r="4.42857"
+                        transform="translate(-7897.47649 -405.85197) rotate(-69.1652)"
+                      />
+                      <circle
+                        class="a2"
+                        cx="2637.37482"
+                        cy="7669.28708"
+                        r="4.42857"
+                        transform="translate(-7843.40871 -189.42532) rotate(-69.1652)"
+                      />
+                      <circle
+                        class="a"
+                        cx="2618.37482"
+                        cy="7759.28708"
+                        r="4.42857"
+                        transform="translate(-7939.76578 -149.19363) rotate(-69.1652)"
+                      />
+                      <circle
+                        class="a2"
+                        cx="2505.37482"
+                        cy="7786.28708"
+                        r="4.42857"
+                        transform="translate(-8037.809 -237.40776) rotate(-69.1652)"
+                      />
+                      <circle
+                        class="a"
+                        cx="2379.37482"
+                        cy="7792.28708"
+                        r="4.42857"
+                        transform="translate(-8124.60165 -351.30264) rotate(-69.1652)"
+                      />
+                      <circle
+                        class="a2"
+                        cx="2606.37482"
+                        cy="7949.28708"
+                        r="4.42857"
+                        transform="translate(-8125.07355 -37.98715) rotate(-69.1652)"
+                      />
+                      <circle
+                        class="a"
+                        cx="2405.37482"
+                        cy="7978.28708"
+                        r="4.42857"
+                        transform="translate(-8281.68661 -207.15828) rotate(-69.1652)"
+                      />
+                      <circle
+                        class="a2"
+                        cx="2757.37482"
+                        cy="7901.28708"
+                        r="4.42857"
+                        transform="translate(-7982.91916 72.21132) rotate(-69.1652)"
+                      />
+                      <polygon
+                        class="b"
+                        points="78.143 4.643 262.143 73.643 130.143 190.643 231.143 353.643 4.143 196.643 78.143 4.643"
+                      />
+                      <polyline
+                        class="b"
+                        points="77.643 4.143 129.643 190.143 3.643 196.143"
+                      />
+                      <path
+                        class="b"
+                        d="M2405.08794,7978.5c7-6,213-221,213-221l143,145-155,47Z"
+                        transform="translate(-2374.94506 -7595.85731)"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div
+                  class="ux-band-body"
+                  data-ux-layout="8"
+                  data-ux-align="horizontal"
+                  data-ux-theme="airev3-light"
+                  data-ux-oss-layer="over-svg"
+                >
+                  <div class="ux-oss-airev-quote" data-ux-oss-layer="over-svg">
+                    <blockquote
+                      class="ux-oss-airev-quote-container"
+                      data-ux-layout="stacked"
+                    >
+                      <p class="ux-oss-airev-quote-quotation">
+                        Machines were getting significantly better at
+                        understanding speech, recognizing objects, and other
+                        seemingly mundane tasks humans perform instinctively.
+                      </p>
+                    </blockquote>
+                  </div>
+                </div>
+
+                <div
+                  class="ux-band-body"
+                  data-ux-layout="6"
+                  data-ux-align="horizontal"
+                  data-ux-theme="airev3-light"
+                >
+                  <div class="ux-oss-generic">
+                    <p>
+                      Shortly after Google hired Hinton, another big event
+                      happened. Facebook hired Yann LeCun.
+                    </p>
+
+                    <p>
+                      LeCun is most famous for his work with convolutional
+                      neural networks&mdash;a type of neural net that's modelled
+                      on the visual cortex. It's not hyperbole to say that all
+                      of the machine vision work that's making headlines today
+                      is the result of LeCun's work. Wherever you see a machine
+                      vision application&mdash;self-driving cars, dating apps,
+                      or anything else&mdash;it's probably using an algorithm
+                      LeCun touched.
+                    </p>
+
+                    <p>
+                      Again, LeCun's work at Facebook would influence some of
+                      the core features of their product, like facial
+                      recognition.
+                    </p>
+
+                    <p>
+                      So Google hired Hinton and Facebook hired LeCun, two
+                      enormous hires in a very short time. And other big
+                      companies like Baidu and Microsoft were starting to get
+                      into the game as well.
+                    </p>
+
+                    <p>
+                      These hires signalled to the rest of the world that
+                      machine learning was leaving the university lab and making
+                      its way into the industry. In other words, machine
+                      learning had business applications.
+                    </p>
+
+                    <p>
+                      Suddenly, companies big and small were starting to wake up
+                      and ask themselves, "Could machine learning help
+                      <em>me</em>?" Like Chris, companies began to realize they
+                      were on the wrong side of the robots.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="ux-band"
+            data-ux-band-collapse="expand-bottom"
+            data-ux-band-background="city"
+          >
+            <div class="ux-band-container" data-ux-oss-relative="yes">
+              <header
+                class="ux-band-header"
+                data-ux-layout="8"
+                data-ux-align="horizontal"
+                data-ux-theme="airev3-dark"
+              >
+                <div class="ux-band-header">
+                  <h2 class="ux-oss-band-header-title">
+                    Java Was His
+                    <span class="ux-oss-linebreak">Native Language</span>
+                  </h2>
+                </div>
+              </header>
+            </div>
+            <div class="ux-oss-overflow-mask" data-ux-oss-overflow="x-hidden">
+              <div class="ux-band-container" data-ux-oss-relative="yes">
+                <div
+                  class="ux-band-body"
+                  data-ux-layout="6"
+                  data-ux-align="horizontal"
+                  data-ux-theme="airev3-dark"
+                >
+                  <div class="ux-oss-generic">
+                    <p>
+                      Like a lot of Silicon Valley talent, Adam Gibson dropped
+                      out of college. For a while, though, he was at Michigan
+                      Tech. He spent three years in the upper peninsula studying
+                      computer science and business.
+                    </p>
+
+                    <p>
+                      Michigan Tech is a Java shop. If you're studying computer
+                      science there, you're learning to code in Java, a
+                      programming language invented in the early 1990s. So when
+                      Adam dropped out of college, moved out west, and
+                      eventually set his suitcase down in the room next to
+                      Chris' at the hacker hostel, he took the programming
+                      language with him.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="ux-band-body"
+                  data-ux-layout="8"
+                  data-ux-align="horizontal"
+                  data-ux-theme="airev3-dark"
+                >
+                  <div class="ux-oss-airev-quote">
+                    <blockquote
+                      class="ux-oss-airev-quote-container"
+                      data-ux-layout="stacked"
+                    >
+                      <p
+                        class="
+                          ux-oss-airev-quote-quotation
+                          web-icon web-icon-open-quote
+                        "
+                      >
+                        Java is Adam's native language. He speaks Java more
+                        fluently than he speaks English some days.
+                      </p>
+                      <div
+                        class="ux-oss-airev-quote-reference"
+                        data-ux-align="horizontal"
+                      >
+                        <p>
+                          <span class="ux-oss-airev-quote-attribution"
+                            >&mdash;Chris Nicholson</span
+                          >
+                        </p>
+                      </div>
+                    </blockquote>
+                  </div>
+                </div>
+
+                <div
+                  class="ux-band-body"
+                  data-ux-layout="6"
+                  data-ux-align="horizontal"
+                  data-ux-theme="airev3-dark"
+                >
+                  <div class="ux-oss-generic">
+                    <p>
+                      In late 2013, Adam noticed that there weren't any deep
+                      learning tools that worked well in Java. In fact, the last
+                      time anyone had made a neural net library in Java was in
+                      the 1990s, around the last big AI wave.
+                    </p>
+
+                    <p>
+                      A lot had changed since then. Graphics processing units
+                      (GPUs) had come on board. Distributed computing had become
+                      a reality. Researchers had made significant advances in
+                      the algorithms used for deep learning. The whole
+                      technology landscape had changed and the old Java
+                      libraries didn't account for any of it.
+                    </p>
+
+                    <p>
+                      This presented a problem to any company looking to follow
+                      Google and Facebook into deep learning. Because, in many
+                      ways, Java is the dominant language of corporate IT. If a
+                      deep learning library doesn't work in Java, it won't work
+                      in corporate America.
+                    </p>
+
+                    <p>
+                      Without the resources of big tech giants like Google and
+                      Facebook, most companies couldn't hire teams of AI experts
+                      to build these libraries for them.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="ux-band-body"
+                  data-ux-layout="8"
+                  data-ux-align="horizontal"
+                  data-ux-theme="airev3-dark"
+                >
+                  <div class="ux-oss-airev-quote">
+                    <blockquote
+                      class="ux-oss-airev-quote-container"
+                      data-ux-layout="stacked"
+                    >
+                      <p class="ux-oss-airev-quote-quotation">
+                        In other words, the vast majority of companies who
+                        wanted to get on the right side of the robots needed
+                        help getting there.
+                      </p>
+                    </blockquote>
+                  </div>
+                </div>
+
+                <div
+                  class="ux-band-body"
+                  data-ux-layout="6"
+                  data-ux-align="horizontal"
+                  data-ux-theme="airev3-dark"
+                >
+                  <div class="ux-oss-generic">
+                    <p>
+                      Adam and Chris wanted to be right there waiting for them.
+                    </p>
+
+                    <p>
+                      So Adam started building a deep learning library for Java.
+                      He coded late into the night at the hacker hostel while
+                      almost everyone else was sleeping&mdash;everyone, that is,
+                      except Chris.
+                    </p>
+
+                    <p>
+                      Adam spent 2014 writing more and more code while Chris
+                      learned more and more about starting a company. All the
+                      while, they were working day jobs. Chris was doing PR for
+                      FutureAdvisor and Adam was teaching at a data science
+                      academy. The money they earned from these jobs was funding
+                      their new startup.
+                    </p>
+
+                    <p>
+                      It wasn't exactly a sustainable solution. If their company
+                      was going to grow, they needed more money.
+                    </p>
+
+                    <p>
+                      So Chris did what a lot of people do in this situation: He
+                      started meeting with investors during his lunch hour.
+                    </p>
+
+                    <p>
+                      "Asking people to shower you with money isn't an easy
+                      proposition," Chris says. "It takes a long time to
+                      convince them." And it didn't help that, at least in the
+                      beginning, Chris didn't know how to pitch the company.
+                      There were a lot of questions he didn't have answers for.
+                    </p>
+
+                    <p>
+                      Sure, he could talk about the technology Adam was building
+                      and why businesses were hungry for deep learning
+                      solutions. Chris' background in journalism helped him
+                      communicate complex technical subjects clearly.
+                    </p>
+
+                    <p>
+                      But the business model? That took a little more
+                      explaining.
+                    </p>
+
+                    <p>
+                      Chris and Adam had decided to build an open source
+                      company. It wasn't a typical business model. And investors
+                      wanted to know how the company was going to make money.
+                    </p>
+
+                    <p>
+                      Chris' pitch got a little better each time he gave it.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="ux-band-body"
+                  data-ux-layout="8"
+                  data-ux-align="horizontal"
+                  data-ux-theme="airev3-dark"
+                >
+                  <div class="ux-oss-airev-quote">
+                    <blockquote
+                      class="ux-oss-airev-quote-container"
+                      data-ux-layout="stacked"
+                    >
+                      <p class="ux-oss-airev-quote-quotation">
+                        Time after time, the investors said no.
+                      </p>
+                    </blockquote>
+                  </div>
+                </div>
+
+                <div
+                  class="ux-band-body"
+                  data-ux-layout="6"
+                  data-ux-align="horizontal"
+                  data-ux-theme="airev3-dark"
+                >
+                  <div class="ux-oss-generic">
+                    <p>
+                      That started to change in late 2014, after Wired ran an
+                      article on Skymind. The piece featured Adam talking about
+                      how he wanted to "give people machine learning without
+                      hiring a data scientist." In other words, they wanted to
+                      "give Google's AI to the rest of the world," as the title
+                      of the article phrased it.
+                    </p>
+
+                    <p>
+                      After the article was published, a major Chinese company
+                      contacted Chris and Adam. They wanted to send someone over
+                      to talk about Skymind.
+                    </p>
+
+                    <p>
+                      The company was called Tencent. If you live in China, or
+                      have a connection to the country, you almost certainly
+                      know about Tencent. It's the company behind QQ, the
+                      popular instant messenger, and a lot of other popular
+                      services.
+                    </p>
+
+                    <p>
+                      At the time, Tencent was a nearly $139 billion company
+                      with almost a billion users. The company rivals Facebook
+                      and Amazon, but most westerners have never heard of it. In
+                      fact, Fast Company once described Tencent's founder, Pony
+                      Ma, as perhaps "the least known multibillionaire in the
+                      tech world."
+                    </p>
+
+                    <p>
+                      The guy Tencent sent over was named Louis Fu Tong. He was
+                      young, in his twenties, and he was really excited to talk
+                      to Chris about Skymind. Chris, once again, found himself
+                      giving his pitch, the one he'd been perfecting over all
+                      those lunch-hour meetings with investors.
+                    </p>
+
+                    <p>
+                      This time, it worked. In early 2015, Tencent decided to
+                      invest $200,000.
+                    </p>
+
+                    <p>
+                      This was Skymind's first outside investment, and it was
+                      cause to celebrate. It was also cause to make some drastic
+                      changes.
+                    </p>
+
+                    <p>
+                      With this new money, Chris was able to leave his day job
+                      and work full time at Skymind. He and Adam were also able
+                      to hire their first employee, an engineer to help Adam
+                      make their product better. They needed to accelerate the
+                      development of their product, Deeplearing4j.
+                    </p>
+
+                    <p>
+                      After the initial investment, Chris thought he could go
+                      out and raise a lot more. But he was wrong. He kept
+                      meeting with investors. He kept giving the pitch. But they
+                      kept turning him down.
+                    </p>
+
+                    <p>
+                      So there were Chris and Adam, living on virtually nothing.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="ux-band-body"
+                  data-ux-layout="8"
+                  data-ux-align="horizontal"
+                  data-ux-theme="airev3-dark"
+                >
+                  <div class="ux-oss-airev-quote">
+                    <blockquote
+                      class="ux-oss-airev-quote-container"
+                      data-ux-layout="stacked"
+                    >
+                      <p class="ux-oss-airev-quote-quotation">
+                        Chris had quit his job. They had a new employee. And
+                        they knew the $200k was going to run out.
+                      </p>
+                    </blockquote>
+                  </div>
+                </div>
+
+                <div
+                  class="ux-band-body"
+                  data-ux-layout="6"
+                  data-ux-align="horizontal"
+                  data-ux-theme="airev3-dark"
+                >
+                  <div class="ux-oss-generic">
+                    <p>
+                      Somehow, they made it until the end of 2015. And by that
+                      time, all the coding Adam was doing while Chris was out
+                      trying to raise money began to pay off. Their product was
+                      getting faster and more reliable. The number of people
+                      making improvements through their open source community
+                      was growing.
+                    </p>
+
+                    <p>
+                      And then something big happened, something that would
+                      change the course of their company: They got into Y
+                      Combinator, a well-known startup accelerator that helps
+                      founders like Chris and Adam develop their ideas and build
+                      a solid business model. Think of it as a startup bootcamp.
+                    </p>
+
+                    <p>
+                      All that time that Chris spent knocking on doors and
+                      asking for money? Suddenly, people started knocking on
+                      <em>his</em> door and asking, "How much money do you
+                      need?"
+                    </p>
+
+                    <p>
+                      When they finished Y Combinator, they had raised $3
+                      million and grown the company to 10 people.
+                    </p>
+
+                    <p>
+                      "I'll just tell you," Chris says. "Having people knock on
+                      your door after begging for a year? <em>That's</em> a
+                      weird feeling."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="ux-band"
+            data-ux-band-collapse="expand-bottom"
+            data-ux-band-background="data-in-out"
+          >
+            <div class="ux-band-container" data-ux-oss-relative="yes">
+              <header
+                class="ux-band-header"
+                data-ux-layout="8"
+                data-ux-align="horizontal"
+                data-ux-theme="airev3-light"
+              >
+                <div class="ux-band-header">
+                  <h2 class="ux-oss-band-header-title">
+                    Data Goes In<span class="ux-oss-linebreak"
+                      >Decisions Come Out</span
+                    >
+                  </h2>
+                </div>
+              </header>
+              <div
+                class="ux-band-body"
+                data-ux-layout="6"
+                data-ux-align="horizontal"
+                data-ux-theme="airev3-light"
+              >
+                <div class="ux-oss-generic">
+                  <p>
+                    Skymind now has an office in a nondescript building on the
+                    edge of SOMA, not far from the Tenderloin in San Francisco.
+                    It's just far enough from where startups tend to cluster to
+                    be affordable. And the team has a decent amount of
+                    space&mdash;even if it does feel a little like a converted
+                    apartment.
+                  </p>
+                  <div
+                    class="ux-image-embed"
+                    data-ux-oss-spacing="standard"
+                    data-ux-align="center"
+                  >
+                    <div class="ux-image-embed-container">
+                      <img
+                        class="ux-image-embed-img"
+                        src="https://www.redhat.com/rhdc/managed-files/Chris-desk.jpg"
+                        title="Chris Nicholson"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <p>
+                    There's a reception desk at the front of the office and two
+                    large staircases to the right that lead up to a few
+                    conference rooms. There are a few workstations up there, as
+                    well, and a treadmill for walking while you work.
+                  </p>
+
+                  <p>
+                    On the bottom floor, there's a table near the kitchen with a
+                    bunch of office chairs around it. This is where Chris camps
+                    out. Like any startup CEO, Chris is doing a little bit of
+                    everything&mdash;from writing technical documentation to
+                    handling HR issues. He does almost all of it from this
+                    table.
+                  </p>
+
+                  <p>
+                    The open space near the kitchen is also where they host
+                    potential customers. Whenever they have someone coming in,
+                    Chris pushes the table against the wall and sets up a dozen
+                    beige folding chairs, like a pop-up seminar at a local
+                    library.
+                  </p>
+
+                  <p>
+                    Skymind's success can, at least in part, be attributed to
+                    Chris' ability to connect with people and explain how deep
+                    learning works. He has a reporter's knack for breaking down
+                    any concept down into its basic components and patiently
+                    explaining each part to you.
+                  </p>
+
+                  <p>
+                    "AI is just math and code that makes decisions about data,"
+                    Chris says. "If you drew it out on a whiteboard, there would
+                    be three parts: AI is in the middle. Data is on the left.
+                    Decisions are on the right. You push data into the AI and
+                    decisions come out of the other side."
+                  </p>
+                </div>
+              </div>
+              <div
+                class="ux-band-body"
+                data-ux-layout="9"
+                data-ux-align="horizontal"
+                data-ux-theme="airev3-light"
+              >
+                <div class="ux-oss-generic">
+                  <div
+                    class="ux-image-embed"
+                    data-ux-oss-spacing="standard"
+                    data-ux-align="center"
+                  >
+                    <div class="ux-image-embed-container">
+                      <img
+                        class="ux-image-embed-img"
+                        src="https://www.redhat.com/rhdc/managed-files/OM-A3-data-in-out-NEW.png"
+                        title=""
+                        alt="laptop illustration"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ux-band-body"
+                data-ux-layout="6"
+                data-ux-align="horizontal"
+                data-ux-theme="airev3-light"
+              >
+                <div class="ux-oss-generic">
+                  <p>
+                    That means that if you're a business that wants to build a
+                    deep learning solution, you need two things: You need to
+                    know what you care about, and you need data.
+                  </p>
+
+                  <p>
+                    Most large companies struggle with old, hard business
+                    problems. It might be fraud. It might be market forecasting.
+                    It might be figuring out why certain computer chips are
+                    flawed when they come off the line&mdash;and others aren't.
+                  </p>
+
+                  <p>
+                    Companies care very deeply about these problems because a
+                    lot of money is at stake. "If they're a large company,"
+                    Chris says, "this could be millions of dollars, tens of
+                    millions&mdash;even hundreds of millions."
+                  </p>
+
+                  <p>
+                    It turns out, these are all problems that deep learning can
+                    help with. If you think about it, they're basically just
+                    decision problems: Does this transaction look like fraud,
+                    yes or no?
+                  </p>
+
+                  <p>
+                    For the AI to not just recognize fraud, but learn what fraud
+                    looks like, you need data. You can't train an algorithm to
+                    identify fraud if you don't have a bunch of transactions it
+                    can learn from.
+                  </p>
+
+                  <p>
+                    So, if you give the AI data&mdash;a set of fraudulent and
+                    legitimate transactions, for instance, with each kind
+                    labeled&mdash;it can quickly look at the set as a whole and
+                    determine the characteristics of fraud.
+                  </p>
+
+                  <p>
+                    That is, it can learn what fraud looks like. And once it
+                    knows what fraud looks like, you can give it very, very
+                    large sets of transactions that it's never seen, and it can
+                    spot the ones that look suspicious.
+                  </p>
+
+                  <p>
+                    The promise of AI is that it can do all of this faster and
+                    more accurately than any human can. It can take on simple
+                    tasks that humans flub because of boredom or fatigue and it
+                    can perform them over and over and over and over and over.
+                    And every time it correctly identifies fraud, the company
+                    saves money.
+                  </p>
+
+                  <p>
+                    That's the moment that Chris is going for, when mountains of
+                    data that companies aren't necessarily using become a
+                    valuable asset. The moment when data becomes gold.
+                  </p>
+
+                  <p>
+                    Chris had spent years trying to get on the right side of the
+                    robots. And by getting companies to care about this moment,
+                    that's when he had finally done it.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="ux-band"
+            data-ux-band-collapse="expand-bottom"
+            data-ux-band-background="dark"
+          >
+            <div class="ux-band-container" data-ux-oss-relative="yes">
+              <header
+                class="ux-band-header"
+                data-ux-layout="8"
+                data-ux-align="horizontal"
+                data-ux-theme="airev3-dark"
+              >
+                <div class="ux-band-header">
+                  <h2 class="ux-oss-band-header-title">
+                    The Quiet
+                    <span class="ux-oss-linebreak">A.I. Revolution</span>
+                  </h2>
+                </div>
+              </header>
+              <div
+                class="ux-band-body"
+                data-ux-layout="6"
+                data-ux-align="horizontal"
+                data-ux-theme="airev3-dark"
+              >
+                <div class="ux-oss-generic">
+                  <p>
+                    There's a quiet AI revolution happening all around us. And
+                    companies like Skymind are behind a lot of it.
+                  </p>
+
+                  <p>
+                    When companies saw that AI had business applications, that
+                    AI wasn't just robots and self-driving cars, they wanted to
+                    get in on the game. Even old-school behemoths like
+                    automakers and big banks saw the potential.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="ux-band-body"
+                data-ux-layout="8"
+                data-ux-align="horizontal"
+                data-ux-theme="airev3-dark"
+              >
+                <div class="ux-oss-airev-quote">
+                  <blockquote
+                    class="ux-oss-airev-quote-container"
+                    data-ux-layout="stacked"
+                  >
+                    <p class="ux-oss-airev-quote-quotation">
+                      All of those tiny, behind-the-scenes decisions that AI is
+                      making eventually reach people like you and me.
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
+
+              <div
+                class="ux-band-body"
+                data-ux-layout="6"
+                data-ux-align="horizontal"
+                data-ux-theme="airev3-dark"
+              >
+                <div class="ux-oss-generic">
+                  <p>
+                    So, when your bank uses AI to determine whether a
+                    transaction is fraud, you benefit from it. That call you get
+                    from your bank asking you if you actually bought a $2,000
+                    television on the other side of the world? That's AI.
+                  </p>
+
+                  <p>
+                    It's the same when Gmail automatically filters certain
+                    emails into your spam filter. And when Facebook asks if you
+                    want to tag your mom in the photo you just uploaded. And
+                    when Alexa tells you that, yes, in fact, she will set a
+                    timer for you. All of it is AI.
+                  </p>
+
+                  <p>
+                    It goes completely unnoticed by most, but it's happening all
+                    around us. And bit by bit, our lives are getting a little
+                    easier. Chris likens this to a thermostat, regulating our
+                    environment, making our daily lives just a little bit
+                    better.
+                  </p>
+
+                  <p>
+                    "People don't quite realize how this is going to open up
+                    their world," Chris says.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="ux-band"
+            data-ux-band-background="light"
+            data-ux-band-collapse="bottom"
+          >
+            <div class="ux-band-container" data-ux-oss-relative="yes">
+              <header
+                class="ux-band-header"
+                data-ux-layout="8"
+                data-ux-align="horizontal"
+                data-ux-theme="airev3-light"
+              >
+                <div class="ux-band-header">
+                  <h2 class="ux-oss-band-header-title">TO BE CONTINUED....</h2>
+                </div>
+              </header>
+              <div
+                class="ux-band-body"
+                data-ux-layout="6"
+                data-ux-align="horizontal"
+                data-ux-theme="airev3-light"
+              >
+                <div class="ux-oss-share" data-ux-align="horizontal">
+                  <h3 class="ux-oss-share-label">Share:</h3>
+                  <ul class="ux-oss-share-group">
+                    <li class="ux-oss-share-item">
+                      <a
+                        href="http://www.facebook.com/sharer.php?u=http://red.ht/2mSMLoY"
+                        class="ux-oss-share-link"
+                        ><span
+                          class="web-icon-facebook"
+                          aria-label="true"
+                        ></span
+                      ></a>
+                    </li>
+                    <li class="ux-oss-share-item">
+                      <a
+                        href="https://twitter.com/share?url=http://red.ht/2oCpRPc&amp;text=How%20do%20you%20get%20on%20the%20right%20side%20of%20the%20robots%3F%20For%20one%20former%20journalist%2C%20it%20meant%20building%20an%20%23AI%20startup%3A"
+                        class="ux-oss-share-link"
+                        ><span class="web-icon-twitter" aria-label="true"></span
+                      ></a>
+                    </li>
+                    <li class="ux-oss-share-item">
+                      <a
+                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://red.ht/2nzsUbF&amp;title=The%20Right%20Side%20of%20the%20Robots&amp;summary=How%20do%20you%20get%20on%20the%20right%20side%20of%20the%20robots%3F%20For%20one%20journalist%2C%20it%20meant%20quitting%20his%20job%2C%20moving%20to%20San%20Francisco%2C%20and%20starting%20an%20open%20source%20AI%20company.&amp;source=Red%20Hat"
+                        class="ux-oss-share-link"
+                        ><span
+                          class="web-icon-linkedin"
+                          aria-label="true"
+                        ></span
+                      ></a>
+                    </li>
+                    <li class="ux-oss-share-item">
+                      <a
+                        href="mailto:?subject=The right side of the robots&body=This article follows Chris Nicholson, a former journalist, as he moves to San Francisco and starts an AI company called Skymind. http://red.ht/2nzc8JW"
+                        class="ux-oss-share-link"
+                        ><span
+                          class="web-icon-envelope"
+                          aria-label="true"
+                        ></span
+                      ></a>
+                    </li>
+                    <li class="ux-oss-share-item">
+                      <a
+                        href="javascript:window.print();"
+                        class="ux-oss-share-link"
+                        ><span class="web-icon-print" aria-label="true"></span
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="ux-band-body">
+                <p class="ux-oss-airev-byline">
+                  Words by Brent Simoneaux<br />
+                  Visuals by Wes Leonard, Liz Wetzel, and Aaron Williamson
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="ux-band"
+            data-ux-band-background="light"
+            data-ux-theme="airev3-light"
+          >
+            <div class="ux-band-container">
+              <div class="ux-band-body" data-ux-layout="6 6 flex">
+                <div class="ux-group" data-ux-layout="stacked">
+                  <h2
+                    class="ux-oss-general-headline"
+                    data-ux-align="horizontal"
+                  >
+                    Next up:<br />
+                    Possible Futures
+                  </h2>
+                  <div class="ux-oss-generic" data-ux-text-align="center">
+                    <p>
+                      How one mathematician is trying to make AI uncool again.
+                      And why that matters.
+                    </p>
+                  </div>
+                  <div class="ux-cta" data-ux-align="horizontal">
+                    <a
+                      class="ux-cta-link"
+                      href="https://www.redhat.com/en/open-source-stories/ai-revolutionaries/possible-futures"
+                      data-ux-cta-type="primary"
+                      >Read on</a
+                    >
+                  </div>
+                  <div class="ux-cta" data-ux-align="horizontal">
+                    <a
+                      class="ux-cta-link"
+                      href="https://www.redhat.com/en/open-source-stories/ai-revolutionaries"
+                      data-ux-cta-type="secondary"
+                      >See the whole series</a
+                    >
+                  </div>
+                </div>
+                <div class="ux-group">
+                  <h2
+                    class="ux-oss-general-headline"
+                    data-ux-align="horizontal"
+                  >
+                    More reading
+                  </h2>
+                  <div class="ux-oss-generic">
+                    <p
+                      class="ux-oss-intro-header-summary"
+                      data-ux-align="horizontal"
+                    >
+                      Here are some more sources on the topics discussed in this
+                      article:
+                    </p>
+                    <ul>
+                      <li>
+                        <strong
+                          ><a
+                            class="ux-cta-link"
+                            href="http://www.nytimes.com/2012/07/06/technology/at-hacker-hostels-living-on-the-cheap-and-dreaming-of-digital-glory.html"
+                            >Crammed into cheap bunks, dreaming of future
+                            digital glory</a
+                          ></strong
+                        >
+                        by Brian X. Chen, The New York Times
+                      </li>
+                      <li>
+                        <strong
+                          ><a
+                            class="ux-cta-link"
+                            href="https://www.wired.com/2014/01/geoffrey-hinton-deep-learning/"
+                            >Meet the man Google hired to make AI a reality</a
+                          ></strong
+                        >
+                        by Daniela Hernandez, Wired
+                      </li>
+                      <li>
+                        <strong
+                          ><a
+                            class="ux-cta-link"
+                            href="https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html"
+                            >The great AI awakening</a
+                          ></strong
+                        >
+                        by Gideon Lewis-Kraus, The New York Times Magazine
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- cta -->
+          <section
+            class="ux-band"
+            data-ux-band-border="blue"
+            data-ux-band-background="light"
+            data-ux-theme="airev3-light"
+          >
+            <div class="ux-band-container">
+              <p class="ux-oss-description-headline">What's the next story?</p>
+              <div class="ux-cta" data-ux-align="horizontal">
+                <a
+                  class="ux-cta-link"
+                  data-ux-cta-type="primary"
+                  href="https://engage.redhat.com/redhatfilms-opensource-stories-s-201506170301?sc_cid=70160000000wxWUAAY"
+                  >Get the newsletter</a
+                >
+              </div>
+            </div>
+          </section>
         </div>
-    </div>
-</section>
-
-<!-- cta -->
-<section class="ux-band" data-ux-band-border="blue" data-ux-band-background="light" data-ux-theme="airev3-light">
-    <div class="ux-band-container">
-            <p class="ux-oss-description-headline">What's the next story?</p>
-            <div class="ux-cta" data-ux-align="horizontal">
-                <a class="ux-cta-link" data-ux-cta-type="primary" href="https://engage.redhat.com/redhatfilms-opensource-stories-s-201506170301?sc_cid=70160000000wxWUAAY">Get the newsletter</a>
-            </div>
-    </div>
-</section>
-
-    </div>
 
         <!-- ******************************************** FOOTER ***** -->
-                
-<!-- pre-footer -->
-    <section class="ux-band" data-ux-band-background="dots" data-ux-theme="dark">
-        <div class="ux-band-container">
+
+        <!-- pre-footer -->
+        <section
+          class="ux-band"
+          data-ux-band-background="dots"
+          data-ux-theme="dark"
+        >
+          <div class="ux-band-container">
             <header class="ux-oss-footer-header" data-ux-align="center">
-                <h2 class="ux-oss-general-headline" data-ux-text-align="center">The open source way</h2>
+              <h2 class="ux-oss-general-headline" data-ux-text-align="center">
+                The open source way
+              </h2>
             </header>
             <div class="ux-band-body">
-                <div class="ux-group" data-ux-align="horizontal">
-                    <div class="ux-oss-footer-description">
-                        <p class="ux-oss-footer-description-copy">Open source is more than just a way to create software. It's about building things without limitations. And it's about forming new communities without boundaries.</p>
-                        <p class="ux-oss-footer-description-copy">At Red Hat, we're committed to showing what people can do when they make things in the open. Because when we share, we thrive.</p>
-                        <div class="ux-cta">
-                            <a class="ux-cta-link" data-ux-cta-type="secondary" href="https://www.redhat.com/en/open-source">Learn more</a>
-                        </div>
-                    </div>
+              <div class="ux-group" data-ux-align="horizontal">
+                <div class="ux-oss-footer-description">
+                  <p class="ux-oss-footer-description-copy">
+                    Open source is more than just a way to create software. It's
+                    about building things without limitations. And it's about
+                    forming new communities without boundaries.
+                  </p>
+                  <p class="ux-oss-footer-description-copy">
+                    At Red Hat, we're committed to showing what people can do
+                    when they make things in the open. Because when we share, we
+                    thrive.
+                  </p>
+                  <div class="ux-cta">
+                    <a
+                      class="ux-cta-link"
+                      data-ux-cta-type="secondary"
+                      href="https://www.redhat.com/en/open-source"
+                      >Learn more</a
+                    >
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </section>
-        <div class="ux-band" data-ux-band-background="rich-black" data-ux-band-collapse="both">
-    <div class="ux-band-container">
-        <section class="ux-band-content">
-            <footer class="ux-band-footer" data-ux-layout="flex-footer-variant" data-ux-theme="dark">
-                <div class="ux-image-embed">
-                    <div class="ux-image-embed-container">
-                        <a class="ux-image-embed-link" href="http://www.redhat.com/" title="Red Hat">
-
-
-        <img  class="ux-image-embed-img" src="https://www.redhat.com/rhdc/managed-files/shadowman-logo.png" title="redhat.com"alt="Red Hat Shadowman logo"/>
-                        </a>
-                    </div>
-                </div>
-                <div class="ux-group">
-                    <div class="ux-group-body" data-ux-layout="flex-center">
-                        <!-- Footnote Component -->
-                        <div class="ux-footnote" data-ux-theme="dark">
-                            <ul class="ux-footnote-container">
-                                <li class="ux-footnote-item">Copyright &copy;<script>document.write(new Date().getFullYear())</script> Red Hat, Inc.</li>
-                            </ul>
-                        </div>
-                        <!-- Footnote Component -->
-                        <div class="ux-footnote">
-                            <ul class="ux-footnote-container">
-                                <li class="ux-footnote-item"> <a class="ux-footnote-item-link" href="http://www.redhat.com/en/about/privacy-policy" title="Privacy statement ">Privacy statement</a> &nbsp;&nbsp;|&nbsp;&nbsp;  <a class="ux-footnote-item-link" href="http://www.redhat.com/en/about/terms-use" title="Terms of use">Terms of use</a> &nbsp;&nbsp;|&nbsp;&nbsp;  <a class="ux-footnote-item-link" href="http://www.redhat.com/en/about/all-policies-guidelines" title="All policies and guidelines">All policies and guidelines</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="ux-group">
-                    <div class="ux-group-body" data-ux-theme="dark" data-ux-layout="flex-between">
-                        <div class="ux-image-embed" data-ux-align="center" data-ux-max-height="footer">
-                            <div class="ux-image-embed-container">
-                                <a class="ux-image-embed-link" href="http://www.redhat.com/en/summit" title="Red Hat Summit">
-
-
-        <img  class="ux-image-embed-img" src="https://www.redhat.com/rhdc/managed-files/summit-logo-74x35_0.png" title="Red Hat Summit"alt="Summit logo"/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+          </div>
         </section>
+        <div
+          class="ux-band"
+          data-ux-band-background="rich-black"
+          data-ux-band-collapse="both"
+        >
+          <div class="ux-band-container">
+            <section class="ux-band-content">
+              <footer
+                class="ux-band-footer"
+                data-ux-layout="flex-footer-variant"
+                data-ux-theme="dark"
+              >
+                <div class="ux-image-embed">
+                  <div class="ux-image-embed-container">
+                    <a
+                      class="ux-image-embed-link"
+                      href="http://www.redhat.com/"
+                      title="Red Hat"
+                    >
+                      <img
+                        class="ux-image-embed-img"
+                        src="https://www.redhat.com/rhdc/managed-files/shadowman-logo.png"
+                        title="redhat.com"
+                        alt="Red Hat Shadowman logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="ux-group">
+                  <div class="ux-group-body" data-ux-layout="flex-center">
+                    <!-- Footnote Component -->
+                    <div class="ux-footnote" data-ux-theme="dark">
+                      <ul class="ux-footnote-container">
+                        <li class="ux-footnote-item">
+                          Copyright &copy;
+                          <script>
+                            document.write(new Date().getFullYear());
+                          </script>
+                          Red Hat, Inc.
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Footnote Component -->
+                    <div class="ux-footnote">
+                      <ul class="ux-footnote-container">
+                        <li class="ux-footnote-item">
+                          <a
+                            class="ux-footnote-item-link"
+                            href="http://www.redhat.com/en/about/privacy-policy"
+                            title="Privacy statement "
+                            >Privacy statement</a
+                          >
+                          &nbsp;&nbsp;|&nbsp;&nbsp;
+                          <a
+                            class="ux-footnote-item-link"
+                            href="http://www.redhat.com/en/about/terms-use"
+                            title="Terms of use"
+                            >Terms of use</a
+                          >
+                          &nbsp;&nbsp;|&nbsp;&nbsp;
+                          <a
+                            class="ux-footnote-item-link"
+                            href="http://www.redhat.com/en/about/all-policies-guidelines"
+                            title="All policies and guidelines"
+                            >All policies and guidelines</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="ux-group">
+                  <div
+                    class="ux-group-body"
+                    data-ux-theme="dark"
+                    data-ux-layout="flex-between"
+                  >
+                    <div
+                      class="ux-image-embed"
+                      data-ux-align="center"
+                      data-ux-max-height="footer"
+                    >
+                      <div class="ux-image-embed-container">
+                        <a
+                          class="ux-image-embed-link"
+                          href="http://www.redhat.com/en/summit"
+                          title="Red Hat Summit"
+                        >
+                          <img
+                            class="ux-image-embed-img"
+                            src="https://www.redhat.com/rhdc/managed-files/summit-logo-74x35_0.png"
+                            title="Red Hat Summit"
+                            alt="Summit logo"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+            </section>
+          </div>
+        </div>
+      </article>
+
+      <footer class="rhb-region__footer"><div class="rhb-footer"></div></footer>
     </div>
-  </div>
 
-</article>
-
-
-<footer class="rhb-region__footer"><div class="rhb-footer"></div></footer>
-  </div>
-
-    <script type="text/javascript" src="https://www.redhat.com/files/campaigns/open-source-stories/jquery.waypoints.min.js"></script>
-<script type="text/javascript" src="https://www.redhat.com/sites/all/libraries/jquery-cookie/jquery.cookie-1.4.1.min.js"></script>
-<script type="text/javascript">    jQuery('body').addClass('js');
-    var timer = window.setTimeout(function() {}, 0);
-    jQuery(window).on('scroll', function() {
+    <script
+      type="text/javascript"
+      src="https://www.redhat.com/files/campaigns/open-source-stories/jquery.waypoints.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.redhat.com/sites/all/libraries/jquery-cookie/jquery.cookie-1.4.1.min.js"
+    ></script>
+    <script type="text/javascript">
+      jQuery("body").addClass("js");
+      var timer = window.setTimeout(function () {}, 0);
+      jQuery(window).on("scroll", function () {
         window.clearTimeout(timer);
-        timer = window.setTimeout(function() {
-            jQuery(window).trigger('scrollend');
+        timer = window.setTimeout(function () {
+          jQuery(window).trigger("scrollend");
         }, 1000);
-    });
-	var range = .25;
-    if(/(Trident|trident)/g.test( navigator.userAgent ) == true) {
-        jQuery('svg').remove();
-    }
-	jQuery(document).ready(function() {
+      });
+      var range = 0.25;
+      if (/(Trident|trident)/g.test(navigator.userAgent) == true) {
+        jQuery("svg").remove();
+      }
+      jQuery(document).ready(function () {
         // waypoints
-	    jQuery('.ux-oss-airev1-circuit').waypoint(function(direction) {
-            jQuery(this.element)[0].classList.toggle('gogogo', direction==='down');
-	    }, {offset: '60%'});
-	    jQuery('[data-ux-oss-band-type="article-hero"]').waypoint(function(direction) {
-	        jQuery(this.element).toggleClass('gogogo', direction==='down');
-	    }, {offset: 'bottom-in-view'});
+        jQuery(".ux-oss-airev1-circuit").waypoint(
+          function (direction) {
+            jQuery(this.element)[0].classList.toggle(
+              "gogogo",
+              direction === "down"
+            );
+          },
+          { offset: "60%" }
+        );
+        jQuery('[data-ux-oss-band-type="article-hero"]').waypoint(
+          function (direction) {
+            jQuery(this.element).toggleClass("gogogo", direction === "down");
+          },
+          { offset: "bottom-in-view" }
+        );
 
-	    jQuery('.ux-oss-airev-quote, .ux-oss-airev-byline').waypoint(function(direction) {
-	        jQuery(this.element).toggleClass('ux-oss-trip', direction==='down');
-	    }, {offset: '60%'});
-	    jQuery('.ux-oss-synapse, .ux-oss-code-snippet').waypoint(function(direction) {
-	        jQuery(this.element)[0].classList.toggle('gogogo', direction==='down');
-	    }, {offset: '60%'});
+        jQuery(".ux-oss-airev-quote, .ux-oss-airev-byline").waypoint(
+          function (direction) {
+            jQuery(this.element).toggleClass(
+              "ux-oss-trip",
+              direction === "down"
+            );
+          },
+          { offset: "60%" }
+        );
+        jQuery(".ux-oss-synapse, .ux-oss-code-snippet").waypoint(
+          function (direction) {
+            jQuery(this.element)[0].classList.toggle(
+              "gogogo",
+              direction === "down"
+            );
+          },
+          { offset: "60%" }
+        );
 
         // nav control
-        jQuery('.ux-oss-nav-trigger, .ux-oss-airev-nav-wrap .ux-oss-close').on('click', function(e) {
-            jQuery('.ux-oss-airev-nav-wrap').toggleClass('gogogo');
+        jQuery(".ux-oss-nav-trigger, .ux-oss-airev-nav-wrap .ux-oss-close").on(
+          "click",
+          function (e) {
+            jQuery(".ux-oss-airev-nav-wrap").toggleClass("gogogo");
             e.preventDefault();
-        });
+          }
+        );
 
         // peek-button
-        jQuery(window).on('scrollend', function() {
-            jQuery('.ux-oss-peek-nav').addClass('on');
+        jQuery(window).on("scrollend", function () {
+          jQuery(".ux-oss-peek-nav").addClass("on");
         });
-        jQuery(window).on('scroll', function() {
-            jQuery('.ux-oss-peek-nav').removeClass('on');
+        jQuery(window).on("scroll", function () {
+          jQuery(".ux-oss-peek-nav").removeClass("on");
         });
-	});</script>
-<script id="rhdc_analytics_get_bottom_eddl_js" type="text/javascript">!function(a){"use strict";a.appEventData=a.appEventData||[],appEventData.push({event:"Page Load Completed"})}(window);</script>
-<script type="text/javascript">if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {_satellite.pageBottom();}</script>
+      });
+    </script>
+    <script id="rhdc_analytics_get_bottom_eddl_js" type="text/javascript">
+      !(function (a) {
+        "use strict";
+        (a.appEventData = a.appEventData || []),
+          appEventData.push({ event: "Page Load Completed" });
+      })(window);
+    </script>
+    <script type="text/javascript">
+      if (
+        "undefined" !== typeof _satellite &&
+        "function" === typeof _satellite.pageBottom
+      ) {
+        _satellite.pageBottom();
+      }
+    </script>
 
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"en\/","currentPath":"node\/205661","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","user":{"uid":0,"permissionsHash":"925c93e5e058a38840206e2faeb20be77d5863a368189af16a0faa928225c714"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">
+      {
+        "path": {
+          "baseUrl": "\/",
+          "scriptPath": null,
+          "pathPrefix": "en\/",
+          "currentPath": "node\/205661",
+          "currentPathIsAdmin": false,
+          "isFront": false,
+          "currentLanguage": "en"
+        },
+        "pluralDelimiter": "\u0003",
+        "user": {
+          "uid": 0,
+          "permissionsHash": "925c93e5e058a38840206e2faeb20be77d5863a368189af16a0faa928225c714"
+        }
+      }
+    </script>
 
-  <script type="text/javascript"  src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"></script></body>
+    <script
+      type="text/javascript"
+      src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"
+    ></script>
+  </body>
 
-<!-- Mirrored from www.redhat.com/en/open-source-stories/ai-revolutionaries/right-side-robots by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:37:16 GMT -->
+  <!-- Mirrored from www.redhat.com/en/open-source-stories/ai-revolutionaries/right-side-robots by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:37:16 GMT -->
 </html>

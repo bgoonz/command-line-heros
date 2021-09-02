@@ -1,1192 +1,2510 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
-  
-<!-- Mirrored from www.redhat.com/en/open-source-stories by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:37:15 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-    <script id="rhdc_analytics_get_top_eddl_js" type="text/javascript">var pageData = {"pageCategory":"open-source-stories","pageName":"open source stories","pageTitle":"Open Source Stories","analyticsTitle":"open source stories","pageType":"campaign","pageSubType":"","siteExperience":"","siteLanguage":"en","subsection":"","subsection2":"","subsection3":"","cms":"RH CMS 1.0","contentID":"159561","contentType":"","destinationURL":"https:\/\/www.redhat.com\/en\/open-source-stories","errorType":"","gated":false,"taxonomyRegion":["4521"],"taxonomyTopic":["17391"]};!function(e,a){"use strict";e.appEventData=e.appEventData||[],e.pageData=e.pageData||[];var t={event:"Page Load Started",page:pageData};if(a.referrer){let e=a.createElement("a");e.href=a.referrer,t.page.previousPage=e.href}t.page.siteExperience=e.innerWidth<=768?"tablet":"desktop",appEventData.push(t)}(window,document);</script>
-<script id="ddo" type="text/javascript">digitalData = {"cart":[],"event":[],"listing":{"browseFilter":"","query":"","queryMethod":"","refinementType":"","refinementValue":"","resultCount":"","searchType":""},"page":{"attributes":{"queryParameters":{"sc_cid":"7013a000002vvzvAAA","dclid":"COWYtP_t3fICFRQQYgod1RgAZQ"},"referringSearchEngine":"","analyticsTitle":"open source stories","taxonomyRegion":["4521"],"taxonomyTopic":["17391"]},"category":{"contentType":"","keyPage":"false","keyPageType":"","pageType":"campaign","primaryCategory":"open-source-stories","subCategories":[]},"pageInfo":{"cms":"RH CMS 1.0","contentFindingMethod":"","contentID":"159561","contentPortal":"","destinationURL":"https:\/\/www.redhat.com\/en\/open-source-stories","errorMessage":"","errorType":"","language":"en","pageName":"","referringDomain":"","referringURL":"","sysEnv":"","template":"","title":"Open Source Stories"}},"product":[],"user":[{"profile":[{"profileInfo":{"daysSinceLastPurchase":"","demandbaseSID":"","eloquaGUID":"","lastLoginDate":"","lastPurchaseDate":"","loggedIn":"false","profileID":"","subscriptionFrequency":"","subscriptionLevel":""}}]}]};!function(e,a,r){"use strict";function n(e){var r=("; "+a.cookie).split("; "+e+"=");if(2===r.length)return r.pop().split(";").shift()}if(a.referrer){var t=a.createElement("a");t.href=a.referrer,r.page.pageInfo.referringDomain=t.hostname,r.page.pageInfo.referringURL=t.href}r.page.pageInfo.sysEnv=e.innerWidth<=768?"tablet":"desktop";var i=r.user[0].profile[0].profileInfo,o=n("rh_elqCustomerGUID");o&&(i.eloquaGUID=o);var f=n("rh_user");f&&f.split("\\|")[0]&&(i.loggedIn="true");var s=n("s_dmdbase");s&&(i.demandbaseSID=s)}(window,document,digitalData);</script>
-<script id="trustarc" type="text/javascript" src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"></script>
-<script src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm.js" data-domain="www.redhat.com"></script>
-<script class="trustecm" data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-functional.js" data-tracker-type="functional"></script>
-<script class="trustecm" data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-advertising.js" data-tracker-type="advertising"></script>
-<script id="dpal" type="text/javascript" src="https://www.redhat.com/dtm.js"></script>
-<meta charset="utf-8" />
-<script type="text/javascript" src="https://www.redhat.com/modules/custom/rhdc_campaign/libraries/src/js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="https://www.redhat.com/modules/custom/rhdc_campaign/libraries/src/js/drupal.js"></script>
-<meta name="twitter:card" content="summary" />
-<link rel="canonical" href="https://www.redhat.com/en/open-source-stories" />
-<meta name="twitter:title" content="Open Source Stories" />
-<meta property="og:type" content="website" />
-<meta name="description" content="Open Source Stories celebrates how community, meritocracy, and a free exchange of ideas can unlock potential across disciplines." />
-<meta property="og:url" content="https://www.redhat.com/en/open-source-stories" />
-<meta property="og:title" content="Open Source Stories" />
-<link rel="image_src" href="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo-rh-og-image.png" />
-<meta property="og:description" content="Open Source Stories celebrates how community, meritocracy, and a free exchange of ideas can unlock potential across disciplines." />
-<meta property="og:image" content="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo-rh-og-image.png" />
-<meta name="og:description" content="Open Source Stories celebrates how community, meritocracy, and a free exchange of ideas can unlock potential across disciplines." />
-<meta name="og:image" content="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo-rh-og-image.png" />
-<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
-<meta name="MobileOptimized" content="width" />
-<meta name="HandheldFriendly" content="true" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta http-equiv="content-language" content="en" />
-<meta name="last-publish-date" content="Wed, 01 Sep 2021 13:16:29 GMT" />
-<meta name="node-type" content="campaign" />
-<meta name="source" content="rhdc_drupal" />
-<meta name="rhdc_key" content="b5ebe347b3ff080957332d621d394ca4" />
-<meta name="taxonomy-region" content="Global" />
-<meta name="taxonomy-region-tid" content="4521" />
-<meta name="taxonomy-topic" content="Open source" />
-<meta name="taxonomy-topic-tid" content="17391" />
-<meta name="dateline" content="2018-05-03T00:00:00.00Z" />
-<link rel="shortcut icon" href="https://www.redhat.com/themes/custom/rhdc/favicon.ico" type="image/x-icon" />
-<link rel="alternate" hreflang="zh" href="https://www.redhat.com/zh/open-source-stories" />
-<link rel="alternate" hreflang="zh-hant" href="https://www.redhat.com/zh-tw/open-source-stories" />
-<link rel="alternate" hreflang="en" href="https://www.redhat.com/en/open-source-stories" />
-<link rel="alternate" hreflang="fr" href="https://www.redhat.com/fr/open-source-stories" />
-<link rel="alternate" hreflang="de" href="https://www.redhat.com/de/open-source-stories" />
-<link rel="alternate" hreflang="it" href="https://www.redhat.com/it/open-source-stories" />
-<link rel="alternate" hreflang="ja" href="https://www.redhat.com/ja/open-source-stories" />
-<link rel="alternate" hreflang="ko" href="https://www.redhat.com/ko/open-source-stories" />
-<link rel="alternate" hreflang="pt-br" href="https://www.redhat.com/pt-br/open-source-stories" />
-<link rel="alternate" hreflang="es" href="https://www.redhat.com/es/open-source-stories" />
-<link rel="revision" href="https://www.redhat.com/en/open-source-stories" />
-<link type="text/css" rel="stylesheet" href="https://www.redhat.com/profiles/rh/themes/redhatdotcom/css/chrome.css" media="all" />
-<link type="text/css" rel="stylesheet" href="http://static.redhat.com/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all" />
-<link type="text/css" rel="stylesheet" href="http://static.redhat.com/libs/redhat/redhat-font/latest/webfonts/red-hat-font.css" media="all" />
-<link type="text/css" rel="stylesheet" href="http://static.redhat.com/libs/redhat/redhat-theme/latest/advanced-theme.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://static.redhat.com/libs/redhat/rh-iconfont/4/files/rh-iconfont.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://static.redhat.com/libs/redhat/rh-iconfont/4/files/rh-web-iconfont.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://www.redhat.com/ux/webdms/css/styles.min.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://www.redhat.com/ux/webdms/css/projects/open-source-stories.min.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://www.redhat.com/ux/webdms/css/projects/oss-hub.min.css" media="all" />
-<style type="text/css" media="all">.nav-pills .nav-link {
-    font-family: RedHatDisplay,"Red Hat Display",Overpass,Overpass,"Helvetica Neue",Arial,sans-serif;
-}</style>
+  <!-- Mirrored from www.redhat.com/en/open-source-stories by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:37:15 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=UTF-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <script id="rhdc_analytics_get_top_eddl_js" type="text/javascript">
+      var pageData = {
+        pageCategory: "open-source-stories",
+        pageName: "open source stories",
+        pageTitle: "Open Source Stories",
+        analyticsTitle: "open source stories",
+        pageType: "campaign",
+        pageSubType: "",
+        siteExperience: "",
+        siteLanguage: "en",
+        subsection: "",
+        subsection2: "",
+        subsection3: "",
+        cms: "RH CMS 1.0",
+        contentID: "159561",
+        contentType: "",
+        destinationURL: "https:\/\/www.redhat.com\/en\/open-source-stories",
+        errorType: "",
+        gated: false,
+        taxonomyRegion: ["4521"],
+        taxonomyTopic: ["17391"],
+      };
+      !(function (e, a) {
+        "use strict";
+        (e.appEventData = e.appEventData || []),
+          (e.pageData = e.pageData || []);
+        var t = { event: "Page Load Started", page: pageData };
+        if (a.referrer) {
+          let e = a.createElement("a");
+          (e.href = a.referrer), (t.page.previousPage = e.href);
+        }
+        (t.page.siteExperience = e.innerWidth <= 768 ? "tablet" : "desktop"),
+          appEventData.push(t);
+      })(window, document);
+    </script>
+    <script id="ddo" type="text/javascript">
+      digitalData = {
+        cart: [],
+        event: [],
+        listing: {
+          browseFilter: "",
+          query: "",
+          queryMethod: "",
+          refinementType: "",
+          refinementValue: "",
+          resultCount: "",
+          searchType: "",
+        },
+        page: {
+          attributes: {
+            queryParameters: {
+              sc_cid: "7013a000002vvzvAAA",
+              dclid: "COWYtP_t3fICFRQQYgod1RgAZQ",
+            },
+            referringSearchEngine: "",
+            analyticsTitle: "open source stories",
+            taxonomyRegion: ["4521"],
+            taxonomyTopic: ["17391"],
+          },
+          category: {
+            contentType: "",
+            keyPage: "false",
+            keyPageType: "",
+            pageType: "campaign",
+            primaryCategory: "open-source-stories",
+            subCategories: [],
+          },
+          pageInfo: {
+            cms: "RH CMS 1.0",
+            contentFindingMethod: "",
+            contentID: "159561",
+            contentPortal: "",
+            destinationURL: "https:\/\/www.redhat.com\/en\/open-source-stories",
+            errorMessage: "",
+            errorType: "",
+            language: "en",
+            pageName: "",
+            referringDomain: "",
+            referringURL: "",
+            sysEnv: "",
+            template: "",
+            title: "Open Source Stories",
+          },
+        },
+        product: [],
+        user: [
+          {
+            profile: [
+              {
+                profileInfo: {
+                  daysSinceLastPurchase: "",
+                  demandbaseSID: "",
+                  eloquaGUID: "",
+                  lastLoginDate: "",
+                  lastPurchaseDate: "",
+                  loggedIn: "false",
+                  profileID: "",
+                  subscriptionFrequency: "",
+                  subscriptionLevel: "",
+                },
+              },
+            ],
+          },
+        ],
+      };
+      !(function (e, a, r) {
+        "use strict";
+        function n(e) {
+          var r = ("; " + a.cookie).split("; " + e + "=");
+          if (2 === r.length) return r.pop().split(";").shift();
+        }
+        if (a.referrer) {
+          var t = a.createElement("a");
+          (t.href = a.referrer),
+            (r.page.pageInfo.referringDomain = t.hostname),
+            (r.page.pageInfo.referringURL = t.href);
+        }
+        r.page.pageInfo.sysEnv = e.innerWidth <= 768 ? "tablet" : "desktop";
+        var i = r.user[0].profile[0].profileInfo,
+          o = n("rh_elqCustomerGUID");
+        o && (i.eloquaGUID = o);
+        var f = n("rh_user");
+        f && f.split("\\|")[0] && (i.loggedIn = "true");
+        var s = n("s_dmdbase");
+        s && (i.demandbaseSID = s);
+      })(window, document, digitalData);
+    </script>
+    <script
+      id="trustarc"
+      type="text/javascript"
+      src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"
+    ></script>
+    <script
+      src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm.js"
+      data-domain="www.redhat.com"
+    ></script>
+    <script
+      class="trustecm"
+      data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-functional.js"
+      data-tracker-type="functional"
+    ></script>
+    <script
+      class="trustecm"
+      data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-advertising.js"
+      data-tracker-type="advertising"
+    ></script>
+    <script
+      id="dpal"
+      type="text/javascript"
+      src="https://www.redhat.com/dtm.js"
+    ></script>
+    <meta charset="utf-8" />
+    <script
+      type="text/javascript"
+      src="https://www.redhat.com/modules/custom/rhdc_campaign/libraries/src/js/jquery-1.10.2.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.redhat.com/modules/custom/rhdc_campaign/libraries/src/js/drupal.js"
+    ></script>
+    <meta name="twitter:card" content="summary" />
+    <link
+      rel="canonical"
+      href="https://www.redhat.com/en/open-source-stories"
+    />
+    <meta name="twitter:title" content="Open Source Stories" />
+    <meta property="og:type" content="website" />
+    <meta
+      name="description"
+      content="Open Source Stories celebrates how community, meritocracy, and a free exchange of ideas can unlock potential across disciplines."
+    />
+    <meta
+      property="og:url"
+      content="https://www.redhat.com/en/open-source-stories"
+    />
+    <meta property="og:title" content="Open Source Stories" />
+    <link
+      rel="image_src"
+      href="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo-rh-og-image.png"
+    />
+    <meta
+      property="og:description"
+      content="Open Source Stories celebrates how community, meritocracy, and a free exchange of ideas can unlock potential across disciplines."
+    />
+    <meta
+      property="og:image"
+      content="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo-rh-og-image.png"
+    />
+    <meta
+      name="og:description"
+      content="Open Source Stories celebrates how community, meritocracy, and a free exchange of ideas can unlock potential across disciplines."
+    />
+    <meta
+      name="og:image"
+      content="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo-rh-og-image.png"
+    />
+    <meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="last-publish-date" content="Wed, 01 Sep 2021 13:16:29 GMT" />
+    <meta name="node-type" content="campaign" />
+    <meta name="source" content="rhdc_drupal" />
+    <meta name="rhdc_key" content="b5ebe347b3ff080957332d621d394ca4" />
+    <meta name="taxonomy-region" content="Global" />
+    <meta name="taxonomy-region-tid" content="4521" />
+    <meta name="taxonomy-topic" content="Open source" />
+    <meta name="taxonomy-topic-tid" content="17391" />
+    <meta name="dateline" content="2018-05-03T00:00:00.00Z" />
+    <link
+      rel="shortcut icon"
+      href="https://www.redhat.com/themes/custom/rhdc/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="alternate"
+      hreflang="zh"
+      href="https://www.redhat.com/zh/open-source-stories"
+    />
+    <link
+      rel="alternate"
+      hreflang="zh-hant"
+      href="https://www.redhat.com/zh-tw/open-source-stories"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://www.redhat.com/en/open-source-stories"
+    />
+    <link
+      rel="alternate"
+      hreflang="fr"
+      href="https://www.redhat.com/fr/open-source-stories"
+    />
+    <link
+      rel="alternate"
+      hreflang="de"
+      href="https://www.redhat.com/de/open-source-stories"
+    />
+    <link
+      rel="alternate"
+      hreflang="it"
+      href="https://www.redhat.com/it/open-source-stories"
+    />
+    <link
+      rel="alternate"
+      hreflang="ja"
+      href="https://www.redhat.com/ja/open-source-stories"
+    />
+    <link
+      rel="alternate"
+      hreflang="ko"
+      href="https://www.redhat.com/ko/open-source-stories"
+    />
+    <link
+      rel="alternate"
+      hreflang="pt-br"
+      href="https://www.redhat.com/pt-br/open-source-stories"
+    />
+    <link
+      rel="alternate"
+      hreflang="es"
+      href="https://www.redhat.com/es/open-source-stories"
+    />
+    <link rel="revision" href="https://www.redhat.com/en/open-source-stories" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.redhat.com/profiles/rh/themes/redhatdotcom/css/chrome.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="http://static.redhat.com/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="http://static.redhat.com/libs/redhat/redhat-font/latest/webfonts/red-hat-font.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="http://static.redhat.com/libs/redhat/redhat-theme/latest/advanced-theme.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://static.redhat.com/libs/redhat/rh-iconfont/4/files/rh-iconfont.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://static.redhat.com/libs/redhat/rh-iconfont/4/files/rh-web-iconfont.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.redhat.com/ux/webdms/css/styles.min.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.redhat.com/ux/webdms/css/projects/open-source-stories.min.css"
+      media="all"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.redhat.com/ux/webdms/css/projects/oss-hub.min.css"
+      media="all"
+    />
+    <style type="text/css" media="all">
+      .nav-pills .nav-link {
+        font-family: RedHatDisplay, "Red Hat Display", Overpass, Overpass,
+          "Helvetica Neue", Arial, sans-serif;
+      }
+    </style>
 
     <title>Open Source Stories</title>
-    <link rel="stylesheet" media="all" href="https://www.redhat.com/rhdc/system-files/css/css_4D9f3Met0vL7kZZ2e2OuEDhTsb7q4FxLyV5OgqRIiEU.css" />
+    <link
+      rel="stylesheet"
+      media="all"
+      href="https://www.redhat.com/rhdc/system-files/css/css_4D9f3Met0vL7kZZ2e2OuEDhTsb7q4FxLyV5OgqRIiEU.css"
+    />
 
-    
     <noscript>
-      <link href="https://www.redhat.com/patterns/webrh/css/webrh.webcomponents.noscript.min.css" rel="stylesheet">
+      <link
+        href="https://www.redhat.com/patterns/webrh/css/webrh.webcomponents.noscript.min.css"
+        rel="stylesheet"
+      />
     </noscript>
     <style>
-      body[unresolved] pfe-navigation {display: none;}.no-js body pfe-navigation,body:not(unresolved) pfe-navigation {display: block;}.no-js #main-menu{background:#000!important;padding:10px}[unresolved] pfe-navigation{background:#000!important;color:#fff;display:block;width:100%}[unresolved] pfe-navigation [slot=logo],[unresolved] pfe-navigation [slot=skip],[unresolved] pfe-navigation ul li,[unresolved] pfe-navigation-item,[unresolved] pfe-navigation-main{padding:0 7px 6px;display:inline-block}[unresolved] pfe-navigation [slot=skip] a{font-size:0}[unresolved] pfe-navigation [slot=skip] a:focus{font-size:14px}[unresolved] pfe-navigation [slot=logo]{vertical-align:middle}[unresolved] pfe-navigation a{font-size:14px;color:#fff}[unresolved] pfe-navigation-item [slot]>a:focus{outline-offset:1px;outline-style:dotted;outline-width:1px;outline-color:#d2d3d4}
+      body[unresolved] pfe-navigation {
+        display: none;
+      }
+      .no-js body pfe-navigation,
+      body:not(unresolved) pfe-navigation {
+        display: block;
+      }
+      .no-js #main-menu {
+        background: #000 !important;
+        padding: 10px;
+      }
+      [unresolved] pfe-navigation {
+        background: #000 !important;
+        color: #fff;
+        display: block;
+        width: 100%;
+      }
+      [unresolved] pfe-navigation [slot="logo"],
+      [unresolved] pfe-navigation [slot="skip"],
+      [unresolved] pfe-navigation ul li,
+      [unresolved] pfe-navigation-item,
+      [unresolved] pfe-navigation-main {
+        padding: 0 7px 6px;
+        display: inline-block;
+      }
+      [unresolved] pfe-navigation [slot="skip"] a {
+        font-size: 0;
+      }
+      [unresolved] pfe-navigation [slot="skip"] a:focus {
+        font-size: 14px;
+      }
+      [unresolved] pfe-navigation [slot="logo"] {
+        vertical-align: middle;
+      }
+      [unresolved] pfe-navigation a {
+        font-size: 14px;
+        color: #fff;
+      }
+      [unresolved] pfe-navigation-item [slot] > a:focus {
+        outline-offset: 1px;
+        outline-style: dotted;
+        outline-width: 1px;
+        outline-color: #d2d3d4;
+      }
     </style>
   </head>
-  <body class="bg-gray-oss path-node rhdc-node-type-campaign" unresolved >
-    
-    
-  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
-    
-  <div class="rhdc-header--background-image"></div>
-  <article role="article">
+  <body class="bg-gray-oss path-node rhdc-node-type-campaign" unresolved>
+    <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+      <div class="rhdc-header--background-image"></div>
+      <article role="article">
+        <div>
+          <div
+            class="oss-hero-bg position-absolute vh-100 w-100 overflow-hidden"
+          >
+            <video
+              poster="https://www.redhat.com/rhdc/managed-files/oss-openstax-hero.jpg"
+              autoplay=""
+              muted=""
+              loop=""
+            >
+              <source
+                type="video/mp4"
+                src="https://videos.cdn.redhat.com/NEXT/open-source-stories/0421_RH_OSS_CrackingTextbook_WebHeader_061021.mp4"
+              />
+            </video>
 
-  
-    
+            <div
+              class="oss-hero-screen position-absolute top-0 w-100 h-100 z-1"
+            ></div>
+          </div>
 
-  
-  <div>
-    <div class="oss-hero-bg position-absolute vh-100 w-100 overflow-hidden">
-    <video poster="https://www.redhat.com/rhdc/managed-files/oss-openstax-hero.jpg" autoplay="" muted="" loop="">
-
-        <source type="video/mp4" src="https://videos.cdn.redhat.com/NEXT/open-source-stories/0421_RH_OSS_CrackingTextbook_WebHeader_061021.mp4">
-    </video>
-
-    <div class="oss-hero-screen position-absolute top-0 w-100 h-100 z-1"></div>
-</div>
-
-
-
-<div class="oss-hero d-flex flex-column justify-content-between position-relative z-9">
-    <header class="dms-band flex-grow-0 pt-1 pt-md-2 pt-lg-4 pb-0">
-        <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-auto">
-                    <a href="https://www.redhat.com/en/open-source-stories" title="Open Source Stories">
-                        <p class="mb-1"><img class="img-fluid mt-1 pr-2" src="https://www.redhat.com/rhdc/managed-files/OSS-logo-white-horizontal.svg" width="248" alt="Open Source Stories logo"></p>
-                        <p class="small text-white text-md-center">An original series by Red Hat</p>
+          <div
+            class="
+              oss-hero
+              d-flex
+              flex-column
+              justify-content-between
+              position-relative
+              z-9
+            "
+          >
+            <header class="dms-band flex-grow-0 pt-1 pt-md-2 pt-lg-4 pb-0">
+              <div class="container">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-auto">
+                    <a
+                      href="https://www.redhat.com/en/open-source-stories"
+                      title="Open Source Stories"
+                    >
+                      <p class="mb-1">
+                        <img
+                          class="img-fluid mt-1 pr-2"
+                          src="https://www.redhat.com/rhdc/managed-files/OSS-logo-white-horizontal.svg"
+                          width="248"
+                          alt="Open Source Stories logo"
+                        />
+                      </p>
+                      <p class="small text-white text-md-center">
+                        An original series by Red Hat
+                      </p>
                     </a>
-                </div>
+                  </div>
 
-                <div class="col-auto">
+                  <div class="col-auto">
                     <a href="https://www.redhat.com/" title="Red Hat">
-                        <img class="img-fluid pl-1" src="https://static.redhat.com/libs/redhat/brand-assets/latest/corp/logo--on-dark.svg" width="135" height="71" alt="Red Hat logo">
+                      <img
+                        class="img-fluid pl-1"
+                        src="https://static.redhat.com/libs/redhat/brand-assets/latest/corp/logo--on-dark.svg"
+                        width="135"
+                        height="71"
+                        alt="Red Hat logo"
+                      />
                     </a>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </header>
-    
+              </div>
+            </header>
 
-    <section class="dms-band oss-hero-msg py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-9 col-md-7 col-lg-5 text-white">
+            <section class="dms-band oss-hero-msg py-4">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-9 col-md-7 col-lg-5 text-white">
                     <h1>Lowering barriers to higher education</h1>
-                    <p>The cost of college textbooks has risen for decades. Open source is helping to bend the cost curve. Our new film introduces you to the people behind the movement.</p>
-                    <p class="cta-group"><a href="https://www.redhat.com/en/open-source-stories/cracking-the-textbook" class="btn btn-primary" title="Open Source Stories: Cracking the Textbook">Watch the film <span class="fa fa-play-circle-o font-size-20"></span></a></p>
+                    <p>
+                      The cost of college textbooks has risen for decades. Open
+                      source is helping to bend the cost curve. Our new film
+                      introduces you to the people behind the movement.
+                    </p>
+                    <p class="cta-group">
+                      <a
+                        href="https://www.redhat.com/en/open-source-stories/cracking-the-textbook"
+                        class="btn btn-primary"
+                        title="Open Source Stories: Cracking the Textbook"
+                        >Watch the film
+                        <span class="fa fa-play-circle-o font-size-20"></span
+                      ></a>
+                    </p>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    
-
-    <section class="dms-band position-relative py-0">
-        <div class="container">
-            <h2 class="text-white mb-5">See what's new from Open Source Stories</h2>
-        </div>
-    </section>
-</div>
-
-
-<section class="dms-band position-relative pt-0 z-9">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-sm-8 col-md-4 mb-3 mb-md-0 d-flex">
-                <!-- OpenStax -->
-                <article role="article" class="node-shared">
-
-  
-    
-
-  
-  
-            <div class="card card-half-slide" data-bg-image="/rhdc/managed-files/bg_openstax-card.jpg">
-    <div class="card-header text-white text-center">
-        <!-- <p class="mb-0">Trailer</p> -->
-        <h2>Cracking the Textbook</h2>
-
-        <p class="mt-3"><a href="https://www.redhat.com/en/open-source-stories/cracking-the-textbook" class="text-white" title="">Watch the film <i class="fa fa-play-circle font-size-20" aria-hidden="true"></i></a></p>
-    </div>
-
-    <div class="card-body text-center">
-        <p class="mb-0"></p>
-        <h2>Cracking the Textbook</h2>
-
-        <p class="mt-1 font-size-14">College is hard. Costly course materials make it harder. Meet the scholars and students using open source to ease the strain.</p>
-
-        <p class="mt-3"><a href="https://www.redhat.com/en/open-source-stories/cracking-the-textbook" title="Watch Openstax">Watch the film <i class="fa fa-play-circle font-size-20" aria-hidden="true"></i></a></p>
-    </div>
-</div>
-      
-
-</article>
-
-            </div>
-
-            <div class="col-sm-8 col-md-4 mb-3 mb-md-0 d-flex">
-                <!-- Making Robots Boring -->
-                <article role="article" class="node-shared">
-
-  
-    
-
-  
-  
-            <div class="card card-half-slide" data-bg-image="/rhdc/managed-files/bg_making-robots-boring-card.jpg">
-    <div class="card-header text-white text-center">
-        <img src="https://www.redhat.com/rhdc/managed-files/logo_common-connections_text-white.svg" alt="Common Connections logo" class="img-fluid" width="250" />
-
-        <p class="mt-3"><a class="text-white" href="https://www.redhat.com/en/open-source-stories/common-connections/making-robots-boring" title="Watch Making Robots Boring">Watch the conversation <i class="fa fa-play-circle font-size-20" aria-hidden="true"></i></a></p>
-    </div>
-
-    <div class="card-body text-center">
-        <p class="mb-0">Common Connections</p>
-        <h2>Making Robots Boring</h2>
-
-        <p class="mt-1 font-size-14">Leila Takayama and Chris Nicholson share why robots must master the mundane to meet their potential.</p>
-
-        <p class="mt-3"><a href="https://www.redhat.com/en/open-source-stories/common-connections/making-robots-boring" title="Watch Making Robots Boring">Watch the conversation <i class="fa fa-play-circle font-size-20" aria-hidden="true"></i></a></p>
-    </div>
-</div>
-      
-
-</article>
-
-            </div>
-
-            <div class="col-sm-8 col-md-4 mb-3 mb-md-0 d-flex">
-                <!-- Open Herdware -->
-                <article role="article" class="node-shared">
-
-  
-    
-
-  
-  
-            <div class="card card-half-slide" data-bg-image="/rhdc/managed-files/bg_open-herdware-card.jpg">
-    <div class="card-header text-white text-center">
-        <p class="mb-1">Starting Small</p>
-        <h2>Open Herdware</h2>
-
-        <p class="mt-3"><a href="https://www.redhat.com/en/open-source-stories/starting-small-open-data/open-herdware" class="text-white" title="Watch Open Herdware">Watch the film <i class="fa fa-play-circle font-size-20" aria-hidden="true"></i></a></p>
-    </div>
-
-    <div class="card-body text-center">
-        <p class="mb-0">Starting Small</p>
-        <h2>Open Herdware</h2>
-
-        <p class="mt-1 font-size-14">See how a rancher and a coder are using open source tools to make grazing in Patagonia more sustainable.</p>
-
-        <p class="mt-3"><a href="https://www.redhat.com/en/open-source-stories/starting-small-open-data/open-herdware" title="Watch Open Herdware">Watch the film <i class="fa fa-play-circle font-size-20" aria-hidden="true"></i></a></p>
-    </div>
-</div>
-      
-
-</article>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="dms-band pt-0">
-    <div class="container">
-        <div class="row align-items-center justify-content-around bg-gray-900 text-white p-4">
-            <div class="col-md-6 col-lg-8">
-                <h3>Follow your curiosity</h3>
-                <p>Open Source Stories showcases people who dare to create things out in the open for all to share and build upon. These films, articles, talks, and experiences demonstrate how open source changes every type of human endeavor.</p>
-            </div>
-            <div class="col-md-6 col-lg-4 text-center">
-                <a class="btn btn-primary" href="https://www.redhat.com/en/engage/opensource-newsletter-signup-e-201901291258" title="Get the newsletter">Sign up for our newsletter</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="dms-band oss-list-view">
-    <div class="container">
-        <h3 class="text-white">Browse stories by topic</h3>
-
-        <ul class="nav nav-pills nav-topic-filter mb-4">
-            <li class="nav-item">
-                <a class="nav-link active" href="#" data-filter="robotics" data-analytics-event="OSS Topic Filter Tab Clicked" data-analytics-text="AI & robotics">AI & robotics</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="#" data-filter="culture" data-analytics-event="OSS Topic Filter Tab Clicked" data-analytics-text="Arts & culture">Arts & culture</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="#" data-filter="education" data-analytics-event="OSS Topic Filter Tab Clicked" data-analytics-text="Education">Education</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="#" data-filter="hardware" data-analytics-event="OSS Topic Filter Tab Clicked" data-analytics-text="Hardware">Hardware</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="#" data-filter="healthcare" data-analytics-event="OSS Topic Filter Tab Clicked" data-analytics-text="Healthcare">Healthcare</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="#" data-filter="sustainability" data-analytics-event="OSS Topic Filter Tab Clicked" data-analytics-text="Sustainability">Sustainability</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nav-link--view-all" href="#" data-filter="all" data-analytics-event="OSS Topic Filter Tab Clicked" data-analytics-text="View all">View all</a>
-            </li>
-        </ul>
-
-        <div class="row text-white">
-
-          <div class="col-sm-6 col-md-4 card-wrapper common-connections healthcare video active">
-                <a href="https://www.redhat.com/en/open-source-stories/common-connections/healthcare-made-human" class="card text-white" title="Common Connections: Healthcare Made Human">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/rh-oss-cc-ep3_topic-card (1).png" alt="Trio of transparency advocates discusses" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>Common Connections: Healthcare Made Human</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-sm-6 col-md-4 card-wrapper common-connections robotics video active">
-                <a href="https://www.redhat.com/en/open-source-stories/common-connections/making-robots-boring" class="card text-white" title="Open Source Stories: Making Robots Boring">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_cc-making-robots-boring.jpg" alt="Video conference between robotics engineers" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>Common Connections: Making Robots Boring</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-  
-            
-            <div class="col-sm-6 col-md-4 card-wrapper common-connections education sustainability video">
-                <a href="https://www.redhat.com/en/open-source-stories/common-connections/creating-the-classroom" class="card text-white" title="Open Source Stories: Creating the Classroom">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_cc-creating-the-classroom.jpg" alt="Teachers in video chat" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>Common Connections: Creating the Classroom</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper hardware film sustainability video">
-                <a href="https://www.redhat.com/en/open-source-stories/starting-small-open-data/open-herdware" class="card text-white" title="Open Source Stories: Open Herdware">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_open-herdware.jpg" alt="Person soldering electronic components" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>Open Herdware</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper film robotics video active">
-                <a href="https://www.redhat.com/en/open-source-stories/robots/breaking-the-wheel" class="card text-white" title="Open Source Stories: How To Start a Robot Revolution - Part 1">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_robot-revolution.jpg" alt="Woman holding photo of robot" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>How to Start a Robot Revolution</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper live-talk robotics video active">
-                <a href="https://www.redhat.com/en/open-source-stories/live-talk-roots-of-robotics" class="card text-white" title="Open Source Stories Live: Brian Gerkey">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_talk-open-source-roots-robotics.jpg" alt="Group photo of robotics engineers" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>The Open Source Roots of Robotics</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper film culture hardware sustainability video">
-                <a href="https://www.redhat.com/en/open-source-stories/starting-small-open-data" class="card text-white" title="Open Source Stories: Starting Small - Open Data in Chile">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_starting-small.jpg" alt="Building a device" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>Starting Small: Open Data in Chile</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper film education hardware sustainability video">
-                <a href="https://www.redhat.com/en/open-source-stories/farming-for-the-future/early-adopters" class="card text-white" title="Open Source Stories: Early adopters">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_early-adopters.jpg" alt="Students in classroom working with Raspberry Pi devices" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>Early Adopters: Raspberry Pi in the Classroom</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper film robotics hardware sustainability video active">
-                <a href="https://www.redhat.com/en/open-source-stories/farming-for-the-future/food-computer" class="card text-white" title="Open Source Stories: Food computer">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_food-computer-60seconds.jpg" alt="Food computer devices" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>A Food Computer in 60 seconds</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper film hardware sustainability video">
-                <a href="https://www.redhat.com/en/open-source-stories/farming-for-the-future/open-farmer" class="card text-white" title="Open Source Stories: Open farmer">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_open-farmer.jpg" alt="Farmer working with micro device" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>The Open Farmer</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper film healthcare education sustainability video">
-                <a href="https://www.redhat.com/en/open-source-stories/farming-for-the-future/cultivating-change" class="card text-white" title="Open Source Stories: Cultivating change">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_cultivating-change.jpg" alt="Students and instructors collaborating" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>Cultivating Change</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper live-talk education hardware sustainability video">
-                <a href="https://www.redhat.com/en/open-source-stories/live-talk-food-computer" class="card text-white" title="Open Source Stories: The food computer program">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_talks-food-computer-program.jpg" alt="Woman speaking about food computer" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>Food Computer Program</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper live-talk robotics hardware video active">
-                <a href="https://www.redhat.com/en/open-source-stories/live-talk-future-of-hardware" class="card text-white" title="Open Source Stories: Open source and the future of hardware">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_talk-open-source-future-of-hardware.jpg" alt="Man speaking at conference" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>Open Source and the Future of Hardware</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper film robotics education hardware sustainability video active">
-                <a href="https://www.redhat.com/en/open-source-stories/farming-for-the-future" class="card text-white" title="Open Source Stories: Farming for the future">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_farming-for-the-future.jpg" alt="Student with illustrations depicting food computer device" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>Farming for the Future</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper live-talk education video">
-                <a href="https://www.redhat.com/en/open-source-stories/live-talk-codenewbie" class="card text-white" title="Open Source Stories: CodeNewbie">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_talks-key-to-coding-progress.jpg" alt="Woman speaking at conference" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>The Key to Coding Progress</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper live-talk hardware sustainability video">
-                <a href="https://www.redhat.com/en/open-source-stories/live-talk-farm-innovation" class="card text-white" title="Open Source Stories: A community for farm innovation">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_talks-community-farm-innovation.jpg" alt="Man speaking at conference" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>A Community for Farm Innovation</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper live-talk education video">
-                <a href="https://www.redhat.com/en/open-source-stories/live-talk-futuregirls" class="card text-white" title="Open Source Stories: Franklin middle school Futuregirls">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_talks-franklin-middle-school-futuregirls.jpg" alt="Middle school students on stage at conference" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>Franklin Middle School Futuregirls</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper film healthcare education hardware sustainability video">
-                <a href="https://www.redhat.com/en/open-source-stories/collective-discovery" class="card text-white" title="Open Source Stories: The Science of Collective Discovery">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_science-of-collective-discovery.jpg" alt="Map application mock-ups" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>The Science of Collective Discovery</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper article culture education hardware">
-                <a href="https://www.redhat.com/en/open-source-stories/like-rockets" class="card text-white" title="Open Source Stories: Like Rockets">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_like-rockets.jpg" alt="Teacher discussing with students" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>Like Rockets</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper live-talk culture education hardware video">
-                <a href="https://www.redhat.com/en/open-source-stories/live-talk-jewelbots" class="card text-white" title="Open Source Stories: Jewelbots">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_jewelbots-talk.jpg" alt="Woman and girl presenting at conference" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>Jewelbots</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper live-talk education video">
-                <a href="https://www.redhat.com/en/open-source-stories/live-talk-hackerfemo" class="card text-white" title="Open Source Stories: HackerFemo">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_talks-lessons-learned-teaching-young-coders.jpg" alt="Boy speaking at conference" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>Lessons Learned from Teaching Young Coders</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper article culture">
-                <a href="https://www.redhat.com/en/open-source-stories/because-we-had-to" class="card text-white" title="Open Source Stories: Because we had to">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_because-we-had-to.jpg" alt="Woman making painting" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>Because We Had To</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper film culture video">
-                <a href="https://www.redhat.com/en/open-source-stories/art-of-exchange" class="card text-white" title="Open Source Stories: Art of Exchange">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_art-of-exchange.jpg" alt="People in discussion" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>The Art of Exchange</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper live-talk hardware video">
-                <a href="https://www.redhat.com/en/open-source-stories/live-talk-oshwa" class="card text-white" title="Open Source Stories: Open Source Hardware Association">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_talks-physical-future-of-open-source.jpg" alt="Woman speaking at conference" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>The Physical Future of Open Source</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper film robotics video active">
-                <a href="https://www.redhat.com/en/open-source-stories/road-to-ai" class="card text-white" title="pen Source Stories: Road to A.I.">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_road-to-ai.jpg" alt="Street view of autonomous driving AI" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>Road to A.I.</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper article robotics active">
-                <a href="https://www.redhat.com/en/open-source-stories/ai-revolutionaries" class="card text-white" title="Open Source Stories: A.I. Revolutionaries">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_AI-revolutionaries.jpg" alt="Illustration of laptop and code" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>A.I. Revolutionaries</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper film culture video">
-                <a href="https://www.redhat.com/en/open-source-stories/sparkcon" class="card text-white" title="Open Source Stories: SPARKcon">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_SPARKcon.jpg" alt="Person making sidewalk chalk art" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>SparkCon</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper live-talk education video">
-                <a href="https://www.redhat.com/en/open-source-stories/live-talk-girl-develop-it" class="card text-white" title="Open Source Stories: Girl Develop It">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_talks-girl-develop-it.jpg" alt="Woman speaking at conference" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>Girl Develop It</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper live-talk education hardware video">
-                <a href="https://www.redhat.com/en/open-source-stories/live-talk-sparkfun" class="card text-white" title="Open Source Stories: Open source hardware sparks innovation">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_talks-open-source-hardware-innovation.jpg" alt="Man speaking at conference" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>Open Source and Innovation</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper live-talk robotics video active">
-                <a href="https://www.redhat.com/en/open-source-stories/live-talk-inmoov" class="card text-white" title="Open Source Stories: InMoov Robots for Good">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_talks-inmoov-robots-for-good.jpg" alt="Man speaking at conference" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0"><h4>Inmoov Robots for Good</h4></div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper film healthcare video">
-                <a href="https://www.redhat.com/en/open-source-stories/open-patient" class="card text-white" title="Open Source Stories: The Open Patient">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_open-patient.jpg" alt="Illustration of DNA and code" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0">
-                                <h4>The Open Patient</h4>
-                            </div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper film healthcare hardware video">
-                <a href="https://www.redhat.com/en/open-source-stories/e-nable" class="card text-white" title="Open Source Stories: E-nable">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_eNABLE.jpg" alt="Student showing off her robitics device" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0"><h4>e-NABLE</h4></div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-6 col-md-4 card-wrapper film education video">
-                <a href="https://www.redhat.com/en/open-source-stories/penn-manor" class="card text-white" title="Open Source Stories: Penn Manor">
-                    <div class="card-header p-0">
-                        <img src="https://www.redhat.com/rhdc/managed-files/oss-card_penn-manor.jpg" alt="Overhead view of school busses and students" class="img-fluid">
-                    </div>
-                    <div class="card-body px-0 pt-1 pb-4">
-                        <div class="row d-flex justify-content-between ">
-                            <div class="col-7 col-lg-6 col-xl-7 pr-0"><h4>Penn Manor</h4></div>
-                            <div class="col-auto">
-                                <span class="label d-flex align-items-middle">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-
-
-
-<section class="dms-band text-white bg-gray-900 pb-12 mx-md-4">
-    <div class="container mb-12">
-        <div class="row justify-content-between align-items-center">
-            <div class="col-md-6 col-lg-5 mb-4 mb-md-0">
-                <p class="mb-8"><img src="https://www.redhat.com/rhdc/managed-files/colab_color.svg" alt="Co.Lab logo" class="img-fluid" width="220" /></p>
-
-                <h2 class="xl">Sparking creativity with STEM kits</h2>
-                <p>Co.Lab, presented by Open Source Stories, is an education experience that encourages students to collaborate and share ideas using open source principles. Through both guided <a href="https://www.redhat.com/en/open-source-stories/colab/workshops" class="text-blue-light" title="Co.Lab guided workshops">workshops</a> and <a href="https://www.redhat.com/en/open-source-stories/colab/kits" class="text-blue-light" title="Co.Lab do-it-yourself kits">do-it-yourself STEM kits</a>&mdash;all of which were inspired by an Open Source Stories film, article, or talk—students work together as they build everything from circuit boards to interactive robots from scratch.</p>
-                <p class="cta-group">
-                    <a href="https://www.redhat.com/en/open-source-stories/colab" class="btn btn-primary" title="The Co.Lab education experience">Discover Co.Lab</a>
-                    <a href="https://www.redhat.com/en/open-source-stories/colab/kits" class="btn btn-outline-white" title="Co.Lab do-it-yourself kits">Browse STEM kits</a>
-                </p>
-            </div>
-
-            <div class="col-md-6">
-                <div class="grid grid-7x6">
-                    <div class="cell-col-1
-                                cell-row-1
-                                cell-width-7
-                                cell-height-6">
-                        <img src="https://www.redhat.com/rhdc/managed-files/bg_wires-and-connectors_0.svg" alt="Illustration of wires" class="img-fluid">
-                    </div>
-
-                    <div class="cell-col-1
-                                cell-row-1
-                                cell-width-5
-                                cell-height-3">
-                        <img src="https://www.redhat.com/rhdc/managed-files/hands-on-colab-project.jpg" alt="Kids hands working on Co.Lab project" class="img-fluid">
-                    </div>
-
-                    <div class="cell-col-3
-                                cell-row-3
-                                cell-width-5
-                                cell-height-3">
-                        <video poster="https://www.redhat.com/rhdc/managed-files/colab-farmkit-poster.jpg" autoplay="" muted="" loop="" width="100%">
-                            <source type="video/mp4" src="https://videos.cdn.redhat.com/NEXT/co-lab/rh-colab-farmkit_cropped.mp4">
-                        </video>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="dms-band colab-cards pt-0">
-    <div class="container">
-        <h3 class="text-white">Watch the films that inspired Co.Lab kits</h3>
-
-        <div class="row justify-content-center mt-8">
-            <div class="col-sm-8 col-md-4 mb-3 mb-md-0 d-flex">
-                <!-- Robot Revolution -->
-                <article role="article" class="node-shared">
-
-  
-    
-
-  
-  
-            <div class="card card-half-slide" data-bg-image="/rhdc/managed-files/oss-robots-cross-promo-scaling_2.jpg">
-    <div class="card-header text-center">
-        <img src="https://www.redhat.com/rhdc/managed-files/how-to-start-a-robot-revolution-part-1.svg" alt="How to start a Robot Revolution" width="250" class="img-fluid mb-3">
-        <p class="font-weight-bold mt-1"><a href="https://www.redhat.com/en/open-source-stories/how-to-start-a-robot-revolution" class="text-white">Watch the film <i class="fa fa-play-circle font-size-20" aria-hidden="true"></i></a></p>
-    </div>
-    <div class="card-body text-center">
-        <img src="https://www.redhat.com/rhdc/managed-files/how-to-start-a-robot-revolution-part-1.svg" alt="How to start a Robot Revolution" width="250" class="svg svg-gray-900 img-fluid mb-2">
-        <p class="font-size-16">The story of how a group of roboticists turned one piece of open source software into a global phenomenon.</p>
-        <p class="font-weight-bold mt-1"><a href="https://www.redhat.com/en/open-source-stories/how-to-start-a-robot-revolution">Watch the film <i class="fa fa-play-circle font-size-20" aria-hidden="true"></i></a></p>
-    </div>
-</div>
-      
-
-</article>
-
-            </div>
-
-            <div class="col-sm-8 col-md-4 mb-3 mb-md-0 d-flex">
-                <!-- Farming for the future -->
-                <article role="article" class="node-shared">
-
-  
-    
-
-  
-  
-             <div class="card card-half-slide h-100" data-bg-image="/rhdc/managed-files/bg_farming-for-future.jpg">
-                    <div class="card-header text-center">
-                        <img src="https://www.redhat.com/rhdc/managed-files/farming-for-the-future.svg" alt="Farming for the future" class="img-fluid mb-3" width="250">
-                        <p class="font-weight-bold mt-1"><a href="https://www.redhat.com/en/open-source-stories/farming-for-the-future" class="text-white">Watch the film <i class="fa fa-play-circle font-size-20" aria-hidden="true"></i></a></p>
-                    </div>
-                    <div class="card-body text-center">
-                        <svg id="b5b0c79f-8bc5-4f7f-a26e-5449bfebe52e" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="487.5" height="156.42" viewBox="0 0 487.5 156.42" class="img-fluid mb-2 svg svg-gray-900" style="width: 200px; height: undefinedpx;">
-  <title>farming-for-the-future</title>
-  <g id="b2ae965d-902c-49f8-bdfd-787622b42a56" data-name="Group 34">
-    <g id="b86d18f5-9572-4abb-8fe7-ccf0a499ed6a" data-name="Group 32">
-      <g id="ece4e235-7ee1-42d3-ad5b-f49f54d5baea" data-name="Group 29">
-        <path id="e509288e-d6fd-4b52-a556-539433beaf44" data-name="Path 2400" d="M0,5.56H55.19V20.35H17.07v13H42.48V47.64H17.07V75H0Z" transform="translate(0 0)" style="fill: #fff"></path>
-        <path id="ef8c4aea-1907-4277-b02d-b0c41c624656" data-name="Path 2401" d="M54.69,59.66c0-10,7.94-15.79,21.64-15.79a48.28,48.28,0,0,1,11.91,1.49V42.78c0-5.26-3.37-7.84-10-7.84-4.17,0-9,1.29-15.88,4.17L56.58,27.3c8.53-3.87,16.47-5.76,24.51-5.76,14.6,0,23,7.25,23,19.85V75H88.24V71.87c-4.27,2.88-8.83,4.07-14.49,4.07C62.53,75.94,54.69,69.28,54.69,59.66Zm23.53,5a19.11,19.11,0,0,0,10-2.48V55.39a37.77,37.77,0,0,0-9.53-1.19c-5.55,0-8.73,1.88-8.73,5.16s3.08,5.26,8.24,5.26Z" transform="translate(0 0)" style="fill: #fff"></path>
-        <path id="e47f4648-8b95-4277-b60a-8be67a6774b8" data-name="Path 2402" d="M113.65,22.53h16.08v5.26a17.36,17.36,0,0,1,13.8-6.45c3.08.1,4.67.4,6.06,1.29v14A18.48,18.48,0,0,0,141.94,35a14.34,14.34,0,0,0-12.21,6.65V75.05H113.65Z" transform="translate(0 0)" style="fill: #fff"></path>
-        <path id="f6aa374c-f15a-4337-bc63-b69727b6ddc6" data-name="Path 2403" d="M156.53,22.53h16.08v3.38a20.79,20.79,0,0,1,13.1-4.37,19.25,19.25,0,0,1,15.59,7.25,22.41,22.41,0,0,1,17.07-7.25c11.91,0,20.35,8.73,20.35,21.14V75H222.63V44.87c0-5.76-3.37-9.53-8.53-9.53a10.7,10.7,0,0,0-8.64,4c.1,1.09.2,2.18.2,3.37V75H189.58V44.87c0-5.76-3.37-9.53-8.54-9.53a10.26,10.26,0,0,0-8.43,3.77V75H156.53Z" transform="translate(0 0)" style="fill: #fff"></path>
-        <path id="bae51028-5837-4fc7-b346-55c8f5ae5643" data-name="Path 2404" d="M247.45,8.83a8.84,8.84,0,1,1,8.83,8.84A8.84,8.84,0,0,1,247.45,8.83ZM264.33,75H248.24V22.53h16.09Z" transform="translate(0 0)" style="fill: #fff"></path>
-        <path id="bc259060-a502-4829-bda0-d0ccb0ea4d2d" data-name="Path 2405" d="M274.25,22.53h16.08v3.58a22.79,22.79,0,0,1,14.09-4.57c12.31,0,20.95,8.73,20.95,21.14V75H309.29V44.87c0-5.76-3.78-9.53-9.53-9.53a11.6,11.6,0,0,0-9.43,4.17V75H274.25Z" transform="translate(0 0)" style="fill: #fff"></path>
-        <path id="ef445cdc-7742-4856-9789-00cabeadecb8" data-name="Path 2406" d="M332.51,48.43c0-14.89,12-26.6,27.3-26.6A25.91,25.91,0,0,1,373,25.31V22.53h15.88v52c0,14.19-9.62,22-27.2,22A52.49,52.49,0,0,1,339.26,92l5.36-12.51a38.78,38.78,0,0,0,16.78,4c7.54,0,11.41-3.08,11.41-9.13V71.07a24.07,24.07,0,0,1-13.6,4.17,26.54,26.54,0,0,1-26.7-26.38ZM362,61.74a15.4,15.4,0,0,0,10.82-3.88V39.31a16.47,16.47,0,0,0-10.72-3.88c-7.74,0-13.8,5.66-13.8,13,0,7.55,6,13.31,13.7,13.31Z" transform="translate(0 0)" style="fill: #fff"></path>
-      </g>
-      <g id="bea61462-9209-4c92-a2e6-2ad2ea64d0e7" data-name="Group 30">
-        <path id="a7f5ba90-02b9-4741-a608-652fdd74f83a" data-name="Path 2407" d="M182.07,88.53h53.16v14.24H198.52v12.52H223v13.77H198.52v26.39H182.07Z" transform="translate(0 0)" style="fill: #fff"></path>
-        <path id="a2c4e6f3-269d-4806-a7bc-db639f1bb35f" data-name="Path 2408" d="M254,133.94c0,5.54,3.63,9.17,9.18,9.17a11.15,11.15,0,0,0,9.08-4V104.87h15.49v50.58H272.22V152a21.92,21.92,0,0,1-13.57,4.4c-11.86,0-20.18-8.41-20.18-20.36V104.87H254Z" transform="translate(0 0)" style="fill: #fff"></path>
-        <path id="b98be9e2-a95f-4f37-99f6-97d97ec1e9b4" data-name="Path 2409" d="M304.43,117.78H294.2V104.87h10.23v-13l15.49-3.34v16.34h14.15v12.91H319.92V137c0,4.49,1.72,6.11,6.69,6.11a22.3,22.3,0,0,0,7-1.05v12.53a45.75,45.75,0,0,1-10.8,1.52c-12.14,0-18.35-5.44-18.35-16.06Z" transform="translate(0 0)" style="fill: #fff"></path>
-        <path id="a9e4a335-c22c-4890-84f1-c52238de49b9" data-name="Path 2410" d="M355.2,133.94c0,5.54,3.63,9.17,9.17,9.17a11.19,11.19,0,0,0,9.09-4V104.87H389v50.58H373.46V152a21.93,21.93,0,0,1-13.58,4.4C348,156.4,339.71,148,339.71,136V104.87H355.2Z" transform="translate(0 0)" style="fill: #fff"></path>
-        <path id="f8c45b1b-fc6d-4be3-91e4-66afe0da05cd" data-name="Path 2411" d="M398.5,104.87H414v5.07a16.65,16.65,0,0,1,13.28-6.22c3,.1,4.5.38,5.84,1.24v13.48a17.79,17.79,0,0,0-7.36-1.53,13.78,13.78,0,0,0-11.76,6.4v32.13H398.5Z" transform="translate(0 0)" style="fill: #fff"></path>
-        <path id="b3ac9007-ac49-432b-81eb-e6fb8447dc87" data-name="Path 2412" d="M463.12,156.4c-15.49,0-27.53-11.47-27.53-26.19A26,26,0,0,1,461.34,104H462c14.82,0,25.53,11.67,25.53,27.63v3.82h-36a13.09,13.09,0,0,0,12.43,8c4.2,0,7.74-1.33,10.13-3.82l10.23,9.08A30.49,30.49,0,0,1,463.12,156.4Zm-11.95-31.73H472.3c-1.63-4.88-5.64-8-10.61-8-5.16,0-9,3-10.52,8Z" transform="translate(0 0)" style="fill: #fff"></path>
-      </g>
-      <g id="ba933648-d8f2-46d4-89d5-eb9f313758f9" data-name="Group 31">
-        <path id="bb8d16e6-11d2-42ce-873d-1f4c5e3dc97c" data-name="Path 2413" d="M1,108.69H19.29V112H4.67v7.63h9.66v3.2H4.67v10.75H1Z" transform="translate(0 0)" style="fill: #fff"></path>
-        <path id="a28b4785-9fc2-4267-9db2-c072a3a4068c" data-name="Path 2414" d="M36,133.92a12.39,12.39,0,1,1,.29,0Zm0-22.17a9.37,9.37,0,1,0,9.15,9.58,1.48,1.48,0,0,0,0-.21,9.09,9.09,0,0,0-8.8-9.37Z" transform="translate(0 0)" style="fill: #fff"></path>
-        <path id="aa8cac91-6564-4df5-b675-0c7520d3df19" data-name="Path 2415" d="M55.74,108.69H67c4.94,0,8.27,3,8.27,7.35a7,7,0,0,1-5.11,6.81l5.54,10.68H71.6l-5.14-10.18h-7v10.18H55.74ZM59.47,112v8.3H66.7c2.91,0,4.83-1.67,4.83-4.15S69.61,112,66.7,112Z" transform="translate(0 0)" style="fill: #fff"></path>
-        <path id="b70b1e56-cb3e-4d73-b2e2-434f2dea8ddf" data-name="Path 2416" d="M90.31,108.69h21.18V112h-8.73v21.53H99V112H90.31Z" transform="translate(0 0)" style="fill: #fff"></path>
-        <path id="aae59967-f984-457d-84fb-77e84bdf20f3" data-name="Path 2417" d="M117.45,108.69h3.73v10.65h13.2V108.69h3.72v24.84h-3.72V122.72h-13.2v10.82h-3.73Z" transform="translate(0 0)" style="fill: #fff"></path>
-        <path id="ab68c96f-9c05-4056-9dcf-f3b5258c4ebc" data-name="Path 2418" d="M146,108.69h18.31V112H149.75v7.45h9.57v3.19h-9.57v7.67h14.72v3.26H146Z" transform="translate(0 0)" style="fill: #fff"></path>
-      </g>
-    </g>
-  </g>
-</svg>
-                        <p class="font-size-16">What are the farmers of tomorrow doing with open tools and principles today?</p>
-                        <p class="font-weight-bold mt-1"><a href="https://www.redhat.com/en/open-source-stories/farming-for-the-future">Watch the film <i class="fa fa-play-circle font-size-20" aria-hidden="true"></i></a></p>
-                    </div>
-                </div>
-      
-
-</article>
-
-            </div>
-
-            <div class="col-sm-8 col-md-4 mb-3 mb-md-0 d-flex">
-                <!-- Collective discovery -->
-                <article role="article" class="node-shared">
-
-  
-    
-
-  
-  
-                            <div class="card card-half-slide h-100" data-bg-image="https://www.redhat.com/rhdc/managed-files/oss-collective-discovery_0.jpg">
-                    <div class="card-header text-center">
-                        <img src="https://www.redhat.com/rhdc/managed-files/logo_collective-discovery_white.png" alt="Collective discovery" class="img-fluid mb-3">
-                        <p class="font-weight-bold mt-1"><a href="https://www.redhat.com/en/open-source-stories/collective-discovery" class="text-white">Watch the film <i class="fa fa-play-circle font-size-20" aria-hidden="true"></i></a></p>
-                    </div>
-                    <div class="card-body text-center">
-                        <img src="https://www.redhat.com/rhdc/managed-files/logo_collective-discovery_black.png" alt="Collective discovery" class="img-fluid mb-2">
-                        <p class="font-size-16">How are citizen scientists using open hardware to make groundbreaking discoveries?</p>
-                        <p class="font-weight-bold mt-1"><a href="https://www.redhat.com/en/open-source-stories/collective-discovery">Watch the film <i class="fa fa-play-circle font-size-20" aria-hidden="true"></i></a></p>
-                    </div>
-                </div>
-      
-
-</article>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- Newsletter -->
-<article role="article" class="node-shared">
-
-  
-    
-
-  
-  
-            <!-- Newsletter -->
-<section class="dms-band pt-4 bg-black-film-20">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-6 col-xl-5 mb-4 mb-lg-0 text-white">
-                <img class="img-fluid mb-3" src="https://www.redhat.com/rhdc/managed-files/OSS-logo-white-horizontal.svg" width="248" alt="Open Source Stories logo">
-
-                <h2>What's the next story?</h2>
-
-                <p>Open Source Stories, an original series from Red Hat, celebrates the innovators who bring the power of open source to everything people do.</p>
-
-                <a class="btn btn-primary mt-1" href="https://www.redhat.com/en/engage/opensource-newsletter-signup-e-201901291258?sc_cid=70160000000wxWUAAY" title="Get the newsletter">Get the newsletter</a>
-            </div>
-
-            <div class="col-12 col-lg-6 offset-xl-1">
-                <div class="card mb-0 bg-white rounded-0">
-                    <div class="card-body p-2 p-md-4">
-                        <h2 class="text-red">We're committed to the open source&nbsp;way</h2>
-
-                        <p>Learn more about open source. Understand our community-to-enterprise development model. Discover The Open Organization.</p>
-
-                        <a class="btn btn-link" href="https://www.redhat.com/en/about/open-source" title="Find out more">Find out more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-      
-
-</article>
-
-
-<!-- universal footer -->
-<article role="article" class="node-shared">
-
-  
-    
-
-  
-  
-            <section class="rc-footer-traditional">
-      <div class="container rc-footer-traditional-container">
-        <section class="rc-footer-traditional-section">
-          <div class="rc-footer-traditional-logo">
-            <div class="row">
-              <a href="https://www.redhat.com/">
-                <img src="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo.svg" class="screen" title="Red Hat">
-                </a>
-            </div>
+              </div>
+            </section>
+
+            <section class="dms-band position-relative py-0">
+              <div class="container">
+                <h2 class="text-white mb-5">
+                  See what's new from Open Source Stories
+                </h2>
+              </div>
+            </section>
           </div>
-          <div id="legal" class="rc-footer-traditional-legal">
-            <div class="row">
-              <div class="copyright">Copyright ©2021 Red Hat, Inc.</div>
-              <div>
-                <ul class="menu"><li class="first leaf"><a href="https://www.redhat.com/en/about/privacy-policy">Privacy statement</a></li>
-<li class="leaf"><a href="https://www.redhat.com/en/about/terms-use">Terms of use</a></li>
-<li class="leaf"><a href="https://www.redhat.com/en/about/all-policies-guidelines">All policies and guidelines</a></li>
-<li class="last leaf"><span id="teconsent" class="nolink">|</span></li>
-</ul>              </div>
-            </div>
+
+          <section class="dms-band position-relative pt-0 z-9">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-sm-8 col-md-4 mb-3 mb-md-0 d-flex">
+                  <!-- OpenStax -->
+                  <article role="article" class="node-shared">
+                    <div
+                      class="card card-half-slide"
+                      data-bg-image="/rhdc/managed-files/bg_openstax-card.jpg"
+                    >
+                      <div class="card-header text-white text-center">
+                        <!-- <p class="mb-0">Trailer</p> -->
+                        <h2>Cracking the Textbook</h2>
+
+                        <p class="mt-3">
+                          <a
+                            href="https://www.redhat.com/en/open-source-stories/cracking-the-textbook"
+                            class="text-white"
+                            title=""
+                            >Watch the film
+                            <i
+                              class="fa fa-play-circle font-size-20"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                        </p>
                       </div>
-          <div class="rc-footer-traditional-event-logo">
-            <div id="block-block-5" class="block block-block block-footer-promote">
 
-      
-  <a href="https://www.redhat.com/en/summit"><img src="https://www.redhat.com/rhdc/managed-files/Logo-Red_Hat-Summit-A-Standard-RGB-02_0.svg" alt="Red Hat Summit" style="float: right;" width="72px"></a>
+                      <div class="card-body text-center">
+                        <p class="mb-0"></p>
+                        <h2>Cracking the Textbook</h2>
 
-</div>
-          </div>
-        </section>
-      </div>
-    </section>
+                        <p class="mt-1 font-size-14">
+                          College is hard. Costly course materials make it
+                          harder. Meet the scholars and students using open
+                          source to ease the strain.
+                        </p>
 
-<script type="text/javascript" src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"></script>
-<div id="consent_blackbar" style="position: fixed;bottom: 0;width: 100%;z-index: 5;padding: 10px;"></div>
-      
+                        <p class="mt-3">
+                          <a
+                            href="https://www.redhat.com/en/open-source-stories/cracking-the-textbook"
+                            title="Watch Openstax"
+                            >Watch the film
+                            <i
+                              class="fa fa-play-circle font-size-20"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
 
-</article>
+                <div class="col-sm-8 col-md-4 mb-3 mb-md-0 d-flex">
+                  <!-- Making Robots Boring -->
+                  <article role="article" class="node-shared">
+                    <div
+                      class="card card-half-slide"
+                      data-bg-image="/rhdc/managed-files/bg_making-robots-boring-card.jpg"
+                    >
+                      <div class="card-header text-white text-center">
+                        <img
+                          src="https://www.redhat.com/rhdc/managed-files/logo_common-connections_text-white.svg"
+                          alt="Common Connections logo"
+                          class="img-fluid"
+                          width="250"
+                        />
 
-  </div>
+                        <p class="mt-3">
+                          <a
+                            class="text-white"
+                            href="https://www.redhat.com/en/open-source-stories/common-connections/making-robots-boring"
+                            title="Watch Making Robots Boring"
+                            >Watch the conversation
+                            <i
+                              class="fa fa-play-circle font-size-20"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                        </p>
+                      </div>
 
-</article>
+                      <div class="card-body text-center">
+                        <p class="mb-0">Common Connections</p>
+                        <h2>Making Robots Boring</h2>
 
+                        <p class="mt-1 font-size-14">
+                          Leila Takayama and Chris Nicholson share why robots
+                          must master the mundane to meet their potential.
+                        </p>
 
-<footer class="rhb-region__footer"><div class="rhb-footer"></div></footer>
-  </div>
+                        <p class="mt-3">
+                          <a
+                            href="https://www.redhat.com/en/open-source-stories/common-connections/making-robots-boring"
+                            title="Watch Making Robots Boring"
+                            >Watch the conversation
+                            <i
+                              class="fa fa-play-circle font-size-20"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
 
-    <script type="text/javascript" src="https://www.redhat.com/ux/webdms/js/vendors/jquery.waypoints.min.js"></script>
-<script type="text/javascript" src="https://www.redhat.com/ux/webdms/js/scripts.min.js"></script>
-<script type="text/javascript" src="https://www.redhat.com/ux/webdms/js/projects/oss-hub.min.js"></script>
-<script id="rhdc_analytics_get_bottom_eddl_js" type="text/javascript">!function(a){"use strict";a.appEventData=a.appEventData||[],appEventData.push({event:"Page Load Completed"})}(window);</script>
-<script type="text/javascript">if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {_satellite.pageBottom();}</script>
+                <div class="col-sm-8 col-md-4 mb-3 mb-md-0 d-flex">
+                  <!-- Open Herdware -->
+                  <article role="article" class="node-shared">
+                    <div
+                      class="card card-half-slide"
+                      data-bg-image="/rhdc/managed-files/bg_open-herdware-card.jpg"
+                    >
+                      <div class="card-header text-white text-center">
+                        <p class="mb-1">Starting Small</p>
+                        <h2>Open Herdware</h2>
 
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"en\/","currentPath":"node\/159561","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","user":{"uid":0,"permissionsHash":"925c93e5e058a38840206e2faeb20be77d5863a368189af16a0faa928225c714"}}</script>
+                        <p class="mt-3">
+                          <a
+                            href="https://www.redhat.com/en/open-source-stories/starting-small-open-data/open-herdware"
+                            class="text-white"
+                            title="Watch Open Herdware"
+                            >Watch the film
+                            <i
+                              class="fa fa-play-circle font-size-20"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                        </p>
+                      </div>
 
-  <script type="text/javascript"  src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"></script></body>
+                      <div class="card-body text-center">
+                        <p class="mb-0">Starting Small</p>
+                        <h2>Open Herdware</h2>
 
-<!-- Mirrored from www.redhat.com/en/open-source-stories by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:37:15 GMT -->
+                        <p class="mt-1 font-size-14">
+                          See how a rancher and a coder are using open source
+                          tools to make grazing in Patagonia more sustainable.
+                        </p>
+
+                        <p class="mt-3">
+                          <a
+                            href="https://www.redhat.com/en/open-source-stories/starting-small-open-data/open-herdware"
+                            title="Watch Open Herdware"
+                            >Watch the film
+                            <i
+                              class="fa fa-play-circle font-size-20"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="dms-band pt-0">
+            <div class="container">
+              <div
+                class="
+                  row
+                  align-items-center
+                  justify-content-around
+                  bg-gray-900
+                  text-white
+                  p-4
+                "
+              >
+                <div class="col-md-6 col-lg-8">
+                  <h3>Follow your curiosity</h3>
+                  <p>
+                    Open Source Stories showcases people who dare to create
+                    things out in the open for all to share and build upon.
+                    These films, articles, talks, and experiences demonstrate
+                    how open source changes every type of human endeavor.
+                  </p>
+                </div>
+                <div class="col-md-6 col-lg-4 text-center">
+                  <a
+                    class="btn btn-primary"
+                    href="https://www.redhat.com/en/engage/opensource-newsletter-signup-e-201901291258"
+                    title="Get the newsletter"
+                    >Sign up for our newsletter</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="dms-band oss-list-view">
+            <div class="container">
+              <h3 class="text-white">Browse stories by topic</h3>
+
+              <ul class="nav nav-pills nav-topic-filter mb-4">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    href="#"
+                    data-filter="robotics"
+                    data-analytics-event="OSS Topic Filter Tab Clicked"
+                    data-analytics-text="AI & robotics"
+                    >AI & robotics</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    data-filter="culture"
+                    data-analytics-event="OSS Topic Filter Tab Clicked"
+                    data-analytics-text="Arts & culture"
+                    >Arts & culture</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    data-filter="education"
+                    data-analytics-event="OSS Topic Filter Tab Clicked"
+                    data-analytics-text="Education"
+                    >Education</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    data-filter="hardware"
+                    data-analytics-event="OSS Topic Filter Tab Clicked"
+                    data-analytics-text="Hardware"
+                    >Hardware</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    data-filter="healthcare"
+                    data-analytics-event="OSS Topic Filter Tab Clicked"
+                    data-analytics-text="Healthcare"
+                    >Healthcare</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    data-filter="sustainability"
+                    data-analytics-event="OSS Topic Filter Tab Clicked"
+                    data-analytics-text="Sustainability"
+                    >Sustainability</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link nav-link--view-all"
+                    href="#"
+                    data-filter="all"
+                    data-analytics-event="OSS Topic Filter Tab Clicked"
+                    data-analytics-text="View all"
+                    >View all</a
+                  >
+                </li>
+              </ul>
+
+              <div class="row text-white">
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    common-connections
+                    healthcare
+                    video
+                    active
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/common-connections/healthcare-made-human"
+                    class="card text-white"
+                    title="Common Connections: Healthcare Made Human"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/rh-oss-cc-ep3_topic-card (1).png"
+                        alt="Trio of transparency advocates discusses"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>Common Connections: Healthcare Made Human</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    common-connections
+                    robotics
+                    video
+                    active
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/common-connections/making-robots-boring"
+                    class="card text-white"
+                    title="Open Source Stories: Making Robots Boring"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_cc-making-robots-boring.jpg"
+                        alt="Video conference between robotics engineers"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>Common Connections: Making Robots Boring</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    common-connections
+                    education
+                    sustainability
+                    video
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/common-connections/creating-the-classroom"
+                    class="card text-white"
+                    title="Open Source Stories: Creating the Classroom"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_cc-creating-the-classroom.jpg"
+                        alt="Teachers in video chat"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>Common Connections: Creating the Classroom</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    hardware
+                    film
+                    sustainability
+                    video
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/starting-small-open-data/open-herdware"
+                    class="card text-white"
+                    title="Open Source Stories: Open Herdware"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_open-herdware.jpg"
+                        alt="Person soldering electronic components"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>Open Herdware</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    film
+                    robotics
+                    video
+                    active
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/robots/breaking-the-wheel"
+                    class="card text-white"
+                    title="Open Source Stories: How To Start a Robot Revolution - Part 1"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_robot-revolution.jpg"
+                        alt="Woman holding photo of robot"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>How to Start a Robot Revolution</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    live-talk
+                    robotics
+                    video
+                    active
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/live-talk-roots-of-robotics"
+                    class="card text-white"
+                    title="Open Source Stories Live: Brian Gerkey"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_talk-open-source-roots-robotics.jpg"
+                        alt="Group photo of robotics engineers"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>The Open Source Roots of Robotics</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    film
+                    culture
+                    hardware
+                    sustainability
+                    video
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/starting-small-open-data"
+                    class="card text-white"
+                    title="Open Source Stories: Starting Small - Open Data in Chile"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_starting-small.jpg"
+                        alt="Building a device"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>Starting Small: Open Data in Chile</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    film
+                    education
+                    hardware
+                    sustainability
+                    video
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/farming-for-the-future/early-adopters"
+                    class="card text-white"
+                    title="Open Source Stories: Early adopters"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_early-adopters.jpg"
+                        alt="Students in classroom working with Raspberry Pi devices"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>Early Adopters: Raspberry Pi in the Classroom</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    film
+                    robotics
+                    hardware
+                    sustainability
+                    video
+                    active
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/farming-for-the-future/food-computer"
+                    class="card text-white"
+                    title="Open Source Stories: Food computer"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_food-computer-60seconds.jpg"
+                        alt="Food computer devices"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>A Food Computer in 60 seconds</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    film
+                    hardware
+                    sustainability
+                    video
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/farming-for-the-future/open-farmer"
+                    class="card text-white"
+                    title="Open Source Stories: Open farmer"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_open-farmer.jpg"
+                        alt="Farmer working with micro device"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>The Open Farmer</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    film
+                    healthcare
+                    education
+                    sustainability
+                    video
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/farming-for-the-future/cultivating-change"
+                    class="card text-white"
+                    title="Open Source Stories: Cultivating change"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_cultivating-change.jpg"
+                        alt="Students and instructors collaborating"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>Cultivating Change</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    live-talk
+                    education
+                    hardware
+                    sustainability
+                    video
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/live-talk-food-computer"
+                    class="card text-white"
+                    title="Open Source Stories: The food computer program"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_talks-food-computer-program.jpg"
+                        alt="Woman speaking about food computer"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>Food Computer Program</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    live-talk
+                    robotics
+                    hardware
+                    video
+                    active
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/live-talk-future-of-hardware"
+                    class="card text-white"
+                    title="Open Source Stories: Open source and the future of hardware"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_talk-open-source-future-of-hardware.jpg"
+                        alt="Man speaking at conference"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>Open Source and the Future of Hardware</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    film
+                    robotics
+                    education
+                    hardware
+                    sustainability
+                    video
+                    active
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/farming-for-the-future"
+                    class="card text-white"
+                    title="Open Source Stories: Farming for the future"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_farming-for-the-future.jpg"
+                        alt="Student with illustrations depicting food computer device"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>Farming for the Future</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    live-talk
+                    education
+                    video
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/live-talk-codenewbie"
+                    class="card text-white"
+                    title="Open Source Stories: CodeNewbie"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_talks-key-to-coding-progress.jpg"
+                        alt="Woman speaking at conference"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>The Key to Coding Progress</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    live-talk
+                    hardware
+                    sustainability
+                    video
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/live-talk-farm-innovation"
+                    class="card text-white"
+                    title="Open Source Stories: A community for farm innovation"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_talks-community-farm-innovation.jpg"
+                        alt="Man speaking at conference"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>A Community for Farm Innovation</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    live-talk
+                    education
+                    video
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/live-talk-futuregirls"
+                    class="card text-white"
+                    title="Open Source Stories: Franklin middle school Futuregirls"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_talks-franklin-middle-school-futuregirls.jpg"
+                        alt="Middle school students on stage at conference"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>Franklin Middle School Futuregirls</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    film
+                    healthcare
+                    education
+                    hardware
+                    sustainability
+                    video
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/collective-discovery"
+                    class="card text-white"
+                    title="Open Source Stories: The Science of Collective Discovery"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_science-of-collective-discovery.jpg"
+                        alt="Map application mock-ups"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>The Science of Collective Discovery</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    article
+                    culture
+                    education
+                    hardware
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/like-rockets"
+                    class="card text-white"
+                    title="Open Source Stories: Like Rockets"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_like-rockets.jpg"
+                        alt="Teacher discussing with students"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>Like Rockets</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    live-talk
+                    culture
+                    education
+                    hardware
+                    video
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/live-talk-jewelbots"
+                    class="card text-white"
+                    title="Open Source Stories: Jewelbots"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_jewelbots-talk.jpg"
+                        alt="Woman and girl presenting at conference"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>Jewelbots</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    live-talk
+                    education
+                    video
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/live-talk-hackerfemo"
+                    class="card text-white"
+                    title="Open Source Stories: HackerFemo"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_talks-lessons-learned-teaching-young-coders.jpg"
+                        alt="Boy speaking at conference"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>Lessons Learned from Teaching Young Coders</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-sm-6 col-md-4 card-wrapper article culture">
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/because-we-had-to"
+                    class="card text-white"
+                    title="Open Source Stories: Because we had to"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_because-we-had-to.jpg"
+                        alt="Woman making painting"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>Because We Had To</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-sm-6 col-md-4 card-wrapper film culture video">
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/art-of-exchange"
+                    class="card text-white"
+                    title="Open Source Stories: Art of Exchange"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_art-of-exchange.jpg"
+                        alt="People in discussion"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>The Art of Exchange</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    live-talk
+                    hardware
+                    video
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/live-talk-oshwa"
+                    class="card text-white"
+                    title="Open Source Stories: Open Source Hardware Association"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_talks-physical-future-of-open-source.jpg"
+                        alt="Woman speaking at conference"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>The Physical Future of Open Source</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    film
+                    robotics
+                    video
+                    active
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/road-to-ai"
+                    class="card text-white"
+                    title="pen Source Stories: Road to A.I."
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_road-to-ai.jpg"
+                        alt="Street view of autonomous driving AI"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>Road to A.I.</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="col-sm-6 col-md-4 card-wrapper article robotics active"
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/ai-revolutionaries"
+                    class="card text-white"
+                    title="Open Source Stories: A.I. Revolutionaries"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_AI-revolutionaries.jpg"
+                        alt="Illustration of laptop and code"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>A.I. Revolutionaries</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-sm-6 col-md-4 card-wrapper film culture video">
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/sparkcon"
+                    class="card text-white"
+                    title="Open Source Stories: SPARKcon"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_SPARKcon.jpg"
+                        alt="Person making sidewalk chalk art"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>SparkCon</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    live-talk
+                    education
+                    video
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/live-talk-girl-develop-it"
+                    class="card text-white"
+                    title="Open Source Stories: Girl Develop It"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_talks-girl-develop-it.jpg"
+                        alt="Woman speaking at conference"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>Girl Develop It</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    live-talk
+                    education
+                    hardware
+                    video
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/live-talk-sparkfun"
+                    class="card text-white"
+                    title="Open Source Stories: Open source hardware sparks innovation"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_talks-open-source-hardware-innovation.jpg"
+                        alt="Man speaking at conference"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>Open Source and Innovation</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    live-talk
+                    robotics
+                    video
+                    active
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/live-talk-inmoov"
+                    class="card text-white"
+                    title="Open Source Stories: InMoov Robots for Good"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_talks-inmoov-robots-for-good.jpg"
+                        alt="Man speaking at conference"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>Inmoov Robots for Good</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="col-sm-6 col-md-4 card-wrapper film healthcare video"
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/open-patient"
+                    class="card text-white"
+                    title="Open Source Stories: The Open Patient"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_open-patient.jpg"
+                        alt="Illustration of DNA and code"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>The Open Patient</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="
+                    col-sm-6 col-md-4
+                    card-wrapper
+                    film
+                    healthcare
+                    hardware
+                    video
+                  "
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/e-nable"
+                    class="card text-white"
+                    title="Open Source Stories: E-nable"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_eNABLE.jpg"
+                        alt="Student showing off her robitics device"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>e-NABLE</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="col-sm-6 col-md-4 card-wrapper film education video"
+                >
+                  <a
+                    href="https://www.redhat.com/en/open-source-stories/penn-manor"
+                    class="card text-white"
+                    title="Open Source Stories: Penn Manor"
+                  >
+                    <div class="card-header p-0">
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/oss-card_penn-manor.jpg"
+                        alt="Overhead view of school busses and students"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-body px-0 pt-1 pb-4">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-7 col-lg-6 col-xl-7 pr-0">
+                          <h4>Penn Manor</h4>
+                        </div>
+                        <div class="col-auto">
+                          <span class="label d-flex align-items-middle"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="dms-band text-white bg-gray-900 pb-12 mx-md-4">
+            <div class="container mb-12">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-md-6 col-lg-5 mb-4 mb-md-0">
+                  <p class="mb-8">
+                    <img
+                      src="https://www.redhat.com/rhdc/managed-files/colab_color.svg"
+                      alt="Co.Lab logo"
+                      class="img-fluid"
+                      width="220"
+                    />
+                  </p>
+
+                  <h2 class="xl">Sparking creativity with STEM kits</h2>
+                  <p>
+                    Co.Lab, presented by Open Source Stories, is an education
+                    experience that encourages students to collaborate and share
+                    ideas using open source principles. Through both guided
+                    <a
+                      href="https://www.redhat.com/en/open-source-stories/colab/workshops"
+                      class="text-blue-light"
+                      title="Co.Lab guided workshops"
+                      >workshops</a
+                    >
+                    and
+                    <a
+                      href="https://www.redhat.com/en/open-source-stories/colab/kits"
+                      class="text-blue-light"
+                      title="Co.Lab do-it-yourself kits"
+                      >do-it-yourself STEM kits</a
+                    >&mdash;all of which were inspired by an Open Source Stories
+                    film, article, or talk—students work together as they build
+                    everything from circuit boards to interactive robots from
+                    scratch.
+                  </p>
+                  <p class="cta-group">
+                    <a
+                      href="https://www.redhat.com/en/open-source-stories/colab"
+                      class="btn btn-primary"
+                      title="The Co.Lab education experience"
+                      >Discover Co.Lab</a
+                    >
+                    <a
+                      href="https://www.redhat.com/en/open-source-stories/colab/kits"
+                      class="btn btn-outline-white"
+                      title="Co.Lab do-it-yourself kits"
+                      >Browse STEM kits</a
+                    >
+                  </p>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="grid grid-7x6">
+                    <div
+                      class="cell-col-1 cell-row-1 cell-width-7 cell-height-6"
+                    >
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/bg_wires-and-connectors_0.svg"
+                        alt="Illustration of wires"
+                        class="img-fluid"
+                      />
+                    </div>
+
+                    <div
+                      class="cell-col-1 cell-row-1 cell-width-5 cell-height-3"
+                    >
+                      <img
+                        src="https://www.redhat.com/rhdc/managed-files/hands-on-colab-project.jpg"
+                        alt="Kids hands working on Co.Lab project"
+                        class="img-fluid"
+                      />
+                    </div>
+
+                    <div
+                      class="cell-col-3 cell-row-3 cell-width-5 cell-height-3"
+                    >
+                      <video
+                        poster="https://www.redhat.com/rhdc/managed-files/colab-farmkit-poster.jpg"
+                        autoplay=""
+                        muted=""
+                        loop=""
+                        width="100%"
+                      >
+                        <source
+                          type="video/mp4"
+                          src="https://videos.cdn.redhat.com/NEXT/co-lab/rh-colab-farmkit_cropped.mp4"
+                        />
+                      </video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="dms-band colab-cards pt-0">
+            <div class="container">
+              <h3 class="text-white">
+                Watch the films that inspired Co.Lab kits
+              </h3>
+
+              <div class="row justify-content-center mt-8">
+                <div class="col-sm-8 col-md-4 mb-3 mb-md-0 d-flex">
+                  <!-- Robot Revolution -->
+                  <article role="article" class="node-shared">
+                    <div
+                      class="card card-half-slide"
+                      data-bg-image="/rhdc/managed-files/oss-robots-cross-promo-scaling_2.jpg"
+                    >
+                      <div class="card-header text-center">
+                        <img
+                          src="https://www.redhat.com/rhdc/managed-files/how-to-start-a-robot-revolution-part-1.svg"
+                          alt="How to start a Robot Revolution"
+                          width="250"
+                          class="img-fluid mb-3"
+                        />
+                        <p class="font-weight-bold mt-1">
+                          <a
+                            href="https://www.redhat.com/en/open-source-stories/how-to-start-a-robot-revolution"
+                            class="text-white"
+                            >Watch the film
+                            <i
+                              class="fa fa-play-circle font-size-20"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                        </p>
+                      </div>
+                      <div class="card-body text-center">
+                        <img
+                          src="https://www.redhat.com/rhdc/managed-files/how-to-start-a-robot-revolution-part-1.svg"
+                          alt="How to start a Robot Revolution"
+                          width="250"
+                          class="svg svg-gray-900 img-fluid mb-2"
+                        />
+                        <p class="font-size-16">
+                          The story of how a group of roboticists turned one
+                          piece of open source software into a global
+                          phenomenon.
+                        </p>
+                        <p class="font-weight-bold mt-1">
+                          <a
+                            href="https://www.redhat.com/en/open-source-stories/how-to-start-a-robot-revolution"
+                            >Watch the film
+                            <i
+                              class="fa fa-play-circle font-size-20"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-sm-8 col-md-4 mb-3 mb-md-0 d-flex">
+                  <!-- Farming for the future -->
+                  <article role="article" class="node-shared">
+                    <div
+                      class="card card-half-slide h-100"
+                      data-bg-image="/rhdc/managed-files/bg_farming-for-future.jpg"
+                    >
+                      <div class="card-header text-center">
+                        <img
+                          src="https://www.redhat.com/rhdc/managed-files/farming-for-the-future.svg"
+                          alt="Farming for the future"
+                          class="img-fluid mb-3"
+                          width="250"
+                        />
+                        <p class="font-weight-bold mt-1">
+                          <a
+                            href="https://www.redhat.com/en/open-source-stories/farming-for-the-future"
+                            class="text-white"
+                            >Watch the film
+                            <i
+                              class="fa fa-play-circle font-size-20"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                        </p>
+                      </div>
+                      <div class="card-body text-center">
+                        <svg
+                          id="b5b0c79f-8bc5-4f7f-a26e-5449bfebe52e"
+                          data-name="Layer 1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="487.5"
+                          height="156.42"
+                          viewBox="0 0 487.5 156.42"
+                          class="img-fluid mb-2 svg svg-gray-900"
+                          style="width: 200px; height: undefinedpx"
+                        >
+                          <title>farming-for-the-future</title>
+                          <g
+                            id="b2ae965d-902c-49f8-bdfd-787622b42a56"
+                            data-name="Group 34"
+                          >
+                            <g
+                              id="b86d18f5-9572-4abb-8fe7-ccf0a499ed6a"
+                              data-name="Group 32"
+                            >
+                              <g
+                                id="ece4e235-7ee1-42d3-ad5b-f49f54d5baea"
+                                data-name="Group 29"
+                              >
+                                <path
+                                  id="e509288e-d6fd-4b52-a556-539433beaf44"
+                                  data-name="Path 2400"
+                                  d="M0,5.56H55.19V20.35H17.07v13H42.48V47.64H17.07V75H0Z"
+                                  transform="translate(0 0)"
+                                  style="fill: #fff"
+                                ></path>
+                                <path
+                                  id="ef8c4aea-1907-4277-b02d-b0c41c624656"
+                                  data-name="Path 2401"
+                                  d="M54.69,59.66c0-10,7.94-15.79,21.64-15.79a48.28,48.28,0,0,1,11.91,1.49V42.78c0-5.26-3.37-7.84-10-7.84-4.17,0-9,1.29-15.88,4.17L56.58,27.3c8.53-3.87,16.47-5.76,24.51-5.76,14.6,0,23,7.25,23,19.85V75H88.24V71.87c-4.27,2.88-8.83,4.07-14.49,4.07C62.53,75.94,54.69,69.28,54.69,59.66Zm23.53,5a19.11,19.11,0,0,0,10-2.48V55.39a37.77,37.77,0,0,0-9.53-1.19c-5.55,0-8.73,1.88-8.73,5.16s3.08,5.26,8.24,5.26Z"
+                                  transform="translate(0 0)"
+                                  style="fill: #fff"
+                                ></path>
+                                <path
+                                  id="e47f4648-8b95-4277-b60a-8be67a6774b8"
+                                  data-name="Path 2402"
+                                  d="M113.65,22.53h16.08v5.26a17.36,17.36,0,0,1,13.8-6.45c3.08.1,4.67.4,6.06,1.29v14A18.48,18.48,0,0,0,141.94,35a14.34,14.34,0,0,0-12.21,6.65V75.05H113.65Z"
+                                  transform="translate(0 0)"
+                                  style="fill: #fff"
+                                ></path>
+                                <path
+                                  id="f6aa374c-f15a-4337-bc63-b69727b6ddc6"
+                                  data-name="Path 2403"
+                                  d="M156.53,22.53h16.08v3.38a20.79,20.79,0,0,1,13.1-4.37,19.25,19.25,0,0,1,15.59,7.25,22.41,22.41,0,0,1,17.07-7.25c11.91,0,20.35,8.73,20.35,21.14V75H222.63V44.87c0-5.76-3.37-9.53-8.53-9.53a10.7,10.7,0,0,0-8.64,4c.1,1.09.2,2.18.2,3.37V75H189.58V44.87c0-5.76-3.37-9.53-8.54-9.53a10.26,10.26,0,0,0-8.43,3.77V75H156.53Z"
+                                  transform="translate(0 0)"
+                                  style="fill: #fff"
+                                ></path>
+                                <path
+                                  id="bae51028-5837-4fc7-b346-55c8f5ae5643"
+                                  data-name="Path 2404"
+                                  d="M247.45,8.83a8.84,8.84,0,1,1,8.83,8.84A8.84,8.84,0,0,1,247.45,8.83ZM264.33,75H248.24V22.53h16.09Z"
+                                  transform="translate(0 0)"
+                                  style="fill: #fff"
+                                ></path>
+                                <path
+                                  id="bc259060-a502-4829-bda0-d0ccb0ea4d2d"
+                                  data-name="Path 2405"
+                                  d="M274.25,22.53h16.08v3.58a22.79,22.79,0,0,1,14.09-4.57c12.31,0,20.95,8.73,20.95,21.14V75H309.29V44.87c0-5.76-3.78-9.53-9.53-9.53a11.6,11.6,0,0,0-9.43,4.17V75H274.25Z"
+                                  transform="translate(0 0)"
+                                  style="fill: #fff"
+                                ></path>
+                                <path
+                                  id="ef445cdc-7742-4856-9789-00cabeadecb8"
+                                  data-name="Path 2406"
+                                  d="M332.51,48.43c0-14.89,12-26.6,27.3-26.6A25.91,25.91,0,0,1,373,25.31V22.53h15.88v52c0,14.19-9.62,22-27.2,22A52.49,52.49,0,0,1,339.26,92l5.36-12.51a38.78,38.78,0,0,0,16.78,4c7.54,0,11.41-3.08,11.41-9.13V71.07a24.07,24.07,0,0,1-13.6,4.17,26.54,26.54,0,0,1-26.7-26.38ZM362,61.74a15.4,15.4,0,0,0,10.82-3.88V39.31a16.47,16.47,0,0,0-10.72-3.88c-7.74,0-13.8,5.66-13.8,13,0,7.55,6,13.31,13.7,13.31Z"
+                                  transform="translate(0 0)"
+                                  style="fill: #fff"
+                                ></path>
+                              </g>
+                              <g
+                                id="bea61462-9209-4c92-a2e6-2ad2ea64d0e7"
+                                data-name="Group 30"
+                              >
+                                <path
+                                  id="a7f5ba90-02b9-4741-a608-652fdd74f83a"
+                                  data-name="Path 2407"
+                                  d="M182.07,88.53h53.16v14.24H198.52v12.52H223v13.77H198.52v26.39H182.07Z"
+                                  transform="translate(0 0)"
+                                  style="fill: #fff"
+                                ></path>
+                                <path
+                                  id="a2c4e6f3-269d-4806-a7bc-db639f1bb35f"
+                                  data-name="Path 2408"
+                                  d="M254,133.94c0,5.54,3.63,9.17,9.18,9.17a11.15,11.15,0,0,0,9.08-4V104.87h15.49v50.58H272.22V152a21.92,21.92,0,0,1-13.57,4.4c-11.86,0-20.18-8.41-20.18-20.36V104.87H254Z"
+                                  transform="translate(0 0)"
+                                  style="fill: #fff"
+                                ></path>
+                                <path
+                                  id="b98be9e2-a95f-4f37-99f6-97d97ec1e9b4"
+                                  data-name="Path 2409"
+                                  d="M304.43,117.78H294.2V104.87h10.23v-13l15.49-3.34v16.34h14.15v12.91H319.92V137c0,4.49,1.72,6.11,6.69,6.11a22.3,22.3,0,0,0,7-1.05v12.53a45.75,45.75,0,0,1-10.8,1.52c-12.14,0-18.35-5.44-18.35-16.06Z"
+                                  transform="translate(0 0)"
+                                  style="fill: #fff"
+                                ></path>
+                                <path
+                                  id="a9e4a335-c22c-4890-84f1-c52238de49b9"
+                                  data-name="Path 2410"
+                                  d="M355.2,133.94c0,5.54,3.63,9.17,9.17,9.17a11.19,11.19,0,0,0,9.09-4V104.87H389v50.58H373.46V152a21.93,21.93,0,0,1-13.58,4.4C348,156.4,339.71,148,339.71,136V104.87H355.2Z"
+                                  transform="translate(0 0)"
+                                  style="fill: #fff"
+                                ></path>
+                                <path
+                                  id="f8c45b1b-fc6d-4be3-91e4-66afe0da05cd"
+                                  data-name="Path 2411"
+                                  d="M398.5,104.87H414v5.07a16.65,16.65,0,0,1,13.28-6.22c3,.1,4.5.38,5.84,1.24v13.48a17.79,17.79,0,0,0-7.36-1.53,13.78,13.78,0,0,0-11.76,6.4v32.13H398.5Z"
+                                  transform="translate(0 0)"
+                                  style="fill: #fff"
+                                ></path>
+                                <path
+                                  id="b3ac9007-ac49-432b-81eb-e6fb8447dc87"
+                                  data-name="Path 2412"
+                                  d="M463.12,156.4c-15.49,0-27.53-11.47-27.53-26.19A26,26,0,0,1,461.34,104H462c14.82,0,25.53,11.67,25.53,27.63v3.82h-36a13.09,13.09,0,0,0,12.43,8c4.2,0,7.74-1.33,10.13-3.82l10.23,9.08A30.49,30.49,0,0,1,463.12,156.4Zm-11.95-31.73H472.3c-1.63-4.88-5.64-8-10.61-8-5.16,0-9,3-10.52,8Z"
+                                  transform="translate(0 0)"
+                                  style="fill: #fff"
+                                ></path>
+                              </g>
+                              <g
+                                id="ba933648-d8f2-46d4-89d5-eb9f313758f9"
+                                data-name="Group 31"
+                              >
+                                <path
+                                  id="bb8d16e6-11d2-42ce-873d-1f4c5e3dc97c"
+                                  data-name="Path 2413"
+                                  d="M1,108.69H19.29V112H4.67v7.63h9.66v3.2H4.67v10.75H1Z"
+                                  transform="translate(0 0)"
+                                  style="fill: #fff"
+                                ></path>
+                                <path
+                                  id="a28b4785-9fc2-4267-9db2-c072a3a4068c"
+                                  data-name="Path 2414"
+                                  d="M36,133.92a12.39,12.39,0,1,1,.29,0Zm0-22.17a9.37,9.37,0,1,0,9.15,9.58,1.48,1.48,0,0,0,0-.21,9.09,9.09,0,0,0-8.8-9.37Z"
+                                  transform="translate(0 0)"
+                                  style="fill: #fff"
+                                ></path>
+                                <path
+                                  id="aa8cac91-6564-4df5-b675-0c7520d3df19"
+                                  data-name="Path 2415"
+                                  d="M55.74,108.69H67c4.94,0,8.27,3,8.27,7.35a7,7,0,0,1-5.11,6.81l5.54,10.68H71.6l-5.14-10.18h-7v10.18H55.74ZM59.47,112v8.3H66.7c2.91,0,4.83-1.67,4.83-4.15S69.61,112,66.7,112Z"
+                                  transform="translate(0 0)"
+                                  style="fill: #fff"
+                                ></path>
+                                <path
+                                  id="b70b1e56-cb3e-4d73-b2e2-434f2dea8ddf"
+                                  data-name="Path 2416"
+                                  d="M90.31,108.69h21.18V112h-8.73v21.53H99V112H90.31Z"
+                                  transform="translate(0 0)"
+                                  style="fill: #fff"
+                                ></path>
+                                <path
+                                  id="aae59967-f984-457d-84fb-77e84bdf20f3"
+                                  data-name="Path 2417"
+                                  d="M117.45,108.69h3.73v10.65h13.2V108.69h3.72v24.84h-3.72V122.72h-13.2v10.82h-3.73Z"
+                                  transform="translate(0 0)"
+                                  style="fill: #fff"
+                                ></path>
+                                <path
+                                  id="ab68c96f-9c05-4056-9dcf-f3b5258c4ebc"
+                                  data-name="Path 2418"
+                                  d="M146,108.69h18.31V112H149.75v7.45h9.57v3.19h-9.57v7.67h14.72v3.26H146Z"
+                                  transform="translate(0 0)"
+                                  style="fill: #fff"
+                                ></path>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                        <p class="font-size-16">
+                          What are the farmers of tomorrow doing with open tools
+                          and principles today?
+                        </p>
+                        <p class="font-weight-bold mt-1">
+                          <a
+                            href="https://www.redhat.com/en/open-source-stories/farming-for-the-future"
+                            >Watch the film
+                            <i
+                              class="fa fa-play-circle font-size-20"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-sm-8 col-md-4 mb-3 mb-md-0 d-flex">
+                  <!-- Collective discovery -->
+                  <article role="article" class="node-shared">
+                    <div
+                      class="card card-half-slide h-100"
+                      data-bg-image="https://www.redhat.com/rhdc/managed-files/oss-collective-discovery_0.jpg"
+                    >
+                      <div class="card-header text-center">
+                        <img
+                          src="https://www.redhat.com/rhdc/managed-files/logo_collective-discovery_white.png"
+                          alt="Collective discovery"
+                          class="img-fluid mb-3"
+                        />
+                        <p class="font-weight-bold mt-1">
+                          <a
+                            href="https://www.redhat.com/en/open-source-stories/collective-discovery"
+                            class="text-white"
+                            >Watch the film
+                            <i
+                              class="fa fa-play-circle font-size-20"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                        </p>
+                      </div>
+                      <div class="card-body text-center">
+                        <img
+                          src="https://www.redhat.com/rhdc/managed-files/logo_collective-discovery_black.png"
+                          alt="Collective discovery"
+                          class="img-fluid mb-2"
+                        />
+                        <p class="font-size-16">
+                          How are citizen scientists using open hardware to make
+                          groundbreaking discoveries?
+                        </p>
+                        <p class="font-weight-bold mt-1">
+                          <a
+                            href="https://www.redhat.com/en/open-source-stories/collective-discovery"
+                            >Watch the film
+                            <i
+                              class="fa fa-play-circle font-size-20"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Newsletter -->
+          <article role="article" class="node-shared">
+            <!-- Newsletter -->
+            <section class="dms-band pt-4 bg-black-film-20">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-lg-6 col-xl-5 mb-4 mb-lg-0 text-white">
+                    <img
+                      class="img-fluid mb-3"
+                      src="https://www.redhat.com/rhdc/managed-files/OSS-logo-white-horizontal.svg"
+                      width="248"
+                      alt="Open Source Stories logo"
+                    />
+
+                    <h2>What's the next story?</h2>
+
+                    <p>
+                      Open Source Stories, an original series from Red Hat,
+                      celebrates the innovators who bring the power of open
+                      source to everything people do.
+                    </p>
+
+                    <a
+                      class="btn btn-primary mt-1"
+                      href="https://www.redhat.com/en/engage/opensource-newsletter-signup-e-201901291258?sc_cid=70160000000wxWUAAY"
+                      title="Get the newsletter"
+                      >Get the newsletter</a
+                    >
+                  </div>
+
+                  <div class="col-12 col-lg-6 offset-xl-1">
+                    <div class="card mb-0 bg-white rounded-0">
+                      <div class="card-body p-2 p-md-4">
+                        <h2 class="text-red">
+                          We're committed to the open source&nbsp;way
+                        </h2>
+
+                        <p>
+                          Learn more about open source. Understand our
+                          community-to-enterprise development model. Discover
+                          The Open Organization.
+                        </p>
+
+                        <a
+                          class="btn btn-link"
+                          href="https://www.redhat.com/en/about/open-source"
+                          title="Find out more"
+                          >Find out more</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </article>
+
+          <!-- universal footer -->
+          <article role="article" class="node-shared">
+            <section class="rc-footer-traditional">
+              <div class="container rc-footer-traditional-container">
+                <section class="rc-footer-traditional-section">
+                  <div class="rc-footer-traditional-logo">
+                    <div class="row">
+                      <a href="https://www.redhat.com/">
+                        <img
+                          src="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo.svg"
+                          class="screen"
+                          title="Red Hat"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div id="legal" class="rc-footer-traditional-legal">
+                    <div class="row">
+                      <div class="copyright">Copyright ©2021 Red Hat, Inc.</div>
+                      <div>
+                        <ul class="menu">
+                          <li class="first leaf">
+                            <a
+                              href="https://www.redhat.com/en/about/privacy-policy"
+                              >Privacy statement</a
+                            >
+                          </li>
+                          <li class="leaf">
+                            <a href="https://www.redhat.com/en/about/terms-use"
+                              >Terms of use</a
+                            >
+                          </li>
+                          <li class="leaf">
+                            <a
+                              href="https://www.redhat.com/en/about/all-policies-guidelines"
+                              >All policies and guidelines</a
+                            >
+                          </li>
+                          <li class="last leaf">
+                            <span id="teconsent" class="nolink">|</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rc-footer-traditional-event-logo">
+                    <div
+                      id="block-block-5"
+                      class="block block-block block-footer-promote"
+                    >
+                      <a href="https://www.redhat.com/en/summit"
+                        ><img
+                          src="https://www.redhat.com/rhdc/managed-files/Logo-Red_Hat-Summit-A-Standard-RGB-02_0.svg"
+                          alt="Red Hat Summit"
+                          style="float: right"
+                          width="72px"
+                      /></a>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </section>
+
+            <script
+              type="text/javascript"
+              src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"
+            ></script>
+            <div
+              id="consent_blackbar"
+              style="
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                z-index: 5;
+                padding: 10px;
+              "
+            ></div>
+          </article>
+        </div>
+      </article>
+
+      <footer class="rhb-region__footer"><div class="rhb-footer"></div></footer>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://www.redhat.com/ux/webdms/js/vendors/jquery.waypoints.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.redhat.com/ux/webdms/js/scripts.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.redhat.com/ux/webdms/js/projects/oss-hub.min.js"
+    ></script>
+    <script id="rhdc_analytics_get_bottom_eddl_js" type="text/javascript">
+      !(function (a) {
+        "use strict";
+        (a.appEventData = a.appEventData || []),
+          appEventData.push({ event: "Page Load Completed" });
+      })(window);
+    </script>
+    <script type="text/javascript">
+      if (
+        "undefined" !== typeof _satellite &&
+        "function" === typeof _satellite.pageBottom
+      ) {
+        _satellite.pageBottom();
+      }
+    </script>
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">
+      {
+        "path": {
+          "baseUrl": "\/",
+          "scriptPath": null,
+          "pathPrefix": "en\/",
+          "currentPath": "node\/159561",
+          "currentPathIsAdmin": false,
+          "isFront": false,
+          "currentLanguage": "en"
+        },
+        "pluralDelimiter": "\u0003",
+        "user": {
+          "uid": 0,
+          "permissionsHash": "925c93e5e058a38840206e2faeb20be77d5863a368189af16a0faa928225c714"
+        }
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"
+    ></script>
+  </body>
+
+  <!-- Mirrored from www.redhat.com/en/open-source-stories by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:37:15 GMT -->
 </html>
