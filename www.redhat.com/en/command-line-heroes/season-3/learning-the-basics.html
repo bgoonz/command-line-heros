@@ -1,0 +1,2239 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  
+<!-- Mirrored from www.redhat.com/en/command-line-heroes/season-3/learning-the-basics by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:27:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!--[if IE]><![endif]-->
+<script id="trustarc" type="text/javascript" src="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"></script>
+<script id="ddo" type="text/javascript">
+<!--//--><![CDATA[//><!--
+    var digitalData = {"cart":[],"event":[],"listing":{"browseFilter":"","query":"","queryMethod":"","refinementType":"","refinementValue":"","resultCount":"","searchType":""},"page":{"attributes":{"queryParameters":"","referringSearchEngine":"","analyticsTitle":"brand affinity | command line heroes season 3 episode 2","taxonomyPageSubType":["28051"],"taxonomyRegion":["4521"],"taxonomyMetaHreflang":["29051"]},"category":{"contentType":"","keyPage":"false","keyPageType":"","pageType":"pattern_template","primaryCategory":"command-line-heroes","subCategories":["season-3","learning-the-basics"]},"pageInfo":{"cms":"RH CMS 2021.12.0","contentFindingMethod":"","contentID":"368711","contentPortal":"","destinationURL":"https:\/\/www.redhat.com\/en\/command-line-heroes\/season-3\/learning-the-basics","errorMessage":"","errorType":"","language":"en","pageName":"","referringDomain":"","referringURL":"","sysEnv":"","template":"","title":"Command Line Heroes: Season 3: Learning the BASICs"}},"product":[],"user":[{"profile":[{"profileInfo":{"daysSinceLastPurchase":"","demandbaseSID":"","eloquaGUID":"","lastLoginDate":"","lastPurchaseDate":"","loggedIn":"false","profileID":"","subscriptionFrequency":"","subscriptionLevel":""}}]}]};
+    !function(a,b,c){"use strict";function d(a){var c="; "+b.cookie,d=c.split("; "+a+"=");if(2===d.length)return d.pop().split(";").shift()}if(b.referrer){var e=b.createElement("a");e.href=b.referrer,c.page.pageInfo.referringDomain=e.hostname,c.page.pageInfo.referringURL=e.href}c.page.pageInfo.sysEnv=a.innerWidth<=768?"tablet":"desktop";var f=c.user[0].profile[0].profileInfo,g=d("rh_elqCustomerGUID");g&&(f.eloquaGUID=g);var h=d("rh_user");if(h){var i=h.split("\\|");i[0]&&(f.loggedIn="true")}var j=d("s_dmdbase");j&&(f.demandbaseSID=j)}(window,document,digitalData);
+//--><!]]>
+</script>
+<script src="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm.js" data-domain="www.redhat.com"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-functional.js" class="trustecm" data-tracker-type="functional"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-advertising.js" class="trustecm" data-tracker-type="advertising"></script><script id="dpal" type="text/javascript" src="../../../dtm.js"></script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="en" />
+<link href="learning-the-basics.html" rel="alternate" hreflang="en" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "availableLanguages": {
+        "zh": {
+            "@type": "Language",
+            "name": "简体中文",
+            "href": "/zh/command-line-heroes/season-3/learning-the-basics"
+        },
+        "en": {
+            "@type": "Language",
+            "name": "English",
+            "href": "/en/command-line-heroes/season-3/learning-the-basics",
+            "current_lang": true
+        },
+        "fr": {
+            "@type": "Language",
+            "name": "Français",
+            "href": "/fr/command-line-heroes/season-3/learning-the-basics"
+        },
+        "de": {
+            "@type": "Language",
+            "name": "Deutsch",
+            "href": "/de/command-line-heroes/season-3/learning-the-basics"
+        },
+        "it": {
+            "@type": "Language",
+            "name": "Italiano",
+            "href": "/it/command-line-heroes/season-3/learning-the-basics"
+        },
+        "ja": {
+            "@type": "Language",
+            "name": "日本語",
+            "href": "/ja/command-line-heroes/season-3/learning-the-basics"
+        },
+        "ko": {
+            "@type": "Language",
+            "name": "한국어",
+            "href": "/ko/command-line-heroes/season-3/learning-the-basics"
+        },
+        "pt-br": {
+            "@type": "Language",
+            "name": "Português",
+            "href": "/pt-br/command-line-heroes/season-3/learning-the-basics"
+        },
+        "es": {
+            "@type": "Language",
+            "name": "Español",
+            "href": "/es/command-line-heroes/season-3/learning-the-basics"
+        }
+    }
+}</script><meta name="last-publish-date" content="Tue, 25 Jun 2019 04:00:00 GMT" />
+<meta name="node-type" content="pattern_template" />
+<meta name="source" content="rhdc_drupal" />
+<meta name="rhdc_key" content="9d15a50e3f84c34dde97f22e2d04d240" />
+<meta name="taxonomy-region" content="Global" />
+<meta name="taxonomy-region-tid" content="4521" />
+<meta name="taxonomy-page-sub-type" content="Brand affinity" />
+<meta name="taxonomy-page-sub-type-tid" content="28051" />
+<meta name="taxonomy-meta-hreflang" content="en" />
+<meta name="taxonomy-meta-hreflang-tid" content="29051" />
+<link rel="shortcut icon" href="https://www.redhat.com/misc/favicon.ico" type="image/x-icon" />
+<meta property="og:description" content="Becoming a programmer used to require a PhD and having access to some serious hardware. Then, in 1965, a couple of engineers had a radical idea: make it easier for people to get started." />
+<meta name="description" content="Becoming a programmer used to require a PhD and having access to some serious hardware. Then, in 1965, a couple of engineers had a radical idea: make it easier for people to get started." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="image_src" href="../../../cms/managed-files/og-clh-s3-1200x675.png" />
+<link rel="canonical" href="learning-the-basics.html" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.redhat.com/en/command-line-heroes/season-3/learning-the-basics" />
+<meta property="og:title" content="Command Line Heroes: Season 3: Learning the BASICs" />
+<meta property="og:image" content="https://www.redhat.com/cms/managed-files/og-clh-s3-1200x675.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Command Line Heroes: Season 3: Learning the BASICs" />
+<meta name="twitter:image" content="https://www.redhat.com/cms/managed-files/og-clh-s3-1200x675.png" />
+    <title>Command Line Heroes: Season 3: Learning the BASICs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://static.redhat.com/">
+    <link rel="preload" href="https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/fonts/web_icon/rh-web-iconfont.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatTextVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatDisplayVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__k9aoxkMyjUtSX9AXGCPExPgTYjM0Xv5OYNfbFGDRafY__N9sjJtGj85lXtvOptw2e_YZ01FXbTXcJywP8EaKBijU__uaCwYofnUZLAnB7x3Q6WyVKH" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/all/libraries/webrh/dist/css/webrh.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__cxslYvmVeKFG0RwKl9kcXSrmb2x2VtvkIw-OLkwF8jU___pPNjqO-hMXRnx5HlJupeXtrvaj0Ilhs-XAVxMYy0CM__uaCwYofnUZLAnB7x3Q6WyVKH" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__wpajrf8pWA19ifT2xQXPB3J1TByoCXqZVtt6kXfl4Ow__PFQbFxxWsZl0yTnfrpPiA-o5Pvtu-CXh7nICx08JW0c__uaCwYofnUZLAnB7x3Q6WyVKH" media="print" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/css/trustecm.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/redhat-theme/6/advanced-theme.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/red-hat-font.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/font-awesome/4.7.0/css/font-awesome.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/vendors/plyr.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/styles.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/projects/clh-s3-episodes.min6eda.css?qy3uiv" media="all" />
+    <!--[if lt IE 9]>
+      <script src="/profiles/rh/themes/redhatdotcom/js/selectivizr-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/nwmatcher-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/respond.js" type="text/javascript"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../../../sites/default/files/advagg_js/js__B6wED6l5P_XUdxVmb7Nvh5d9zn074QukFqJa2HLXS6c__VzWs8XZBHHsPW77egi-W-FQw2mAEr5F-GgCJU0wn3Nc__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.vendor.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.webcomponents.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__pDOiYGKaYbdKNp1gvMxR0fWhWZnfUemYDUhADyCn3oM__jCrCuWCJIPYPe1FzZoUvsJWEjkNMmRIQHYek1h7idBE__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.rh = window.rh || {}; window.rh.drupalTrustArcLoaded = true;
+//--><!]]>
+</script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__5nUyGFdhKMGscC9VhukG-UTAhz8BEdhsa8koVlLwAyQ__Lz8gDLbd5fTco1AnHaCqhSeYJB5o0QUXAimK7JOyRNI__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"redhatdotcom","theme_token":"zxcPljxVLrz6yMdUdpufhE14ChPtr1vklnT6LDN5w64","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.webcomponents.min.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.min.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/marketing\/latest\/trustarc\/trustecm\/css\/trustecm.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-theme\/6\/advanced-theme.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-font\/4\/webfonts\/red-hat-font.min.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-iconfont.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-web-iconfont.css":1,"sites\/all\/libraries\/patternfly-elements\/pfe-styles\/pfe-typography-classes.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/site-switcher.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/chrome.css":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/print.css":1,"\/\/static.redhat.com\/libs\/font-awesome\/4.7.0\/css\/font-awesome.min.css?qy3uiv":1,"\/ux\/webdms\/css\/vendors\/plyr.min.css?qy3uiv":1,"\/ux\/webdms\/css\/styles.min.css?qy3uiv":1,"\/ux\/webdms\/css\/projects\/clh-s3-episodes.min.css?qy3uiv":1},"js":{"\/ux\/webdms\/js\/vendors\/jquery.waypoints.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/plyr.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/viewport.min.js?qy3uiv":1,"\/ux\/webdms\/js\/scripts.min.js?qy3uiv":1,"\/ux\/webdms\/js\/projects\/clh.min.js?qy3uiv":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/rh\/modules\/redhat_www_ddo\/dist\/post-jquery.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.vendor.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.webcomponents.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"profiles\/rh\/modules\/redhat_www_menu\/js\/rh_nav.js":1,"profiles\/rh\/modules\/redhat_www_share\/js\/rh_share.js":1,"profiles\/rh\/modules\/redhat_www_utility\/js\/redhat_www_utility.js":1,"sites\/all\/libraries\/jquery-cookie\/jquery.cookie-1.4.1.min.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.pushmenu.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery-scrolltofixed.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/rh-chrome.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.fitvids.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.switchIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.viewport\/jquery.viewport.min.js":1}},"redhat_www_menu":{"path":"node\/368711"},"rh_analytics_enabled":false});
+//--><!]]>
+</script>
+    <noscript>
+        <link href="../../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.noscript.min.css" rel="stylesheet" >
+    </noscript>
+  </head>
+  <body unresolved class="bands-index html not-front not-logged-in no-sidebars page-node page-node- page-node-368711 node-type-pattern-template i18n-en clh-s3e2 bg-purple-dark " >
+    <div class="page">
+            <!-- Legacy migrated page support with body.migrated-page-hero -->
+<div class="header-background-image fts-migrated-bg">
+</div>
+
+  <div id="main-content">
+                      <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+      
+  <article class="node-368711 node node-pattern-template clearfix">
+
+  
+    <!-- Pattern | raw_html -->
+
+<article class="node-shared">
+      <header id="top" class="dms-band clh-nav-top py-2">
+    <div class="container text-white">
+        <div class="row d-flex align-items-center">
+            <div class="col-6">
+                <a href="../../command-line-heroes.html" title="Command Line Heroes">
+                    <img class="img-fluid svg svg-white" src="https://www.redhat.com/cms/managed-files/logo-command-line-heroes.svg" width="166" height="42" alt="Command Line Heroes logo">
+                </a>
+            </div>
+
+            <div class="col-6 clh-nav-toggle-wrapper">
+                <span class="text-monospace text-right font-size-16 d-inline-block">Subscribe<br/>& more</span>
+
+                <a href="#" class="btn btn-toggle" data-toggle="nav-shelf">
+                    <div class="d-inline-block">
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="dms-band clh-nav-shelf text-white py-0">
+    <div class="nav-container pb-4">
+        <div id="CLHNav" class="accordion">
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-subscribe.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSubscribe">
+                    <p>Subscribe</p>
+                </button>
+                <div id="clhSubscribe" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <p>Subscribe to the podcast to receive new episodes as soon as we release them</p>
+                    <div class="row pb-2">
+                        <div class="col-6 mb-2">
+                            <a href="http://geo.itunes.apple.com/podcast/us/id1319947289?mt=2&amp;at=1010lbVy&amp;ct=redhatclh_website" target="_blank" title="Listen on Apple Podcasts">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-apple.png" alt="Listen on Apple Podcasts">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://www.google.com/podcasts?feed=aHR0cHM6Ly9mZWVkcy5wYWNpZmljLWNvbnRlbnQuY29tL2NvbW1hbmRsaW5laGVyb2Vz" target="_blank" title="Listen on Google Podcasts">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-google.png" alt="Listen on Google Podcasts">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://www.stitcher.com/s?fid=159833&amp;refid=stpr" target="_blank" title="Listen on Stitcher">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-stitcher.png" alt="Listen on Stitcher">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://open.spotify.com/show/4Jgtgr4mHXNDyLldHkfEMz" target="_blank" title="Listen on Spotify">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-spotify.png" alt="Listen on Spotify">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://feeds.pacific-content.com/commandlineheroes" target="_blank" title="Subscribe via RSS Feed">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-rss.png" alt="Subscribe via RSS Feed">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-about.jpg">
+                <button href="../about.html" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhAbout">
+                    <p>About the podcast</p>
+                </button>
+                <div id="clhAbout" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <p>Discover Red Hat’s original podcast about the people who transform technology from the command line up. Subscribe to our newsletter for commentary from the Command Line Heroes team—and links to take a closer look at the topics we cover.</p>
+                    
+                    <p><a href="../about.html" class="btn btn-primary">Learn about the show</a></p>
+                    <p class="mb-0 pb-4"><a href="https://www.redhat.com/forms/?config=19411" class="btn btn-outline-white">Get the newsletter</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s1.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason1">
+                    <p>Season 1</p>
+                </button>
+                <div id="clhSeason1" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-1/os-wars-part-1.html" title="OS Wars_Part 1">OS Wars_part 1</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/os-wars-part-2-rise-of-linux.html" title="OS Wars_Part 2">OS Wars_part 2</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/agile-revolution.html" title="The Agile_Revolution">The Agile_Revolution</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/devops-tear-down-that-wall.html" title="DevOps_Tear Down That Wall">DevOps_Tear Down That Wall</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/the-containers-derby.html" title="The Containers_Derby">The Containers_Derby</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/crack-the-cloud-open.html" title="Crack the Cloud_Open">Crack the Cloud_Open</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/days-of-future-open.html" title="Days of Future_Open">Days of Future_Open</a>
+                        </li>
+                    </ol>
+                  <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-1.html" title="Explore season 1">Explore Season 1</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s2.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason2">
+                    <p>Season 2</p>
+                </button>
+                <div id="clhSeason2" class="accordion-panel collapse" data-parent="#CLHNav">
+
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-2/press-start.html" title="Press Start">Press Start</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/hello-world.html" title="Hello, World">Hello, World</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/ready-to-commit.html" title="Ready to Commit">Ready to Commit</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/fail-better.html" title="Fail Better">Fail Better</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/the-one-about-devsecops.html" title="The One About DevSecOps">The One About DevSecOps</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/the-data-explosion.html" title="The Data Explosion">The Data Explosion</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/at-your-serverless.html" title="At Your Serverless">At Your Serverless</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/open-curiosity.html" title="Open Curiosity">Open Curiosity</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/developer-advocacy-roundtable.html" title="Bonus_Developer Advocacy Roundtable">Bonus_Developer Advocacy Roundtable</a>
+                        </li>
+                    </ol>
+                   <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-2.html" title="Explore season 2">Explore Season 2</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s3.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason3">
+                    <p>Season 3</p>
+                </button>
+                <div id="clhSeason3" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="pythons-tale.html" title="Python's Tale">Python's Tale</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="learning-the-basics.html" title="Learning the BASICs">Learning the BASICs</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="creating-javascript.html" title="Creating JavaScript">Creating JavaScript</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="diving-for-perl.html" title="Diving for Perl">Diving for Perl</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="the-infrastructure-effect.html" title="The Infrastructure Effect">The Infrastructure Effect</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="heroes-in-a-bash-shell.html" title="Heroes in a Bash Shell">Heroes in a Bash Shell</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="talking-to-machines.html" title="Talking to Machines">Talking to Machines</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="the-c-change.html" title="The C Change">The C Change</a>
+                        </li>
+                    </ol>
+                   <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-3.html" title="Explore season 3">Explore Season 3</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s4.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason4">
+                    <p>Season 4</p>
+                </button>
+                <div id="clhSeason4" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-4/minicomputers.html" title="Minicomputers">Minicomputers</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-4/mainframes.html" title="Mainframes">Mainframes</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/personal-computers.html" title="Personal Computers">Personal Computers</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/floppies.html" title="Floppies">Floppies</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/smarter-phones.html" title="Smarter Phones">Smarter Phones</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/open-source-hardware.html" title="Open Source Hardware">Open Source Hardware</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/consoles.html" title="Consoles">Consoles</a>
+                        </li>
+
+                         <li class="mb-2">
+                            <a href="../season-4/steve-wozniak.html" title="Steve Wozniak">Steve Wozniak</a>
+                        </li>
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-4.html" title="Explore season 4">Explore Season 4</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s5.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason5">
+                    <p>Season 5</p>
+                </button>
+                <div id="clhSeason5" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-5/becoming-a-coder.html" title="Becoming a Coder">Becoming a Coder</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-5/where-coders-code.html" title="Where Coders Code">Where Coders Code</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-5/what-kind-of-coder-will-you-become.html" title="What Kind of Coder Will You Become?">What Kind of Coder Will You Become?</a>
+                        </li>
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-5.html" title="Explore season 5">Explore Season 5</a></p>
+ 
+                </div>
+            </div>
+
+                        <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s6.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason6">
+                    <p>Season 6</p>
+                </button>
+                <div id="clhSeason6" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-6/jerry-lawson.html" title="Jerry Lawson">Jerry Lawson</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/gladys-west.html" title="Dr. Gladys West">Dr. Gladys West</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/mark-dean.html" title="Dr. Mark Dean">Dr. Mark Dean</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/marc-hannah.html" title="Dr. Marc Hannah">Dr. Marc Hannah</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/clarence-ellis.html" title="Dr. Clarence Ellis">Dr. Clarence Ellis</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/roy-clay.html" title="Roy Clay">Roy Clay</a>
+                        </li>
+                       <li class="mb-2">
+                            <a href="../season-6/gladys-perkins.html" title="Gladys Perkins">Gladys Perkins</a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="../season-6/arlan-hamilton.html" title="Arlan Hamilton">Arlan Hamilton</a>
+                        </li>
+            
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link text-monospace text-white" href="../season-6.html" title="Explore season 6">Explore Season 6</a></p>
+                </div>
+            </div>
+
+             <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/season-7_nav.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason7">
+                    <p>Season 7</p>
+                </button>
+                <div id="clhSeason7" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-7/dot-com.html" title="Connecting The Dot-Com">Connecting The Dot-Com</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/nsfnet.html" title="From NSF to ISP">From NSF to ISP</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/html.html" title="A Language for the Web">A Language for the Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/ux.html" title="Web UX Begins">Web UX Begins</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/shopping.html" title="Shopping for the Web">Shopping for the Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/search.html" title="Looking for Search">Looking for Search</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/world.html" title="The World of the World Wide Web">The World of the World Wide Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/bubble.html" title="After the Bubble">After the Bubble</a>
+                        </li>
+
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../../command-line-heroes.html" title="Explore season 5">Explore Season 7</a></p>
+ 
+                </div>
+            </div>
+
+        </div>
+        
+        <ul class="social-list list-inline list-unstyled pl-5 pl-sm-6 mt-1">
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F" target="_blank" title="Facebook" onclick="return !window.open(this.href, 'Facebook', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
+                    <span class="web-icon-facebook" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.twitter.com/share?url=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F&amp;text=An%20original%20podcast%20about%20the%20people%20who%20transform%20technology%20from%20the%20command%20line%20up.%20Presented%20by%20Red%20Hat." target="_blank" title="Twitter" onclick="return !window.open(this.href, 'Twitter', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
+                    <span class="web-icon-twitter" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F&amp;title=Command%20Line%20Heroes&amp;summary=Hear%20the%20epic%20true%20tales%20of%20how%20developers%2C%20programmers%2C%20hackers%2C%20geeks%2C%20and%20open%20source%20rebels%20are%20revolutionizing%20the%20technology%20landscape.%20Command%20Line%20Heroes%20is%20a%20new%20podcast%20hosted%20by%20Saron%20Yitbarek%20and%20produced%20by%20Red%20Hat.&amp;source=Red%20Hat" target="_blank" title="LinkedIn" onclick="return !window.open(this.href, 'LinkedIn', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')" aria-current="page">
+                    <span class="web-icon-linkedin" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="mailto:?subject=Command Line Heroes&body=Hear%20the%20epic%20true%20tales%20of%20how%20developers%2C%20programmers%2C%20hackers%2C%20geeks%2C%20and%20open%20source%20rebels%20are%20revolutionizing%20the%20technology%20landscape.%20Command%20Line%20Heroes%20is%20a%20new%20podcast%20hosted%20by%20Saron%20Yitbarek%20and%20produced%20by%20Red%20Hat. https://www.redhat.com/en/command-line-heroes" target="_blank" title="Email" aria-current="page">
+                    <span class="web-icon-envelope" aria-label="true"></span>
+                </a>
+            </li>
+        </ul>
+
+         <div class="language-switcher position-absolute bottom-0 right-0  w-100">
+            <div class="row justify-content-center mx-0">
+
+                <div class="col-6 text-center border-right border-black border-20 language-inactive">
+                    <a href="http://www.redhat.com/es/command-line-heroes" title="Command Line Heroes"><img class="img-fluid py-2" width="90" src="https://www.redhat.com/cms/managed-files/logo_clh-en-espanol_inactive.svg" alt="CLH en espanol logo"></a></div>
+
+                <div class="col-6 text-center language-active"><a href="../../command-line-heroes.html" title="Command Line Heroes"><img class="img-fluid pt-3 pb-2" width="130" src="https://www.redhat.com/cms/managed-files/logo_CLH_small.svg" alt="CLH logo"></a></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+</div>
+
+
+<div class="mb-6">&nbsp;</div>  
+  </article>
+  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-hero-episode pt-3 pt-lg-0 pb-2 pb-lg-1">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-lg-5 pt-lg-8 pt-xl-11 reveal">
+                <h5 class="section-label mb-1">Season 3, Episode 2</h5>
+
+                <h1>Learning the BASICs</h1>
+
+                <div class="clh-audio">
+                    <audio src="http://chtbl.com/track/247G8/https://dts.podtrac.com/redirect.mp3/cdn.simplecast.com/audio/a88fbe/a88fbe81-5614-4834-8a78-24c287debbe6/7ca8389a-086b-490a-b3c6-62e765ea901c/CLH_S3E2_Learning_the_BASICs_vFINAL_tc.mp3" preload="none" controls></audio>
+                </div>
+
+                <a class="btn btn-link mt-2 mb-0 font-family-monospace text-white" href="#" title="Listen to this episode later" data-toggle="nav-shelf" data-toggle-panel="#clhSubscribe">Listen to this episode later</a>
+            </div>
+
+            <div class="col-12 col-lg-7 pt-4 pt-lg-11 pt-xl-8 d-lg-flex align-items-lg-center justify-content-lg-end text-white text-center text-lg-right reveal">
+                <img class="img-fluid" src="../../../cms/managed-files/img-clh-s3e2-hero_0.gif">
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-tabs-notes pt-0">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <ul class="nav nav-tabs mb-3">
+                    <li class="nav-item">
+                        <a class="tab-show-notes nav-link mx-0 mr-md-4 p-0 font-size-24 text-white active" href="#show-notes" data-toggle="tab" title="Show notes">Show notes</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="tab-transcript nav-link mt-2 mt-md-0 mx-0 p-0 font-size-24 text-white" href="#transcript-tray" data-toggle="tab" title="Transcript">Transcript</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="show-notes" class="tab-pane fade active show">
+                        <div class="row">
+                            <div class="col-12">
+                                <p>Becoming a programmer used to require a PhD and having access to some serious hardware. Then, in 1965, a couple of engineers had a radical idea: make it easier for people to get started.</p>
+
+                                <p>Beginner languages, like BASIC, burst the doors to coding wide open. Tom Cormen and Denise Dumas recall how BASIC changed everything. Avi Flombaum and Saron share tips on picking a first language in this new era of software development. And we hear from Femi Owolade-Coombes and Robyn Bergeron about how the next generation of coders are getting their start with video games.</p>
+
+                                <p>Beginner languages give everyone an opportunity to get their foot in the door. And that helps the industry as a whole.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="transcript-tray" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-12">
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>00:02</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>1965 was a year of massive change in America. The Civil Rights Act was signed.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>00:09</strong> - <em>Archival news</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Congress passes the most sweeping Civil Rights bill ever to be written into the law.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>00:12</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Combat troops were sent to Vietnam for the first time. Men burned their draft cards.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>00:19</strong> - <em>Archival news</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Draft cards on the steps of a Boston courthouse. A group of high school boys set upon them with fists.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>00:25</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The Beatles delivered the world's first stadium concert in New York. But, far from all those headlines, a revolution of a different kind was underway.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>00:39</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>4:00 AM, May 1. Professor John Kemeny and an undergrad student were working at a GE 225 computer at Dartmouth. They ran a program they'd been working on, and then the teletypewriter produced three short lines of output. Those three lines changed computer programming forever.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>01:04</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Welcome to episode 2 of Command Line Heroes, an original podcast from Red Hat. I'm your host, Saron Yitbarek. In this episode, we continue our season-long journey into the history and future of programming languages. In episode 1, we dove into Python, and learned how open source language communities survive major upheavals in their leadership. But this time, we're getting more personal. We're looking at an experience we've all had, the experience of encountering our very first language. We'll take a look at my first language, Ruby, and we'll learn how some first languages come to us in the form of a game.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>01:50</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>But we're beginning with an example that can help us understand what "first languages" really means. It's the language that was born in that Dartmouth laboratory with those three short lines of output. At that pre-dawn meeting in 1965, John Kemeny witnessed the birth of his co-creation, BASIC.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>02:14</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>BASIC. It stands for Beginner's All Purpose Symbolic Instruction Code. That first word, “beginner's,” is where the magic lies. In the early days of programming, you pretty much needed a PhD in order to do a little coding. It was an elite pursuit that required major education, not to mention major hardware. But Professor Kemeny and his team wanted to change all that. What would it look like, they wondered, to produce a programming language that anybody could use? While teenage baby boomers were demanding change all across America, the team at Dartmouth proposed a shakeup of another kind.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>02:57</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Their secret weapon was a room-sized mainframe computer, that GE 225. Weighing in at a healthy 2,000 pounds, it was capable of something brand new. The GE 225 was capable of time-sharing. Suddenly, the complicated system of punch cards, or enormous walls of switches, wasn't necessary anymore. Time-sharing meant that a whole bunch of programs could be executed almost simultaneously, with the machine's attention bouncing between users.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>03:31</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Time-sharing meant that access to computing could expand in amazing new ways. Here's some audio from Dartmouth, featuring one of the undergrad’s studying there when BASIC first appeared. He's John McGeachie, class of '65.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>03:47</strong> - <em>John McGeachie</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We had taken a fairly expensive computer that could only be used by one person at a time, and converted it into something where it wasn't just 30 users who could use it. It was 30 undergraduate students using this computer simultaneously, writing programs, getting answers quickly. It was a combination of immediacy and simplicity that had not previously existed.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>04:15</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>John Kemeny had teamed up with Thomas Kurtz, another evangelist for computer literacy, to develop the BASIC language. They saw how time-sharing democratized things, and knew that the barrier for entry was suddenly so much lower. All that was needed was a language that prioritized simplicity and immediacy. A language like BASIC.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>04:39</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>They developed commands like "hello" and "goodbye" instead of "log on" and "log off." In fact, the first version of BASIC only had 14 simple commands, just easy options like if, then, and go to.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>04:54</strong> - <em>Tom Cormen</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I am Tom Cormen. I'm a professor of computer science at Dartmouth College.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>04:59</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Professor Cormen spoke with us about that beginner's revolution, and how the creation of BASIC really did feel like part of a new zeitgeist, a world where computing was exciting to more people. Even a little bit hip.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>05:14</strong> - <em>Tom Cormen</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>At the time in the 1960s, it's said that the male students would bring their dates there, and I can't really imagine that happening now. But at the time, the computer center was the cool place to be.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>05:24</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>This new interest in computing on campus was the immediate result of that first beginner's language.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>05:31</strong> - <em>Tom Cormen</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>BASIC opened up computing to people who weren't just computer jocks, as we used to say back then. Social scientists who really didn't want to get into the weeds of a language like FORTRAN could use BASIC, and people doing work in the arts and humanities, if they were doing text analysis, or even trying to create art, they could use BASIC for that.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>05:55</strong> - <em>Tom Cormen</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>After a few years, people were doing things like writing computer games, and also incorporating computer graphics routinely into their work.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>06:03</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>All those kids who didn't necessarily see themselves as programmers suddenly got into programming on an almost intuitive level. It reminds me of the kind of world Grace Hopper pushed for. When we talked about Hopper last season, we saw how her language innovations brought programming to a wider circle. This BASIC moment, it was like a continuation of Hopper's dream.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>06:29</strong> - <em>Tom Cormen</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I'm sure Grace Hopper would've liked seeing more people coding. She probably would've liked that BASIC had a different slant from COBOL, and that it just opened things up to people even more and gave them a choice. They could write in COBOL, they could write in FORTRAN, they could write in BASIC, they could write in ALGOL. Any of the popular languages of the time.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>06:54</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Tom Cormen is a professor in Dartmouth's computer science department. A new generation of computer programmers was ushered in thanks to a couple of major changes. Simultaneous work made possible by time-sharing, and a new simple language, BASIC. Those two factors combined to create a game-changing spark. Soon, it wasn't just massive institutions that could get into programming. It was mavericks like Bill Gates and Steve Wozniak. It was also everyday programmers just exploring on their personal computers.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>07:32</strong> - <em>Denise Dumas</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>To be able to interact with a language to get immediate feedback when something was wrong, that made all the difference in the world, because it sucked you in, it kept you going, and the interaction was meaningful, because it was an interaction.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>07:50</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>This is Denise Dumas. She runs the Red Hat® Enterprise Linux® engineering team.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>07:55</strong> - <em>Denise Dumas</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I mean BASIC democratized programming in a big way, because it put it in the hands of students, in the hands of people, in a way that COBOL, FORTRAN, the other languages of the day ... it just wasn't possible. It became really popular at a time when CRTs (cathode ray tubes) became popular, so instead of typing something in and getting it printed on a piece of paper, it displayed on a screen in front of you.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>08:26</strong> - <em>Denise Dumas</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We laugh at command line sometimes now, right? Everything is graphics, but the command line is what there was, and it was such an improvement over what had been. That was huge, just to type something in and get a response. I think that BASIC lowered the bar, and I say this as someone who actually loves assembler, because that's the kind of control freak I am. But I think BASIC made it much more approachable.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>08:59</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The excitement BASIC created in the 1980s lives on today, with a whole fleet of languages that beginners use as shiny red doors into the world of programming. Yet something important has changed, because those entrances don't just show up on university campuses anymore. The way into programming is becoming even more open.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>09:29</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>As amazing as BASIC was, Grace Hopper's dream wasn't going to stop there. Today, beginners have a hundred ways to find their start, and for me, learning a first language meant attending an institution called the Flatiron School in New York City. I prepared for months for that program. I read every single programming resource and tutorial that I possibly could to make sure I got the most out of my bootcamp. I wanted to learn about how people today discover that first language. So, I headed back to interview my old teacher.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>10:03</strong> - <em>Avi Flombaum</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I'm Avi Flombaum.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>10:04</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Avi's one of the founders of the Flatiron School, so it was a treat for me to dig into all these thoughts about first languages, and how our approaches to first languages have changed since the old days of BASIC.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>10:26</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So when you are teaching someone how to code, where do you begin? I remember when I first learned my first programming language, thinking, this is so weird. I was an English major, I really liked math when I was in school. I liked organic chemistry. There were a lot of things that I was really into, a lot of different subjects, but there was nothing I could connect coding to. There was nothing that was a good analogy. It just felt like its own little world, so as a teacher, where do you start?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>10:49</strong> - <em>Avi Flombaum</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I think that anything that is familiar to you in life was once foreign, and experiencing it and wading in its waters and actually spending time with it is what makes you comfortable with it, and it's just a question of reps, and really just time that you put into it. I think what makes programming difficult, and what makes it feel so foreign, is that it is a tremendously particular syntax for expressing something. There's zero ambiguity. There's no margin of error. It either works or it doesn't. When we communicate to each other, we generally don't have that kind of requirement, where everything has to be exactly correct. One comma is off, one parenthesis is missing, and it's all broken.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>11:32</strong> - <em>Avi Flombaum</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I always say that computers are stupid, and we have to just be perfect in order to get them to understand what we mean.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>11:37</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I like that. I like this idea of the machine being the stupid one and me being the smart one. I approve of this. This is great.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>11:43</strong> - <em>Avi Flombaum</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Yeah.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>11:44</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>For me, that first language, the one I cut my teeth on, was Ruby. From experience, I can tell you, it's a pretty sweet first language. When you read the code, it feels like you're reading English. It's got tons of great libraries, and here's a bit of trivia. The creator of Ruby, Yukihiro Matsumoto, he got into programming by learning BASIC.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>12:06</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>These days, a lot of newbies might be tackling Python or JavaScript instead, and I wanted to know whether Avi thought any one language was a better front door than all the others.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>12:18</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I'm wondering, are there preferred starter languages? If someone's coming into this with no tech background, no coding experience, no CS degree, they're kind of starting from absolutely nothing, from square one, square zero even ... Are there preferred languages that are good starting points that have changed over time?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>12:39</strong> - <em>Avi Flombaum</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Well, first, I'll say that everyone comes into it with no background. No one is born a programmer, so whether you formally learned it in a CS program or in your community center or read books and taught yourself, everyone started as a beginner. Then in terms of the preferred beginner language, I think it's really whatever speaks to you first. My advice to beginners is always just pick a language and learn it. Don't change. I think the biggest thing that beginners do is start learning Python, and then get frustrated with it and say, Python sucks, now I'm going to go do JavaScript. Then they learn JavaScript and then they get frustrated with JavaScript and they jump again.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>13:22</strong> - <em>Avi Flombaum</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I personally, as you know, think that Ruby's a great beginner language. I think that its syntax is just really beautiful. Its value explicitly is to make you, the programmer, happy. I don't know any other language that was invented to make a programmer happy. I know a lot of languages are invented to make machines happy, but I think Ruby's really natural.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>13:44</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We can agree on that one. But again, there's no wrong answer here. A first language, after all, is just that. A first. We've all got a whole lifetime of language learning ahead of us, and besides, choosing one language over another isn't going to stop you from becoming the awesome programmer you were destined to be.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>14:05</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I like to draw, but I will not live and die by a particular pen. I don't get all worked up over the pen that I use. I get worked up over the things I create, so from your experience, where does that come from? Where does that need to defend and convince everyone that you are right about a programming language, where does that come from?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>14:23</strong> - <em>Avi Flombaum</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I guess I don't know. The first thing that came into my head, because I loved your metaphor of the pen versus the output ... I just imagine that some of the output is not that great, so the only thing that people can hold onto is the tool.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>14:41</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That's hilarious.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>14:42</strong> - <em>Avi Flombaum</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>If the things you make just aren't awesome and aren't great and don't have a lot of value for the world, and you want to still defend your craft, the only thing you can point to is, yeah, look how well I swung that hammer. Sure. The house fell apart, but that hammer, that hammer's really great and I know how to use it. As someone ... I was also more interested in the things I built than the manner in which I built them.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>15:09</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That's a good point. Now that beginners have more to choose from than just BASIC, or, I don't know, FORTRAN, now that we have a whole menu of first languages, there's always the danger that you forget these languages are still a means to an end. The language is the tool, it's not the thing you're making.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>15:27</strong> - <em>Avi Flombaum</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I think that the value of technology is to create meaningful things for people. Ultimately, if you're a programmer and you're really, really good, but you're building things that no one needs and no one likes and don't ... aren't adding value to the world, but you're really, really good at the craft and just can't find a way to actually make the impact you want, I imagine that you'd probably dig in and talk about the tool you used.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>15:56</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Well, thank you so much, Avi, for sharing all your experiences and your thoughts about programming languages. You want to say goodbye?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>16:01</strong> - <em>Avi Flombaum</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Yeah, this was super fun, it was nice connecting again, and I hope you all find a language that you love, and get to work in it every day.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>16:10</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Sounds good.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>16:13</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Avi Flombaum is one of the co-founders of Flatiron School.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>16:20</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Coding schools can bring that spirit of access and education to a whole new level. It's a continuation of what we saw at Dartmouth, but in a rich development ecosystem, we'll keep getting more and more natural points of entry, and first time coders are already discovering next-level ways to get into the game, sometimes literally.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>16:45</strong> - <em>CO.LAB participants</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Have you tried a different key? Try the G key.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>16:52</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Now, hold on. That is not a bunch of young coders silently memorizing an O'Reilly textbook, and it's not a lecture at the Flatiron School either. It's actually a little lab that Red Hat ran at the Tate Modern in London. And those kids? They're learning to code. For a new generation, the joy of coding is what they first encounter.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>17:13</strong> - <em>Femi Owolade-Coombes</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Okay. Hi, my name is Femi, AKA Hackerfemo.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>17:17</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Femi Owolade-Coombes is only 13 years old, but he's already a leader in a new wave of young coders.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>17:26</strong> - <em>Femi Owolade-Coombes</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I first encountered coding when I was eight, and I went to an event in York, actually, about maths, and there I saw this cool thing, hacking Minecraft ethically. As an eight-year old, I thought that was really cool. So that's how I got into coding.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>17:47</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>He's not alone. Minecraft has introduced a whole generation to coding, and it's done that without any of the pain or dry studying that past generations suffered through. The magic of gaming is dropping barriers. Minecraft is Java™-based, and it's been accredited with breathing new life into that language, spawning a whole crowd of fresh-faced Java fans.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>18:11</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>But it doesn't have to be Java. For Femi, Python was the language he discovered in Minecraft.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>18:16</strong> - <em>Femi Owolade-Coombes</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>You can use Python when you're using the Raspberry Pi in Minecraft, because Minecraft have created this special edition for the Raspberry Pi, which is so cool, 'cause you can hack it by just importing this library, and you can put exploding TNT everywhere, and you can create blocks behind you, you can create whole buildings. All sorts of things.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>18:42</strong> - <em>Femi Owolade-Coombes</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>When I first played it, I knew there were quite a few things like mods you could add on, which were pretty cool. Those were like little hacks in themselves, but this was the first time I realized you could properly hack it and really make it do what you want. I thought it was really cool.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>18:57</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>A world of coding opened up for Femi, and the door to that world was his favorite game. Then, Femi did something kind of amazing. He started showing other kids that door.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>19:10</strong> - <em>Femi Owolade-Coombes</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Well, I wanted to share my knowledge with my peers, because I thought, you know what? They will really enjoy this, and I had a great time. I want to share this with everyone else so that they can learn about it, and so that they can even get into coding.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>19:30</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Femi went ahead and founded the South London Raspberry Jam, and there, he's been able to watch a whole new generation of coders defy expectations about what a first language experience should look like. Besides those Minecraft hacks, visual languages like Scratch or Fruit are making the basics of coding achievable to younger and younger users.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>19:54</strong> - <em>Femi Owolade-Coombes</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I do like the idea of playing a game, and I most certainly do it over learning to code in a classroom, but it's the idea of being able to control what happens in that game, and code is behind that, and code gives you that really cool ability to make the game do what you want.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>20:15</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Femi's mom told us how happy she was to discover that gaming didn't have to be a passive pursuit. What I love about his story is that it starts with gaming, sure. But it doesn't end there. He built an amazing community of young coders, and Femi's own coding life is taking off. It's not just Minecraft anymore. He works in HTML, JavaScript, and CSS, building websites and doing web design. He's even building his own games using Unity.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>20:44</strong> - <em>Femi Owolade-Coombes</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Everyone really should have a right to learn how to code, because it is the future.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>20:53</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Is Minecraft really a giant programming university? Are the coders of tomorrow going to absorb new languages through games and simply messing around? Will languages be learned just through osmosis?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>21:06</strong> - <em>Robyn Bergeron</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Hi, my name's Robyn Bergeron.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>21:08</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Robyn's the community architect for Ansible® over at Red Hat, and she also happens to have a couple kids who stumbled into programming themselves.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>21:18</strong> - <em>Robyn Bergeron</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>There was a moment at dinner one night. I was actually cooking, everyone was impressed. My daughter came into the kitchen area, and she said, "Mommy, I filed a bug in Minecraft!" I work in software, I see lots and lots and lots of bug reports, and I was just really curious about what that meant in that universe. Is that like, I talked to someone on Twitter and said it's broken, or what? I asked her to show me, so she opened up her computer, and she had created a JIRA account in Mojang's system.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>21:53</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We should note, Robyn's daughter was 11 when she did this.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>21:57</strong> - <em>Robyn Bergeron</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>She had filled out their form exactly, and I see lots of bug reports that are not well-formed, or they're very mean. I see a lot of that, too. But it was a perfectly ... Here's what happened, here's what I expected to happen, and here's all of the steps to reproduce, which is, for a lot of people, that's their first interaction with any project, whether it's commercial, proprietary software project, like a video game, or an open source software project. I was so proud, and I told her we can totally go to the Minecraft conference after that, because they had been dying to go.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>22:33</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Robyn was about to realize that while the rest of us were going about our day jobs, the kids were starting a revolution. Here's what happened at that conference.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>22:43</strong> - <em>Robyn Bergeron</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We went to the keynotes, and I said, oh, we'll go at the last second, we'll be fine, we'll totally be in the second row. Oh, no. No, no, no. We were like 10 of those gigantic, big screens back in the room. But it was nonstop cool stuff for kids, and they had a moment on one of the days where they brought out all of the developers, and when the engineers came out, literally every kid in this audience was standing on their chairs screaming. If you've ever seen here's the Beatles, like the Beatles come to America video, it was like that. It was like, I can't believe we're near them and they're amazing! During the sessions, people were trying to get their autographs, and it was ... I'm sitting there with my kids being like, I work on operating systems that connect the internet so that you guys can actually game together? What are we doing wrong?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>23:36</strong> - <em>Robyn Bergeron</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>But kids are just being like, I'm going to be a JavaScript person when I grow up, yes! And just watching the level of enthusiasm at that event was fascinating, but ... it's a video game.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>23:51</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>There was a time back in the '70s when everyone's first language was BASIC, and then maybe it was C. More recently, people have been starting with Java or Python, but visual languages and games are ushering in a coding future that we're only beginning to imagine.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>24:10</strong> - <em>Robyn Bergeron</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Even though it may seem trivial to someone who's been programming for years, it's that first moment of, I'm playing, and I don't even realize that I'm actually learning something that could turn into a lifelong skill.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>24:23</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Robyn Bergeron is the community architect of Ansible at Red Hat.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>24:32</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>BASIC invited college students into the world of programming, and games like Minecraft invite elementary school students into that world today. But in a way, the creative impulse behind all this hasn't changed. Those college kids exploring BASIC? Yeah, they were often using it to build their own games. Lots of fantasy football, apparently.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>24:54</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Our creative spirit is what drives us toward programming languages in the first place. That drive to tweak the world, make it better, or just more fun.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>25:08</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Next time, in episode 3, where do brand new programming languages come from, anyway? We're learning how incredible challenges pushed developers to walk away from the languages of yesterday and build something totally new today.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>25:26</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Command Line Heroes is an original podcast from Red Hat. If you want to dive deeper into the origins of BASIC or anything else you heard on this episode, head on over to redhat.com/commandlineheroes.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>25:37</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I'm Saron Yitbarek. Until next time, keep on coding.</p>
+    </div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-keep-going pt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 reveal">
+                <h3 class="text-white">Keep going</h3>
+
+                <div class="row">
+                    <div class="col-12 col-md-6 d-flex reveal">
+                        <div class="card rounded-0">
+                            <div class="card-body p-2 p-md-3">
+                                <h3>BASIC: A nostalgic look back</h3>
+
+                                <p class="mb-0">Find out more about why BASIC is a beloved first language and how the next generation will learn to code on Opensource.com.</p>
+                            </div>
+
+                            <div class="card-footer pt-0 px-2 px-md-3 pb-2 pb-md-3">
+                                <a class="btn btn-link mb-0 text-black" href="http://opensource.com/19/7/command-line-heroes-ruby-basic" target="_blank" title="Dive in">Dive in</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 d-flex reveal">
+                        <div class="card rounded-0">
+                            <div class="card-body p-2 p-md-3">
+                                <h3>Red Hat Software Collections: Ruby</h3>
+
+                                <p class="mb-0">Run Ruby on Red Hat Enterprise Linux with this walkthrough.</p>
+                            </div>
+
+                            <div class="card-footer pt-0 px-2 px-md-3 pb-2 pb-md-3">
+                                <a class="btn btn-link mb-0 text-black" href="http://developers.redhat.com/products/softwarecollections/hello-world#fndtn-ruby" title="Get started">Get started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<div class="rh-raw"         data-rh-unique-id="1452551">
+        <section class="dms-band clh-featured-art py-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-white reveal">
+                <div class="card rounded-0">
+                    <div class="featured-background bg-no-repeat bg-pos-cb" data-bg-image="https://www.redhat.com/cms/managed-files/bkgd-clhs3-e2-artwork-mobile.svg" data-bg-image-md="https://www.redhat.com/cms/managed-files/bkgd-clhs3-e2-artwork.svg" style="background-image: url(_https_/www.redhat.com/cms/managed-files/bkgd-clhs3-e1-artwork.html);">
+                        <div class="col-12 col-md-7 col-xl-6 px-0">
+                            <div class="card-header pt-2 px-2 pb-0 pt-md-4 px-md-4">
+                                <h3 class="mb-2">Enjoy this episode's artwork on&nbsp;your&nbsp;device</h3>
+                            </div>
+
+                            <div class="card-body py-0 px-2 px-md-4">
+                                <p>Download the Command Line Heroes artwork and set it as your background.</p>
+                            </div>
+
+                            <div class="card-footer pt-0 px-2 pb-2 px-md-4 pb-md-4">
+                                <div class="cta-group mt-2 d-lg-none">
+                                    <a class="btn mt-1 mr-1 mb-0" href="../../../cms/managed-files/clh-s3e2-mobile-1080x1920.png" target="_blank" title="1080x1920">1080x1920</a>
+
+                                    <a class="btn mt-1 mr-1 mb-0" href="../../../cms/managed-files/clh-s3e2-mobile-1125x2436.png" target="_blank" title="1125x2436">1125x2436</a>
+
+                                    <a class="btn mt-1 mb-0" href="../../../cms/managed-files/clh-s3e2-mobile-1440x2560.png" target="_blank" title="1440x2560">1440x2560</a>
+                                </div>
+
+                                <div class="cta-group d-none d-lg-block">
+                                    <a class="btn mb-0" href="../../../cms/managed-files/clh-s3e2-desktop-1920x1080.png" title="1920x1080" download="">1080p</a>
+
+                                    <a class="btn mb-0" href="../../../cms/managed-files/clh-s3e2-desktop-2560x1440.png" title="2560x1440" download="">1440p</a>
+
+                                    <a class="btn mb-0" href="../../../cms/managed-files/clh-s3e2-desktop-3820x2160.png" title="3840x2160" download="">4K</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-featured-guests pb-md-12 bg-pos-cc bg-no-repeat" data-bg-image="https://www.redhat.com/cms/managed-files/bkgd-clh-s3e2-mountains.svg">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-white reveal">Featured in this episode</h3>
+
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 d-flex reveal">
+                        <div class="card clh-guest">
+                            <a class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" href="http://www.twitter.com/thcormen" target="_blank" title="Tom Cormen" data-bg-image="https://www.redhat.com/cms/managed-files/photo-tom-cormen.png"></a>
+
+                            <a class="mb-1 d-inline-block w-100 h-100" href="http://www.twitter.com/thcormen" target="_blank" title="Tom Cormen">
+                                <div class="card-body p-2 bg-white h-100">
+                                    <h4>Tom Cormen</h4>
+
+                                    <p class="mb-0">Professor in the Dartmouth College Department of Computer Science</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 d-flex reveal">
+                        <div class="card clh-guest">
+                            <a class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" href="http://www.linkedin.com/in/denise-dumas-591931" target="_blank" title="Denise Dumas" data-bg-image="https://www.redhat.com/cms/managed-files/photo-denise-dumas.png"></a>
+
+                            <a class="mb-1 d-inline-block w-100 h-100" href="http://www.linkedin.com/in/denise-dumas-591931" target="_blank" title="Denise Dumas">
+                                <div class="card-body p-2 bg-white h-100">
+                                    <h4>Denise Dumas</h4>
+
+                                    <p class="mb-0">Vice President, Operating System Platform at Red Hat</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-md-3 mt-lg-0 d-flex reveal">
+                        <div class="card clh-guest">
+                            <a class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" href="http://www.twitter.com/aviflombaum" target="_blank" title="Avi Flombaum" data-bg-image="https://www.redhat.com/cms/managed-files/photo-avi-flombaum.png"></a>
+
+                            <a class="mb-1 d-inline-block w-100 h-100" href="http://www.twitter.com/aviflombaum" target="_blank" title="Avi Flombaum">
+                                <div class="card-body p-2 bg-white h-100">
+                                    <h4>Avi Flombaum</h4>
+
+                                    <p class="mb-0">CPO and Founder of Flatiron School</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-md-3 mt-lg-0 d-flex reveal">
+                        <div class="card clh-guest">
+                            <a class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" href="http://www.twitter.com/hackerfemo" target="_blank" title="Femi Owolade-Coombes" data-bg-image="https://www.redhat.com/cms/managed-files/photo-femi-owolade-coombes.png"></a>
+
+                            <a class="mb-1 d-inline-block w-100 h-100" href="http://www.twitter.com/hackerfemo" target="_blank" title="Femi Owolade-Coombes">
+                                <div class="card-body p-2 bg-white h-100">
+                                    <h4>Femi Owolade-Coombes</h4>
+
+                                    <p class="mb-0">Inaugural Legacy Diana Award winner</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="mt-1 mt-md-4 text-white reveal">Also in this episode</h3>
+
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 d-flex reveal">
+                        <div class="card clh-guest">
+                            <a class="mb-1 d-inline-block w-100 h-100" href="http://www.twitter.com/robynbergeron" target="_blank" title="Robyn Bergeron">
+                                <div class="card-body p-2 bg-white h-100">
+                                    <h4>Robyn Bergeron</h4>
+
+                                    <p class="mb-0">Community Architect at Red Hat</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img class="img-fluid w-100 d-md-none" src="https://www.redhat.com/cms/managed-files/img-clh-s3e2-mountains.svg">
+</section>  <!-- Pattern | raw_html -->
+
+<article class="node-shared">
+      <section class="dms-band clh-newsletter pt-0 pt-md-8">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-5 reveal">
+                <div class="card">
+                    <div class="card-body p-0">
+                        <img class="img-fluid svg svg-white mb-3" src="https://www.redhat.com/cms/managed-files/logo-command-line-heroes.svg" width="166" height="42" alt="Command Line Heroes logo" title="Command Line Heroes">
+
+                        <h3 class="font-family-monospace">Get the newsletter</h3>
+
+                        <p class="mb-0">After each episode drops, we'll send you commentary from the Command Line Heroes team, as well as links that help you take a closer look at the topics we cover. It's as simple as that.</p>
+                    </div>
+
+                    <div class="card-footer pt-3 px-0 pb-0">
+                        <a class="btn btn-primary mb-1 mb-lg-0" href="http://www.redhat.com/forms/?config=19411" title="Sign up">Sign up</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 offset-lg-1 reveal">
+                <div class="card mb-0 bg-white rounded-0 text-black">
+                    <div class="card-body p-2 p-md-3">
+                        <h3 class="font-family-monospace text-red">Presented by Red&nbsp;Hat</h3>
+
+                        <p class="mb-0">For 25 years, Red Hat has been bringing open source technologies to the enterprise. From the operating system to containers, we believe in building better technology together–and celebrating the unsung heroes who are remaking our world from the command line up.</p>
+                    </div>
+
+                    <div class="card-footer pt-0 px-2 px-md-3 pb-2 pb-md-3">
+                        <a class="btn btn-link mb-0" href="http://www.redhat.com/" title="Learn more">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+  </article>
+  <!-- Pattern | raw_html -->
+
+<article class="node-shared">
+  
+  </article>
+
+  
+  
+</article>
+
+</div>
+  </div>
+        
+  </div>
+
+  <footer>
+        <section class="rc-footer-traditional">
+      <div class="container rc-footer-traditional-container">
+        <section class="rc-footer-traditional-section">
+          <div class="rc-footer-traditional-logo">
+            <div class="row">
+              <a href="https://www.redhat.com/en">
+                <img src="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo.svg" class="screen" title="Red Hat" />
+                </a>
+            </div>
+          </div>
+          <div id="legal" class="rc-footer-traditional-legal">
+            <div class="row">
+              <div class="copyright">©2021 Red Hat, Inc.</div>
+              <div >
+                <ul class="menu"><li class="first leaf"><a href="../../about/privacy-policy.html">Privacy statement</a></li>
+<li class="leaf"><a href="../../about/terms-use.html">Terms of use</a></li>
+<li class="leaf"><a href="../../about/all-policies-guidelines.html">All policies and guidelines</a></li>
+<li class="leaf"><a href="../../about/digital-accessibility.html">Digital accessibility</a></li>
+<li class="last leaf"><span id="teconsent" class="nolink">|</span></li>
+</ul>              </div>
+            </div>
+                      </div>
+          <div class="rc-footer-traditional-event-logo">
+            <div id="block-block-5" class="block block-block block-footer-promote">
+
+      
+  <a href="https://www.redhat.com/summit"><img src="https://www.redhat.com/cms/managed-files/Logo-Red_Hat-Summit-A-Standard-RGB-02_0.svg" alt="Red Hat Summit" style="float: right;" width="72px"></a>
+</div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </footer>
+        <script type="text/javascript" src="../../../ux/webdms/js/vendors/jquery.waypoints.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/plyr.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/viewport.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/scripts.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/projects/clh.min6eda.js?qy3uiv"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+  if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
+      _satellite.pageBottom();
+  }
+//--><!]]>
+</script>
+    </div>
+  <script type="text/javascript"  src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"></script></body>
+
+<!-- Mirrored from www.redhat.com/en/command-line-heroes/season-3/learning-the-basics by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:27:53 GMT -->
+</html>

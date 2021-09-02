@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  
+<!-- Mirrored from www.redhat.com/en/command-line-heroes/season-2/fail-better by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:27:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!--[if IE]><![endif]-->
+<script id="trustarc" type="text/javascript" src="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"></script>
+<script id="ddo" type="text/javascript">
+<!--//--><![CDATA[//><!--
+    var digitalData = {"cart":[],"event":[],"listing":{"browseFilter":"","query":"","queryMethod":"","refinementType":"","refinementValue":"","resultCount":"","searchType":""},"page":{"attributes":{"queryParameters":"","referringSearchEngine":"","analyticsTitle":"command line heroes | season 2 | fail better","taxonomyPageSubType":["28051"],"taxonomyProduct":["781"],"taxonomyRegion":["4521"],"taxonomyTopic":["8391","17391"],"taxonomyMetaHreflang":["29051"]},"category":{"contentType":"","keyPage":"false","keyPageType":"","pageType":"pattern_template","primaryCategory":"command-line-heroes","subCategories":["season-2","fail-better"]},"pageInfo":{"cms":"RH CMS 2021.12.0","contentFindingMethod":"","contentID":"304801","contentPortal":"","destinationURL":"https:\/\/www.redhat.com\/en\/command-line-heroes\/season-2\/fail-better","errorMessage":"","errorType":"","language":"en","pageName":"","referringDomain":"","referringURL":"","sysEnv":"","template":"","title":"Command Line Heroes: Season 2: Fail Better"}},"product":[],"user":[{"profile":[{"profileInfo":{"daysSinceLastPurchase":"","demandbaseSID":"","eloquaGUID":"","lastLoginDate":"","lastPurchaseDate":"","loggedIn":"false","profileID":"","subscriptionFrequency":"","subscriptionLevel":""}}]}]};
+    !function(a,b,c){"use strict";function d(a){var c="; "+b.cookie,d=c.split("; "+a+"=");if(2===d.length)return d.pop().split(";").shift()}if(b.referrer){var e=b.createElement("a");e.href=b.referrer,c.page.pageInfo.referringDomain=e.hostname,c.page.pageInfo.referringURL=e.href}c.page.pageInfo.sysEnv=a.innerWidth<=768?"tablet":"desktop";var f=c.user[0].profile[0].profileInfo,g=d("rh_elqCustomerGUID");g&&(f.eloquaGUID=g);var h=d("rh_user");if(h){var i=h.split("\\|");i[0]&&(f.loggedIn="true")}var j=d("s_dmdbase");j&&(f.demandbaseSID=j)}(window,document,digitalData);
+//--><!]]>
+</script>
+<script src="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm.js" data-domain="www.redhat.com"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-functional.js" class="trustecm" data-tracker-type="functional"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-advertising.js" class="trustecm" data-tracker-type="advertising"></script><script id="dpal" type="text/javascript" src="../../../dtm.js"></script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="en" />
+<link href="fail-better.html" rel="alternate" hreflang="en" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "availableLanguages": {
+        "und": {
+            "@type": "Language",
+            "name": null,
+            "href": "/und/command-line-heroes/season-2/fail-better"
+        }
+    }
+}</script><meta name="last-publish-date" content="Tue, 13 Mar 2018 04:00:00 GMT" />
+<meta name="node-type" content="pattern_template" />
+<meta name="source" content="rhdc_drupal" />
+<meta name="rhdc_key" content="112488ee73f3096c94b51f314beae4dc" />
+<meta name="taxonomy-product" content="Red Hat Enterprise Linux" />
+<meta name="taxonomy-product-tid" content="781" />
+<meta name="taxonomy-region" content="Global" />
+<meta name="taxonomy-region-tid" content="4521" />
+<meta name="taxonomy-page-sub-type" content="Brand affinity" />
+<meta name="taxonomy-page-sub-type-tid" content="28051" />
+<meta name="taxonomy-topic" content="DevOps" />
+<meta name="taxonomy-topic" content="Open source" />
+<meta name="taxonomy-topic-tid" content="8391" />
+<meta name="taxonomy-topic-tid" content="17391" />
+<meta name="taxonomy-meta-hreflang" content="en" />
+<meta name="taxonomy-meta-hreflang-tid" content="29051" />
+<link rel="shortcut icon" href="https://www.redhat.com/misc/favicon.ico" type="image/x-icon" />
+<meta property="og:description" content="Command Line Heroes considers harnessing failure for success. Embracing mistakes can have amazing results. We pull back the curtain on some great successes built on failure." />
+<meta name="description" content="Command Line Heroes considers harnessing failure for success. Embracing mistakes can have amazing results. We pull back the curtain on some great successes built on failure." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="image_src" href="../../../cms/managed-files/og-clh-s2-1200x675.jpg" />
+<link rel="canonical" href="fail-better.html" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.redhat.com/en/command-line-heroes/season-2/fail-better" />
+<meta property="og:title" content="Command Line Heroes, Season 2: Fail Better" />
+<meta property="og:image" content="https://www.redhat.com/cms/managed-files/og-clh-s2-1200x675.jpg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Command Line Heroes, Season 2: Fail Better" />
+<meta name="twitter:image" content="https://www.redhat.com/cms/managed-files/og-clh-s2-1200x675.jpg" />
+    <title>Command Line Heroes: Season 2: Fail Better</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://static.redhat.com/">
+    <link rel="preload" href="https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/fonts/web_icon/rh-web-iconfont.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatTextVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatDisplayVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__k9aoxkMyjUtSX9AXGCPExPgTYjM0Xv5OYNfbFGDRafY__N9sjJtGj85lXtvOptw2e_YZ01FXbTXcJywP8EaKBijU__uaCwYofnUZLAnB7x3Q6WyVKH" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/all/libraries/webrh/dist/css/webrh.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__cxslYvmVeKFG0RwKl9kcXSrmb2x2VtvkIw-OLkwF8jU___pPNjqO-hMXRnx5HlJupeXtrvaj0Ilhs-XAVxMYy0CM__uaCwYofnUZLAnB7x3Q6WyVKH" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__wpajrf8pWA19ifT2xQXPB3J1TByoCXqZVtt6kXfl4Ow__PFQbFxxWsZl0yTnfrpPiA-o5Pvtu-CXh7nICx08JW0c__uaCwYofnUZLAnB7x3Q6WyVKH" media="print" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/css/trustecm.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/redhat-theme/6/advanced-theme.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/red-hat-font.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/font-awesome/4.7.0/css/font-awesome.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/vendors/plyr.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/styles.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/projects/clh-s2-episodes.min6eda.css?qy3uiv" media="all" />
+    <!--[if lt IE 9]>
+      <script src="/profiles/rh/themes/redhatdotcom/js/selectivizr-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/nwmatcher-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/respond.js" type="text/javascript"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../../../sites/default/files/advagg_js/js__B6wED6l5P_XUdxVmb7Nvh5d9zn074QukFqJa2HLXS6c__VzWs8XZBHHsPW77egi-W-FQw2mAEr5F-GgCJU0wn3Nc__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.vendor.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.webcomponents.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__pDOiYGKaYbdKNp1gvMxR0fWhWZnfUemYDUhADyCn3oM__jCrCuWCJIPYPe1FzZoUvsJWEjkNMmRIQHYek1h7idBE__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.rh = window.rh || {}; window.rh.drupalTrustArcLoaded = true;
+//--><!]]>
+</script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__5nUyGFdhKMGscC9VhukG-UTAhz8BEdhsa8koVlLwAyQ__Lz8gDLbd5fTco1AnHaCqhSeYJB5o0QUXAimK7JOyRNI__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"redhatdotcom","theme_token":"bzjNxi7uIaVCxveAZnDFcGDntxHwxASyHPUz2NoynPE","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.webcomponents.min.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.min.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/marketing\/latest\/trustarc\/trustecm\/css\/trustecm.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-theme\/6\/advanced-theme.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-font\/4\/webfonts\/red-hat-font.min.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-iconfont.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-web-iconfont.css":1,"sites\/all\/libraries\/patternfly-elements\/pfe-styles\/pfe-typography-classes.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/site-switcher.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/chrome.css":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/print.css":1,"\/\/static.redhat.com\/libs\/font-awesome\/4.7.0\/css\/font-awesome.min.css?qy3uiv":1,"\/ux\/webdms\/css\/vendors\/plyr.min.css?qy3uiv":1,"\/ux\/webdms\/css\/styles.min.css?qy3uiv":1,"\/ux\/webdms\/css\/projects\/clh-s2-episodes.min.css?qy3uiv":1},"js":{"\/ux\/webdms\/js\/vendors\/jquery.waypoints.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/plyr.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/viewport.min.js?qy3uiv":1,"\/ux\/webdms\/js\/scripts.min.js?qy3uiv":1,"\/ux\/webdms\/js\/projects\/clh.min.js?qy3uiv":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/rh\/modules\/redhat_www_ddo\/dist\/post-jquery.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.vendor.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.webcomponents.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"profiles\/rh\/modules\/redhat_www_menu\/js\/rh_nav.js":1,"profiles\/rh\/modules\/redhat_www_share\/js\/rh_share.js":1,"profiles\/rh\/modules\/redhat_www_utility\/js\/redhat_www_utility.js":1,"sites\/all\/libraries\/jquery-cookie\/jquery.cookie-1.4.1.min.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.pushmenu.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery-scrolltofixed.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/rh-chrome.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.fitvids.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.switchIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.viewport\/jquery.viewport.min.js":1}},"redhat_www_menu":{"path":"node\/304801"},"rh_analytics_enabled":false});
+//--><!]]>
+</script>
+    <noscript>
+        <link href="../../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.noscript.min.css" rel="stylesheet" >
+    </noscript>
+  </head>
+  <body unresolved class="bands-index html not-front not-logged-in no-sidebars page-node page-node- page-node-304801 node-type-pattern-template i18n-en clh-s2e4 " >
+    <div class="page">
+            <!-- Legacy migrated page support with body.migrated-page-hero -->
+<div class="header-background-image fts-migrated-bg">
+</div>
+
+  <div id="main-content">
+                      <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+      
+  <article class="node-304801 node node-pattern-template clearfix">
+
+  
+    <!-- Pattern | raw_html -->
+
+<div class="rh-raw"         data-rh-unique-id="2069851">
+        <article class="node-shared">
+      <header id="top" class="dms-band clh-nav-top py-2">
+    <div class="container text-white">
+        <div class="row d-flex align-items-center">
+            <div class="col-6">
+                <a href="../../command-line-heroes.html" title="Command Line Heroes">
+                    <img class="img-fluid svg svg-white" src="https://www.redhat.com/cms/managed-files/logo-command-line-heroes.svg" width="166" height="42" alt="Command Line Heroes logo">
+                </a>
+            </div>
+
+            <div class="col-6 clh-nav-toggle-wrapper">
+                <span class="text-monospace text-right font-size-16 d-inline-block">Subscribe<br/>& more</span>
+
+                <a href="#" class="btn btn-toggle" data-toggle="nav-shelf">
+                    <div class="d-inline-block">
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="dms-band clh-nav-shelf text-white py-0">
+    <div class="nav-container pb-4">
+        <div id="CLHNav" class="accordion">
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-subscribe.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSubscribe">
+                    <p>Subscribe</p>
+                </button>
+                <div id="clhSubscribe" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <p>Subscribe to the podcast to receive new episodes as soon as we release them</p>
+                    <div class="row pb-2">
+                        <div class="col-6 mb-2">
+                            <a href="http://geo.itunes.apple.com/podcast/us/id1319947289?mt=2&amp;at=1010lbVy&amp;ct=redhatclh_website" target="_blank" title="Listen on Apple Podcasts">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-apple.png" alt="Listen on Apple Podcasts">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://www.google.com/podcasts?feed=aHR0cHM6Ly9mZWVkcy5wYWNpZmljLWNvbnRlbnQuY29tL2NvbW1hbmRsaW5laGVyb2Vz" target="_blank" title="Listen on Google Podcasts">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-google.png" alt="Listen on Google Podcasts">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://www.stitcher.com/s?fid=159833&amp;refid=stpr" target="_blank" title="Listen on Stitcher">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-stitcher.png" alt="Listen on Stitcher">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://open.spotify.com/show/4Jgtgr4mHXNDyLldHkfEMz" target="_blank" title="Listen on Spotify">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-spotify.png" alt="Listen on Spotify">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://feeds.pacific-content.com/commandlineheroes" target="_blank" title="Subscribe via RSS Feed">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-rss.png" alt="Subscribe via RSS Feed">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-about.jpg">
+                <button href="../about.html" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhAbout">
+                    <p>About the podcast</p>
+                </button>
+                <div id="clhAbout" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <p>Discover Red Hat’s original podcast about the people who transform technology from the command line up. Subscribe to our newsletter for commentary from the Command Line Heroes team—and links to take a closer look at the topics we cover.</p>
+                    
+                    <p><a href="../about.html" class="btn btn-primary">Learn about the show</a></p>
+                    <p class="mb-0 pb-4"><a href="https://www.redhat.com/forms/?config=19411" class="btn btn-outline-white">Get the newsletter</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s1.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason1">
+                    <p>Season 1</p>
+                </button>
+                <div id="clhSeason1" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-1/os-wars-part-1.html" title="OS Wars_Part 1">OS Wars_part 1</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/os-wars-part-2-rise-of-linux.html" title="OS Wars_Part 2">OS Wars_part 2</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/agile-revolution.html" title="The Agile_Revolution">The Agile_Revolution</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/devops-tear-down-that-wall.html" title="DevOps_Tear Down That Wall">DevOps_Tear Down That Wall</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/the-containers-derby.html" title="The Containers_Derby">The Containers_Derby</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/crack-the-cloud-open.html" title="Crack the Cloud_Open">Crack the Cloud_Open</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/days-of-future-open.html" title="Days of Future_Open">Days of Future_Open</a>
+                        </li>
+                    </ol>
+                  <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-1.html" title="Explore season 1">Explore Season 1</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s2.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason2">
+                    <p>Season 2</p>
+                </button>
+                <div id="clhSeason2" class="accordion-panel collapse" data-parent="#CLHNav">
+
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="press-start.html" title="Press Start">Press Start</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="hello-world.html" title="Hello, World">Hello, World</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="ready-to-commit.html" title="Ready to Commit">Ready to Commit</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="fail-better.html" title="Fail Better">Fail Better</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="the-one-about-devsecops.html" title="The One About DevSecOps">The One About DevSecOps</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="the-data-explosion.html" title="The Data Explosion">The Data Explosion</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="at-your-serverless.html" title="At Your Serverless">At Your Serverless</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="open-curiosity.html" title="Open Curiosity">Open Curiosity</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="developer-advocacy-roundtable.html" title="Bonus_Developer Advocacy Roundtable">Bonus_Developer Advocacy Roundtable</a>
+                        </li>
+                    </ol>
+                   <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-2.html" title="Explore season 2">Explore Season 2</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s3.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason3">
+                    <p>Season 3</p>
+                </button>
+                <div id="clhSeason3" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-3/pythons-tale.html" title="Python's Tale">Python's Tale</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/learning-the-basics.html" title="Learning the BASICs">Learning the BASICs</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/creating-javascript.html" title="Creating JavaScript">Creating JavaScript</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/diving-for-perl.html" title="Diving for Perl">Diving for Perl</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/the-infrastructure-effect.html" title="The Infrastructure Effect">The Infrastructure Effect</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-3/heroes-in-a-bash-shell.html" title="Heroes in a Bash Shell">Heroes in a Bash Shell</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/talking-to-machines.html" title="Talking to Machines">Talking to Machines</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-3/the-c-change.html" title="The C Change">The C Change</a>
+                        </li>
+                    </ol>
+                   <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-3.html" title="Explore season 3">Explore Season 3</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s4.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason4">
+                    <p>Season 4</p>
+                </button>
+                <div id="clhSeason4" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-4/minicomputers.html" title="Minicomputers">Minicomputers</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-4/mainframes.html" title="Mainframes">Mainframes</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/personal-computers.html" title="Personal Computers">Personal Computers</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/floppies.html" title="Floppies">Floppies</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/smarter-phones.html" title="Smarter Phones">Smarter Phones</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/open-source-hardware.html" title="Open Source Hardware">Open Source Hardware</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/consoles.html" title="Consoles">Consoles</a>
+                        </li>
+
+                         <li class="mb-2">
+                            <a href="../season-4/steve-wozniak.html" title="Steve Wozniak">Steve Wozniak</a>
+                        </li>
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-4.html" title="Explore season 4">Explore Season 4</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s5.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason5">
+                    <p>Season 5</p>
+                </button>
+                <div id="clhSeason5" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-5/becoming-a-coder.html" title="Becoming a Coder">Becoming a Coder</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-5/where-coders-code.html" title="Where Coders Code">Where Coders Code</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-5/what-kind-of-coder-will-you-become.html" title="What Kind of Coder Will You Become?">What Kind of Coder Will You Become?</a>
+                        </li>
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-5.html" title="Explore season 5">Explore Season 5</a></p>
+ 
+                </div>
+            </div>
+
+                        <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s6.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason6">
+                    <p>Season 6</p>
+                </button>
+                <div id="clhSeason6" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-6/jerry-lawson.html" title="Jerry Lawson">Jerry Lawson</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/gladys-west.html" title="Dr. Gladys West">Dr. Gladys West</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/mark-dean.html" title="Dr. Mark Dean">Dr. Mark Dean</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/marc-hannah.html" title="Dr. Marc Hannah">Dr. Marc Hannah</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/clarence-ellis.html" title="Dr. Clarence Ellis">Dr. Clarence Ellis</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/roy-clay.html" title="Roy Clay">Roy Clay</a>
+                        </li>
+                       <li class="mb-2">
+                            <a href="../season-6/gladys-perkins.html" title="Gladys Perkins">Gladys Perkins</a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="../season-6/arlan-hamilton.html" title="Arlan Hamilton">Arlan Hamilton</a>
+                        </li>
+            
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link text-monospace text-white" href="../season-6.html" title="Explore season 6">Explore Season 6</a></p>
+                </div>
+            </div>
+
+             <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/season-7_nav.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason7">
+                    <p>Season 7</p>
+                </button>
+                <div id="clhSeason7" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-7/dot-com.html" title="Connecting The Dot-Com">Connecting The Dot-Com</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/nsfnet.html" title="From NSF to ISP">From NSF to ISP</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/html.html" title="A Language for the Web">A Language for the Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/ux.html" title="Web UX Begins">Web UX Begins</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/shopping.html" title="Shopping for the Web">Shopping for the Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/search.html" title="Looking for Search">Looking for Search</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/world.html" title="The World of the World Wide Web">The World of the World Wide Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/bubble.html" title="After the Bubble">After the Bubble</a>
+                        </li>
+
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../../command-line-heroes.html" title="Explore season 5">Explore Season 7</a></p>
+ 
+                </div>
+            </div>
+
+        </div>
+        
+        <ul class="social-list list-inline list-unstyled pl-5 pl-sm-6 mt-1">
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F" target="_blank" title="Facebook" onclick="return !window.open(this.href, 'Facebook', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
+                    <span class="web-icon-facebook" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.twitter.com/share?url=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F&amp;text=An%20original%20podcast%20about%20the%20people%20who%20transform%20technology%20from%20the%20command%20line%20up.%20Presented%20by%20Red%20Hat." target="_blank" title="Twitter" onclick="return !window.open(this.href, 'Twitter', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
+                    <span class="web-icon-twitter" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F&amp;title=Command%20Line%20Heroes&amp;summary=Hear%20the%20epic%20true%20tales%20of%20how%20developers%2C%20programmers%2C%20hackers%2C%20geeks%2C%20and%20open%20source%20rebels%20are%20revolutionizing%20the%20technology%20landscape.%20Command%20Line%20Heroes%20is%20a%20new%20podcast%20hosted%20by%20Saron%20Yitbarek%20and%20produced%20by%20Red%20Hat.&amp;source=Red%20Hat" target="_blank" title="LinkedIn" onclick="return !window.open(this.href, 'LinkedIn', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')" aria-current="page">
+                    <span class="web-icon-linkedin" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="mailto:?subject=Command Line Heroes&body=Hear%20the%20epic%20true%20tales%20of%20how%20developers%2C%20programmers%2C%20hackers%2C%20geeks%2C%20and%20open%20source%20rebels%20are%20revolutionizing%20the%20technology%20landscape.%20Command%20Line%20Heroes%20is%20a%20new%20podcast%20hosted%20by%20Saron%20Yitbarek%20and%20produced%20by%20Red%20Hat. https://www.redhat.com/en/command-line-heroes" target="_blank" title="Email" aria-current="page">
+                    <span class="web-icon-envelope" aria-label="true"></span>
+                </a>
+            </li>
+        </ul>
+
+         <div class="language-switcher position-absolute bottom-0 right-0  w-100">
+            <div class="row justify-content-center mx-0">
+
+                <div class="col-6 text-center border-right border-black border-20 language-inactive">
+                    <a href="http://www.redhat.com/es/command-line-heroes" title="Command Line Heroes"><img class="img-fluid py-2" width="90" src="https://www.redhat.com/cms/managed-files/logo_clh-en-espanol_inactive.svg" alt="CLH en espanol logo"></a></div>
+
+                <div class="col-6 text-center language-active"><a href="../../command-line-heroes.html" title="Command Line Heroes"><img class="img-fluid pt-3 pb-2" width="130" src="https://www.redhat.com/cms/managed-files/logo_CLH_small.svg" alt="CLH logo"></a></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+</div>
+
+
+<div class="mb-6">&nbsp;</div>  
+  </article>
+
+    </div>  <!-- Pattern | raw_html -->
+
+<div class="rh-raw"         data-rh-unique-id="2069861">
+        <section class="dms-band clh-hero--episode pb-md-0" >
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-lg-6  reveal">
+                <h5 class="section-label mb-1 font-weight-light">Season 2, Episode 4</h5>
+
+                <h1 class="mb-lg-4 font-family-monospace font-size-28 font-size-lg-38">Fail Better</h1>
+
+                <div class="clh-audio plyr-theme">
+                    <audio src="https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/fce7f007.mp3" controls></audio>
+                </div>
+
+                <a class="btn btn-link mt-2 mb-0 font-family-monospace text-white" href="#" title="Listen to this episode later" data-toggle="nav-shelf" data-toggle-panel="#clhSubscribe">Listen to this episode later</a>
+            </div>
+           <div class="col-lg-6  text-center reveal">
+                <p><img src="../../../cms/managed-files/S2-E4-trophy-hero.png" alt="trophy" width="400"></p>
+             </div>
+        </div>
+    </div>
+</section>
+    </div>  <!-- Pattern | raw_html -->
+
+<div class="rh-raw"         data-rh-unique-id="2069871">
+        <section class="dms-band clh-notes pt-md-0">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-12 col-lg-7 col-xl-6 mx-auto reveal">
+                <ul class="nav nav-tabs mb-3 d-flex justify-content-center font-family-monospace">
+                    <li class="nav-item text-center">
+                        <a class="tab-show-notes nav-link mx-0 mr-md-6 p-0 font-size-22 text-white active" href="#show-notes" data-toggle="tab" title="Show notes">Show notes</a>
+                    </li>
+
+                    <li class="nav-item text-center">
+                        <a class="tab-transcript nav-link mt-2 mt-md-0 mx-0 p-0 font-size-22 text-white" href="#transcript" data-toggle="tab" title="Transcript">Transcript</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="show-notes" class="tab-pane fade active  text-white show">
+                        <div class="row">
+                            <div class="col-12 mb-0">
+                               <p>Failure is the heartbeat of discovery. We stumble a lot trying new things. The trick is to give up on failing fast. Instead, fail better.</p>
+
+            <p>This episode looks at how tech embraces failure. Approaching failure with curiosity and openness is part of our process. Jennifer Petoff shares how Google has built a culture of learning and improvement from failure. With a shift in perspective, Jessica Rudder shows how embracing mistakes can lead to unexpected successes. And Jen Krieger explains how agile frameworks help us plan for failure.</p>
+
+            <p>Failure doesn't have to be the end. It can be a step to something greater.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="transcript" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>00:00</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Stop me if you've heard this one. Two engineers are compiling their code. The newcomer raises his hands and shouts, "Woo, my code compiled!" The veteran narrows her eyes and mutters, "Hm. My code compiled."</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>00:18</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>If you've been in the coding game a little while, something changes when you think about failure. Things that used to look like impossible problems begin to look like healthy parts of a larger solution. The stuff you used to call “failure,” begins to look like success in disguise.</p>
+        <p>You expect your code to not compile. You expect to play and experiment all along the way, fiddling, revising, refactoring.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>00:37</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I'm Saron Yitbarek, and this is Command Line Heroes, an original podcast from Red Hat.</p>
+        <p>That whole "fail fast" mantra, let's be honest, it often gets used as a way to try and shortcut things towards success. But what if, instead of telling each other to hurry up and fail fast, we encourage each other to actually fail better.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>01:20</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Season Two of Command Line Heroes is all about the lived experience of working in development, what it really feels like and how it really pans out when we're living on the command line. And that's why we're devoting a whole episode to dealing with failure, because it's those moments that push us to adapt. The stuff we call failure, it's the heartbeat of evolution, and open source developers are embracing that evolution. Of course, that's a lot easier said than done.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>01:59</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Imagine this: a brand-new sonnet from the man himself, Shakespeare, gets discovered. There's a huge rush of interest online. Everybody's googling. But then! This one little design flaw leads to something called, "file descriptor exhaustion." That creates a cascading failure. Suddenly, you've got all that traffic moving across fewer and fewer servers. Pretty soon, Google's Shakespeare search has crashed, and it stays crashed for over an hour.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>02:33</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Now you've lost 1.2 billion search queries. It's a tragedy of Shakespearean proportions, all playing out while site reliability engineers are scrambling to catch up.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>02:45</strong> - <em>Actor</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Et tu, Brute? Then fall, Caesar.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>02:54</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Okay, hate to break it to you. The Shakespearean incident isn't real. In fact, it's part of a series of disastrous scenarios in a book called, Site Reliability Engineering. And one of the big lessons from that book is that you've got to look beyond the disaster itself. Here's what I mean.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>03:13</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>In the Shakespeare case, the query of death gets resolved when that laser beam of traffic gets pushed onto a single, sacrificial cluster. That buys the team enough time to add more capacity. But you can't stop there. As bad as that issue was, resolving it isn't where the real focus should be. Because failure doesn't have to end in suffering, failure can lead to learning.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>03:38</strong> - <em>Jennifer Petoff</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Hi. I'm Jennifer Petoff.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>03:41</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Jennifer works over at Google. She's a senior program manager for their SRE (site reliability engineering) team and leads Google's global SRE education program, and she's also one of the authors of that book, the one that describes the Shakespeare scenario. For Jennifer, digging into disasters like that is how things get better. But only if you have a culture where mistakes and surprises are embraced.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>04:08</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So take the Shakespeare snafu again. There is a straightforward solution. Load shedding can save you from that cascading failure. But the real work starts after things are back to normal. The real work is in the post-mortem.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>04:25</strong> - <em>Jennifer Petoff</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>After the incident is resolved, a post-mortem would be created. Every incident at Google is required to have a post-mortem and corresponding action items to prevent, but also to more effectively detect and mitigate similar incidents or whole classes of issues in the future.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>04:42</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That's a key distinction right there. Not just solving for this particular incident, but seeing what the incident tells you about a class of issues. Post-mortems, really effective ones, don't just tell you what went wrong yesterday. They give you insights about the work you're doing today, and about what you're planning for the future. That broader kind of thinking instills a respect for all those accidents and failures, makes them a vital part of everyday work life.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>05:12</strong> - <em>Jennifer Petoff</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So, a really good post&ndash;mortem addresses more than just the single issue at hand, it addresses the whole class of issues. And the post-mortems focus on what went well, what went wrong, where we got lucky, and what prioritized action we can take to make sure this doesn't happen again. If you don't take action, history is destined to repeat itself.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>05:32</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>At Google, there's a focus on blameless post-mortems, and that makes all the difference. If nobody's to blame when something goes wrong, then everybody can dig into errors in an honest way and really learn from them without covering tracks, or arguing. Those blameless post-mortems have become a key part of the culture at Google, and the result is a workplace where failure isn't something to be afraid of. It's normalized.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>06:01</strong> - <em>Jennifer Petoff</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>How does Google look at failure? 100% of time is an impossible goal, like, you're kidding yourself if you think that's achievable. So failure's going to happen, it's just a matter of when and how. Failure is celebrated at Google, so it's something we can learn from, and post-mortems are shared widely among teams to make sure that the things that are learned are widely available.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>06:23</strong> - <em>Jennifer Petoff</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Failure is inevitable, but you never want to fail the same way twice. To err is human, but to err repeatedly is something that would be better avoided.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>06:34</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It's so interesting hearing the way Jennifer talks about failures, because it's like she's leaning into those mistakes. Like, when things go wrong, it means you've arrived at a place you can actually mine for value.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>06:50</strong> - <em>Jennifer Petoff</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>You deal with the situation in real time, but then afterwards taking time to write up what happened so that others can learn from that. With any incidents, you pay the price when it happens, and you're not re&ndash;collecting some of that cost if you don't write up a post&ndash;mortem and actually learn from that experience, and I think that's a critical lesson. We believe very strongly here at Google in a blameless culture. You don't gain anything by pointing fingers at people, and that just then sends people to cover up failure, which is going to happen, regardless.</p>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>07:27</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It's so important here to remember something Jennifer said earlier, that error-free work is a fantasy. There will always be things that go wrong. What it comes down to is a shift in thinking. We can put away that idea that there's a single, definable end goal, where everything will finally go the way we imagined. There is no single there that we're trying to get to, and it turns out, that's a hugely powerful and positive thing.</p>
+        <p>Google's push for embracing failure makes a lot of sense. Super practical. But I wanted to know, is this just lip-service? Do we have some concrete examples of failure actually making things better, or is it all just a way to make ourselves feel better when we're hitting compile for the 200th time?</p>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>08:26</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Turns out, there's someone who can answer that.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>08:29</strong> - <em>Jessica Rudder</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>My name is Jessica Rudder. I'm a software engineer at GitHub.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>08:33</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Jessica has seen her share of failure over at GitHub. It's a failure arena, in one sense, and along the way, she's collected some stories about times when failure was the doorway to massive success. Like this one:</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>08:50</strong> - <em>Jessica Rudder</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So there was a game development company that was working on a brand-new game in the '90s. Essentially, it was a racing game, but their twist on it was that it was going to be street racing. So as the racers are racing through the streets, they're not only racing each other, but they're also NPCs (non-player characters) that are cop cars that are chasing them down. And if a cop car catches you, it's supposed to pull you over and then you lose the race. So they get this code all wired up, and they start running it, and what they discovered is that they completely calibrated the algorithm wrong, and instead of the cop cars chasing the players' vehicles, they would just come screaming out of side streets and slam right into them.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>09:37</strong> - <em>Jessica Rudder</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So it was just a total mess. And instead of freaking out, they thought, let's go ahead and see how people like it, and that way we know what to tweak about the algorithm. So they sent it over to the play testers, and what they found was that the play testers had way more fun running away from the cops and trying to dodge being captured by these rogue, violent cop cars than they ever had with just the racing game itself. And it was so much fun, in fact, that the development team shifted the entire concept that they were building the game around.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>10:17</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Can you guess where this is going?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>10:21</strong> - <em>Jessica Rudder</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And that's how we ended up with Grand Theft Auto. I mean, it's literally the best-selling video game franchise of all time, and the whole reason it exists is because when they failed to get the algorithm right, they thought, well, let's try it out. Let's see what we've got, and let's see what we can learn from it.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>10:41</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Sort of amazing, right? But here's the trick. The Grand Theft Auto team had to stay receptive when they were hit with a failure. They had to stay curious.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>10:52</strong> - <em>Jessica Rudder</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So if those developers hadn't been open&ndash;minded about it, and decided to see what they could learn from this mistake, we would never have had Grand Theft Auto. We would have had some boring, run&ndash;of&ndash;the&ndash;mill street race game.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>11:07</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Sticking with the game theme for a minute, something similar happened when Silent Hill was being produced. This was a huge, triple-A game—big-time production. But they had serious problems with pop-up. Parts of the landscape weren't being processed fast enough, so all of a sudden you get a wall or a bit of road popping up out of nowhere. This was a deal-breaker problem, and they were late in their development cycle. So what do they do? Scrap the game entirely? Throw their hands up? Or embrace the problem itself?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>11:42</strong> - <em>Jessica Rudder</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>What they did was fill the world with a very dense, eerie fog. Because fog, as it turns out, is really easy for the processors to render and not get any kind of delays. But additionally, fog prevents you from seeing things at a distance, so in reality, those buildings are still popping in, but you can't see it anymore because the fog is blocking your view. So when they do come into view, they're already rendered, and it looks like they're coming out of the fog, instead.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>12:15</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The fog became so well-loved that it's basically considered another character in the Silent Hill franchise. It makes the game play way scarier by limiting the player's vision. And even when the processors got so fast that they didn't need to cover up those pop-ups anymore, they kept the fog.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>12:33</strong> - <em>Jessica Rudder</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>You cannot have a Silent Hill game without fog. And all that fog was doing initially was covering up a mistake.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>12:40</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I love it! They saved a major development by embracing their failure instead of running from it. And that rule about not fearing failure applies to little, individual things, too, not just company-wide decisions. Looking failure calmly in the face is how we get better, bit by bit.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>13:01</strong> - <em>Jessica Rudder</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>A lot of times people get too much into their own head and they think a failure means I'm bad at x. It's not, oh, this code is broken and I don't know how to fix it, yet. It's, “I don't know how to write JavaScript.” And you are never going to learn what you need to learn by saying, “I don't know how to write JavaScript.” But if you can identify, oh, I don't know how to make this loop work in JavaScript, then you have something that you can Google, and you can find that answer, and it just works perfect. I mean, you're still going to struggle, but you're going to struggle a whole lot less.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>13:36</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So our mistakes nudge us toward bigger things, those experiments, those fails, those heroic attempts, they make up most of the journey, whether you're a new developer or the head of a major studio. And nowhere is that more true than in the open source communities I've come to know and love. Failure can be a beautiful thing in open source, and that's where our story goes next.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>14:14</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We saw earlier how failing well can lead to happy surprises, things we didn't even know we wanted to try. And at its best, open source development culture hits that mark. It makes failure okay. To understand how that willingness to fail gets baked into open source development, I got chatting with Jen Krieger. She's Red Hat's chief agile architect. We talked about attitudes toward failure in open source, and how those attitudes shape what's possible. Take a listen:</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>14:47</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I want to touch on this mantra, I feel is probably a good way to put it. The "fail fast and break things," which is a big rally cry, almost, I feel like, for our community. What are your thoughts on that?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>15:04</strong> - <em>Jen Krieger</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I have a lot of thoughts on that.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>15:06</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I thought you might.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>15:06</strong> - <em>Jen Krieger</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Fail fast, fail forward, fail quickly&mdash;all those things. So to put that into context, in the early days of my career, I worked in a company where there was no room for failure. If you did something wrong, you brought down the one application. There was really no way, no room, really, for anybody to do anything wrong. And that just really wraps people around the axle, that idea that you have absolutely no room for failure, led us into almost like a cultural movement, if you would, that then spawned into that wonderful word, agile, into the wonderful word, DevOps. When I look at those words, all I'm seeing is that we're simply asking teams to do a series of very small experiments that help them course-correct.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>16:02</strong> - <em>Jen Krieger</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It's about, oh, you've made a choice, and that's actually a positive thing. You might take a risky decision, and then you win, because you've made the right decision. Or the other side, which is, you've made the wrong decision and you understand now that that wasn't the right direction to go in.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>16:18</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Yeah, that makes sense. So when you think about "fail fast and break things" as being this movement, it feels like there's still some structure, some best practices in how to fail, how to do that the right way. What are some of the best practices and the principles around failing in a way that is good in the end?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>16:44</strong> - <em>Jen Krieger</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I always like to tell engineers that they need to break the build as early and as often as possible. If they're breaking their build and they're aware that they've broken the build, they have the opportunity in the moment to actually fix it. And it's all wrapped around that concept of feedback loops, and ensuring that the feedback loops that you're getting on the work that you're doing are as small as possible.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>17:08</strong> - <em>Jen Krieger</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And so in open source development, I submit a patch, and somebody says, “I'm not going to accept your patch for these nine reasons,” or “I think your patch is great, move forward.” Or, you might be submitting a patch and having a bot tell you that it's failed because it hasn't built properly. There's all sorts of different types of feedback.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>17:25</strong> - <em>Jen Krieger</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And then in open source development, you might also have longer feedback loops where you say, “I want to design this new functionality, but I'm not entirely sure what all the rules should be. Can somebody help me design that?” And so you go into this long process where you're having long and detailed conversations where folks are participating and coming up with the best idea.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>17:45</strong> - <em>Jen Krieger</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And so there's all sorts of different feedback loops that can help you accomplish that.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>17:50</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Jen figures those feedback loops can look different for every company. They're customizable, and people can make them work in 100 different ways. But the point is, she's not even calling them failures or mistakes. She's just calling them, "feedback loops." It's an organic system. Such a healthy way of thinking about the whole process.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>18:11</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Meanwhile, there's one attitude toward those little glitches that has the exact opposite effect.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>18:18</strong> - <em>Jen Krieger</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>There are things that organizations do that are just flat-out the wrong thing to do.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>18:23</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Mm-hmm (affirmative).</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>18:24</strong> - <em>Jen Krieger</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Having your leadership team, or, at a very high level, the organization thinking that shaming people for doing something wrong or instilling fear in relation to performance results; and that looks like, “If you don't do a good job, you won't get a bonus,” or “If you don't do a good job, I'm going to put you on a performance plan.” Those are the types of things that create hostility.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>18:50</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>What she's describing there is a failure fail. A failure to embrace what failure can be. And she's echoing Jennifer Petoff's attitude too, right? That idea about blame-free post-mortems we heard about at the top of the episode?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>19:07</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Yeah, that's interesting. It's like if we are a little bit more strict around how we work together, or maybe just more mindful, more purposeful in how we work together, we will be almost forced to be better at our own failure.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>19:23</strong> - <em>Jen Krieger</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Yes. And there's companies out there that have learned this already, and they've learned it a long time ago, and Toyota is a perfect example of a company that embraces this concept of continuous learning and improvement in a way that I rarely see at companies. There is just this idea that anyone at any point can point out something that isn't working properly. It doesn't matter who they are, what level of the company they're in. It's just understood in their culture that that's okay. And that environment of continuous learning and improvement, I would say, would be one of those leading practices, the things that I would expect a company to do to be able to accommodate failure and to allow it to occur.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>20:06</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Mm-hmm (affirmative). Yeah.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>20:07</strong> - <em>Jen Krieger</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>If you're asking questions about why things aren't going well, instead of pointing fingers or trying to hide things, or blaming others for things not going well, it creates an entirely different situation. Changes the conversation.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>20:23</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And it's interesting because you mentioned earlier how the break things "fail fast and break things" mantra was this culture, this kind of push-back against the way things used to be done. But it sounds like that mantra has also created maybe a different way that teams work within a company, within a tech team. Tell me a little bit more about that. How has it changed the way developers see their roles and how they interact with other people in the company.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>20:55</strong> - <em>Jen Krieger</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>My early days of working with engineers pretty much looked like, the engineers all sat in a small area. They all talked to one another. They never really interacted with any of the business people. They never really understood any of their incoming requirements, and we spent an awful lot of time really focused on what they needed to be successful, and not necessarily what the business needed to actually get their work done. So it was much more of a, “I'm an engineer, what do I need in order to code this piece of functionality?” What I observe today in pretty much every team that I work with, the conversation has shifted significantly to not, “What do I need as an engineer to get my job done,” but “What does the customer, or what does the user need to actually feel like this piece of functionality that I'm making is going to be successful for them? How are they using the product? What can I do to make it easier for them?”</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>21:56</strong> - <em>Jen Krieger</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>A lot of those conversations have changed, and I think that's why companies are doing better today on delivering technology that makes sense. I will also say that the faster we get at releasing, the easier it is for us to know whether or not our assumptions and our decisions are actually coming true. So, if we make an assumption about what a user might want, before, we were having to wait, like, a year to two years to really find out whether or not that was actually true.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>22:25</strong> - <em>Jen Krieger</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Now, if you look at the model of an Amazon or Netflix, they're releasing their assumptions about what their customers want, like, hundreds of times a day. And the response they get from folks using their applications will tell them whether or not they're doing what it is the users need them to be doing.</p>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>22:46</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Yeah, and it sounds like it requires more cooperation, because even the piece of advice you gave earlier about build, break the build, break it often. That kind of requires the engineering team or the developers to be more in step with DevOps, right, in order for them to break it, and to see what that looks like to do those releases early and to do them often. It sounds like it requires more cooperation between the two.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>23:15</strong> - <em>Jen Krieger</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Yeah, and it's always amusing to somebody who has that title, agile coach, or in my case, chief agile architect, because the original intent of the Agile Manifesto is to get folks to think about those things differently. We are uncovering better ways of developing software by doing it and helping others do it. It is really the core, heart, and foundation of what agile is supposed to do. And so, if you fast forward the 10, 15+ years to the arrival of DevOps and the insistence that we have continuous integration and deployment. We have monitoring, we start thinking differently about throwing code over the wall.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>23:56</strong> - <em>Jen Krieger</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>All that stuff is really what we were supposed to be thinking back when we originally started talking about agile.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>24:03</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Mm-hmm (affirmative). Absolutely. So regardless of how people implement this idea of failure, I think that we can both agree that the acceptance of failure, the normalizing of failure is just a part of the process, something that we need to do, something that happens that we can manage, that we can maybe do the "right way," is a good thing. It has done some good for open source. Tell me about some of the benefits of having this new movement, this new culture of accepting failure as part of the process.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>24:36</strong> - <em>Jen Krieger</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It's a beautiful thing to watch that process happen. For somebody to go from being really in a situation where they're fearful of what might happen, to a place in which they can try to experiment and try to grow, and try to figure out what might be the right answer. It's really great to see. It's like they blossom. Their morale improves, they actually realize that they can own what it is that they are. They can make decisions for themselves, they don't have to wait for somebody to make the decision for them.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>25:05</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Failure as freedom. Ah, I love it! Jen Krieger is Red Hat's chief agile architect.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>25:19</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Not all open source projects reach the fame and success of big ones, like Rails or Django, or Kubernetes. In fact, most don't. Most are smaller projects with just a single contributor. Niche projects that solve little problems that a small group of developers face, or they've been abandoned and haven't been touched in ages. But they still have value. In fact, a lot of those projects are still hugely useful, getting recycled, upcycled, cannibalized by other projects.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>25:54</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And others simply inspire us, teach us by their very instructive wrongness. Because failure, in a healthy, open source arena, gives you something better than a win. It gives you insight. And here's something else. Despite all those dead ends, the number of open source projects is doubling about every year, despite all the risky attempts and Hail Marys; our community is thriving, and it turns out, we're not thriving despite our failures, we're thriving because of them. Next episode, how security changes in a DevOps world. Constant deployment means security's working its way into every stage of development, and that is changing the way we work. Meantime, if you want to learn more about open source culture and how we can all change the culture around failing, check out the free resources waiting for you at redhat.com/commandlineheroes.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-purple-dark text-white">
+                <p class="mb-0"><strong>26:54</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Command Line Heroes is an original podcast from Red Hat. Listen for free on Apple Podcast, Google Podcast, or wherever you do your thing. I'm Saron Yitbarek. Until next time, keep on coding.</p>
+    </div>
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>  <!-- Pattern | raw_html -->
+
+<div class="rh-raw"         data-rh-unique-id="2069881">
+        <section class="dms-band clh-bonus bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 reveal">
+               <h3 class="font-family-monospace text-purple-dark">Keep going</h3>
+                <div class="row">
+                    
+                   <div class="col-md-4 d-flex reveal">
+                        <div class="card rounded-0">
+                            <div class="card-body p-2 p-md-3">
+                                <h3 class="font-family-monospace font-weight-light">Failure as a catalyst: Designing a feedback loop for success</h3>
+
+                                <p>Don't give up after a rejection. Using feedback loops can straighten a winding career path.</p>
+
+                                <p><a class="btn btn-link text-white" href="../../blog/failure-catalyst-designing-feedback-loop-success.html"  title="Failure as a catalyst: Designing a feedback loop for success">Read more</a></p>
+
+        
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 d-flex reveal">
+                        <div class="card mb-0 rounded-0">
+                            <div class="card-body p-2 p-md-3">
+                                <h3 class="font-family-monospace font-weight-light">Living on the command line: Why mistakes are a good thing</h3>
+
+                                <p>Does failure grant freedom? See how healthy teams treat failure.</p>
+                                 <p ><a class="btn btn-link text-white" href="https://opensource.com/article/18/10/living-command-line"  title="Living on the command line: Why mistakes are a good thing">Examine</a></p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                 <div class="col-md-4 d-flex reveal">
+                        <div class="card mb-0 rounded-0">
+                            <div class="card-body p-2 p-md-3">
+                                <h3 class="font-family-monospace font-weight-light">Command Line Heroes: Failure != Game Over</h3>
+
+                                <p>When "Game Over" really means "Give it another go."</p>
+                                 <p ><a class="btn btn-link text-white" href="../../blog/command-line-heroes-failure-game-over.html"  title="Command Line Heroes: Failure != Game Over">Try again</a></p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</section>
+    </div>  <!-- Pattern | raw_html -->
+
+<div class="rh-raw"         data-rh-unique-id="2069891">
+                <section class="dms-band clh-guests bg-repeat bg-pos-ct bg-size-cover" data-bg-image="../../../ux/webux/img/bandbg/bkgd-clh-s2e4b-2000x900.jpg">
+        <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="font-family-monospace text-white reveal">Featured in this episode</h3>
+
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 pb-2 pb-lg-0 reveal">
+                        <div class="card mb-0 h-100  bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-dark" href="http://twitter.com/jennski" target="_blank" title="Jennifer Petoff">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="https://www.redhat.com/cms/managed-files/person-clh-petoff-300x300.jpg" alt="Jennifer Petoff"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="font-family-monospace">Jennifer Petoff</h4>
+
+                                    <p class="mb-0">Senior program manager for Google's <em>Site Reliability Engineering team, co-edited</em> </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 pb-2 pb-lg-0 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-dark" href="http://twitter.com/mrry550" target="_blank" title="Jen Krieger">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="https://www.redhat.com/cms/managed-files/person-clh-krieger-300x300.jpg" alt="Jen Krieger"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="font-family-monospace">Jen Krieger</h4>
+
+                                    <p class="mb-0">Chief agile architect at Red&nbsp;Hat</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 pb-2 pb-lg-0 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-dark" href="http://twitter.com/JessRudder" target="_blank" title="Jessica Rudder">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="https://www.redhat.com/cms/managed-files/person-clh-rudder-300x300.jpg" alt="Jessica Rudder"></div>
+
+                                <div class="card-body p-2">
+                                    <h4 class="font-family-monospace">Jessica Rudder</h4>
+
+                                    <p class="mb-0">Experience engineer at GitHub and host of CompChomp</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    
+                </div>
+          
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+    </div>  <!-- Pattern | raw_html -->
+
+<div class="rh-raw"         data-rh-unique-id="2069901">
+        <section class="dms-band clh-newsletter pt-6 pt-md-8">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-5 reveal">
+                <div class="card">
+                    <div class="card-body p-0">
+                        <img class="img-fluid svg svg-white mb-3" src="https://www.redhat.com/cms/managed-files/logo-command-line-heroes.svg" width="166" height="42" alt="Command Line Heroes logo" title="Command Line Heroes">
+
+                        <h3 class="font-family-monospace">Get the newsletter</h3>
+
+                        <p class="mb-0">After each episode drops, we'll send you commentary from the Command Line Heroes team, as well as links that help you take a closer look at the topics we cover. It's as simple as that.</p>
+                    </div>
+
+                    <div class="card-footer pt-3 px-0 pb-0">
+                        <a class="btn btn-primary mb-1 mb-lg-0" href="http://www.redhat.com/forms/?config=19411" title="Sign up">Sign up</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 offset-lg-1 reveal">
+                <div class="card mb-0 bg-white rounded-0 text-black">
+                    <div class="card-body p-2 p-md-3">
+                        <h3 class="font-family-monospace text-red">Presented by Red&nbsp;Hat</h3>
+
+                        <p class="mb-0">For 25 years, Red Hat has been bringing open source technologies to the enterprise. From the operating system to containers, we believe in building better technology together–and celebrating the unsung heroes who are remaking our world from the command line up.</p>
+                    </div>
+
+                    <div class="card-footer pt-0 px-2 px-md-3 pb-2 pb-md-3">
+                        <a class="btn btn-link mb-0" href="http://www.redhat.com/" title="Learn more">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>  <!-- Pattern | raw_html -->
+
+<div class="rh-raw"         data-rh-unique-id="2069911">
+        <article class="node-shared">
+  
+  </article>
+
+    </div>
+  
+  
+</article>
+
+</div>
+  </div>
+        
+  </div>
+
+  <footer>
+        <section class="rc-footer-traditional">
+      <div class="container rc-footer-traditional-container">
+        <section class="rc-footer-traditional-section">
+          <div class="rc-footer-traditional-logo">
+            <div class="row">
+              <a href="https://www.redhat.com/en">
+                <img src="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo.svg" class="screen" title="Red Hat" />
+                </a>
+            </div>
+          </div>
+          <div id="legal" class="rc-footer-traditional-legal">
+            <div class="row">
+              <div class="copyright">©2021 Red Hat, Inc.</div>
+              <div >
+                <ul class="menu"><li class="first leaf"><a href="../../about/privacy-policy.html">Privacy statement</a></li>
+<li class="leaf"><a href="../../about/terms-use.html">Terms of use</a></li>
+<li class="leaf"><a href="../../about/all-policies-guidelines.html">All policies and guidelines</a></li>
+<li class="leaf"><a href="../../about/digital-accessibility.html">Digital accessibility</a></li>
+<li class="last leaf"><span id="teconsent" class="nolink">|</span></li>
+</ul>              </div>
+            </div>
+                      </div>
+          <div class="rc-footer-traditional-event-logo">
+            <div id="block-block-5" class="block block-block block-footer-promote">
+
+      
+  <a href="https://www.redhat.com/summit"><img src="https://www.redhat.com/cms/managed-files/Logo-Red_Hat-Summit-A-Standard-RGB-02_0.svg" alt="Red Hat Summit" style="float: right;" width="72px"></a>
+</div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </footer>
+        <script type="text/javascript" src="../../../ux/webdms/js/vendors/jquery.waypoints.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/plyr.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/viewport.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/scripts.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/projects/clh.min6eda.js?qy3uiv"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+  if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
+      _satellite.pageBottom();
+  }
+//--><!]]>
+</script>
+    </div>
+  <script type="text/javascript"  src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"></script></body>
+
+<!-- Mirrored from www.redhat.com/en/command-line-heroes/season-2/fail-better by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:27:32 GMT -->
+</html>

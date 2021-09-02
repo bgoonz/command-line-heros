@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  
+<!-- Mirrored from www.redhat.com/en/command-line-heroes/season-7/bubble by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:30:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!--[if IE]><![endif]-->
+<script id="trustarc" type="text/javascript" src="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"></script>
+<script id="ddo" type="text/javascript">
+<!--//--><![CDATA[//><!--
+    var digitalData = {"cart":[],"event":[],"listing":{"browseFilter":"","query":"","queryMethod":"","refinementType":"","refinementValue":"","resultCount":"","searchType":""},"page":{"attributes":{"queryParameters":"","referringSearchEngine":"","analyticsTitle":"brand affinity | command line heroes season 7 episode 8","taxonomyPageSubType":["28051"],"taxonomyRegion":["4521"],"taxonomyMetaHreflang":["29051"]},"category":{"contentType":"","keyPage":"false","keyPageType":"","pageType":"pattern_template","primaryCategory":"command-line-heroes","subCategories":["season-7","bubble"]},"pageInfo":{"cms":"RH CMS 2021.12.0","contentFindingMethod":"","contentID":"549491","contentPortal":"","destinationURL":"https:\/\/www.redhat.com\/en\/command-line-heroes\/season-7\/bubble","errorMessage":"","errorType":"","language":"en","pageName":"","referringDomain":"","referringURL":"","sysEnv":"","template":"","title":"Command Line Heroes: Season 7: After the Bubble"}},"product":[],"user":[{"profile":[{"profileInfo":{"daysSinceLastPurchase":"","demandbaseSID":"","eloquaGUID":"","lastLoginDate":"","lastPurchaseDate":"","loggedIn":"false","profileID":"","subscriptionFrequency":"","subscriptionLevel":""}}]}]};
+    !function(a,b,c){"use strict";function d(a){var c="; "+b.cookie,d=c.split("; "+a+"=");if(2===d.length)return d.pop().split(";").shift()}if(b.referrer){var e=b.createElement("a");e.href=b.referrer,c.page.pageInfo.referringDomain=e.hostname,c.page.pageInfo.referringURL=e.href}c.page.pageInfo.sysEnv=a.innerWidth<=768?"tablet":"desktop";var f=c.user[0].profile[0].profileInfo,g=d("rh_elqCustomerGUID");g&&(f.eloquaGUID=g);var h=d("rh_user");if(h){var i=h.split("\\|");i[0]&&(f.loggedIn="true")}var j=d("s_dmdbase");j&&(f.demandbaseSID=j)}(window,document,digitalData);
+//--><!]]>
+</script>
+<script src="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm.js" data-domain="www.redhat.com"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-functional.js" class="trustecm" data-tracker-type="functional"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-advertising.js" class="trustecm" data-tracker-type="advertising"></script><script id="dpal" type="text/javascript" src="../../../dtm.js"></script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="en" />
+<link href="bubble.html" rel="alternate" hreflang="en" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "availableLanguages": {
+        "zh": {
+            "@type": "Language",
+            "name": "简体中文",
+            "href": "/zh/command-line-heroes/season-7/bubble"
+        },
+        "en": {
+            "@type": "Language",
+            "name": "English",
+            "href": "/en/command-line-heroes/season-7/bubble",
+            "current_lang": true
+        },
+        "fr": {
+            "@type": "Language",
+            "name": "Français",
+            "href": "/fr/command-line-heroes/season-7/bubble"
+        },
+        "de": {
+            "@type": "Language",
+            "name": "Deutsch",
+            "href": "/de/command-line-heroes/season-7/bubble"
+        },
+        "it": {
+            "@type": "Language",
+            "name": "Italiano",
+            "href": "/it/command-line-heroes/season-7/bubble"
+        },
+        "ja": {
+            "@type": "Language",
+            "name": "日本語",
+            "href": "/ja/command-line-heroes/season-7/bubble"
+        },
+        "ko": {
+            "@type": "Language",
+            "name": "한국어",
+            "href": "/ko/command-line-heroes/season-7/bubble"
+        },
+        "pt-br": {
+            "@type": "Language",
+            "name": "Português",
+            "href": "/pt-br/command-line-heroes/season-7/bubble"
+        },
+        "es": {
+            "@type": "Language",
+            "name": "Español",
+            "href": "/es/command-line-heroes/season-7/bubble"
+        }
+    }
+}</script><meta name="last-publish-date" content="Tue, 25 Jun 2019 04:00:00 GMT" />
+<meta name="node-type" content="pattern_template" />
+<meta name="source" content="rhdc_drupal" />
+<meta name="rhdc_key" content="fa272c9da3835bdd3af363613d848afb" />
+<meta name="taxonomy-region" content="Global" />
+<meta name="taxonomy-region-tid" content="4521" />
+<meta name="taxonomy-page-sub-type" content="Brand affinity" />
+<meta name="taxonomy-page-sub-type-tid" content="28051" />
+<meta name="taxonomy-meta-hreflang" content="en" />
+<meta name="taxonomy-meta-hreflang-tid" content="29051" />
+<link rel="shortcut icon" href="https://www.redhat.com/misc/favicon.ico" type="image/x-icon" />
+<meta property="og:description" content="The Y2K bug generated a lot of fear, but all that hype fizzled when the new millennium didn’t start with a digital apocalypse. It turns out that fear was just aimed at the wrong catastrophe. While plenty were riding high on the rise of the internet beyond the Y2K scare, another disaster had been brewing since 1995—and would bring them back down. But the dot-com bubble wasn’t the end. The internet was here to stay." />
+<meta name="description" content="The Y2K bug generated a lot of fear, but all that hype fizzled when the new millennium didn’t start with a digital apocalypse. It turns out that fear was just aimed at the wrong catastrophe. While plenty were riding high on the rise of the internet beyond the Y2K scare, another disaster had been brewing since 1995—and would bring them back down. But the dot-com bubble wasn’t the end. The internet was here to stay." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="image_src" href="../../../cms/managed-files/Opengraph---S7_0.jpg" />
+<link rel="canonical" href="bubble.html" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.redhat.com/en/command-line-heroes/season-7/bubble" />
+<meta property="og:title" content="Command Line Heroes: Season 7: After the Bubble" />
+<meta property="og:image" content="https://www.redhat.com/cms/managed-files/Opengraph---S7_0.jpg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Command Line Heroes: Season 7: After the Bubble" />
+<meta name="twitter:image" content="https://www.redhat.com/cms/managed-files/Opengraph---S7_0.jpg" />
+    <title>Command Line Heroes: Season 7: After the Bubble</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://static.redhat.com/">
+    <link rel="preload" href="https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/fonts/web_icon/rh-web-iconfont.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatTextVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatDisplayVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__k9aoxkMyjUtSX9AXGCPExPgTYjM0Xv5OYNfbFGDRafY__N9sjJtGj85lXtvOptw2e_YZ01FXbTXcJywP8EaKBijU__uaCwYofnUZLAnB7x3Q6WyVKH" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/all/libraries/webrh/dist/css/webrh.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__cxslYvmVeKFG0RwKl9kcXSrmb2x2VtvkIw-OLkwF8jU___pPNjqO-hMXRnx5HlJupeXtrvaj0Ilhs-XAVxMYy0CM__uaCwYofnUZLAnB7x3Q6WyVKH" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__wpajrf8pWA19ifT2xQXPB3J1TByoCXqZVtt6kXfl4Ow__PFQbFxxWsZl0yTnfrpPiA-o5Pvtu-CXh7nICx08JW0c__uaCwYofnUZLAnB7x3Q6WyVKH" media="print" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/css/trustecm.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/redhat-theme/6/advanced-theme.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/red-hat-font.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/font-awesome/4.7.0/css/font-awesome.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/vendors/plyr.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/vendors/slick.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/styles.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/projects/clh-s7-episodes.min6eda.css?qy3uiv" media="all" />
+    <!--[if lt IE 9]>
+      <script src="/profiles/rh/themes/redhatdotcom/js/selectivizr-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/nwmatcher-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/respond.js" type="text/javascript"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../../../sites/default/files/advagg_js/js__B6wED6l5P_XUdxVmb7Nvh5d9zn074QukFqJa2HLXS6c__VzWs8XZBHHsPW77egi-W-FQw2mAEr5F-GgCJU0wn3Nc__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.vendor.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.webcomponents.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__pDOiYGKaYbdKNp1gvMxR0fWhWZnfUemYDUhADyCn3oM__jCrCuWCJIPYPe1FzZoUvsJWEjkNMmRIQHYek1h7idBE__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.rh = window.rh || {}; window.rh.drupalTrustArcLoaded = true;
+//--><!]]>
+</script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__5nUyGFdhKMGscC9VhukG-UTAhz8BEdhsa8koVlLwAyQ__Lz8gDLbd5fTco1AnHaCqhSeYJB5o0QUXAimK7JOyRNI__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"redhatdotcom","theme_token":"FYypDZlxg8nOloGREcc6-akiRNPDa6L9KtvqPpUvdI0","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.webcomponents.min.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.min.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/marketing\/latest\/trustarc\/trustecm\/css\/trustecm.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-theme\/6\/advanced-theme.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-font\/4\/webfonts\/red-hat-font.min.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-iconfont.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-web-iconfont.css":1,"sites\/all\/libraries\/patternfly-elements\/pfe-styles\/pfe-typography-classes.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/site-switcher.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/chrome.css":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/print.css":1,"\/\/static.redhat.com\/libs\/font-awesome\/4.7.0\/css\/font-awesome.min.css?qy3uiv":1,"\/ux\/webdms\/css\/vendors\/plyr.min.css?qy3uiv":1,"\/ux\/webdms\/css\/vendors\/slick.min.css?qy3uiv":1,"\/ux\/webdms\/css\/styles.min.css?qy3uiv":1,"\/ux\/webdms\/css\/projects\/clh-s7-episodes.min.css?qy3uiv":1},"js":{"\/ux\/webdms\/js\/vendors\/jquery.waypoints.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/viewport.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/plyr.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/slick.min.js?qy3uiv":1,"\/ux\/webdms\/js\/scripts.min.js?qy3uiv":1,"\/ux\/webdms\/js\/projects\/clh.min.js?qy3uiv":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/rh\/modules\/redhat_www_ddo\/dist\/post-jquery.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.vendor.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.webcomponents.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"profiles\/rh\/modules\/redhat_www_menu\/js\/rh_nav.js":1,"profiles\/rh\/modules\/redhat_www_share\/js\/rh_share.js":1,"profiles\/rh\/modules\/redhat_www_utility\/js\/redhat_www_utility.js":1,"sites\/all\/libraries\/jquery-cookie\/jquery.cookie-1.4.1.min.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.pushmenu.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery-scrolltofixed.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/rh-chrome.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.fitvids.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.switchIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.viewport\/jquery.viewport.min.js":1}},"redhat_www_menu":{"path":"node\/549491"},"rh_analytics_enabled":false});
+//--><!]]>
+</script>
+    <noscript>
+        <link href="../../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.noscript.min.css" rel="stylesheet" >
+    </noscript>
+  </head>
+  <body unresolved class="bands-index html not-front not-logged-in no-sidebars page-node page-node- page-node-549491 node-type-pattern-template i18n-en clh-s7e1  " >
+    <div class="page">
+            <!-- Legacy migrated page support with body.migrated-page-hero -->
+<div class="header-background-image fts-migrated-bg">
+</div>
+
+  <div id="main-content">
+                      <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+      
+  <article class="node-549491 node node-pattern-template clearfix">
+
+  
+    <!-- Pattern | raw_html -->
+
+<article class="node-shared">
+      <header id="top" class="dms-band clh-nav-top py-2">
+    <div class="container text-white">
+        <div class="row d-flex align-items-center">
+            <div class="col-6">
+                <a href="../../command-line-heroes.html" title="Command Line Heroes">
+                    <img class="img-fluid svg svg-white" src="https://www.redhat.com/cms/managed-files/logo-command-line-heroes.svg" width="166" height="42" alt="Command Line Heroes logo">
+                </a>
+            </div>
+
+            <div class="col-6 clh-nav-toggle-wrapper">
+                <span class="text-monospace text-right font-size-16 d-inline-block">Subscribe<br/>& more</span>
+
+                <a href="#" class="btn btn-toggle" data-toggle="nav-shelf">
+                    <div class="d-inline-block">
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="dms-band clh-nav-shelf text-white py-0">
+    <div class="nav-container pb-4">
+        <div id="CLHNav" class="accordion">
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-subscribe.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSubscribe">
+                    <p>Subscribe</p>
+                </button>
+                <div id="clhSubscribe" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <p>Subscribe to the podcast to receive new episodes as soon as we release them</p>
+                    <div class="row pb-2">
+                        <div class="col-6 mb-2">
+                            <a href="http://geo.itunes.apple.com/podcast/us/id1319947289?mt=2&amp;at=1010lbVy&amp;ct=redhatclh_website" target="_blank" title="Listen on Apple Podcasts">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-apple.png" alt="Listen on Apple Podcasts">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://www.google.com/podcasts?feed=aHR0cHM6Ly9mZWVkcy5wYWNpZmljLWNvbnRlbnQuY29tL2NvbW1hbmRsaW5laGVyb2Vz" target="_blank" title="Listen on Google Podcasts">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-google.png" alt="Listen on Google Podcasts">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://www.stitcher.com/s?fid=159833&amp;refid=stpr" target="_blank" title="Listen on Stitcher">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-stitcher.png" alt="Listen on Stitcher">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://open.spotify.com/show/4Jgtgr4mHXNDyLldHkfEMz" target="_blank" title="Listen on Spotify">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-spotify.png" alt="Listen on Spotify">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://feeds.pacific-content.com/commandlineheroes" target="_blank" title="Subscribe via RSS Feed">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-rss.png" alt="Subscribe via RSS Feed">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-about.jpg">
+                <button href="../about.html" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhAbout">
+                    <p>About the podcast</p>
+                </button>
+                <div id="clhAbout" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <p>Discover Red Hat’s original podcast about the people who transform technology from the command line up. Subscribe to our newsletter for commentary from the Command Line Heroes team—and links to take a closer look at the topics we cover.</p>
+                    
+                    <p><a href="../about.html" class="btn btn-primary">Learn about the show</a></p>
+                    <p class="mb-0 pb-4"><a href="https://www.redhat.com/forms/?config=19411" class="btn btn-outline-white">Get the newsletter</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s1.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason1">
+                    <p>Season 1</p>
+                </button>
+                <div id="clhSeason1" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-1/os-wars-part-1.html" title="OS Wars_Part 1">OS Wars_part 1</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/os-wars-part-2-rise-of-linux.html" title="OS Wars_Part 2">OS Wars_part 2</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/agile-revolution.html" title="The Agile_Revolution">The Agile_Revolution</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/devops-tear-down-that-wall.html" title="DevOps_Tear Down That Wall">DevOps_Tear Down That Wall</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/the-containers-derby.html" title="The Containers_Derby">The Containers_Derby</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/crack-the-cloud-open.html" title="Crack the Cloud_Open">Crack the Cloud_Open</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/days-of-future-open.html" title="Days of Future_Open">Days of Future_Open</a>
+                        </li>
+                    </ol>
+                  <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-1.html" title="Explore season 1">Explore Season 1</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s2.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason2">
+                    <p>Season 2</p>
+                </button>
+                <div id="clhSeason2" class="accordion-panel collapse" data-parent="#CLHNav">
+
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-2/press-start.html" title="Press Start">Press Start</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/hello-world.html" title="Hello, World">Hello, World</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/ready-to-commit.html" title="Ready to Commit">Ready to Commit</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/fail-better.html" title="Fail Better">Fail Better</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/the-one-about-devsecops.html" title="The One About DevSecOps">The One About DevSecOps</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/the-data-explosion.html" title="The Data Explosion">The Data Explosion</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/at-your-serverless.html" title="At Your Serverless">At Your Serverless</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/open-curiosity.html" title="Open Curiosity">Open Curiosity</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/developer-advocacy-roundtable.html" title="Bonus_Developer Advocacy Roundtable">Bonus_Developer Advocacy Roundtable</a>
+                        </li>
+                    </ol>
+                   <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-2.html" title="Explore season 2">Explore Season 2</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s3.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason3">
+                    <p>Season 3</p>
+                </button>
+                <div id="clhSeason3" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-3/pythons-tale.html" title="Python's Tale">Python's Tale</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/learning-the-basics.html" title="Learning the BASICs">Learning the BASICs</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/creating-javascript.html" title="Creating JavaScript">Creating JavaScript</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/diving-for-perl.html" title="Diving for Perl">Diving for Perl</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/the-infrastructure-effect.html" title="The Infrastructure Effect">The Infrastructure Effect</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-3/heroes-in-a-bash-shell.html" title="Heroes in a Bash Shell">Heroes in a Bash Shell</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/talking-to-machines.html" title="Talking to Machines">Talking to Machines</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-3/the-c-change.html" title="The C Change">The C Change</a>
+                        </li>
+                    </ol>
+                   <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-3.html" title="Explore season 3">Explore Season 3</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s4.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason4">
+                    <p>Season 4</p>
+                </button>
+                <div id="clhSeason4" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-4/minicomputers.html" title="Minicomputers">Minicomputers</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-4/mainframes.html" title="Mainframes">Mainframes</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/personal-computers.html" title="Personal Computers">Personal Computers</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/floppies.html" title="Floppies">Floppies</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/smarter-phones.html" title="Smarter Phones">Smarter Phones</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/open-source-hardware.html" title="Open Source Hardware">Open Source Hardware</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/consoles.html" title="Consoles">Consoles</a>
+                        </li>
+
+                         <li class="mb-2">
+                            <a href="../season-4/steve-wozniak.html" title="Steve Wozniak">Steve Wozniak</a>
+                        </li>
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-4.html" title="Explore season 4">Explore Season 4</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s5.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason5">
+                    <p>Season 5</p>
+                </button>
+                <div id="clhSeason5" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-5/becoming-a-coder.html" title="Becoming a Coder">Becoming a Coder</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-5/where-coders-code.html" title="Where Coders Code">Where Coders Code</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-5/what-kind-of-coder-will-you-become.html" title="What Kind of Coder Will You Become?">What Kind of Coder Will You Become?</a>
+                        </li>
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-5.html" title="Explore season 5">Explore Season 5</a></p>
+ 
+                </div>
+            </div>
+
+                        <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s6.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason6">
+                    <p>Season 6</p>
+                </button>
+                <div id="clhSeason6" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-6/jerry-lawson.html" title="Jerry Lawson">Jerry Lawson</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/gladys-west.html" title="Dr. Gladys West">Dr. Gladys West</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/mark-dean.html" title="Dr. Mark Dean">Dr. Mark Dean</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/marc-hannah.html" title="Dr. Marc Hannah">Dr. Marc Hannah</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/clarence-ellis.html" title="Dr. Clarence Ellis">Dr. Clarence Ellis</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/roy-clay.html" title="Roy Clay">Roy Clay</a>
+                        </li>
+                       <li class="mb-2">
+                            <a href="../season-6/gladys-perkins.html" title="Gladys Perkins">Gladys Perkins</a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="../season-6/arlan-hamilton.html" title="Arlan Hamilton">Arlan Hamilton</a>
+                        </li>
+            
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link text-monospace text-white" href="../season-6.html" title="Explore season 6">Explore Season 6</a></p>
+                </div>
+            </div>
+
+             <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/season-7_nav.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason7">
+                    <p>Season 7</p>
+                </button>
+                <div id="clhSeason7" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="dot-com.html" title="Connecting The Dot-Com">Connecting The Dot-Com</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="nsfnet.html" title="From NSF to ISP">From NSF to ISP</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="html.html" title="A Language for the Web">A Language for the Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="ux.html" title="Web UX Begins">Web UX Begins</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="shopping.html" title="Shopping for the Web">Shopping for the Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="search.html" title="Looking for Search">Looking for Search</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="world.html" title="The World of the World Wide Web">The World of the World Wide Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="bubble.html" title="After the Bubble">After the Bubble</a>
+                        </li>
+
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../../command-line-heroes.html" title="Explore season 5">Explore Season 7</a></p>
+ 
+                </div>
+            </div>
+
+        </div>
+        
+        <ul class="social-list list-inline list-unstyled pl-5 pl-sm-6 mt-1">
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F" target="_blank" title="Facebook" onclick="return !window.open(this.href, 'Facebook', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
+                    <span class="web-icon-facebook" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.twitter.com/share?url=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F&amp;text=An%20original%20podcast%20about%20the%20people%20who%20transform%20technology%20from%20the%20command%20line%20up.%20Presented%20by%20Red%20Hat." target="_blank" title="Twitter" onclick="return !window.open(this.href, 'Twitter', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
+                    <span class="web-icon-twitter" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F&amp;title=Command%20Line%20Heroes&amp;summary=Hear%20the%20epic%20true%20tales%20of%20how%20developers%2C%20programmers%2C%20hackers%2C%20geeks%2C%20and%20open%20source%20rebels%20are%20revolutionizing%20the%20technology%20landscape.%20Command%20Line%20Heroes%20is%20a%20new%20podcast%20hosted%20by%20Saron%20Yitbarek%20and%20produced%20by%20Red%20Hat.&amp;source=Red%20Hat" target="_blank" title="LinkedIn" onclick="return !window.open(this.href, 'LinkedIn', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')" aria-current="page">
+                    <span class="web-icon-linkedin" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="mailto:?subject=Command Line Heroes&body=Hear%20the%20epic%20true%20tales%20of%20how%20developers%2C%20programmers%2C%20hackers%2C%20geeks%2C%20and%20open%20source%20rebels%20are%20revolutionizing%20the%20technology%20landscape.%20Command%20Line%20Heroes%20is%20a%20new%20podcast%20hosted%20by%20Saron%20Yitbarek%20and%20produced%20by%20Red%20Hat. https://www.redhat.com/en/command-line-heroes" target="_blank" title="Email" aria-current="page">
+                    <span class="web-icon-envelope" aria-label="true"></span>
+                </a>
+            </li>
+        </ul>
+
+         <div class="language-switcher position-absolute bottom-0 right-0  w-100">
+            <div class="row justify-content-center mx-0">
+
+                <div class="col-6 text-center border-right border-black border-20 language-inactive">
+                    <a href="http://www.redhat.com/es/command-line-heroes" title="Command Line Heroes"><img class="img-fluid py-2" width="90" src="https://www.redhat.com/cms/managed-files/logo_clh-en-espanol_inactive.svg" alt="CLH en espanol logo"></a></div>
+
+                <div class="col-6 text-center language-active"><a href="../../command-line-heroes.html" title="Command Line Heroes"><img class="img-fluid pt-3 pb-2" width="130" src="https://www.redhat.com/cms/managed-files/logo_CLH_small.svg" alt="CLH logo"></a></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+</div>
+
+
+<div class="mb-6">&nbsp;</div>  
+  </article>
+  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-hero--episode pt-4 py-md-10  bg-repeat"  data-bg-image="../../../cms/managed-files/S7-yellow-static-square.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 pt-lg-6 pt-xl-12 text-purple-darker reveal">
+                <h5 class="section-label mb-1 font-weight-light">Season 7, Episode 8</h5>
+
+                <h1 class="mb-lg-4 text-monospace font-size-28 font-size-lg-32"><strong>After the Bubble</strong></h1>
+
+                <div class="clh-audio plyr-theme">
+                    <audio src="http://chtbl.com/track/247G8/https://dts.podtrac.com/redirect.mp3/cdn.simplecast.com/audio/a88fbe81-5614-4834-8a78-24c287debbe6/episodes/5de2a53e-fe0c-4f9b-917d-aca87cd1893a/audio/a48e59f2-590a-4bd6-87a3-260b984880e8/default_tc.mp3" preload="none" controls></audio>
+                </div>
+                <p class="cta-group">
+                    <a class="btn btn-link text-monospace text-purple-darker" href="#" data-toggle="nav-shelf" data-toggle-panel="#clhSubscribe" title="Listen to this episode later" data-menu="subscribe">Listen to this episode later </a>
+                </p>
+            </div>
+            <div class="col-lg-6 offset-lg-1 pt-4 text-center reveal">
+                <img class="img-fluid" src="../../../cms/managed-files/CLH-S7-ep8.png" alt="Computer">
+            </div>
+            
+           
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-notes py-0">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-lg-7 col-xl-6 mx-auto pt-6 reveal">
+                <ul class="nav nav-tabs mb-3 d-flex justify-content-center text-monospace">
+                    <li class="nav-item text-center">
+                        <a class="tab-show-notes nav-link mx-0 mr-md-6 p-0 font-size-22 text-white active" href="#show-notes" data-toggle="tab" title="Show notes">Show notes</a>
+                    </li>
+
+                    <li class="nav-item text-center">
+                        <a class="tab-transcript nav-link mt-2 mt-md-0 mx-0 p-0 font-size-22 text-white" href="#transcript" data-toggle="tab" title="Transcript">Transcript</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="show-notes" class="tab-pane fade active show">
+                        <div class="row">
+                            <div class="col-12">
+                                <p>The Y2K bug generated a lot of fear, but all that hype fizzled when the new millennium didn’t start with a digital apocalypse. It turns out that fear was just aimed at the wrong catastrophe. While plenty were riding high on the rise of the internet beyond the Y2K scare, another disaster had been brewing since 1995&mdash;and would bring them back down. But the dot-com bubble wasn’t the end. The internet was here to stay.
+</p>
+
+                                <p class="mb-lg-0">Not long after the turn of the millennium, the dot-com economy collapsed. Peter Relan points to the flawed business plans that fueled the dot-com bubble, and how many entrepreneurs and investors underestimated the complexity of building a business on the internet. Ernie Smith tells the story of Pets.com, and how a similar idea a decade later had a much better chance of succeeding. Gennaro Coufano reveals the element of luck that saved Amazon from going under&mdash;and how it evolved in the aftermath. Julia Furlan reflects on the changes the dot-com bubble brought, and what’s left to consider. And Brian McCullough describes how the dot-com bubble paved the way for a more resilient digital economy.</p>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="transcript" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-12">
+                               <div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>00:04</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It's the final seconds of 1999. Alongside the partying, there's anxiety, catastrophe-scale anxiety, and  that's because nobody knows whether the world's computers are going to survive the end of the millennium. Will a Y2K bug plunge our digital lives back to the Stone Age?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>00:29</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Hmm, I guess not. Our tech didn't crash when clocks ticked over to the year 2000. But here's the thing: As we soared happily into the future, there was a tech catastrophe waiting around the corner. It just wasn't the one we expected. I'm Saron Yitbarek and this is Command Line Heroes, an original podcast from Red&nbsp;Hat.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>00:55</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>All season we've been telling the story of one of the most extraordinary years in tech history—1995. It was the year that fueled e-commerce, and web design, and search engines. 1995 was the year our online lives truly took shape and the dot-com bubble began dominating the stock market. For our season finale, we're looking at the end of that wild period of invention and growth. But 1995 didn't end after 12 months.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>01:28</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>From the tech world's perspective, the true end to 1995 arrived on March 10 of the year 2000. That was the moment the NASDAQ reached its all-time high, fueled by a fever of excitement about the world wide web. And then, well, here's the thing about bubbles. They burst and when the dot-com bubble burst, three-quarters of NASDAQ's value soon evaporated. The value of all those dot-com startups was thrown into question, and a new frontier of web-based technology had to be radically reimagined.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>02:08</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Had it all just been a mirage, or was there something real behind the dream of 1995? This is the story of that fateful moment when one future came to a crashing end and a new future arrived on the horizon.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>02:26</strong> - <em>Peter Relan</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>By '97, the business plans that were being created were starting to be, shall we say, increasingly less "deep".</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>02:38</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Peter Relan is a technologist who runs an incubator in Silicon Valley. And he was there for the late 90s rollercoaster and saw startups hitch themselves to the dot-com craze.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>02:50</strong> - <em>Peter Relan</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>You really did see a lot of people who were non-engineers coming to Silicon Valley with a couple of pages of an idea and presenting it to the venture capitalists and getting funding.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>03:05</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Once your new venture was funded, you’d go hire a CTO, or engineering manager, and get them to bring your idea to life. Business plans could be minimal, scrawled on a napkin, and that had some pretty huge consequences. It meant companies were being formed without reserves of cash, without any worries about overhead or profits, without any real plan for how to succeed in anything other than a bubble.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>03:31</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Relan worked in one of the late 90s startups that actually had more than a half-baked idea behind it. In 1998, he joined an online grocery delivery service called Webvan, as their senior VP of Technology. Webvan's plan was to cut out the grocery store and bring your food to your front door at the click of a few buttons. Today, that sounds like a decent proposition. But back in 1998, it strained the limits of what could be done. Like most 90s startups, there were also a few holes in their business plan.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>04:05</strong> - <em>Peter Relan</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The business plan included a service that was really good, high-quality products and brands, delivery at no extra charge, no questions asked upon returns, self-selected delivery slots down to a 30-minute window of your choice. You can't just do all of that and not have a premium pricing model. And the pricing model was supposed to be Safeway pricing. I think that was a combination that just was not going to pan out.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>04:38</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>But the other problem was timing. A shiny new startup in the late 90s had just a few years of grace to build up the kind of cash reserves that would help them survive the bubble bursting, and think how hard it would be to save much cash with the kind of overhead early web companies had to carry. Webvan's warehouse in the Bay area was the size of 18 supermarkets. So that's not cheap. But even more important, it was a digital company operating at a time when everything had to be built from scratch and maintained by you and you alone.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>05:15</strong> - <em>Peter Relan</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So you built everything from the ground up, including automation of the warehouse, and the delivery hub and spoke model for sending the trucks and vans out to all the people's houses, and the network infrastructure, and the datacenters, and all the software. So it is quite a remarkable amount of work to do when you start with a warehouse model like that.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>05:40</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>When Relan arrived at Webvan, he realized he’d need at least 100 engineers to handle their software systems networking and warehouse automation. Then there were interfaces for the drivers' PalmPilots so they'd know where to go. Dev ops, customer service systems, I mean, imagine you wanted to, I don't know, draw a picture, but first you had to go build all your own art supplies.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>06:04</strong> - <em>Peter Relan</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The hardest part really was the automation of the warehouse. We had 5 miles of conveyor belts and you had to route the totes, which capture the stuff that's going to go into an order and then be shipped to the customer. And you have to also make sure that the software is such that it routes the totes to the different parts of the warehouse, so a spaghetti jar doesn't end up on top of the tomatoes in that tote, because it'll crush the tomatoes. So you had to really do a lot of sophisticated algorithms to bring it all together and make it work.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>06:40</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>This is what pioneer days look like. Every element has to be invented and every dot-com startup had to invent their infrastructure for themselves. Once you realize how expensive all this was, it's not a surprise that they didn't have much cash to stay afloat when the stock market crashed.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>06:59</strong> - <em>Peter Relan</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Really, the only infrastructure you've got was electricity and a network connection and a cage, which would be called the datacenter and say, all right, have at it.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>07:10</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>You'd buy your own machines, hook them up inside those cages, and try to string together whatever you needed.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>07:17</strong> - <em>Peter Relan</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We also had a network control center and operations team to monitor these servers and replace them if something broke, and that was a constant job.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>07:27</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>All those levels of work, all those huge costs simply don't exist today. We forget how much infrastructure we take for granted. I mean, today...</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>07:37</strong> - <em>Peter Relan</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>All that is hidden away behind this beautiful cloud. Everything just works 24/7. Nobody today thinks about buying a server or a router.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>07:48</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>But for companies like Webvan, those extra costs finally came to a head on March 10, 2000, when the dot-com bubble burst. Among the hundreds of casualties were retailers like etoys.com and social media sites like the globe.com. But the site that came to epitomize the fast rise and faster fall of the dot-com bubble was...</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>08:14</strong> - <em>Ernie Smith</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Pets.com.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>08:15</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That's Ernie Smith, editor of an internet history newsletter called Tedium. Smith wrote about how in their brief heyday, Pets.com was buying Super Bowl ads, swallowing competitors, and going public, all in a matter of months. The site was going to be the online retailer for all your pet's needs. They would treat it like a unicorn, but in the end, Pets.com had the lifespan of a gerbil, 27 months.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>08:45</strong> - <em>Ernie Smith</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It was founded by a prospector who had the right domain name and was able to build a business around it. And it took a lot of time to build that business because of when it was founded. It required a lot of resources that modern companies would not have to worry about today, but were essential back then. The whole thing lived, became hard to ignore, and then died.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>09:13</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So like Relan described with Webvan, the Pets.com failure was a question of timing. They had the right idea, but they didn't have the infrastructure to make that idea sing.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>09:25</strong> - <em>Ernie Smith</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>If they had done it a few years later, it would have worked. If the timing was just a little bit better, it would have worked. They had to acquire more than 40 engineers. They had to put together their own customer service department and cloud computing, there was no Amazon Web Services back then, so they had to put together their own server farm and have IT people manning it at all times.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>09:51</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That kind of overhead plagued the entire industry and it made them vulnerable. We know now that the infrastructure problem was a temporary one. A new reality was around the corner. All those expensive components of running a web business were going to be re-imagined as services that you could simply rent. Only problem was surviving until then, and only the lucky ones were going to make it past the year 2000.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>10:22</strong> - <em>Gennaro Cuofano</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>There were a couple of things that happened that really saved Amazon.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>10:27</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Gennaro Cuofano is the founder of FourWeekMBA, where he consults and educates the public on business model strategies. We asked him to explain what allowed Amazon to survive the bursting bubble when so many others crashed and burned. We talked about Amazon's huge success in our e-commerce show, episode 5 in this season. But remember, Amazon was founded in the mid-90s. They could have been another Pets.com. But Cuofano says 2 crucial things happened that allowed Amazon to survive. First, America Online, maybe the biggest brand on the web at the time, invested $100 million bucks.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>11:10</strong> - <em>Gennaro Cuofano</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And this was a very important deal because it helped the company to actually improve its cash balance.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>11:15</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And second, Amazon issued a convertible bond just one month before the bubble burst and bought it for $672 million dollars.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>11:26</strong> - <em>Gennaro Cuofano</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Which as you can imagine, this was like really cash that saved the company.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>11:30</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Those 2 factors gave Amazon a huge cash advantage over other dot-coms who were caught unprepared. Peter Relan agreed, saying without all that cash, Amazon could easily have been just another victim of the burst bubble.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>11:46</strong> - <em>Peter Relan</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I was speaking with John Doerr, the VC (venture capitalist) who backed Jeff Bezos, and he said Amazon would have gone bankrupt if they hadn’t been able to raise $2 billion in 2000.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>11:56</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So Amazon survived, but they were also shaken. It was clear they had to evolve. Cuofano says that for Amazon, the bursting bubble inspired a massive change in the way they did business.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>12:09</strong> - <em>Gennaro Cuofano</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We can see this transition from 2001 to 2003 when Amazon, after this near death experience had to figure out how to scale from there, because revenues were actually slowing down and to gain a second stage of traction from there, Amazon had to understand how to change its way of doing business.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>12:29</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>For all its destruction, the dot-com bubble was also a teacher. Surviving meant reimagining how a web-based company could operate. And the crucial missing piece was a solution to the overhead problem. People were never going to make a living online if every piece of infrastructure had to be built from scratch. And in that simple truth, Amazon saw their opening. Somebody had to start providing that infrastructure as a service. Why not Amazon?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>13:00</strong> - <em>Gennaro Cuofano</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Amazon started to think more as a platform business model. And already before 2001, Amazon had experimented with hosting other e-commerce by selling, for instance, used items on the platform. But it was really a structural change from 2001 going forward.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>13:18</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>In 2001, only 6% of Amazon sales were made by third parties. By 2003, that number jumped to 22%. Amazon had learned the dot-com bubble's most important lesson: startups need platforms and services to survive, not just smart ideas. Companies need infrastructure.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>13:41</strong> - <em>Gennaro Cuofano</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It was really a structural change.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>13:43</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>But Amazon didn't just open the gate for third parties on their own site. They also created an entirely new branch of their business in 2006, Amazon Web Services, which began providing more and more cloud-based infrastructure to all those startups that couldn't afford to build their own.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>14:02</strong> - <em>Gennaro Cuofano</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>When Amazon approached the problem, they asked the question, how do we scale from here? And they understood that they needed to make the transition into a platform business model. They realized that now they needed to build a solid tech platform, which could be used solely with the purpose of helping other third-party stores to be built on top of Amazon. This was the turning point.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>14:25</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Amazon became an infrastructure provider. Big players like Toys R Us and Target signed up. Soon, Microsoft, Google, and IBM were offering cloud-based infrastructure, too. It solved a huge problem that left so many companies vulnerable in the late 90s. Basic web infrastructure was now a service you could hire. For startups, overhead dropped and possibilities expanded. For some, it was the return of those 1995 glory days, only this time we'd learned a few lessons.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>15:05</strong> - <em>Julia Furlan</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I think that people, hopefully, they're thinking about profits differently.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>15:11</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Julia Furlan is the host of Vox Media's "Go For Broke" podcast, which has a whole first season about the dot-com bubble. She told us the ground shifted after the bubble burst. For one thing, startups weren't rushing toward an IPO as often. Building something on the web was no longer about just grabbing a cool domain and hoping people invest in it. The web was growing up. Quick side note, that doesn't mean there aren't still boom and bust stories. There's always going to be a WeWork in the news. What I'm talking about, though, is the larger culture. We started this season by talking about the Netscape IPO in 1995.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>15:52</strong> - <em>Julia Furlan</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>This is the moment when everybody sort of realized, "Hey, there's money to be made. There's gold in them there hills."</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>15:59</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>But here, at the end of the season, what's interesting is: the evolution from get-rich-quick schemes to the idea that the web is a place to do real sustainable business. The web isn't just something to exploit. It's a place to experiment and grow and thrive.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>16:16</strong> - <em>Julia Furlan</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>One of the big lessons is that if you're going to start a company, it's a pretty good idea for you to have a business model that functions, even if nobody cares, even if everybody around you is saying like, "That doesn't matter. Profits don't matter." If you are in the position of creating a business or starting a business or getting investment, ask yourself, "How are we going to make money?"</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>16:44</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>While working on the show, Furlan discovered another change, too, a change in responsibility.</p>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>16:50</strong> - <em>Julia Furlan</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>What will be the effects of an absurd amount of success? Are you going to perhaps undercut an entire union industry that's existed for hundreds of years, like Uber did for the cab companies? When we disrupt, oftentimes it's considered this great positive thing, but I think that I would caution everyone to really consider what it means to disrupt and to take that very seriously.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>17:25</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>After our Netscape IPO moment, after 1995, it was time to ask, not just how the web could become a money machine, but how it could do some good.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>17:35</strong> - <em>Julia Furlan</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I think people should think about their companies and their technologies in the larger ecosystem of the world, because I think that hasn't always been the case in Silicon Valley, and that hasn't always been the case in business, and we can do better.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>17:50</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Furlan is calling for something we discussed in our last season finale. Check out the end of season 6 for an episode about venture capital and how it can support sustainable companies instead of just money-making unicorns.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>18:08</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The path from 1995 to 2000, from dangerous heyday to a more stable industry, isn't really an anomaly. In the middle of the 19th century when a brand new thing called the railway arrived, people raced to invest in that tech, too. There was a railway bubble and just like the dot-com bubble, it ended up bursting. People lost a lot of money. But Brian McCullough, host of the podcast "Techmeme Ride Home", reminded us that burst bubbles aren't just cautionary tales. They're also the start of something new.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>18:43</strong> - <em>Brian McCullough</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>When the dot-com bubble burst, there was all of this investment in infrastructure, laying fiber and laying the groundwork, for what we would now call cloud computing and having the infrastructure in terms of actual server farms and datacenters and things like that.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>19:02</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The tracks weren't ripped up after the railway bubble burst, and the fiber optic cables didn't disappear when the dot-com bubble burst either. In fact, in both cases, we inherited the landscape they prepared for us.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>19:16</strong> - <em>Brian McCullough</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The groundwork was all laid in the dot-com bubble. And then all of the companies that we're familiar with today—the Googles, the Facebooks, Instagrams, what have you, because there was this glut of infrastructure&mdash;it was cheap for all of them to come to fruition and essentially create the internet world that we're living in.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>19:33</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>By the time those post-bubble companies came around, they had the luxury of focusing on their products alone. The infrastructure and the technology stack were just waiting for them.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>19:46</strong> - <em>Brian McCullough</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Today, there are entire libraries of open source and free software that you can plug and play. If you need to have an e-commerce backend, there's all sorts of plug and play to do that. Not only in the 90s, did you have to code that all yourself, you had to hard code your own website.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>20:04</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>McCullough points out the work those early companies did played a vital role in our technology's evolution. They were the first on the battlefield, the ones who threw themselves at the unknown.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>20:15</strong> - <em>Brian McCullough</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>You had to have some people lead the way, and the leaders often are the ones that get the arrows in their back for their troubles, but you have to have generations rise, and then another generation come after them with slightly different ideas, and another generation come after that. I think that's just the nature of capitalism.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>20:34</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>In fact, it's the nature of evolution. And from 1995 to the bursting bubble, to the world we live in today, that dramatic evolution brought us every fantastic opportunity we have.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>20:54</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>If you wanted to spin up a little online company today, you could do that from your sofa, but that's only possible because back in 1995, some dreamers started dreaming. We get to make use of all the infrastructure, all the platforms, all the tech that they had to wrestle into being.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>21:14</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So yes, there were some bold business decisions made during the bubble. And yes, some of those 1990 startups behaved like teenagers who stole the keys to mom and dad's car. But you know, players like Pets.com and Webvan were also pioneers. They were throwing ideas at the wall, trying to imagine for the first time, what the web might one day become. And out of those huge risks they were taking during the dot-com bubble, came the infrastructure that command line heroes rely on today. All season long we've seen how the world we take for granted was built by coders and engineers who had an audacious vision of what the future could be. In a way, we're all still dreaming the dream that came out of that brilliant, outlandish, game-changing year, 1995.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>22:11</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>You can learn more about how 1995 changed our online lives by checking out all the bonus material we've collected over at redhat.com/commandlineheroes. And that does it for season 7, but stay tuned because season 8 is already in the works. Until then, I'm Saron Yitbarek, and this is Command Line Heroes. Keep on coding.</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-about" >
+      <div class="container">
+      <div class="row reveal">  
+        <div class="outer-90s-border bg-white px-0">
+            <div class="bg-green py-2"></div>
+            <div class="container">
+              <div class="row pt-2 px-2 px-md-6">
+                <div class="search-box-border col-7 col-md-9 bg-white">
+                <p class="text-monospace text-gray-400 my-1">More from the episode...</p>
+                </div>
+               
+                <div class="search-button-border offset-1 col-4 col-md-2 bg-blue">
+               <p class="bg-blue text-center mt-2 my-md-1"><a href="#" data-toggle="modal" data-target="#search-modal-e8" class="text-white font-size-20 d-none d-md-block" title="Search"><u>Search</u></a>
+                 <span class="d-md-none text-white font-size-20 mt-2"><u>Search</u></span></p>
+                </div>
+              </div>
+            </div>
+              
+
+
+              <div class="container">
+                <div class="row pt-2 px-2 px-md-6 py-4">
+                    <div class="col-lg-5 border border-black pl-md-2">
+                      <h4 class="text-black pt-2 text-monospace">About the art</h4>
+                      <p class="text-black">It’s been said that all good things come to an end, and the boom of the 90’s internet was no exception. What began as a practical tool for communication and discovery transformed into an e-commerce gold rush. As the decade drew to a close, some speculators sensed impending doom in the form of Y2K, infrastructure impracticalities, and bloat. While much of the tech industry was riding high on limitless prosperity, these doomsayers knew the whole empire was built on a ticking time bomb primed to blow. And blow it did. The resulting combustion didn’t spell the end of the internet, though. Instead, from the ashes grew a much more robust and savvy industry that was a little older and a little wiser.</p>
+                      <p class="section-label font-size-12">Kendall 'Boo Boo' Howse<br> Senior Designer, Red&nbsp;Hat</p>
+                    </div>
+
+                     <div class="col-lg-6 offset-lg-1">
+                      <h4 class="text-black pt-2 text-monospace">Further Reading</h4>
+                      <p class="text-black"> Each episode is based on a lot of research. Here are just a few of the resources we used to learn about the bubble:</p>
+
+                        <p class="pr-xl-2"><a class="btn btn-link" href="http://money.cnn.com/2000/11/09/technology/overview/" target="_blank" title="The $1.7 trillion dot.com lesson">The $1.7 trillion dot.com lesson by David Kleinbard
+</a></p>
+                        <p class="pr-xl-2"><a class="btn btn-link" href="http://www.vox.com/new-money/2017/4/5/15190650/amazon-jeff-bezos-richest" target="_blank" title="The little-known deal that saved Amazon from the dot-com crash">The little-known deal that saved Amazon from the dot-com crash by Timothy B.<br class="d-none d-lg-block d-xl-none"> Lee</a> </p>
+
+                        <p class="pr-xl-2"><a class="btn btn-link" href="http://tedium.co/2017/01/12/pets-dot-com-failure-history/" target="_blank" title="All Sock Puppets Go To Heaven">All Sock Puppets Go To Heaven by Ernie Smith</a>  </p>
+
+                        <p class="pr-xl-2"><a class="btn btn-link" href="http://www.celebritynetworth.com/articles/entertainment-articles/took-pets-com-just-268-days-go-ipo-complete-liquidation-thats-disaster/" target="_blank" title="From IPO To Complete Liquidation In 268 Days. How Pets.com Became The Biggest Disaster Of The Dotcom Bubble">From IPO To Complete Liquidation In 268 Days. How Pets.com Became The Biggest Disaster Of The Dotcom Bubble by Amy Lamare</a></p>
+
+
+                        <p class="pr-xl-2"><a class="btn btn-link" href="http://www.wired.com/2002/07/myth-2/" target="_blank" title="The New Economy Was a Myth, Right?">The New Economy Was a Myth, Right? by James Surowiecki</a> </p>
+
+<p class="pr-xl-2"><a class="btn btn-link" href="http://www.wired.com/2014/12/da-bom/" target="_blank" title="Turns Out the Dot-Com Bust's Worst Flops Were Actually Fantastic Ideas">Turns Out the Dot-Com Bust's Worst Flops Were Actually Fantastic Ideas by Robert McMillan</a> </p>
+
+                    </div>
+                  </div>
+
+          </div>                   
+        </div>
+      </div>
+    </div>
+</section>
+
+<div id="search-modal-e8" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-md mt-md-10">
+        <div class="modal-content bg-size-cover" data-bg-image="../../../cms/managed-files/CLH-s7_modal-bg.jpg">
+
+            <div class="modal-header border-0 bg-teal">
+                <a href="#" class="close" data-dismiss="modal" aria-label="Close" title="close">
+                  <img class="img-fluid" src="../../../cms/managed-files/close-btn.jpg" alt="close button">
+                </a>
+             </div>
+
+            <div class="modal-body px-2 px-md-5">
+
+              <div class="row modal-carousel carousel">
+                <div class="col-12">
+                  <p class="bg-white pl-1 mb-1">The NASDAQ Composite Index went</p> <p class="bg-white pl-1 mb-1"> from a new high of 5,048.62 in March 2000</p><p class="bg-white pl-1 mb-1">to 1,139.90 in October 2002&mdash;wiping out</p><p class="bg-white pl-1 mb-1"> trillions of dollars of stock value</p>
+                </div>
+
+              </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-guests bg-pos-cc bg-repeat" data-bg-image="../../../cms/managed-files/CLH-S7-90patterns-circles.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-sm-8 col-lg-5 col-xl-4 pr-sm-0">
+                        <h3 class="text-monospace text-purple-darker reveal bg-white p-1">Featured in this episode</h3>
+                    </div>
+                </div>
+
+                <div class="row guest-carousel pb-2">
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-darker" href="http://twitter.com/prelan" target="_blank" title="Peter Relan">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/peter-relan.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="text-monospace">Peter Relan</h4>
+
+                                    <p class="mb-0">Technologist</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-darker" href="http://twitter.com/ShortFormErnie" target="_blank" title="Ernie Smith">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/ernie-smith.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="text-monospace">Ernie Smith</h4>
+
+                                    <p class="mb-0">Editor, Tedium</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-darker" href="http://www.linkedin.com/in/gennarocuofano/" target="_blank" title="Gennaro Coufano">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/gennaro-cuofano.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="text-monospace">Gennaro Coufano</h4>
+
+                                    <p class="mb-0">Founder, FourWeekMBA</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-darker" href="http://twitter.com/juliastmi" target="_blank" title="Julia Furlan">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/julia-furlan.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="text-monospace">Julia Furlan</h4>
+
+                                    <p class="mb-0">Independent Podcasting Consultant, Podcast Host, Professor at The New School</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                   
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-darker" href="http://twitter.com/brianmcc" target="_blank" title="Brian McCullough">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/brian-mcCullough.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="text-monospace">Brian McCullough</h4>
+
+                                    <p class="mb-0">Host, “Techmeme Ride Home”</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row guest-carousel-nav mb-0 mx-8 px-1 px-sm-0">
+                    <div class="col-1 col-sm-3 col-lg-4 pl-1 pr-0 text-left text-md-right reveal">
+                        <a class="carousel-prev font-size-32 font-size-md-36" href="#" title="Previous">&lt;</a>
+                    </div>
+
+                    <div class="col-9 col-sm-6 col-lg-4 px-0 reveal">
+                        <div class="carousel-dots font-size-32 font-size-md-36 d-flex justify-content-center"></div>
+                    </div>
+
+                    <div class="col-1 col-sm-3 col-lg-4 pl-0 text-right text-md-left reveal">
+                        <a class="carousel-next font-size-32 font-size-md-36" href="#" title="Next">&gt;</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<article class="node-shared">
+      <section class="dms-band clh-newsletter pt-0">
+    <div class="container text-white">
+        <div class="row mt-md-12 pt-4">
+            <div class="col-12 col-md-6 col-lg-5 reveal">
+                <div class="card">
+                    <div class="card-body p-0">
+                        <img class="img-fluid svg svg-white mb-3" src="https://www.redhat.com/cms/managed-files/logo-command-line-heroes.svg" width="166" height="42" alt="Command Line Heroes logo" title="Command Line Heroes">
+
+                        <h3 class="text-monospace">Get the newsletter</h3>
+
+                        <p class="mb-0">After each episode drops, we send commentary from the Command Line Heroes team, as well as links that help you take a closer look at the topics we cover. It’s as simple as that.</p>
+                    </div>
+
+                    <div class="card-footer pt-3 px-0 pb-0">
+                        <a class="btn btn-primary mb-1 mb-lg-0" href="http://www.redhat.com/forms/?config=19411" title="Get the stories">Get the stories</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 offset-lg-1 reveal">
+                <div class="card mb-0 bg-white rounded-0 text-black">
+                    <div class="card-body p-2 p-md-3">
+                        <h3 class="text-monospace text-red">Presented by Red&nbsp;Hat</h3>
+
+                        <p class="mb-0">For 25 years, Red Hat has been bringing open source technologies to the enterprise. From the operating system to containers, we believe in building better technology together–and celebrating the unsung heroes who are remaking our world from the command line up.</p>
+                    </div>
+
+                    <div class="card-footer pt-0 px-2 px-md-3 pb-2 pb-md-3">
+                        <a class="btn btn-link mb-0" href="http://www.redhat.com/" title="Learn more">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+  </article>
+
+  
+  
+</article>
+
+</div>
+  </div>
+        
+  </div>
+
+  <footer>
+        <section class="rc-footer-traditional">
+      <div class="container rc-footer-traditional-container">
+        <section class="rc-footer-traditional-section">
+          <div class="rc-footer-traditional-logo">
+            <div class="row">
+              <a href="https://www.redhat.com/en">
+                <img src="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo.svg" class="screen" title="Red Hat" />
+                </a>
+            </div>
+          </div>
+          <div id="legal" class="rc-footer-traditional-legal">
+            <div class="row">
+              <div class="copyright">©2021 Red Hat, Inc.</div>
+              <div >
+                <ul class="menu"><li class="first leaf"><a href="../../about/privacy-policy.html">Privacy statement</a></li>
+<li class="leaf"><a href="../../about/terms-use.html">Terms of use</a></li>
+<li class="leaf"><a href="../../about/all-policies-guidelines.html">All policies and guidelines</a></li>
+<li class="leaf"><a href="../../about/digital-accessibility.html">Digital accessibility</a></li>
+<li class="last leaf"><span id="teconsent" class="nolink">|</span></li>
+</ul>              </div>
+            </div>
+                      </div>
+          <div class="rc-footer-traditional-event-logo">
+            <div id="block-block-5" class="block block-block block-footer-promote">
+
+      
+  <a href="https://www.redhat.com/summit"><img src="https://www.redhat.com/cms/managed-files/Logo-Red_Hat-Summit-A-Standard-RGB-02_0.svg" alt="Red Hat Summit" style="float: right;" width="72px"></a>
+</div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </footer>
+        <script type="text/javascript" src="../../../ux/webdms/js/vendors/jquery.waypoints.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/viewport.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/plyr.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/slick.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/scripts.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/projects/clh.min6eda.js?qy3uiv"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+  if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
+      _satellite.pageBottom();
+  }
+//--><!]]>
+</script>
+    </div>
+  <script type="text/javascript"  src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"></script></body>
+
+<!-- Mirrored from www.redhat.com/en/command-line-heroes/season-7/bubble by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:30:42 GMT -->
+</html>

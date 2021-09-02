@@ -1,0 +1,2475 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  
+<!-- Mirrored from www.redhat.com/en/command-line-heroes/season-2/developer-advocacy-roundtable by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:27:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!--[if IE]><![endif]-->
+<script id="trustarc" type="text/javascript" src="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"></script>
+<script id="ddo" type="text/javascript">
+<!--//--><![CDATA[//><!--
+    var digitalData = {"cart":[],"event":[],"listing":{"browseFilter":"","query":"","queryMethod":"","refinementType":"","refinementValue":"","resultCount":"","searchType":""},"page":{"attributes":{"queryParameters":"","referringSearchEngine":"","analyticsTitle":"command line heroes | season 2 | bonus episode","taxonomyPageSubType":["28051"],"taxonomyProduct":["781"],"taxonomyRegion":["4521"],"taxonomyTopic":["8391","17391"],"taxonomyMetaHreflang":["29051"]},"category":{"contentType":"","keyPage":"false","keyPageType":"","pageType":"pattern_template","primaryCategory":"command-line-heroes","subCategories":["season-2","developer-advocacy-roundtable"]},"pageInfo":{"cms":"RH CMS 2021.12.0","contentFindingMethod":"","contentID":"324771","contentPortal":"","destinationURL":"https:\/\/www.redhat.com\/en\/command-line-heroes\/season-2\/developer-advocacy-roundtable","errorMessage":"","errorType":"","language":"en","pageName":"","referringDomain":"","referringURL":"","sysEnv":"","template":"","title":"Command Line Heroes: Season 2: Bonus_Developer Advocacy Roundtable"}},"product":[],"user":[{"profile":[{"profileInfo":{"daysSinceLastPurchase":"","demandbaseSID":"","eloquaGUID":"","lastLoginDate":"","lastPurchaseDate":"","loggedIn":"false","profileID":"","subscriptionFrequency":"","subscriptionLevel":""}}]}]};
+    !function(a,b,c){"use strict";function d(a){var c="; "+b.cookie,d=c.split("; "+a+"=");if(2===d.length)return d.pop().split(";").shift()}if(b.referrer){var e=b.createElement("a");e.href=b.referrer,c.page.pageInfo.referringDomain=e.hostname,c.page.pageInfo.referringURL=e.href}c.page.pageInfo.sysEnv=a.innerWidth<=768?"tablet":"desktop";var f=c.user[0].profile[0].profileInfo,g=d("rh_elqCustomerGUID");g&&(f.eloquaGUID=g);var h=d("rh_user");if(h){var i=h.split("\\|");i[0]&&(f.loggedIn="true")}var j=d("s_dmdbase");j&&(f.demandbaseSID=j)}(window,document,digitalData);
+//--><!]]>
+</script>
+<script src="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm.js" data-domain="www.redhat.com"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-functional.js" class="trustecm" data-tracker-type="functional"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-advertising.js" class="trustecm" data-tracker-type="advertising"></script><script id="dpal" type="text/javascript" src="../../../dtm.js"></script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="en" />
+<link href="developer-advocacy-roundtable.html" rel="alternate" hreflang="en" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "availableLanguages": {
+        "zh": {
+            "@type": "Language",
+            "name": "简体中文",
+            "href": "/zh/command-line-heroes/season-2/developer-advocacy-roundtable"
+        },
+        "en": {
+            "@type": "Language",
+            "name": "English",
+            "href": "/en/command-line-heroes/season-2/developer-advocacy-roundtable",
+            "current_lang": true
+        },
+        "fr": {
+            "@type": "Language",
+            "name": "Français",
+            "href": "/fr/command-line-heroes/season-2/developer-advocacy-roundtable"
+        },
+        "de": {
+            "@type": "Language",
+            "name": "Deutsch",
+            "href": "/de/command-line-heroes/season-2/developer-advocacy-roundtable"
+        },
+        "it": {
+            "@type": "Language",
+            "name": "Italiano",
+            "href": "/it/command-line-heroes/season-2/developer-advocacy-roundtable"
+        },
+        "ja": {
+            "@type": "Language",
+            "name": "日本語",
+            "href": "/ja/command-line-heroes/season-2/developer-advocacy-roundtable"
+        },
+        "ko": {
+            "@type": "Language",
+            "name": "한국어",
+            "href": "/ko/command-line-heroes/season-2/developer-advocacy-roundtable"
+        },
+        "pt-br": {
+            "@type": "Language",
+            "name": "Português",
+            "href": "/pt-br/command-line-heroes/season-2/developer-advocacy-roundtable"
+        },
+        "es": {
+            "@type": "Language",
+            "name": "Español",
+            "href": "/es/command-line-heroes/season-2/developer-advocacy-roundtable"
+        }
+    }
+}</script><meta name="last-publish-date" content="Tue, 13 Mar 2018 04:00:00 GMT" />
+<meta name="node-type" content="pattern_template" />
+<meta name="source" content="rhdc_drupal" />
+<meta name="rhdc_key" content="dccffa468ca4cf273e935f5e7e4f2efa" />
+<meta name="taxonomy-product" content="Red Hat Enterprise Linux" />
+<meta name="taxonomy-product-tid" content="781" />
+<meta name="taxonomy-region" content="Global" />
+<meta name="taxonomy-region-tid" content="4521" />
+<meta name="taxonomy-page-sub-type" content="Brand affinity" />
+<meta name="taxonomy-page-sub-type-tid" content="28051" />
+<meta name="taxonomy-topic" content="DevOps" />
+<meta name="taxonomy-topic" content="Open source" />
+<meta name="taxonomy-topic-tid" content="8391" />
+<meta name="taxonomy-topic-tid" content="17391" />
+<meta name="taxonomy-meta-hreflang" content="en" />
+<meta name="taxonomy-meta-hreflang-tid" content="29051" />
+<link rel="shortcut icon" href="https://www.redhat.com/misc/favicon.ico" type="image/x-icon" />
+<meta property="og:description" content="Command Line Heroes looks at what it means to commit to an open source project. We get some advice from a few heroes who’ve been in your shoes: newbies, contributors, and maintainers alike." />
+<meta name="description" content="Command Line Heroes looks at what it means to commit to an open source project. We get some advice from a few heroes who’ve been in your shoes: newbies, contributors, and maintainers alike." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="image_src" href="../../../cms/managed-files/og-clh-s2-1200x675.jpg" />
+<link rel="canonical" href="developer-advocacy-roundtable.html" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.redhat.com/en/command-line-heroes/season-2/developer-advocacy-roundtable" />
+<meta property="og:title" content="Command Line Heroes, Season 2 Bonus: Developer Advocacy Roundtable" />
+<meta property="og:image" content="https://www.redhat.com/cms/managed-files/og-clh-s2-1200x675.jpg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Command Line Heroes, Season 2 Bonus: Developer Advocacy Roundtable" />
+<meta name="twitter:image" content="https://www.redhat.com/cms/managed-files/og-clh-s2-1200x675.jpg" />
+    <title>Command Line Heroes: Season 2: Bonus_Developer Advocacy Roundtable</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://static.redhat.com/">
+    <link rel="preload" href="https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/fonts/web_icon/rh-web-iconfont.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatTextVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatDisplayVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__k9aoxkMyjUtSX9AXGCPExPgTYjM0Xv5OYNfbFGDRafY__N9sjJtGj85lXtvOptw2e_YZ01FXbTXcJywP8EaKBijU__uaCwYofnUZLAnB7x3Q6WyVKH" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/all/libraries/webrh/dist/css/webrh.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__cxslYvmVeKFG0RwKl9kcXSrmb2x2VtvkIw-OLkwF8jU___pPNjqO-hMXRnx5HlJupeXtrvaj0Ilhs-XAVxMYy0CM__uaCwYofnUZLAnB7x3Q6WyVKH" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__wpajrf8pWA19ifT2xQXPB3J1TByoCXqZVtt6kXfl4Ow__PFQbFxxWsZl0yTnfrpPiA-o5Pvtu-CXh7nICx08JW0c__uaCwYofnUZLAnB7x3Q6WyVKH" media="print" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/css/trustecm.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/redhat-theme/6/advanced-theme.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/red-hat-font.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/font-awesome/4.7.0/css/font-awesome.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/vendors/plyr.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/styles.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/projects/clh-s2-episodes.min6eda.css?qy3uiv" media="all" />
+    <!--[if lt IE 9]>
+      <script src="/profiles/rh/themes/redhatdotcom/js/selectivizr-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/nwmatcher-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/respond.js" type="text/javascript"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../../../sites/default/files/advagg_js/js__B6wED6l5P_XUdxVmb7Nvh5d9zn074QukFqJa2HLXS6c__VzWs8XZBHHsPW77egi-W-FQw2mAEr5F-GgCJU0wn3Nc__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.vendor.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.webcomponents.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__pDOiYGKaYbdKNp1gvMxR0fWhWZnfUemYDUhADyCn3oM__jCrCuWCJIPYPe1FzZoUvsJWEjkNMmRIQHYek1h7idBE__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.rh = window.rh || {}; window.rh.drupalTrustArcLoaded = true;
+//--><!]]>
+</script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__5nUyGFdhKMGscC9VhukG-UTAhz8BEdhsa8koVlLwAyQ__Lz8gDLbd5fTco1AnHaCqhSeYJB5o0QUXAimK7JOyRNI__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"redhatdotcom","theme_token":"WNSGAGQzkOplrM--ySYOLPIR9z2SJXtZMOKVXbCvITo","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.webcomponents.min.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.min.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/marketing\/latest\/trustarc\/trustecm\/css\/trustecm.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-theme\/6\/advanced-theme.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-font\/4\/webfonts\/red-hat-font.min.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-iconfont.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-web-iconfont.css":1,"sites\/all\/libraries\/patternfly-elements\/pfe-styles\/pfe-typography-classes.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/site-switcher.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/chrome.css":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/print.css":1,"\/\/static.redhat.com\/libs\/font-awesome\/4.7.0\/css\/font-awesome.min.css?qy3uiv":1,"\/ux\/webdms\/css\/vendors\/plyr.min.css?qy3uiv":1,"\/ux\/webdms\/css\/styles.min.css?qy3uiv":1,"\/ux\/webdms\/css\/projects\/clh-s2-episodes.min.css?qy3uiv":1},"js":{"\/ux\/webdms\/js\/vendors\/jquery.waypoints.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/plyr.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/viewport.min.js?qy3uiv":1,"\/ux\/webdms\/js\/scripts.min.js?qy3uiv":1,"\/ux\/webdms\/js\/projects\/clh.min.js?qy3uiv":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/rh\/modules\/redhat_www_ddo\/dist\/post-jquery.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.vendor.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.webcomponents.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"profiles\/rh\/modules\/redhat_www_menu\/js\/rh_nav.js":1,"profiles\/rh\/modules\/redhat_www_share\/js\/rh_share.js":1,"profiles\/rh\/modules\/redhat_www_utility\/js\/redhat_www_utility.js":1,"sites\/all\/libraries\/jquery-cookie\/jquery.cookie-1.4.1.min.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.pushmenu.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery-scrolltofixed.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/rh-chrome.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.fitvids.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.switchIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.viewport\/jquery.viewport.min.js":1}},"redhat_www_menu":{"path":"node\/324771"},"rh_analytics_enabled":false});
+//--><!]]>
+</script>
+    <noscript>
+        <link href="../../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.noscript.min.css" rel="stylesheet" >
+    </noscript>
+  </head>
+  <body unresolved class="bands-index html not-front not-logged-in no-sidebars page-node page-node- page-node-324771 node-type-pattern-template i18n-en clh-s2e9 " >
+    <div class="page">
+            <!-- Legacy migrated page support with body.migrated-page-hero -->
+<div class="header-background-image fts-migrated-bg">
+</div>
+
+  <div id="main-content">
+                      <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+      
+  <article class="node-324771 node node-pattern-template clearfix">
+
+  
+    <!-- Pattern | raw_html -->
+
+<div class="rh-raw"         data-rh-unique-id="2063651">
+        <article class="node-shared">
+      <header id="top" class="dms-band clh-nav-top py-2">
+    <div class="container text-white">
+        <div class="row d-flex align-items-center">
+            <div class="col-6">
+                <a href="../../command-line-heroes.html" title="Command Line Heroes">
+                    <img class="img-fluid svg svg-white" src="https://www.redhat.com/cms/managed-files/logo-command-line-heroes.svg" width="166" height="42" alt="Command Line Heroes logo">
+                </a>
+            </div>
+
+            <div class="col-6 clh-nav-toggle-wrapper">
+                <span class="text-monospace text-right font-size-16 d-inline-block">Subscribe<br/>& more</span>
+
+                <a href="#" class="btn btn-toggle" data-toggle="nav-shelf">
+                    <div class="d-inline-block">
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="dms-band clh-nav-shelf text-white py-0">
+    <div class="nav-container pb-4">
+        <div id="CLHNav" class="accordion">
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-subscribe.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSubscribe">
+                    <p>Subscribe</p>
+                </button>
+                <div id="clhSubscribe" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <p>Subscribe to the podcast to receive new episodes as soon as we release them</p>
+                    <div class="row pb-2">
+                        <div class="col-6 mb-2">
+                            <a href="http://geo.itunes.apple.com/podcast/us/id1319947289?mt=2&amp;at=1010lbVy&amp;ct=redhatclh_website" target="_blank" title="Listen on Apple Podcasts">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-apple.png" alt="Listen on Apple Podcasts">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://www.google.com/podcasts?feed=aHR0cHM6Ly9mZWVkcy5wYWNpZmljLWNvbnRlbnQuY29tL2NvbW1hbmRsaW5laGVyb2Vz" target="_blank" title="Listen on Google Podcasts">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-google.png" alt="Listen on Google Podcasts">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://www.stitcher.com/s?fid=159833&amp;refid=stpr" target="_blank" title="Listen on Stitcher">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-stitcher.png" alt="Listen on Stitcher">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://open.spotify.com/show/4Jgtgr4mHXNDyLldHkfEMz" target="_blank" title="Listen on Spotify">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-spotify.png" alt="Listen on Spotify">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://feeds.pacific-content.com/commandlineheroes" target="_blank" title="Subscribe via RSS Feed">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-rss.png" alt="Subscribe via RSS Feed">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-about.jpg">
+                <button href="../about.html" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhAbout">
+                    <p>About the podcast</p>
+                </button>
+                <div id="clhAbout" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <p>Discover Red Hat’s original podcast about the people who transform technology from the command line up. Subscribe to our newsletter for commentary from the Command Line Heroes team—and links to take a closer look at the topics we cover.</p>
+                    
+                    <p><a href="../about.html" class="btn btn-primary">Learn about the show</a></p>
+                    <p class="mb-0 pb-4"><a href="https://www.redhat.com/forms/?config=19411" class="btn btn-outline-white">Get the newsletter</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s1.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason1">
+                    <p>Season 1</p>
+                </button>
+                <div id="clhSeason1" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-1/os-wars-part-1.html" title="OS Wars_Part 1">OS Wars_part 1</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/os-wars-part-2-rise-of-linux.html" title="OS Wars_Part 2">OS Wars_part 2</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/agile-revolution.html" title="The Agile_Revolution">The Agile_Revolution</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/devops-tear-down-that-wall.html" title="DevOps_Tear Down That Wall">DevOps_Tear Down That Wall</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/the-containers-derby.html" title="The Containers_Derby">The Containers_Derby</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/crack-the-cloud-open.html" title="Crack the Cloud_Open">Crack the Cloud_Open</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/days-of-future-open.html" title="Days of Future_Open">Days of Future_Open</a>
+                        </li>
+                    </ol>
+                  <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-1.html" title="Explore season 1">Explore Season 1</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s2.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason2">
+                    <p>Season 2</p>
+                </button>
+                <div id="clhSeason2" class="accordion-panel collapse" data-parent="#CLHNav">
+
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="press-start.html" title="Press Start">Press Start</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="hello-world.html" title="Hello, World">Hello, World</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="ready-to-commit.html" title="Ready to Commit">Ready to Commit</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="fail-better.html" title="Fail Better">Fail Better</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="the-one-about-devsecops.html" title="The One About DevSecOps">The One About DevSecOps</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="the-data-explosion.html" title="The Data Explosion">The Data Explosion</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="at-your-serverless.html" title="At Your Serverless">At Your Serverless</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="open-curiosity.html" title="Open Curiosity">Open Curiosity</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="developer-advocacy-roundtable.html" title="Bonus_Developer Advocacy Roundtable">Bonus_Developer Advocacy Roundtable</a>
+                        </li>
+                    </ol>
+                   <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-2.html" title="Explore season 2">Explore Season 2</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s3.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason3">
+                    <p>Season 3</p>
+                </button>
+                <div id="clhSeason3" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-3/pythons-tale.html" title="Python's Tale">Python's Tale</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/learning-the-basics.html" title="Learning the BASICs">Learning the BASICs</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/creating-javascript.html" title="Creating JavaScript">Creating JavaScript</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/diving-for-perl.html" title="Diving for Perl">Diving for Perl</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/the-infrastructure-effect.html" title="The Infrastructure Effect">The Infrastructure Effect</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-3/heroes-in-a-bash-shell.html" title="Heroes in a Bash Shell">Heroes in a Bash Shell</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/talking-to-machines.html" title="Talking to Machines">Talking to Machines</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-3/the-c-change.html" title="The C Change">The C Change</a>
+                        </li>
+                    </ol>
+                   <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-3.html" title="Explore season 3">Explore Season 3</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s4.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason4">
+                    <p>Season 4</p>
+                </button>
+                <div id="clhSeason4" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-4/minicomputers.html" title="Minicomputers">Minicomputers</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-4/mainframes.html" title="Mainframes">Mainframes</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/personal-computers.html" title="Personal Computers">Personal Computers</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/floppies.html" title="Floppies">Floppies</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/smarter-phones.html" title="Smarter Phones">Smarter Phones</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/open-source-hardware.html" title="Open Source Hardware">Open Source Hardware</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/consoles.html" title="Consoles">Consoles</a>
+                        </li>
+
+                         <li class="mb-2">
+                            <a href="../season-4/steve-wozniak.html" title="Steve Wozniak">Steve Wozniak</a>
+                        </li>
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-4.html" title="Explore season 4">Explore Season 4</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s5.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason5">
+                    <p>Season 5</p>
+                </button>
+                <div id="clhSeason5" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-5/becoming-a-coder.html" title="Becoming a Coder">Becoming a Coder</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-5/where-coders-code.html" title="Where Coders Code">Where Coders Code</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-5/what-kind-of-coder-will-you-become.html" title="What Kind of Coder Will You Become?">What Kind of Coder Will You Become?</a>
+                        </li>
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-5.html" title="Explore season 5">Explore Season 5</a></p>
+ 
+                </div>
+            </div>
+
+                        <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s6.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason6">
+                    <p>Season 6</p>
+                </button>
+                <div id="clhSeason6" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-6/jerry-lawson.html" title="Jerry Lawson">Jerry Lawson</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/gladys-west.html" title="Dr. Gladys West">Dr. Gladys West</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/mark-dean.html" title="Dr. Mark Dean">Dr. Mark Dean</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/marc-hannah.html" title="Dr. Marc Hannah">Dr. Marc Hannah</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/clarence-ellis.html" title="Dr. Clarence Ellis">Dr. Clarence Ellis</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/roy-clay.html" title="Roy Clay">Roy Clay</a>
+                        </li>
+                       <li class="mb-2">
+                            <a href="../season-6/gladys-perkins.html" title="Gladys Perkins">Gladys Perkins</a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="../season-6/arlan-hamilton.html" title="Arlan Hamilton">Arlan Hamilton</a>
+                        </li>
+            
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link text-monospace text-white" href="../season-6.html" title="Explore season 6">Explore Season 6</a></p>
+                </div>
+            </div>
+
+             <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/season-7_nav.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason7">
+                    <p>Season 7</p>
+                </button>
+                <div id="clhSeason7" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-7/dot-com.html" title="Connecting The Dot-Com">Connecting The Dot-Com</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/nsfnet.html" title="From NSF to ISP">From NSF to ISP</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/html.html" title="A Language for the Web">A Language for the Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/ux.html" title="Web UX Begins">Web UX Begins</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/shopping.html" title="Shopping for the Web">Shopping for the Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/search.html" title="Looking for Search">Looking for Search</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/world.html" title="The World of the World Wide Web">The World of the World Wide Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/bubble.html" title="After the Bubble">After the Bubble</a>
+                        </li>
+
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../../command-line-heroes.html" title="Explore season 5">Explore Season 7</a></p>
+ 
+                </div>
+            </div>
+
+        </div>
+        
+        <ul class="social-list list-inline list-unstyled pl-5 pl-sm-6 mt-1">
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F" target="_blank" title="Facebook" onclick="return !window.open(this.href, 'Facebook', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
+                    <span class="web-icon-facebook" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.twitter.com/share?url=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F&amp;text=An%20original%20podcast%20about%20the%20people%20who%20transform%20technology%20from%20the%20command%20line%20up.%20Presented%20by%20Red%20Hat." target="_blank" title="Twitter" onclick="return !window.open(this.href, 'Twitter', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
+                    <span class="web-icon-twitter" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F&amp;title=Command%20Line%20Heroes&amp;summary=Hear%20the%20epic%20true%20tales%20of%20how%20developers%2C%20programmers%2C%20hackers%2C%20geeks%2C%20and%20open%20source%20rebels%20are%20revolutionizing%20the%20technology%20landscape.%20Command%20Line%20Heroes%20is%20a%20new%20podcast%20hosted%20by%20Saron%20Yitbarek%20and%20produced%20by%20Red%20Hat.&amp;source=Red%20Hat" target="_blank" title="LinkedIn" onclick="return !window.open(this.href, 'LinkedIn', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')" aria-current="page">
+                    <span class="web-icon-linkedin" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="mailto:?subject=Command Line Heroes&body=Hear%20the%20epic%20true%20tales%20of%20how%20developers%2C%20programmers%2C%20hackers%2C%20geeks%2C%20and%20open%20source%20rebels%20are%20revolutionizing%20the%20technology%20landscape.%20Command%20Line%20Heroes%20is%20a%20new%20podcast%20hosted%20by%20Saron%20Yitbarek%20and%20produced%20by%20Red%20Hat. https://www.redhat.com/en/command-line-heroes" target="_blank" title="Email" aria-current="page">
+                    <span class="web-icon-envelope" aria-label="true"></span>
+                </a>
+            </li>
+        </ul>
+
+         <div class="language-switcher position-absolute bottom-0 right-0  w-100">
+            <div class="row justify-content-center mx-0">
+
+                <div class="col-6 text-center border-right border-black border-20 language-inactive">
+                    <a href="http://www.redhat.com/es/command-line-heroes" title="Command Line Heroes"><img class="img-fluid py-2" width="90" src="https://www.redhat.com/cms/managed-files/logo_clh-en-espanol_inactive.svg" alt="CLH en espanol logo"></a></div>
+
+                <div class="col-6 text-center language-active"><a href="../../command-line-heroes.html" title="Command Line Heroes"><img class="img-fluid pt-3 pb-2" width="130" src="https://www.redhat.com/cms/managed-files/logo_CLH_small.svg" alt="CLH logo"></a></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+</div>
+
+
+<div class="mb-6">&nbsp;</div>  
+  </article>
+
+    </div>  <!-- Pattern | raw_html -->
+
+<div class="rh-raw"         data-rh-unique-id="2063661">
+        <section class="dms-band clh-hero--episode pb-md-0" >
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-lg-6  reveal">
+                <h5 class="section-label mb-1 font-weight-light">Season 2, Bonus</h5>
+
+                <h1 class="mb-lg-4 font-family-monospace font-size-28 font-size-lg-38">Developer Advocacy Roundtable</h1>
+
+                <div class="clh-audio plyr-theme">
+                    <audio src="https://dts.podtrac.com/redirect.mp3/audio.simplecast.com/7a9b329b.mp3" controls></audio>
+                </div>
+
+                <a class="btn btn-link btn-subscribe mt-2 mb-0 font-family-monospace text-white menu-toggle" href="#" title="Listen to this episode later" data-menu="subscribe">Listen to this episode later</a>
+            </div>
+           <div class="col-lg-6  text-center reveal">
+                <p class="pt-md-6"><img src="../../../cms/managed-files/S2-E9-CommandPrompt-hero.png" alt="computer key"  width="400"></p>
+             </div>
+        </div>
+    </div>
+</section>
+    </div>  <!-- Pattern | raw_html -->
+
+<div class="rh-raw"         data-rh-unique-id="2063671">
+        <section class="dms-band clh-notes pb-0">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-12 col-lg-7 col-xl-6 mx-auto reveal">
+                <ul class="nav nav-tabs mb-3 d-flex justify-content-center font-family-monospace">
+                    <li class="nav-item text-center">
+                        <a class="tab-show-notes nav-link mx-0 mr-md-6 p-0 font-size-22 text-white active" href="#show-notes" data-toggle="tab" title="Show notes">Show notes</a>
+                    </li>
+
+                    <li class="nav-item text-center">
+                        <a class="tab-transcript nav-link mt-2 mt-md-0 mx-0 p-0 font-size-22 text-white" href="#transcript" data-toggle="tab" title="Transcript">Transcript</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="show-notes" class="tab-pane fade active  text-white show">
+                        <div class="row">
+                            <div class="col-12 mb-0">
+                               <p>Developer advocates play important roles in open source communities. We brought a few of them together to explain how and why they do what they do.</p>
+
+            <p>Sandra Persing (Mozilla), Ricky Robinett (Twilio), and Robyn Bergeron (Red&nbsp;Hat) sit down with Saron to share what they're working on, how they support their communities, and what they're looking forward to in 2019.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="transcript" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>00:06</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Hi everybody, I'm Saron Yitbarek and this is a special bonus episode of Command Line Heroes, an original podcast from Red Hat. This podcast went a lot of places in Season 2. We explored programming languages, data overload, security crises, the advent of serverless. I mean, we even went to Mars.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>00:28</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>But after closing out Season 2, there was still one more place we wanted to go. We wanted to go inside the minds of the advocates and thought leaders who help shape all the work that developers do. Sometimes they're called developer advocates or they're in developer relations or they're developer evangelists.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>00:50</strong> -<em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Whatever their exact titles, from the developer's perspective, they seem to do a lot of the same things. You've seen them give keynotes at conferences. You've heard them getting interviewed on podcasts, like this one. You've probably read their blog posts. But who are they, and what exactly are they using their voices to get done?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>01:10</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>To ring in 2019, we've pulled together a roundtable of amazing people for you. While their titles are all different, their purpose is the same. They're here to help developers and make sure their needs and voices are heard. These folks are classic command line heroes.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>01:29</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>From the Bay Area, Sandra Persing is a Mozilla Global Strategist and creator of the DevRel Summit.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>01:38</strong> - <em>Sandra Persing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Hi, Saron. </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>01:39</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Hello. And also in San Francisco we have Ricky Robinett. He's the Director of the Developer Network over at Twilio.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>01:47</strong> - <em>Ricky Robinett</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>What's up?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>01:49</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Joining me from just outside of Phoenix is Robyn Bergeron, a community architect at Red&nbsp;Hat.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>01:55</strong> - <em>Robyn Bergeron</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Hi there. How are you?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>01:56</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I'm doing great.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>01:57</strong> - <em>Robyn Bergeron</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Excellent.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>01:57</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So there are a lot of titles floating around. There's Developer Advocate, Developer Evangelist, Developer Relations, and with all these new things, basic definitions are super important. So, I think a good place to start is just to define what these things are and specifically, what you all do in this space. So, can you tell me your job title and what that title actually means? Ricky, let's start with you.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>02:22</strong> - <em>Ricky Robinett</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Okay, sounds good. My title is the Director of the Developer Network. What I have the privilege of doing is serving a team of developer relations professionals. We have an evangelism team, we have a education team and we have a community team. So, it's definitely a mishmash of all the different titles of you hear, we kind of collect them on the team.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>02:43</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Awesome. And Sandra, what about you?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>02:45</strong> - <em>Sandra Persing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I am at Mozilla as the Global Strategist for events and sponsorship and I work with our developer outreach team in the emerging tech group at Mozilla.I usually explain my day to day activities as a lot of research and communications and explorations that really leads to evaluating and deciding, you know, how we should all invest our resources: our time, money, swag, speakers, et cetera, in order to give back to the developer community, but also to receive feedback from the developer community. So both the evangelism side and the advocate side.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>03:24</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Awesome. And Robyn, you're up next.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>03:26</strong> - <em>Robyn Bergeron</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Hi. Well so, my official title is Community Architect. I get a lot of questions about this title. I've gone by Community Manager. I've gone by Developer Advocate. I've even gone by Operations Advocate at one job in the past. But I like to think of what I do is, you know, when you're a community manager, like the idea that you're really managing all these people who are contributing out of the goodness of their heart is sort of a silly notion. So, I like to think of what I do as building frameworks in which people can actually successfully participate and make sure that roadblocks aren't in their way and that they can get done all the things they want to get done.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>04:02</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And Ricky, since you are essentially the Director of the entire network, you're not just in advocacy or evangelism or community, it kind of feels like you're running the whole show. How do you understand this idea of being an advocate either for developers or advocating to developers?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>04:20</strong> - <em>Ricky Robinett</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Yeah, that's a great question. Phil Nash, who's one of the evangelists on our team had a great framing for this that I'm going to steal, which is we have a lot of different ways of describing what we do, but ultimately a lot of them just being help. </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>04:33</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I like that. Yeah.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>04:35</strong> - <em>Ricky Robinett</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We help developers, and so sometimes that help looks like answering a question on Stack Overflow. Sometimes it looks like building a new tool. Sometimes it looks like organizing an event and then sometimes it looks like initiating a product change internally. So, I think that's the best framing I've heard is really our responsibility is to help.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>04:57</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Absolutely. Sandra, what I'm so interested in about your position is that you're not just a Strategist, you're a Global Strategist and you're all over the world trying to bring developers together and help them as part of your job at Mozilla. When we think about advocacy on a global scale, what does that look like? Does it mean something different across different countries, continents?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>05:20</strong> - <em>Sandra Persing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Yeah, absolutely. We just wrapped our third annual DevRel Summit this year in Singapore and the past two years, we hosted the event in Seattle and getting out to Singapore, we saw a different perspective. When we get outside of the Bay Area, it can be something as basic as, you know, how do we make sure everything just works offline, because connectivity is such an issue or something like how do we just make sure a developer who's working in Indonesia feels just connected to a developer community, whether that's online or onsite through meetups.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>05:59</strong> - <em>Sandra Persing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And always going back to recognizing that some of our quote unquote "basic things," some of our easy things like creating a simple meetup in the Bay Area, which is so a dime a dozen, right? You throw a rock and there's a meetup everywhere is still something really special and something that a developer in let's say Vietnam still sees to be incredibly important and valuable and enriching their developer community life.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>06:27</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And one thing I'm noticing is that everyone has mentioned community in some way. And I run a community myself. I do Code Newbie and I regularly get recruited by companies to be an evangelist or a community manager for their company and one thing that I've always been a little worried about, maybe a little squeamish about is thinking, okay, I've spent the last three, four years taking care of this community with no strings attached, on my terms,I'm doing what I think is best.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>06:55</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>But if I work for a company, then will I have to sacrifice that? Am I going to be in a position where I have to put the company before the needs of the community and how do I balance that relationship?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>07:06</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So I'm wondering, Robyn, maybe we could start with you as a Community Architect, how do you separate that? How do you maintain that church and state relationship, so to speak?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>07:16</strong> - <em>Robyn Bergeron</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Well, it's certainly an interesting balance. I mean, one of my former jobs was actually being the Fedora project leader. And you know, Fedora is the upstream for Red&nbsp;Hat Enterprise Linux, you know, part of your role there is really to be sort of the balancing act, right? The balancebetween are people happy in the community, is the company happy with what the community is doing and making sure that basically everybody's one big happy family.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>07:41</strong> - <em>Robyn Bergeron</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And you know, I think when you're doing your job best in that position yeah, you're pretty much bound to probably anger someone at the corporate headquarters once in a while. But you know, the proof is in the pudding at the end of the day. Right?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>07:59</strong> - <em>Robyn Bergeron</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>People ask me all the time like, how do you balance, what's going on with Ansible and Red Hat and you know, like when Ansible got bought by Red Hat, like, oh my God, is Red Hat going to take it over and do something terrible to it and get rid of, Ubuntu support?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>08:12</strong> - <em>Robyn Bergeron</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And it was like, that would be defeating the whole purpose of having this entire project. Like, we haven't gotten to 4,000 contributors by being terrible.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>08:22</strong> - <em>Robyn Bergeron</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Making sure that your management trusts in you and that you have clear communication with folks all the time about what's actually going on and that there aren't surprises on either side of the aisle is part of what makes the difference between success and maybe not always success, but certainly people being surprised.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>08:41</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Mm-hmm (affirmative). Absolutely. And Ricky, what about you? How do you think about church and state in that relationship when you're doing so many different things?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>08:49</strong> - <em>Ricky Robinett</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I think you have to believe in the company and the technology. You have to believe that what you are bringing to developers is going to have an impact on their lives and their careers and their companies.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>09:03</strong> - <em>Ricky Robinett</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And then on the flip side, you have to have executives who believe in this approach to your work. So, we're very lucky that our CEO is a developer and in many ways was the driving force behind the way that we approach our developer community. Our evangelists have a mission to inspire and equip developers. And so, there are times when we say, is this going to inspire and equip them?Because if it's not, we shouldn't really be doing it because it's something that's outside of our purview.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>09:36</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Mm-hmm (affirmative). Sandra, I feel like you're a little bit at an advantage because Mozilla's a nonprofit, right? So I feel like maybe&mdash;</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>09:44</strong> - <em>Sandra Persing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I was going to say.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>09:46</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Tell me about that.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>09:47</strong> - <em>Sandra Persing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The history of Mozilla is that we're a rebellious company. We've always rebelled against the corporate man, right? The whole history of coming out of Netscape and with one of our founders, Mitchell Baker, in making sure that the web is </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>10:01</strong> - <em>Sandra Persing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>and the Internet is an open and free resource for all. I mean, we still, every one of us, every Mozillian believes this mantra and we hold it dear to our heart. So it's absolutely an amazing company that has embraced the community side 100%. </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>10:22</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Absolutely. So Ricky, I vividly remember the red-like sports jacket and I remember seeing you personally onstage doing these awesome demos and it feels like that whole approach to connecting with developers and helping developers was very new. Where did that idea even come from at Twilio?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>10:41</strong> - <em>Ricky Robinett</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Well, that's very kind of you to say. We do really believe we stand on the shoulders of giants here. You think of Guy Kawasaki with Apple, of people doing this style of marketing way before us. I think that we got to be fortunate enough to be at the right time to take this to developers.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>11:03</strong> - <em>Ricky Robinett</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And there's just so many people who came in with the idea of how we can do this and how to keep leveling up how we approached it. I don't actually know who invented the red track jacket though, so now I need to go find the history&mdash;</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>11:19</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>You gotta find that out.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>11:19</strong> - <em>Ricky Robinett</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>&mdash;of where that started.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>11:20</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That's a great jacket.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>11:21</strong> - <em>Ricky Robinett</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I know. That's my mission for this afternoon now.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>11:25</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And I'm wondering how has that idea of evangelism, and advocacy, how has that changed over time at Twilio, given the fact that, you know, at one point you were a small little startup or a little rebellious startup, and then now you're kind of a big company. How is the shape of evangelism changed as the company itself has changed?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>11:46</strong> - <em>Ricky Robinett</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Yeah, when I started here, I feel like I could have spent 365 days a year at hackathons and in New York every weekend you had to pick from five or six hackathons. So much of what we did with evangelism was the hackathon scene and now, that's not the same scene. Really, the biggest changes have been driven outside the company rather than inside.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>12:11</strong> - <em>Ricky Robinett</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So I talk about evangelists inspiring and equipping. And so the nice thing is that hasn't changed in all the years, so the ways that they inspire and equip keep going differently, but the mission itself doesn't change.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>12:26</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And Robyn, with the rise of DevOps and DevSecOps, what does advocacy look like for you and for being that community architect? Is there gonna be a Ops advocate?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>12:39</strong> - <em>Robyn Bergeron</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Well, actually that was ... I mean, my first job after dropping out of school, don't recommend it, kids. Don't do that at home.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>12:47</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Stay in school.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>12:48</strong> - <em>Robyn Bergeron</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Listening. Look at looking at you, daughter. My first job was actually as a SysAdmin at Motorola for a number of years and when I moved on from being in charge of Fedora, I worked at Elastic Search for a while and you know, had this title of Developer Advocate and was like, yeah, so I hacked my way through several semesters of C in college. But my heart was always in operations. I started feeling like am I really a developer advocate? I feel like I'm just advocating to ops folks mostly. And I just started calling myself an operations advocate which nobody blinked an eye at.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>13:22</strong> - <em>Robyn Bergeron</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Everyone said, well, that's a really cool title. I'm like, you know, I'm just advocating in general mostly to the inside of my company about what everybody else is doing.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>13:33</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So Sandra, we talked about how advocacy and evangelism looks different in different parts of the world, but I'm wondering over the years as we become increasingly more global and more connected, has the larger picture, the larger shape of evangelism shifted over time for you?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>13:52</strong> - <em>Sandra Persing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>You know, what is developer relations? Are we pitching our product being more salesy? You know, and I notice that even large corporations are moving away from that tactic. Understanding that being authentic, being truly mindful of listening and responding to the needs of developers is key above all else, not pitching product.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>14:17</strong> - <em>Sandra Persing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I always go back and share with my team at Mozilla that developers are actually one of the smartest and creative customer base that we'll ever work with. They can smell that BS from miles away. So, we have to be smart about how we are sharing information, like it has to be a diverse group of talented and intelligent minds all coming together to become creative in our approach of communicating to our developer community.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>14:48</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Oh, I really like that. I like this idea of many different skill sets, I guess, backgrounds need to come together to really serve developers well and to help developers help themselves, too.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>15:01</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>When I think about the rise of developer advocates, to me it feels very connected to the rise of open source. It almost feels like the more open source contributors there were and the bigger deal open source became and the more big companies took it seriously, they almost had to establish better relationships with these open source contributors, these developers, and it feels like those two are really connected to me.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>15:27</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So I'm curious about your ideas about that. So Robyn, let's start with you. Is that true at all? Is that idea of advocacy connected at all to the rise of open source?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>15:37</strong> - <em>Robyn Bergeron</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>If you are a company who is selling software that or selling whatever licenses, long termsupport, you know, whatever your open source company's business model actually is, if you don't have that feedback loop or you're not actually paying attention to what people are saying, you're going to wind up delivering the proverbial wrong thing. And really being able to encompass that, you know, around the world and just day to day in what you do is the difference between success and I guess making the wrong thing, which nobody wants to spend time doing. That's a bad idea.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>16:10</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Yeah, that's generally a bad idea. Cool. So, I want to know from each of you what you all have been focusing on, really thinking about. So Ricky, let's start with you. What kind of improvements do you try to bring about in the developer culture in your role at Twilio?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>16:27</strong> - <em>Ricky Robinett</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>If I were to say the phrase I've heard the most when I talk to developers, it's, "I'm not a developer, but," and that's probably one of the biggest things that's always on my mind is broadening the definition of developer.</p>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>16:45</strong> - <em>Ricky Robinett</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Imposter syndrome for so many of us is a very real thing. It's just amazing how even some of the best developers you know are struggling with it. And for me, that's one of the biggest things we can all do in our culture is give people permission to say, "You know what? I am a developer. I am solving problems with code."</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>17:08</strong> - <em>Ricky Robinett</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And so, one of my favorite stories is we have a member of our community named Doug McKenziethat's a magician. And he taught himself PHP so he could use tech in his magic tricks.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>17:23</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Oh, neat.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>17:23</strong> - <em>Ricky Robinett</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Doug is so cool because he was super humble about like, "Oh, I'm not a developer." And suddenly you see, like, he's writing more complicated code than many people have ever seen, to do things that blow minds. And so, I just feel like there's so many Doug McKenzies in the world who are doing great things with code and we have the opportunity to give them permission to be part of the community and to have an identity in that work.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>17:51</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I love that story because it reminds me of someone I interviewed for the Code Newbie podcast actually, and she was a writer and she had a bunch of assignments where she had to learn Git in order to write about Git and she'd written so many of these articles and it grew to be on other coding topics and eventually, you know, a couple of years had passed and she'd essentially become a developer and didn't know it.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>18:13</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And by the time I interviewed her and I said, "Hey, do you know that you're a developer?" She's like, "No, I'm a writer." And I said, "You can be both. They're not mutually exclusive." But yeah, that shift in perspective of saying, "Hey, I'm actually coding and creating, therefore I can now call myself a coder," it's tough for people. It takes a while to get there.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>18:32</strong> - <em>Ricky Robinett</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Yeah, absolutely.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>18:33</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Yeah. So Robyn, for you, what's been the most positive change that you've managed to push forward in recent years?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>18:41</strong> - <em>Robyn Bergeron</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Just making sure that as we grow, that we're not losing track of the big picture, that our main goals around keeping it simple for people to use, simple for people to contribute to, simple to actually get stuff done with in your life, making sure we're not losing track of that or getting more engineering help to just work on some of the structure of the actual project and make sure that we're doing a good job of keeping all that stuff in order was, I don't know, I thought that was important. I don't know that I'm going to win a Nobel Peace Prize for that, but I know it's something that mattered a lot to lots of the contributors.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>19:19</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That works for me. Sandra, what about you? What's been the most positive change that you've managed to push forward in recent years as a Global Strategist?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>19:26</strong> - <em>Sandra Persing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Two things that really stand out from my mind is expanding this definition, the persona of developer, has been something that's been very important. We'd love to grow our community, right? So why restrict the definition and description of a developer?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>19:43</strong> - <em>Sandra Persing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>When we did a panel at Sundance with some famous names like Reggie Watts and Chris Milk, we gave an opportunity for filmmakers, producers, decision makers to say, "Oh, we can do that, too. We don't have to be bound by restrictions of what can we do as creative filmmakers." </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>20:00</strong> - <em>Sandra Persing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We can adopt technology, and we too can become developers, and that was very refreshing to see. Another moment that we had at Mozilla was bringing an artist, Ian Brill, a light artist in Chicago, to work with us on a project that we label Arch, and we brought this huge plastic light, LED light, with seven Raspberry Pis being programmed structure, to two significant JavaScript developer events this year. And in order to invite more programmers, whether they call themselves developers or not, to try out two languages that Mozilla was advocating this year pretty strongly, WebAssembly and Rust.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>20:49</strong> - <em>Sandra Persing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So we created two simple templates, to say, "Try it out," but it's not programming that we wanted to push towards. It's not coding. It was, "Yes, there's some lines of code. It's language, but what you want to do is create a few lines that now can translate into art," and that brought so many new people into our fold, literally brought them to our table, and then they would write their lines of code, go and walk over under the Arch, to see their light expressions now being looped in the structure. That was amazing.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>21:22</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Wow. That sounds beautiful, absolutely beautiful. So, I'm wondering, when we talk about advocating for developers, and we talked a ton about community, and this idea of at the end of the day, whatever our job titles are, we're really just trying to help people, what do developers need help with? Ricky, let's start with you. What do developers say that they need from you?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>21:44</strong> - <em>Ricky Robinett</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Wow. Yeah, that is a good question. I think that one of the things that we've found is that, like technology's changing so quickly, and a lot of what we get asked about is just, "Where do I start? What do I do first? How do I know I'm on the right path?" For us, that's probably one of the areas we have been investing the most, is we call it like helping people discover their power to change the world with code.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>22:16</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Oh, that's beautiful. I approve.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>22:18</strong> - <em>Ricky Robinett</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Well, thank you. Yes. That's exciting. So we built a tool called TwilioQuest, to help people discover that power, to help them know where to get started, but I just sense, you know, there's been this theme of people finding their identity, or getting permission to have that identity, and for every person that's writing code already, or solving problems with code or software, there's so many more who want to, and just don't know where to start yet. So that's a thing that's on our mind a lot.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>22:51</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Yeah. So Robyn, for you at Red Hat, what are Red Hat developers looking for?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>23:00</strong> - <em>Robyn Bergeron</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>A lot of times, it's people who come to you and they've got some roadblock in their way, whether it's, you know, "Somehow my PR fell through the robot cracks," but a lot of times, it's also people who are like, "Hey, I had this cool idea. Maybe it doesn't quite fit in here, but I thought maybe it might improve how the community is running, or might be a good companion tool to other stuff that we're working on. What do I do?" And it's like, "Well, you know, how can I help you get started," you know? " What can I do? Like, do you just need someone to say yes? Because I am here to say yes all day long, to basically anything, and just let people know that yes, of course you have permission to do that," so that's, you know, I think the best thing that you can do, at least in my position, is make sure people don't have things in their way, or if the one thing that's in their way is waiting for someone to just say yes, I keep reiterating all the time that you don't need permission, but if someone needs it, then by god, give it to them.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>23:58</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So, the last question, we need to wrap things up, so I'm going to ask you each something. What is the single-most important thing that you're going to be advocating for in 2019? If you had a magic wand, what's the next big thing you'd want to change? Sandra, let's start with you.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>24:15</strong> - <em>Sandra Persing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Oh, I knew you were going to do that. Well, the biggest challenges, and yet the most exciting projects that we're going to be working on for 2019, is to truly deliver on our promise of the web being one of the greatest, biggest, most accessible platform. We always tell developers it's where you should build, and deploy everywhere, but knowing that the web itself is incredibly complex, and that we have multiple browser vendors out there, sometimes that's not a true statement, and it's been a perennial challenge for us, especially at Mozilla, where we want to keep the web open, and free, and accessible for all. We want to continue to make sure that we are fulfilling that promise to our developers, that the web is indeed open, accessible, and available to all.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>25:10</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Oh, love that. Ricky, what about you?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>25:13</strong> - <em>Ricky Robinett</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Just making sure we're serving developers where they gather, online and offline, throughout the entire world. It canbe super easy to get focused on what you see and forget that there's developers everywhere, even when you don't see them. So, I would wave my magic wand and just be more places all over the world, finding out how we can help developers there.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>25:36</strong> - <em>Sandra Persing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I just want to say, I loved Jarod's talk about dark matter developers. It was incredible. </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>25:42</strong> - <em>Ricky Robinett</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It's like such an amazing concept when you hear it for the first time. It's like, "Wow, that really is a thing."</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>25:50</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So tell us about that. What's a dark matter developer?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>25:52</strong> - <em>Sandra Persing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Essentially, there are developers out there, there are those who do not show up to your meetups, who do not participate in GitHub, online communities, do not contribute to Stack Overflow. Those are the developers who are still actively working and contributing, but we do not know. We know that they're there, but we cannot see them. We cannot identify them, and those are actually a very important segment of the developer community that we tend to ignore, and we cannot. It will be to our detriment working in developer relations, to ignore the community that does not speak up, and we need to be more proactive in searching those dark matter developers out in our universe.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>26:34</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Oh, I love ... Oh, that's very cool. Yeah, and Jarod actually works at Twilio, right?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>26:38</strong> - <em>Sandra Persing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Yes. Yes, he runs the APAC DevRel.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>26:42</strong> - <em>Robyn Bergeron</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>One of my former Red&nbsp;Hat colleagues, who's now at a company called Tidelift, Chris Grams, actually used to have a blog that was titled Dark Matter Matters, because it's sort of the&mdash;</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>26:52</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Mm-hmm (affirmative).</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>26:54</strong> - <em>Robyn Bergeron</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>You know, the things you don't see still actually matter, so&mdash;</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>26:58</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Absolutely. And Robyn, what about you. What would you do with your magic wand? </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>27:03</strong> - <em>Robyn Bergeron</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Oh, with my magic wand, so many things, but I guess pursuant to this conversation, getting better at managing our dependencies upon each other, and maybe not surprising each other, especially when so many of us work in OpenStack, and OPNFV, and Ansible, and all of these things that build on top of each other. Just making sure that the relationships between our projects is more obvious than things can be when you're head-down in stuff. So that's a thing I'm really looking forward to over the coming year, because we're getting traction on stuff. It's very exciting right now.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>27:39</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Traction is always just so good. It's so exciting. Well, I want to thank all of you so, so much for joining us today and sharing your minds, and your thoughts, and your stories. Thank you all so much. You want to say goodbye?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>27:51</strong> - <em>Robyn Bergeron</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Bye, y'all.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>27:54</strong> - <em>Sandra Persing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Nice. Thank you so much, Saron. It's been a pleasure being on this panel.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>27:58</strong> - <em>Ricky Robinett</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It's already starting to happen, a shift towards open source attitudes in the gaming studios.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>27:59</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Absolutely. Today's roundtable included Robyn Bergeron, Community Architect at Red Hat, Sandra Persing, Global Strategist at Mozilla, and Ricky Robinet, Director of the Developer Network at Twilio. I consider myself hugely lucky to have platforms where I get to share my vision for what our community could become, whether here on this podcast or elsewhere, but I want to point out, you do not have to have your own podcast to be an advocate. Being an advocate simply means you keep your eyes open and you speak up on behalf of others. It really can be everybody's job. So I'm hoping Robyn, Sandra, and Ricky give you a little inspiration to advocate for matters to you.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-blue  text-white">
+                <p class="mb-0"><strong>28:50</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Meanwhile, Season 3of Command Line Heroes is already in the works. You can be one of the first to learn about new episodes when they drop this spring. If you haven't already, subscribe over at Apple Podcasts, Google Podcasts, or wherever you get your podcasts. It's one click, and it's 100% free. I'm Saron Yitbarek. Thank you so much for listening, and until season 3, keep on coding.</p>
+    </div>
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>  <!-- Pattern | raw_html -->
+
+<div class="rh-raw"         data-rh-unique-id="2063681">
+                <section class="dms-band clh-guests bg-repeat bg-pos-ct bg-size-cover" >
+        <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="font-family-monospace text-white reveal text-white">Featured in this episode</h3>
+
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 pb-2 pb-lg-0 reveal">
+                        <div class="card mb-0 h-100  bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100" href="http://twitter.com/sandrapersing" target="_blank" title="Sandra Persing">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="https://www.redhat.com/cms/managed-files/person-clh-persing-300x300.jpg" alt="Sandra Persing"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="font-family-monospace text-purple-dark">Sandra Persing</h4>
+
+                                    <p class="mb-0 text-purple-dark">Global strategist at Mozilla and creator of the DevRel Summit</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 pb-2 pb-lg-0 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100" href="http://twitter.com/rickyrobinett" target="_blank" title="Ricky Robinett">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="https://www.redhat.com/cms/managed-files/person-clh-robinett-300x300.jpg" alt="Ricky Robinett"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="font-family-monospace text-purple-dark">Ricky Robinett</h4>
+
+                                    <p class="mb-0 text-purple-dark">Director of the Developer Network at Twilio</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 pb-2 pb-lg-0 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100" href="http://twitter.com/robynbergeron" target="_blank" title="Robyn Bergeron">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="https://www.redhat.com/cms/managed-files/person-clh-bergeron-300x300.jpg" alt="Robyn Bergeron"></div>
+
+                                <div class="card-body p-2">
+                                    <h4 class="font-family-monospace text-purple-dark">Robyn Bergeron</h4>
+
+                                    <p class="mb-0 text-purple-dark">Community architect at Red&nbsp;Hat</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    
+                </div>
+          
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+    </div>  <!-- Pattern | raw_html -->
+
+<div class="rh-raw"         data-rh-unique-id="2063691">
+        <section class="dms-band clh-newsletter pt-6 pt-md-8">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-5 reveal">
+                <div class="card">
+                    <div class="card-body p-0">
+                        <img class="img-fluid svg svg-white mb-3" src="https://www.redhat.com/cms/managed-files/logo-command-line-heroes.svg" width="166" height="42" alt="Command Line Heroes logo" title="Command Line Heroes">
+
+                        <h3 class="font-family-monospace">Get the newsletter</h3>
+
+                        <p class="mb-0">After each episode drops, we'll send you commentary from the Command Line Heroes team, as well as links that help you take a closer look at the topics we cover. It's as simple as that.</p>
+                    </div>
+
+                    <div class="card-footer pt-3 px-0 pb-0">
+                        <a class="btn btn-primary mb-1 mb-lg-0" href="http://www.redhat.com/forms/?config=19411" title="Sign up">Sign up</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 offset-lg-1 reveal">
+                <div class="card mb-0 bg-white rounded-0 text-black">
+                    <div class="card-body p-2 p-md-3">
+                        <h3 class="font-family-monospace text-red">Presented by Red&nbsp;Hat</h3>
+
+                        <p class="mb-0">For 25 years, Red Hat has been bringing open source technologies to the enterprise. From the operating system to containers, we believe in building better technology together–and celebrating the unsung heroes who are remaking our world from the command line up.</p>
+                    </div>
+
+                    <div class="card-footer pt-0 px-2 px-md-3 pb-2 pb-md-3">
+                        <a class="btn btn-link mb-0" href="http://www.redhat.com/" title="Learn more">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>
+  
+  
+</article>
+
+</div>
+  </div>
+        
+  </div>
+
+  <footer>
+        <section class="rc-footer-traditional">
+      <div class="container rc-footer-traditional-container">
+        <section class="rc-footer-traditional-section">
+          <div class="rc-footer-traditional-logo">
+            <div class="row">
+              <a href="https://www.redhat.com/en">
+                <img src="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo.svg" class="screen" title="Red Hat" />
+                </a>
+            </div>
+          </div>
+          <div id="legal" class="rc-footer-traditional-legal">
+            <div class="row">
+              <div class="copyright">©2021 Red Hat, Inc.</div>
+              <div >
+                <ul class="menu"><li class="first leaf"><a href="../../about/privacy-policy.html">Privacy statement</a></li>
+<li class="leaf"><a href="../../about/terms-use.html">Terms of use</a></li>
+<li class="leaf"><a href="../../about/all-policies-guidelines.html">All policies and guidelines</a></li>
+<li class="leaf"><a href="../../about/digital-accessibility.html">Digital accessibility</a></li>
+<li class="last leaf"><span id="teconsent" class="nolink">|</span></li>
+</ul>              </div>
+            </div>
+                      </div>
+          <div class="rc-footer-traditional-event-logo">
+            <div id="block-block-5" class="block block-block block-footer-promote">
+
+      
+  <a href="https://www.redhat.com/summit"><img src="https://www.redhat.com/cms/managed-files/Logo-Red_Hat-Summit-A-Standard-RGB-02_0.svg" alt="Red Hat Summit" style="float: right;" width="72px"></a>
+</div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </footer>
+        <script type="text/javascript" src="../../../ux/webdms/js/vendors/jquery.waypoints.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/plyr.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/viewport.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/scripts.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/projects/clh.min6eda.js?qy3uiv"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+  if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
+      _satellite.pageBottom();
+  }
+//--><!]]>
+</script>
+    </div>
+  <script type="text/javascript"  src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"></script></body>
+
+<!-- Mirrored from www.redhat.com/en/command-line-heroes/season-2/developer-advocacy-roundtable by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:27:37 GMT -->
+</html>

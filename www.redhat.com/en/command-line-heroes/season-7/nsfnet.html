@@ -1,0 +1,1844 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  
+<!-- Mirrored from www.redhat.com/en/command-line-heroes/season-7/nsfnet by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:30:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!--[if IE]><![endif]-->
+<script id="trustarc" type="text/javascript" src="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"></script>
+<script id="ddo" type="text/javascript">
+<!--//--><![CDATA[//><!--
+    var digitalData = {"cart":[],"event":[],"listing":{"browseFilter":"","query":"","queryMethod":"","refinementType":"","refinementValue":"","resultCount":"","searchType":""},"page":{"attributes":{"queryParameters":"","referringSearchEngine":"","analyticsTitle":"brand affinity | command line heroes season 7 episode 2","taxonomyPageSubType":["28051"],"taxonomyRegion":["4521"],"taxonomyMetaHreflang":["29051"]},"category":{"contentType":"","keyPage":"false","keyPageType":"","pageType":"pattern_template","primaryCategory":"command-line-heroes","subCategories":["season-7","nsfnet"]},"pageInfo":{"cms":"RH CMS 2021.12.0","contentFindingMethod":"","contentID":"534471","contentPortal":"","destinationURL":"https:\/\/www.redhat.com\/en\/command-line-heroes\/season-7\/nsfnet","errorMessage":"","errorType":"","language":"en","pageName":"","referringDomain":"","referringURL":"","sysEnv":"","template":"","title":"Command Line Heroes: Season 7: From NSF to ISP"}},"product":[],"user":[{"profile":[{"profileInfo":{"daysSinceLastPurchase":"","demandbaseSID":"","eloquaGUID":"","lastLoginDate":"","lastPurchaseDate":"","loggedIn":"false","profileID":"","subscriptionFrequency":"","subscriptionLevel":""}}]}]};
+    !function(a,b,c){"use strict";function d(a){var c="; "+b.cookie,d=c.split("; "+a+"=");if(2===d.length)return d.pop().split(";").shift()}if(b.referrer){var e=b.createElement("a");e.href=b.referrer,c.page.pageInfo.referringDomain=e.hostname,c.page.pageInfo.referringURL=e.href}c.page.pageInfo.sysEnv=a.innerWidth<=768?"tablet":"desktop";var f=c.user[0].profile[0].profileInfo,g=d("rh_elqCustomerGUID");g&&(f.eloquaGUID=g);var h=d("rh_user");if(h){var i=h.split("\\|");i[0]&&(f.loggedIn="true")}var j=d("s_dmdbase");j&&(f.demandbaseSID=j)}(window,document,digitalData);
+//--><!]]>
+</script>
+<script src="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm.js" data-domain="www.redhat.com"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-functional.js" class="trustecm" data-tracker-type="functional"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-advertising.js" class="trustecm" data-tracker-type="advertising"></script><script id="dpal" type="text/javascript" src="../../../dtm.js"></script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="en" />
+<link href="nsfnet.html" rel="alternate" hreflang="en" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "availableLanguages": {
+        "zh": {
+            "@type": "Language",
+            "name": "简体中文",
+            "href": "/zh/command-line-heroes/season-7/nsfnet"
+        },
+        "en": {
+            "@type": "Language",
+            "name": "English",
+            "href": "/en/command-line-heroes/season-7/nsfnet",
+            "current_lang": true
+        },
+        "fr": {
+            "@type": "Language",
+            "name": "Français",
+            "href": "/fr/command-line-heroes/season-7/nsfnet"
+        },
+        "de": {
+            "@type": "Language",
+            "name": "Deutsch",
+            "href": "/de/command-line-heroes/season-7/nsfnet"
+        },
+        "it": {
+            "@type": "Language",
+            "name": "Italiano",
+            "href": "/it/command-line-heroes/season-7/nsfnet"
+        },
+        "ja": {
+            "@type": "Language",
+            "name": "日本語",
+            "href": "/ja/command-line-heroes/season-7/nsfnet"
+        },
+        "ko": {
+            "@type": "Language",
+            "name": "한국어",
+            "href": "/ko/command-line-heroes/season-7/nsfnet"
+        },
+        "pt-br": {
+            "@type": "Language",
+            "name": "Português",
+            "href": "/pt-br/command-line-heroes/season-7/nsfnet"
+        },
+        "es": {
+            "@type": "Language",
+            "name": "Español",
+            "href": "/es/command-line-heroes/season-7/nsfnet"
+        }
+    }
+}</script><meta name="last-publish-date" content="Tue, 25 Jun 2019 04:00:00 GMT" />
+<meta name="node-type" content="pattern_template" />
+<meta name="source" content="rhdc_drupal" />
+<meta name="rhdc_key" content="e77e1a4019d6bffd3f2df136bd0cded1" />
+<meta name="taxonomy-region" content="Global" />
+<meta name="taxonomy-region-tid" content="4521" />
+<meta name="taxonomy-page-sub-type" content="Brand affinity" />
+<meta name="taxonomy-page-sub-type-tid" content="28051" />
+<meta name="taxonomy-meta-hreflang" content="en" />
+<meta name="taxonomy-meta-hreflang-tid" content="29051" />
+<link rel="shortcut icon" href="https://www.redhat.com/misc/favicon.ico" type="image/x-icon" />
+<meta property="og:description" content="1995 was the year that ISPs became the dominant gateway to the information superhighway. But how’d we go from ARPANET all the way to that? It turns out, none of it would have happened without a team of intrepid engineers at the University of Michigan." />
+<meta name="description" content="1995 was the year that ISPs became the dominant gateway to the information superhighway. But how’d we go from ARPANET all the way to that? It turns out, none of it would have happened without a team of intrepid engineers at the University of Michigan." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="image_src" href="../../../cms/managed-files/Opengraph---S7_0.jpg" />
+<link rel="canonical" href="nsfnet.html" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.redhat.com/en/command-line-heroes/season-7/nsfnet" />
+<meta property="og:title" content="Command Line Heroes: Season 7: From NSF to ISP" />
+<meta property="og:image" content="https://www.redhat.com/cms/managed-files/Opengraph---S7_0.jpg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Command Line Heroes: Season 7: From NSF to ISP" />
+<meta name="twitter:image" content="https://www.redhat.com/cms/managed-files/Opengraph---S7_0.jpg" />
+    <title>Command Line Heroes: Season 7: From NSF to ISP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://static.redhat.com/">
+    <link rel="preload" href="https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/fonts/web_icon/rh-web-iconfont.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatTextVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatDisplayVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__k9aoxkMyjUtSX9AXGCPExPgTYjM0Xv5OYNfbFGDRafY__N9sjJtGj85lXtvOptw2e_YZ01FXbTXcJywP8EaKBijU__uaCwYofnUZLAnB7x3Q6WyVKH" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/all/libraries/webrh/dist/css/webrh.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__cxslYvmVeKFG0RwKl9kcXSrmb2x2VtvkIw-OLkwF8jU___pPNjqO-hMXRnx5HlJupeXtrvaj0Ilhs-XAVxMYy0CM__uaCwYofnUZLAnB7x3Q6WyVKH" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__wpajrf8pWA19ifT2xQXPB3J1TByoCXqZVtt6kXfl4Ow__PFQbFxxWsZl0yTnfrpPiA-o5Pvtu-CXh7nICx08JW0c__uaCwYofnUZLAnB7x3Q6WyVKH" media="print" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/css/trustecm.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/redhat-theme/6/advanced-theme.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/red-hat-font.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/font-awesome/4.7.0/css/font-awesome.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/vendors/plyr.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/vendors/slick.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/styles.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/projects/clh-s7-episodes.min6eda.css?qy3uiv" media="all" />
+    <!--[if lt IE 9]>
+      <script src="/profiles/rh/themes/redhatdotcom/js/selectivizr-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/nwmatcher-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/respond.js" type="text/javascript"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../../../sites/default/files/advagg_js/js__B6wED6l5P_XUdxVmb7Nvh5d9zn074QukFqJa2HLXS6c__VzWs8XZBHHsPW77egi-W-FQw2mAEr5F-GgCJU0wn3Nc__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.vendor.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.webcomponents.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__pDOiYGKaYbdKNp1gvMxR0fWhWZnfUemYDUhADyCn3oM__jCrCuWCJIPYPe1FzZoUvsJWEjkNMmRIQHYek1h7idBE__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.rh = window.rh || {}; window.rh.drupalTrustArcLoaded = true;
+//--><!]]>
+</script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__5nUyGFdhKMGscC9VhukG-UTAhz8BEdhsa8koVlLwAyQ__Lz8gDLbd5fTco1AnHaCqhSeYJB5o0QUXAimK7JOyRNI__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"redhatdotcom","theme_token":"Z4FU45-zZDijDF7NH2u91oBIOFjWexBY0-0H_rF3d8w","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.webcomponents.min.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.min.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/marketing\/latest\/trustarc\/trustecm\/css\/trustecm.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-theme\/6\/advanced-theme.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-font\/4\/webfonts\/red-hat-font.min.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-iconfont.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-web-iconfont.css":1,"sites\/all\/libraries\/patternfly-elements\/pfe-styles\/pfe-typography-classes.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/site-switcher.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/chrome.css":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/print.css":1,"\/\/static.redhat.com\/libs\/font-awesome\/4.7.0\/css\/font-awesome.min.css?qy3uiv":1,"\/ux\/webdms\/css\/vendors\/plyr.min.css?qy3uiv":1,"\/ux\/webdms\/css\/vendors\/slick.min.css?qy3uiv":1,"\/ux\/webdms\/css\/styles.min.css?qy3uiv":1,"\/ux\/webdms\/css\/projects\/clh-s7-episodes.min.css?qy3uiv":1},"js":{"\/ux\/webdms\/js\/vendors\/jquery.waypoints.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/viewport.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/plyr.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/slick.min.js?qy3uiv":1,"\/ux\/webdms\/js\/scripts.min.js?qy3uiv":1,"\/ux\/webdms\/js\/projects\/clh.min.js?qy3uiv":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/rh\/modules\/redhat_www_ddo\/dist\/post-jquery.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.vendor.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.webcomponents.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"profiles\/rh\/modules\/redhat_www_menu\/js\/rh_nav.js":1,"profiles\/rh\/modules\/redhat_www_share\/js\/rh_share.js":1,"profiles\/rh\/modules\/redhat_www_utility\/js\/redhat_www_utility.js":1,"sites\/all\/libraries\/jquery-cookie\/jquery.cookie-1.4.1.min.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.pushmenu.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery-scrolltofixed.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/rh-chrome.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.fitvids.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.switchIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.viewport\/jquery.viewport.min.js":1}},"redhat_www_menu":{"path":"node\/534471"},"rh_analytics_enabled":false});
+//--><!]]>
+</script>
+    <noscript>
+        <link href="../../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.noscript.min.css" rel="stylesheet" >
+    </noscript>
+  </head>
+  <body unresolved class="bands-index html not-front not-logged-in no-sidebars page-node page-node- page-node-534471 node-type-pattern-template i18n-en clh-s7e1  " >
+    <div class="page">
+            <!-- Legacy migrated page support with body.migrated-page-hero -->
+<div class="header-background-image fts-migrated-bg">
+</div>
+
+  <div id="main-content">
+                      <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+      
+  <article class="node-534471 node node-pattern-template clearfix">
+
+  
+    <!-- Pattern | raw_html -->
+
+<article class="node-shared">
+      <header id="top" class="dms-band clh-nav-top py-2">
+    <div class="container text-white">
+        <div class="row d-flex align-items-center">
+            <div class="col-6">
+                <a href="../../command-line-heroes.html" title="Command Line Heroes">
+                    <img class="img-fluid svg svg-white" src="https://www.redhat.com/cms/managed-files/logo-command-line-heroes.svg" width="166" height="42" alt="Command Line Heroes logo">
+                </a>
+            </div>
+
+            <div class="col-6 clh-nav-toggle-wrapper">
+                <span class="text-monospace text-right font-size-16 d-inline-block">Subscribe<br/>& more</span>
+
+                <a href="#" class="btn btn-toggle" data-toggle="nav-shelf">
+                    <div class="d-inline-block">
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="dms-band clh-nav-shelf text-white py-0">
+    <div class="nav-container pb-4">
+        <div id="CLHNav" class="accordion">
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-subscribe.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSubscribe">
+                    <p>Subscribe</p>
+                </button>
+                <div id="clhSubscribe" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <p>Subscribe to the podcast to receive new episodes as soon as we release them</p>
+                    <div class="row pb-2">
+                        <div class="col-6 mb-2">
+                            <a href="http://geo.itunes.apple.com/podcast/us/id1319947289?mt=2&amp;at=1010lbVy&amp;ct=redhatclh_website" target="_blank" title="Listen on Apple Podcasts">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-apple.png" alt="Listen on Apple Podcasts">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://www.google.com/podcasts?feed=aHR0cHM6Ly9mZWVkcy5wYWNpZmljLWNvbnRlbnQuY29tL2NvbW1hbmRsaW5laGVyb2Vz" target="_blank" title="Listen on Google Podcasts">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-google.png" alt="Listen on Google Podcasts">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://www.stitcher.com/s?fid=159833&amp;refid=stpr" target="_blank" title="Listen on Stitcher">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-stitcher.png" alt="Listen on Stitcher">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://open.spotify.com/show/4Jgtgr4mHXNDyLldHkfEMz" target="_blank" title="Listen on Spotify">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-spotify.png" alt="Listen on Spotify">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://feeds.pacific-content.com/commandlineheroes" target="_blank" title="Subscribe via RSS Feed">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-rss.png" alt="Subscribe via RSS Feed">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-about.jpg">
+                <button href="../about.html" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhAbout">
+                    <p>About the podcast</p>
+                </button>
+                <div id="clhAbout" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <p>Discover Red Hat’s original podcast about the people who transform technology from the command line up. Subscribe to our newsletter for commentary from the Command Line Heroes team—and links to take a closer look at the topics we cover.</p>
+                    
+                    <p><a href="../about.html" class="btn btn-primary">Learn about the show</a></p>
+                    <p class="mb-0 pb-4"><a href="https://www.redhat.com/forms/?config=19411" class="btn btn-outline-white">Get the newsletter</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s1.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason1">
+                    <p>Season 1</p>
+                </button>
+                <div id="clhSeason1" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-1/os-wars-part-1.html" title="OS Wars_Part 1">OS Wars_part 1</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/os-wars-part-2-rise-of-linux.html" title="OS Wars_Part 2">OS Wars_part 2</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/agile-revolution.html" title="The Agile_Revolution">The Agile_Revolution</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/devops-tear-down-that-wall.html" title="DevOps_Tear Down That Wall">DevOps_Tear Down That Wall</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/the-containers-derby.html" title="The Containers_Derby">The Containers_Derby</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/crack-the-cloud-open.html" title="Crack the Cloud_Open">Crack the Cloud_Open</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/days-of-future-open.html" title="Days of Future_Open">Days of Future_Open</a>
+                        </li>
+                    </ol>
+                  <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-1.html" title="Explore season 1">Explore Season 1</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s2.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason2">
+                    <p>Season 2</p>
+                </button>
+                <div id="clhSeason2" class="accordion-panel collapse" data-parent="#CLHNav">
+
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-2/press-start.html" title="Press Start">Press Start</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/hello-world.html" title="Hello, World">Hello, World</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/ready-to-commit.html" title="Ready to Commit">Ready to Commit</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/fail-better.html" title="Fail Better">Fail Better</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/the-one-about-devsecops.html" title="The One About DevSecOps">The One About DevSecOps</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/the-data-explosion.html" title="The Data Explosion">The Data Explosion</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/at-your-serverless.html" title="At Your Serverless">At Your Serverless</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/open-curiosity.html" title="Open Curiosity">Open Curiosity</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/developer-advocacy-roundtable.html" title="Bonus_Developer Advocacy Roundtable">Bonus_Developer Advocacy Roundtable</a>
+                        </li>
+                    </ol>
+                   <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-2.html" title="Explore season 2">Explore Season 2</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s3.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason3">
+                    <p>Season 3</p>
+                </button>
+                <div id="clhSeason3" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-3/pythons-tale.html" title="Python's Tale">Python's Tale</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/learning-the-basics.html" title="Learning the BASICs">Learning the BASICs</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/creating-javascript.html" title="Creating JavaScript">Creating JavaScript</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/diving-for-perl.html" title="Diving for Perl">Diving for Perl</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/the-infrastructure-effect.html" title="The Infrastructure Effect">The Infrastructure Effect</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-3/heroes-in-a-bash-shell.html" title="Heroes in a Bash Shell">Heroes in a Bash Shell</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/talking-to-machines.html" title="Talking to Machines">Talking to Machines</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-3/the-c-change.html" title="The C Change">The C Change</a>
+                        </li>
+                    </ol>
+                   <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-3.html" title="Explore season 3">Explore Season 3</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s4.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason4">
+                    <p>Season 4</p>
+                </button>
+                <div id="clhSeason4" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-4/minicomputers.html" title="Minicomputers">Minicomputers</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-4/mainframes.html" title="Mainframes">Mainframes</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/personal-computers.html" title="Personal Computers">Personal Computers</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/floppies.html" title="Floppies">Floppies</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/smarter-phones.html" title="Smarter Phones">Smarter Phones</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/open-source-hardware.html" title="Open Source Hardware">Open Source Hardware</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/consoles.html" title="Consoles">Consoles</a>
+                        </li>
+
+                         <li class="mb-2">
+                            <a href="../season-4/steve-wozniak.html" title="Steve Wozniak">Steve Wozniak</a>
+                        </li>
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-4.html" title="Explore season 4">Explore Season 4</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s5.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason5">
+                    <p>Season 5</p>
+                </button>
+                <div id="clhSeason5" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-5/becoming-a-coder.html" title="Becoming a Coder">Becoming a Coder</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-5/where-coders-code.html" title="Where Coders Code">Where Coders Code</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-5/what-kind-of-coder-will-you-become.html" title="What Kind of Coder Will You Become?">What Kind of Coder Will You Become?</a>
+                        </li>
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-5.html" title="Explore season 5">Explore Season 5</a></p>
+ 
+                </div>
+            </div>
+
+                        <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s6.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason6">
+                    <p>Season 6</p>
+                </button>
+                <div id="clhSeason6" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-6/jerry-lawson.html" title="Jerry Lawson">Jerry Lawson</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/gladys-west.html" title="Dr. Gladys West">Dr. Gladys West</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/mark-dean.html" title="Dr. Mark Dean">Dr. Mark Dean</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/marc-hannah.html" title="Dr. Marc Hannah">Dr. Marc Hannah</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/clarence-ellis.html" title="Dr. Clarence Ellis">Dr. Clarence Ellis</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/roy-clay.html" title="Roy Clay">Roy Clay</a>
+                        </li>
+                       <li class="mb-2">
+                            <a href="../season-6/gladys-perkins.html" title="Gladys Perkins">Gladys Perkins</a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="../season-6/arlan-hamilton.html" title="Arlan Hamilton">Arlan Hamilton</a>
+                        </li>
+            
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link text-monospace text-white" href="../season-6.html" title="Explore season 6">Explore Season 6</a></p>
+                </div>
+            </div>
+
+             <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/season-7_nav.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason7">
+                    <p>Season 7</p>
+                </button>
+                <div id="clhSeason7" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="dot-com.html" title="Connecting The Dot-Com">Connecting The Dot-Com</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="nsfnet.html" title="From NSF to ISP">From NSF to ISP</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="html.html" title="A Language for the Web">A Language for the Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="ux.html" title="Web UX Begins">Web UX Begins</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="shopping.html" title="Shopping for the Web">Shopping for the Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="search.html" title="Looking for Search">Looking for Search</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="world.html" title="The World of the World Wide Web">The World of the World Wide Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="bubble.html" title="After the Bubble">After the Bubble</a>
+                        </li>
+
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../../command-line-heroes.html" title="Explore season 5">Explore Season 7</a></p>
+ 
+                </div>
+            </div>
+
+        </div>
+        
+        <ul class="social-list list-inline list-unstyled pl-5 pl-sm-6 mt-1">
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F" target="_blank" title="Facebook" onclick="return !window.open(this.href, 'Facebook', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
+                    <span class="web-icon-facebook" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.twitter.com/share?url=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F&amp;text=An%20original%20podcast%20about%20the%20people%20who%20transform%20technology%20from%20the%20command%20line%20up.%20Presented%20by%20Red%20Hat." target="_blank" title="Twitter" onclick="return !window.open(this.href, 'Twitter', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
+                    <span class="web-icon-twitter" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F&amp;title=Command%20Line%20Heroes&amp;summary=Hear%20the%20epic%20true%20tales%20of%20how%20developers%2C%20programmers%2C%20hackers%2C%20geeks%2C%20and%20open%20source%20rebels%20are%20revolutionizing%20the%20technology%20landscape.%20Command%20Line%20Heroes%20is%20a%20new%20podcast%20hosted%20by%20Saron%20Yitbarek%20and%20produced%20by%20Red%20Hat.&amp;source=Red%20Hat" target="_blank" title="LinkedIn" onclick="return !window.open(this.href, 'LinkedIn', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')" aria-current="page">
+                    <span class="web-icon-linkedin" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="mailto:?subject=Command Line Heroes&body=Hear%20the%20epic%20true%20tales%20of%20how%20developers%2C%20programmers%2C%20hackers%2C%20geeks%2C%20and%20open%20source%20rebels%20are%20revolutionizing%20the%20technology%20landscape.%20Command%20Line%20Heroes%20is%20a%20new%20podcast%20hosted%20by%20Saron%20Yitbarek%20and%20produced%20by%20Red%20Hat. https://www.redhat.com/en/command-line-heroes" target="_blank" title="Email" aria-current="page">
+                    <span class="web-icon-envelope" aria-label="true"></span>
+                </a>
+            </li>
+        </ul>
+
+         <div class="language-switcher position-absolute bottom-0 right-0  w-100">
+            <div class="row justify-content-center mx-0">
+
+                <div class="col-6 text-center border-right border-black border-20 language-inactive">
+                    <a href="http://www.redhat.com/es/command-line-heroes" title="Command Line Heroes"><img class="img-fluid py-2" width="90" src="https://www.redhat.com/cms/managed-files/logo_clh-en-espanol_inactive.svg" alt="CLH en espanol logo"></a></div>
+
+                <div class="col-6 text-center language-active"><a href="../../command-line-heroes.html" title="Command Line Heroes"><img class="img-fluid pt-3 pb-2" width="130" src="https://www.redhat.com/cms/managed-files/logo_CLH_small.svg" alt="CLH logo"></a></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+</div>
+
+
+<div class="mb-6">&nbsp;</div>  
+  </article>
+  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-hero--episode pt-4 py-md-10  bg-repeat"  data-bg-image="../../../cms/managed-files/S7-orange-static-square.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 pt-lg-6 pt-xl-12 text-purple-dark reveal">
+                <h5 class="section-label mb-1 font-weight-light">Season 7, Episode 2</h5>
+
+                <h1 class="mb-lg-4 text-monospace font-size-28 font-size-lg-32"><strong>From NSF to ISP</strong></h1>
+
+                <div class="clh-audio plyr-theme">
+                    <audio src="http://chtbl.com/track/247G8/https://dts.podtrac.com/redirect.mp3/cdn.simplecast.com/audio/a88fbe81-5614-4834-8a78-24c287debbe6/episodes/ae979e2f-ca23-44b5-b287-ac30f8e56447/audio/c58af809-d8f2-42c8-b7cb-05ca6cd7559e/default_tc.mp3" preload="none" controls></audio>
+                </div>
+                <p class="cta-group">
+                    <a class="btn btn-link text-monospace text-purple-dark" href="#" data-toggle="nav-shelf" data-toggle-panel="#clhSubscribe" title="Listen to this episode later" data-menu="subscribe">Listen to this episode later </a>
+                </p>
+            </div>
+            <div class="col-lg-6 offset-lg-1 pt-4 text-center reveal">
+                <img class="img-fluid" src="../../../cms/managed-files/mailbox.png" alt="Mailbox">
+            </div>
+            
+           
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-notes py-0">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-lg-7 col-xl-6 mx-auto pt-6 reveal">
+                <ul class="nav nav-tabs mb-3 d-flex justify-content-center text-monospace">
+                    <li class="nav-item text-center">
+                        <a class="tab-show-notes nav-link mx-0 mr-md-6 p-0 font-size-22 text-white active" href="#show-notes" data-toggle="tab" title="Show notes">Show notes</a>
+                    </li>
+
+                    <li class="nav-item text-center">
+                        <a class="tab-transcript nav-link mt-2 mt-md-0 mx-0 p-0 font-size-22 text-white" href="#transcript" data-toggle="tab" title="Transcript">Transcript</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="show-notes" class="tab-pane fade active show">
+                        <div class="row">
+                            <div class="col-12">
+                                <p>1995 was the year that ISPs became the dominant gateway to the information superhighway. But how’d we go from ARPANET all the way to that? It turns out, none of it would have happened without a team of intrepid engineers at the University of Michigan.</p>
+
+                                <p class="mb-lg-0">Marc Weber tells us how a tension between academics and the military set the next evolution of the ARPANET. Douglas Van Houweling discusses the work his MERIT team did at the University of Michigan to build the national backbone of the NSFNET. Elise Gerich, MERIT’s systems manager, talks about how they made the leap from a T1 connection to a T3 to handle traffic from their growing network. And Janet Abbate emphasizes how all this set the stage for the commercialized internet that birthed the dot-com boom in 1995.</p>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="transcript" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>00:00</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>In the spring of 1995, disruption was in the air. A quiet and invisible disruption that few would have noticed. A program called the NSFNET was shutting down.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>00:19</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It didn't sound like much, did it? But as those switches were thrown and a bank of servers grew cold, a part of America was remade. You've maybe heard of the ARPANET, sort of the godfather of the internet, right? An early set of connections between a few military sites and universities. And I know you're familiar with today's internet, but there's a missing link between those two points, another network that thrived for a while in the 80s and 90s. This missing link connects the early days of publicly funded innovation and the later days of commercialized networks. It was called the NSFNET, the National Science Foundation Network, and it served as the internet's backbone for years. The little known story of its origin, and eventual demise in 1995, reveals a lot about how we got the online life we have today. It's the story of how the internet was privatized.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>01:25</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I'm Saron Yitbarek, and this is Command Line Heroes, an original podcast from Red Hat. All season we're exploring one fateful year, 1995, to understand how today's tech reality was formed in that single moment. We're learning how one year became a catalyst for our whole future. And no moment in 1995 tells you more about that massive change than April 30th, when the Internet's backbone, the NSFNET, was switched off.
+</p>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>02:03</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The story of that fateful moment begins, though, back in the early 1980s. The United States was falling behind other countries in the field of large-scale computing, and the National Science Foundation, the NSF, decided to remedy that by creating supercomputing centers all around the states. Only problem was scientists needed access to those supercomputers. The logical thing to do was simply ring up the Defense Department and ask them to upgrade the network that already existed, the ARPANET. And that's exactly what the NSF did. They made a deal, paid the Defense Department $2 million for their trouble and waited. And what the NSF might not have considered was that the Defense Department wasn't so excited about funneling more traffic to the ARPANET. Here's Marc Weber, the curatorial director of the Internet History Program at the Computer History Museum.
+</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>03:02</strong> - <em>Marc Weber</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The chance of people getting into something that's relatively open and not properly secured was going up.
+</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>01:38</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Professor W. Joseph Campbell is the author of 1995: <em>The Year the Future Began</em>.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>01:45</strong> - <em>W. Joseph Campbell</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It was a moment when the internet goes from obscurity to near ubiquity. There was a critical mass of users, there was a critical mass of content and there was a relatively easy way to get there. And that way to get there was the Netscape browser. And it really just took the web from, and the internet from, obscurity to prominence during that 12-month period.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>03:10</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Try and look at this from the perspective of the Defense Communication Agency. Sure, it's nice that all these academics get to share information across the ARPANET, but that made state secrets vulnerable in the process. They grew anxious about the security of the network. Back then in 1983, there was a sci-fi movie called War Games. A teenage Matthew Broderick finds a back door into the U.S. Military's computer system, and thinking he's playing a video game, he almost starts World War III. Sure, that sounds far-fetched, but that movie reflected real concerns. The military in the 1980s was growing frustrated that the ARPANET was open to outsiders.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>03:59</strong> - <em>Marc Weber</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Researchers tended to want openness and to share material without worrying too much about copyright or permission. And the military obviously wants security and traceability. So there was that tension from the start. There was a point they even thought about just getting rid of the ARPANET. They might have gone off in completely their own direction.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>04:23</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Eventually the scientists over at NSF got the message.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>04:29</strong> - <em>Douglas Van Houweling</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The Defense Department was clearly not enthusiastic about this.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>04:33</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That's Douglas Van Houweling, a professor at the University of Michigan and a pioneer from the early days of the internet. He told us the Defense Department never did get around to implementing those connections that the NSF needed.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>04:47</strong> - <em>Douglas Van Houweling</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>As a result, the National Science Foundation realized it had to take a different course.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>04:54</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>In fact, they planned to build a network all their own. In 1985, the NSFNET was born. Independent of the military, the National Science Foundation could provide academics with email, with file transfer protocols so they can upload and download files, and even remote access to time-sharing systems. So they were offering a lot of what the ARPANET had offered. But no, that's not the end of the story. The NSFNET had its heart in the right place, and its protocols in the right place too, but it was built on a deck microcomputer that could manage only 56 kilobits per second, otherwise known as dial-up speed. Downloading a movie at that speed would take about 213 hours.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>05:45</strong> - <em>Douglas Van Houweling</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The instant that the scientists needed to start transmitting substantial files from their universities to the supercomputing centers, that system rapidly became overloaded. Then, as more and more people on the various campuses started to use the NSFNET, the first generation for purposes other than transmitting files, that overload became even more serious.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>06:16</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>They were quickly bogged down, so the NSF put out a request for proposals. Who would like to upgrade their original 1980s network? Who had the vision to deliver phase two of the NSFNET? They received many submissions, but Van Houweling and a team called MERIT from the University of Michigan had spent 6 weeks stitching together an ambitious proposal that stood far above the rest. And this wasn't just the work of academics. Van Houweling and MERIT teamed up with the state of Michigan, with IBM, and with MCI. The MERIT team had supercharged their game by bringing huge corporate players to the table. Van Houweling heard in advance that their proposal had been selected. On the eve of the official announcement, he celebrated with his team, equal parts elated and daunted. It would be their task to save the nation's handful of fledgling regional networks, which were all tied to the overworked NSFNET. They had to make viable what pioneers had been struggling for decades to build. The work ahead seemed enormous.
+</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>07:29</strong> - <em>Douglas Van Houweling</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We were sitting together, a group of us that worked on this, and one of us said, “You know this is going to change the world.”</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>07:43</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Changing the world in this case meant changing the relationship between the National Science Foundation and big tech, a relationship that until then had some rough spots. When word got out in the late 80s that the NSF wanted to build a faster network, AT&T sent over a team of executives to try and dissuade them. AT&T was claiming that, first of all, the NSFNET would never work. And second of all, if anybody should be building a new network, it should be them. Van Houweling and his team wanted to move beyond the dichotomy of private or public. They wanted private and public.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>08:25</strong> - <em>Douglas Van Houweling</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We understood that the National Science Foundation had only budgeted $15 million for 5 years to run the NSFNET phase 2. And looking at the traffic we knew would occur, we were confident that would be inadequate. So we reached out to the IBM Corporation and asked if they would partner with us. Now at that time, as hard as it is to believe today, there were no commercial internet routers. The consequence of that was that IBM, essentially from whole cloth, built the routers for NSFNET phase 2, and they contributed all that technology to the project.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>09:08</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>A huge leg up for the MERIT team, and they didn't stop there.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>09:12</strong> - <em>Douglas Van Houweling</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We also knew that we would need to have communication lines that were capable of operating at a much higher speed, in this case at one-and-a-half megabits per second. Just think about the change from 56 kilobits per second to one-and-a-half megabits per second. So we approached MCI, which at that time was a very small telephone company, and asked them if they would be partners with us in providing the communication lines we needed on a nationwide basis.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>09:44</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Suddenly that little network from NSF had some pretty major players on its team, inspired by commercial interests of their own. Together they really might change the world, but several innovations would be necessary first. As Van Houweling mentioned, there weren't any commercial routers. IBM had to design them based on their own scientific workstations. A half dozen workstations were assembled and new software was written to handle all the routing. IBM had invented a new way to handle the flow of data, a multiprocessor router. And then what about those one-and-a-half megabit communication lines? T1 lines, as they were called, were used by telephone companies, but using them for the NSFNET's purposes caused big patterns to shut down. So MCI had to rebuild the hardware and software.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>10:41</strong> - <em>Douglas Van Houweling</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We never would have been successful in this effort if it hadn't been for the development of high-powered, scientific workstation personal computers, which IBM had developed, and without MCI's advanced microwave and fiber network that went across the nation. I think it's important to say that this was a partnership between corporations, higher education, and the Federal Government, and we never would have been successful without the contributions from the corporations.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>11:17</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Adding to all those corporate resources was the internet protocol suite, TCP/IP, that had been developed by the researchers who produced the ARPANET. There had been skepticism at first that TCP/IP could scale, but those skeptics were proved wrong.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>11:34</strong> - <em>Douglas Van Houweling</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>In fact, what NSFNET did was proved that this internet technology could scale from being a small system that supported computer science researchers, that was what the ARPANET was, to a system that could serve literally millions of people around the world.
+</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>11:58</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Upgrading the network in time for their July 1988 completion date was an enormously complicated task.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>12:05</strong> - <em>Douglas Van Houweling</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It was crazy. The amount of concentrated effort it took to build this from-scratch network in that short period of time, actually it was close to miraculous.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>12:24</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The miracle became a reality in part by managing the relationship between MERIT's nationwide backbone and the 13 regional networks that relied on it, and that job belonged to MERIT's project systems manager, Elise Gerich.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>12:40</strong> - <em>Elise Gerich</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>You have a backbone as the consolidating top tier, then you have the regional networks as the second tier, and then all the universities and academic areas within those regions connected to the regional networks was created. So that architecture was to be further implemented with the T1 backbone.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>13:01</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Gerich remembers that, despite the big leap to a T1 backbone in 1988, growth on the network was leaping too. Across those 13 regional networks, there were at first 170 smaller networks reliant on the T1 backbone. But only a year later, traffic had grown by 500%. So even turning a 56-kilobit network into a 1.5-megabit network wasn't going to match that new demand. In fact, Gerich, Van Houweling and the whole MERIT team were starting to encounter a kind of paradox. The better you make the network, the more people use the network. They were building a positive feedback loop. In case you're keeping track, there was no worldwide web at this point. We're still in the late 1980s, and yet even the simple applications of FTP and email were enough to drive exponential traffic. Soon they needed to upgrade the network again.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>14:05</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>To solve the NSFNET's traffic woes once and for all, they would need to upgrade from a T1 to a T3 backbone. That meant leaping from 1.5 megabits to 45 megabits—easier said than done. MCI had figured out how to send data over T1, but T3 was entirely different. Meanwhile, there were no T3 routers. The architecture and adapter cards would also need to be different. This would be a full renovation.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>14:37</strong> - <em>Elise Gerich</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>You'd solve one little issue that seemed small at the time and you thought, oh, then everything will be good. And the next thing you know, you found another little issue. So it was issue, after issue, after issue.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>14:50</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Just to give you an idea how new all this tech was and how much they were flying by the seat of their pants, here's Gerich describing a demo they were trying to give of a router prototype.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>15:01</strong> - <em>Elise Gerich</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It overheated too much. And we borrowed an ice sculpture from a banquet room, put it behind the router with a fan so that it could blow cool air, so that the router wouldn't stop and that we could demonstrate the T3 capability.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>15:19</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The T1 upgrade from the fall of 1987 to the summer of 1988 had taken 8 months to complete, but they began working almost immediately on the T3 upgrade, which was fully deployed in 1991. And all the while, as this new internet was being fashioned through a partnership of public and private resources, some pretty basic questions were being raised. Is the internet going to end up being a public good or private commodity? Is it a utility? Is access to the internet a right? What kind of network are we building?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>15:56</strong> - <em>Elise Gerich</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Those conversations happened everywhere. They happened within the offices of MERIT, they happened at the regional technical meetings, they happened at the global meetings, and there was a lot of concern on several fronts.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>16:11</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Lots of people in the research and academic community were perfectly happy having the National Science Foundation support a backbone for the whole United States. Meanwhile, others saw a commercial opportunity, a chance to offer services to the general public.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>16:27</strong> - <em>Elise Gerich</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>There were then emerging internet service providers, because other people did see the opportunity, the commercial opportunities to offer service more broadly than to a restricted research and academic community. And those were organizations like PSINet and UUNET, who felt that the National Science Foundation were going to compete with them.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>16:54</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>NSF had by then created another entity called Advanced Network and Services, which was designed to handle non-academic users. The new internet service providers didn't look kindly on that either. And meanwhile, some of MERIT's top minds were being wooed away to work for commercial enterprises. But the most important thing to remember is that the more successful NSFNET and MERIT were, the more they were in danger of outgrowing their own capacity. When they unveiled the T3 backbone, they produced a watershed moment. In effect, they created the kind of internet they were never going to be able to handle. They had scaled the U.S. internet into something that had the true ability to go global. International traffic could transit their network and grow, which means the inevitable finally happened.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>17:48</strong> - <em>Elise Gerich</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Certainly people didn't want it to go away and they were very unhappy when it was going to be shut down.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>17:55</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Shut down. I know, things were trucking along there. We jumped from 56 kilobits to a T1, and then up to a full T3 backbone. But all good things...</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>18:12</strong> - <em>Janet Abbate</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>What happened first was that those regional networks, some of them decided to commercialize their operations.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>18:19</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Janet Abbate is a professor in the Department of Science Technology and Society at Virginia Tech.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>18:26</strong> - <em>Janet Abbate</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>They started out as these nonprofits that were simply running a regional network to connect universities in their region. And then some of them said, well, what if we create a sort of commercial version of ourselves and we'll sell the service back to the universities, but then we can also sell that service to commercial customers?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>18:48</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>New ideas about commercializing networks were popping up, even as the ARPANET was shut down in 1990. On the one hand, the Federal Government was debating whether to build a national network. But on the other hand, browsers like Mosaic were emerging, driving traffic and commercial interests for internet service providers, ISPs, which kept popping up to capitalize on the new marketplace.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>19:13</strong> - <em>Janet Abbate</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>All of these are coming together in this chaotic way, where NSF is from one direction getting Congress saying, you need to build this network, and from another direction, you got the ISP saying, we want to provide commercial service. And then there's people who want to be on the web. And so, I think NSF in a sense just wanted to toss that football to someone else at a certain point and say, we don't want this to be our problem anymore. The first viable solution we see, we might just go with that.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>19:43</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>As they finally edged toward that pivotal moment of 1995, an escape plan began to form. The emerging internet had grown beyond the purview of the NSF. They had proven that TCP/IP could thrive without a central manager, and those ISPs were quickly outstripping the NSF's capacity. A hand-off to the private sector seemed the best way to ensure the network could continue to scale. That earlier vision of a noncommercial, publicly funded internet was coming to a close, but that didn't mean a handoff to the private sector would be smooth sailing. Elise Gerich remembers the chaotic months leading up to the 1995 shutdown.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>20:30</strong> - <em>Elise Gerich</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Oh my gosh, that was such an intense period of time. There was so much to do.
+</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>20:36</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The regional networks were less than pleased. Still, little by little, they were forced to select new providers.
+</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>20:43</strong> - <em>Elise Gerich</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>But it wasn't until February that basically MERIT sent the termination notice of the service to all of its 19 locations, and that's when people became desperate. They started sending us so many configuration changes. Some of the regionals, at the last month, said, "Well, we're not going to make it; our connection from our new service provider won't be here." And it's like, oh my gosh, what are we going to do now? We're shutting stuff down. A couple of regionals said, "Well, we just don't want to do it." And we said, "Sorry, this is going to happen."
+</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>21:28</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It was going to happen and it was going to change everything. Yes, there had been dial-up services, like America Online, which paid for their own infrastructure. Banks and airlines had their own networks too. But after April 30, 1995, vastly more businesses and entrepreneurs were going to be coming to the table.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>21:54</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>On the NSFNET's very last day, a dozen staff gathered at the University of Michigan to finally shut it down forever. One by one, they shut off the ENSS's, the exterior nodal switching subsystems. And that evening, the NSFNET breathed its final breath. For some, that day in 1995 came to be known as Internet Independence Day, the day the internet truly left the government's domain. It launched a new age of e-commerce and social media, a whole new landscape of online experience. But the internet's history is never quite that simple. As Janet Abbate notes, the innovations that the academic world brings to our network world did not stop that day.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>22:53</strong> - <em>Janet Abbate</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The National Science Foundation never stopped funding research in high-performance computing and networking. I think their current focus is on wireless networking, among other things, funding advanced cutting edge networks for universities and scientists. From their point of view, the NSFNET was an early episode in an ongoing research enterprise.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>23:17</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That research enterprise lives on. What is sometimes missing today though, is the oversight—the policy that government can provide.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>23:26</strong> - <em>Janet Abbate</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Well, in a way I'm not sure what we have today is any more sustainable than the NSFNET was in 1995. We have conflicts we don't exactly know how to resolve. And we didn't cure the problem in 1995 by throwing it to the private sector. I think there was this hope that the private sector is kind of a universal solvent and everything will be fixed by it, and that didn't really happen. So I think we have to face up to the fact that there's always going to be conflicts on the internet, and simply hoping people will exercise self-restraint is not really a substitute for real policy mechanisms.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>24:10</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>In recent years, an open internet order reasserted government control and lobbyists for private companies pushed back. That balance between public and private is something we can lose sight of when we roam the internet today. Sometimes it feels like one big commercial, but that's just not the whole picture. Here's Douglas Van Houweling one last time to remind us of the internet's roots.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>24:36</strong> - <em>Douglas Van Houweling</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I think what a lot of people don't understand is that the internet today stemmed from the need of the research community, first in the United States, and then all over the world, to be able to do their science. The NSFNET was built to support researchers across the nation in working with one another, in accessing the supercomputers, in accessing data that they needed to do their research. So as hard as it may be to realize today, the motivation for NSFNET and the motivation for the first large-scale generation of the internet had nothing to do with making any money. It was absolutely about advancing knowledge and supporting the research community.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>25:40</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>However the internet evolves from here, it's most exciting advances won't just come from some new startup. Fundamental changes still tend to come from that place where private innovation meets the pure science and research that underpins our online lives. That was the marriage of public and private that had pushed the NSFNET to a point of such fantastic possibilities by 1995. For a brief moment in between the ARPANET and today's internet, the NSFNET shined a light on what's possible when government, academics, corporations, all the players, start playing on one team.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>26:26</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The story of the young internet sometimes gets told as a journey from the public realm to the private realm, but that's not exactly how I see it. Our internet today is a private realm built on top of a public realm, an online experience that relies on decades of public and academic work. We should remember that when we're looking around for the next big thing, because it might just come from that sweet spot, that moment in 1995 when the NSFNET just couldn't stop growing.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>26:59</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Next time it's the web's dominant language, HTML. We're exploring its origins, its standardization. And we're also asking whether English programming languages are ready to embrace a truly global perspective. Until then, I'm Saron Yitbarek, and this is Command Line Heroes, an original podcast from Red Hat. Keep on codin’.</p>
+    </div>
+</div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-about" >
+      <div class="container">
+      <div class="row reveal">  
+        <div class="outer-90s-border bg-white px-0">
+            <div class="bg-yellow-green py-2"></div>
+            <div class="container">
+              <div class="row pt-2 px-2 px-md-6">
+                <div class="search-box-border col-7 col-md-9 bg-white">
+                <p class="text-monospace text-gray-400 my-1">More from the episode...</p>
+                </div>
+               
+                <div class="search-button-border offset-1 col-4 col-md-2 bg-blue">
+               <p class="bg-blue text-center mt-2 my-md-1"><a href="#" data-toggle="modal" data-target="#search-modal-e2" class="text-white font-size-20 d-none d-md-block" title="Search"><u>Search</u></a>
+                 <span class="d-md-none text-white font-size-20 mt-2"><u>Search</u></span></p>
+                </div>
+              </div>
+            </div>
+              
+
+
+              <div class="container">
+                <div class="row pt-2 px-2 px-md-6 py-4">
+                    <div class="col-lg-5 border border-black pl-md-2">
+                      <h4 class="text-black pt-2 text-monospace">About the art</h4>
+                      <p class="text-black">Episode two is all about the ways we share information. Prior to 1995 large amounts of data were shared among universities through traditional methods. Shipping was a very common way to get stacks of documents from one place to another and mailboxes served an integral role in the process. With the advent of the early internet these documents could be digitized to mere bites and sent electronically through an array of connected phone networks. Suddenly the phone jack in the wall could largely replace the trusty old mailbox. The key art we created for this episode aims to illustrate the (at the time) new relationship between the mailbox and the phone jack.
+</p>
+                      <p class="section-label font-size-12">Kendall 'Boo Boo' Howse <br> Senior Designer, Red&nbsp;Hat</p>
+                    </div>
+
+                     <div class="col-lg-6 offset-lg-1">
+                      <h4 class="text-black pt-2 text-monospace">Further Reading</h4>
+                      <p class="text-black">Each episode is based on a lot of research. Here are just a few of the resources we used to learn about the NSFnet:</p>
+
+                        <p class="pr-xl-2"><a class="btn btn-link" href="http://www.washingtonpost.com/outlook/2019/11/01/how-internet-lost-its-soul/" target="_blank" title="How the Internet lost its soul">How the Internet lost its soul by Janet Abbate</a></p>
+                        <p class="pr-xl-2"><a class="btn btn-link" href="http://www.merit.edu/wp-content/uploads/2019/06/Retiring-the-NSFNET-Backbone-Service_-Chronicling-the-End-of-an-Era-1.pdf" target="_blank" title="Retiring the NSFNET Backbone Service: Chronicling the End of an Era">Retiring the NSFNET Backbone Service: Chronicling the End of an Era (PDF) by Susan R. Harris, Ph.D., and Elise Gerich</a> </p>
+                        <p class="pr-xl-2"><a class="btn btn-link" href="http://opentranscripts.org/transcript/elise-gerich-ihof-2019-speech/" target="_blank" title="Elise Gerich’s Internet Hall of Fame 2019 Induction Speech">Elise Gerich’s Internet Hall of Fame 2019 Induction Speech by Elise Gerich</a>  </p>
+                        <p class="pr-xl-2"><a class="btn btn-link" href="http://ece.engin.umich.edu/stories/how-the-net-was-won-michigan-built-the-budding-internet" target="_blank" title="How the Net Was Won: Michigan Built the Budding Internet">How the Net Was Won: Michigan Built the Budding Internet by Randy Milgrom</a></p>
+                        <p class="pr-xl-2"><a class="btn btn-link" href="http://theconversation.com/how-the-internet-was-born-from-the-arpanet-to-the-internet-68072" target="_blank" title="How the Internet was born: from the ARPANET to the Internet">How the Internet was born: from the ARPANET to the Internet by  Giovanni Navarria</a> </p>
+
+                    </div>
+                  </div>
+
+          </div>                   
+        </div>
+      </div>
+    </div>
+</section>
+
+<div id="search-modal-e2" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-md mt-md-10">
+        <div class="modal-content bg-size-cover" data-bg-image="../../../cms/managed-files/CLH-s7_modal-bg.jpg">
+
+            <div class="modal-header border-0 bg-teal">
+                <a href="#" class="close" data-dismiss="modal" aria-label="Close" title="close">
+                  <img class="img-fluid" src="../../../cms/managed-files/close-btn.jpg" alt="close button">
+                </a>
+             </div>
+
+            <div class="modal-body px-2 px-md-5">
+
+              <div class="row modal-carousel carousel">
+                <div class="col-12">
+                  <p class="bg-white pl-1 mb-1">The number of computers connected</p> <p class="bg-white pl-1 mb-1">to the internet went from 2,000 in 1985</p><p class="bg-white pl-1 mb-1">to more than 12 million in 1995.</p>
+                </div>
+
+              </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-guests bg-pos-cc bg-repeat" data-bg-image="../../../cms/managed-files/CLH-S7-90patterns-linedot-noise.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-sm-8 col-lg-5 col-xl-4 pr-sm-0">
+                        <h3 class="text-monospace text-purple-darker reveal bg-white p-1">Featured in this episode</h3>
+                    </div>
+                </div>
+
+                <div class="row guest-carousel pb-2">
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-darker" href="http://computerhistory.org/profile/marc-weber/" target="_blank" title="Marc Weber">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/Marc_Weber.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="text-monospace">Marc Weber</h4>
+
+                                    <p class="mb-0">Curatorial Director, Internet History Program, Computer History Museum</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-darker" href="http://www.si.umich.edu/people/douglas-van-houweling" target="_blank" title="Douglas Van Houweling">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/van_houweling_doug-edit.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="text-monospace">Douglas Van Houweling</h4>
+
+                                    <p class="mb-0">Professor Emeritus of Information, School of Information and Professor Emeritus in Service of Learning Health Sciences, Medical School</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-darker" href="http://www.linkedin.com/in/elise-gerich-7350332/" target="_blank" title="Elise Gerich">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/Elise-Gerich-edit.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="text-monospace">Elise Gerich</h4>
+
+                                    <p class="mb-0">Community Ambassador, Greensparc Inc.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-darker" href="http://liberalarts.vt.edu/departments-and-schools/department-of-science-technology-and-society/faculty/janet-abbate.html" target="_blank" title="Janet Abbate">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/Janet-Abbate.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="text-monospace">Janet Abbate</h4>
+
+                                    <p class="mb-0">Professor of science, technology, and society at Virginia Tech</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row guest-carousel-nav mb-0 mx-8 px-1 px-sm-0 d-lg-none">
+                    <div class="col-1 col-sm-3 col-lg-4 pl-1 pr-0 text-left text-md-right reveal">
+                        <a class="carousel-prev font-size-32 font-size-md-36" href="#" title="Previous">&lt;</a>
+                    </div>
+
+                    <div class="col-9 col-sm-6 col-lg-4 px-0 reveal">
+                        <div class="carousel-dots font-size-32 font-size-md-36 d-flex justify-content-center"></div>
+                    </div>
+
+                    <div class="col-1 col-sm-3 col-lg-4 pl-0 text-right text-md-left reveal">
+                        <a class="carousel-next font-size-32 font-size-md-36" href="#" title="Next">&gt;</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<article class="node-shared">
+      <section class="dms-band clh-newsletter pt-0">
+    <div class="container text-white">
+        <div class="row mt-md-12 pt-4">
+            <div class="col-12 col-md-6 col-lg-5 reveal">
+                <div class="card">
+                    <div class="card-body p-0">
+                        <img class="img-fluid svg svg-white mb-3" src="https://www.redhat.com/cms/managed-files/logo-command-line-heroes.svg" width="166" height="42" alt="Command Line Heroes logo" title="Command Line Heroes">
+
+                        <h3 class="text-monospace">Get the newsletter</h3>
+
+                        <p class="mb-0">After each episode drops, we send commentary from the Command Line Heroes team, as well as links that help you take a closer look at the topics we cover. It’s as simple as that.</p>
+                    </div>
+
+                    <div class="card-footer pt-3 px-0 pb-0">
+                        <a class="btn btn-primary mb-1 mb-lg-0" href="http://www.redhat.com/forms/?config=19411" title="Get the stories">Get the stories</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 offset-lg-1 reveal">
+                <div class="card mb-0 bg-white rounded-0 text-black">
+                    <div class="card-body p-2 p-md-3">
+                        <h3 class="text-monospace text-red">Presented by Red&nbsp;Hat</h3>
+
+                        <p class="mb-0">For 25 years, Red Hat has been bringing open source technologies to the enterprise. From the operating system to containers, we believe in building better technology together–and celebrating the unsung heroes who are remaking our world from the command line up.</p>
+                    </div>
+
+                    <div class="card-footer pt-0 px-2 px-md-3 pb-2 pb-md-3">
+                        <a class="btn btn-link mb-0" href="http://www.redhat.com/" title="Learn more">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+  </article>
+
+  
+  
+</article>
+
+</div>
+  </div>
+        
+  </div>
+
+  <footer>
+        <section class="rc-footer-traditional">
+      <div class="container rc-footer-traditional-container">
+        <section class="rc-footer-traditional-section">
+          <div class="rc-footer-traditional-logo">
+            <div class="row">
+              <a href="https://www.redhat.com/en">
+                <img src="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo.svg" class="screen" title="Red Hat" />
+                </a>
+            </div>
+          </div>
+          <div id="legal" class="rc-footer-traditional-legal">
+            <div class="row">
+              <div class="copyright">©2021 Red Hat, Inc.</div>
+              <div >
+                <ul class="menu"><li class="first leaf"><a href="../../about/privacy-policy.html">Privacy statement</a></li>
+<li class="leaf"><a href="../../about/terms-use.html">Terms of use</a></li>
+<li class="leaf"><a href="../../about/all-policies-guidelines.html">All policies and guidelines</a></li>
+<li class="leaf"><a href="../../about/digital-accessibility.html">Digital accessibility</a></li>
+<li class="last leaf"><span id="teconsent" class="nolink">|</span></li>
+</ul>              </div>
+            </div>
+                      </div>
+          <div class="rc-footer-traditional-event-logo">
+            <div id="block-block-5" class="block block-block block-footer-promote">
+
+      
+  <a href="https://www.redhat.com/summit"><img src="https://www.redhat.com/cms/managed-files/Logo-Red_Hat-Summit-A-Standard-RGB-02_0.svg" alt="Red Hat Summit" style="float: right;" width="72px"></a>
+</div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </footer>
+        <script type="text/javascript" src="../../../ux/webdms/js/vendors/jquery.waypoints.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/viewport.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/plyr.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/slick.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/scripts.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/projects/clh.min6eda.js?qy3uiv"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+  if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
+      _satellite.pageBottom();
+  }
+//--><!]]>
+</script>
+    </div>
+  <script type="text/javascript"  src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"></script></body>
+
+<!-- Mirrored from www.redhat.com/en/command-line-heroes/season-7/nsfnet by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:30:25 GMT -->
+</html>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xml:base="https://www.redhat.com/en/rss/press-releases">
+  <channel>
+    <title>Red Hat Press Releases</title>
+    <link>https://www.redhat.com/en/rss/press-releases</link>
+    <description>Red Hat Press Releases</description>
+    <language>en</language>
+          <atom:link href="https://www.redhat.com/en/rss/press-releases" rel="self" type="application/rss+xml"/>
+                   <copyright>Copyright ©2021 Red Hat, Inc.</copyright>
+          <dc:rights>Copyright ©2021 Red Hat, Inc.</dc:rights>
+    
+    
+    <item>
+  <title><a href="/en/about/press-releases/red-hat-and-nutanix-announce-strategic-partnership-deliver-open-hybrid-multicloud-solutions" hreflang="en">Red Hat and Nutanix Announce Strategic Partnership to Deliver Open Hybrid Multicloud Solutions</a></title>
+  <link>https://www.redhat.com/en/about/press-releases/red-hat-and-nutanix-announce-strategic-partnership-deliver-open-hybrid-multicloud-solutions</link>
+  <description>Red Hat, the world’s leading provider of enterprise open source solutions, and Nutanix (NASDAQ: NTNX), a leader in hybrid multicloud computing, today announced a strategic partnership to enable a powerful solution for building, scaling and managing cloud-native applications on-premises and in hybrid clouds. The collaboration brings together industry-leading technologies, enabling installation, interoperability and management of Red Hat OpenShift and Red Hat Enterprise Linux with Nutanix Cloud Platform, including Nutanix AOS and AHV. </description>
+  <pubDate>Thu, 29 Jul 2021 12:00:00 +0000</pubDate>
+    <dc:date>Thu, 29 Jul 2021 12:00:00 +0000</dc:date>
+    <guid isPermaLink="true">https://www.redhat.com/en/about/press-releases/red-hat-and-nutanix-announce-strategic-partnership-deliver-open-hybrid-multicloud-solutions</guid>
+    </item>
+<item>
+  <title><a href="/en/about/press-releases/red-hat-extends-red-hat-enterprise-linux-8-foundation-more-secure-computing-second-fips-140-2-validation" hreflang="en">Red Hat Extends Red Hat Enterprise Linux 8 as a Foundation for More Secure Computing with Second FIPS 140-2 Validation</a></title>
+  <link>https://www.redhat.com/en/about/press-releases/red-hat-extends-red-hat-enterprise-linux-8-foundation-more-secure-computing-second-fips-140-2-validation</link>
+  <description>Red Hat, Inc., the world's leading provider of open source solutions, today announced the renewal of the Federal Information Processing Standard 140-2 (FIPS 140-2) security validation for Red Hat Enterprise Linux 8.2. The second FIPS certification for the Red Hat Enterprise Linux 8 platform, this validation indicates Red Hat’s leadership and commitment to providing a more secure backbone for the innovation of open hybrid cloud.
+
+Driven by the National Institute of Standards and Technology (NIST), FIPS 140-2 is a computer security standard that specifies the requirements for cryptographic modules -- including both hardware and software components -- used within a security system to protect sensitive information. This validation is needed when agencies determine that specific information systems should use cryptography to protect data; if cryptography is required, then it must be validated.</description>
+  <pubDate>Wed, 14 Jul 2021 12:00:00 +0000</pubDate>
+    <dc:date>Wed, 14 Jul 2021 12:00:00 +0000</dc:date>
+    <guid isPermaLink="true">https://www.redhat.com/en/about/press-releases/red-hat-extends-red-hat-enterprise-linux-8-foundation-more-secure-computing-second-fips-140-2-validation</guid>
+    </item>
+<item>
+  <title><a href="/en/about/press-releases/red-hat-bolsters-hybrid-cloud-automation-latest-version-red-hat-advanced-cluster-management-kubernetes" hreflang="en">Red Hat Bolsters Hybrid Cloud Automation with Latest Version of Red Hat Advanced Cluster Management for Kubernetes</a></title>
+  <link>https://www.redhat.com/en/about/press-releases/red-hat-bolsters-hybrid-cloud-automation-latest-version-red-hat-advanced-cluster-management-kubernetes</link>
+  <description>Red Hat, Inc., the world's leading provider of open source solutions, today announced Red Hat Advanced Cluster Management for Kubernetes 2.3, the latest version of the company’s enterprise-grade Kubernetes management offering. Designed to provide greater flexibility for managing and scaling hybrid and multicloud environments in a unified and automated way, IT teams can now accelerate the management, security features and automation of their hybrid clouds with the integration of Red Hat Ansible Automation Platform and Red Hat Advanced Cluster Management for a more modern, hybrid cloud-ready environment.</description>
+  <pubDate>Tue, 13 Jul 2021 12:00:00 +0000</pubDate>
+    <dc:date>Tue, 13 Jul 2021 12:00:00 +0000</dc:date>
+    <guid isPermaLink="true">https://www.redhat.com/en/about/press-releases/red-hat-bolsters-hybrid-cloud-automation-latest-version-red-hat-advanced-cluster-management-kubernetes</guid>
+    </item>
+<item>
+  <title><a href="/about/press-releases/kpmg-automates-accelerates-and-enhances-artificial-intelligence-workflows-red-hat-openshift" hreflang="und">KPMG Automates, Accelerates and Enhances Artificial Intelligence Workflows with Red Hat OpenShift</a></title>
+  <link>https://www.redhat.com/about/press-releases/kpmg-automates-accelerates-and-enhances-artificial-intelligence-workflows-red-hat-openshift</link>
+  <description>Red Hat and KPMG LLP today announced an ongoing collaboration to augment the KPMG Ignite AI platform with Red Hat OpenShift as a foundational technology. Building on Red Hat OpenShift, KPMG Ignite provides the agility, scalability and flexibility needed to deploy AI at scale, and enables Ignite to be deployed more consistently across the hybrid cloud.</description>
+  <pubDate>Tue, 29 Jun 2021 12:00:00 +0000</pubDate>
+    <dc:date>Tue, 29 Jun 2021 12:00:00 +0000</dc:date>
+    <guid isPermaLink="true">https://www.redhat.com/about/press-releases/kpmg-automates-accelerates-and-enhances-artificial-intelligence-workflows-red-hat-openshift</guid>
+    </item>
+<item>
+  <title><a href="/about/press-releases/red-hat-expands-workload-possibilities-across-hybrid-cloud-latest-version-openshift" hreflang="und">Red Hat Expands Workload Possibilities Across the Hybrid Cloud with Latest Version of OpenShift</a></title>
+  <link>https://www.redhat.com/about/press-releases/red-hat-expands-workload-possibilities-across-hybrid-cloud-latest-version-openshift</link>
+  <description>Red Hat, Inc., the world's leading provider of open source solutions, today announced Red Hat OpenShift 4.8, the latest version of the industry’s leading enterprise Kubernetes platform. Providing a powerful foundation to develop and connect diverse workloads across the hybrid cloud, Red Hat OpenShift 4.8 helps organizations accelerate the creation of new cloud-native applications without abandoning existing environments and IT investments.
+</description>
+  <pubDate>Mon, 28 Jun 2021 12:00:00 +0000</pubDate>
+    <dc:date>Mon, 28 Jun 2021 12:00:00 +0000</dc:date>
+    <guid isPermaLink="true">https://www.redhat.com/about/press-releases/red-hat-expands-workload-possibilities-across-hybrid-cloud-latest-version-openshift</guid>
+    </item>
+<item>
+  <title><a href="/about/press-releases/red-hat-rewrites-business-automation-playbook-end-end-kubernetes-native-decision-management-capabilities" hreflang="und">Red Hat Rewrites the Business Automation Playbook with End-to-End Kubernetes-Native Decision Management Capabilities</a></title>
+  <link>https://www.redhat.com/about/press-releases/red-hat-rewrites-business-automation-playbook-end-end-kubernetes-native-decision-management-capabilities</link>
+  <description>Red Hat, Inc., the world's leading provider of open source solutions, today announced new end-to-end Kubernetes-native decision management capabilities as part of the latest release of Red Hat Process Automation. Based on the open source Kogito project, the new capabilities enable individual business decisions to be created and deployed as containerized microservices that are managed by Kubernetes alongside other containers in the application environment, reducing redundancy and the footprint of traditional decision management systems when deploying in cloud-native environments like Red Hat OpenShift.</description>
+  <pubDate>Mon, 21 Jun 2021 12:00:00 +0000</pubDate>
+    <dc:date>Mon, 21 Jun 2021 12:00:00 +0000</dc:date>
+    <guid isPermaLink="true">https://www.redhat.com/about/press-releases/red-hat-rewrites-business-automation-playbook-end-end-kubernetes-native-decision-management-capabilities</guid>
+    </item>
+<item>
+  <title><a href="/en/about/press-releases/transports-publics-genevois-drives-cloud-native-application-delivery-red-hat" hreflang="en">EMEA EN: Transports Publics Genevois Drives Cloud-Native Application Delivery with Red Hat</a></title>
+  <link>https://www.redhat.com/en/about/press-releases/transports-publics-genevois-drives-cloud-native-application-delivery-red-hat</link>
+  <description>With Red Hat OpenShift, Transports Publics Genevois is able to address changes in the rapidly evolving mobility industry, while accelerating and enhancing control over its deployment process and fostering its digital transformation.
+</description>
+  <pubDate>Wed, 16 Jun 2021 12:00:00 +0000</pubDate>
+    <dc:date>Wed, 16 Jun 2021 12:00:00 +0000</dc:date>
+    <guid isPermaLink="true">https://www.redhat.com/en/about/press-releases/transports-publics-genevois-drives-cloud-native-application-delivery-red-hat</guid>
+    </item>
+<item>
+  <title><a href="/about/press-releases/red-hat-migration-toolkit-virtualization-makes-cloud-native-migration-achievable-reality" hreflang="und">Red Hat Migration Toolkit for Virtualization Makes Cloud-Native Migration an Achievable Reality</a></title>
+  <link>https://www.redhat.com/about/press-releases/red-hat-migration-toolkit-virtualization-makes-cloud-native-migration-achievable-reality</link>
+  <description>The migration toolkit for virtualization from Red Hat will help organizations accelerate open hybrid cloud strategies by making it easier to migrate existing workloads to modern infrastructure in a streamlined, wholesale manner.
+</description>
+  <pubDate>Tue, 15 Jun 2021 12:00:00 +0000</pubDate>
+    <dc:date>Tue, 15 Jun 2021 12:00:00 +0000</dc:date>
+    <guid isPermaLink="true">https://www.redhat.com/about/press-releases/red-hat-migration-toolkit-virtualization-makes-cloud-native-migration-achievable-reality</guid>
+    </item>
+<item>
+  <title><a href="/about/press-releases/curriki-accelerates-social-innovation-developing-e-learning-solutions-red-hat-open-innovation-labs" hreflang="und">Curriki Accelerates Social Innovation by Developing E-learning Solutions With Red Hat Open Innovation Labs</a></title>
+  <link>https://www.redhat.com/about/press-releases/curriki-accelerates-social-innovation-developing-e-learning-solutions-red-hat-open-innovation-labs</link>
+  <description>Red Hat, Inc., the world's leading provider of open source solutions, today announced that Curriki, a non-profit that builds tools that enable open access for all to the technologies that can transform the way educational experiences are designed, created, and delivered, has completed a six-week Red Hat Open Innovation Labs residency to develop education solutions for students using a flexible, responsive approach to developing digital learning content.
+
+ 
+
+The education landscape is evolving rapidly with the pace of digital transformation and changing learning needs. The realities of virtual learning have created numerous challenges for parents, teachers, and most of all the students.</description>
+  <pubDate>Thu, 10 Jun 2021 12:00:00 +0000</pubDate>
+    <dc:date>Thu, 10 Jun 2021 12:00:00 +0000</dc:date>
+    <guid isPermaLink="true">https://www.redhat.com/about/press-releases/curriki-accelerates-social-innovation-developing-e-learning-solutions-red-hat-open-innovation-labs</guid>
+    </item>
+<item>
+  <title><a href="/about/press-releases/red-hat-enterprise-linux-sap-solutions-now-available-sap-store" hreflang="und">Red Hat Enterprise Linux for SAP® Solutions Now Available on SAP Store </a></title>
+  <link>https://www.redhat.com/about/press-releases/red-hat-enterprise-linux-sap-solutions-now-available-sap-store</link>
+  <description>Red Hat Enterprise Linux for SAP Solutions is now available on SAP Store,  the digital marketplace for SAP offerings and complementary solutions from SAP partners. The result of a long-standing collaboration between Red Hat and SAP, Red Hat Enterprise Linux for SAP Solutions is a consolidated, open Linux platform that spans a wide range of business intelligence and data workloads.
+</description>
+  <pubDate>Thu, 03 Jun 2021 12:00:00 +0000</pubDate>
+    <dc:date>Thu, 03 Jun 2021 12:00:00 +0000</dc:date>
+    <guid isPermaLink="true">https://www.redhat.com/about/press-releases/red-hat-enterprise-linux-sap-solutions-now-available-sap-store</guid>
+    </item>
+
+  </channel>
+</rss>

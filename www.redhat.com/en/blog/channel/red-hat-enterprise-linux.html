@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  
+<!-- Mirrored from www.redhat.com/en/blog/channel/red-hat-enterprise-linux by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:37:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!--[if IE]><![endif]-->
+<script id="trustarc" type="text/javascript" src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"></script>
+<script id="ddo" type="text/javascript">
+<!--//--><![CDATA[//><!--
+    var digitalData = {"cart":[],"event":[],"listing":{"browseFilter":"","query":"","queryMethod":"manual","refinementType":"","refinementValue":"","resultCount":1115,"searchType":"search"},"page":{"attributes":{"queryParameters":"","referringSearchEngine":"","analyticsTitle":"blog | channel | red hat enterprise linux","taxonomyBlogPostCategory":["101"],"taxonomyProduct":["781"],"taxonomyProductLine":["831"],"taxonomyMetaHreflang":["29051"]},"category":{"contentType":"","keyPage":"false","keyPageType":"","pageType":"blog_channel","primaryCategory":"blog","subCategories":["channel","red-hat-enterprise-linux"]},"pageInfo":{"cms":"RH CMS 2021.12.0","contentFindingMethod":"","contentID":"298821","contentPortal":"","destinationURL":"https:\/\/www.redhat.com\/en\/blog\/channel\/red-hat-enterprise-linux","errorMessage":"","errorType":"","language":"en","pageName":"","referringDomain":"","referringURL":"","sysEnv":"","template":"","title":"Red Hat Enterprise Linux channel"}},"product":[],"user":[{"profile":[{"profileInfo":{"daysSinceLastPurchase":"","demandbaseSID":"","eloquaGUID":"","lastLoginDate":"","lastPurchaseDate":"","loggedIn":"false","profileID":"","subscriptionFrequency":"","subscriptionLevel":""}}]}]};
+    !function(a,b,c){"use strict";function d(a){var c="; "+b.cookie,d=c.split("; "+a+"=");if(2===d.length)return d.pop().split(";").shift()}if(b.referrer){var e=b.createElement("a");e.href=b.referrer,c.page.pageInfo.referringDomain=e.hostname,c.page.pageInfo.referringURL=e.href}c.page.pageInfo.sysEnv=a.innerWidth<=768?"tablet":"desktop";var f=c.user[0].profile[0].profileInfo,g=d("rh_elqCustomerGUID");g&&(f.eloquaGUID=g);var h=d("rh_user");if(h){var i=h.split("\\|");i[0]&&(f.loggedIn="true")}var j=d("s_dmdbase");j&&(f.demandbaseSID=j)}(window,document,digitalData);
+//--><!]]>
+</script>
+<script src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm.js" data-domain="www.redhat.com"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-functional.js" class="trustecm" data-tracker-type="functional"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-advertising.js" class="trustecm" data-tracker-type="advertising"></script><script id="dpal" type="text/javascript" src="http://www.redhat.com/dtm.js"></script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="en" />
+<link href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux" rel="alternate" hreflang="en" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "availableLanguages": {
+        "zh": {
+            "@type": "Language",
+            "name": "简体中文",
+            "href": "/zh/blog/channel/red-hat-enterprise-linux"
+        },
+        "en": {
+            "@type": "Language",
+            "name": "English",
+            "href": "/en/blog/channel/red-hat-enterprise-linux",
+            "current_lang": true
+        },
+        "fr": {
+            "@type": "Language",
+            "name": "Français",
+            "href": "/fr/blog/channel/red-hat-enterprise-linux"
+        },
+        "de": {
+            "@type": "Language",
+            "name": "Deutsch",
+            "href": "/de/blog/channel/red-hat-enterprise-linux"
+        },
+        "it": {
+            "@type": "Language",
+            "name": "Italiano",
+            "href": "/it/blog/channel/red-hat-enterprise-linux"
+        },
+        "ja": {
+            "@type": "Language",
+            "name": "日本語",
+            "href": "/ja/blog/channel/red-hat-enterprise-linux"
+        },
+        "ko": {
+            "@type": "Language",
+            "name": "한국어",
+            "href": "/ko/blog/channel/red-hat-enterprise-linux"
+        },
+        "pt-br": {
+            "@type": "Language",
+            "name": "Português",
+            "href": "/pt-br/blog/channel/red-hat-enterprise-linux"
+        },
+        "es": {
+            "@type": "Language",
+            "name": "Español",
+            "href": "/es/blog/channel/red-hat-enterprise-linux"
+        }
+    }
+}</script><link rel="prefetch" href="https://www.redhat.com/en/redhat_www_menu/ajax/menus-nav2" />
+<meta name="last-publish-date" content="Wed, 26 May 2021 17:57:17 GMT" />
+<meta name="node-type" content="blog_channel" />
+<meta name="source" content="rhdc_drupal" />
+<meta name="rhdc_key" content="432768814ea83fdbf239c693f73e6ab3" />
+<meta name="taxonomy-blog-post-category" content="Platform;url=https://www.redhat.com/en/blog/tag/platform" />
+<meta name="taxonomy-blog-post-category-tid" content="101" />
+<meta name="taxonomy-product" content="Red Hat Enterprise Linux" />
+<meta name="taxonomy-product-tid" content="781" />
+<meta name="taxonomy-product-line" content="Linux platforms" />
+<meta name="taxonomy-product-line-tid" content="831" />
+<meta name="taxonomy-meta-hreflang" content="en" />
+<meta name="taxonomy-meta-hreflang-tid" content="29051" />
+<meta name="blog_channel_type" content="product" />
+<meta name="hybrid_type" content="Blog" />
+<link type="application/rss+xml" title="Red Hat Enterprise Linux" rel="alternate" href="https://www.redhat.com/rss/blog/channel/red-hat-enterprise-linux" />
+<link rel="shortcut icon" href="https://www.redhat.com/misc/favicon.ico" type="image/x-icon" />
+<meta property="og:description" content="All the news you need about Red Hat Enterprise Linux" />
+<meta name="description" content="All the news you need about Red Hat Enterprise Linux" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="image_src" href="https://www.redhat.com/cms/managed-files/rh-rhel-isometric-socials-US215994kc-201805_facebook-linkedin.png" />
+<link rel="canonical" href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux" />
+<meta property="og:title" content="Red Hat Enterprise Linux channel" />
+<meta property="og:image" content="https://www.redhat.com/cms/managed-files/rh-rhel-isometric-socials-US215994kc-201805_facebook-linkedin.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Red Hat Enterprise Linux channel" />
+<meta name="twitter:image" content="https://www.redhat.com/cms/managed-files/rh-rhel-isometric-socials-US215994kc-201805_facebook-linkedin.png" />
+    <title>Red Hat Enterprise Linux channel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://static.redhat.com/">
+    <link rel="preload" href="https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/fonts/web_icon/rh-web-iconfont.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="https://static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatTextVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatDisplayVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link type="text/css" rel="stylesheet" href="https://www.redhat.com/sites/default/files/advagg_css/css__k9aoxkMyjUtSX9AXGCPExPgTYjM0Xv5OYNfbFGDRafY__N9sjJtGj85lXtvOptw2e_YZ01FXbTXcJywP8EaKBijU__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.redhat.com/sites/all/libraries/webrh/dist/css/webrh.webcomponents.min.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.redhat.com/sites/all/libraries/webrh/dist/css/webrh.min.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.redhat.com/sites/default/files/advagg_css/css__HGi68P6oXLKkdShZdf5ig8J4IgmnBDj6RXEaYT3Wad8__E9g2hWiH_67BY6orF3wqV-_K9kdUtHezWFcl0VoMPXc__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.redhat.com/sites/default/files/advagg_css/css__wpajrf8pWA19ifT2xQXPB3J1TByoCXqZVtt6kXfl4Ow__PFQbFxxWsZl0yTnfrpPiA-o5Pvtu-CXh7nICx08JW0c__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.css" media="print" />
+<link type="text/css" rel="stylesheet" href="https://www.redhat.com/sites/default/files/advagg_css/css__4Nq1a_8bNoRsE77XjnL9oXMrIezkUW_eK0M44VmZWbk__NU5y3-ivyS4r2TJJuLytjM7VOJF4W8czfq8TsqMBBeo__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/css/trustecm.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://static.redhat.com/libs/redhat/redhat-theme/6/advanced-theme.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://static.redhat.com/libs/redhat/redhat-font/4/webfonts/red-hat-font.min.css" media="all" />
+    <!--[if lt IE 9]>
+      <script src="/profiles/rh/themes/redhatdotcom/js/selectivizr-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/nwmatcher-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/respond.js" type="text/javascript"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://www.redhat.com/sites/default/files/advagg_js/js__B6wED6l5P_XUdxVmb7Nvh5d9zn074QukFqJa2HLXS6c__VzWs8XZBHHsPW77egi-W-FQw2mAEr5F-GgCJU0wn3Nc__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.js"></script>
+<script type="text/javascript" src="https://www.redhat.com/sites/all/libraries/webrh/dist/js/webrh.vendor.min.js?qy3uiv"></script>
+<script type="text/javascript" src="https://www.redhat.com/sites/all/libraries/webrh/dist/js/webrh.webcomponents.min.js?qy3uiv"></script>
+<script type="text/javascript" src="https://www.redhat.com/sites/all/libraries/webrh/dist/js/webrh.min.js?qy3uiv"></script>
+<script type="text/javascript" src="https://www.redhat.com/sites/default/files/advagg_js/js__pDOiYGKaYbdKNp1gvMxR0fWhWZnfUemYDUhADyCn3oM__jCrCuWCJIPYPe1FzZoUvsJWEjkNMmRIQHYek1h7idBE__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.rh = window.rh || {}; window.rh.drupalTrustArcLoaded = true;
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.redhat.com/sites/default/files/advagg_js/js__wjGOuCXLL-0PFkmi1Ci-76rH9GzUOswXzpUlDakTwgE__4sMCK2MfNI1l97zV5c24RYLroHEeR6YhghZ9prI53JE__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"redhatdotcom","theme_token":"UZ-5EJ6R7vGiWz4ApLTVTYZCcxaITYCCXMPew7PSme4","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.webcomponents.min.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.min.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/marketing\/latest\/trustarc\/trustecm\/css\/trustecm.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-theme\/6\/advanced-theme.css":1,"modules\/locale\/locale.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-font\/4\/webfonts\/red-hat-font.min.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-iconfont.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-web-iconfont.css":1,"sites\/all\/libraries\/patternfly-elements\/pfe-styles\/pfe-typography-classes.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/site-switcher.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/bootstrap.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/chrome.css":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/print.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/style.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/editorial.css":1},"js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/rh\/modules\/redhat_www_ddo\/dist\/post-jquery.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.vendor.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.webcomponents.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"profiles\/rh\/modules\/redhat_www_menu\/js\/rh_nav.js":1,"sites\/all\/modules\/facetapi\/facetapi.js":1,"profiles\/rh\/modules\/redhat_www_share\/js\/rh_share.js":1,"profiles\/rh\/modules\/redhat_www_solr\/js\/rh_solr.js":1,"profiles\/rh\/modules\/redhat_www_solr\/js\/redhat_www_solr_suggestions.js":1,"profiles\/rh\/modules\/redhat_www_utility\/js\/redhat_www_utility.js":1,"sites\/all\/libraries\/jquery-cookie\/jquery.cookie-1.4.1.min.js":1,"profiles\/rh\/modules\/redhat_www_search\/js\/redhat_www_search_listing_facets.js":1,"profiles\/rh\/modules\/redhat_www_type_blog_channel\/js\/redhat_www_type_blog_channel_listing.js":1,"profiles\/rh\/modules\/redhat_www_search\/js\/redhat_www_search_ddo.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.pushmenu.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery-scrolltofixed.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/rh-chrome.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.fitvids.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.switchIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.viewport\/jquery.viewport.min.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/sass-bootstrap.min.js":1}},"redhat_www_menu":{"path":"node\/298821"},"redhat_www_search_params":{"search_count":1115,"page_max_items":10,"search_type":"blog channels"},"facetapi":{"facets":[{"limit":0,"id":"facetapi-facet-apachesolrsolr-block-product-tid","searcher":"apachesolr@solr","realmName":"block","facetName":"product_tid","queryType":null,"widget":"facetapi_links","showMoreText":null,"showFewerText":null},{"limit":0,"id":"facetapi-facet-apachesolrsolr-block-product-line-tid","searcher":"apachesolr@solr","realmName":"block","facetName":"product_line_tid","queryType":null,"widget":"facetapi_links","showMoreText":null,"showFewerText":null},{"limit":0,"id":"facetapi-facet-apachesolrsolr-block-industry-tid","searcher":"apachesolr@solr","realmName":"block","facetName":"industry_tid","queryType":null,"widget":"facetapi_links","showMoreText":null,"showFewerText":null},{"limit":0,"id":"facetapi-facet-apachesolrsolr-block-region-tid","searcher":"apachesolr@solr","realmName":"block","facetName":"region_tid","queryType":null,"widget":"facetapi_links","showMoreText":null,"showFewerText":null},{"limit":0,"id":"facetapi-facet-apachesolrsolr-block-business-challenge","searcher":"apachesolr@solr","realmName":"block","facetName":"business_challenge","queryType":null,"widget":"facetapi_links","showMoreText":null,"showFewerText":null},{"limit":"0","id":"facetapi-facet-apachesolrsolr-block-blog-post-category-tid","searcher":"apachesolr@solr","realmName":"block","facetName":"blog_post_category_tid","queryType":null,"widget":"facetapi_links","showMoreText":"","showFewerText":""},{"limit":"20","id":"facetapi-facet-apachesolrsolr-block-dateline","searcher":"apachesolr@solr","realmName":"block","facetName":"dateline","queryType":null,"widget":"facetapi_links","showMoreText":"","showFewerText":""},{"limit":20,"id":"facetapi-facet-apachesolrsolr-block-hybrid-type","searcher":"apachesolr@solr","realmName":"block","facetName":"hybrid_type","queryType":null,"widget":"facetapi_links","showMoreText":"Show more","showFewerText":"Show fewer"},{"limit":"0","id":"facetapi-facet-apachesolrsolr-block-content-language","searcher":"apachesolr@solr","realmName":"block","facetName":"content_language","queryType":null,"widget":"facetapi_links","showMoreText":"Show more","showFewerText":"Show fewer"},{"limit":0,"id":"facetapi-facet-apachesolrsolr-block-blog-post-category","searcher":"apachesolr@solr","realmName":"block","facetName":"blog_post_category","queryType":null,"widget":"facetapi_links","showMoreText":null,"showFewerText":null},{"limit":"0","id":"facetapi-facet-apachesolrsolr-block-source","searcher":"apachesolr@solr","realmName":"block","facetName":"source","queryType":null,"widget":"facetapi_links","showMoreText":"Show more","showFewerText":"Show fewer"},{"limit":"0","id":"facetapi-facet-apachesolrsolr-block-bundle","searcher":"apachesolr@solr","realmName":"block","facetName":"bundle","queryType":null,"widget":"facetapi_links","showMoreText":"","showFewerText":""}]},"redhat_blog_channel_listing_node":{"node_path":"blog\/channel\/red-hat-enterprise-linux"},"rh_analytics_enabled":false,"urlIsAjaxTrusted":{"\/en\/search\/node":true},"block_id":"#block-redhat-www-type-blog-channel-blog-channel-list","listing_item_selector":".rh-band-content .rh-group--layout"});
+//--><!]]>
+</script>
+    <noscript>
+        <link href="https://www.redhat.com/sites/all/libraries/webrh/dist/css/webrh.webcomponents.noscript.min.css" rel="stylesheet" >
+    </noscript>
+  </head>
+  <body unresolved class="bands-index html not-front not-logged-in no-sidebars page-node page-node- page-node-298821 node-type-blog-channel i18n-en" >
+    <div class="page">
+            
+<div id="main-content">
+            <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+      
+  <article class="node-298821 node node-blog-channel clearfix">
+      <!-- Pattern group | hero_article -->
+
+    
+    
+
+<div class="header-background-image"></div>
+<style>
+body[unresolved] pfe-navigation {display: none;}.no-js body pfe-navigation,body:not(unresolved) pfe-navigation {display: block;}.no-js #main-menu{background:#000!important;padding:10px}[unresolved] pfe-navigation{background:#000!important;color:#fff;display:block;width:100%}[unresolved] pfe-navigation [slot=logo],[unresolved] pfe-navigation [slot=skip],[unresolved] pfe-navigation ul li,[unresolved] pfe-navigation-item,[unresolved] pfe-navigation-main{padding:0 7px 6px;display:inline-block}[unresolved] pfe-navigation [slot=skip] a{font-size:0}[unresolved] pfe-navigation [slot=skip] a:focus{font-size:14px}[unresolved] pfe-navigation [slot=logo]{vertical-align:middle}[unresolved] pfe-navigation a{font-size:14px;color:#fff}[unresolved] pfe-navigation-item [slot]>a:focus{outline-offset:1px;outline-style:dotted;outline-width:1px;outline-color:#d2d3d4}
+</style>
+<pfe-navigation  id="main-menu" class="main-header" pfe-sticky pfe-full-width pfe-close-on-click="external" pfe-menu-label="Menu">
+ 
+  <!-- Skip navigation -->
+  <div slot="skip">
+    <ul>
+      <li><a href="#rh-main-content">Skip to content</a></li>
+    </ul>
+  </div>
+
+  <!-- Site logo -->
+  <p slot="logo">
+    <a href="https://www.redhat.com/en" title="Red Hat">
+      <img class="redhat-logo" src="https://static.redhat.com/libs/redhat/brand-assets/2/corp/logo--200.png" class="screen" alt="" aria-hidden="true" style="margin:0;width: 135px;"/>
+    </a>
+  </p>
+
+  <!-- Search -->
+  <pfe-navigation-item slot="search" pfe-icon="web-search" id="utility-search">
+    <div slot="trigger">
+      <a href="https://www.redhat.com/en/search" data-analytics-region="utility" data-analytics="Search" data-analytics-label="Search">Search</a>    </div>
+    <div slot="tray" hidden>
+      <div class="pfe-navigation-item__tray--container">
+        <form class="search-form" autocomplete="off" action="https://www.redhat.com/en/search/node" method="post" id="redhat-www-solr-search-box" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-basic"><div class="form-item form-type-textfield form-item-keys">
+  <label class="element-invisible" for="edit-keys">Enter your keywords </label>
+ <input maxlength="128" size="15" placeholder="Enter your search term" type="text" id="edit-keys" name="keys" value="" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div></div><input type="hidden" name="form_build_id" value="form-bEVZ1Takn9_lw1RF2-0MIXSJScQRzT6-t7ymAfRq5WE" />
+<input type="hidden" name="form_id" value="redhat_www_solr_search_box" />
+</div></form>      </div>
+    </div>
+  </pfe-navigation-item>
+  <form class="search-form" autocomplete="off" slot="mobile-search" hidden="" action="https://www.redhat.com/en/search/node" method="post" id="redhat-www-solr-search-box--2" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-basic--2"><div class="form-item form-type-textfield form-item-keys">
+  <label class="element-invisible" for="edit-keys--2">Enter your keywords </label>
+ <input maxlength="128" size="15" placeholder="Enter your search term" type="text" id="edit-keys--2" name="keys" value="" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit--2" name="op" value="Search" class="form-submit" /></div></div><input type="hidden" name="form_build_id" value="form-ql1dHOsRnyrM7qPIOYGHzb8woOrWCc6RQHH8t7h-xCo" />
+<input type="hidden" name="form_id" value="redhat_www_solr_search_box" />
+</div></form>
+  <!-- Main navigation -->
+  <pfe-navigation-main>
+    <ul>
+              <li>
+          <pfe-navigation-item>
+            <div slot="trigger">
+              <a href="https://www.redhat.com/en/technologies" data-analytics-region="nav" data-analytics="Products" data-analytics-label="Products" data-analytics-level="1">Products</a>
+            </div>
+            <div slot="tray" data-column="10311" hidden>
+            </div>
+          </pfe-navigation-item>
+        </li>        <li>
+          <pfe-navigation-item>
+            <div slot="trigger">
+              <a href="https://www.redhat.com/en/solutions" data-analytics-region="nav" data-analytics="Solutions" data-analytics-label="Solutions" data-analytics-level="1">Solutions</a>
+            </div>
+            <div slot="tray" data-column="10331" hidden>
+            </div>
+          </pfe-navigation-item>
+        </li>        <li>
+          <pfe-navigation-item>
+            <div slot="trigger">
+              <a href="https://www.redhat.com/en/services" data-analytics-region="nav" data-analytics="Services &amp; support" data-analytics-label="Services &amp; support" data-analytics-level="1">Services & support</a>
+            </div>
+            <div slot="tray" data-column="138281" hidden>
+            </div>
+          </pfe-navigation-item>
+        </li>        <li>
+          <pfe-navigation-item>
+            <div slot="trigger">
+              <a href="https://www.redhat.com/en/resources" data-analytics-region="nav" data-analytics="Resources" data-analytics-label="Resources" data-analytics-level="1">Resources</a>
+            </div>
+            <div slot="tray" data-column="169591" hidden>
+            </div>
+          </pfe-navigation-item>
+        </li>        <li>
+          <pfe-navigation-item>
+            <div slot="trigger">
+              <a href="https://www.redhat.com/en/about" class="active" data-analytics-region="nav" data-analytics="Red Hat &amp; open source" data-analytics-label="Red Hat &amp; open source" data-analytics-level="1">Red Hat & open source</a>
+            </div>
+            <div slot="tray" data-column="10351" hidden>
+            </div>
+          </pfe-navigation-item>
+        </li>    </ul>
+  </pfe-navigation-main>
+
+  <!-- Language -->
+  <pfe-navigation-item slot="language" pfe-icon="web-globe" id="utility-globe">
+    <div slot="trigger">
+      <a href="https://www.redhat.com/en/select-language" data-analytics-region="utility" data-analytics="Language" data-analytics-label="Language">English</a>    </div>
+    <div slot="tray" hidden>
+      <div class="pfe-navigation-item__tray--container">
+        <div class="language-picker">
+  <h3 class="pfe-headline-2">Select a language</h3>
+  <ul><li class="pfe-headline-5"><a href="https://www.redhat.com/zh/blog/channel/red-hat-enterprise-linux" class="language-link" xml:lang="zh" hreflang="zh">简体中文</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux" class="language-link active" xml:lang="en" hreflang="en">English</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/fr/blog/channel/red-hat-enterprise-linux" class="language-link" xml:lang="fr" hreflang="fr">Français</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/de/blog/channel/red-hat-enterprise-linux" class="language-link" xml:lang="de" hreflang="de">Deutsch</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/it/blog/channel/red-hat-enterprise-linux" class="language-link" xml:lang="it" hreflang="it">Italiano</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/ja/blog/channel/red-hat-enterprise-linux" class="language-link" xml:lang="ja" hreflang="ja">日本語</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/ko/blog/channel/red-hat-enterprise-linux" class="language-link" xml:lang="ko" hreflang="ko">한국어</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/pt-br/blog/channel/red-hat-enterprise-linux" class="language-link" xml:lang="pt-br" hreflang="pt-br">Português</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/es/blog/channel/red-hat-enterprise-linux" class="language-link" xml:lang="es" hreflang="es">Español</a></li></ul></div>      </div>
+    </div>
+  </pfe-navigation-item>
+  <div slot="mobile-language" pfe-icon="web-globe" data-analytics-region="utility" data-analytics="Language" data-analytics-label="Language"><a id="pfe-modal--trigger" tabindex="0">English</a></div>
+  <!-- Log in -->
+  <pfe-navigation-item slot="login" pfe-icon="web-user" id="utility-account">
+    <div slot="trigger">
+      <a href="https://sso.redhat.com/auth/realms/redhat-external/protocol/saml/clients/legacy-idp-servlets" class="rh-user-loggedout" data-analytics-region="utility" data-analytics="login" data-analytics-label="login">Log in</a>      <a href="https://sso.redhat.com/auth/realms/redhat-external/logout" class="rh-user-loggedin" data-analytics-region="utility" data-analytics="login" data-analytics-label="login">Account</a>    </div>
+    <div slot="tray" hidden>
+      <div class="pfe-navigation-item__tray--container">
+        <section class="account-tray">
+  <header>
+    <div class="container">
+              <p class="rh-login-heading rh-user-loggedin">Welcome, <span class='rh-name'></span></p>
+                    <p class="rh-login-heading rh-user-loggedout">Log in to your Red Hat account</p>
+          </div>
+  </header>
+  <div class="content">
+    <div class="container">
+      <section class="account-login rh-user-loggedout">
+        <div class="account-login-wrapper">
+                      <a href="https://sso.redhat.com/auth/realms/redhat-external/protocol/saml/clients/legacy-idp-servlets" id="redhat-account-login-link" class="account-login-link utility-user-login-link" data-analytics-region="utility" data-analytics="Log in" data-analytics-label="Log in">Log in</a>                                <p>Your Red Hat account gives you access to your member profile and preferences, and the following services based on your customer status:</p>
+                                <div class="utility-user-additional-links"><div class="item-list"><ul><li class="first">Customer Portal</li>
+<li class="last">Red Hat Connect for Business Partners</li>
+</ul></div><div class="item-list"><ul><li class="first">User management</li>
+<li class="last">Certification Central</li>
+</ul></div></div>                  </div>
+        <div class="account-register-wrapper">
+                      <a href="https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/registrations?client_id=https%3A%2F%2Fwww.redhat.com%2Fwapps%2Fugc-oidc&amp;redirect_uri=https%3A%2F%2Fwww.redhat.com%2Fwapps%2Fugc%2Fprotected%2Faccount.html&amp;response_type=code&amp;scope=openid" class="account-register-link" data-analytics-region="utility" data-analytics="Register now" data-analytics-label="Register now">Register now</a>                                <p class="account-register-heading">Not registered yet? Here are a few reasons why you should be:</p><div class="item-list"><ul><li class="first">Browse Knowledgebase articles, manage support cases and subscriptions, download updates, and more from one place.</li>
+<li>View users in your organization, and edit their account information, preferences, and permissions.</li>
+<li class="last">Manage your Red Hat certifications, view exam history, and download certification-related logos and documents.</li>
+</ul></div>                  </div>
+      </section>
+      <section class="account-logout rh-user-loggedin">
+        <div class="account-welcome-wrapper">
+                      <a href="https://www.redhat.com/wapps/ugc/protected/account.html" class="account-edit-link" data-analytics-region="utility" data-analytics="Edit your profile and preferences" data-analytics-label="Edit your profile and preferences">Edit your profile and preferences</a>                                <p>Your Red Hat account gives you access to your member profile, preferences, and other services depending on your customer status.</p>
+                            </div>
+        <div class="account-logout-wrapper">
+                      <p>For your security, if you&#039;re on a public computer and have finished using your Red Hat services, please be sure to log out.</p>
+                                <a href="https://sso.redhat.com/auth/realms/redhat-external/logout" id="redhat-account-logout-link" class="account-logout-link" data-analytics-region="utility" data-analytics="Log out" data-analytics-label="Log out">Log out</a>                  </div>
+      </section>
+    </div>
+  </div>
+</section>
+      </div>
+    </div>
+  </pfe-navigation-item>
+  <a href="https://sso.redhat.com/auth/realms/redhat-external/protocol/saml/clients/legacy-idp-servlets" class="rh-user-loggedout" slot="mobile-login" pfe-icon="web-user">Log in / Register</a>  <a href="https://www.redhat.com/wapps/ugc/protected/account.html" class="rh-user-loggedin" slot="mobile-login" pfe-icon="web-user">Account</a>
+  <!-- Site switcher -->
+  <pfe-navigation-item slot="site-switcher" pfe-icon="web-grid-3x3" id="site-switcher">
+    <div slot="trigger">
+      <a href="https://www.redhat.com/en/cms/ajax/site-switcher" id="355871" data-analytics-region="utility" data-analytics="Websites" data-analytics-label="Websites">All Red Hat</a>    </div>
+    <div slot="tray" hidden>
+      <div class="pfe-navigation-item__tray--container">
+        <!-- Added via JS -->
+              </div>
+    </div>
+  </pfe-navigation-item>
+</pfe-navigation>
+
+<!-- Language switcher modal, must be outside the navigation component -->
+<pfe-modal class="language-picker" id="language-picker" hidden>
+  <h3 class="pfe-headline-2">Select a language</h3>
+  <ul><li class="pfe-headline-5"><a href="https://www.redhat.com/zh/blog/channel/red-hat-enterprise-linux" class="language-link" xml:lang="zh" hreflang="zh">简体中文</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux" class="language-link active" xml:lang="en" hreflang="en">English</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/fr/blog/channel/red-hat-enterprise-linux" class="language-link" xml:lang="fr" hreflang="fr">Français</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/de/blog/channel/red-hat-enterprise-linux" class="language-link" xml:lang="de" hreflang="de">Deutsch</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/it/blog/channel/red-hat-enterprise-linux" class="language-link" xml:lang="it" hreflang="it">Italiano</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/ja/blog/channel/red-hat-enterprise-linux" class="language-link" xml:lang="ja" hreflang="ja">日本語</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/ko/blog/channel/red-hat-enterprise-linux" class="language-link" xml:lang="ko" hreflang="ko">한국어</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/pt-br/blog/channel/red-hat-enterprise-linux" class="language-link" xml:lang="pt-br" hreflang="pt-br">Português</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/es/blog/channel/red-hat-enterprise-linux" class="language-link" xml:lang="es" hreflang="es">Español</a></li></ul></pfe-modal><span id="rh-main-content"></span>
+    
+        
+<div class="rh-band-group--layout" data-rh-group-size="content" id="rh-blog-channel-hero">
+                    <div class="rh-band-group-wrapper">
+                <div class="rh-band-group-background" data-rh-bq="https://www.redhat.com/cms/managed-files/styles/blog_featured_primary/s3/RHEL-blog-header-01%20%281%29.png?itok=jJ_DL2D5" data-rh-overlay="black-30" data-rh-background-align="center-center" data-rh-background="black"></div><div class="rh-band-group-body"><!-- Pattern | article_hero -->
+
+                
+
+    
+
+    
+    
+
+<div class="rh-band--layout"   data-rh-background="transparent"><div class="rh-band-container"data-rh-layout="stacked"  ><section class="rh-band-main"    data-rh-layout="stacked"
+><header class="rh-band-header"         data-rh-theme="dark"><section class="rh-divider--layout"     ><div class="rh-divider-container"><div class="rh-divider-main"     data-rh-layout="stacked"
+            data-eq-pts="xs-divider: 0, lg-divider: 600"
+><header class="rh-divider-header"        data-rh-show-rule="sm md lg "
+><!-- Group layout --><div class="rh-group--layout"     data-rh-misc=hero-header                    data-eq-pts="xxs-group: 0, xs-group: 220, sm-group: 320, md-group: 420, lg-group: 620"
+><div class="rh-group-body"      data-rh-layout="flex-edges-desktop"     ><div class="rh-band-header--component"  ><p class="rh-band-header-title">Red Hat blog</p></div><!-- Subpattern | subnavigation --><div class="rh-accordion-card--layout"     data-rh-no-accordion-at="sm md lg "
+
+             data-rh-blog-menu    data-eq-pts="xs-accordion-card: 0, sm-accordion-card: 220, md-accordion-card: 420, lg-accordion-card: 520, xl-accordion-card: 620" ><div class="rh-accordion-card-header"             data-rh-toggle-open="click"
+        data-rh-state="closed"
+                data-rh-background="rich-black"
+        data-rh-theme="dark"
+        data-rh-hidden="sm md lg "     data-rh-spacing="none"     data-rh-border="full-mobile"><header class="rh-standard-header--component"     data-rh-align=left
+     data-rh-indicator-align="right"     data-rh-hover-style="xxs xs "        ><div class="rh-standard-header-container"><h2 class="rh-standard-header-title-small"      >
+                    Blog menu
+                                                                            </h2></div><span class="rh-standard-header-indicator" data-rh-indicator-symbol="arrow-right" data-rh-hidden-at="sm md lg "></span></header></div><div class="rh-accordion-card-body"             data-rh-toggle-target="xxs xs "
+        data-rh-state="closed"
+                 data-rh-spacing="none"    data-rh-border="full-mobile"    data-rh-indicator-alignment="right"><!-- Group layout --><div class="rh-group--layout"     data-rh-misc=subnav                    data-eq-pts="xxs-group: 0, xs-group: 220, sm-group: 320, md-group: 420, lg-group: 620"
+><div class="rh-group-body"      data-rh-layout="flex-end-end"     ><nav class="rh-dropdown--component"><a class="rh-dropdown-parent"href="https://www.redhat.com/en/blog">Latest posts</a></nav><nav class="rh-dropdown--component"><a class="rh-dropdown-parent"id="rh-f917m-parent" aria-haspopup="true" aria-owns="rh-f917m" aria-controls="rh-f917m"href="#"data-rh-toggle-open="click single" data-rh-toggle-id="rh-f917m">By product</a><ul class="rh-dropdown-children" id="rh-f917m" data-rh-background="black" data-rh-theme="dark"
+                data-rh-toggle-target role="group" aria-labelledby="rh-f917m-parent"><li class="rh-dropdown-child"><a class="rh-dropdown-child-link"
+                            href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux"title="Red Hat Enterprise Linux">Red Hat Enterprise Linux</a></li><li class="rh-dropdown-child"><a class="rh-dropdown-child-link"
+                            href="https://www.redhat.com/en/blog/channel/red-hat-insights"title="Red Hat Insights">Red Hat Insights</a></li><li class="rh-dropdown-child"><a class="rh-dropdown-child-link"
+                            href="https://www.redhat.com/en/blog/channel/red-hat-openshift"title="Red Hat OpenShift">Red Hat OpenShift</a></li><li class="rh-dropdown-child"><a class="rh-dropdown-child-link"
+                            href="https://www.redhat.com/en/blog/channel/red-hat-ansible-automation"title="Red Hat Ansible Automation">Red Hat Ansible Automation</a></li><li class="rh-dropdown-child"><a class="rh-dropdown-child-link"
+                            href="https://www.redhat.com/en/blog/channel/red-hat-openstack-platform"title="Red Hat OpenStack Platform">Red Hat OpenStack Platform</a></li><li class="rh-dropdown-child"><a class="rh-dropdown-child-link"
+                            href="https://www.redhat.com/en/blog/channel/red-hat-storage"title="Red Hat Cloud Storage and Data Services">Red Hat Cloud Storage and Data Services</a></li><li class="rh-dropdown-child"><a class="rh-dropdown-child-link"
+                            href="https://www.redhat.com/en/blog/products"title="All products" data-rh-link-type="featured">All products</a></li></ul></nav><nav class="rh-dropdown--component"><a class="rh-dropdown-parent"id="rh-ehxho-parent" aria-haspopup="true" aria-owns="rh-ehxho" aria-controls="rh-ehxho"href="#"data-rh-toggle-open="click single" data-rh-toggle-id="rh-ehxho">By channel</a><ul class="rh-dropdown-children" id="rh-ehxho" data-rh-background="black" data-rh-theme="dark"
+                data-rh-toggle-target role="group" aria-labelledby="rh-ehxho-parent"><li class="rh-dropdown-child"><a class="rh-dropdown-child-link"
+                            href="https://www.redhat.com/en/blog/channel/red-hat-news"title="Red Hat News">Red Hat News</a></li><li class="rh-dropdown-child"><a class="rh-dropdown-child-link"
+                            href="https://www.redhat.com/en/blog/channel/red-hat-services-speak"title="Red Hat Services Speak">Red Hat Services Speak</a></li><li class="rh-dropdown-child"><a class="rh-dropdown-child-link"
+                            href="https://www.redhat.com/en/blog/channel/cloud-native-computing"title="Cloud native computing">Cloud native computing</a></li><li class="rh-dropdown-child"><a class="rh-dropdown-child-link"
+                            href="https://www.redhat.com/en/blog/channel/security"title="Red Hat Security">Red Hat Security</a></li><li class="rh-dropdown-child"><a class="rh-dropdown-child-link"
+                            href="https://www.redhat.com/en/blog/channel/hybrid-cloud-infrastructure"title="Open Hybrid Cloud">Open Hybrid Cloud</a></li><li class="rh-dropdown-child"><a class="rh-dropdown-child-link"
+                            href="https://www.redhat.com/en/blog/channel/management-and-automation"title="Management and automation">Management and automation</a></li><li class="rh-dropdown-child"><a class="rh-dropdown-child-link"
+                            href="https://www.redhat.com/en/blog/channels"title="All channels" data-rh-link-type="featured">All channels</a></li></ul></nav></div></div></div></div></div></div><hr class="rh-divider-header-rule"/></header></div></div></section></header><div class="rh-band-content"    
+                     data-rh-layout="9-flex-end"                 data-rh-theme="dark "><div class="rh-taxonomy-header--component"><h1 class="rh-taxonomy-header-headline">Channel: <em>Red Hat Enterprise Linux</em></h1><p class="rh-taxonomy-header-summary">All the news you need about Red Hat Enterprise Linux</p></div></div></section></div></div></div><div class="rh-band-group-postscript"><div class="rh-band--layout"   data-rh-overlay="black-30" data-rh-band-collapse="both"  data-rh-background="black"><div class="rh-band-container"data-rh-layout="stacked"  ><section class="rh-band-main"    data-rh-layout="stacked"
+><div class="rh-band-content"    
+                     data-rh-layout="flex-end-end"                 data-rh-theme="dark "><!-- Subpattern | subscribe --><!-- Component | social_icon --><div class="rh-social-icon--component"
+        data-rh-icon-background="orange"
+         data-rh-align="right"                  data-rh-icon-size="xsmall"          data-rh-nobreak><span class="rh-social-icon-label">Subscribe to the feed</span><a class="rh-social-icon-link"    href="https://www.redhat.com/en/rss/blog/channel/red-hat-enterprise-linux"
+     title="Subscribe to the feed"                onclick="return !window.open(this.href, 'RSS', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')"
+        target="_blank"
+    ><span class="rh-social-icon-logo"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M9.63 26.194c0 2.11-1.71 3.82-3.818 3.82-2.11 0-3.82-1.71-3.82-3.82s1.71-3.82 3.82-3.82 3.82 1.71 3.82 3.82zM2 12.144c9.863 0 17.856 7.994 17.856 17.856H14.65c0-6.98-5.662-12.644-12.644-12.644v-5.213z"/><path d="M2 2.02c15.45 0 27.98 12.524 27.98 27.98h-5.374C24.606 17.52 14.486 7.394 2 7.394V2.02z"/></svg></span></a></div></div></section></div></div></div></div></div>  
+  
+      <div id="block-redhat-www-type-blog-channel-blog-channel-list" class="block block-redhat-www-type-blog-channel">
+      <form><!-- Pattern | results_listing -->
+                
+
+
+
+<div class="rh-band--layout"   data-rh-background="white"><div class="rh-band-container"data-rh-layout="stacked"  ><section class="rh-band-main"    data-rh-layout="stacked"
+><header class="rh-band-header"        data-rh-layout="flex-between-base-desktop" data-rh-theme=" subtle"><section class="rh-divider--layout"     ><div class="rh-divider-container"><div class="rh-divider-main"     data-rh-layout="stacked"
+            data-eq-pts="xs-divider: 0, lg-divider: 600"
+><header class="rh-divider-header"        data-rh-show-rule="sm md lg "
+><!-- Subpattern | results_nav --><!-- Group layout --><div class="rh-group--layout"                         data-eq-pts="xxs-group: 0, xs-group: 220, sm-group: 320, md-group: 420, lg-group: 620"
+><div class="rh-group-header"         ><!-- Group layout --><div class="rh-group--layout"              data-rh-layout="min-stacked"            data-eq-pts="xxs-group: 0, xs-group: 220, sm-group: 320, md-group: 420, lg-group: 620"
+><div class="rh-group-body"      data-rh-layout="flex-between-base"     ><div class="rh-band-header--component"  ><h3 class="rh-band-header-title">Latest posts</h3></div><div class="rh-search--component" ><label class="rh-search-label" for="search">Search this channel</label><input class="rh-search-field" required maxlength="128" size="15" placeholder="Search this channel" type="text" id="search" data-rh-search-input name="search" value=""><div class="rh-search-clear" data-rh-search-clear tabindex="0"></div><button class="rh-search-link" data-rh-cta-type="button" type="submit" formaction="#" title="">
+        Search    </button></div></div></div></div></div><hr class="rh-divider-header-rule"/></header></div></div></section></header><div class="rh-band-content"            data-rh-layout="aside-left"
+        ><aside class="rh-band-aside"    data-rh-layout="stacked"
+    ><!-- Subpattern | filter --><div class="rh-accordion-card--layout"     data-rh-no-accordion-at="sm md lg "
+
+                data-eq-pts="xs-accordion-card: 0, sm-accordion-card: 220, md-accordion-card: 420, lg-accordion-card: 520, xl-accordion-card: 620" ><div class="rh-accordion-card-header"             data-rh-toggle-open="click"
+        data-rh-state="closed"
+                data-rh-background="black"
+        data-rh-theme="dark"
+             data-rh-spacing="small"     data-rh-border="full"><header class="rh-standard-header--component"     data-rh-align=left
+     data-rh-indicator-align="right"     data-rh-hover-style="xxs xs "        ><div class="rh-standard-header-container"><h2 class="rh-standard-header-title-small"      >
+                    Filter by
+                                                                            </h2></div><span class="rh-standard-header-indicator" data-rh-indicator-symbol="arrow-right" data-rh-hidden-at="sm md lg "></span></header></div><div class="rh-accordion-card-body"             data-rh-toggle-target="xxs xs "
+        data-rh-state="closed"
+                    data-rh-background="white"
+        data-rh-theme="light"
+         data-rh-spacing="small"    data-rh-border="full"    data-rh-indicator-alignment="right"><section class="rh-divider--layout"     ><div class="rh-divider-container"><div class="rh-divider-main"    
+            data-eq-pts="xs-divider: 0, lg-divider: 600"
+><div class="rh-divider-content"     data-rh-layout="min-stacked"    ><!-- Pattern | raw_html --><div class="rh-accordion-group--layout"><div class="rh-accordion-group-header"             data-rh-toggle-open="click"
+        data-rh-hidden=""
+        data-rh-state="open"
+        data-rh-border="none"><header class="rh-standard-header--component"     data-rh-align=left
+     data-rh-indicator-align="right"     data-rh-hover-style="xxs xs sm md lg "        ><div class="rh-standard-header-container"><h2 class="rh-standard-header-title-small"      >
+                    Tags
+                                                                            </h2></div><span class="rh-standard-header-indicator" data-rh-indicator-symbol="arrow-right" data-rh-hidden-at=""></span></header></div><div class="rh-accordion-group-body"             data-rh-toggle-target="xxs xs sm md lg "
+        data-rh-state="open"
+         data-rh-layout="stacked"    data-rh-border="none"    data-rh-indicator-alignment="right"><!-- Pattern | raw_html --><div class="item-list"><ul class="facetapi-facetapi-links facetapi-facet-blog-post-category-tid" id="facetapi-facet-apachesolrsolr-block-blog-post-category-tid"><li class="leaf first"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A101" rel="nofollow" class="facetapi-inactive" id="facetapi-link--50">Platform <span class="taxonomy-badge">646</span><span class="element-invisible"> Apply Platform filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A4331" rel="nofollow" class="facetapi-inactive" id="facetapi-link--51">Infrastructure <span class="taxonomy-badge">547</span><span class="element-invisible"> Apply Infrastructure filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A65" rel="nofollow" class="facetapi-inactive" id="facetapi-link--52">Community <span class="taxonomy-badge">126</span><span class="element-invisible"> Apply Community filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A95" rel="nofollow" class="facetapi-inactive" id="facetapi-link--53">Partners <span class="taxonomy-badge">119</span><span class="element-invisible"> Apply Partners filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A24261" rel="nofollow" class="facetapi-inactive" id="facetapi-link--54">Containers <span class="taxonomy-badge">85</span><span class="element-invisible"> Apply Containers filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A4371" rel="nofollow" class="facetapi-inactive" id="facetapi-link--55">Security <span class="taxonomy-badge">84</span><span class="element-invisible"> Apply Security filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A75" rel="nofollow" class="facetapi-inactive" id="facetapi-link--56">Corporate <span class="taxonomy-badge">81</span><span class="element-invisible"> Apply Corporate filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A121" rel="nofollow" class="facetapi-inactive" id="facetapi-link--57">Virtualization <span class="taxonomy-badge">73</span><span class="element-invisible"> Apply Virtualization filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A22621" rel="nofollow" class="facetapi-inactive" id="facetapi-link--58">Technical Account Managers <span class="taxonomy-badge">64</span><span class="element-invisible"> Apply Technical Account Managers filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A24251" rel="nofollow" class="facetapi-inactive" id="facetapi-link--59">Hybrid cloud <span class="taxonomy-badge">62</span><span class="element-invisible"> Apply Hybrid cloud filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A4411" rel="nofollow" class="facetapi-inactive" id="facetapi-link--60">IaaS <span class="taxonomy-badge">56</span><span class="element-invisible"> Apply IaaS filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A4231" rel="nofollow" class="facetapi-inactive" id="facetapi-link--61">Application integration and development <span class="taxonomy-badge">55</span><span class="element-invisible"> Apply Application integration and development filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A85" rel="nofollow" class="facetapi-inactive" id="facetapi-link--62">Middleware <span class="taxonomy-badge">52</span><span class="element-invisible"> Apply Middleware filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A4421" rel="nofollow" class="facetapi-inactive" id="facetapi-link--63">PaaS <span class="taxonomy-badge">49</span><span class="element-invisible"> Apply PaaS filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A55" rel="nofollow" class="facetapi-inactive" id="facetapi-link--64">Cloud management <span class="taxonomy-badge">42</span><span class="element-invisible"> Apply Cloud management filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A4291" rel="nofollow" class="facetapi-inactive" id="facetapi-link--65">Events <span class="taxonomy-badge">41</span><span class="element-invisible"> Apply Events filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A4271" rel="nofollow" class="facetapi-inactive" id="facetapi-link--66">Customer success <span class="taxonomy-badge">36</span><span class="element-invisible"> Apply Customer success filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A4301" rel="nofollow" class="facetapi-inactive" id="facetapi-link--67">Executives <span class="taxonomy-badge">32</span><span class="element-invisible"> Apply Executives filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A9521" rel="nofollow" class="facetapi-inactive" id="facetapi-link--68">Friday Five <span class="taxonomy-badge">31</span><span class="element-invisible"> Apply Friday Five filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A4381" rel="nofollow" class="facetapi-inactive" id="facetapi-link--69">Telecommunications <span class="taxonomy-badge">26</span><span class="element-invisible"> Apply Telecommunications filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A24651" rel="nofollow" class="facetapi-inactive" id="facetapi-link--70">Automation <span class="taxonomy-badge">23</span><span class="element-invisible"> Apply Automation filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A4241" rel="nofollow" class="facetapi-inactive" id="facetapi-link--71">Awards <span class="taxonomy-badge">23</span><span class="element-invisible"> Apply Awards filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A111" rel="nofollow" class="facetapi-inactive" id="facetapi-link--72">Storage <span class="taxonomy-badge">20</span><span class="element-invisible"> Apply Storage filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A4391" rel="nofollow" class="facetapi-inactive" id="facetapi-link--73">Training <span class="taxonomy-badge">19</span><span class="element-invisible"> Apply Training filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A68111" rel="nofollow" class="facetapi-inactive" id="facetapi-link--74">DevOps <span class="taxonomy-badge">18</span><span class="element-invisible"> Apply DevOps filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A4351" rel="nofollow" class="facetapi-inactive" id="facetapi-link--75">Public sector <span class="taxonomy-badge">17</span><span class="element-invisible"> Apply Public sector filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A53861" rel="nofollow" class="facetapi-inactive" id="facetapi-link--76">Edge Computing <span class="taxonomy-badge">16</span><span class="element-invisible"> Apply Edge Computing filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A51371" rel="nofollow" class="facetapi-inactive" id="facetapi-link--77">Networking <span class="taxonomy-badge">15</span><span class="element-invisible"> Apply Networking filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A4321" rel="nofollow" class="facetapi-inactive" id="facetapi-link--78">Healthcare <span class="taxonomy-badge">13</span><span class="element-invisible"> Apply Healthcare filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A8151" rel="nofollow" class="facetapi-inactive" id="facetapi-link--79">Mobile <span class="taxonomy-badge">9</span><span class="element-invisible"> Apply Mobile filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A4311" rel="nofollow" class="facetapi-inactive" id="facetapi-link--80">Financial services <span class="taxonomy-badge">7</span><span class="element-invisible"> Apply Financial services filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A4281" rel="nofollow" class="facetapi-inactive" id="facetapi-link--81">Education <span class="taxonomy-badge">4</span><span class="element-invisible"> Apply Education filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A4261" rel="nofollow" class="facetapi-inactive" id="facetapi-link--82">Consulting <span class="taxonomy-badge">3</span><span class="element-invisible"> Apply Consulting filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A4401" rel="nofollow" class="facetapi-inactive" id="facetapi-link--83">xPaaS <span class="taxonomy-badge">3</span><span class="element-invisible"> Apply xPaaS filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A26221" rel="nofollow" class="facetapi-inactive" id="facetapi-link--84">Product design <span class="taxonomy-badge">2</span><span class="element-invisible"> Apply Product design filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A26211" rel="nofollow" class="facetapi-inactive" id="facetapi-link--85">User experience <span class="taxonomy-badge">2</span><span class="element-invisible"> Apply User experience filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A25931" rel="nofollow" class="facetapi-inactive" id="facetapi-link--86">Open Brand <span class="taxonomy-badge">1</span><span class="element-invisible"> Apply Open Brand filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A28941" rel="nofollow" class="facetapi-inactive" id="facetapi-link--87">Open Outlook <span class="taxonomy-badge">1</span><span class="element-invisible"> Apply Open Outlook filter </span></a></li><li class="leaf last"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_blog_post_category_tid%3A20581" rel="nofollow" class="facetapi-inactive" id="facetapi-link--88">Red Hat Shares <span class="taxonomy-badge">1</span><span class="element-invisible"> Apply Red Hat Shares filter </span></a></li></ul></div></div></div><div class="rh-accordion-group--layout"><div class="rh-accordion-group-header"             data-rh-toggle-open="click"
+        data-rh-hidden=""
+        data-rh-state="closed"
+        data-rh-border="none"><header class="rh-standard-header--component"     data-rh-align=left
+     data-rh-indicator-align="right"     data-rh-hover-style="xxs xs sm md lg "        ><div class="rh-standard-header-container"><h2 class="rh-standard-header-title-small"      >
+                    Product
+                                                                            </h2></div><span class="rh-standard-header-indicator" data-rh-indicator-symbol="arrow-right" data-rh-hidden-at=""></span></header></div><div class="rh-accordion-group-body"             data-rh-toggle-target="xxs xs sm md lg "
+        data-rh-state="closed"
+         data-rh-layout="stacked"    data-rh-border="none"    data-rh-indicator-alignment="right"><!-- Pattern | raw_html --><div class="item-list"><ul class="facetapi-facetapi-links facetapi-facet-product-tid" id="facetapi-facet-apachesolrsolr-block-product-tid"><li class="leaf first"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_tid%3A781" rel="nofollow" class="facetapi-inactive" id="facetapi-link">Red Hat Enterprise Linux <span class="taxonomy-badge">623</span><span class="element-invisible"> Apply Red Hat Enterprise Linux filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_tid%3A6921" rel="nofollow" class="facetapi-inactive" id="facetapi-link--2">Red Hat OpenShift <span class="taxonomy-badge">61</span><span class="element-invisible"> Apply Red Hat OpenShift filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_tid%3A801" rel="nofollow" class="facetapi-inactive" id="facetapi-link--3">Red Hat Satellite <span class="taxonomy-badge">47</span><span class="element-invisible"> Apply Red Hat Satellite filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_tid%3A6941" rel="nofollow" class="facetapi-inactive" id="facetapi-link--4">Red Hat OpenStack Platform <span class="taxonomy-badge">32</span><span class="element-invisible"> Apply Red Hat OpenStack Platform filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_tid%3A791" rel="nofollow" class="facetapi-inactive" id="facetapi-link--5">Red Hat Virtualization <span class="taxonomy-badge">24</span><span class="element-invisible"> Apply Red Hat Virtualization filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_tid%3A18951" rel="nofollow" class="facetapi-inactive" id="facetapi-link--6">Red Hat Insights <span class="taxonomy-badge">23</span><span class="element-invisible"> Apply Red Hat Insights filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_tid%3A25911" rel="nofollow" class="facetapi-inactive" id="facetapi-link--7">Red Hat Ansible Automation Platform <span class="taxonomy-badge">16</span><span class="element-invisible"> Apply Red Hat Ansible Automation Platform filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_tid%3A46811" rel="nofollow" class="facetapi-inactive" id="facetapi-link--8">Red Hat Smart Management <span class="taxonomy-badge">10</span><span class="element-invisible"> Apply Red Hat Smart Management filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_tid%3A8431" rel="nofollow" class="facetapi-inactive" id="facetapi-link--9">Red Hat Application Services <span class="taxonomy-badge">7</span><span class="element-invisible"> Apply Red Hat Application Services filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_tid%3A2031" rel="nofollow" class="facetapi-inactive" id="facetapi-link--10">Red Hat Gluster Storage <span class="taxonomy-badge">6</span><span class="element-invisible"> Apply Red Hat Gluster Storage filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_tid%3A9341" rel="nofollow" class="facetapi-inactive" id="facetapi-link--11">Red Hat Ceph Storage <span class="taxonomy-badge">5</span><span class="element-invisible"> Apply Red Hat Ceph Storage filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_tid%3A1931" rel="nofollow" class="facetapi-inactive" id="facetapi-link--12">Red Hat JBoss Enterprise Application Platform <span class="taxonomy-badge">4</span><span class="element-invisible"> Apply Red Hat JBoss Enterprise Application Platform filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_tid%3A22571" rel="nofollow" class="facetapi-inactive" id="facetapi-link--13">Red Hat 3scale API Management <span class="taxonomy-badge">2</span><span class="element-invisible"> Apply Red Hat 3scale API Management filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_tid%3A6961" rel="nofollow" class="facetapi-inactive" id="facetapi-link--14">Red Hat Cloud Access <span class="taxonomy-badge">2</span><span class="element-invisible"> Apply Red Hat Cloud Access filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_tid%3A46731" rel="nofollow" class="facetapi-inactive" id="facetapi-link--15">Red Hat Integration <span class="taxonomy-badge">2</span><span class="element-invisible"> Apply Red Hat Integration filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_tid%3A27421" rel="nofollow" class="facetapi-inactive" id="facetapi-link--16">Red Hat Quay <span class="taxonomy-badge">2</span><span class="element-invisible"> Apply Red Hat Quay filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_tid%3A65761" rel="nofollow" class="facetapi-inactive" id="facetapi-link--17">Red Hat Advanced Cluster Management for Kubernetes <span class="taxonomy-badge">1</span><span class="element-invisible"> Apply Red Hat Advanced Cluster Management for Kubernetes filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_tid%3A4561" rel="nofollow" class="facetapi-inactive" id="facetapi-link--18">Red Hat AMQ <span class="taxonomy-badge">1</span><span class="element-invisible"> Apply Red Hat AMQ filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_tid%3A1921" rel="nofollow" class="facetapi-inactive" id="facetapi-link--19">Red Hat Certificate System <span class="taxonomy-badge">1</span><span class="element-invisible"> Apply Red Hat Certificate System filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_tid%3A14471" rel="nofollow" class="facetapi-inactive" id="facetapi-link--20">Red Hat Cloud Suite <span class="taxonomy-badge">1</span><span class="element-invisible"> Apply Red Hat Cloud Suite filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_tid%3A1961" rel="nofollow" class="facetapi-inactive" id="facetapi-link--21">Red Hat Data Grid <span class="taxonomy-badge">1</span><span class="element-invisible"> Apply Red Hat Data Grid filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_tid%3A24801" rel="nofollow" class="facetapi-inactive" id="facetapi-link--22">Red Hat Hyperconverged Infrastructure <span class="taxonomy-badge">1</span><span class="element-invisible"> Apply Red Hat Hyperconverged Infrastructure filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_tid%3A4911" rel="nofollow" class="facetapi-inactive" id="facetapi-link--23">Red Hat JBoss Web Server <span class="taxonomy-badge">1</span><span class="element-invisible"> Apply Red Hat JBoss Web Server filter </span></a></li><li class="leaf last"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_tid%3A1951" rel="nofollow" class="facetapi-inactive" id="facetapi-link--24">Red Hat Process Automation Manager <span class="taxonomy-badge">1</span><span class="element-invisible"> Apply Red Hat Process Automation Manager filter </span></a></li></ul></div></div></div><div class="rh-accordion-group--layout"><div class="rh-accordion-group-header"             data-rh-toggle-open="click"
+        data-rh-hidden=""
+        data-rh-state="closed"
+        data-rh-border="none"><header class="rh-standard-header--component"     data-rh-align=left
+     data-rh-indicator-align="right"     data-rh-hover-style="xxs xs sm md lg "        ><div class="rh-standard-header-container"><h2 class="rh-standard-header-title-small"      >
+                    Product Line
+                                                                            </h2></div><span class="rh-standard-header-indicator" data-rh-indicator-symbol="arrow-right" data-rh-hidden-at=""></span></header></div><div class="rh-accordion-group-body"             data-rh-toggle-target="xxs xs sm md lg "
+        data-rh-state="closed"
+         data-rh-layout="stacked"    data-rh-border="none"    data-rh-indicator-alignment="right"><!-- Pattern | raw_html --><div class="item-list"><ul class="facetapi-facetapi-links facetapi-facet-product-line-tid" id="facetapi-facet-apachesolrsolr-block-product-line-tid"><li class="leaf first"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_line_tid%3A831" rel="nofollow" class="facetapi-inactive" id="facetapi-link--25">Linux platforms <span class="taxonomy-badge">300</span><span class="element-invisible"> Apply Linux platforms filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_line_tid%3A861" rel="nofollow" class="facetapi-inactive" id="facetapi-link--26">Cloud computing <span class="taxonomy-badge">67</span><span class="element-invisible"> Apply Cloud computing filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_line_tid%3A17901" rel="nofollow" class="facetapi-inactive" id="facetapi-link--27">Management <span class="taxonomy-badge">37</span><span class="element-invisible"> Apply Management filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_line_tid%3A5211" rel="nofollow" class="facetapi-inactive" id="facetapi-link--28">Virtualization <span class="taxonomy-badge">22</span><span class="element-invisible"> Apply Virtualization filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_line_tid%3A851" rel="nofollow" class="facetapi-inactive" id="facetapi-link--29">Application services <span class="taxonomy-badge">19</span><span class="element-invisible"> Apply Application services filter </span></a></li><li class="leaf last"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_product_line_tid%3A841" rel="nofollow" class="facetapi-inactive" id="facetapi-link--30">Storage <span class="taxonomy-badge">10</span><span class="element-invisible"> Apply Storage filter </span></a></li></ul></div></div></div><div class="rh-accordion-group--layout"><div class="rh-accordion-group-header"             data-rh-toggle-open="click"
+        data-rh-hidden=""
+        data-rh-state="closed"
+        data-rh-border="none"><header class="rh-standard-header--component"     data-rh-align=left
+     data-rh-indicator-align="right"     data-rh-hover-style="xxs xs sm md lg "        ><div class="rh-standard-header-container"><h2 class="rh-standard-header-title-small"      >
+                    Industry
+                                                                            </h2></div><span class="rh-standard-header-indicator" data-rh-indicator-symbol="arrow-right" data-rh-hidden-at=""></span></header></div><div class="rh-accordion-group-body"             data-rh-toggle-target="xxs xs sm md lg "
+        data-rh-state="closed"
+         data-rh-layout="stacked"    data-rh-border="none"    data-rh-indicator-alignment="right"><!-- Pattern | raw_html --><div class="item-list"><ul class="facetapi-facetapi-links facetapi-facet-industry-tid" id="facetapi-facet-apachesolrsolr-block-industry-tid"><li class="leaf first"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_industry_tid%3A5201" rel="nofollow" class="facetapi-inactive" id="facetapi-link--31">Telecommunications <span class="taxonomy-badge">16</span><span class="element-invisible"> Apply Telecommunications filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_industry_tid%3A561" rel="nofollow" class="facetapi-inactive" id="facetapi-link--32">Government <span class="taxonomy-badge">7</span><span class="element-invisible"> Apply Government filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_industry_tid%3A8541" rel="nofollow" class="facetapi-inactive" id="facetapi-link--33">Education <span class="taxonomy-badge">2</span><span class="element-invisible"> Apply Education filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_industry_tid%3A551" rel="nofollow" class="facetapi-inactive" id="facetapi-link--34">Financial services <span class="taxonomy-badge">2</span><span class="element-invisible"> Apply Financial services filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_industry_tid%3A8561" rel="nofollow" class="facetapi-inactive" id="facetapi-link--35">Manufacturing <span class="taxonomy-badge">2</span><span class="element-invisible"> Apply Manufacturing filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_industry_tid%3A14291" rel="nofollow" class="facetapi-inactive" id="facetapi-link--36">Oil &amp; gas <span class="taxonomy-badge">2</span><span class="element-invisible"> Apply Oil &amp; gas filter </span></a></li><li class="leaf last"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_industry_tid%3A8591" rel="nofollow" class="facetapi-inactive" id="facetapi-link--37">Technology <span class="taxonomy-badge">1</span><span class="element-invisible"> Apply Technology filter </span></a></li></ul></div></div></div><div class="rh-accordion-group--layout"><div class="rh-accordion-group-header"             data-rh-toggle-open="click"
+        data-rh-hidden=""
+        data-rh-state="closed"
+        data-rh-border="none"><header class="rh-standard-header--component"     data-rh-align=left
+     data-rh-indicator-align="right"     data-rh-hover-style="xxs xs sm md lg "        ><div class="rh-standard-header-container"><h2 class="rh-standard-header-title-small"      >
+                    Region
+                                                                            </h2></div><span class="rh-standard-header-indicator" data-rh-indicator-symbol="arrow-right" data-rh-hidden-at=""></span></header></div><div class="rh-accordion-group-body"             data-rh-toggle-target="xxs xs sm md lg "
+        data-rh-state="closed"
+         data-rh-layout="stacked"    data-rh-border="none"    data-rh-indicator-alignment="right"><!-- Pattern | raw_html --><div class="item-list"><ul class="facetapi-facetapi-links facetapi-facet-region-tid" id="facetapi-facet-apachesolrsolr-block-region-tid"><li class="leaf first"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_region_tid%3A4521" rel="nofollow" class="facetapi-inactive" id="facetapi-link--38">Global <span class="taxonomy-badge">213</span><span class="element-invisible"> Apply Global filter </span></a></li><li class="leaf"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_region_tid%3A901" rel="nofollow" class="facetapi-inactive" id="facetapi-link--39">North America <span class="taxonomy-badge">2</span><span class="element-invisible"> Apply North America filter </span></a></li><li class="leaf last"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux/?f%5B0%5D=taxonomy_region_tid%3A881" rel="nofollow" class="facetapi-inactive" id="facetapi-link--40">Europe, Middle East, Africa <span class="taxonomy-badge">1</span><span class="element-invisible"> Apply Europe, Middle East, Africa filter </span></a></li></ul></div></div></div></div></div></div></section></div></div></aside><div class="rh-band-content-container" ><!-- Group layout --><section class="rh-divider--layout"     ><div class="rh-divider-container"><div class="rh-divider-main"    
+            data-eq-pts="xs-divider: 0, lg-divider: 600"
+><div class="rh-divider-content"     data-rh-layout="stacked"    ><!-- Subpattern | teaser --><!-- Group layout --><div class="rh-group--layout"                         data-eq-pts="xxs-group: 0, xs-group: 220, sm-group: 320, md-group: 420, lg-group: 620, small: 480, submedium: 538, medium: 768, large: 992"
+><div class="rh-group-body"      data-rh-layout="media-object"     ><div class="rh-article-teaser--component"><h4 class="rh-article-teaser-headline"><a href="https://www.redhat.com/en/blog/how-update-red-hat-enterprise-linux-tvia-minor-releases-and-extended-update-support">How to update Red Hat Enterprise Linux via minor releases and Extended Update Support</a></h4><div class="rh-article-teaser-meta"><span class="rh-article-teaser-date">August 26, 2021<span class="rh-article-teaser-pipe"></span></span><span class="rh-article-teaser-author"><a href="https://www.redhat.com/en/authors/benjamin-blasco" title="See more by Benjamin Blasco">Benjamin Blasco</a></span></div><div class="rh-article-teaser-summary">Customers often tell me that they need to stay on a specific RHEL minor release in order to maintain a supported configuration for a third-party&hellip;<a class="rh-article-teaser-summary-link" href="https://www.redhat.com/en/blog/how-update-red-hat-enterprise-linux-tvia-minor-releases-and-extended-update-support">read full post</a></div></div><div class="rh-image-embed--component"
+                 data-rh-align="left"                
+                        ><div class="rh-image-embed-container"><a class="rh-image-embed-link" href="https://www.redhat.com/en/blog/how-update-red-hat-enterprise-linux-tvia-minor-releases-and-extended-update-support"><div class="rh-image-embed-span" ><img class="rh-image-embed-img" src="https://www.redhat.com/cms/managed-files/styles/blog_stream/s3/RH_BRAND_007283_01_MECH_ValueofSubscription_Full Color_Pink.png?itok=mA0_2WGb"></div></a></div></div></div></div><hr class="rh-divider-content-rule"/><!-- Subpattern | teaser --><!-- Group layout --><div class="rh-group--layout"                         data-eq-pts="xxs-group: 0, xs-group: 220, sm-group: 320, md-group: 420, lg-group: 620, small: 480, submedium: 538, medium: 768, large: 992"
+><div class="rh-group-body"      data-rh-layout="media-object"     ><div class="rh-article-teaser--component"><h4 class="rh-article-teaser-headline"><a href="https://www.redhat.com/en/blog/leapp-upgrade-using-red-hat-satellite-6">Leapp Upgrade using Red Hat Satellite 6</a></h4><div class="rh-article-teaser-meta"><span class="rh-article-teaser-date">August 26, 2021<span class="rh-article-teaser-pipe"></span></span><span class="rh-article-teaser-author"><a href="https://www.redhat.com/en/authors/jaskaran-singh-narula" title="See more by Jaskaran Singh Narula">Jaskaran Singh Narula</a></span></div><div class="rh-article-teaser-summary">Stability and the ability to upgrade with minimal downtime are two important features of production environments, and using the Leapp upgrade utility on Red Hat&hellip;<a class="rh-article-teaser-summary-link" href="https://www.redhat.com/en/blog/leapp-upgrade-using-red-hat-satellite-6">read full post</a></div></div><div class="rh-image-embed--component"
+                 data-rh-align="left"                
+                        ><div class="rh-image-embed-container"><a class="rh-image-embed-link" href="https://www.redhat.com/en/blog/leapp-upgrade-using-red-hat-satellite-6"><div class="rh-image-embed-span" ><img class="rh-image-embed-img" src="https://www.redhat.com/cms/managed-files/styles/blog_stream/s3/Digital-Transformation-Minispot-Technology-illustration-quote copy_Blog-thumbnail.png?itok=GhYR7msh"></div></a></div></div></div></div><hr class="rh-divider-content-rule"/><!-- Subpattern | teaser --><!-- Group layout --><div class="rh-group--layout"                         data-eq-pts="xxs-group: 0, xs-group: 220, sm-group: 320, md-group: 420, lg-group: 620, small: 480, submedium: 538, medium: 768, large: 992"
+><div class="rh-group-body"      data-rh-layout="media-object"     ><div class="rh-article-teaser--component"><h4 class="rh-article-teaser-headline"><a href="https://www.redhat.com/en/blog/enabling-simple-content-access-and-registering-red-hat-insights-subscription-manager">Enabling Simple Content Access and registering to Red Hat Insights with Subscription Manager</a></h4><div class="rh-article-teaser-meta"><span class="rh-article-teaser-date">August 24, 2021<span class="rh-article-teaser-pipe"></span></span><span class="rh-article-teaser-author"><a href="https://www.redhat.com/en/authors/paul-lucas" title="See more by Paul Lucas">Paul Lucas</a></span></div><div class="rh-article-teaser-summary">Simple Content Access (SCA) allows you to access Red Hat software content without attaching a subscription to a particular system or environment. Separating subscriptions and&hellip;<a class="rh-article-teaser-summary-link" href="https://www.redhat.com/en/blog/enabling-simple-content-access-and-registering-red-hat-insights-subscription-manager">read full post</a></div></div><div class="rh-image-embed--component"
+                 data-rh-align="left"                
+                        ><div class="rh-image-embed-container"><a class="rh-image-embed-link" href="https://www.redhat.com/en/blog/enabling-simple-content-access-and-registering-red-hat-insights-subscription-manager"><div class="rh-image-embed-span" ><img class="rh-image-embed-img" src="https://www.redhat.com/cms/managed-files/styles/blog_stream/s3/RH_BRAND_007283_01_MECH_Linux_FullColor_Pink.png?itok=C-BHGiGf"></div></a></div></div></div></div><hr class="rh-divider-content-rule"/><!-- Subpattern | teaser --><!-- Group layout --><div class="rh-group--layout"                         data-eq-pts="xxs-group: 0, xs-group: 220, sm-group: 320, md-group: 420, lg-group: 620, small: 480, submedium: 538, medium: 768, large: 992"
+><div class="rh-group-body"      data-rh-layout="media-object"     ><div class="rh-article-teaser--component"><h4 class="rh-article-teaser-headline"><a href="https://www.redhat.com/en/blog/transform-your-it-operations-red-hat-insights">Transform your IT operations with Red Hat Insights</a></h4><div class="rh-article-teaser-meta"><span class="rh-article-teaser-date">August 17, 2021<span class="rh-article-teaser-pipe"></span></span><span class="rh-article-teaser-author"><a href="https://www.redhat.com/en/authors/adrian-phillips" title="See more by Adrian Phillips">Adrian Phillips</a></span></div><div class="rh-article-teaser-summary">In this post, learn how Red Hat Insights can help you increase coordination among different teams in your organization and discover Red Hat Summit sessions&hellip;<a class="rh-article-teaser-summary-link" href="https://www.redhat.com/en/blog/transform-your-it-operations-red-hat-insights">read full post</a></div></div><div class="rh-image-embed--component"
+                 data-rh-align="left"                
+                        ><div class="rh-image-embed-container"><a class="rh-image-embed-link" href="https://www.redhat.com/en/blog/transform-your-it-operations-red-hat-insights"><div class="rh-image-embed-span" ><img class="rh-image-embed-img" src="https://www.redhat.com/cms/managed-files/styles/blog_stream/s3/DevOps-Collaboration-Illustration-Blog-thumbnail.png?itok=tBJ9BiF0"></div></a></div></div></div></div><hr class="rh-divider-content-rule"/><!-- Subpattern | teaser --><!-- Group layout --><div class="rh-group--layout"                         data-eq-pts="xxs-group: 0, xs-group: 220, sm-group: 320, md-group: 420, lg-group: 620, small: 480, submedium: 538, medium: 768, large: 992"
+><div class="rh-group-body"      data-rh-layout="media-object"     ><div class="rh-article-teaser--component"><h4 class="rh-article-teaser-headline"><a href="https://www.redhat.com/en/blog/using-rhel-system-roles-automate-and-manage-network-bound-disk-encryption">Using RHEL System Roles to automate and manage Network Bound Disk Encryption</a></h4><div class="rh-article-teaser-meta"><span class="rh-article-teaser-date">August 11, 2021<span class="rh-article-teaser-pipe"></span></span><span class="rh-article-teaser-author"><a href="https://www.redhat.com/en/authors/brian-smith" title="See more by Brian Smith">Brian Smith</a></span></div><div class="rh-article-teaser-summary">Red Hat Enterprise Linux (RHEL) has offered the ability to encrypt disks for many years, but the network bound disk encryption (NBDE) functionality, which can&hellip;<a class="rh-article-teaser-summary-link" href="https://www.redhat.com/en/blog/using-rhel-system-roles-automate-and-manage-network-bound-disk-encryption">read full post</a></div></div><div class="rh-image-embed--component"
+                 data-rh-align="left"                
+                        ><div class="rh-image-embed-container"><a class="rh-image-embed-link" href="https://www.redhat.com/en/blog/using-rhel-system-roles-automate-and-manage-network-bound-disk-encryption"><div class="rh-image-embed-span" ><img class="rh-image-embed-img" src="https://www.redhat.com/cms/managed-files/styles/blog_stream/s3/RH_BRAND_007283_01_MECH_Linux_FullColor_Grey.png?itok=pLYE4qeL"></div></a></div></div></div></div><hr class="rh-divider-content-rule"/><!-- Subpattern | teaser --><!-- Group layout --><div class="rh-group--layout"                         data-eq-pts="xxs-group: 0, xs-group: 220, sm-group: 320, md-group: 420, lg-group: 620, small: 480, submedium: 538, medium: 768, large: 992"
+><div class="rh-group-body"      data-rh-layout="media-object"     ><div class="rh-article-teaser--component"><h4 class="rh-article-teaser-headline"><a href="https://www.redhat.com/en/blog/using-amazon-efs-podman-running-rhel-ec2">Using Amazon EFS with Podman running on RHEL EC2</a></h4><div class="rh-article-teaser-meta"><span class="rh-article-teaser-date">August 4, 2021<span class="rh-article-teaser-pipe"></span></span><span class="rh-article-teaser-author"><a href="https://www.redhat.com/en/authors/mayur-shetty" title="See more by Mayur Shetty">Mayur Shetty</a></span></div><div class="rh-article-teaser-summary">See how Podman, Red Hat Enterprise Linux, and Amazon solutions can work together to host your photo gallery—and make it highly available&hellip;<a class="rh-article-teaser-summary-link" href="https://www.redhat.com/en/blog/using-amazon-efs-podman-running-rhel-ec2">read full post</a></div></div><div class="rh-image-embed--component"
+                 data-rh-align="left"                
+                        ><div class="rh-image-embed-container"><a class="rh-image-embed-link" href="https://www.redhat.com/en/blog/using-amazon-efs-podman-running-rhel-ec2"><div class="rh-image-embed-span" ><img class="rh-image-embed-img" src="https://www.redhat.com/cms/managed-files/styles/blog_stream/s3/AgileIntegration1-Blog-thumbnail-1.png?itok=dyye6Aou"></div></a></div></div></div></div><hr class="rh-divider-content-rule"/><!-- Subpattern | teaser --><!-- Group layout --><div class="rh-group--layout"                         data-eq-pts="xxs-group: 0, xs-group: 220, sm-group: 320, md-group: 420, lg-group: 620, small: 480, submedium: 538, medium: 768, large: 992"
+><div class="rh-group-body"      data-rh-layout="media-object"     ><div class="rh-article-teaser--component"><h4 class="rh-article-teaser-headline"><a href="https://www.redhat.com/en/blog/now-available-sql-server-2019-red-hat-enterprise-linux-8-aws-marketplace">Now Available: SQL Server 2019 on Red Hat Enterprise Linux 8 in AWS Marketplace</a></h4><div class="rh-article-teaser-meta"><span class="rh-article-teaser-date">August 3, 2021<span class="rh-article-teaser-pipe"></span></span><span class="rh-article-teaser-author"><a href="https://www.redhat.com/en/authors/don-pinto" title="See more by Don Pinto">Don Pinto</a></span></div><div class="rh-article-teaser-summary">Organizations need a fast, flexible way to deploy a reliable database for their cloud-native applications. We're pleased to announce the immediate availability of Red Hat&hellip;<a class="rh-article-teaser-summary-link" href="https://www.redhat.com/en/blog/now-available-sql-server-2019-red-hat-enterprise-linux-8-aws-marketplace">read full post</a></div></div><div class="rh-image-embed--component"
+                 data-rh-align="left"                
+                        ><div class="rh-image-embed-container"><a class="rh-image-embed-link" href="https://www.redhat.com/en/blog/now-available-sql-server-2019-red-hat-enterprise-linux-8-aws-marketplace"><div class="rh-image-embed-span" ><img class="rh-image-embed-img" src="https://www.redhat.com/cms/managed-files/styles/blog_stream/s3/RH_BRAND_007283_01_MECH_Linux_FullColor_Grey.png?itok=pLYE4qeL"></div></a></div></div></div></div><hr class="rh-divider-content-rule"/><!-- Subpattern | teaser --><!-- Group layout --><div class="rh-group--layout"                         data-eq-pts="xxs-group: 0, xs-group: 220, sm-group: 320, md-group: 420, lg-group: 620, small: 480, submedium: 538, medium: 768, large: 992"
+><div class="rh-group-body"      data-rh-layout="media-object"     ><div class="rh-article-teaser--component"><h4 class="rh-article-teaser-headline"><a href="https://www.redhat.com/en/blog/optimize-public-cloud-workloads-rhel-red-hat-insights-resource-optimization">Optimize public cloud workloads on RHEL with Red Hat Insights Resource Optimization</a></h4><div class="rh-article-teaser-meta"><span class="rh-article-teaser-date">August 2, 2021<span class="rh-article-teaser-pipe"></span></span><span class="rh-article-teaser-author"><a href="https://www.redhat.com/en/authors/radek-vokal" title="See more by Radek Vokal">Radek Vokal</a></span></div><div class="rh-article-teaser-summary">The Beta of the Red Hat Insights Resource Optimization service is now available. Resource Optimization is a new service that we’ve added to our portfolio&hellip;<a class="rh-article-teaser-summary-link" href="https://www.redhat.com/en/blog/optimize-public-cloud-workloads-rhel-red-hat-insights-resource-optimization">read full post</a></div></div><div class="rh-image-embed--component"
+                 data-rh-align="left"                
+                        ><div class="rh-image-embed-container"><a class="rh-image-embed-link" href="https://www.redhat.com/en/blog/optimize-public-cloud-workloads-rhel-red-hat-insights-resource-optimization"><div class="rh-image-embed-span" ><img class="rh-image-embed-img" src="https://www.redhat.com/cms/managed-files/styles/blog_stream/s3/agile-integration-technology-city-illustration_Blog-thumbnail.png?itok=ADPTorHv"></div></a></div></div></div></div><hr class="rh-divider-content-rule"/><!-- Subpattern | teaser --><!-- Group layout --><div class="rh-group--layout"                         data-eq-pts="xxs-group: 0, xs-group: 220, sm-group: 320, md-group: 420, lg-group: 620, small: 480, submedium: 538, medium: 768, large: 992"
+><div class="rh-group-body"      data-rh-layout="stacked"     ><div class="rh-article-teaser--component"><h4 class="rh-article-teaser-headline"><a href="https://www.redhat.com/en/blog/red-hat-satellite-694-has-been-released">Red Hat Satellite 6.9.4 has been released</a></h4><div class="rh-article-teaser-meta"><span class="rh-article-teaser-date">July 29, 2021<span class="rh-article-teaser-pipe"></span></span><span class="rh-article-teaser-author"><a href="https://www.redhat.com/en/authors/matthew-yee" title="See more by Matthew Yee">Matthew Yee</a></span></div><div class="rh-article-teaser-summary">We are pleased to announce that Red Hat Satellite 6.9.4 is generally available as of July 29, 2021&hellip;<a class="rh-article-teaser-summary-link" href="https://www.redhat.com/en/blog/red-hat-satellite-694-has-been-released">read full post</a></div></div></div></div><hr class="rh-divider-content-rule"/><!-- Subpattern | teaser --><!-- Group layout --><div class="rh-group--layout"                         data-eq-pts="xxs-group: 0, xs-group: 220, sm-group: 320, md-group: 420, lg-group: 620, small: 480, submedium: 538, medium: 768, large: 992"
+><div class="rh-group-body"      data-rh-layout="media-object"     ><div class="rh-article-teaser--component"><h4 class="rh-article-teaser-headline"><a href="https://www.redhat.com/en/blog/automate-performance-metrics-collection-and-visualization-rhel-system-roles">Automate performance metrics collection and visualization with RHEL System Roles</a></h4><div class="rh-article-teaser-meta"><span class="rh-article-teaser-date">July 22, 2021<span class="rh-article-teaser-pipe"></span></span><span class="rh-article-teaser-author"><a href="https://www.redhat.com/en/authors/brian-smith" title="See more by Brian Smith">Brian Smith</a></span></div><div class="rh-article-teaser-summary">Performance metric tracking with Performance Co-Pilot (PCP) and Grafana can be useful in almost any RHEL environment. However, the process to get it set up&hellip;<a class="rh-article-teaser-summary-link" href="https://www.redhat.com/en/blog/automate-performance-metrics-collection-and-visualization-rhel-system-roles">read full post</a></div></div><div class="rh-image-embed--component"
+                 data-rh-align="left"                
+                        ><div class="rh-image-embed-container"><a class="rh-image-embed-link" href="https://www.redhat.com/en/blog/automate-performance-metrics-collection-and-visualization-rhel-system-roles"><div class="rh-image-embed-span" ><img class="rh-image-embed-img" src="https://www.redhat.com/cms/managed-files/styles/blog_stream/s3/Automation2-Blog-thumbnail_0.png?itok=l1nWvoZe"></div></a></div></div></div></div></div></div></div></section></div></div><footer class="rh-band-footer"        ><!-- Pattern | raw_html --><h2 class="element-invisible">Pages</h2><div class="item-list"><ul class="pager"><li class="pager-previous first"><span class="pager-disabled">previous</span></li><li class="pager-first"><span class="pager-disabled">first</span></li><li class="pager-current">1</li><li class="pager-item"><a title="Go to page 2" href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux?page=1">2</a></li><li class="pager-item"><a title="Go to page 3" href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux?page=2">3</a></li><li class="pager-item"><a title="Go to page 4" href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux?page=3">4</a></li><li class="pager-item"><a title="Go to page 5" href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux?page=4">5</a></li><li class="pager-item"><a title="Go to page 6" href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux?page=5">6</a></li><li class="pager-item"><a title="Go to page 7" href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux?page=6">7</a></li><li class="pager-item"><a title="Go to page 8" href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux?page=7">8</a></li><li class="pager-item"><a title="Go to page 9" href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux?page=8">9</a></li><li class="pager-ellipsis">…</li><li class="pager-last"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux?page=111">last</a></li><li class="pager-next last"><a href="https://www.redhat.com/en/blog/channel/red-hat-enterprise-linux?page=1">next</a></li></ul></div></footer></section></div></div></form>    </div>
+  
+      <!-- Pattern | action_band -->
+<div class="rh-band--layout"   data-rh-background="gray"><div class="rh-band-container"data-rh-layout="stacked"  ><section class="rh-band-main"    data-rh-layout="stacked"
+><header class="rh-band-header"        data-rh-layout="only8" data-rh-theme=" polar"><div class="rh-band-header--component" data-rh-align=left ><p class="rh-band-header-title">Stay in touch with Red Hat Enterprise Linux</p><h1 class="rh-band-header-headline">Track specific RHEL releases and more...</h1></div></header><div class="rh-band-content"    
+                                     data-rh-theme="polar"><section class="rh-divider--layout"     ><div class="rh-divider-container"><div class="rh-divider-main"     data-rh-layout="min-stacked"
+            data-eq-pts="xs-divider: 0, lg-divider: 600"
+><div class="rh-divider-content"     data-rh-layout="4 4 4 columns flex"    ><!-- Subpattern | teaser_list --><!-- For related_posts on blog pages --><div class="rh-card--layout"    data-rh-background="white"
+            data-rh-theme="light"
+    
+        data-rh-bg-align="cover"
+    
+        data-rh-layout="min-stacked"
+
+            data-eq-pts="xxs-box: 0, xs-box: 202, sm-box: 302, md-box: 402, lg-box: 502, xl-box: 602, xxl-box: 702, box-edges: 262"
+                        
+            data-rh-border="thin"><header class="rh-card-header"        ><header class="rh-standard-header--component"     data-rh-align=left
+                  ><div class="rh-standard-header-container"><p class="rh-standard-header-headline-small" >What's New in Red Hat Enterprise Linux 8.3</p></div></header></header><div class="rh-card-content"    data-rh-layout="stacked"
+    ><ul class="rh-list--layout"         
+            data-eq-pts="xs-list: 0, sm-list: 220, md-list: 320"
+     data-rh-list-style="flush"><li class="rh-list-item"><div class="rh-mini-article-teaser--component"><h5 class="rh-mini-article-teaser-headline" data-rh-style="small"><a href="https://www.redhat.com/en/blog/whats-new-red-hat-enterprise-linux-83-series" title="">                Look at new features, capabilities and benefits from RHEL 8.3            </a></h5></div></li></ul></div></div><!-- Subpattern | teaser_list --><!-- For related_posts on blog pages --><div class="rh-card--layout"    data-rh-background="white"
+            data-rh-theme="light"
+    
+        data-rh-bg-align="cover"
+    
+        data-rh-layout="min-stacked"
+
+            data-eq-pts="xxs-box: 0, xs-box: 202, sm-box: 302, md-box: 402, lg-box: 502, xl-box: 602, xxl-box: 702, box-edges: 262"
+                        
+            data-rh-border="thin"><header class="rh-card-header"        ><header class="rh-standard-header--component"     data-rh-align=left
+                  ><div class="rh-standard-header-container"><p class="rh-standard-header-headline-small" >Red Hat Universal Base Images (UBI)</p></div></header></header><div class="rh-card-content"    data-rh-layout="stacked"
+    ><ul class="rh-list--layout"         
+            data-eq-pts="xs-list: 0, sm-list: 220, md-list: 320"
+     data-rh-list-style="flush"><li class="rh-list-item"><div class="rh-mini-article-teaser--component"><h5 class="rh-mini-article-teaser-headline" data-rh-style="small"><a href="https://developers.redhat.com/books/red-hat-universal-base-images-ubi" title="UBI ebook">                Get Red Hat Partner Connect's ebook on Red Hat Universal Base Images            </a></h5></div></li></ul></div></div><!-- Subpattern | teaser_list --><!-- For related_posts on blog pages --><div class="rh-card--layout"    data-rh-background="white"
+            data-rh-theme="light"
+    
+        data-rh-bg-align="cover"
+    
+        data-rh-layout="min-stacked"
+
+            data-eq-pts="xxs-box: 0, xs-box: 202, sm-box: 302, md-box: 402, lg-box: 502, xl-box: 602, xxl-box: 702, box-edges: 262"
+                        
+            data-rh-border="thin"><header class="rh-card-header"        ><header class="rh-standard-header--component"     data-rh-align=left
+                  ><div class="rh-standard-header-container"><p class="rh-standard-header-headline-small" >What's New in Red Hat Enterprise Linux 8.4</p></div></header></header><div class="rh-card-content"    data-rh-layout="stacked"
+    ><ul class="rh-list--layout"         
+            data-eq-pts="xs-list: 0, sm-list: 220, md-list: 320"
+     data-rh-list-style="flush"><li class="rh-list-item"><div class="rh-mini-article-teaser--component"><h5 class="rh-mini-article-teaser-headline" data-rh-style="small"><a href="https://www.redhat.com/en/blog/whats-new-red-hat-enterprise-linux-84" title="">                Look at new features, capabilities and benefits from RHEL 8.4            </a></h5></div></li></ul></div></div></div></div></div></section></div></section></div></div></article>
+
+</div>
+  </div>
+    
+</div>
+
+<footer>
+      <section class="rc-footer-menu" data-rc-toggle-id="footer-extended" >
+      <div class="container rc-footer-menu-container">
+        <nav class="row rc-footer-menu-about-items"><div class="rc-footer-menu-about-col foot-about foot-about"><div class="rc-footer-menu-list-header"><h3 class="rc-footer-menu-list-header-title">About</h3></div><p class="rc-footer-menu-about-description">We’re the world’s leading provider of enterprise open source solutions, using a community-powered approach to deliver high-performing Linux, cloud, container, and Kubernetes technologies. We help you standardize across environments, develop cloud-native applications, and integrate, automate, secure, and manage complex environments with award-winning support, training, and consulting services.</p><ul class="rc-footer-menu-about-list"><li><a href="https://www.redhat.com/en/about/company">Company information</a></li>
+<li><a href="https://www.redhat.com/en/jobs-overview">Jobs</a></li>
+<li><a href="https://www.redhat.com/en/about/office-locations">Locations</a></li>
+<li><a href="https://www.redhat.com/en/about/development-model">Development model</a></li>
+<li><a href="https://www.redhat.com/en/events">Events</a></li>
+<li><a href="https://www.redhat.com/en/about/newsroom">Newsroom</a></li>
+<li><a href="https://www.redhat.com/en/blog">Blog</a></li>
+<li><a href="https://coolstuff.redhat.com/">Cool Stuff Store</a></li>
+</ul><div class="rc-footer-menu-social-links"><nav id="foot-social"><ul><li class="first leaf"><a href="http://www.linkedin.com/company/red-hat" class="icon-linkedin-sign"></a></li>
+<li class="leaf"><a href="http://www.youtube.com/user/RedHatVideos" class="icon-youtube"></a></li>
+<li class="leaf"><a href="https://www.facebook.com/redhatinc" class="icon-facebook"></a></li>
+<li class="last leaf"><a href="https://twitter.com/RedHat" class="icon-twitter"></a></li>
+</ul></nav></div></div>
+</nav>        <nav class="row rc-footer-menu-items"><div class="rc-footer-menu-col foot-products"><div class="rc-footer-menu-list-header" data-rc-state="closed" data-rc-toggle-visuals="xxs xs sm " aria-expanded="false" tabindex="0"><span class="rc-footer-menu-list-header-indicator" data-rc-indicator-symbol="plus" data-rc-hidden-at="lg "></span><h3 class="rc-footer-menu-list-header-title">Products</h3></div><ul class="rc-footer-menu-list" data-rc-toggle-target="xxs xs sm" data-rc-state="closed" data-rc-toggle="hide" aria-expanded="false"><li><a href="https://www.redhat.com/en/technologies/management/ansible">Red Hat Ansible Automation Platform</a></li>
+<li><a href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux">Red Hat Enterprise Linux</a></li>
+<li><a href="https://www.redhat.com/en/technologies/cloud-computing/openshift">Red Hat OpenShift</a></li>
+<li><a href="https://www.redhat.com/en/technologies/cloud-computing/openshift-data-foundation">Red Hat OpenShift Data Foundation</a></li>
+<li><a href="https://www.redhat.com/en/technologies/linux-platforms/openstack-platform">Red Hat  OpenStack Platform</a></li>
+<li><a href="https://www.redhat.com/en/technologies/all-products">See all products</a></li>
+</ul></div>
+<div class="rc-footer-menu-col foot-tools"><div class="rc-footer-menu-list-header" data-rc-state="closed" data-rc-toggle-visuals="xxs xs sm " aria-expanded="false" tabindex="0"><span class="rc-footer-menu-list-header-indicator" data-rc-indicator-symbol="plus" data-rc-hidden-at="lg "></span><h3 class="rc-footer-menu-list-header-title">Tools</h3></div><ul class="rc-footer-menu-list" data-rc-toggle-target="xxs xs sm" data-rc-state="closed" data-rc-toggle="hide" aria-expanded="false"><li><a href="https://sso.redhat.com/">My account</a></li>
+<li><a href="https://access.redhat.com/">Customer support</a></li>
+<li><a href="https://connect.redhat.com/">Partner resources</a></li>
+<li><a href="https://developers.redhat.com/">Developer resources</a></li>
+<li><a href="https://www.redhat.com/en/services/training-and-certification">Training and certification</a></li>
+<li><a href="https://catalog.redhat.com/">Red Hat Ecosystem Catalog</a></li>
+<li><a href="https://www.redhat.com/en/resources">Resource library</a></li>
+</ul></div>
+<div class="rc-footer-menu-col foot-try-buy-sell"><div class="rc-footer-menu-list-header" data-rc-state="closed" data-rc-toggle-visuals="xxs xs sm " aria-expanded="false" tabindex="0"><span class="rc-footer-menu-list-header-indicator" data-rc-indicator-symbol="plus" data-rc-hidden-at="lg "></span><h3 class="rc-footer-menu-list-header-title">Try, buy, sell</h3></div><ul class="rc-footer-menu-list" data-rc-toggle-target="xxs xs sm" data-rc-state="closed" data-rc-toggle="hide" aria-expanded="false"><li><a href="https://www.redhat.com/en/products/trials">Product trial center</a></li>
+<li><a href="https://www.redhat.com/en/store">Red Hat Store</a></li>
+<li><a href="https://marketplace.redhat.com/">Red Hat Marketplace</a></li>
+<li><a href="https://www.redhat.com/en/about/japan-buy">Buy online (Japan)</a></li>
+<li><a href="http://redhat.force.com/finder/">Find a partner</a></li>
+<li><a href="https://www.redhat.com/en/contact">Contact sales</a></li>
+<li><a href="https://www.redhat.com/en/services/training-and-certification/contact-us">Contact training</a></li>
+<li><a href="https://www.redhat.com/en/services/consulting-overview#contact-form">Contact consulting</a></li>
+</ul></div>
+<div class="rc-footer-menu-col foot-communicate"><div class="rc-footer-menu-list-header" data-rc-state="closed" data-rc-toggle-visuals="xxs xs sm " aria-expanded="false" tabindex="0"><span class="rc-footer-menu-list-header-indicator" data-rc-indicator-symbol="plus" data-rc-hidden-at="lg "></span><h3 class="rc-footer-menu-list-header-title">Communicate</h3></div><ul class="rc-footer-menu-list" data-rc-toggle-target="xxs xs sm" data-rc-state="closed" data-rc-toggle="hide" aria-expanded="false"><li><a href="https://www.redhat.com/en/contact">Contact us</a></li>
+<li><a href="https://www.redhat.com/en/about/feedback">Feedback</a></li>
+<li><a href="https://www.redhat.com/en/about/social">Social</a></li>
+<li><a href="https://engage.redhat.com/Global-Preference-Center?newsletter=RH-Shares&amp;intcmp=7016000000154xCAAQ">Red Hat newsletter</a></li>
+</ul></div>
+</nav>      </div>
+    </section>
+        <section class="rc-footer-traditional">
+      <div class="container rc-footer-traditional-container">
+        <section class="rc-footer-traditional-section">
+          <div class="rc-footer-traditional-logo">
+            <div class="row">
+              <a href="https://www.redhat.com/en">
+                <img src="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo.svg" class="screen" title="Red Hat" />
+                </a>
+            </div>
+          </div>
+          <div id="legal" class="rc-footer-traditional-legal">
+            <div class="row">
+              <div class="copyright">©2021 Red Hat, Inc.</div>
+              <div >
+                <ul class="menu"><li class="first leaf"><a href="https://www.redhat.com/en/about/privacy-policy">Privacy statement</a></li>
+<li class="leaf"><a href="https://www.redhat.com/en/about/terms-use">Terms of use</a></li>
+<li class="leaf"><a href="https://www.redhat.com/en/about/all-policies-guidelines">All policies and guidelines</a></li>
+<li class="leaf"><a href="https://www.redhat.com/en/about/digital-accessibility">Digital accessibility</a></li>
+<li class="last leaf"><span id="teconsent" class="nolink">|</span></li>
+</ul>              </div>
+            </div>
+                      </div>
+          <div class="rc-footer-traditional-event-logo">
+            <div id="block-block-5" class="block block-block block-footer-promote">
+
+      
+  <a href="https://www.redhat.com/summit"><img src="https://www.redhat.com/cms/managed-files/Logo-Red_Hat-Summit-A-Standard-RGB-02_0.svg" alt="Red Hat Summit" style="float: right;" width="72px"></a>
+</div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </footer>
+      <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+  if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
+      _satellite.pageBottom();
+  }
+//--><!]]>
+</script>
+    </div>
+  <script type="text/javascript"  src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"></script></body>
+
+<!-- Mirrored from www.redhat.com/en/blog/channel/red-hat-enterprise-linux by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:37:04 GMT -->
+</html>

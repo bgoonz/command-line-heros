@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  
+<!-- Mirrored from www.redhat.com/en/topics/data-storage/file-block-object-storage by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:33:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!--[if IE]><![endif]-->
+<script id="trustarc" type="text/javascript" src="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"></script>
+<script id="ddo" type="text/javascript">
+<!--//--><![CDATA[//><!--
+    var digitalData = {"cart":[],"event":[],"listing":{"browseFilter":"","query":"","queryMethod":"","refinementType":"","refinementValue":"","resultCount":"","searchType":""},"page":{"attributes":{"queryParameters":"","referringSearchEngine":"","analyticsTitle":"article page | article | file block or object storage","taxonomyPageSubType":["27551"],"taxonomyBusinessChallenge":["161"],"taxonomyRegion":["4521"],"taxonomyTopic":["8401","27101"],"taxonomyMetaHreflang":["29051"]},"category":{"contentType":"","keyPage":"false","keyPageType":"","pageType":"pattern_template","primaryCategory":"topics","subCategories":["data-storage","file-block-object-storage"]},"pageInfo":{"cms":"RH CMS 2021.12.0","contentFindingMethod":"","contentID":"253741","contentPortal":"","destinationURL":"https:\/\/www.redhat.com\/en\/topics\/data-storage\/file-block-object-storage","errorMessage":"","errorType":"","language":"en","pageName":"","referringDomain":"","referringURL":"","sysEnv":"","template":"","title":"File storage, block storage, or object storage?"}},"product":[],"user":[{"profile":[{"profileInfo":{"daysSinceLastPurchase":"","demandbaseSID":"","eloquaGUID":"","lastLoginDate":"","lastPurchaseDate":"","loggedIn":"false","profileID":"","subscriptionFrequency":"","subscriptionLevel":""}}]}]};
+    !function(a,b,c){"use strict";function d(a){var c="; "+b.cookie,d=c.split("; "+a+"=");if(2===d.length)return d.pop().split(";").shift()}if(b.referrer){var e=b.createElement("a");e.href=b.referrer,c.page.pageInfo.referringDomain=e.hostname,c.page.pageInfo.referringURL=e.href}c.page.pageInfo.sysEnv=a.innerWidth<=768?"tablet":"desktop";var f=c.user[0].profile[0].profileInfo,g=d("rh_elqCustomerGUID");g&&(f.eloquaGUID=g);var h=d("rh_user");if(h){var i=h.split("\\|");i[0]&&(f.loggedIn="true")}var j=d("s_dmdbase");j&&(f.demandbaseSID=j)}(window,document,digitalData);
+//--><!]]>
+</script>
+<script src="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm.js" data-domain="www.redhat.com"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-functional.js" class="trustecm" data-tracker-type="functional"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-advertising.js" class="trustecm" data-tracker-type="advertising"></script><script id="dpal" type="text/javascript" src="../../../dtm.js"></script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="en" />
+<link href="file-block-object-storage.html" rel="alternate" hreflang="en" />
+<link href="https://www.redhat.com/fr/topics/data-storage/file-block-object-storage" rel="alternate" hreflang="fr" />
+<link href="https://www.redhat.com/de/topics/data-storage/file-block-object-storage" rel="alternate" hreflang="de" />
+<link href="https://www.redhat.com/es/topics/data-storage/file-block-object-storage" rel="alternate" hreflang="es" />
+<link href="https://www.redhat.com/it/topics/data-storage/file-block-object-storage" rel="alternate" hreflang="it" />
+<link href="https://www.redhat.com/pt-br/topics/data-storage/file-block-object-storage" rel="alternate" hreflang="pt-br" />
+<link href="https://www.redhat.com/ko/topics/data-storage/file-block-object-storage" rel="alternate" hreflang="ko" />
+<link href="https://www.redhat.com/zh/topics/data-storage/file-block-object-storage" rel="alternate" hreflang="zh" />
+<link href="https://www.redhat.com/ja/topics/data-storage/file-block-object-storage" rel="alternate" hreflang="ja" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "availableLanguages": {
+        "en": {
+            "@type": "Language",
+            "name": "English",
+            "href": "/en/topics/data-storage/file-block-object-storage",
+            "current_lang": true
+        },
+        "fr": {
+            "@type": "Language",
+            "name": "Français",
+            "href": "/fr/topics/data-storage/file-block-object-storage"
+        },
+        "de": {
+            "@type": "Language",
+            "name": "Deutsch",
+            "href": "/de/topics/data-storage/file-block-object-storage"
+        },
+        "es": {
+            "@type": "Language",
+            "name": "Español",
+            "href": "/es/topics/data-storage/file-block-object-storage"
+        },
+        "it": {
+            "@type": "Language",
+            "name": "Italiano",
+            "href": "/it/topics/data-storage/file-block-object-storage"
+        },
+        "pt-br": {
+            "@type": "Language",
+            "name": "Português",
+            "href": "/pt-br/topics/data-storage/file-block-object-storage"
+        },
+        "ko": {
+            "@type": "Language",
+            "name": "한국어",
+            "href": "/ko/topics/data-storage/file-block-object-storage"
+        },
+        "zh": {
+            "@type": "Language",
+            "name": "简体中文",
+            "href": "/zh/topics/data-storage/file-block-object-storage"
+        },
+        "ja": {
+            "@type": "Language",
+            "name": "日本語",
+            "href": "/ja/topics/data-storage/file-block-object-storage"
+        }
+    }
+}</script><link rel="prefetch" href="../../redhat_www_menu/ajax/menus-nav2.html" />
+<meta name="last-publish-date" content="Thu, 01 Feb 2018 05:00:00 GMT" />
+<meta name="node-type" content="pattern_template" />
+<meta name="source" content="rhdc_drupal" />
+<meta name="rhdc_key" content="ce261faf1ed6d2d1457a98efc05af849" />
+<meta name="taxonomy-business-challenge" content="Hybrid cloud infrastructure" />
+<meta name="taxonomy-business-challenge-tid" content="161" />
+<meta name="taxonomy-region" content="Global" />
+<meta name="taxonomy-region-tid" content="4521" />
+<meta name="taxonomy-page-sub-type" content="Article page" />
+<meta name="taxonomy-page-sub-type-tid" content="27551" />
+<meta name="taxonomy-topic" content="Big data" />
+<meta name="taxonomy-topic" content="Storage" />
+<meta name="taxonomy-topic-tid" content="8401" />
+<meta name="taxonomy-topic-tid" content="27101" />
+<meta name="taxonomy-meta-hreflang" content="en" />
+<meta name="taxonomy-meta-hreflang-tid" content="29051" />
+<link rel="shortcut icon" href="https://www.redhat.com/misc/favicon.ico" type="image/x-icon" />
+<meta property="og:description" content="Learn the differences between file, block, and object storage and how to choose a storage solution best suited to your needs." />
+<meta name="description" content="Learn the differences between file, block, and object storage and how to choose a storage solution best suited to your needs." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="image_src" href="../../../cms/managed-files/storage-topic-social_300x300.png" />
+<link rel="canonical" href="file-block-object-storage.html" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.redhat.com/en/topics/data-storage/file-block-object-storage" />
+<meta property="og:title" content="File storage, block storage, or object storage?" />
+<meta property="og:image" content="https://www.redhat.com/cms/managed-files/storage-topic-social_300x300.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="File storage, block storage, or object storage?" />
+<meta name="twitter:image" content="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/red-hat-social-share.jpg" />
+    <title>File storage, block storage, or object storage?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://static.redhat.com/">
+    <link rel="preload" href="https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/fonts/web_icon/rh-web-iconfont.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatTextVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatDisplayVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__k9aoxkMyjUtSX9AXGCPExPgTYjM0Xv5OYNfbFGDRafY__N9sjJtGj85lXtvOptw2e_YZ01FXbTXcJywP8EaKBijU__uaCwYofnUZLAnB7x3Q6WyVKH" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/all/libraries/webrh/dist/css/webrh.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__HGi68P6oXLKkdShZdf5ig8J4IgmnBDj6RXEaYT3Wad8__E9g2hWiH_67BY6orF3wqV-_K9kdUtHezWFcl0VoMPXc__uaCwYofnUZLAnB7x3Q6WyVKH" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__wpajrf8pWA19ifT2xQXPB3J1TByoCXqZVtt6kXfl4Ow__PFQbFxxWsZl0yTnfrpPiA-o5Pvtu-CXh7nICx08JW0c__uaCwYofnUZLAnB7x3Q6WyVKH" media="print" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webux/css/subtopic/subtopic6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/css/trustecm.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/redhat-theme/6/advanced-theme.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/red-hat-font.min.css" media="all" />
+    <!--[if lt IE 9]>
+      <script src="/profiles/rh/themes/redhatdotcom/js/selectivizr-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/nwmatcher-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/respond.js" type="text/javascript"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../../../sites/default/files/advagg_js/js__B6wED6l5P_XUdxVmb7Nvh5d9zn074QukFqJa2HLXS6c__VzWs8XZBHHsPW77egi-W-FQw2mAEr5F-GgCJU0wn3Nc__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.vendor.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.webcomponents.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__pDOiYGKaYbdKNp1gvMxR0fWhWZnfUemYDUhADyCn3oM__jCrCuWCJIPYPe1FzZoUvsJWEjkNMmRIQHYek1h7idBE__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.rh = window.rh || {}; window.rh.drupalTrustArcLoaded = true;
+//--><!]]>
+</script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__yriiYgbbyhgJ8W9rMT_zaOuZIYtfDRrocxs9PzEKTik__mre_T7KNWtjPlqBYH-u5FrbK9Zrsh5CEqU2Y4zkdQgM__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"redhatdotcom","theme_token":"GZ4QTLPDj9pEUf_9hERlTGc23pY0LOseMAph6m5kkfs","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.webcomponents.min.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.min.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/marketing\/latest\/trustarc\/trustecm\/css\/trustecm.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-theme\/6\/advanced-theme.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-font\/4\/webfonts\/red-hat-font.min.css":1,"modules\/locale\/locale.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-iconfont.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-web-iconfont.css":1,"sites\/all\/libraries\/patternfly-elements\/pfe-styles\/pfe-typography-classes.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/site-switcher.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/bootstrap.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/chrome.css":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/print.css":1,"ux\/webux\/css\/subtopic\/subtopic.css":1},"js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/rh\/modules\/redhat_www_ddo\/dist\/post-jquery.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.vendor.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.webcomponents.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"profiles\/rh\/modules\/redhat_www_menu\/js\/rh_nav.js":1,"profiles\/rh\/modules\/redhat_www_share\/js\/rh_share.js":1,"profiles\/rh\/modules\/redhat_www_utility\/js\/redhat_www_utility.js":1,"sites\/all\/libraries\/jquery-cookie\/jquery.cookie-1.4.1.min.js":1,"profiles\/rh\/modules\/redhat_www_solr\/js\/rh_solr.js":1,"profiles\/rh\/modules\/redhat_www_solr\/js\/redhat_www_solr_suggestions.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.pushmenu.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery-scrolltofixed.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/rh-chrome.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.fitvids.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.switchIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.viewport\/jquery.viewport.min.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/sass-bootstrap.min.js":1}},"redhat_www_menu":{"path":"node\/253741"},"rh_analytics_enabled":false,"urlIsAjaxTrusted":{"\/en\/search\/node":true}});
+//--><!]]>
+</script>
+    <noscript>
+        <link href="../../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.noscript.min.css" rel="stylesheet" >
+    </noscript>
+  </head>
+  <body unresolved class="bands-index html not-front not-logged-in no-sidebars page-node page-node- page-node-253741 node-type-pattern-template i18n-en storage-types " >
+    <div class="page">
+            <!-- Legacy migrated page support with body.migrated-page-hero -->
+<div class="header-background-image fts-migrated-bg">
+</div>
+
+  <div id="main-content">
+                      <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+      
+  <article class="node-253741 node node-pattern-template clearfix">
+
+  
+    <!-- Pattern group | hero -->
+
+    
+    
+
+<div class="header-background-image"></div>
+<style>
+body[unresolved] pfe-navigation {display: none;}.no-js body pfe-navigation,body:not(unresolved) pfe-navigation {display: block;}.no-js #main-menu{background:#000!important;padding:10px}[unresolved] pfe-navigation{background:#000!important;color:#fff;display:block;width:100%}[unresolved] pfe-navigation [slot=logo],[unresolved] pfe-navigation [slot=skip],[unresolved] pfe-navigation ul li,[unresolved] pfe-navigation-item,[unresolved] pfe-navigation-main{padding:0 7px 6px;display:inline-block}[unresolved] pfe-navigation [slot=skip] a{font-size:0}[unresolved] pfe-navigation [slot=skip] a:focus{font-size:14px}[unresolved] pfe-navigation [slot=logo]{vertical-align:middle}[unresolved] pfe-navigation a{font-size:14px;color:#fff}[unresolved] pfe-navigation-item [slot]>a:focus{outline-offset:1px;outline-style:dotted;outline-width:1px;outline-color:#d2d3d4}
+</style>
+<pfe-navigation  id="main-menu" class="main-header" pfe-sticky pfe-full-width pfe-close-on-click="external" pfe-menu-label="Menu">
+ 
+  <!-- Skip navigation -->
+  <div slot="skip">
+    <ul>
+      <li><a href="#rh-main-content">Skip to content</a></li>
+    </ul>
+  </div>
+
+  <!-- Site logo -->
+  <p slot="logo">
+    <a href="https://www.redhat.com/en" title="Red Hat">
+      <img class="redhat-logo" src="../../../../static.redhat.com/libs/redhat/brand-assets/2/corp/logo--200.png" class="screen" alt="" aria-hidden="true" style="margin:0;width: 135px;"/>
+    </a>
+  </p>
+
+  <!-- Search -->
+  <pfe-navigation-item slot="search" pfe-icon="web-search" id="utility-search">
+    <div slot="trigger">
+      <a href="../../search.html" data-analytics-region="utility" data-analytics="Search" data-analytics-label="Search">Search</a>    </div>
+    <div slot="tray" hidden>
+      <div class="pfe-navigation-item__tray--container">
+        <form class="search-form" autocomplete="off" action="https://www.redhat.com/en/search/node" method="post" id="redhat-www-solr-search-box" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-basic"><div class="form-item form-type-textfield form-item-keys">
+  <label class="element-invisible" for="edit-keys">Enter your keywords </label>
+ <input maxlength="128" size="15" placeholder="Enter your search term" type="text" id="edit-keys" name="keys" value="" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div></div><input type="hidden" name="form_build_id" value="form-cqyrTrdNZQBehlUCrQk5w9PUa8X2MqO61sBPB3VoLDg" />
+<input type="hidden" name="form_id" value="redhat_www_solr_search_box" />
+</div></form>      </div>
+    </div>
+  </pfe-navigation-item>
+  <form class="search-form" autocomplete="off" slot="mobile-search" hidden="" action="https://www.redhat.com/en/search/node" method="post" id="redhat-www-solr-search-box--2" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-basic--2"><div class="form-item form-type-textfield form-item-keys">
+  <label class="element-invisible" for="edit-keys--2">Enter your keywords </label>
+ <input maxlength="128" size="15" placeholder="Enter your search term" type="text" id="edit-keys--2" name="keys" value="" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit--2" name="op" value="Search" class="form-submit" /></div></div><input type="hidden" name="form_build_id" value="form-NPMJIgeM-cLHmvbrNod5z4v1MU7llepl9wuFCdHf6X8" />
+<input type="hidden" name="form_id" value="redhat_www_solr_search_box" />
+</div></form>
+  <!-- Main navigation -->
+  <pfe-navigation-main>
+    <ul>
+              <li>
+          <pfe-navigation-item>
+            <div slot="trigger">
+              <a href="../../technologies.html" data-analytics-region="nav" data-analytics="Products" data-analytics-label="Products" data-analytics-level="1">Products</a>
+            </div>
+            <div slot="tray" data-column="10311" hidden>
+            </div>
+          </pfe-navigation-item>
+        </li>        <li>
+          <pfe-navigation-item>
+            <div slot="trigger">
+              <a href="../../solutions.html" data-analytics-region="nav" data-analytics="Solutions" data-analytics-label="Solutions" data-analytics-level="1">Solutions</a>
+            </div>
+            <div slot="tray" data-column="10331" hidden>
+            </div>
+          </pfe-navigation-item>
+        </li>        <li>
+          <pfe-navigation-item>
+            <div slot="trigger">
+              <a href="../../services.html" data-analytics-region="nav" data-analytics="Services &amp; support" data-analytics-label="Services &amp; support" data-analytics-level="1">Services & support</a>
+            </div>
+            <div slot="tray" data-column="138281" hidden>
+            </div>
+          </pfe-navigation-item>
+        </li>        <li>
+          <pfe-navigation-item>
+            <div slot="trigger">
+              <a href="../../resources.html" data-analytics-region="nav" data-analytics="Resources" data-analytics-label="Resources" data-analytics-level="1">Resources</a>
+            </div>
+            <div slot="tray" data-column="169591" hidden>
+            </div>
+          </pfe-navigation-item>
+        </li>        <li>
+          <pfe-navigation-item>
+            <div slot="trigger">
+              <a href="../../about.html" data-analytics-region="nav" data-analytics="Red Hat &amp; open source" data-analytics-label="Red Hat &amp; open source" data-analytics-level="1">Red Hat & open source</a>
+            </div>
+            <div slot="tray" data-column="10351" hidden>
+            </div>
+          </pfe-navigation-item>
+        </li>    </ul>
+  </pfe-navigation-main>
+
+  <!-- Language -->
+  <pfe-navigation-item slot="language" pfe-icon="web-globe" id="utility-globe">
+    <div slot="trigger">
+      <a href="../../select-language.html" data-analytics-region="utility" data-analytics="Language" data-analytics-label="Language">English</a>    </div>
+    <div slot="tray" hidden>
+      <div class="pfe-navigation-item__tray--container">
+        <div class="language-picker">
+  <h3 class="pfe-headline-2">Select a language</h3>
+  <ul><li class="pfe-headline-5"><a href="https://www.redhat.com/zh/topics/data-storage/file-block-object-storage" class="language-link" xml:lang="zh" hreflang="zh" title="file-block-object-storage">简体中文</a></li><li class="pfe-headline-5"><a href="file-block-object-storage.html" class="language-link active" xml:lang="en" hreflang="en" title="article | file, block, or object storage">English</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/fr/topics/data-storage/file-block-object-storage" class="language-link" xml:lang="fr" hreflang="fr" title="file-block-object-storage">Français</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/de/topics/data-storage/file-block-object-storage" class="language-link" xml:lang="de" hreflang="de" title="file-block-object-storage [DO NOT OVERWRITE DE PAGE]">Deutsch</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/it/topics/data-storage/file-block-object-storage" class="language-link" xml:lang="it" hreflang="it" title="file-block-object-storage [DO NOT OVERWRITE IT PAGE] ">Italiano</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/ja/topics/data-storage/file-block-object-storage" class="language-link" xml:lang="ja" hreflang="ja" title="file-block-object-storage">日本語</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/ko/topics/data-storage/file-block-object-storage" class="language-link" xml:lang="ko" hreflang="ko" title="file-block-object-storage">한국어</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/pt-br/topics/data-storage/file-block-object-storage" class="language-link" xml:lang="pt-br" hreflang="pt-br" title="file-block-object-storage">Português</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/es/topics/data-storage/file-block-object-storage" class="language-link" xml:lang="es" hreflang="es" title="file-block-object-storage [DO NOT OVERWRITE ES PAGE] ">Español</a></li></ul></div>      </div>
+    </div>
+  </pfe-navigation-item>
+  <div slot="mobile-language" pfe-icon="web-globe" data-analytics-region="utility" data-analytics="Language" data-analytics-label="Language"><a id="pfe-modal--trigger" tabindex="0">English</a></div>
+  <!-- Log in -->
+  <pfe-navigation-item slot="login" pfe-icon="web-user" id="utility-account">
+    <div slot="trigger">
+      <a href="https://sso.redhat.com/auth/realms/redhat-external/protocol/saml/clients/legacy-idp-servlets" class="rh-user-loggedout" data-analytics-region="utility" data-analytics="login" data-analytics-label="login">Log in</a>      <a href="https://sso.redhat.com/auth/realms/redhat-external/logout" class="rh-user-loggedin" data-analytics-region="utility" data-analytics="login" data-analytics-label="login">Account</a>    </div>
+    <div slot="tray" hidden>
+      <div class="pfe-navigation-item__tray--container">
+        <section class="account-tray">
+  <header>
+    <div class="container">
+              <p class="rh-login-heading rh-user-loggedin">Welcome, <span class='rh-name'></span></p>
+                    <p class="rh-login-heading rh-user-loggedout">Log in to your Red Hat account</p>
+          </div>
+  </header>
+  <div class="content">
+    <div class="container">
+      <section class="account-login rh-user-loggedout">
+        <div class="account-login-wrapper">
+                      <a href="https://sso.redhat.com/auth/realms/redhat-external/protocol/saml/clients/legacy-idp-servlets" id="redhat-account-login-link" class="account-login-link utility-user-login-link" data-analytics-region="utility" data-analytics="Log in" data-analytics-label="Log in">Log in</a>                                <p>Your Red Hat account gives you access to your member profile and preferences, and the following services based on your customer status:</p>
+                                <div class="utility-user-additional-links"><div class="item-list"><ul><li class="first">Customer Portal</li>
+<li class="last">Red Hat Connect for Business Partners</li>
+</ul></div><div class="item-list"><ul><li class="first">User management</li>
+<li class="last">Certification Central</li>
+</ul></div></div>                  </div>
+        <div class="account-register-wrapper">
+                      <a href="https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/registrations?client_id=https%3A%2F%2Fwww.redhat.com%2Fwapps%2Fugc-oidc&amp;redirect_uri=https%3A%2F%2Fwww.redhat.com%2Fwapps%2Fugc%2Fprotected%2Faccount.html&amp;response_type=code&amp;scope=openid" class="account-register-link" data-analytics-region="utility" data-analytics="Register now" data-analytics-label="Register now">Register now</a>                                <p class="account-register-heading">Not registered yet? Here are a few reasons why you should be:</p><div class="item-list"><ul><li class="first">Browse Knowledgebase articles, manage support cases and subscriptions, download updates, and more from one place.</li>
+<li>View users in your organization, and edit their account information, preferences, and permissions.</li>
+<li class="last">Manage your Red Hat certifications, view exam history, and download certification-related logos and documents.</li>
+</ul></div>                  </div>
+      </section>
+      <section class="account-logout rh-user-loggedin">
+        <div class="account-welcome-wrapper">
+                      <a href="https://www.redhat.com/wapps/ugc/protected/account.html" class="account-edit-link" data-analytics-region="utility" data-analytics="Edit your profile and preferences" data-analytics-label="Edit your profile and preferences">Edit your profile and preferences</a>                                <p>Your Red Hat account gives you access to your member profile, preferences, and other services depending on your customer status.</p>
+                            </div>
+        <div class="account-logout-wrapper">
+                      <p>For your security, if you&#039;re on a public computer and have finished using your Red Hat services, please be sure to log out.</p>
+                                <a href="https://sso.redhat.com/auth/realms/redhat-external/logout" id="redhat-account-logout-link" class="account-logout-link" data-analytics-region="utility" data-analytics="Log out" data-analytics-label="Log out">Log out</a>                  </div>
+      </section>
+    </div>
+  </div>
+</section>
+      </div>
+    </div>
+  </pfe-navigation-item>
+  <a href="https://sso.redhat.com/auth/realms/redhat-external/protocol/saml/clients/legacy-idp-servlets" class="rh-user-loggedout" slot="mobile-login" pfe-icon="web-user">Log in / Register</a>  <a href="https://www.redhat.com/wapps/ugc/protected/account.html" class="rh-user-loggedin" slot="mobile-login" pfe-icon="web-user">Account</a>
+  <!-- Site switcher -->
+  <pfe-navigation-item slot="site-switcher" pfe-icon="web-grid-3x3" id="site-switcher">
+    <div slot="trigger">
+      <a href="../../cms/ajax/site-switcher.html" id="355871" data-analytics-region="utility" data-analytics="Websites" data-analytics-label="Websites">All Red Hat</a>    </div>
+    <div slot="tray" hidden>
+      <div class="pfe-navigation-item__tray--container">
+        <!-- Added via JS -->
+              </div>
+    </div>
+  </pfe-navigation-item>
+</pfe-navigation>
+
+<!-- Language switcher modal, must be outside the navigation component -->
+<pfe-modal class="language-picker" id="language-picker" hidden>
+  <h3 class="pfe-headline-2">Select a language</h3>
+  <ul><li class="pfe-headline-5"><a href="https://www.redhat.com/zh/topics/data-storage/file-block-object-storage" class="language-link" xml:lang="zh" hreflang="zh" title="file-block-object-storage">简体中文</a></li><li class="pfe-headline-5"><a href="file-block-object-storage.html" class="language-link active" xml:lang="en" hreflang="en" title="article | file, block, or object storage">English</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/fr/topics/data-storage/file-block-object-storage" class="language-link" xml:lang="fr" hreflang="fr" title="file-block-object-storage">Français</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/de/topics/data-storage/file-block-object-storage" class="language-link" xml:lang="de" hreflang="de" title="file-block-object-storage [DO NOT OVERWRITE DE PAGE]">Deutsch</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/it/topics/data-storage/file-block-object-storage" class="language-link" xml:lang="it" hreflang="it" title="file-block-object-storage [DO NOT OVERWRITE IT PAGE] ">Italiano</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/ja/topics/data-storage/file-block-object-storage" class="language-link" xml:lang="ja" hreflang="ja" title="file-block-object-storage">日本語</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/ko/topics/data-storage/file-block-object-storage" class="language-link" xml:lang="ko" hreflang="ko" title="file-block-object-storage">한국어</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/pt-br/topics/data-storage/file-block-object-storage" class="language-link" xml:lang="pt-br" hreflang="pt-br" title="file-block-object-storage">Português</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/es/topics/data-storage/file-block-object-storage" class="language-link" xml:lang="es" hreflang="es" title="file-block-object-storage [DO NOT OVERWRITE ES PAGE] ">Español</a></li></ul></pfe-modal><span id="rh-main-content"></span>
+
+        
+<div class="rh-band-group--layout" data-rh-group-size="content" data-rh-unique-id="235951">
+                    <div class="rh-band-group-wrapper">
+                <div class="rh-band-group-background" data-rh-background-align="center-center" data-rh-background="black"></div><div class="rh-band-group-body"><!-- Pattern | hero_header -->
+<div class="rh-band--layout"  data-rh-gap='collapse'  data-rh-background="transparent"><div class="rh-band-container"data-rh-layout="stacked"  ><section class="rh-band-main"    data-rh-layout="stacked"
+><div class="rh-band-content"    
+                     data-rh-layout="only8"                 data-rh-theme="dark "><div class="rh-band-header--component"  ><p class="rh-band-header-title">Storage</p><h1 class="rh-band-header-hero-headline">File storage, block storage, or object storage?</h1></div></div></section></div></div></div></div></div><!-- Pattern | secondary_nav_bar -->
+
+
+
+
+    
+    
+    
+
+
+
+
+
+
+<section class="rh-menu" aria-hidden    data-rh-menu="dynamic"     data-rh-collapse="full"    data-rh-menu-id="rh-fbhc2"
+    data-rh-background="light-gray">
+        <div class="rh-menu-mobile"    data-rh-hidden="sm md lg"
+>
+        <div class="rh-menu-mobile-bar">
+            <div class="rh-menu-mobile-bar-top" data-rh-menu-context="top-mobile"     data-rh-background="white"
+    data-rh-layout="flex-right-end"
+    data-rh-theme="light">
+                                <span    data-rh-toggle-open="click"
+    data-rh-toggle-id="rh-fbhc2"
+    data-rh-state="closed" aria-expanded=false
+>
+                    <ul class="rh-navigation-link--component"            data-rh-nav-type="utility"
+                    ><li class="rh-navigation-link-container"><a class="rh-navigation-link-icon"                                    data-rh-icon-type="web-icon-mobile-menu"
+                                                ><span class="rh-navigation-link-label">Jump to section</span><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17"><path d="M1.5 2.028a.5.5 0 0 1 0-1l14-.007a.5.5 0 0 1 0 1l-14 .008zM15.494 9.007H1.5a.5.5 0 1 1 0-1h14a.5.5 0 0 1 0 1zM15.494 16.007H1.5a.5.5 0 0 1 0-1h14a.5.5 0 0 1 0 1z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M30 16.67v-1.332c0-.363-.13-.675-.394-.938s-.575-.394-.938-.394h-10.67V3.356c0-.362-.13-.675-.393-.938s-.575-.394-.938-.394h-1.33c-.364 0-.676.13-.94.394s-.393.575-.393.938V14H3.33c-.363 0-.676.13-.94.394s-.393.575-.393.938v1.33c0 .364.13.676.394.94s.576.393.94.393h10.668V28.64c0 .362.13.674.394.937.262.262.575.394.938.394h1.33c.364 0 .676-.13.94-.393s.393-.575.393-.938V18h10.67c.362 0 .674-.13.937-.394.27-.262.4-.575.4-.938z"/></svg></a></li></ul>                </span>
+            </div>
+            <nav class="rh-menu-mobile-dropdown" data-rh-menu-context="dropdown-mobile" id="rh-fbhc2"     data-rh-background="white"
+    data-rh-theme="light"    data-rh-state="closed" aria-expanded=false
+    data-rh-toggle-target="xxs xs sm md lg"
+></nav>
+                    </div>
+    </div>
+
+    <div class="rh-menu-desktop"data-rh-hidden="xxs xs">
+        <div class="rh-menu-desktop-container">
+            <div class="rh-secondary-nav-placeholder"data-rh-hidden="xxs xs">Jump to section</div>
+                                        <nav class="rh-menu-main-nav" data-rh-theme="light"    data-rh-menu-main-type="secondary" data-rh-dynamic>
+                                                            <div class="rh-menu-main-nav-links" data-rh-menu-context="main-links">
+                        <ul class="rh-navigation-link--component"            data-rh-nav-type="secondary-navigation-bar"
+            aria-label="template" aria-hidden        ><li class="rh-navigation-link-container" aria-template=true><a class="rh-navigation-link-item" href="#" title=""></a></li></ul>                    </div>
+                                                        </nav>
+                    </div>
+    </div>
+</section>
+  <!-- Pattern | custom_band -->
+
+
+
+
+
+        
+
+  
+  
+
+
+
+
+
+
+
+    
+    
+
+<div class="rh-band--layout"  data-rh-unique-id="235891"  data-rh-background-align="center-center" data-rh-background="white"><div class="rh-band-container"data-rh-layout="aside-right-large"  ><section class="rh-band-main"    data-rh-layout="stacked"
+><div class="rh-band-content"    
+                     data-rh-layout="stacked left"                ><!-- Pattern | raw_html --><div class="rh-raw"        ><div class="ux-group" data-ux-layout="stacked"><p>Files, blocks, and objects are <a href="https://proxy.partnercenter.redhat.com/authbridge?redir=bp_sid_missing">storage</a> formats that hold, organize, and present data in different ways&mdash;each with their own capabilities and limitations. File storage organizes and represents data as a hierarchy of files in folders; block storage chunks data into arbitrarily organized, evenly sized volumes; and object storage manages data and links it to associated metadata.</p><hr /><div class="ux-generic"><h2>What is file storage?</h2><div class="ux-image-embed img-align-right"><div class="ux-image-embed-container"><div class="media media-element-container media-default"><img class="media-element file-default" src="../../../cms/managed-files/fileStorage_orange_320x242_0.png" width="370" height="201" alt="File storage" title="File storage" /></div></div></div><p>File storage, also called file-level or file-based storage, is exactly what you think it might be: Data is stored as a single piece of information inside a folder, just like you’d organize pieces of paper inside a manila folder. When you need to access that piece of data, your computer needs to know the path to find it. (Beware&mdash;It can be a long, winding path.) Data stored in files is organized and retrieved using a limited amount of metadata that tells the computer exactly where the file itself is kept. It’s like a library card catalog for data files.</p><p><i>Think of a closet full of file cabinets</i>. Every document  is arranged in some type of logical hierarchy&mdash;by cabinet, by drawer, by folder, then by piece of paper. This is where the term hierarchical storage comes from, and this is file storage. It is the oldest and most widely used data storage system for direct and <a href="network-attached-storage.html">network-attached storage</a> systems, and it’s one that you’ve probably been using for decades. Any time you access documents saved in files on your personal computer, you use file storage. File storage has broad capabilities and can store just about anything. It’s great for storing an array of complex files and is fairly fast for users to navigate.</p><p>The problem is, just like with your filing cabinet, that virtual drawer can only open so far. File-based storage systems must scale out by adding more systems, rather than scale up by adding more capacity.</p></div><hr /><div class="ux-generic"><h2>What is block storage?</h2><div class="ux-image-embed img-align-right"><div class="ux-image-embed-container"><div class="media media-element-container media-default"><img class="media-element file-default" src="../../../cms/managed-files/blockStorage_orange_320x242_0.png" width="320" height="242" alt="Block storage" title="Block storage" /></div></div></div><p>Block storage chops data into blocks&mdash;get it?&mdash;and stores them as separate pieces. Each block of data is given a unique identifier, which allows a storage system to place the smaller pieces of data wherever is most convenient. That means that some data can be stored in a <a href="../linux.html">Linux®</a> environment and some can be stored in a Windows unit.</p><p>Block storage is often configured to decouple the data from the user’s environment and spread it across multiple environments that can better serve the data. And then, when data is requested, the underlying storage software reassembles the blocks of data from these environments and presents them back to the user. It is usually deployed in storage-area network (SAN) environments and must be tied to a functioning server.</p><p>Because block storage doesn’t rely on a single path to data&mdash;like file storage does&mdash;it can be retrieved quickly. Each block lives on its own and can be partitioned so it can be accessed in a different operating system, which gives the user complete freedom to configure their data. It’s an efficient and reliable way to store data and is easy to use and manage. It works well with enterprises performing big transactions and those that deploy huge databases, meaning the more data you need to store, the better off you’ll be with block storage.</p><p>There are some downsides, though. Block storage can be expensive. It has limited capability to handle metadata, which means it needs to be dealt with in the application or database level&mdash;adding another thing for a developer or systems administrator to worry about.</p></div><hr /><div class="ux-generic"><h2>What is object storage?</h2><div class="ux-image-embed img-align-right"><div class="ux-image-embed-container"><div class="media media-element-container media-default"><img class="media-element file-default" src="../../../cms/managed-files/objectStorage_orange_360x198_0.png" width="361" height="199" alt="Object storage" title="Object storage" /></div></div></div><p>Object storage, also known as object-based storage, is a flat structure in which files are broken into pieces and spread out among hardware. In object storage, the data is broken into discrete units called objects and is kept in a single repository, instead of being kept as files in folders or as blocks on servers.</p><p>Object storage volumes work as modular units: each is a self-contained repository that owns the data, a unique identifier that allows the object to be found over a distributed system, and the metadata that describes the data. That metadata is important and includes details like age, privacies/securities, and access contingencies. Object storage metadata can also be extremely detailed, and is capable of storing information on where a video was shot, what camera was used, and what actors are featured in each frame. To retrieve the data, the storage operating system uses the metadata and identifiers, which distributes the load better and lets administrators apply policies that perform more robust searches.</p><p>Object storage requires a simple HTTP <a href="../api/what-are-application-programming-interfaces.html">application programming interface (API)</a>, which is used by most clients in all languages. Object storage is cost efficient: you only pay for what you use. It can scale easily, making it a great choice for <a href="../cloud-computing/what-is-public-cloud.html">public cloud </a>storage. It’s a storage system well suited for static data, and its agility and flat nature means it can scale to extremely large quantities of data. The objects have enough information for an application to find the data quickly and are good at storing unstructured data.</p><p>There are drawbacks, to be sure. Objects can’t be modified&mdash;you have to write the object completely at once. Object storage also doesn’t work well with traditional databases, because writing objects is a slow process and writing an app to use an object storage API isn’t as simple as using file storage.</p></div><hr /><div class="ux-generic"><h2>Why Red Hat?</h2><p>Not sure which storage format is right for your project? With Red Hat Data Services, you don't have to choose. <a href="../../technologies/storage/ceph.html">Red Hat Ceph Storage</a> delivers SDS on your choice of industry-standard hardware. With block, object, and file storage combined into 1 platform, it efficiently and automatically manages all your data. <a href="../../technologies/storage/gluster.html">Red Hat Gluster Storage</a> is an SDS platform designed to handle the requirements of traditional file storage&mdash;high&ndash;capacity tasks like backup and archival as well as high&ndash;performance tasks of analytics and virtualization.</p></div><div class="ux-cta"><a class="ux-cta-link" data-ux-cta-type="secondary" href="why-choose-red-hat-storage.html">Continue reading</a></div></div><style>
+		.img-align-right {
+			float: right;
+			padding: 20px;
+			clear: both;
+		}
+		@media screen and (max-width: 960px ) {
+			.img-align-right {
+				float: none;
+			}
+		}
+	</style></div></div></section><aside class="rh-band-aside"    data-rh-layout="stacked"
+    ><!-- Subpattern | standard_text --><div class="rh-card--layout"    data-rh-background="gray"
+            data-rh-theme="light"
+    
+        data-rh-bg-align="cover"
+    
+        data-rh-layout="stacked"
+
+            data-eq-pts="xxs-box: 0, xs-box: 202, sm-box: 302, md-box: 402, lg-box: 502, xl-box: 602, xxl-box: 702, box-edges: 262"
+    data-rh-justify="justify"><div class="rh-card-content"    data-rh-layout="min-stacked"
+    ><header class="rh-standard-header--component"     data-rh-align=left
+                  ><div class="rh-standard-header-container"><h3 class="rh-standard-header-headline-small" >Featured resource</h3></div></header><div class="rh-generic--component"         data-eq-pts="xxs-hr: 0, lg-hr: 450"
+                 data-rh-align="left"     ><ul><li><a href="../../resources/container-storage-dummies.html">E-book: Container storage for dummies</a></li></ul></div></div></div><!-- Subpattern | standard_text --><div class="rh-card--layout"    data-rh-background="gray"
+            data-rh-theme="light"
+    
+        data-rh-bg-align="cover"
+    
+        data-rh-layout="stacked"
+
+            data-eq-pts="xxs-box: 0, xs-box: 202, sm-box: 302, md-box: 402, lg-box: 502, xl-box: 602, xxl-box: 702, box-edges: 262"
+    data-rh-justify="justify"><div class="rh-card-content"    data-rh-layout="min-stacked"
+    ><header class="rh-standard-header--component"     data-rh-align=left
+                  ><div class="rh-standard-header-container"><h3 class="rh-standard-header-headline-small" >Read more about storage</h3></div></header><div class="rh-generic--component"         data-eq-pts="xxs-hr: 0, lg-hr: 450"
+                 data-rh-align="left"     ><ul><li><a href="../data-storage.html">What is data storage?</a></li><li><a href="network-attached-storage.html">What is network-attached storage?</a></li><li><a href="what-is-a-data-lake.html">What is a data lake?</a></li></ul></div></div></div></aside></div></div>  <!-- Pattern | custom_band -->
+
+
+
+
+
+        
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+<div class="rh-band--layout"  data-rh-unique-id="235911"  data-rh-background-align="center-center" data-rh-background="gray"><div class="rh-band-container"data-rh-layout="stacked"  ><section class="rh-band-main"    data-rh-layout="stacked"
+><header class="rh-band-header"        data-rh-layout="only8" data-rh-theme=""><div class="rh-band-header--component" data-rh-align=left ><h3 class="rh-band-header-headline">Get open, software-defined storage</h3></div></header><div class="rh-band-content"    
+                     data-rh-layout="stacked left"                ><!-- Pattern | raw_html --><div class="rh-raw"        ><div class="ux-band-content" data-ux-layout="gallery2"><div class="ux-card" data-ux-theme="light" data-ux-justify="justify"><div class="ux-card-body"><div class="ux-image-embed-container"><a href="../../technologies/storage/ceph.html"><div class="media media-element-container media-default"><img class="media-element file-default" src="../../../cms/managed-files/Logo-Red_Hat-Ceph_Storage-A-Standard-RGB-360x75.png" width="360" height="75" alt="" /></div></a></div><div class="ux-generic"><p>A software-defined object storage platform that also provides interfaces for block, object and file storage. It supports cloud infrastructure, media repositories, backup and restore systems, and data lakes. It works particularly well with Red Hat OpenStack<sup>&reg;</sup> Platform.</p></div></div><div class="ux-card-footer"><div class="ux-cta"><a class="ux-cta-link" data-ux-cta-type="secondary" href="../../technologies/storage/ceph.html">Learn more</a></div></div></div><div class="ux-card" data-ux-theme="light" data-ux-justify="justify"><div class="ux-card-body"><div class="ux-image-embed-container"><a href="../../technologies/storage/gluster.html"><div class="media media-element-container media-default"><img class="media-element file-default" src="../../../cms/managed-files/Logo-Red_Hat-Gluster_Storage-A-Standard-RGB-360x75.png" width="360" height="75" alt="" /></div></a></div><div class="ux-generic"><p>A software-defined file storage platform to handle high-capacity tasks like backup and archival as well as high-performance tasks like virtualization. It works particularly well with containers and media content workflows.</p></div></div><div class="ux-card-footer"><div class="ux-cta"><a class="ux-cta-link" data-ux-cta-type="secondary" href="../../technologies/storage/gluster.html">Learn more</a></div></div></div><!--end ux-card--></div></div></div></section></div></div>  <!-- Pattern | raw_html -->
+
+<div class="rh-raw"         data-rh-unique-id="235931">
+        <section class="ux-band" data-ux-band-background="gray" data-ux-band-collapse="full_top">
+    <div class="ux-band-container">
+        <div class="ux-band-body">
+            <div class="ux-generic">
+                <p><small>The OpenStack word mark and the Square O Design, together or apart, are trademarks or registered trademarks of OpenStack Foundation in the United States and other countries, and are used with the OpenStack Foundation’s permission. Red Hat, Inc. is not affiliated with, endorsed by, or sponsored by the OpenStack Foundation or the OpenStack community.</small></p>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>  <!-- Pattern | raw_html -->
+
+<div class="rh-raw"         data-rh-unique-id="235941">
+        <section class="ux-band">
+    <div class="ux-band-container">
+        <div class="ux-group" data-ux-layout="stacked" data-ux-text-align="center">
+            <div class="ux-band-header">
+                <h2 class="ux-band-header-headline">There’s a lot more to do with Red Hat Data Services</h2>
+            </div>
+            <div class="ux-group" data-ux-special-layout="gallery-flex">
+                <div class="ux-cta">
+                    <a class="ux-cta-link" data-ux-cta-type="ghost" href="http://redhatstorage.redhat.com/">The Red Hat Data Services blog</a>
+                </div>
+
+                <div class="ux-cta">
+                    <a class="ux-cta-link" data-ux-cta-type="primary" href="../../contact.html">Talk to a Red Hatter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </div>
+  
+  
+</article>
+
+</div>
+  </div>
+        
+  </div>
+
+  <footer>
+      <section class="rc-footer-menu" data-rc-toggle-id="footer-extended" >
+      <div class="container rc-footer-menu-container">
+        <nav class="row rc-footer-menu-about-items"><div class="rc-footer-menu-about-col foot-about foot-about"><div class="rc-footer-menu-list-header"><h3 class="rc-footer-menu-list-header-title">About</h3></div><p class="rc-footer-menu-about-description">We’re the world’s leading provider of enterprise open source solutions, using a community-powered approach to deliver high-performing Linux, cloud, container, and Kubernetes technologies. We help you standardize across environments, develop cloud-native applications, and integrate, automate, secure, and manage complex environments with award-winning support, training, and consulting services.</p><ul class="rc-footer-menu-about-list"><li><a href="../../about/company.html">Company information</a></li>
+<li><a href="../../jobs.html">Jobs</a></li>
+<li><a href="../../about/office-locations.html">Locations</a></li>
+<li><a href="../../about/development-model.html">Development model</a></li>
+<li><a href="../../events.html">Events</a></li>
+<li><a href="../../about/newsroom.html">Newsroom</a></li>
+<li><a href="../../blog.html">Blog</a></li>
+<li><a href="https://coolstuff.redhat.com/">Cool Stuff Store</a></li>
+</ul><div class="rc-footer-menu-social-links"><nav id="foot-social"><ul><li class="first leaf"><a href="http://www.linkedin.com/company/red-hat" class="icon-linkedin-sign"></a></li>
+<li class="leaf"><a href="http://www.youtube.com/user/RedHatVideos" class="icon-youtube"></a></li>
+<li class="leaf"><a href="https://www.facebook.com/redhatinc" class="icon-facebook"></a></li>
+<li class="last leaf"><a href="https://twitter.com/RedHat" class="icon-twitter"></a></li>
+</ul></nav></div></div>
+</nav>        <nav class="row rc-footer-menu-items"><div class="rc-footer-menu-col foot-products"><div class="rc-footer-menu-list-header" data-rc-state="closed" data-rc-toggle-visuals="xxs xs sm " aria-expanded="false" tabindex="0"><span class="rc-footer-menu-list-header-indicator" data-rc-indicator-symbol="plus" data-rc-hidden-at="lg "></span><h3 class="rc-footer-menu-list-header-title">Products</h3></div><ul class="rc-footer-menu-list" data-rc-toggle-target="xxs xs sm" data-rc-state="closed" data-rc-toggle="hide" aria-expanded="false"><li><a href="../../technologies/management/ansible.html">Red Hat Ansible Automation Platform</a></li>
+<li><a href="../../technologies/linux-platforms/enterprise-linux.html">Red Hat Enterprise Linux</a></li>
+<li><a href="../../technologies/cloud-computing/openshift.html">Red Hat OpenShift</a></li>
+<li><a href="../../technologies/cloud-computing/openshift-data-foundation.html">Red Hat OpenShift Data Foundation</a></li>
+<li><a href="../../technologies/linux-platforms/openstack-platform.html">Red Hat  OpenStack Platform</a></li>
+<li><a href="../../technologies/all-products.html">See all products</a></li>
+</ul></div>
+<div class="rc-footer-menu-col foot-tools"><div class="rc-footer-menu-list-header" data-rc-state="closed" data-rc-toggle-visuals="xxs xs sm " aria-expanded="false" tabindex="0"><span class="rc-footer-menu-list-header-indicator" data-rc-indicator-symbol="plus" data-rc-hidden-at="lg "></span><h3 class="rc-footer-menu-list-header-title">Tools</h3></div><ul class="rc-footer-menu-list" data-rc-toggle-target="xxs xs sm" data-rc-state="closed" data-rc-toggle="hide" aria-expanded="false"><li><a href="https://sso.redhat.com/">My account</a></li>
+<li><a href="https://access.redhat.com/">Customer support</a></li>
+<li><a href="https://connect.redhat.com/">Partner resources</a></li>
+<li><a href="https://developers.redhat.com/">Developer resources</a></li>
+<li><a href="../../services/training-and-certification.html">Training and certification</a></li>
+<li><a href="https://catalog.redhat.com/">Red Hat Ecosystem Catalog</a></li>
+<li><a href="../../resources.html">Resource library</a></li>
+</ul></div>
+<div class="rc-footer-menu-col foot-try-buy-sell"><div class="rc-footer-menu-list-header" data-rc-state="closed" data-rc-toggle-visuals="xxs xs sm " aria-expanded="false" tabindex="0"><span class="rc-footer-menu-list-header-indicator" data-rc-indicator-symbol="plus" data-rc-hidden-at="lg "></span><h3 class="rc-footer-menu-list-header-title">Try, buy, sell</h3></div><ul class="rc-footer-menu-list" data-rc-toggle-target="xxs xs sm" data-rc-state="closed" data-rc-toggle="hide" aria-expanded="false"><li><a href="../../products/trials.html">Product trial center</a></li>
+<li><a href="../../store.html">Red Hat Store</a></li>
+<li><a href="https://marketplace.redhat.com/">Red Hat Marketplace</a></li>
+<li><a href="../../about/japan-buy.html">Buy online (Japan)</a></li>
+<li><a href="http://redhat.force.com/finder/">Find a partner</a></li>
+<li><a href="../../contact.html">Contact sales</a></li>
+<li><a href="../../services/training-and-certification/contact-us.html">Contact training</a></li>
+<li><a href="../../services/consulting.html#contact-form">Contact consulting</a></li>
+</ul></div>
+<div class="rc-footer-menu-col foot-communicate"><div class="rc-footer-menu-list-header" data-rc-state="closed" data-rc-toggle-visuals="xxs xs sm " aria-expanded="false" tabindex="0"><span class="rc-footer-menu-list-header-indicator" data-rc-indicator-symbol="plus" data-rc-hidden-at="lg "></span><h3 class="rc-footer-menu-list-header-title">Communicate</h3></div><ul class="rc-footer-menu-list" data-rc-toggle-target="xxs xs sm" data-rc-state="closed" data-rc-toggle="hide" aria-expanded="false"><li><a href="../../contact.html">Contact us</a></li>
+<li><a href="../../feedback.html">Feedback</a></li>
+<li><a href="../../about/social.html">Social</a></li>
+<li><a href="https://engage.redhat.com/Global-Preference-Center?newsletter=RH-Shares&amp;intcmp=7016000000154xCAAQ">Red Hat newsletter</a></li>
+</ul></div>
+</nav>      </div>
+    </section>
+        <section class="rc-footer-traditional">
+      <div class="container rc-footer-traditional-container">
+        <section class="rc-footer-traditional-section">
+          <div class="rc-footer-traditional-logo">
+            <div class="row">
+              <a href="https://www.redhat.com/en">
+                <img src="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo.svg" class="screen" title="Red Hat" />
+                </a>
+            </div>
+          </div>
+          <div id="legal" class="rc-footer-traditional-legal">
+            <div class="row">
+              <div class="copyright">©2021 Red Hat, Inc.</div>
+              <div >
+                <ul class="menu"><li class="first leaf"><a href="../../about/privacy-policy.html">Privacy statement</a></li>
+<li class="leaf"><a href="../../about/terms-use.html">Terms of use</a></li>
+<li class="leaf"><a href="../../about/all-policies-guidelines.html">All policies and guidelines</a></li>
+<li class="leaf"><a href="../../about/digital-accessibility.html">Digital accessibility</a></li>
+<li class="last leaf"><span id="teconsent" class="nolink">|</span></li>
+</ul>              </div>
+            </div>
+                      </div>
+          <div class="rc-footer-traditional-event-logo">
+            <div id="block-block-5" class="block block-block block-footer-promote">
+
+      
+  <a href="https://www.redhat.com/summit"><img src="https://www.redhat.com/cms/managed-files/Logo-Red_Hat-Summit-A-Standard-RGB-02_0.svg" alt="Red Hat Summit" style="float: right;" width="72px"></a>
+</div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </footer>
+        <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+  if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
+      _satellite.pageBottom();
+  }
+//--><!]]>
+</script>
+    </div>
+  <script type="text/javascript"  src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"></script></body>
+
+<!-- Mirrored from www.redhat.com/en/topics/data-storage/file-block-object-storage by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:34:04 GMT -->
+</html>

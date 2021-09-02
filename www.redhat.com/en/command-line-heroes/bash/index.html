@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    
+<!-- Mirrored from www.redhat.com/en/command-line-heroes/bash/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:30:43 GMT -->
+<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73203609-3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-73203609-3');
+        </script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>The Command Line Heroes BASH!</title>
+        <link rel="stylesheet" href="assets/styles.css">
+    
+                    <script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"751263",ustr:"",originlat:"0",clientrtt:"57",ghostip:"23.44.130.132",ipv6:false,pct:"10",clientip:"173.70.97.51",requestid:"6807742",region:"42397",protocol:"",blver:14,akM:"dscx",akN:"ae",akTT:"O",akTX:"1",akTI:"6807742",ai:"477224",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
+                    </head>
+    <body>
+        <canvas id="game-canvas"></canvas>
+        <img id="test-pattern" src="assets/textures/clh_test_pattern.jpg">
+        <div id="game">
+            <div id="intro" v-bind:class="{ show: state == 'loading' }">
+                <img class="logo" src="assets/clh-logo-white.svg">
+                <span>
+                    <span v-if="isMobile">Apologies, mobile is not yet supported, but <a href="https://github.com/CommandLineHeroes/clh-bash">PRs are welcome</a>! </span>
+                    <span v-else>DOWNLOADING</span>
+                    <span v-if="!isMobile" class="cursor">█</span>
+                </span>
+            </div>
+            <div v-bind:class="{ show: showTitle }" id="title-screen">
+                <img v-bind:class="{ show: showTitle }" id="clh-logo" src="assets/clh-logo-white.svg">
+                <p v-bind:class="{ show: showTitle }" id="instructions">
+                    Test your command line skills.<br>
+                    You have {{parseInt(gameDuration/1000)}} seconds to type commands from:
+                </p>
+                <p v-bind:class="{ show: showTitle }" id="langs">
+                    BASH &middot; JAVASCRIPT &middot; PYTHON &middot; HTML5
+                </p>
+                <p v-bind:class="{ show: showTitle }" id="tagline">
+                    Set the terminal on fire.  Type PLAY to begin.
+                </p>
+                <p v-bind:class="{ show: showTitle }" id="listen">
+                    Listen to the podcast at <a target=_blank href="../../command-line-heroes.html">redhat.com/commandlineheroes</a>.<br><br>
+                    <a href="#credits" onclick="showCredits()">Credits</a> &middot; <a target="_blank" href="https://github.com/CommandLineHeroes/clh-bash">GitHub</a>
+                </p>
+                <p v-bind:class="{ show: showTitle }" id="credits">
+                    Created by <a href="https://clayto.com/">Michael Clayton</a>, <a href="http://jaredsprague.com/">Jared Sprague</a>, and the <a href="../index.html">Command Line Heroes</a> team and community.<br><br>
+                    Soundtrack: <a href="https://waveshaper1.bandcamp.com/track/66-mhz">"66 MHZ"</a> by <a href="https://waveshaper1.bandcamp.com/">Waveshaper</a>.<br><br>
+
+                    Special thanks: Dan Courcy &middot; Eric Kramer &middot; Open-source contributors &middot; <a href="https://discord.gg/DYEGmFc">Command Line Heroes Discord</a> community<br><br>
+
+
+                    <a href="#instructions" onclick="showInstructions()">Back</a>
+                </p>
+            </div>
+            <textarea
+                v-model="cmd"
+                v-on:keydown="handleKeypress"
+                v-on:keyup="handleKeyup"
+                v-on:paste="handlePaste"
+                ref="cmd"
+                spellcheck=false
+                type="text"
+                name="cmd"
+                id="cmd"></textarea>
+        </div>
+        <script src="node_modules/howler/dist/howler.min.js"></script>
+        <script src="node_modules/ismobilejs/dist/isMobile.min.js"></script>
+        <script src="node_modules/three/build/three.min.js"></script>
+        <script src="node_modules/three/examples/js/libs/stats.min.js"></script>
+        <script src="node_modules/vue/dist/vue.min.js"></script>
+        <script src="node_modules/lodash/lodash.min.js"></script>
+        <script src="node_modules/%40tweenjs/tween.js/src/Tween.js"></script>
+        <script type="module" src="src/main.js"></script>
+    <script type="text/javascript"  src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"></script></body>
+
+<!-- Mirrored from www.redhat.com/en/command-line-heroes/bash/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:30:46 GMT -->
+</html>

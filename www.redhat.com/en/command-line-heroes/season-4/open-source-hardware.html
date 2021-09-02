@@ -1,0 +1,2309 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  
+<!-- Mirrored from www.redhat.com/en/command-line-heroes/season-4/open-source-hardware by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:28:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!--[if IE]><![endif]-->
+<script id="trustarc" type="text/javascript" src="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"></script>
+<script id="ddo" type="text/javascript">
+<!--//--><![CDATA[//><!--
+    var digitalData = {"cart":[],"event":[],"listing":{"browseFilter":"","query":"","queryMethod":"","refinementType":"","refinementValue":"","resultCount":"","searchType":""},"page":{"attributes":{"queryParameters":"","referringSearchEngine":"","analyticsTitle":"brand affinity | command line heroes season 4 episode 6","taxonomyPageSubType":["28051"],"taxonomyRegion":["4521"],"taxonomyMetaHreflang":["29051"]},"category":{"contentType":"","keyPage":"false","keyPageType":"","pageType":"pattern_template","primaryCategory":"command-line-heroes","subCategories":["season-4","open-source-hardware"]},"pageInfo":{"cms":"RH CMS 2021.12.0","contentFindingMethod":"","contentID":"415871","contentPortal":"","destinationURL":"https:\/\/www.redhat.com\/en\/command-line-heroes\/season-4\/open-source-hardware","errorMessage":"","errorType":"","language":"en","pageName":"","referringDomain":"","referringURL":"","sysEnv":"","template":"","title":"Command Line Heroes: Season 4: Open Source Hardware: Makers Unite"}},"product":[],"user":[{"profile":[{"profileInfo":{"daysSinceLastPurchase":"","demandbaseSID":"","eloquaGUID":"","lastLoginDate":"","lastPurchaseDate":"","loggedIn":"false","profileID":"","subscriptionFrequency":"","subscriptionLevel":""}}]}]};
+    !function(a,b,c){"use strict";function d(a){var c="; "+b.cookie,d=c.split("; "+a+"=");if(2===d.length)return d.pop().split(";").shift()}if(b.referrer){var e=b.createElement("a");e.href=b.referrer,c.page.pageInfo.referringDomain=e.hostname,c.page.pageInfo.referringURL=e.href}c.page.pageInfo.sysEnv=a.innerWidth<=768?"tablet":"desktop";var f=c.user[0].profile[0].profileInfo,g=d("rh_elqCustomerGUID");g&&(f.eloquaGUID=g);var h=d("rh_user");if(h){var i=h.split("\\|");i[0]&&(f.loggedIn="true")}var j=d("s_dmdbase");j&&(f.demandbaseSID=j)}(window,document,digitalData);
+//--><!]]>
+</script>
+<script src="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm.js" data-domain="www.redhat.com"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-functional.js" class="trustecm" data-tracker-type="functional"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-advertising.js" class="trustecm" data-tracker-type="advertising"></script><script id="dpal" type="text/javascript" src="../../../dtm.js"></script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="en" />
+<link href="open-source-hardware.html" rel="alternate" hreflang="en" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "availableLanguages": {
+        "zh": {
+            "@type": "Language",
+            "name": "简体中文",
+            "href": "/zh/command-line-heroes/season-4/open-source-hardware"
+        },
+        "en": {
+            "@type": "Language",
+            "name": "English",
+            "href": "/en/command-line-heroes/season-4/open-source-hardware",
+            "current_lang": true
+        },
+        "fr": {
+            "@type": "Language",
+            "name": "Français",
+            "href": "/fr/command-line-heroes/season-4/open-source-hardware"
+        },
+        "de": {
+            "@type": "Language",
+            "name": "Deutsch",
+            "href": "/de/command-line-heroes/season-4/open-source-hardware"
+        },
+        "it": {
+            "@type": "Language",
+            "name": "Italiano",
+            "href": "/it/command-line-heroes/season-4/open-source-hardware"
+        },
+        "ja": {
+            "@type": "Language",
+            "name": "日本語",
+            "href": "/ja/command-line-heroes/season-4/open-source-hardware"
+        },
+        "ko": {
+            "@type": "Language",
+            "name": "한국어",
+            "href": "/ko/command-line-heroes/season-4/open-source-hardware"
+        },
+        "pt-br": {
+            "@type": "Language",
+            "name": "Português",
+            "href": "/pt-br/command-line-heroes/season-4/open-source-hardware"
+        },
+        "es": {
+            "@type": "Language",
+            "name": "Español",
+            "href": "/es/command-line-heroes/season-4/open-source-hardware"
+        }
+    }
+}</script><meta name="last-publish-date" content="Tue, 25 Jun 2019 04:00:00 GMT" />
+<meta name="node-type" content="pattern_template" />
+<meta name="source" content="rhdc_drupal" />
+<meta name="rhdc_key" content="338744e09e317139a98b2a7910a9c748" />
+<meta name="taxonomy-region" content="Global" />
+<meta name="taxonomy-region-tid" content="4521" />
+<meta name="taxonomy-page-sub-type" content="Brand affinity" />
+<meta name="taxonomy-page-sub-type-tid" content="28051" />
+<meta name="taxonomy-meta-hreflang" content="en" />
+<meta name="taxonomy-meta-hreflang-tid" content="29051" />
+<link rel="shortcut icon" href="https://www.redhat.com/misc/favicon.ico" type="image/x-icon" />
+<meta property="og:description" content="People never stop tinkering. Hardware hacking didn’t disappear after personal computers became mainstream. But it did change. A new generation of artists, designers, and activists are banding together to change the world—with open source hardware." />
+<meta name="description" content="People never stop tinkering. Hardware hacking didn’t disappear after personal computers became mainstream. But it did change. A new generation of artists, designers, and activists are banding together to change the world—with open source hardware." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="image_src" href="../../../cms/managed-files/og-clh-s4-1200x675.png" />
+<link rel="canonical" href="open-source-hardware.html" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.redhat.com/en/command-line-heroes/season-4/open-source-hardware" />
+<meta property="og:title" content="Command Line Heroes: Season 4: Open Source Hardware: Makers Unite" />
+<meta property="og:image" content="https://www.redhat.com/cms/managed-files/og-clh-s4-1200x675.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Command Line Heroes: Season 4: Open Source Hardware: Makers Unite" />
+<meta name="twitter:image" content="https://www.redhat.com/cms/managed-files/og-clh-s4-1200x675.png" />
+    <title>Command Line Heroes: Season 4: Open Source Hardware: Makers Unite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://static.redhat.com/">
+    <link rel="preload" href="https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/fonts/web_icon/rh-web-iconfont.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatTextVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatDisplayVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__k9aoxkMyjUtSX9AXGCPExPgTYjM0Xv5OYNfbFGDRafY__N9sjJtGj85lXtvOptw2e_YZ01FXbTXcJywP8EaKBijU__uaCwYofnUZLAnB7x3Q6WyVKH" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/all/libraries/webrh/dist/css/webrh.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__cxslYvmVeKFG0RwKl9kcXSrmb2x2VtvkIw-OLkwF8jU___pPNjqO-hMXRnx5HlJupeXtrvaj0Ilhs-XAVxMYy0CM__uaCwYofnUZLAnB7x3Q6WyVKH" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__wpajrf8pWA19ifT2xQXPB3J1TByoCXqZVtt6kXfl4Ow__PFQbFxxWsZl0yTnfrpPiA-o5Pvtu-CXh7nICx08JW0c__uaCwYofnUZLAnB7x3Q6WyVKH" media="print" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/css/trustecm.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/redhat-theme/6/advanced-theme.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/red-hat-font.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/font-awesome/4.7.0/css/font-awesome.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/vendors/plyr.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/vendors/slick.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/styles.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/projects/clh-s4-episodes.min6eda.css?qy3uiv" media="all" />
+    <!--[if lt IE 9]>
+      <script src="/profiles/rh/themes/redhatdotcom/js/selectivizr-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/nwmatcher-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/respond.js" type="text/javascript"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../../../sites/default/files/advagg_js/js__B6wED6l5P_XUdxVmb7Nvh5d9zn074QukFqJa2HLXS6c__VzWs8XZBHHsPW77egi-W-FQw2mAEr5F-GgCJU0wn3Nc__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.vendor.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.webcomponents.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__pDOiYGKaYbdKNp1gvMxR0fWhWZnfUemYDUhADyCn3oM__jCrCuWCJIPYPe1FzZoUvsJWEjkNMmRIQHYek1h7idBE__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.rh = window.rh || {}; window.rh.drupalTrustArcLoaded = true;
+//--><!]]>
+</script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__5nUyGFdhKMGscC9VhukG-UTAhz8BEdhsa8koVlLwAyQ__Lz8gDLbd5fTco1AnHaCqhSeYJB5o0QUXAimK7JOyRNI__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"redhatdotcom","theme_token":"RY02xBbp8WIbRDXSgYg4EPr8sduiyBidSL597Q9iUnk","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.webcomponents.min.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.min.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/marketing\/latest\/trustarc\/trustecm\/css\/trustecm.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-theme\/6\/advanced-theme.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-font\/4\/webfonts\/red-hat-font.min.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-iconfont.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-web-iconfont.css":1,"sites\/all\/libraries\/patternfly-elements\/pfe-styles\/pfe-typography-classes.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/site-switcher.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/chrome.css":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/print.css":1,"\/\/static.redhat.com\/libs\/font-awesome\/4.7.0\/css\/font-awesome.min.css?qy3uiv":1,"\/ux\/webdms\/css\/vendors\/plyr.min.css?qy3uiv":1,"\/ux\/webdms\/css\/vendors\/slick.min.css?qy3uiv":1,"\/ux\/webdms\/css\/styles.min.css?qy3uiv":1,"\/ux\/webdms\/css\/projects\/clh-s4-episodes.min.css?qy3uiv":1},"js":{"\/ux\/webdms\/js\/vendors\/jquery.waypoints.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/viewport.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/plyr.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/slick.min.js?qy3uiv":1,"\/ux\/webdms\/js\/scripts.min.js?qy3uiv":1,"\/ux\/webdms\/js\/projects\/clh.min.js?qy3uiv":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/rh\/modules\/redhat_www_ddo\/dist\/post-jquery.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.vendor.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.webcomponents.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"profiles\/rh\/modules\/redhat_www_menu\/js\/rh_nav.js":1,"profiles\/rh\/modules\/redhat_www_share\/js\/rh_share.js":1,"profiles\/rh\/modules\/redhat_www_utility\/js\/redhat_www_utility.js":1,"sites\/all\/libraries\/jquery-cookie\/jquery.cookie-1.4.1.min.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.pushmenu.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery-scrolltofixed.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/rh-chrome.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.fitvids.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.switchIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.viewport\/jquery.viewport.min.js":1}},"redhat_www_menu":{"path":"node\/415871"},"rh_analytics_enabled":false});
+//--><!]]>
+</script>
+    <noscript>
+        <link href="../../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.noscript.min.css" rel="stylesheet" >
+    </noscript>
+  </head>
+  <body unresolved class="bands-index html not-front not-logged-in no-sidebars page-node page-node- page-node-415871 node-type-pattern-template i18n-en clh-s4e6 " >
+    <div class="page">
+            <!-- Legacy migrated page support with body.migrated-page-hero -->
+<div class="header-background-image fts-migrated-bg">
+</div>
+
+  <div id="main-content">
+                      <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+      
+  <article class="node-415871 node node-pattern-template clearfix">
+
+  
+    <!-- Pattern | raw_html -->
+
+<article class="node-shared">
+      <header id="top" class="dms-band clh-nav-top py-2">
+    <div class="container text-white">
+        <div class="row d-flex align-items-center">
+            <div class="col-6">
+                <a href="../../command-line-heroes.html" title="Command Line Heroes">
+                    <img class="img-fluid svg svg-white" src="https://www.redhat.com/cms/managed-files/logo-command-line-heroes.svg" width="166" height="42" alt="Command Line Heroes logo">
+                </a>
+            </div>
+
+            <div class="col-6 clh-nav-toggle-wrapper">
+                <span class="text-monospace text-right font-size-16 d-inline-block">Subscribe<br/>& more</span>
+
+                <a href="#" class="btn btn-toggle" data-toggle="nav-shelf">
+                    <div class="d-inline-block">
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="dms-band clh-nav-shelf text-white py-0">
+    <div class="nav-container pb-4">
+        <div id="CLHNav" class="accordion">
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-subscribe.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSubscribe">
+                    <p>Subscribe</p>
+                </button>
+                <div id="clhSubscribe" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <p>Subscribe to the podcast to receive new episodes as soon as we release them</p>
+                    <div class="row pb-2">
+                        <div class="col-6 mb-2">
+                            <a href="http://geo.itunes.apple.com/podcast/us/id1319947289?mt=2&amp;at=1010lbVy&amp;ct=redhatclh_website" target="_blank" title="Listen on Apple Podcasts">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-apple.png" alt="Listen on Apple Podcasts">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://www.google.com/podcasts?feed=aHR0cHM6Ly9mZWVkcy5wYWNpZmljLWNvbnRlbnQuY29tL2NvbW1hbmRsaW5laGVyb2Vz" target="_blank" title="Listen on Google Podcasts">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-google.png" alt="Listen on Google Podcasts">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://www.stitcher.com/s?fid=159833&amp;refid=stpr" target="_blank" title="Listen on Stitcher">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-stitcher.png" alt="Listen on Stitcher">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://open.spotify.com/show/4Jgtgr4mHXNDyLldHkfEMz" target="_blank" title="Listen on Spotify">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-spotify.png" alt="Listen on Spotify">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://feeds.pacific-content.com/commandlineheroes" target="_blank" title="Subscribe via RSS Feed">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-rss.png" alt="Subscribe via RSS Feed">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-about.jpg">
+                <button href="../about.html" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhAbout">
+                    <p>About the podcast</p>
+                </button>
+                <div id="clhAbout" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <p>Discover Red Hat’s original podcast about the people who transform technology from the command line up. Subscribe to our newsletter for commentary from the Command Line Heroes team—and links to take a closer look at the topics we cover.</p>
+                    
+                    <p><a href="../about.html" class="btn btn-primary">Learn about the show</a></p>
+                    <p class="mb-0 pb-4"><a href="https://www.redhat.com/forms/?config=19411" class="btn btn-outline-white">Get the newsletter</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s1.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason1">
+                    <p>Season 1</p>
+                </button>
+                <div id="clhSeason1" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-1/os-wars-part-1.html" title="OS Wars_Part 1">OS Wars_part 1</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/os-wars-part-2-rise-of-linux.html" title="OS Wars_Part 2">OS Wars_part 2</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/agile-revolution.html" title="The Agile_Revolution">The Agile_Revolution</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/devops-tear-down-that-wall.html" title="DevOps_Tear Down That Wall">DevOps_Tear Down That Wall</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/the-containers-derby.html" title="The Containers_Derby">The Containers_Derby</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/crack-the-cloud-open.html" title="Crack the Cloud_Open">Crack the Cloud_Open</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/days-of-future-open.html" title="Days of Future_Open">Days of Future_Open</a>
+                        </li>
+                    </ol>
+                  <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-1.html" title="Explore season 1">Explore Season 1</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s2.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason2">
+                    <p>Season 2</p>
+                </button>
+                <div id="clhSeason2" class="accordion-panel collapse" data-parent="#CLHNav">
+
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-2/press-start.html" title="Press Start">Press Start</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/hello-world.html" title="Hello, World">Hello, World</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/ready-to-commit.html" title="Ready to Commit">Ready to Commit</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/fail-better.html" title="Fail Better">Fail Better</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/the-one-about-devsecops.html" title="The One About DevSecOps">The One About DevSecOps</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/the-data-explosion.html" title="The Data Explosion">The Data Explosion</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/at-your-serverless.html" title="At Your Serverless">At Your Serverless</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/open-curiosity.html" title="Open Curiosity">Open Curiosity</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/developer-advocacy-roundtable.html" title="Bonus_Developer Advocacy Roundtable">Bonus_Developer Advocacy Roundtable</a>
+                        </li>
+                    </ol>
+                   <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-2.html" title="Explore season 2">Explore Season 2</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s3.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason3">
+                    <p>Season 3</p>
+                </button>
+                <div id="clhSeason3" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-3/pythons-tale.html" title="Python's Tale">Python's Tale</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/learning-the-basics.html" title="Learning the BASICs">Learning the BASICs</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/creating-javascript.html" title="Creating JavaScript">Creating JavaScript</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/diving-for-perl.html" title="Diving for Perl">Diving for Perl</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/the-infrastructure-effect.html" title="The Infrastructure Effect">The Infrastructure Effect</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-3/heroes-in-a-bash-shell.html" title="Heroes in a Bash Shell">Heroes in a Bash Shell</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/talking-to-machines.html" title="Talking to Machines">Talking to Machines</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-3/the-c-change.html" title="The C Change">The C Change</a>
+                        </li>
+                    </ol>
+                   <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-3.html" title="Explore season 3">Explore Season 3</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s4.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason4">
+                    <p>Season 4</p>
+                </button>
+                <div id="clhSeason4" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="minicomputers.html" title="Minicomputers">Minicomputers</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="mainframes.html" title="Mainframes">Mainframes</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="personal-computers.html" title="Personal Computers">Personal Computers</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="floppies.html" title="Floppies">Floppies</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="smarter-phones.html" title="Smarter Phones">Smarter Phones</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="open-source-hardware.html" title="Open Source Hardware">Open Source Hardware</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="consoles.html" title="Consoles">Consoles</a>
+                        </li>
+
+                         <li class="mb-2">
+                            <a href="steve-wozniak.html" title="Steve Wozniak">Steve Wozniak</a>
+                        </li>
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-4.html" title="Explore season 4">Explore Season 4</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s5.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason5">
+                    <p>Season 5</p>
+                </button>
+                <div id="clhSeason5" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-5/becoming-a-coder.html" title="Becoming a Coder">Becoming a Coder</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-5/where-coders-code.html" title="Where Coders Code">Where Coders Code</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-5/what-kind-of-coder-will-you-become.html" title="What Kind of Coder Will You Become?">What Kind of Coder Will You Become?</a>
+                        </li>
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-5.html" title="Explore season 5">Explore Season 5</a></p>
+ 
+                </div>
+            </div>
+
+                        <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s6.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason6">
+                    <p>Season 6</p>
+                </button>
+                <div id="clhSeason6" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-6/jerry-lawson.html" title="Jerry Lawson">Jerry Lawson</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/gladys-west.html" title="Dr. Gladys West">Dr. Gladys West</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/mark-dean.html" title="Dr. Mark Dean">Dr. Mark Dean</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/marc-hannah.html" title="Dr. Marc Hannah">Dr. Marc Hannah</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/clarence-ellis.html" title="Dr. Clarence Ellis">Dr. Clarence Ellis</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/roy-clay.html" title="Roy Clay">Roy Clay</a>
+                        </li>
+                       <li class="mb-2">
+                            <a href="../season-6/gladys-perkins.html" title="Gladys Perkins">Gladys Perkins</a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="../season-6/arlan-hamilton.html" title="Arlan Hamilton">Arlan Hamilton</a>
+                        </li>
+            
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link text-monospace text-white" href="../season-6.html" title="Explore season 6">Explore Season 6</a></p>
+                </div>
+            </div>
+
+             <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/season-7_nav.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason7">
+                    <p>Season 7</p>
+                </button>
+                <div id="clhSeason7" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-7/dot-com.html" title="Connecting The Dot-Com">Connecting The Dot-Com</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/nsfnet.html" title="From NSF to ISP">From NSF to ISP</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/html.html" title="A Language for the Web">A Language for the Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/ux.html" title="Web UX Begins">Web UX Begins</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/shopping.html" title="Shopping for the Web">Shopping for the Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/search.html" title="Looking for Search">Looking for Search</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/world.html" title="The World of the World Wide Web">The World of the World Wide Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/bubble.html" title="After the Bubble">After the Bubble</a>
+                        </li>
+
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../../command-line-heroes.html" title="Explore season 5">Explore Season 7</a></p>
+ 
+                </div>
+            </div>
+
+        </div>
+        
+        <ul class="social-list list-inline list-unstyled pl-5 pl-sm-6 mt-1">
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F" target="_blank" title="Facebook" onclick="return !window.open(this.href, 'Facebook', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
+                    <span class="web-icon-facebook" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.twitter.com/share?url=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F&amp;text=An%20original%20podcast%20about%20the%20people%20who%20transform%20technology%20from%20the%20command%20line%20up.%20Presented%20by%20Red%20Hat." target="_blank" title="Twitter" onclick="return !window.open(this.href, 'Twitter', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
+                    <span class="web-icon-twitter" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F&amp;title=Command%20Line%20Heroes&amp;summary=Hear%20the%20epic%20true%20tales%20of%20how%20developers%2C%20programmers%2C%20hackers%2C%20geeks%2C%20and%20open%20source%20rebels%20are%20revolutionizing%20the%20technology%20landscape.%20Command%20Line%20Heroes%20is%20a%20new%20podcast%20hosted%20by%20Saron%20Yitbarek%20and%20produced%20by%20Red%20Hat.&amp;source=Red%20Hat" target="_blank" title="LinkedIn" onclick="return !window.open(this.href, 'LinkedIn', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')" aria-current="page">
+                    <span class="web-icon-linkedin" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="mailto:?subject=Command Line Heroes&body=Hear%20the%20epic%20true%20tales%20of%20how%20developers%2C%20programmers%2C%20hackers%2C%20geeks%2C%20and%20open%20source%20rebels%20are%20revolutionizing%20the%20technology%20landscape.%20Command%20Line%20Heroes%20is%20a%20new%20podcast%20hosted%20by%20Saron%20Yitbarek%20and%20produced%20by%20Red%20Hat. https://www.redhat.com/en/command-line-heroes" target="_blank" title="Email" aria-current="page">
+                    <span class="web-icon-envelope" aria-label="true"></span>
+                </a>
+            </li>
+        </ul>
+
+         <div class="language-switcher position-absolute bottom-0 right-0  w-100">
+            <div class="row justify-content-center mx-0">
+
+                <div class="col-6 text-center border-right border-black border-20 language-inactive">
+                    <a href="http://www.redhat.com/es/command-line-heroes" title="Command Line Heroes"><img class="img-fluid py-2" width="90" src="https://www.redhat.com/cms/managed-files/logo_clh-en-espanol_inactive.svg" alt="CLH en espanol logo"></a></div>
+
+                <div class="col-6 text-center language-active"><a href="../../command-line-heroes.html" title="Command Line Heroes"><img class="img-fluid pt-3 pb-2" width="130" src="https://www.redhat.com/cms/managed-files/logo_CLH_small.svg" alt="CLH logo"></a></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+</div>
+
+
+<div class="mb-6">&nbsp;</div>  
+  </article>
+  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-hero--episode pt-lg-0 pb-1 pb-lg-6">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-lg-6 pt-lg-8 pt-xl-11 reveal">
+                <h5 class="section-label mb-1 font-weight-light">Season 4, Episode 6</h5>
+
+                <h1 class="mb-lg-4 font-family-monospace font-size-28 font-size-lg-38">Open Source Hardware: Makers Unite</h1>
+
+                <div class="clh-audio plyr-theme">
+                    <audio src="https://chtbl.com/track/247G8/https://dts.podtrac.com/redirect.mp3/cdn.simplecast.com/audio/a88fbe/a88fbe81-5614-4834-8a78-24c287debbe6/84559c59-7868-461d-af3f-a002e1d0646f/s4e6-open-source-hardware-vfinal-20200306_tc.mp3" preload="none" controls></audio>
+                </div>
+
+                <a class="btn btn-link mt-2 mb-0 font-family-monospace text-white" href="#" title="Listen to this episode later" data-toggle="nav-shelf" data-toggle-panel="#clhSubscribe">Listen to this episode later</a>
+            </div>
+
+            <div class="col-12 col-lg-6 pt-lg-2 text-center reveal">
+                <img class="img-fluid" src="../../../cms/managed-files/img-clh-s4e6-hero-455x539.png" alt="Episode hero image">
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-notes py-0 pb-lg-8 bg-no-repeat bg-pos-ct" data-bg-image="../../../cms/managed-files/bkgd-clh-s4e6-notes-1370x381.png">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-12 col-lg-7 col-xl-6 mx-auto">
+                <ul class="nav nav-tabs mb-3 d-flex justify-content-center font-family-monospace">
+                    <li class="nav-item text-center">
+                        <a class="tab-show-notes nav-link mx-0 mr-md-6 p-0 font-size-22 text-white active" href="#show-notes" data-toggle="tab" title="Show notes">Show notes</a>
+                    </li>
+
+                    <li class="nav-item text-center">
+                        <a class="tab-transcript nav-link mt-2 mt-md-0 mx-0 p-0 font-size-22 text-white" href="#transcript-tray" data-toggle="tab" title="Transcript">Transcript</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="show-notes" class="tab-pane fade active show">
+                        <div class="row">
+                            <div class="col-12">
+                                <p>People never stop tinkering. Hardware hacking didn’t disappear after personal computers became mainstream. But it did change. A new generation of artists, designers, and activists are banding together to change the world—with open source hardware.</p>
+
+                                <p class="mb-lg-0">Hardware hacking used to be expensive and time-consuming. Adaptable microcontrollers are making tinkering much easier. But even as the barriers to entry started falling, the practices around selling hardware have continued to veer toward secrecy. Ayah Bdeir, Alicia Gibb, and Limor Fried are working to keep hardware open. These leaders share how they helped build the open source hardware movement, and navigated fierce disagreements to make engineering accessible to all.</p>
+
+                                <img class="img-fluid mt-4 mt-md-8 mx-auto d-block d-lg-none" src="../../../cms/managed-files/img-clh-s4e6-notes-326x159.png" alt="Episode notes image">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="transcript-tray" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-12">
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>00:00</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>It's September 22, 2010, the night before the first ever Open Hardware Summit taking place in New York City, and the two organizers behind the event are worried.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>00:13</strong> - <em>Alicia Gibb</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>There's always that nightmare, the night before that's like, "Oh my God, what if nobody shows up?"</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>00:20</strong> - <em>Ayah Bdeir</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>We were like, "Yeah, this will be like in a room. We'll have you know, maybe 30 people. We'll have, you know, sandwiches."</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>00:27</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Alicia Gibb and Ayah Bdeir had only met for the first time a few months back. Ayah had gathered together a small group to a workshop called Opening Hardware. Each of the attendees were involved in their own way in a burgeoning and exciting new development, the open source hardware movement. But this early community was pretty scattered and lacked structure, and everyone had a slightly different take on what open source hardware even meant. That's when Alicia and Ayah realized they needed to take this workshop to the next level.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>01:05</strong> - <em>Alicia Gibb</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>So she and I decided to join forces and take it one step further to an Open Hardware Summit, and involve a lot more people.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>01:12</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>With only a three-month window to prepare for the event, the pressure was on. But Ayah and Alicia, were excited to collaborate. And they wanted to see what could happen when a bunch of fiercely independent makers got together for the first time. But for the moment the clock was ticking away on the remaining hours left before that first summit. Then at 6 a.m. on September 23, the morning of the event, they received an email from someone at the venue.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>01:49</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Today's open source hardware is a fascinating branch of the larger open source movement. A branch that touches the fields of design and art, as much as it does engineering. In fact, this branch is a continuation of the early days of the hobbyist computer movement. Remember the Homebrew Computer Club world in episode 3? Hardware hacking didn't disappear after personal computing went mainstream. Even as computing became a big and a proprietary business, that love for tinkering with hardware and circuitry, that love for sharing your creations with other hobbyists, it never really went away. People never stopped tinkering, and today's open hardware culture has a lot in common with those early hobbyists. But at the helm of this particular branch of the open source movement is a whole new generation of developers and thinkers. People like Alicia Gibb and Ayah Bdeir. And a little later on, I'll introduce you to a third leader of the movement, Limor Fried. I'm Saron Yitbarek, and this is Command Line Heroes, an original podcast from Red Hat.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>03:09</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Back in the mid-2000s, the open source hardware community wasn't really much of a community. There were hackerspaces, sure. There, you could find people with a mind towards open source hardware. More and more of these spaces started to pop up all over the world, and one was located at MIT.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>03:32</strong> - <em>Ayah Bdeir</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>My name is Ayah Bdeir. I am the founder of littleBits. The group was really almost like a group of misfits from the Media Lab, where it was like artists and designers and activists that came together to use technology to make an impact in the world.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>03:54</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Ayah was part of this next generation of multidisciplinary makers, empowered by new hardware. Ayah is an engineer and interactive artist. She graduated in Beirut, with degrees in computer and communications engineering and sociology in 2004, and then from the MIT Media Lab in 2006.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>04:15</strong> - <em>Ayah Bdeir</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>I negotiated with my parents that if I had a degree in engineering, I could then do design, which is what I wanted to do. That was the deal.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>04:25</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Engineering tech was starting to make its way into non-engineering fields all over the world. In 2008, Ayah received a fellowship at Eyebeam Art and Technology Center. That's where she invented littleBits. littleBits are pre-engineered magnetic electronic bricks similar to Lego, except they contain lights, sound sensors, motors, solar panels.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>04:51</strong> - <em>Ayah Bdeir</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>And so you snap a light, an LED, to a battery—a light comes on. You put a light sensor in between. Now you've made a nightlight. You put a motor and two wheels on it, now you've made the light-activated car. You can put a BLE Bluetooth module on it. Now you can activate it with your phone, so you don't have to be an engineer. It takes you seconds to do it. They snap with magnets, so they're magical, and they sound beautiful when they snap.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>05:22</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Ayah had 2 goals: to make littleBits a company, and to make it open source. She wanted the engineering concepts to be accessible to everyone.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>05:32</strong> - <em>Ayah Bdeir</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>A lot of the work that existed at random IT was around open source software. There were a few people that were really interested in how does open source apply to architecture? How does open source apply to hardware? How does open source apply to electronics? It made sense that the world is full of these incredible ideas, incredible effort.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>05:51</strong> - <em>Ayah Bdeir</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>If everybody is always closing off their inventions and their IP, the world suffers. So for me, it was always interesting figuring out a way where you can be supporting yourself, and sustainable, and create strong businesses, but also be sharing knowledge.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>06:15</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>But littleBits also had to function as a business. Manufacturing, distribution, investment—each area had costs associated with them. How could she combine business objectives while at the same time making her hardware, the crux of her operation, open source? To help her figure this out, Ayah did a fellowship with Creative Commons, and used littleBits as a case study. That's when she decided to hold that workshop, Opening Hardware, back in early 2010.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>06:46</strong> - <em>Ayah Bdeir</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>We did a workshop where we were like, "What are the things that are important? Should we have a definition? Should we have a place where we meet? Do we need a website? What works? What doesn't work?" And around the same time, Alicia had been doing similar work as part of being at Bug Labs, another startup that wanted to be open source.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>07:08</strong> - <em>Alicia Gibb</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>I'm a big proponent to make sure that you're emotionally prepared to open source your hardware before doing it, because it kind of means that you're giving away your baby.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>07:17</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Alicia Gibb was working at an open hardware supplier called Bug Labs, as a researcher and prototyper. She had started out as a librarian.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>07:28</strong> - <em>Alicia Gibb</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Through getting my masters in library and information science, I ended up tripping down this weird path that led me to electronics. And I found that I really loved it and really enjoyed that feeling of when you light up an LED and you understand that you're making electrons do stuff. It's a little bit like you control this tiny part of the universe and it feels really powerful, and I just love that.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>07:51</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>As different as library science and open hardware may be, for Alicia, they share the same ethos.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>07:58</strong> - <em>Alicia Gibb</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>You are not a gatekeeper as a librarian. You are there to help people find the information they need. And so those roots really kind of paved the way for open source to be just obvious to me really.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>08:13</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Companies like Alicia's employer Bug Labs, were starting to understand the business opportunities that open source hardware could offer. Smaller companies could tap into a broader group of makers, a.k.a. customers, by going open source. Larger companies could open source designs to competitors, and still profit by supplying them with related components.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>08:39</strong> - <em>Alicia Gibb</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>My boss ended up asking me, "Look, there's got to be more people trying to do open source hardware than us. Do you think you can find those people and get everybody together?"</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>08:49</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>The seed for the future summit was planted with that conversation. So as Alicia started searching for other open source hardware makers, Ayah received the Creative Commons fellowship, and hosted the workshop.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>09:03</strong> - <em>Alicia Gibb</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>So this was the first time that I would get to meet Ayah in person. And I was pretty excited about it, because I had read her research and used it in my research when I was doing my thesis on Arduino. A lot of the people in the field I had either met or been on email lists or whatever.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>09:20</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>The people that Ayah gathered around the table at her workshop have gone on to become leaders in the open source hardware movement. Members of the Arduino team, founders of SparkFun and MakerBot, as well as one very interesting individual who named her hardware company after the world's first computer programmer.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>09:49</strong> - <em>Limor Fried</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Hello, welcome.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>09:50</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Hello Limor, how's it going?</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>09:52</strong> - <em>Limor Fried</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Hi Saron, it's good to meet you.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>09:54</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Nice to meet you as well. I went to visit Limor Fried in downtown Manhattan. Not only was Limor part of Ayah's workshop, she and Ayah were classmates at MIT when Limor was an engineering student back in the early 2000s.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>10:09</strong> - <em>Limor Fried</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>I like to take things apart. I never really had an urge to, for example, play music, right? Despite what my parents wanted me to do, which was practice violin. But what I really did like to do was play with electronics and computers and technology. Not so much put them back together. But as I got older, I learned a little bit more engineering and I would put things together, and not just take them apart. There's all these gears and motors and yeah, these are very beautiful, intricate dances of technology.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>10:37</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>At MIT, Limor learned not just how things are put together, but how to do it over and over again with consistency and precision. At the same time, something cool was happening. The advent of hardware hacking.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>10:53</strong> - <em>Limor Fried</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>In the decades before, you would take individual chips and you would wire them up, and you could build stuff, but it was extremely large, expensive and time consuming.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>11:03</strong> - <em>Limor Fried</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>...and then people kind of came to this idea of like, "Whoa, you can write code on a computer. Why don't we write code for electronic components?" I was starting to tinker around with electronics right at the same time when these very low-cost MAC controllers that were reprogrammable were coming into the market.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>11:20</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>The game changer was a microcontroller called the Arduino board created by an Italian guy named Massimo Banzi. He was researching new approaches to interactive design on an older device called the BASIC Stamp, but it was expensive and had a relatively weak computing power. It also wasn't MAC compatible, so Banzi and his team built a cheaper, more powerful microcontroller, which you could plug into any computer. They based the programming on a graphics language called Processing and they named their new board after King Arduin, a ruler of Italy in the 1000s. The Arduino was an inspiration for hardware hackers like Limor Fried.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>12:07</strong> - <em>Limor Fried</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Really, really powerful stuff because you can make your own products, which was something that was really not available. There's a lot of people out there who are software engineers, or who want to be software engineers, or want to be hardware engineers. And they may have a little bit of familiarity with computers' technology, but they don't realize, wow, you can actually make physical hardware. And I think for people who do a lot of typing in and like make boxes move on screens, which is a wonderful thing and I've done plenty of it myself, they're eventually like, "I'm really tired of just moving the CSS box on my screen. I want to make something that I can hold up, that can share it with other people."</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>12:43</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>At the time, this concept was so new, it wasn't being covered in Limor's engineering classes at MIT. So she taught herself on the side.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>12:53</strong> - <em>Limor Fried</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>I think I learned a lot from both. I'm glad I know how to take a Fourier transform, but I'm also really glad I stayed up late making a Parallel Port Pick programmer. Right? It's not something that was taught. Now it's actually in the course.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>13:07</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>So in 2005, instead of working on her thesis in her dorm room, Limor procrastinated, and she did that by tinkering. She surrounded herself with circuit boards and started making DIY MP3 players and portable video game players. Each time she finished a project, she shared the schematics online. Now get this. Her online tutorials became so popular that other makers started asking her if they could buy her custom microcontroller kits. At first, she refused. But then she realized she was onto something. So from her MIT dorm room, Limor started selling her circuit boards and schematics to other hobbyists. She was inspired by the Free Software Foundation and the Electronic Frontier Foundation.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>13:58</strong> - <em>Limor Fried</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Freedom to modify, freedom to reuse. Just like you can buy tools at a hardware store, they don't say, "Here, sign this license agreement. You can only use this hammer to put up a painting and you can't use it to build a house. You have to buy the pro hammer for that." But yet, that's kind of where we're at with software, that we're very aware that this was a future that was going to happen if we didn't give people freedom to use the software that they wrote and other people wrote together in a communal fashion.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>14:26</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>What they were doing for software, she wanted to do for hardware. She wanted to champion the kind of hardware you could make with the Arduino board, the kind of hardware you can make in your dorm room. But to push that vision forward, Limor needed to be open, needed to attract and teach other makers. And soon, there need to be protections for all that open hardware. Back to my visit with Limor.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>14:56</strong> - <em>Limor Fried</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Well, we're here in downtown Manhattan at our 50,000 square-foot facility where we do manufacturing, production, testing, programming, design, and of course, a little bit of command line as well.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>15:09</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>So yeah, it's a far cry from that tiny dorm room where she started her company in 2005. Limor's business selling kits to hobbyists has grown massively into Adafruit Industries. It's named after Ada Lovelace, an English mathematician who conceptualized the world's first computer program back in the 19th century.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>15:31</strong> - <em>Limor Fried</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>We are producing and manufacturing open source hardware that has open source firmware and software inside of it. This is like an open source Willy Wonka Wonderland.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>15:41</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>It's like a Disneyland.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>15:41</strong> - <em>Limor Fried</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Yes. People say that.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>15:42</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>The Disneyland for hardware. The Adafruit factory opened in 2012. As we toured it, Limor showed me her stenciling machine, which outlines where on the board the various components will go.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>15:56</strong> - <em>Limor Fried</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>So your cell phone, your laptop, any piece of electronic or GPS, little toys you're going to give away in the holidays, a lot of those contain electronics, and they're manufactured on a pick-and-place line. And what a pick-and-place line does is they pick up very small surface mount components and they place them. Thus, the name pick-and-place.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>16:19</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>The Pick operating system consists of a database, dictionary, query language, procedural language, peripheral management, multi-user management, and a compiled BASIC programming language.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>16:33</strong> - <em>Limor Fried</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Yeah. So this is a thin piece of metal, and you can see the little laser cut holes in it.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>16:38</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Yeah.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>16:39</strong> - <em>Limor Fried</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>They look quite beautiful like lace.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>16:41</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>It's really pretty.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>16:42</strong> - <em>Limor Fried</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Yeah. There, again, the pattern that you see here on a circuit board matches that lace on the stencil. So after the pick-and-places, all the components are placed down on the circuit board. They go through this oven.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>16:56</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Okay.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>16:56</strong> - <em>Limor Fried</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Which is basically just like those bagel conveyors at the deli.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>17:00</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>It's kind of like a little city, it looks like.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>17:01</strong> - <em>Limor Fried</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Yes. This is...</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>17:03</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Limor sees the nature of hardware as historically open in general. Unlike software, hardware has always been more open to a point. Schematics were routinely included when you bought mechanical products, even electronic products, in case you had to repair them.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>17:20</strong> - <em>Limor Fried</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>We didn't really have open source hardware then, but everything, you could just pop it open with a screwdriver. So in case, it was sort of self-documenting. You wouldn’t be able to fix your Apple II floppy disk drive without the schematics, so digging schematics. And nowadays, it's not true anymore. Nowadays, your hardware comes in a beautiful sleek glass rectangle. And so that's why I think we had to come up with something that allowed people to share hardware because the era of sharing hardware voluntarily was sort of ending.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>17:53</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Limor, Ayah, Alicia and the other open hardware devotees at that Creative Commons workshop came together at a crucial time when access to how hardware was put together was drying up. If they wanted to ensure the future of an open source hardware community, one that could move beyond hobby hacking to become a sustainable movement, they would need to come together as a more focused collective with rules, definitions, and standards.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>18:22</strong> - <em>Limor Fried</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Open source communities are like precious delicate jewels. A little tick and they can just shatter. It's made of people, people. We write the code, we support it, we use it, we document it. Releasing code is a very personal thing. You're showing people, here's how I think, here's how I work, here's how my brain is organized. And if it's not a healthy place to do that, people aren't going to be free to express themselves through the code that they release.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>18:51</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>What happened next? What happened when a generation of open hardware makers left their dorm rooms and hackerspaces and met each other would lay the groundwork for a movement. It's early morning on September 23, 2010. In a few hours, Alicia Gibb and Ayah Bdeir would welcome attendees to the first ever Open Hardware Summit. They managed to create and plan a brand new event for a whole new generation of makers in 3 short months. But would they come? At 6:00 that morning, they received an email from their contact that the venue, to their surprise it said...</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>19:37</strong> - <em>Alicia Gibb</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>There's a line out the door already of people waiting to get in. And the event doesn't start till 9:00 or something and it was 6:00 AM and people were already there.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>19:48</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>At that inaugural summit in 2010, 320 people crowded the hall.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>19:55</strong> - <em>Alicia Gibb</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>We were absolutely unaware of how big the community was. And it still floors me how international the community is. At one point, somebody wanted to send us a donation from Thailand. And so they sent us cash, a note from Thailand. And it's like wow, people in Thailand believe in us so much that they're going to send us cash through the mail.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>20:16</strong> - <em>Ayah Bdeir</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>And I kind of looked around the room and I was like, "Oh, this is a moment." There is something going on in this room that is going to be a historical moment and I felt it at the time. And just the kind of support we got during and afterwards from people that wanted to sponsor, people that wanted to speak next year.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>20:34</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Before its first year, Alicia and Ayah knew their main goal would be to develop a working definition of open hardware.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>20:42</strong> - <em>Alicia Gibb</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>There were really two reasons that we needed a definition. The first was to get the community on the same page so that people weren't assuming that you can put something out there as open source hardware, but then say, "Oh, but you... There's a noncommercial clause to this." You have to be able to resell the hardware, especially because hardware takes money to mine the parts out of the ground. So there were disagreements on whether or not people needed to share their routing traces, or if just the schematic was enough, or if you needed to open the board file and things like that. "Wait, does this fit with open source hardware or not? Because we control the chip, but we don't open source the chip."</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>21:23</strong> - <em>Alicia Gibb</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>And then the second reason it was important is that with hardware, it's different than software where you don't instantly get copyright on it the second that you create it. So hardware is actually kind of born free until you patent it, until you decide to close it down with a monopoly. So we wanted there to be some kind of definition as more or less a tiny little legal hinge, that really it becomes a community norm, which can be held up in courts.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>21:55</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>This wasn't actually the first attempt at a standardized notion of open hardware. In 1997, a guy named Bruce Perens created an open hardware certification program. Perens was a notable open source figure because he had helped create the original open source software guidelines around the same time. Those are administered by an organization called the Open Source Initiative, OSI. But not much happened around Perens' hardware certification program in 1997, and with a new generation of makers entering the scene, it made sense to refresh the principles. At that summit, they'd get everyone to agree on a standardized definition and best practices for open source hardware. Just getting everyone together, sharing ideas and projects seemed to kickstart the community. But then discussions turned toward defining what open source hardware meant.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>22:57</strong> - <em>Ayah Bdeir</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>There were the purists who believed that you couldn't call it open source hardware unless the entire toolchain was open source. Others would say, "No, that's not realistic because some of the circuit design tools or the 3D printing tools that I use are not open source, but they're accessible and there are free versions of them." Well the software at least. And so that's enough for you to replicate and modify the invention. So why does a toolchain have to be open source?</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>23:27</strong> - <em>Ayah Bdeir</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Then there were conversations around attribution. In many open source software licenses, attribution is not as important. In this case, there was a lot of discussion about it because hardware is expensive. So the person who's created it has not only just put in time in a garage with a laptop, they've put in dollars, actual cash into physical things that moved from country to country oftentimes, and were made, and those things need to be recouped in some way.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>23:58</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>One of the summit's keynote speakers was Ayah Bdeir's old classmate, Limor Fried.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>24:04</strong> - <em>Limor Fried</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>So one of the debates we had was, does the CAD file have to be in an open format? I remember there was a big round table and everyone kind of had their say and some people were like, no. And some people said yes. And we eventually said, "Well, let's change it to say it has to be in the original format that's like a reasonable... Like we have to come up with something." So we kind of came up with a little bit of a middle ground saying, "If you can release the files, it doesn't have to be in an openly documented format, but has to be in a format that can be read by a person with reasonable access to tools."</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>24:40</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>They even brought in a few lawyers from Creative Commons to help iron things out.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>24:44</strong> - <em>Limor Fried</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>And they said, "Look, if you are going to court over open source hardware, it's already over." So we said that the thing that a lot of licensees and communities have that fractures them is mismatched expectations or people not communicating their expectations. So what the definition does is, it's not really a legal framework, because there's actually no legal protection for a lot of these, but it's a framework for people to express their expectations, how they want and expect their hardware and firmware and designs to be used.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>25:17</strong> - <em>Limor Fried</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>And so far that's actually worked out really well. The more people are open about what they want people to use their hardware for, the better off everybody else is, because there's no devolution of communication where people are like, "Well, you said this, but legally I can do that."</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>25:35</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>The debate over what defined open source hardware continued for a year. Meanwhile, a contest was held to create a logo to go along with the definition. In 2011 at the second Open Source Hardware Summit, the intention was to ratify the definition, but this is where things hit a bit of a snag. The winning logo raised some issues because it bore a resemblance to the Open Source Initiative’s logo.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>26:04</strong> - <em>Alicia Gibb</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>I was still sort of like, "Oh, everything's like rainbows and unicorns and everybody likes everybody." It was sort of a wake-up call to like, oh, even in the open source community, I guess there can be mistakes that happen and disagreements that happen and people who want to come after you legally.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>26:22</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>A compromise was eventually reached, but the experience galvanized the new movement. In 2012 Alicia, Ayah, and the team founded the Open Source Hardware Association, also known as OSHWA. At long last OSHWA had its definition.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>26:41</strong> - <em>Alicia Gibb</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>So the open source hardware definition is more or less that you are agreeing to put your hardware out there as open source, making it available for people to study and learn from, to remix, to remake, to remanufacture and to resell your design and your hardware. And then you can ask for attribution on your hardware and you can ask people to follow a license that you attach to your hardware.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>27:11</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>From all those dorm rooms and garages and dining room tables, from a thousand makers around the world, a community standard was finally emerging.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>27:22</strong> - <em>Limor Fried</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>No matter what license you use, people can point to and say, "If you're calling your thing open source hardware, here's the definition, here's what you're basically saying your expectations are. If that's not true, call it something else." And then on top of that, another thing that came across a few years ago was an actual, like, directory for registering open source hardware. When you go there you basically kind of check a little pledge that says, my design I'm releasing abides by this definition. So the definition kind of is the rock and this is sort of the building on top of it, so that people get a little logo and an identifier and they can say, "Yes, this is open source hardware and the Open Source Hardware Association is standing by me."</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>28:07</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>This year the Open Source Hardware Summit celebrates its 10th anniversary, and these days it's even creeping into consumer products.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>28:16</strong> - <em>Alicia Gibb</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>So there are an entire line of computers out there that are from System76 that are open source hardware, 3D printers like LulzBot, and there's other 3D printers that are also open source hardware. I think right now we're sort of on the cusp of more consumer products coming out.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>28:35</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Over the last 10 years, open hardware has set a new bar for openness and diversity in tech culture.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>28:43</strong> - <em>Alicia Gibb</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>One of the things that really turned me off from the open source software communities is going to a couple meetings and being asked where my boyfriend was, or who I was there with, or whatever. This assumption that, as a female, I wouldn't be there by myself. Because I could see that the open hardware community was very young and that we were just building. And so myself and Ayah were both like, "Okay, this can't happen in our community."</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>29:11</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>At the first summit, there were a couple of 10-year-old makers in attendance. There were people of color in the room. The organizers were women, and the face of the open hardware movement is literally female. Limor Fried was the first woman engineer to be featured on the cover of WIRED Magazine in 2011, and according to Ayah Bdeir, the accessibility and diversity that open hardware thrives in, is something we should all care about these days.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>29:43</strong> - <em>Ayah Bdier</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>When I was growing up, technology was a thing that existed. It was a discipline. You could live your life saying, "I'm not technical," and that would be fine. It's no longer the case. Technology is the foundation of everything that we do. It's how we eat, how we drink, how we communicate, how we travel, how we predict, how we publish. They affect democracy, they affect mental health, they affect social impact, they affect environmental impact. The mission is important because if we don't have creators of technology and decision makers and technology representing the demographic makeup of the world, then we are making decisions that are biased or discriminatory, that are non-inclusive and that are dangerous.</p>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <div class="card mb-2">
+           <div class="card-body p-1 bg-white text-purple-dark">
+               <p class="mb-0"><strong>30:39</strong> - <em>Saron Yitbarek</em></p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12">
+       <p>Command Line Heroes is an original podcast from Red Hat. Check out our research on open source hardware at <a href="https://www.redhat.com/commandlineheroes" title="redhat.com/commandlineheroes">redhat.com/commandlineheroes</a>. And while you're there, sign up for our newsletter. I'm Saron Yitbarek. Until next time, keep on coding.</p>
+   </div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-bonus pt-lg-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 reveal">
+                <div class="row">
+                    <div class="col-12 col-md-6 d-flex reveal">
+                        <div class="card rounded-0">
+                            <div class="card-body p-2 p-md-3">
+                                <h3 class="font-family-monospace font-weight-light">Further reading</h3>
+
+                                <p><a href="https://boldandopen.com/adafruit-case-study/" target="_blank" title="How Adafruit grew over 700% for 3 years in a row making open source hardware"><u>How Adafruit grew over 700% for 3 years in a row making open source hardware</u></a> by Jaime Arredondo</p>
+
+                                <p><a href="https://manifold.umn.edu/read/hackerspace-culture/section/7d67d87e-587c-4c0c-b6f8-d9eca1aeac72" target="_blank" title="Hackerspace Culture: An Interview with Alicia Gibb of the Blow Things Up Lab"><u>Hackerspace Culture: An Interview with Alicia Gibb of the Blow Things Up Lab</u></a> by Georgie Archibald</p>
+
+                                <p><a href="https://arstechnica.com/gadgets/2010/09/drones-chumbys-and-big-business-too-the-open-hardware-summit/" target="_blank" title="Drones, Chumbys, and big business: the Open Hardware Summit"><u>Drones, Chumbys, and big business: the Open Hardware Summit</u></a> by John Timmer</p>
+
+                                <p class="mb-0"><a href="https://tapr.org/?page_id=5968" target="_blank" title="The TAPR Open Hardware License"><u>The TAPR Open Hardware License</u></a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 d-flex reveal">
+                        <div class="card mb-0 rounded-0">
+                            <div class="card-body p-2 p-md-3">
+                                <h3 class="font-family-monospace font-weight-light">Bonus episode</h3>
+
+                                <p>Ayah Bdeir, Alicia Gibb, and Limor Fried were early proponents of building diversity into the open source hardware community. Hear how they set the tone.</p>
+
+                                <div class="clh-audio">
+                                    <audio src="https://chtbl.com/track/247G8/https://dts.podtrac.com/redirect.mp3/cdn.simplecast.com/audio/a88fbe/a88fbe81-5614-4834-8a78-24c287debbe6/8478d088-5418-49dd-9505-10bbe2980b64/clh-s4e6-open-source-hardware-bonus-final_tc.mp3" preload="none" controls></audio>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-guests pt-0 pb-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="mb-0 font-family-monospace text-white reveal">Featured in this episode</h3>
+
+                <div class="row guest-carousel">
+                    <div class="col-12 col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-dark" href="https://twitter.com/ayahbdeir" target="_blank" title="Ayah Bdeir">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/photo-ayah-bdeir-259x207.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="font-family-monospace">Ayah Bdeir</h4>
+
+                                    <p class="mb-0">Founder of littleBits</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-dark" href="https://twitter.com/adafruit" target="_blank" title="Limor Fried">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/photo-limor-fried-259x207_0.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="font-family-monospace">Limor Fried</h4>
+
+                                    <p class="mb-0">Founder of Adafruit Industries</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-dark" href="https://twitter.com/pipix" target="_blank" title="Alicia Gibb">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/photo-alicia-gibb-259x207.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="font-family-monospace">Alicia Gibb</h4>
+
+                                    <p class="mb-0">Founder and Executive Director of the Open Source Hardware Association</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row carousel-nav mb-2 mb-md-0">
+                    <div class="col-1 col-md-4 col-lg-5 pr-0 text-left text-md-right reveal">
+                        <a class="carousel-prev font-size-36" href="#" title="Previous">&lt;</a>
+                    </div>
+
+                    <div class="col-10 col-md-4 col-lg-2 px-0 reveal">
+                        <div class="carousel-dots d-flex justify-content-center"></div>
+                    </div>
+
+                    <div class="col-1 col-md-4 col-lg-5 pl-0 text-right text-md-left reveal">
+                        <a class="carousel-next font-size-36" href="#" title="Next">&gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<article class="node-shared">
+      <section class="dms-band clh-newsletter pt-0 pt-md-8">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-5 reveal">
+                <div class="card">
+                    <div class="card-body p-0">
+                        <img class="img-fluid svg svg-white mb-3" src="https://www.redhat.com/cms/managed-files/logo-command-line-heroes.svg" width="166" height="42" alt="Command Line Heroes logo" title="Command Line Heroes">
+
+                        <h3 class="font-family-monospace">Get the newsletter</h3>
+
+                        <p class="mb-0">After each episode drops, we'll send you commentary from the Command Line Heroes team, as well as links that help you take a closer look at the topics we cover. It's as simple as that.</p>
+                    </div>
+
+                    <div class="card-footer pt-3 px-0 pb-0">
+                        <a class="btn btn-primary mb-1 mb-lg-0" href="http://www.redhat.com/forms/?config=19411" title="Sign up">Sign up</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 offset-lg-1 reveal">
+                <div class="card mb-0 bg-white rounded-0 text-black">
+                    <div class="card-body p-2 p-md-3">
+                        <h3 class="font-family-monospace text-red">Presented by Red&nbsp;Hat</h3>
+
+                        <p class="mb-0">For 25 years, Red Hat has been bringing open source technologies to the enterprise. From the operating system to containers, we believe in building better technology together–and celebrating the unsung heroes who are remaking our world from the command line up.</p>
+                    </div>
+
+                    <div class="card-footer pt-0 px-2 px-md-3 pb-2 pb-md-3">
+                        <a class="btn btn-link mb-0" href="http://www.redhat.com/" title="Learn more">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+  </article>
+  <!-- Pattern | raw_html -->
+
+<article class="node-shared">
+  
+  </article>
+
+  
+  
+</article>
+
+</div>
+  </div>
+        
+  </div>
+
+  <footer>
+        <section class="rc-footer-traditional">
+      <div class="container rc-footer-traditional-container">
+        <section class="rc-footer-traditional-section">
+          <div class="rc-footer-traditional-logo">
+            <div class="row">
+              <a href="https://www.redhat.com/en">
+                <img src="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo.svg" class="screen" title="Red Hat" />
+                </a>
+            </div>
+          </div>
+          <div id="legal" class="rc-footer-traditional-legal">
+            <div class="row">
+              <div class="copyright">©2021 Red Hat, Inc.</div>
+              <div >
+                <ul class="menu"><li class="first leaf"><a href="../../about/privacy-policy.html">Privacy statement</a></li>
+<li class="leaf"><a href="../../about/terms-use.html">Terms of use</a></li>
+<li class="leaf"><a href="../../about/all-policies-guidelines.html">All policies and guidelines</a></li>
+<li class="leaf"><a href="../../about/digital-accessibility.html">Digital accessibility</a></li>
+<li class="last leaf"><span id="teconsent" class="nolink">|</span></li>
+</ul>              </div>
+            </div>
+                      </div>
+          <div class="rc-footer-traditional-event-logo">
+            <div id="block-block-5" class="block block-block block-footer-promote">
+
+      
+  <a href="https://www.redhat.com/summit"><img src="https://www.redhat.com/cms/managed-files/Logo-Red_Hat-Summit-A-Standard-RGB-02_0.svg" alt="Red Hat Summit" style="float: right;" width="72px"></a>
+</div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </footer>
+        <script type="text/javascript" src="../../../ux/webdms/js/vendors/jquery.waypoints.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/viewport.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/plyr.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/slick.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/scripts.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/projects/clh.min6eda.js?qy3uiv"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+  if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
+      _satellite.pageBottom();
+  }
+//--><!]]>
+</script>
+    </div>
+  <script type="text/javascript"  src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"></script></body>
+
+<!-- Mirrored from www.redhat.com/en/command-line-heroes/season-4/open-source-hardware by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:28:54 GMT -->
+</html>

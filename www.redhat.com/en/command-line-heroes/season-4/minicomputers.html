@@ -1,0 +1,1878 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  
+<!-- Mirrored from www.redhat.com/en/command-line-heroes/season-4/minicomputers by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:28:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!--[if IE]><![endif]-->
+<script id="trustarc" type="text/javascript" src="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"></script>
+<script id="ddo" type="text/javascript">
+<!--//--><![CDATA[//><!--
+    var digitalData = {"cart":[],"event":[],"listing":{"browseFilter":"","query":"","queryMethod":"","refinementType":"","refinementValue":"","resultCount":"","searchType":""},"page":{"attributes":{"queryParameters":"","referringSearchEngine":"","analyticsTitle":"brand affinity | command line heroes season 4 episode 1","taxonomyPageSubType":["28051"],"taxonomyRegion":["4521"],"taxonomyMetaHreflang":["29051"]},"category":{"contentType":"","keyPage":"false","keyPageType":"","pageType":"pattern_template","primaryCategory":"command-line-heroes","subCategories":["season-4","minicomputers"]},"pageInfo":{"cms":"RH CMS 2021.12.0","contentFindingMethod":"","contentID":"393901","contentPortal":"","destinationURL":"https:\/\/www.redhat.com\/en\/command-line-heroes\/season-4\/minicomputers","errorMessage":"","errorType":"","language":"en","pageName":"","referringDomain":"","referringURL":"","sysEnv":"","template":"","title":"Command Line Heroes: Minicomputers: The Soul of an Old Machine"}},"product":[],"user":[{"profile":[{"profileInfo":{"daysSinceLastPurchase":"","demandbaseSID":"","eloquaGUID":"","lastLoginDate":"","lastPurchaseDate":"","loggedIn":"false","profileID":"","subscriptionFrequency":"","subscriptionLevel":""}}]}]};
+    !function(a,b,c){"use strict";function d(a){var c="; "+b.cookie,d=c.split("; "+a+"=");if(2===d.length)return d.pop().split(";").shift()}if(b.referrer){var e=b.createElement("a");e.href=b.referrer,c.page.pageInfo.referringDomain=e.hostname,c.page.pageInfo.referringURL=e.href}c.page.pageInfo.sysEnv=a.innerWidth<=768?"tablet":"desktop";var f=c.user[0].profile[0].profileInfo,g=d("rh_elqCustomerGUID");g&&(f.eloquaGUID=g);var h=d("rh_user");if(h){var i=h.split("\\|");i[0]&&(f.loggedIn="true")}var j=d("s_dmdbase");j&&(f.demandbaseSID=j)}(window,document,digitalData);
+//--><!]]>
+</script>
+<script src="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm.js" data-domain="www.redhat.com"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-functional.js" class="trustecm" data-tracker-type="functional"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-advertising.js" class="trustecm" data-tracker-type="advertising"></script><script id="dpal" type="text/javascript" src="../../../dtm.js"></script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="en" />
+<link href="minicomputers.html" rel="alternate" hreflang="en" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "availableLanguages": {
+        "zh": {
+            "@type": "Language",
+            "name": "简体中文",
+            "href": "/zh/command-line-heroes/season-4/minicomputers"
+        },
+        "en": {
+            "@type": "Language",
+            "name": "English",
+            "href": "/en/command-line-heroes/season-4/minicomputers",
+            "current_lang": true
+        },
+        "fr": {
+            "@type": "Language",
+            "name": "Français",
+            "href": "/fr/command-line-heroes/season-4/minicomputers"
+        },
+        "de": {
+            "@type": "Language",
+            "name": "Deutsch",
+            "href": "/de/command-line-heroes/season-4/minicomputers"
+        },
+        "it": {
+            "@type": "Language",
+            "name": "Italiano",
+            "href": "/it/command-line-heroes/season-4/minicomputers"
+        },
+        "ja": {
+            "@type": "Language",
+            "name": "日本語",
+            "href": "/ja/command-line-heroes/season-4/minicomputers"
+        },
+        "ko": {
+            "@type": "Language",
+            "name": "한국어",
+            "href": "/ko/command-line-heroes/season-4/minicomputers"
+        },
+        "pt-br": {
+            "@type": "Language",
+            "name": "Português",
+            "href": "/pt-br/command-line-heroes/season-4/minicomputers"
+        },
+        "es": {
+            "@type": "Language",
+            "name": "Español",
+            "href": "/es/command-line-heroes/season-4/minicomputers"
+        }
+    }
+}</script><meta name="last-publish-date" content="Tue, 25 Jun 2019 04:00:00 GMT" />
+<meta name="node-type" content="pattern_template" />
+<meta name="source" content="rhdc_drupal" />
+<meta name="rhdc_key" content="2cd003c69de1f8072490fc7ed7e41fb4" />
+<meta name="taxonomy-region" content="Global" />
+<meta name="taxonomy-region-tid" content="4521" />
+<meta name="taxonomy-page-sub-type" content="Brand affinity" />
+<meta name="taxonomy-page-sub-type-tid" content="28051" />
+<meta name="taxonomy-meta-hreflang" content="en" />
+<meta name="taxonomy-meta-hreflang-tid" content="29051" />
+<link rel="shortcut icon" href="https://www.redhat.com/misc/favicon.ico" type="image/x-icon" />
+<meta property="og:description" content="Hear the story of minicomputers—and the team that built a 32-bit machine that paved the way for personal computers." />
+<meta name="description" content="Hear the story of minicomputers—and the team that built a 32-bit machine that paved the way for personal computers." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="image_src" href="../../../cms/managed-files/og-clh-s4-1200x675.png" />
+<link rel="canonical" href="minicomputers.html" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.redhat.com/en/command-line-heroes/season-4/minicomputers" />
+<meta property="og:title" content="Command Line Heroes: Minicomputers: The Soul of an Old Machine" />
+<meta property="og:image" content="https://www.redhat.com/cms/managed-files/og-clh-s4-1200x675.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Command Line Heroes: Minicomputers: The Soul of an Old Machine" />
+<meta name="twitter:image" content="https://www.redhat.com/cms/managed-files/og-clh-s4-1200x675.png" />
+    <title>Command Line Heroes: Minicomputers: The Soul of an Old Machine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://static.redhat.com/">
+    <link rel="preload" href="https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/fonts/web_icon/rh-web-iconfont.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatTextVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatDisplayVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__k9aoxkMyjUtSX9AXGCPExPgTYjM0Xv5OYNfbFGDRafY__N9sjJtGj85lXtvOptw2e_YZ01FXbTXcJywP8EaKBijU__uaCwYofnUZLAnB7x3Q6WyVKH" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/all/libraries/webrh/dist/css/webrh.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__cxslYvmVeKFG0RwKl9kcXSrmb2x2VtvkIw-OLkwF8jU___pPNjqO-hMXRnx5HlJupeXtrvaj0Ilhs-XAVxMYy0CM__uaCwYofnUZLAnB7x3Q6WyVKH" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__wpajrf8pWA19ifT2xQXPB3J1TByoCXqZVtt6kXfl4Ow__PFQbFxxWsZl0yTnfrpPiA-o5Pvtu-CXh7nICx08JW0c__uaCwYofnUZLAnB7x3Q6WyVKH" media="print" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/css/trustecm.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/redhat-theme/6/advanced-theme.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/red-hat-font.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/font-awesome/4.7.0/css/font-awesome.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/vendors/plyr.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/vendors/slick.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/styles.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/projects/clh-s4-episodes.min6eda.css?qy3uiv" media="all" />
+    <!--[if lt IE 9]>
+      <script src="/profiles/rh/themes/redhatdotcom/js/selectivizr-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/nwmatcher-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/respond.js" type="text/javascript"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../../../sites/default/files/advagg_js/js__B6wED6l5P_XUdxVmb7Nvh5d9zn074QukFqJa2HLXS6c__VzWs8XZBHHsPW77egi-W-FQw2mAEr5F-GgCJU0wn3Nc__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.vendor.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.webcomponents.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__pDOiYGKaYbdKNp1gvMxR0fWhWZnfUemYDUhADyCn3oM__jCrCuWCJIPYPe1FzZoUvsJWEjkNMmRIQHYek1h7idBE__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.rh = window.rh || {}; window.rh.drupalTrustArcLoaded = true;
+//--><!]]>
+</script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__5nUyGFdhKMGscC9VhukG-UTAhz8BEdhsa8koVlLwAyQ__Lz8gDLbd5fTco1AnHaCqhSeYJB5o0QUXAimK7JOyRNI__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"redhatdotcom","theme_token":"mfOvi4IVgSdEdAn41-PTUH86LuAJ2I6G3RSQPHldlYY","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.webcomponents.min.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.min.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/marketing\/latest\/trustarc\/trustecm\/css\/trustecm.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-theme\/6\/advanced-theme.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-font\/4\/webfonts\/red-hat-font.min.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-iconfont.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-web-iconfont.css":1,"sites\/all\/libraries\/patternfly-elements\/pfe-styles\/pfe-typography-classes.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/site-switcher.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/chrome.css":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/print.css":1,"\/\/static.redhat.com\/libs\/font-awesome\/4.7.0\/css\/font-awesome.min.css?qy3uiv":1,"\/ux\/webdms\/css\/vendors\/plyr.min.css?qy3uiv":1,"\/ux\/webdms\/css\/vendors\/slick.min.css?qy3uiv":1,"\/ux\/webdms\/css\/styles.min.css?qy3uiv":1,"\/ux\/webdms\/css\/projects\/clh-s4-episodes.min.css?qy3uiv":1},"js":{"\/ux\/webdms\/js\/vendors\/jquery.waypoints.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/viewport.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/plyr.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/slick.min.js?qy3uiv":1,"\/ux\/webdms\/js\/scripts.min.js?qy3uiv":1,"\/ux\/webdms\/js\/projects\/clh.min.js?qy3uiv":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/rh\/modules\/redhat_www_ddo\/dist\/post-jquery.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.vendor.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.webcomponents.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"profiles\/rh\/modules\/redhat_www_menu\/js\/rh_nav.js":1,"profiles\/rh\/modules\/redhat_www_share\/js\/rh_share.js":1,"profiles\/rh\/modules\/redhat_www_utility\/js\/redhat_www_utility.js":1,"sites\/all\/libraries\/jquery-cookie\/jquery.cookie-1.4.1.min.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.pushmenu.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery-scrolltofixed.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/rh-chrome.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.fitvids.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.switchIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.viewport\/jquery.viewport.min.js":1}},"redhat_www_menu":{"path":"node\/393901"},"rh_analytics_enabled":false});
+//--><!]]>
+</script>
+    <noscript>
+        <link href="../../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.noscript.min.css" rel="stylesheet" >
+    </noscript>
+  </head>
+  <body unresolved class="bands-index html not-front not-logged-in no-sidebars page-node page-node- page-node-393901 node-type-pattern-template i18n-en clh-s4e1 " >
+    <div class="page">
+            <!-- Legacy migrated page support with body.migrated-page-hero -->
+<div class="header-background-image fts-migrated-bg">
+</div>
+
+  <div id="main-content">
+                      <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+      
+  <article class="node-393901 node node-pattern-template clearfix">
+
+  
+    <!-- Pattern | raw_html -->
+
+<article class="node-shared">
+      <header id="top" class="dms-band clh-nav-top py-2">
+    <div class="container text-white">
+        <div class="row d-flex align-items-center">
+            <div class="col-6">
+                <a href="../../command-line-heroes.html" title="Command Line Heroes">
+                    <img class="img-fluid svg svg-white" src="https://www.redhat.com/cms/managed-files/logo-command-line-heroes.svg" width="166" height="42" alt="Command Line Heroes logo">
+                </a>
+            </div>
+
+            <div class="col-6 clh-nav-toggle-wrapper">
+                <span class="text-monospace text-right font-size-16 d-inline-block">Subscribe<br/>& more</span>
+
+                <a href="#" class="btn btn-toggle" data-toggle="nav-shelf">
+                    <div class="d-inline-block">
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="dms-band clh-nav-shelf text-white py-0">
+    <div class="nav-container pb-4">
+        <div id="CLHNav" class="accordion">
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-subscribe.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSubscribe">
+                    <p>Subscribe</p>
+                </button>
+                <div id="clhSubscribe" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <p>Subscribe to the podcast to receive new episodes as soon as we release them</p>
+                    <div class="row pb-2">
+                        <div class="col-6 mb-2">
+                            <a href="http://geo.itunes.apple.com/podcast/us/id1319947289?mt=2&amp;at=1010lbVy&amp;ct=redhatclh_website" target="_blank" title="Listen on Apple Podcasts">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-apple.png" alt="Listen on Apple Podcasts">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://www.google.com/podcasts?feed=aHR0cHM6Ly9mZWVkcy5wYWNpZmljLWNvbnRlbnQuY29tL2NvbW1hbmRsaW5laGVyb2Vz" target="_blank" title="Listen on Google Podcasts">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-google.png" alt="Listen on Google Podcasts">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://www.stitcher.com/s?fid=159833&amp;refid=stpr" target="_blank" title="Listen on Stitcher">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-stitcher.png" alt="Listen on Stitcher">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://open.spotify.com/show/4Jgtgr4mHXNDyLldHkfEMz" target="_blank" title="Listen on Spotify">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-spotify.png" alt="Listen on Spotify">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://feeds.pacific-content.com/commandlineheroes" target="_blank" title="Subscribe via RSS Feed">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-rss.png" alt="Subscribe via RSS Feed">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-about.jpg">
+                <button href="../about.html" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhAbout">
+                    <p>About the podcast</p>
+                </button>
+                <div id="clhAbout" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <p>Discover Red Hat’s original podcast about the people who transform technology from the command line up. Subscribe to our newsletter for commentary from the Command Line Heroes team—and links to take a closer look at the topics we cover.</p>
+                    
+                    <p><a href="../about.html" class="btn btn-primary">Learn about the show</a></p>
+                    <p class="mb-0 pb-4"><a href="https://www.redhat.com/forms/?config=19411" class="btn btn-outline-white">Get the newsletter</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s1.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason1">
+                    <p>Season 1</p>
+                </button>
+                <div id="clhSeason1" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-1/os-wars-part-1.html" title="OS Wars_Part 1">OS Wars_part 1</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/os-wars-part-2-rise-of-linux.html" title="OS Wars_Part 2">OS Wars_part 2</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/agile-revolution.html" title="The Agile_Revolution">The Agile_Revolution</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/devops-tear-down-that-wall.html" title="DevOps_Tear Down That Wall">DevOps_Tear Down That Wall</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/the-containers-derby.html" title="The Containers_Derby">The Containers_Derby</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/crack-the-cloud-open.html" title="Crack the Cloud_Open">Crack the Cloud_Open</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/days-of-future-open.html" title="Days of Future_Open">Days of Future_Open</a>
+                        </li>
+                    </ol>
+                  <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-1.html" title="Explore season 1">Explore Season 1</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s2.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason2">
+                    <p>Season 2</p>
+                </button>
+                <div id="clhSeason2" class="accordion-panel collapse" data-parent="#CLHNav">
+
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-2/press-start.html" title="Press Start">Press Start</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/hello-world.html" title="Hello, World">Hello, World</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/ready-to-commit.html" title="Ready to Commit">Ready to Commit</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/fail-better.html" title="Fail Better">Fail Better</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/the-one-about-devsecops.html" title="The One About DevSecOps">The One About DevSecOps</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/the-data-explosion.html" title="The Data Explosion">The Data Explosion</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/at-your-serverless.html" title="At Your Serverless">At Your Serverless</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/open-curiosity.html" title="Open Curiosity">Open Curiosity</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/developer-advocacy-roundtable.html" title="Bonus_Developer Advocacy Roundtable">Bonus_Developer Advocacy Roundtable</a>
+                        </li>
+                    </ol>
+                   <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-2.html" title="Explore season 2">Explore Season 2</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s3.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason3">
+                    <p>Season 3</p>
+                </button>
+                <div id="clhSeason3" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-3/pythons-tale.html" title="Python's Tale">Python's Tale</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/learning-the-basics.html" title="Learning the BASICs">Learning the BASICs</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/creating-javascript.html" title="Creating JavaScript">Creating JavaScript</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/diving-for-perl.html" title="Diving for Perl">Diving for Perl</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/the-infrastructure-effect.html" title="The Infrastructure Effect">The Infrastructure Effect</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-3/heroes-in-a-bash-shell.html" title="Heroes in a Bash Shell">Heroes in a Bash Shell</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/talking-to-machines.html" title="Talking to Machines">Talking to Machines</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-3/the-c-change.html" title="The C Change">The C Change</a>
+                        </li>
+                    </ol>
+                   <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-3.html" title="Explore season 3">Explore Season 3</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s4.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason4">
+                    <p>Season 4</p>
+                </button>
+                <div id="clhSeason4" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="minicomputers.html" title="Minicomputers">Minicomputers</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="mainframes.html" title="Mainframes">Mainframes</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="personal-computers.html" title="Personal Computers">Personal Computers</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="floppies.html" title="Floppies">Floppies</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="smarter-phones.html" title="Smarter Phones">Smarter Phones</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="open-source-hardware.html" title="Open Source Hardware">Open Source Hardware</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="consoles.html" title="Consoles">Consoles</a>
+                        </li>
+
+                         <li class="mb-2">
+                            <a href="steve-wozniak.html" title="Steve Wozniak">Steve Wozniak</a>
+                        </li>
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-4.html" title="Explore season 4">Explore Season 4</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s5.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason5">
+                    <p>Season 5</p>
+                </button>
+                <div id="clhSeason5" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-5/becoming-a-coder.html" title="Becoming a Coder">Becoming a Coder</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-5/where-coders-code.html" title="Where Coders Code">Where Coders Code</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-5/what-kind-of-coder-will-you-become.html" title="What Kind of Coder Will You Become?">What Kind of Coder Will You Become?</a>
+                        </li>
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-5.html" title="Explore season 5">Explore Season 5</a></p>
+ 
+                </div>
+            </div>
+
+                        <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s6.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason6">
+                    <p>Season 6</p>
+                </button>
+                <div id="clhSeason6" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-6/jerry-lawson.html" title="Jerry Lawson">Jerry Lawson</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/gladys-west.html" title="Dr. Gladys West">Dr. Gladys West</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/mark-dean.html" title="Dr. Mark Dean">Dr. Mark Dean</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/marc-hannah.html" title="Dr. Marc Hannah">Dr. Marc Hannah</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/clarence-ellis.html" title="Dr. Clarence Ellis">Dr. Clarence Ellis</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/roy-clay.html" title="Roy Clay">Roy Clay</a>
+                        </li>
+                       <li class="mb-2">
+                            <a href="../season-6/gladys-perkins.html" title="Gladys Perkins">Gladys Perkins</a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="../season-6/arlan-hamilton.html" title="Arlan Hamilton">Arlan Hamilton</a>
+                        </li>
+            
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link text-monospace text-white" href="../season-6.html" title="Explore season 6">Explore Season 6</a></p>
+                </div>
+            </div>
+
+             <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/season-7_nav.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason7">
+                    <p>Season 7</p>
+                </button>
+                <div id="clhSeason7" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-7/dot-com.html" title="Connecting The Dot-Com">Connecting The Dot-Com</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/nsfnet.html" title="From NSF to ISP">From NSF to ISP</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/html.html" title="A Language for the Web">A Language for the Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/ux.html" title="Web UX Begins">Web UX Begins</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/shopping.html" title="Shopping for the Web">Shopping for the Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/search.html" title="Looking for Search">Looking for Search</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/world.html" title="The World of the World Wide Web">The World of the World Wide Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/bubble.html" title="After the Bubble">After the Bubble</a>
+                        </li>
+
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../../command-line-heroes.html" title="Explore season 5">Explore Season 7</a></p>
+ 
+                </div>
+            </div>
+
+        </div>
+        
+        <ul class="social-list list-inline list-unstyled pl-5 pl-sm-6 mt-1">
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F" target="_blank" title="Facebook" onclick="return !window.open(this.href, 'Facebook', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
+                    <span class="web-icon-facebook" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.twitter.com/share?url=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F&amp;text=An%20original%20podcast%20about%20the%20people%20who%20transform%20technology%20from%20the%20command%20line%20up.%20Presented%20by%20Red%20Hat." target="_blank" title="Twitter" onclick="return !window.open(this.href, 'Twitter', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
+                    <span class="web-icon-twitter" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F&amp;title=Command%20Line%20Heroes&amp;summary=Hear%20the%20epic%20true%20tales%20of%20how%20developers%2C%20programmers%2C%20hackers%2C%20geeks%2C%20and%20open%20source%20rebels%20are%20revolutionizing%20the%20technology%20landscape.%20Command%20Line%20Heroes%20is%20a%20new%20podcast%20hosted%20by%20Saron%20Yitbarek%20and%20produced%20by%20Red%20Hat.&amp;source=Red%20Hat" target="_blank" title="LinkedIn" onclick="return !window.open(this.href, 'LinkedIn', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')" aria-current="page">
+                    <span class="web-icon-linkedin" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="mailto:?subject=Command Line Heroes&body=Hear%20the%20epic%20true%20tales%20of%20how%20developers%2C%20programmers%2C%20hackers%2C%20geeks%2C%20and%20open%20source%20rebels%20are%20revolutionizing%20the%20technology%20landscape.%20Command%20Line%20Heroes%20is%20a%20new%20podcast%20hosted%20by%20Saron%20Yitbarek%20and%20produced%20by%20Red%20Hat. https://www.redhat.com/en/command-line-heroes" target="_blank" title="Email" aria-current="page">
+                    <span class="web-icon-envelope" aria-label="true"></span>
+                </a>
+            </li>
+        </ul>
+
+         <div class="language-switcher position-absolute bottom-0 right-0  w-100">
+            <div class="row justify-content-center mx-0">
+
+                <div class="col-6 text-center border-right border-black border-20 language-inactive">
+                    <a href="http://www.redhat.com/es/command-line-heroes" title="Command Line Heroes"><img class="img-fluid py-2" width="90" src="https://www.redhat.com/cms/managed-files/logo_clh-en-espanol_inactive.svg" alt="CLH en espanol logo"></a></div>
+
+                <div class="col-6 text-center language-active"><a href="../../command-line-heroes.html" title="Command Line Heroes"><img class="img-fluid pt-3 pb-2" width="130" src="https://www.redhat.com/cms/managed-files/logo_CLH_small.svg" alt="CLH logo"></a></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+</div>
+
+
+<div class="mb-6">&nbsp;</div>  
+  </article>
+  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-hero--episode pt-lg-0 pb-1 pb-lg-6">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-lg-6 pt-lg-8 pt-xl-11 reveal">
+                <h5 class="section-label mb-1 font-weight-light">Season 4, Episode 1</h5>
+
+                <h1 class="mb-lg-4 font-family-monospace font-size-28 font-size-lg-38">Minicomputers: The Soul of an Old Machine</h1>
+
+                <div class="clh-audio plyr-theme">
+                    <audio src="http://chtbl.com/track/247G8/https://dts.podtrac.com/redirect.mp3/cdn.simplecast.com/audio/a88fbe/a88fbe81-5614-4834-8a78-24c287debbe6/2b74a070-f1ae-411f-80e0-7ad69cb04220/clh-s4-ep1-minicomputer-the-soul-of-an-old-machine_tc.mp3" preload="none" controls></audio>
+                </div>
+
+                <a class="btn btn-link mt-2 mb-0 font-family-monospace text-white" href="#" title="Listen to this episode later" data-toggle="nav-shelf" data-toggle-panel="#clhSubscribe">Listen to this episode later</a>
+            </div>
+
+            <div class="col-12 col-lg-6 pt-lg-2 text-center reveal">
+                <img class="img-fluid" src="../../../cms/managed-files/img-clh-s4e1-hero-455x539_0.png" alt="Episode 1 hero image">
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-notes py-0 pb-lg-8 bg-no-repeat bg-pos-ct" data-bg-image="../../../cms/managed-files/bkgd-clh-s4e1-notes-1450x355.png">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-12 col-lg-7 col-xl-6 mx-auto">
+                <ul class="nav nav-tabs mb-3 d-flex justify-content-center font-family-monospace">
+                    <li class="nav-item text-center">
+                        <a class="tab-show-notes nav-link mx-0 mr-md-6 p-0 font-size-22 text-white active" href="#show-notes" data-toggle="tab" title="Show notes">Show notes</a>
+                    </li>
+
+                    <li class="nav-item text-center">
+                        <a class="tab-transcript nav-link mt-2 mt-md-0 mx-0 p-0 font-size-22 text-white" href="#transcript-tray" data-toggle="tab" title="Transcript">Transcript</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="show-notes" class="tab-pane fade active show">
+                        <div class="row">
+                            <div class="col-12">
+                                <p>They don’t fit in your pocket. But in their day, minicomputers were an order of magnitude smaller than the room-sized mainframes that preceded them. And they paved the way for the personal computers that could fit in a bag and, eventually, the phones in your pocket.</p>
+
+                                <p>16-bit minicomputers changed the world of IT in the 1970s. They gave companies the opportunity for each engineer to have their own machines. But it wasn’t quite enough, not until the arrival of 32-bit versions.</p>
+
+                                <p class="mb-lg-0">Carl Alsing and Jim Guyer recount their work at Data General to create a revolutionary new 32-bit machine. But their now legendary work was done in secret. Codenamed “Eagle,” their machine was designed to compete with one being built by another team in their own company. These engineers recall the corporate politics and intrigue required to keep the project going—and how they turned restrictions into advantages. Neal Firth discusses life on an exciting-but-demanding project. One where the heroes worked together because they wanted to, without expectations of awards or fame. And all three discuss how this story was immortalized in the non-fiction engineering classic, The Soul of a New Machine by Tracy Kidder.</p>
+
+                                <img class="img-fluid mt-4 mt-md-8 mx-auto d-block d-lg-none" src="../../../cms/managed-files/img-clh-s4e1-notes-347x183.png" alt="Episode notes image">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="transcript-tray" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-12">
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>00:03</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The year was 1978 and a battle was raging in the mini-computer industry. Just a year earlier, Digital Equipment Corporation released its 32-bit VAX 11 780 computer. It was much more powerful than the 16-bit machines in the market. Sales of the VAX quickly overtook their slower competition. Archrival, Data General, was desperate for a new machine to compete with the VAX. They needed a 32-bit computer of their own and they needed it fast, but that competition between Data General and DEC wasn't the only battle going on. There was also a turf war brewing inside Data General and the spoils of both wars would be the creation of an incredible machine under incredible circumstances. A 13-inch laptop weighs maybe three pounds. We take for granted our computers’ portability and convenient size, but back in the 70s, most computers were still room-sized mainframes, multi-million dollar machines weighing several tons. Then, when hardware costs plummeted, the race to smaller, faster, cheaper machines began. The mini computer opened the door for engineers and scientists to have a terminal of their own. It was the machine that led us to where we are today.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>01:37</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Last season on Command Line Heroes, we took a deep dive into an area that is central to software development, the world of programming languages. We looked at their history, the problems they solved, and how they've evolved over time. Languages like JavaScript, Python, and C, Perl, COBOL, and Go. This season, season four for those of you counting, we are diving deep again, this time into the hardware that our software runs on. We're going to tell you seven special stories about the people and teams who dared to change the rules of hardware. That laptop on your desk, that phone in your pocket, command line heroes put their soul into every piece of hardware you've owned and heroes before them. Their passion for building their bold moves to make our hardware a reality has revolutionized the way we program today.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>02:36</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I'm Saron Yitbarek and this is Command Line Heroes, an original podcast from Red Hat.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>02:45</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>In our season premiere, the story of an engineering team racing to design, debug, and deliver a next-generation computer. Their work became the subject of the 1981 bestseller and Pulitzer-winning book, The Soul of a New Machine by Tracy Kidder. The book follows many of the guests you'll hear in this episode.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>03:07</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Back to Data General. Company president, Ed de Castro, hatches a plan to compete with DEC. He splits up the engineering department, moving a team from its Westboro, Massachusetts headquarters to a new office in North Carolina. Their assignment? Develop an advanced 32-bit design that would crush the VAX. They named their project, Fountainhead. De Castro gave the team almost unlimited support and resources. Fountainhead was going to be his company's savior. The few remaining engineers left behind in Massachusetts, they felt seriously slighted. They knew they could build a VAX killer, probably a better one than what Fountainhead could build, but de Castro wouldn't give them a chance. So the leader of that group, Tom West, decided to take matters into his own hands. A self-taught computer engineer, Tom West ran Data General's Eclipse division. Eclipse was data General's most successful line of 16-bit mini computers. Tom could build machines, he could ship them, and he knew what the market wanted. After setting up Fountainhead, de Castro told the remaining engineers to keep working on improving last year's product line. Tom and the others were unimpressed.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>04:31</strong> - <em>Carl Alsing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We were not happy with that at all. Some of us left for other jobs and others of us were depressed and worried about our careers and not feeling very excited. And we predicted that the other group was going to fail.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>04:46</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Carl Alsing was the manager of the micro programming group at Data General. He was Tom's second in command. They decided to come up with their own project.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>04:56</strong> - <em>Carl Alsing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>This'll be a whole new design using the latest techniques, build a 32-bit computer that would beat the DECs’ VAXs. So we put together a proposal for that and went to the president, Ed de Castro, and he says, "Nope, no way. No, the North Carolina groups taking care of that. You don't have to worry about it." So we were discouraged and we went back and came up with another proposal called Victor. We looked at ways of making the old last year's product better. And we had in there a little switch, a mode bit in the system, that when you turned it on, it would enable the computer to act like a modern 32-bit mini computer, although slow. And we took that to Ed de Castro and proposed it. And at the end he said, "You have a mode bit in here. I don't want to see any design with a mode bit. North Carolina's taking care of the new designs." So again, we were discouraged and I think this is when Tom West decided that we were going to do something clandestine.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>06:06</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Tom came up with two stories. One was for de Castro. They would work on an enhancement of the old Eclipse product line, make it a little faster, add a few new buttons, a different color. Tom pitched it as insurance just in case something went wrong in North Carolina. De Castro approved it. And then Tom told another story, a better story to his team.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>06:32</strong> - <em>Carl Alsing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So Tom West proposed to a few of us in the team that we build a really good modern machine that's completely compatible with the previous machines and did all the latest high tech stuff that we needed and virtual memory and 32-bits and error correcting codes and all those kinds of things. Multitasking, multiprocessing, lots of memory. "Guys, we're going to build the latest market-killing new machine."</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>07:04</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The code name for this market-killing new machine, was the Eagle. Nowadays, it feels like there's no limit to what you can do with the memory built into our computers, but back then, a big breakthrough happened when 16-bits gave way to 32-bits. All of a sudden, your address space went from 65,000 bytes of information to over 4 billion. And with that increase, software could deal with larger amounts of data. That left computer companies with two basic challenges: transitioning from 16-bits to 32-bits, sure, but they also had to keep their old customers, the ones using the old software, happy. So, they had to create a machine that would keep old software running, a 32-bit computer that could be backward compatible. The VAXs, for all its power, didn't have an elegant solution to that second problem, but Tom was determined that his Eagle would.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>08:14</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Eagle HQ was located in the basement of Westborough building, 14 AB. Tom assigned Carl to head up micro coding. Carl assigned Chuck Holland to manage the coders, who became known as the Micro Kids. Meanwhile, Ed Rasala would oversee hardware. He assigned Ken Holberger to manage that team, which was appropriately called the Hardy Boys. Tom had an ally in VP of Engineering, Carl Carman. Carman also had a bone to pick with de Castro because de Castro refused to put him in charge of the North Carolina group.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>08:51</strong> - <em>Carl Alsing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Carl Carman knew what we were up to and said nothing to his boss. And so he was funding us, but we needed to keep the salaries down, and we needed some really good smart engineers. So we decided to go after college recruits. One advantage of that is that they don't know what you can't do. They think that you can do anything.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>09:15</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Jim Guyer was two years out of college and working at Data General when he got assigned to the Hardy boys.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>09:21</strong> - <em>Jim Guyer</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The machine that was being developed down in North Carolina was much more high-end computing, almost mainframe in nature. And well, I mean, that's a pretty big thing to jump into to compete with IBM and the other mainframe companies at the time. We thought we had the edge because we were trying to do something that was not quite as ambitious and we were really, really, really focused on a neat, clean, simple implementation with low cost and fewest components and so forth.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>09:51</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Low cost, simple design. They realized that they needed to use firmware to control everything. The more functionality they could put under firmware as opposed to hardware, the cheaper and more flexible it could be.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>10:03</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And they'd be able to make changes as needed. Of course, modern-day computers are all built this way, but in 1978 the approach was brand new.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>10:15</strong> - <em>Carl Alsing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The kind of design we were doing was very minimal. We were looking at ways of making things simple and straightforward, uncomplicated. Because we knew that it couldn't grow to be a big, expensive machine. It had to be just a few boards, a few circuits, and that's actually an advantage in making it fast. There's a difference between designing a product that's safe, risk-free, and a product that's going to win. And we were not worried about risk. We were worried about winning. We wanted it to be fast and cheap and we wanted to design it quickly. So, we only had three or four boards in there, a minimum amount of hardware, and we made up for that with firmware.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>11:06</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The Eagle team faced a lot of tough constraints. The VAX was the highest performance, 32-bit computer on the planet. Eagle had to match it. But on top of that, it had to be compatible with their 16-bit architecture, too. Getting all that done with less money and time than any other team, made Eagle feel like a serious gamble. But Tom West's team was all in.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>11:32</strong> - <em>Jim Guyer</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>There were two systems running 24/7 that we had two shifts of engineers working on them. We all have to be trying to figure out everything. So, we had to learn what everybody else's part did. That was both challenging and extremely educational for me. But we were all engaged with each other to try and go, "What's the next step to figure out this problem? What do we need to look at?" Everybody poring through schematics and other pieces of documentation to figure out, "Look at this signal, look at that computer state, look at the sequence of steps that the microcode is going through. Is it doing the right thing? Oh wait, it's going the wrong direction. Uh oh, why did it do that?"</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>12:13</strong> - <em>Carl Alsing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>This was serious business and that was the work ethic. It was intense in the group. There were sometimes arguments about which way to do something. There might be one way that costs a little bit more money and another way that was cheaper but not as fast or not as effective. And there'd be heated discussions and meetings with some effort to make a consensus. And we made those choices though. And then we worked together.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>12:44</strong> - <em>Carl Alsing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We worked day and night, we divided up the hours for the prototype. We only had two prototypes and it was really important that both teams get to work on those prototypes. So, there were people working the night shift and people working the day shift and people getting tired. But there was enough excitement about it that it was rewarding. And so nobody complained too much about the working conditions.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>13:11</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The working conditions. Some accounts from that time say that to get what he wanted from the team, Tom West practiced something called mushroom management. Feed them [beep] and watch them grow. Inside a cramped and hot workspace, the hours were long and the schedules unrealistic. Tom himself has been described as enigmatic, cold, uncaring. One engineer even referred to him as the Prince of Darkness. Was Tom West so intent on winning that he exploited his team? Did he sacrifice the wellbeing of the Micro Kids and the Hardy Boys to get the perfect machine?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>13:56</strong> - <em>Jim Guyer</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Tom was an interesting guy to work with. He expected a lot of you, and he didn't give you a lot of direction. He expected you to figure out what you needed to do, and pretty much if you weren't able to do that, you weren't on the team.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>14:10</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Direction came from Carl or Ed, the line managers that Jim and the rest of the team worked with on a daily basis. But these young engineers were also in it to win and they liked the opportunity they were given, to figure it out for themselves.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>14:26</strong> - <em>Jim Guyer</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I personally won the first honorary Micro Kid allnighter award. I don't know, maybe we were over competent, brash, young upstarts who didn't know any better. We were confident. We thought we were pretty smart and could figure things out, and we fed on each other's, maybe those are egos, in that sense. I was having a lot of fun doing it. I think most of us were having a lot of fun doing it.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>14:56</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Carl disagrees with the term mushroom management. He said it was just the opposite. They all knew exactly what was going on and what was expected. It was upper management who didn't. At the same time, Tom West was under a tremendous amount of pressure from multiple fronts, and that pressure got passed along to the group.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>15:18</strong> - <em>Carl Alsing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Tom was keeping the true nature of the project quiet. So, he didn't speak much to the engineers, and he remained aloof and he told them, of course, that they weren't to discuss the project outside the group or at home. Not even to use the word Eagle. So we also conveyed that this was very urgent, that we had to do this in a year, that the competition was already in the market, and if we were going to hit the peak of the market with this thing, we had to get it done now. And so they were under a lot of pressure and there was an expectation that they would work nights and weekends and there would be no time for going on picnics with their family or anything that wasn't work-related.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>16:06</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I wanted to find out what it was like working in the trenches of Building 14 AB. So, I sat down with Neal Firth. He was one of the Micro Kids. He joined the team fresh out of school.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>16:20</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>What was it like to work for Tom West? Did you get to interact with him a lot?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>16:24</strong> - <em>Neal Firth</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Not necessarily. He was this ghosty figure. We saw him around. He tried not to interfere so that we could lead ourselves and achieve the goals. This was brand new stuff for what they were doing, and he didn't want to influence us by trying to impose things that had to be done for the previous generation of processors.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>16:49</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It sounds like an intense place where you really want to keep moving and keep getting things done. How did you deal with the fact that there wasn't a ton of time?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>16:57</strong> - <em>Neal Firth</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It wasn't a factor to be honest. There was really no issue with there being enough time. We would take the time it took to achieve the result. That's where the spouses had to be very supportive and understanding, because they didn't necessarily say yes immediately. You could equate it to some of the Silicon Valley people at the time or the Jobs, Wozniak type, let's just get in and get this done. We are not quite all live-in-the-same-apartment and code-on-the-floor type people, but it had some of those characteristics.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>17:35</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And during that time, what kept you going? Why were you so motivated?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>17:39</strong> - <em>Neal Firth</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Quite frankly it was solving a problem. I've always been a puzzle and problem-solving guy. In fact, most of the team was that way. All of us had that in our background, and we all enjoyed it. So, solving those puzzles, getting those things solved, discovering a way to do something that had never been done before.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>18:01</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So what was your most memorable moment on the project?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>18:05</strong> - <em>Neal Firth</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>At the time, it was quite a ways into the project, and we were running the microcode simulator, and it was actually running what was proposed to be the production simulator, and it had been running for about 10, 12 hours. And all of a sudden, the letter E shows up on the console and then we waited a little while and another letter, then another letter, and then we suddenly realized what we were running for test code was the diagnostics that were being designed to run. And so the microcode simulator was simulating the hardware running this microcode, and it was starting to print characters as if it was actually operating. So, it was maybe a hundred thousand times slower than real life, when it actually came out and operated, but that was one of my most memorable moments.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>19:02</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Looking back on it now, do you feel like you were exploited?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>19:07</strong> - <em>Neal Firth</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>No. I was aware of what was happening. I knew what was happening. So, no. I do not feel exploited. It was actually my expectations coming out of college, it would have never been that I would be in a project that significant, or have an opportunity to play such a significant role in a project like that.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>19:31</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I'm wondering how you think about the sacrifice of invention, because if you think about all the great things that we make, usually we have to give up something, right? Something's got to give to make something truly amazing. Did that happen for you? And if so, what was that thing that you had to give up?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>19:48</strong> - <em>Neal Firth</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I wouldn't say that there was a thought-driven process on my part for giving up something. I think it was much more that I became a little more attuned to what I was doing and how I did it impacted those around me.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>20:03</strong> - <em>Neal Firth</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>But I never necessarily saw it as a sacrifice, and the people I was close to, they lived in a world where that's just the way things happen. I hear the horror stories, if you will, about today, where 24/7 you wake up, you plug in your coffee IVs, grab some pizza or dim sum, and you start coding, and eventually you fall asleep in your keyboard. And then you wake up the next morning and repeat the process.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>20:35</strong> - <em>Neal Firth</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We certainly were nowhere near that level of sacrifice. I still had a wife, I still had friends, we still got together. It certainly wasn't a nine-to-five job, but it provided me with a lot of personal and technical achievement, and I was able to share that with my wife, and my sister, and my mother and my father, and my father-in-law. So, those people could appreciate that.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>20:59</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Yeah. So, what do you think is the key to making something truly great?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>21:06</strong> - <em>Neal Firth</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Key to making something truly great. Interesting question. I think it depends on the people involved doing it, because they want to, not because they have expectations of achievement, or wealth or fame. Because those things are very fleeting and almost never satisfied. But if you're going in trying to achieve a goal, and you and a bunch of people work together on it and achieve it, that really is satisfaction when you achieve that.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>21:42</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Neal Firth was one of the Micro Kids on the Eagle Project. He's currently the president of VIZIM Worldwide, a software company.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>21:57</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>As chronicled in Tracy Kidder's book, Tom West's aloofness and distance was deliberate. It was his attempt to keep a clear head above all the day-to-day chatter so that Eagle's goal could remain intact. Even more than that though, he wanted to protect the team, isolate them from the politics and corporate brinkmanship happening around them. He also protected the Micro Kids and the Hardy Boys from preconceived ideas about what was possible.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>22:28</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>In 1980, the Eagle was complete. A year later than Tom had promised, but done nonetheless, unlike Fountainhead. Just as the senior team had predicted, the Fountainhead group had failed and their project was shelved. Here's Bill Foster, director of software development at the time, on Fountainhead's struggle.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>22:50</strong> - <em>Bill Foster</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I think the biggest mistake that was made was it wasn't given any limitations. More or less, it was let's do the world's best computer. Well, when should it be done? Oh, we don't really have a date for that. How much should it cost? Well, we're not sure about either. And I have to fail Ed with this. He didn't put enough boundaries on the programmers and the engineers.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>23:15</strong> - <em>Bill Foster</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And if you turn a bunch of programmers and engineers loose, guess what, they're going to make something so complex, design something so big, it will never get done.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>23:26</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Let's remember for a moment. Back when Tom and his team decided they would build the Eagle in secret, for two years this was happening. And the whole time, the president of the company had no idea what was going on. When the machine now officially called the Eclipse MV/8000 was ready to ship, the head of marketing went to Ed de Castro to green light the marketing campaign. Carl Alsing explains.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>23:53</strong> - <em>Carl Alsing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The head of marketing, he said, "Well, we're ready to do the rollout for the Eagle and we're going to need several thousand dollars. We're going to have a press conference in six different cities around the world. And we're going to do a tour, and we're going to go to many cities, and we're going to shoot a film and show it, and it's going to be a big splash."</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>24:14</strong> - <em>Carl Alsing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And Ed de Castro said, "I don't understand. Why are you doing that?" This is just another bag on the side of the Eclipse. A skin job. And the marketing manager said, "Nope, this is a whole new machine. This is a 32-bit machine. It's got virtual memory. It's compatible. It's going to beat the VAX. We've got the whole thing here."</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>24:37</strong> - <em>Carl Alsing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And Ed de Castro was really confused for a bit. He thought we were failing in North Carolina and that was going to be the end of it, and we had saved his bacon. So, yeah, he invited us all up, and we had a little lunch meeting. There were sandwiches and soda and he said, "Well, you guys did a good job, and I'm surprised. And I didn't realize you were doing this, but we are going to roll this out, and I understand there's going to be a film, and some tours, and you guys are going to be part of that, so thank you and eat your sandwiches."</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>25:19</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The Eagle, now christened the MV/8000 appeared on the front cover of Computer World Magazine. All the media hoopla during the rollout turn that team of secretive, basement-dwelling employees into minor celebrities. After all, they had saved Data General.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>25:38</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>But the good times were short-lived. Tom West could no longer shield the group from the company's internal politics. The team was unprepared for the animosity. Others within the corporation envied their accomplishments and were appalled that they got away with the secret project for so long.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>25:57</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Soon, a new VP of Engineering replaced their ally, Carl Carman. The new guy broke up the Eagle group and shipped Tom off to Data General's Japan office all before a single MV/8000 was sold.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>26:13</strong> - <em>Jim Guyer</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I thought we built the best 32-bit super-mini computer that money could buy, and I thought that was a great thing for Data General, and I thought it was going to kick Digital around a little bit, and not that we ever took the world away from them. Competition in that time was just way too tough, and it's hard to be a winner in high tech, but I thought that we had done something worthwhile.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>26:42</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>When the Eagle was released, it did save Data General, but after losing market share to DEC for three years, the company never really recovered, and the industry had moved on. Mini computers were no longer the big thing. The microcomputer race had already begun, paving the way to the personal computer revolution.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>27:04</strong> - <em>Carl Alsing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Data General went on and did other versions of that, and improvements on it in other models, and it carried them for a while, and so they enjoyed some success. But things change. The market changed and they turned themselves into a software company, and then they ended up being bought out by somebody else. Now, I think they're a file drawer at some company in Hopkinton, Massachusetts.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>27:36</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>A year later, many in the Eagle group had left Data General. Some were burned out. Some were ready to build something different. A few headed out west to Silicon Valley, keen to find that next creative spark. Regardless, there didn't seem to be much point in staying on at a company that didn't recognize all they'd done to save it. That same year in 1981, Tracy Kidder's Soul of a New Machine was published. Now, the world would know how the Eagle got built.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>28:14</strong> - <em>Carl Alsing</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>If you're asking me what the soul of a new machine is, I guess I would say it's the people and the things that they go through, the sacrifices they make, and the effort they make, and the excitement they feel about that, and the satisfactions they're hoping to get. Maybe get, maybe don't, but they strive for that.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>28:35</strong> - <em>Jim Guyer</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The machine, in a way, was kind of a bit character. It was the people who were the real guts of what it was about.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>28:47</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>In the next episode of our all new season on hardware, we go back in time to the world of mainframes and tell the story of another group of rebel employees. The computer they built gave birth to a programming language that changed the world.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>29:04</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Command Line Heroes is an original podcast from Red Hat. This season, we're compiling some great research for you so you can learn more about the history of the hardware we're talking about. Head on over to <a href="http://www.redhat.com/commandlineheroes">redhat.com/commandlineheroes</a> to dive deeper into the Eagle and the team behind it. I'm Saron Yitbarek. Until next time, keep on coding.</p>
+    </div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-bonus pt-lg-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 reveal">
+                <div class="row">
+                    <div class="col-12 col-md-6 d-flex reveal">
+                        <div class="card rounded-0">
+                            <div class="card-body p-2 p-md-3">
+                                <h3 class="font-family-monospace font-weight-light">Further reading</h3>
+
+                                <p><a href="http://en.wikipedia.org/wiki/The_Soul_of_a_New_Machine" target="_blank" title="The Soul Of A New Machine"><u>The Soul of a New Machine</u></a> by Tracy Kidder</p>
+
+                                <p><a href="http://blog.jessfraz.com/post/new-golden-age-of-building-with-soul" target="_blank" title="The New Golden Age of Building with Soul"><u>The New Golden Age of Building with Soul</u></a> by Jessie Frazelle
+</p>
+
+                                <p><a href="http://www.inf.fu-berlin.de/lehre/SS01/hc/minicomp" target="_blank" title="The Minicomputers of the 70s"><u>The Minicomputers of the 70s</u></a> by Georg Wittenburg</p>
+
+                                <p class="mb-0"><a href="http://ethw.org/Rise_and_Fall_of_Minicomputers" target="_blank" title="Rise and Fall of Minicomputers"><u>Rise and Fall of Minicomputers</u></a> by Gordon Bell</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 d-flex reveal">
+                        <div class="card mb-0 rounded-0">
+                            <div class="card-body p-2 p-md-3">
+                                <h3 class="font-family-monospace font-weight-light">Bonus episode</h3>
+
+                                <p>The Soul of a New Machine is a bestselling book that almost wasn’t. Hear about the obstacles author Tracy Kidder had to overcome in order to bring his engineering classic to life.</p>
+
+                                <div class="clh-audio">
+                                    <audio src="http://chtbl.com/track/247G8/https://dts.podtrac.com/redirect.mp3/cdn.simplecast.com/audio/a88fbe/a88fbe81-5614-4834-8a78-24c287debbe6/30aaf361-7a67-4ba6-8038-e3e273cf80af/clh-s4-ep1-bonus-final_tc.mp3" preload="none" controls></audio>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-guests pt-0 pb-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="mb-0 font-family-monospace text-white reveal">Featured in this episode</h3>
+
+                <div class="row guest-carousel">
+                    <div class="col-12 col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-dark" href="http://www.linkedin.com/in/carlalsing" target="_blank" title="Carl Alsing">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/photo-carl-asling-259x207.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="font-family-monospace">Carl Alsing</h4>
+
+                                    <p class="mb-0">Formerly the “Microkids” manager at Data General</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-dark" href="http://www.linkedin.com/in/jim-guyer-b6449a26" target="_blank" title="Jim Guyer">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/photo-jim-guyer-259x207.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="font-family-monospace">Jim Guyer</h4>
+
+                                    <p class="mb-0">Senior Distinguished Engineer at Dell EMC</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-dark" href="http://www.linkedin.com/in/neal-firth-a871a710" target="_blank" title="Neal Firth">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/photo-neal-firth-259x207.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="font-family-monospace">Neal Firth</h4>
+
+                                    <p class="mb-0">President of VIZIM Worldwide</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-dark" href="http://www.linkedin.com/in/bill-foster-05459762" target="_blank" title="Bill Foster">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/photo-bill-foster-259x207.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="font-family-monospace">Bill Foster</h4>
+
+                                    <p class="mb-0">Investor, Former VP of Data General</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row carousel-nav mb-2 mb-md-0">
+                    <div class="col-1 col-md-4 col-lg-5 pr-0 text-left text-md-right reveal">
+                        <a class="carousel-prev font-size-36" href="#" title="Previous">&lt;</a>
+                    </div>
+
+                    <div class="col-10 col-md-4 col-lg-2 px-0 reveal">
+                        <div class="carousel-dots d-flex justify-content-center"></div>
+                    </div>
+
+                    <div class="col-1 col-md-4 col-lg-5 pl-0 text-right text-md-left reveal">
+                        <a class="carousel-next font-size-36" href="#" title="Next">&gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<article class="node-shared">
+      <section class="dms-band clh-newsletter pt-0 pt-md-8">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-5 reveal">
+                <div class="card">
+                    <div class="card-body p-0">
+                        <img class="img-fluid svg svg-white mb-3" src="https://www.redhat.com/cms/managed-files/logo-command-line-heroes.svg" width="166" height="42" alt="Command Line Heroes logo" title="Command Line Heroes">
+
+                        <h3 class="font-family-monospace">Get the newsletter</h3>
+
+                        <p class="mb-0">After each episode drops, we'll send you commentary from the Command Line Heroes team, as well as links that help you take a closer look at the topics we cover. It's as simple as that.</p>
+                    </div>
+
+                    <div class="card-footer pt-3 px-0 pb-0">
+                        <a class="btn btn-primary mb-1 mb-lg-0" href="http://www.redhat.com/forms/?config=19411" title="Sign up">Sign up</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 offset-lg-1 reveal">
+                <div class="card mb-0 bg-white rounded-0 text-black">
+                    <div class="card-body p-2 p-md-3">
+                        <h3 class="font-family-monospace text-red">Presented by Red&nbsp;Hat</h3>
+
+                        <p class="mb-0">For 25 years, Red Hat has been bringing open source technologies to the enterprise. From the operating system to containers, we believe in building better technology together–and celebrating the unsung heroes who are remaking our world from the command line up.</p>
+                    </div>
+
+                    <div class="card-footer pt-0 px-2 px-md-3 pb-2 pb-md-3">
+                        <a class="btn btn-link mb-0" href="http://www.redhat.com/" title="Learn more">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+  </article>
+  <!-- Pattern | raw_html -->
+
+<article class="node-shared">
+  
+  </article>
+
+  
+  
+</article>
+
+</div>
+  </div>
+        
+  </div>
+
+  <footer>
+        <section class="rc-footer-traditional">
+      <div class="container rc-footer-traditional-container">
+        <section class="rc-footer-traditional-section">
+          <div class="rc-footer-traditional-logo">
+            <div class="row">
+              <a href="https://www.redhat.com/en">
+                <img src="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo.svg" class="screen" title="Red Hat" />
+                </a>
+            </div>
+          </div>
+          <div id="legal" class="rc-footer-traditional-legal">
+            <div class="row">
+              <div class="copyright">©2021 Red Hat, Inc.</div>
+              <div >
+                <ul class="menu"><li class="first leaf"><a href="../../about/privacy-policy.html">Privacy statement</a></li>
+<li class="leaf"><a href="../../about/terms-use.html">Terms of use</a></li>
+<li class="leaf"><a href="../../about/all-policies-guidelines.html">All policies and guidelines</a></li>
+<li class="leaf"><a href="../../about/digital-accessibility.html">Digital accessibility</a></li>
+<li class="last leaf"><span id="teconsent" class="nolink">|</span></li>
+</ul>              </div>
+            </div>
+                      </div>
+          <div class="rc-footer-traditional-event-logo">
+            <div id="block-block-5" class="block block-block block-footer-promote">
+
+      
+  <a href="https://www.redhat.com/summit"><img src="https://www.redhat.com/cms/managed-files/Logo-Red_Hat-Summit-A-Standard-RGB-02_0.svg" alt="Red Hat Summit" style="float: right;" width="72px"></a>
+</div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </footer>
+        <script type="text/javascript" src="../../../ux/webdms/js/vendors/jquery.waypoints.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/viewport.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/plyr.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/slick.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/scripts.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/projects/clh.min6eda.js?qy3uiv"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+  if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
+      _satellite.pageBottom();
+  }
+//--><!]]>
+</script>
+    </div>
+  <script type="text/javascript"  src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"></script></body>
+
+<!-- Mirrored from www.redhat.com/en/command-line-heroes/season-4/minicomputers by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:28:37 GMT -->
+</html>

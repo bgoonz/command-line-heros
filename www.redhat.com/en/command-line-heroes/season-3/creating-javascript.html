@@ -1,0 +1,1965 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  
+<!-- Mirrored from www.redhat.com/en/command-line-heroes/season-3/creating-javascript by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:27:54 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!--[if IE]><![endif]-->
+<script id="trustarc" type="text/javascript" src="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"></script>
+<script id="ddo" type="text/javascript">
+<!--//--><![CDATA[//><!--
+    var digitalData = {"cart":[],"event":[],"listing":{"browseFilter":"","query":"","queryMethod":"","refinementType":"","refinementValue":"","resultCount":"","searchType":""},"page":{"attributes":{"queryParameters":"","referringSearchEngine":"","analyticsTitle":"brand affinity | command line heroes season 3 episode 3","taxonomyPageSubType":["28051"],"taxonomyRegion":["4521"],"taxonomyMetaHreflang":["29051"]},"category":{"contentType":"","keyPage":"false","keyPageType":"","pageType":"pattern_template","primaryCategory":"command-line-heroes","subCategories":["season-3","creating-javascript"]},"pageInfo":{"cms":"RH CMS 2021.12.0","contentFindingMethod":"","contentID":"369571","contentPortal":"","destinationURL":"https:\/\/www.redhat.com\/en\/command-line-heroes\/season-3\/creating-javascript","errorMessage":"","errorType":"","language":"en","pageName":"","referringDomain":"","referringURL":"","sysEnv":"","template":"","title":"Command Line Heroes: Season 3: Creating JavaScript"}},"product":[],"user":[{"profile":[{"profileInfo":{"daysSinceLastPurchase":"","demandbaseSID":"","eloquaGUID":"","lastLoginDate":"","lastPurchaseDate":"","loggedIn":"false","profileID":"","subscriptionFrequency":"","subscriptionLevel":""}}]}]};
+    !function(a,b,c){"use strict";function d(a){var c="; "+b.cookie,d=c.split("; "+a+"=");if(2===d.length)return d.pop().split(";").shift()}if(b.referrer){var e=b.createElement("a");e.href=b.referrer,c.page.pageInfo.referringDomain=e.hostname,c.page.pageInfo.referringURL=e.href}c.page.pageInfo.sysEnv=a.innerWidth<=768?"tablet":"desktop";var f=c.user[0].profile[0].profileInfo,g=d("rh_elqCustomerGUID");g&&(f.eloquaGUID=g);var h=d("rh_user");if(h){var i=h.split("\\|");i[0]&&(f.loggedIn="true")}var j=d("s_dmdbase");j&&(f.demandbaseSID=j)}(window,document,digitalData);
+//--><!]]>
+</script>
+<script src="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm.js" data-domain="www.redhat.com"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-functional.js" class="trustecm" data-tracker-type="functional"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-advertising.js" class="trustecm" data-tracker-type="advertising"></script><script id="dpal" type="text/javascript" src="../../../dtm.js"></script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="en" />
+<link href="creating-javascript.html" rel="alternate" hreflang="en" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "availableLanguages": {
+        "zh": {
+            "@type": "Language",
+            "name": "简体中文",
+            "href": "/zh/command-line-heroes/season-3/creating-javascript"
+        },
+        "en": {
+            "@type": "Language",
+            "name": "English",
+            "href": "/en/command-line-heroes/season-3/creating-javascript",
+            "current_lang": true
+        },
+        "fr": {
+            "@type": "Language",
+            "name": "Français",
+            "href": "/fr/command-line-heroes/season-3/creating-javascript"
+        },
+        "de": {
+            "@type": "Language",
+            "name": "Deutsch",
+            "href": "/de/command-line-heroes/season-3/creating-javascript"
+        },
+        "it": {
+            "@type": "Language",
+            "name": "Italiano",
+            "href": "/it/command-line-heroes/season-3/creating-javascript"
+        },
+        "ja": {
+            "@type": "Language",
+            "name": "日本語",
+            "href": "/ja/command-line-heroes/season-3/creating-javascript"
+        },
+        "ko": {
+            "@type": "Language",
+            "name": "한국어",
+            "href": "/ko/command-line-heroes/season-3/creating-javascript"
+        },
+        "pt-br": {
+            "@type": "Language",
+            "name": "Português",
+            "href": "/pt-br/command-line-heroes/season-3/creating-javascript"
+        },
+        "es": {
+            "@type": "Language",
+            "name": "Español",
+            "href": "/es/command-line-heroes/season-3/creating-javascript"
+        }
+    }
+}</script><meta name="last-publish-date" content="Tue, 25 Jun 2019 04:00:00 GMT" />
+<meta name="node-type" content="pattern_template" />
+<meta name="source" content="rhdc_drupal" />
+<meta name="rhdc_key" content="bd9f4887f9ff08f8c2c163ff8645aa1d" />
+<meta name="taxonomy-region" content="Global" />
+<meta name="taxonomy-region-tid" content="4521" />
+<meta name="taxonomy-page-sub-type" content="Brand affinity" />
+<meta name="taxonomy-page-sub-type-tid" content="28051" />
+<meta name="taxonomy-meta-hreflang" content="en" />
+<meta name="taxonomy-meta-hreflang-tid" content="29051" />
+<link rel="shortcut icon" href="https://www.redhat.com/misc/favicon.ico" type="image/x-icon" />
+<meta property="og:description" content="A mission to set the course of the world wide web in its early days. 10 days to get it done. The result? An indispensable language that changed everything." />
+<meta name="description" content="A mission to set the course of the world wide web in its early days. 10 days to get it done. The result? An indispensable language that changed everything." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="image_src" href="../../../cms/managed-files/og-clh-s3-1200x675.png" />
+<link rel="canonical" href="creating-javascript.html" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.redhat.com/en/command-line-heroes/season-3/creating-javascript" />
+<meta property="og:title" content="Command Line Heroes: Season 3: Creating JavaScript" />
+<meta property="og:image" content="https://www.redhat.com/cms/managed-files/og-clh-s3-1200x675.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Command Line Heroes: Season 3: Creating JavaScript" />
+<meta name="twitter:image" content="https://www.redhat.com/cms/managed-files/og-clh-s3-1200x675.png" />
+    <title>Command Line Heroes: Season 3: Creating JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://static.redhat.com/">
+    <link rel="preload" href="https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/fonts/web_icon/rh-web-iconfont.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatTextVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatDisplayVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__k9aoxkMyjUtSX9AXGCPExPgTYjM0Xv5OYNfbFGDRafY__N9sjJtGj85lXtvOptw2e_YZ01FXbTXcJywP8EaKBijU__uaCwYofnUZLAnB7x3Q6WyVKH" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/all/libraries/webrh/dist/css/webrh.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__cxslYvmVeKFG0RwKl9kcXSrmb2x2VtvkIw-OLkwF8jU___pPNjqO-hMXRnx5HlJupeXtrvaj0Ilhs-XAVxMYy0CM__uaCwYofnUZLAnB7x3Q6WyVKH" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__wpajrf8pWA19ifT2xQXPB3J1TByoCXqZVtt6kXfl4Ow__PFQbFxxWsZl0yTnfrpPiA-o5Pvtu-CXh7nICx08JW0c__uaCwYofnUZLAnB7x3Q6WyVKH" media="print" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/css/trustecm.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/redhat-theme/6/advanced-theme.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/red-hat-font.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/font-awesome/4.7.0/css/font-awesome.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/vendors/plyr.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/styles.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/projects/clh-s3-episodes.min6eda.css?qy3uiv" media="all" />
+    <!--[if lt IE 9]>
+      <script src="/profiles/rh/themes/redhatdotcom/js/selectivizr-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/nwmatcher-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/respond.js" type="text/javascript"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../../../sites/default/files/advagg_js/js__B6wED6l5P_XUdxVmb7Nvh5d9zn074QukFqJa2HLXS6c__VzWs8XZBHHsPW77egi-W-FQw2mAEr5F-GgCJU0wn3Nc__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.vendor.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.webcomponents.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__pDOiYGKaYbdKNp1gvMxR0fWhWZnfUemYDUhADyCn3oM__jCrCuWCJIPYPe1FzZoUvsJWEjkNMmRIQHYek1h7idBE__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.rh = window.rh || {}; window.rh.drupalTrustArcLoaded = true;
+//--><!]]>
+</script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__5nUyGFdhKMGscC9VhukG-UTAhz8BEdhsa8koVlLwAyQ__Lz8gDLbd5fTco1AnHaCqhSeYJB5o0QUXAimK7JOyRNI__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"redhatdotcom","theme_token":"f8_nSHmet0l8J9L6BIQxQXfZj8PvXxrGzqSnftgDCNE","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.webcomponents.min.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.min.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/marketing\/latest\/trustarc\/trustecm\/css\/trustecm.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-theme\/6\/advanced-theme.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-font\/4\/webfonts\/red-hat-font.min.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-iconfont.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-web-iconfont.css":1,"sites\/all\/libraries\/patternfly-elements\/pfe-styles\/pfe-typography-classes.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/site-switcher.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/chrome.css":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/print.css":1,"\/\/static.redhat.com\/libs\/font-awesome\/4.7.0\/css\/font-awesome.min.css?qy3uiv":1,"\/ux\/webdms\/css\/vendors\/plyr.min.css?qy3uiv":1,"\/ux\/webdms\/css\/styles.min.css?qy3uiv":1,"\/ux\/webdms\/css\/projects\/clh-s3-episodes.min.css?qy3uiv":1},"js":{"\/ux\/webdms\/js\/vendors\/jquery.waypoints.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/plyr.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/viewport.min.js?qy3uiv":1,"\/ux\/webdms\/js\/scripts.min.js?qy3uiv":1,"\/ux\/webdms\/js\/projects\/clh.min.js?qy3uiv":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/rh\/modules\/redhat_www_ddo\/dist\/post-jquery.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.vendor.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.webcomponents.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"profiles\/rh\/modules\/redhat_www_menu\/js\/rh_nav.js":1,"profiles\/rh\/modules\/redhat_www_share\/js\/rh_share.js":1,"profiles\/rh\/modules\/redhat_www_utility\/js\/redhat_www_utility.js":1,"sites\/all\/libraries\/jquery-cookie\/jquery.cookie-1.4.1.min.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.pushmenu.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery-scrolltofixed.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/rh-chrome.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.fitvids.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.switchIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.viewport\/jquery.viewport.min.js":1}},"redhat_www_menu":{"path":"node\/369571"},"rh_analytics_enabled":false});
+//--><!]]>
+</script>
+    <noscript>
+        <link href="../../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.noscript.min.css" rel="stylesheet" >
+    </noscript>
+  </head>
+  <body unresolved class="bands-index html not-front not-logged-in no-sidebars page-node page-node- page-node-369571 node-type-pattern-template i18n-en clh-s3e3 bg-purple-dark " >
+    <div class="page">
+            <!-- Legacy migrated page support with body.migrated-page-hero -->
+<div class="header-background-image fts-migrated-bg">
+</div>
+
+  <div id="main-content">
+                      <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+      
+  <article class="node-369571 node node-pattern-template clearfix">
+
+  
+    <!-- Pattern | raw_html -->
+
+<article class="node-shared">
+      <header id="top" class="dms-band clh-nav-top py-2">
+    <div class="container text-white">
+        <div class="row d-flex align-items-center">
+            <div class="col-6">
+                <a href="../../command-line-heroes.html" title="Command Line Heroes">
+                    <img class="img-fluid svg svg-white" src="https://www.redhat.com/cms/managed-files/logo-command-line-heroes.svg" width="166" height="42" alt="Command Line Heroes logo">
+                </a>
+            </div>
+
+            <div class="col-6 clh-nav-toggle-wrapper">
+                <span class="text-monospace text-right font-size-16 d-inline-block">Subscribe<br/>& more</span>
+
+                <a href="#" class="btn btn-toggle" data-toggle="nav-shelf">
+                    <div class="d-inline-block">
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="dms-band clh-nav-shelf text-white py-0">
+    <div class="nav-container pb-4">
+        <div id="CLHNav" class="accordion">
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-subscribe.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSubscribe">
+                    <p>Subscribe</p>
+                </button>
+                <div id="clhSubscribe" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <p>Subscribe to the podcast to receive new episodes as soon as we release them</p>
+                    <div class="row pb-2">
+                        <div class="col-6 mb-2">
+                            <a href="http://geo.itunes.apple.com/podcast/us/id1319947289?mt=2&amp;at=1010lbVy&amp;ct=redhatclh_website" target="_blank" title="Listen on Apple Podcasts">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-apple.png" alt="Listen on Apple Podcasts">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://www.google.com/podcasts?feed=aHR0cHM6Ly9mZWVkcy5wYWNpZmljLWNvbnRlbnQuY29tL2NvbW1hbmRsaW5laGVyb2Vz" target="_blank" title="Listen on Google Podcasts">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-google.png" alt="Listen on Google Podcasts">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://www.stitcher.com/s?fid=159833&amp;refid=stpr" target="_blank" title="Listen on Stitcher">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-stitcher.png" alt="Listen on Stitcher">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://open.spotify.com/show/4Jgtgr4mHXNDyLldHkfEMz" target="_blank" title="Listen on Spotify">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-spotify.png" alt="Listen on Spotify">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://feeds.pacific-content.com/commandlineheroes" target="_blank" title="Subscribe via RSS Feed">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-rss.png" alt="Subscribe via RSS Feed">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-about.jpg">
+                <button href="../about.html" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhAbout">
+                    <p>About the podcast</p>
+                </button>
+                <div id="clhAbout" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <p>Discover Red Hat’s original podcast about the people who transform technology from the command line up. Subscribe to our newsletter for commentary from the Command Line Heroes team—and links to take a closer look at the topics we cover.</p>
+                    
+                    <p><a href="../about.html" class="btn btn-primary">Learn about the show</a></p>
+                    <p class="mb-0 pb-4"><a href="https://www.redhat.com/forms/?config=19411" class="btn btn-outline-white">Get the newsletter</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s1.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason1">
+                    <p>Season 1</p>
+                </button>
+                <div id="clhSeason1" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-1/os-wars-part-1.html" title="OS Wars_Part 1">OS Wars_part 1</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/os-wars-part-2-rise-of-linux.html" title="OS Wars_Part 2">OS Wars_part 2</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/agile-revolution.html" title="The Agile_Revolution">The Agile_Revolution</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/devops-tear-down-that-wall.html" title="DevOps_Tear Down That Wall">DevOps_Tear Down That Wall</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/the-containers-derby.html" title="The Containers_Derby">The Containers_Derby</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/crack-the-cloud-open.html" title="Crack the Cloud_Open">Crack the Cloud_Open</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/days-of-future-open.html" title="Days of Future_Open">Days of Future_Open</a>
+                        </li>
+                    </ol>
+                  <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-1.html" title="Explore season 1">Explore Season 1</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s2.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason2">
+                    <p>Season 2</p>
+                </button>
+                <div id="clhSeason2" class="accordion-panel collapse" data-parent="#CLHNav">
+
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-2/press-start.html" title="Press Start">Press Start</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/hello-world.html" title="Hello, World">Hello, World</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/ready-to-commit.html" title="Ready to Commit">Ready to Commit</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/fail-better.html" title="Fail Better">Fail Better</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/the-one-about-devsecops.html" title="The One About DevSecOps">The One About DevSecOps</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/the-data-explosion.html" title="The Data Explosion">The Data Explosion</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/at-your-serverless.html" title="At Your Serverless">At Your Serverless</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/open-curiosity.html" title="Open Curiosity">Open Curiosity</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/developer-advocacy-roundtable.html" title="Bonus_Developer Advocacy Roundtable">Bonus_Developer Advocacy Roundtable</a>
+                        </li>
+                    </ol>
+                   <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-2.html" title="Explore season 2">Explore Season 2</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s3.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason3">
+                    <p>Season 3</p>
+                </button>
+                <div id="clhSeason3" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="pythons-tale.html" title="Python's Tale">Python's Tale</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="learning-the-basics.html" title="Learning the BASICs">Learning the BASICs</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="creating-javascript.html" title="Creating JavaScript">Creating JavaScript</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="diving-for-perl.html" title="Diving for Perl">Diving for Perl</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="the-infrastructure-effect.html" title="The Infrastructure Effect">The Infrastructure Effect</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="heroes-in-a-bash-shell.html" title="Heroes in a Bash Shell">Heroes in a Bash Shell</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="talking-to-machines.html" title="Talking to Machines">Talking to Machines</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="the-c-change.html" title="The C Change">The C Change</a>
+                        </li>
+                    </ol>
+                   <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-3.html" title="Explore season 3">Explore Season 3</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s4.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason4">
+                    <p>Season 4</p>
+                </button>
+                <div id="clhSeason4" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-4/minicomputers.html" title="Minicomputers">Minicomputers</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-4/mainframes.html" title="Mainframes">Mainframes</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/personal-computers.html" title="Personal Computers">Personal Computers</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/floppies.html" title="Floppies">Floppies</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/smarter-phones.html" title="Smarter Phones">Smarter Phones</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/open-source-hardware.html" title="Open Source Hardware">Open Source Hardware</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/consoles.html" title="Consoles">Consoles</a>
+                        </li>
+
+                         <li class="mb-2">
+                            <a href="../season-4/steve-wozniak.html" title="Steve Wozniak">Steve Wozniak</a>
+                        </li>
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-4.html" title="Explore season 4">Explore Season 4</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s5.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason5">
+                    <p>Season 5</p>
+                </button>
+                <div id="clhSeason5" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-5/becoming-a-coder.html" title="Becoming a Coder">Becoming a Coder</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-5/where-coders-code.html" title="Where Coders Code">Where Coders Code</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-5/what-kind-of-coder-will-you-become.html" title="What Kind of Coder Will You Become?">What Kind of Coder Will You Become?</a>
+                        </li>
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-5.html" title="Explore season 5">Explore Season 5</a></p>
+ 
+                </div>
+            </div>
+
+                        <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s6.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason6">
+                    <p>Season 6</p>
+                </button>
+                <div id="clhSeason6" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-6/jerry-lawson.html" title="Jerry Lawson">Jerry Lawson</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/gladys-west.html" title="Dr. Gladys West">Dr. Gladys West</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/mark-dean.html" title="Dr. Mark Dean">Dr. Mark Dean</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/marc-hannah.html" title="Dr. Marc Hannah">Dr. Marc Hannah</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/clarence-ellis.html" title="Dr. Clarence Ellis">Dr. Clarence Ellis</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/roy-clay.html" title="Roy Clay">Roy Clay</a>
+                        </li>
+                       <li class="mb-2">
+                            <a href="../season-6/gladys-perkins.html" title="Gladys Perkins">Gladys Perkins</a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="../season-6/arlan-hamilton.html" title="Arlan Hamilton">Arlan Hamilton</a>
+                        </li>
+            
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link text-monospace text-white" href="../season-6.html" title="Explore season 6">Explore Season 6</a></p>
+                </div>
+            </div>
+
+             <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/season-7_nav.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason7">
+                    <p>Season 7</p>
+                </button>
+                <div id="clhSeason7" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-7/dot-com.html" title="Connecting The Dot-Com">Connecting The Dot-Com</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/nsfnet.html" title="From NSF to ISP">From NSF to ISP</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/html.html" title="A Language for the Web">A Language for the Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/ux.html" title="Web UX Begins">Web UX Begins</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/shopping.html" title="Shopping for the Web">Shopping for the Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/search.html" title="Looking for Search">Looking for Search</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/world.html" title="The World of the World Wide Web">The World of the World Wide Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/bubble.html" title="After the Bubble">After the Bubble</a>
+                        </li>
+
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../../command-line-heroes.html" title="Explore season 5">Explore Season 7</a></p>
+ 
+                </div>
+            </div>
+
+        </div>
+        
+        <ul class="social-list list-inline list-unstyled pl-5 pl-sm-6 mt-1">
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F" target="_blank" title="Facebook" onclick="return !window.open(this.href, 'Facebook', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
+                    <span class="web-icon-facebook" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.twitter.com/share?url=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F&amp;text=An%20original%20podcast%20about%20the%20people%20who%20transform%20technology%20from%20the%20command%20line%20up.%20Presented%20by%20Red%20Hat." target="_blank" title="Twitter" onclick="return !window.open(this.href, 'Twitter', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
+                    <span class="web-icon-twitter" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F&amp;title=Command%20Line%20Heroes&amp;summary=Hear%20the%20epic%20true%20tales%20of%20how%20developers%2C%20programmers%2C%20hackers%2C%20geeks%2C%20and%20open%20source%20rebels%20are%20revolutionizing%20the%20technology%20landscape.%20Command%20Line%20Heroes%20is%20a%20new%20podcast%20hosted%20by%20Saron%20Yitbarek%20and%20produced%20by%20Red%20Hat.&amp;source=Red%20Hat" target="_blank" title="LinkedIn" onclick="return !window.open(this.href, 'LinkedIn', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')" aria-current="page">
+                    <span class="web-icon-linkedin" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="mailto:?subject=Command Line Heroes&body=Hear%20the%20epic%20true%20tales%20of%20how%20developers%2C%20programmers%2C%20hackers%2C%20geeks%2C%20and%20open%20source%20rebels%20are%20revolutionizing%20the%20technology%20landscape.%20Command%20Line%20Heroes%20is%20a%20new%20podcast%20hosted%20by%20Saron%20Yitbarek%20and%20produced%20by%20Red%20Hat. https://www.redhat.com/en/command-line-heroes" target="_blank" title="Email" aria-current="page">
+                    <span class="web-icon-envelope" aria-label="true"></span>
+                </a>
+            </li>
+        </ul>
+
+         <div class="language-switcher position-absolute bottom-0 right-0  w-100">
+            <div class="row justify-content-center mx-0">
+
+                <div class="col-6 text-center border-right border-black border-20 language-inactive">
+                    <a href="http://www.redhat.com/es/command-line-heroes" title="Command Line Heroes"><img class="img-fluid py-2" width="90" src="https://www.redhat.com/cms/managed-files/logo_clh-en-espanol_inactive.svg" alt="CLH en espanol logo"></a></div>
+
+                <div class="col-6 text-center language-active"><a href="../../command-line-heroes.html" title="Command Line Heroes"><img class="img-fluid pt-3 pb-2" width="130" src="https://www.redhat.com/cms/managed-files/logo_CLH_small.svg" alt="CLH logo"></a></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+</div>
+
+
+<div class="mb-6">&nbsp;</div>  
+  </article>
+  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-hero-episode pt-3 pt-lg-0 pb-2 pb-lg-1">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-lg-5 pt-lg-8 pt-xl-11 reveal">
+                <h5 class="section-label mb-1">Season 3, Episode 3</h5>
+
+                <h1>Creating JavaScript</h1>
+
+                <div class="clh-audio">
+                    <audio src="http://chtbl.com/track/247G8/https://dts.podtrac.com/redirect.mp3/cdn.simplecast.com/audio/a88fbe/a88fbe81-5614-4834-8a78-24c287debbe6/5f79465e-c5fc-4f18-a2cc-c053fe4947d1/CLH_S3E3_Creating_JavaScript_vFINAL_tc.mp3" preload="none" controls></audio>
+                </div>
+
+                <a class="btn btn-link mt-2 mb-0 font-family-monospace text-white" href="#" title="Listen to this episode later" data-toggle="nav-shelf" data-toggle-panel="#clhSubscribe">Listen to this episode later</a>
+            </div>
+
+            <div class="col-12 col-lg-7 pt-4 pt-lg-11 pt-xl-8 d-lg-flex align-items-lg-center justify-content-lg-end text-white text-center text-lg-right reveal">
+                <img class="img-fluid" src="../../../cms/managed-files/img-clh-s3e3-hero.gif">
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-tabs-notes pt-0">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <ul class="nav nav-tabs mb-3">
+                    <li class="nav-item">
+                        <a class="tab-show-notes nav-link mx-0 mr-md-4 p-0 font-size-24 text-white active" href="#show-notes" data-toggle="tab" title="Show notes">Show notes</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="tab-transcript nav-link mt-2 mt-md-0 mx-0 p-0 font-size-24 text-white" href="#transcript-tray" data-toggle="tab" title="Transcript">Transcript</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="show-notes" class="tab-pane fade active show">
+                        <div class="row">
+                            <div class="col-12">
+                                <p>A mission to set the course of the world wide web in its early days. 10 days to get it done. The result? An indispensable language that changed everything.</p>
+
+                                <p>JavaScript was the underdog that won against all odds. Clive Thompson recounts the browser wars and how much the fallout influenced the future of the internet. Charles Severance explains how JavaScript went from a last-minute moonshot to the default web development language. Michael Clayton confesses he, like many others, underestimated JavaScript. And Klint Finley describes a gloomy internet without it.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="transcript-tray" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-12">
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>00:00</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Hi, everyone. We're back. We're excited to launch season three of Command Line Heroes. We have so many of you to thank for the stories featured on this show because each and every season begins with us talking to developers, SIS admins, IT architects, engineers, and folks in the open source community about the topics and technologies you're most interested in. Now, we're opening up this approach even more. We want all of you to weigh in and help shape the future of Command Line Heroes. You could do this by taking our short survey. What do you like about the show? What would you like us to talk about more? Dear listener, we want to know more about you. Are you a developer? Do you work in operations, or do you do something completely separate from the world of tech? Go to commandlineheroes.com/survey to help us level up the podcast for season four and beyond. Now, onto season three.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>01:00</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Brendan Eich was 34 years old when he sat down at his desk in the Netscape headquarters. He was committing himself to a massive 10-day sprint of coding. A new language, a whole new programming language in just 10 days. It was 1995 and the world of programming languages was about to change forever.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>01:26</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I am Saron Yitbarek, and this is Command Line Heroes, an original podcast from Red Hat. All season long, we're exploring the power and promise of programming languages, discovering how our language has shaped the world of development and how they supercharge our work. This time, we're tracking the creation of JavaScript. Maybe you've heard the story of Brendan Eich before, but how does something like JavaScript really get created? There was Brendan's sprint, sure. But there's so much more to the story.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>02:02</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Our JavaScript tale begins in the midst of a war, a browser war. The browser wars of the 1990s may seem like history, but they were hugely consequential. On one side of the battlefield, Netscape, which had formed an alliance with Sun Microsystems. On the other, you've got Microsoft, software behemoth. And what were the spoils they were fighting over? It was a battle to decide who would be the gatekeeper of the internet. The stakes could not be larger.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>02:40</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>To really understand how the browser wars went down, I called up one of my favorite tech historians, author Clive Thompson. His most recent book-</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>02:50</strong> - <em>Clive Thompson</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Coders: The Making of a New Tribe and The Remaking of The World.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>02:54</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Clive and I got talking about the browser wars, but let me really set the scene for you. You've got Netscape realizing that the browser was this key piece of software that people were going to use to get online. And then you've got Microsoft, their whole business model was packaging stuff inside Windows. They hadn't really been interested in browsers until in the 1990s, Microsoft realized that maybe they'd been sleeping at the wheel. The world was moving online, and there was nothing inside of Microsoft Windows that would help them get there. But these guys over here, some company called Netscape, they're offering an on-ramp to the internet. All of a sudden, Microsoft's industry wide dominance doesn't look so absolute. The browser wars begin in that moment, the moment when Microsoft wakes up to the power of the internet and squints its eye at their new competition. So, that's my setup. Here's me and Clive hashing out what happened next.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>04:03</strong> - <em>Clive Thompson</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The fight was over who was going to be the main portal to going online. You have to realize that in the early '90s, no one was really online very much. And when Mosaic came along and eventually turned into Netscape, they were the first browser that anyone could download that will let you look at the web. They went online in December of 1994. So, suddenly, you know thousands and millions of people are able to use the internet in this kind of graphical way. They're just getting massive, massive downloads and huge amounts of press. Everyone's basically saying, "Yeah, Netscape is kind of the future of this thing called the internet."</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>04:40</strong> - <em>Clive Thompson</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So over in Seattle, you've got Microsoft watching this with enormous alarm because they had pretty much ignored the internet. They were focused on selling Windows, and they had really not paid any attention to this crazy newfangled thing called the internet. So they had to play a very rapid game of catch up. They did not get their own browser out for almost a year later. In the fall of 1995, their browser came out, and that was essentially the beginning of the browser wars, the moment when Microsoft was trying to fight to be the portal by which people went online.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>05:13</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Okay. So a year to meet doesn't sound like too bad, right? That’s not too long. Right? That seems like a reasonable amount of time.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>05:21</strong> - <em>Clive Thompson</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>No, it's true. It doesn't sound like a long time, but things were moving so rapidly back then. And there was a strong sense of first mover advantage, that the first company that could sort of brand themselves as the way you get online would be the winner for years and years and maybe forever. I remember how rapid the pace of development was. I mean, Netscape was putting out a new browser every couple of months, right? They would be, "Wow. Now, we've got email integrated into the browser. Now, we've got a sort of a little search bar up top." It just kept on becoming better and better. You could sort of see you know all the things you could do online swimming into view as they've rapidly iterated and rapidly pushed things out.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>06:01</strong> - <em>Clive Thompson</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Microsoft was accustomed to developing very slowly. Here's your four-year-long development process at the end. It's as bug-free as we can get it. Put it in a box, goes out to the stores, and we don't release a new version for four years. Netscape comes along, and it's the first company to say, "No, we're going to put out kind of a substandard product, but it works well enough, and we're going to have a new one for you to download in three months and three months and three months." This completely destabilized Microsoft.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>06:30</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Okay. So if I'm Microsoft, I can look at it and go, "Oh my goodness. This is the future. I need to catch up. I need to compete," or I can say, "Ah, it's a fad." So what is it about the browser that made Microsoft pick the first option? That made Microsoft go, "Oh my goodness. This is a real thing. I need to compete."</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>06:51</strong> - <em>Clive Thompson</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The thing with the browser was that it had a huge amount of cultural cache. It was the first thing you could do on the internet that was like culturally fun. You could go to suddenly a band's webpage and see posts by them and photos by them. You could go and research your hobby by finding all the model train people in Florida, right? So, everything about the internet before that had seemed nerdy. Email, file transfers, whatnot. I mean, suddenly the browser made the internet look like a magazine, like a fun thing to interact with. Newspapers and CNN and magazines were sort of writing about it in this very excited way for the first time. This was the moment that technology moved from being very deep inside the business section to being on page A1 of the New York Times.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>07:41</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So what was appealing about Netscape or even just the browser in general when it comes to developers? Why were they so into it?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>07:48</strong> - <em>Clive Thompson</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I've met a lot of developers. Suddenly, the internet comes along with the browser, and you can just have a web page that says, "Just download my cool piece of software." So, it unlocked the entire world of the way that we see software being made today.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>08:04</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I should mention here that at first Microsoft actually offered to buy Netscape. Though they were offering a pretty tiny amount, but Netscape turned them down. So Microsoft had to build a browser of their own. They called theirs Explorer.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>08:21</strong> - <em>Clive Thompson</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Microsoft spent a year frantically working on a browser, and they got it out in the fall of 1995. They did sort of the same thing that Netscape did. They produced something quickly without worrying if it was perfect and it got better and better. But what really emerged over the latter half of the '90s was a war over whose browser would be the most interesting, the most sort of interactive and sophisticated.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>08:53</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Keep in mind that Netscape by no means had the upper hand here.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>08:57</strong> - <em>Clive Thompson</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Microsoft had a very powerful position. When you ship Windows on the order of 80 to 90% of all computers on the planet, it's pretty easy to make your software the default. And that's exactly what they did. So you see Explorer sort of rise and rise and rise.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>09:16</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>In a way, poor old Netscape was always the underdog in that battle, but here's the thing. Before the battle was over, they threw a beautiful Hail Mary, and it turns out that would become an incredible score for the whole world of programming.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>09:35</strong> - <em>Clive Thompson</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That is the fascinating and weird story of the creation of JavaScript.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>09:43</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>All that heat around the web, around the potential of life in a browser had made one thing very clear. We needed a new programming language, something that went far beyond HTML. We needed a language tailor made for all that new web-based development. We wanted a language that didn't just survive online but thrived there.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>10:10</strong> - <em>Clive Thompson</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>How do you create a programming language for the browser?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>10:15</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That, my friend, was the billion dollar question. So around the time Netscape saw that Microsoft was competing with them, they took a look at Java™. Was Java going to be the language for web development? Java was this rich compiled language. It performed just as well as C++. But it did still need to be compiled. Developers really wanted something more lightweight, something that could be interpreted instead of compiled, something that would appeal to all those non-professional programmers that were swarming to the web. Those new programmers wanted to work directly on the webpage after all. That was the dream.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>11:05</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Netscape needed a programming language that would run inside their browser, something that would allow developers to bring those static webpages to life. Wouldn't it be great, they thought, if they could release a new lightweight language that worked wonders for web programming, at the same time that they released Netscape 2.0 in beta. There was only one hitch. That gave them exactly 10 days to create a new language. Actually, it gave one guy, Brendan Eich, 10 days. He was the one tasked with pulling this off. There was no doubt that if anybody could do it, this guy could. When Brendan was a student at the University of Illinois, he used to create new languages for fun, just to play around with syntax.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>11:57</strong> - <em>Charles Severance</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The key to Brendan Eich is that Brendan Eich, when he built JavaScript, had become sort of a language junkie.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>12:05</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>To understand what Eich actually pulled off, we reached out to Charles Severance, a professor at the University of Michigan’s School of Information.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>12:14</strong> - <em>Charles Severance</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>JavaScript was sort of created in an environment where Java was seen as the future, and so in 1994, we thought that it was the thing that was going to solve everything. One year later, the thing that would actually solve everything was about to appear, but it couldn't say, "Hey, I've solved everything," because everybody, myself included, believed in '94, '95 that we had seen the future of rock and roll, and it was the Java programming language. They had to build a language that seemed irrelevant, seemed silly, seemed meaningless, and yet was the right solution.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>12:56</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>What Eich delivered was not just a toy language though. It was sophisticated in hidden ways, drawing on major inspirations from languages that had come before.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>13:07</strong> - <em>Charles Severance</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>If you look at the basic syntax, it's very clear that it’s inspired by the C language with its curly braces and semicolons. Some of the string patterns were taken from the Java programming language, but the object oriented underlying patterns taken from a programming language called Modula-2, which had this notion of first class functions, which, to me, is really one of the most amazing choices that made JavaScript such a powerful and extensible language, and that is the function, the body of the function, the code that makes up a function itself is also data.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>13:41</strong> - <em>Charles Severance</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The other thing that really was a part of the inspiration was HyperCard. JavaScript was always running in a browser, which meant it had a basic data context of the document object model, which is an object-oriented representation of a webpage. It is not like a traditional programming language. The JavaScript code didn't start at the beginning. The first thing that it was was a webpage, and so it ended up with this event-oriented programming.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>14:12</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>When JavaScript was released along with Netscape Navigator 2.0 on November 30th, 1995, all that magic was housed into a powerful little seed of a language. 28 companies, including America Online and AT&T, agreed to use it as an open standard language. When it was released, there were some old pros looking down their noses at JavaScript. They thought it was just a language for newbies. They missed its revolutionary potential.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>14:46</strong> - <em>Charles Severance</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Brendan decided he would sneak in all these super advanced concepts from languages that are not well known that were very like advanced object-oriented languages. So JavaScript is almost like a Trojan horse. It sort of sneaked into our collective consciousness with the idea that it was silly, and fun, and easy and lightweight. But then built in from almost the very beginning was a powerful, deeply thought, well thought-out programming language that's capable of doing literally almost anything in computer science.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>15:17</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The result was a language native to the browser that could evolve as our online lives evolved. It didn't take long before JavaScript became the de facto web development option.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>15:29</strong> - <em>Charles Severance</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>JavaScript was a language that I had no choice but to learn, and literally people that learn JavaScript usually have no choice because they're like, "I want to build a browser application, and I want it to have interactive elements." The answer is therefore you must learn JavaScript. If you imagine, like, what is your favorite language, the answer to that question is almost got to be x plus JavaScript, right? Someone might say, "I like Python and JavaScript," or, "I like Scala and JavaScript," because it's like the one language everyone is required to learn.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>16:05</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Charles Severance is a professor at the University of Michigan School of Information. Netscape had been incredibly strong coming out of the gate, and they fought hard during the browser war, but in the end ...</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>16:22</strong> - <em>Clive Thompson</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Netscape just disappears as a serious product.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>16:27</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Microsoft's industry-wide domination was an overwhelming force. Despite being a year late to the browser game, they were able to pull themselves back on top and win the day. But you know, Netscape's Hail Mary, its creation of JavaScript, was a success because long after the fight was over, this gem of a language that came out of their browser war, it would have an afterlife that changed everything.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>17:01</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>If you started coding more recently, you might take for granted that you can develop interactive web pages that change and update without pulling a whole new copy of the page from the server. But imagine for a sec what it was like when doing that became a brand new option. We asked Michael Clayton, a Software Engineer at Red Hat, to help us understand what a huge shift that was.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>17:28</strong> - <em>Michael Clayton</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>In, I want to say 2004, Google Mail was released, Gmail, and it was, to my knowledge, the first web application that really took JavaScript to the next level, that used it to dynamically switch content out that you were looking at.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>17:49</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Say you're looking at your inbox, and you click on an email. In the old days, your email viewer would load a whole new page in your browser just to show you that email. Then you close that email and it would reload the whole inbox.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>18:05</strong> - <em>Michael Clayton</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It created a lot of latency. There was a lot of waiting when you would switch back and forth between views, Gmail changed all that. They used JavaScript to in the background fetch the content that you wanted to view, and just put it in front of you without you having to wait for a brand new page view.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>18:23</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That saved a ton of time and energy. But really think about it, it changed more than just the speed. It changed the very nature of our work.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>18:35</strong> - <em>Michael Clayton</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So web developer as a job title has gone from being a server-side, kind of behind the scenes role, to being just a very thin layer away from the user since they're writing code directly in the browser that the user is viewing the webpage through.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>18:52</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It changed everything. In fact, you can pretty much credit JavaScript with ushering in the web 2.0 revolution. Anybody with a web browser suddenly had a development environment right in front of them. But, as I mentioned before, the old guard didn't necessarily feel comfortable with how democratic things were getting.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>19:16</strong> - <em>Michael Clayton</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That early antagonism of JavaScript, I was part of that myself. I had the browser extensions that would prevent JavaScript from running. I thought it was a useless toy language, and I kind of had this feeling of anger whenever I went to a webpage that had JavaScript required for some critical feature of the site. I was like, "You should build your website the right way without JavaScript."</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>19:43</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Soon enough, though, the beauty and the potential inherent in Brendan Eich's 10-day language became obvious to everyone. And now, it's conquering not just the browser but the server, too. With Node.js, a whole new territory for that little-language-that-could has opened up.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>20:03</strong> - <em>Michael Clayton</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>When I heard that JavaScript was going to be run on servers, I thought, “Why would anyone want to do that?” At that point, I was already a JavaScript developer professionally. I wrote a lot of JS every day, and I still didn't quite see why it belonged on servers, and it's turned out, as many listeners will know, Node.js is a huge force in the industry now. I think there's good reason for that.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>20:32</strong> - <em>Michael Clayton</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>One of the things that Node.js taps into that's made it so successful is the huge community of front-end JavaScript developers, client-side developers. They write code. They write JavaScript for the browser. There are a lot of those developers out there, and by making the same programming language available for writing servers, they just immediately have a huge population of people who can start contributing to servers. The tool is already in your toolkit, and you can simply pull it out, install Node.js, and you're off to the races.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>21:11</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So first in the browser and then on servers. JavaScript was this unpretentious, secretly elegant, sometimes buggy, language. A survivor from the browser war that everybody underestimated.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>21:25</strong> - <em>Michael Clayton</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>JavaScript has been kind of a Cinderella story of programming languages, starting in that early state of being essentially whipped together in 10 days, going through a lot of derision from the rest of the programming community, and still somehow continuing to find success and growth and then coming to the point we're at now where JavaScript is either first or second place in the most popular programming languages in the world. JavaScript is essentially everywhere. The ability to run inside of a webpage meant that JavaScript was as pervasive as the web is, which is quite pervasive.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>22:08</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Michael Clayton is an Engineer at Red Hat. Did JavaScript eat the world? Did it ride on the coattails of the web to a kind of language domination? I wanted to find out where the edges of JavaScript actually are.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>22:25</strong> - <em>Klint Finley</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Hi, my name is Klint Finley. I'm a writer for Wired.com.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>22:28</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Klint was curious about the same thing. And the more he looked at the way JavaScript runs today, the more he realized it's got its fingers in every part of his online life.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>22:40</strong> - <em>Klint Finley</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>JavaScript has become something that can empower entire applications before you even have a chance to decide whether you want all of these different applications to run on your computer. They just start running, and some of them are, they're involved with advertising or facilitating the tracking that advertisers use. So, there's a lot of things happening invisibly in your browser that you might not really even know about or want to have happened.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>23:07</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So Klint decided to run a little experiment.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>23:10</strong> - <em>Klint Finley</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I decided to try just using the web without JavaScript for a while. I decided to give it a shot and spent a week with JavaScript disabled in my browser.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>23:21</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Sounds simple enough, but forgoing all JavaScript had some surprising effects. Because JavaScript has become so big, so all-consuming, the language famous for being lightweight actually takes up a lot of space and energy now. When Klint blocked that one language ...</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>23:39</strong> - <em>Klint Finley</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>In general, it was just a much better web experience in a lot of ways in terms of pages loading quicker, pages being cleaner, the battery life on my computer lasting longer, and just having a more of a sense of control over what was happening on my computer because there's not all of these just weird invisible random programs running in the background.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>24:02</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And just imagine the bliss of living without pop-up ads for the first time.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>24:07</strong> - <em>Klint Finley</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So much of it depends on JavaScript to even load. So webpages came out a lot simpler, fewer ads, fewer distractions.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>24:17</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That clutter-free web experience isn't the whole picture though. Parts of the web can't function at all if you unplug JavaScript.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>24:26</strong> - <em>Klint Finley</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>A lot of things just didn't work. Gmail redirected me I think to a different version that's designed for old mobile phones. Facebook did sort of the same thing where a lot of the smooth interactions weren't there. It became more like a series of webpages. So Netflix didn't work. YouTube didn't work. Yeah, anything that's really heavily based on interactivity just didn't work. Ultimately taking JavaScript away, there was good and bad, and I had to decide that it's better to have JavaScript than to not have it at all.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>25:05</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Klint Finley is a staff writer for Wired.com. Most predict that JavaScript will only continue to dominate mobile and desktop app development. The level of complexity possible for things like browser-based games, browser-based art projects, etc., is shooting through the roof. And the ever-growing JavaScript community is making the most of that potential.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>25:34</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It's worth taking a step back and remembering here, in 1995, just a couple of decades ago, Brendan Eich was sitting in a room, hammering out a new language. And today, that language permeates everything we do. It might sound a bit cliché to say that some new string of code is going to change the world, but it does happen. A command line hero marshalls all their love for languages into a 10-day sprint, and the world's DNA is changed forever.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>26:10</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We can thank JavaScript for Google Docs, for YouTube, for Netflix. But you know, “with great power, comes great responsibility,” and as JavaScript's influence continues to grow, pushed along by a huge number of open source libraries, that responsibility doesn't just lie with one person anymore. A broader community has taken the reins. SlashData recently estimated the number of JavaScript developers at 9.7 million, and over at GitHub, JavaScript has more pull requests than any other language. Power lies with the whole world of Command Line Heroes helping JavaScript grow as we develop our tomorrow.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>26:59</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Next time, Command Line Heroes gets caught in a web of languages, and we'll explore how Perl came to thrive in a wild new frontier.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>28:04</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Finally, a listener shared our Hello World episode from last season where we also spoke about Brendan Eich and JavaScript. In that one, a guest said that during those 10 days, Brendan probably didn't get much, if any, sleep. Well, Brendan responded on Twitter to say he did indeed get sleep during that sprint. To learn even more about what happened during those 10 days, check out the Devchat podcast interview with Brendan. We'll throw a link in our show notes. I'm Saron Yitbarek. Until next time, keep on coding.</p>
+    </div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-keep-going pt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 reveal">
+                <h3 class="text-white">Keep going</h3>
+
+                <div class="row">
+                    <div class="col-12 col-md-6 d-flex reveal">
+                        <div class="card rounded-0">
+                            <div class="card-body p-2 p-md-3">
+                                <h3>JavaScript's surprising rise from the ashes of the browser wars</h3>
+
+                                <p class="mb-0">A single Netscape employee wrote JavaScript in 10 days. It's now one of the most pervasive programming languages in the world.</p>
+                            </div>
+
+                            <div class="card-footer pt-0 px-2 px-md-3 pb-2 pb-md-3">
+                                <a class="btn btn-link mb-0 text-black" href="http://opensource.com/article/19/7/command-line-heroes-javascript" target="_blank" title="Read the story">Read the story</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 d-flex reveal">
+                        <div class="card rounded-0">
+                            <div class="card-body p-2 p-md-3">
+                                <h3>The browser wars and the birth of JavaScript</h3>
+
+                                <p class="mb-0">Born of the browser wars of the 1990s, JavaScript has gone from a simple scripting language to be the most important ecosystem of the development world. Learn how and why JavaScript came to power.</p>
+                            </div>
+
+                            <div class="card-footer pt-0 px-2 px-md-3 pb-2 pb-md-3">
+                                <a class="btn btn-link mb-0 text-black" href="http://developers.redhat.com/blog/?p=608607" title="Learn more">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<div class="rh-raw"         data-rh-unique-id="1452561">
+        <section class="dms-band clh-featured-art py-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-white reveal">
+                <div class="card rounded-0">
+                    <div class="featured-background bg-no-repeat bg-pos-cb" data-bg-image="https://www.redhat.com/cms/managed-files/bkgd-clhs3-e3-artwork-mobile.svg" data-bg-image-md="https://www.redhat.com/cms/managed-files/bkgd-clhs3-e3-artwork.svg" style="background-image: url(_https_/www.redhat.com/cms/managed-files/bkgd-clhs3-e1-artwork.html);">
+                        <div class="col-12 col-md-7 col-xl-6 px-0">
+                            <div class="card-header pt-2 px-2 pb-0 pt-md-4 px-md-4">
+                                <h3 class="mb-2">Enjoy this episode's artwork on&nbsp;your&nbsp;device</h3>
+                            </div>
+
+                            <div class="card-body py-0 px-2 px-md-4">
+                                <p>Download the Command Line Heroes artwork and set it as your background.</p>
+                            </div>
+
+                            <div class="card-footer pt-0 px-2 pb-2 px-md-4 pb-md-4">
+                                <div class="cta-group mt-2 d-lg-none">
+                                    <a class="btn mt-1 mr-1 mb-0" href="../../../cms/managed-files/clh-s3e3-mobile-1080x1920.png" target="_blank" title="1080x1920">1080x1920</a>
+
+                                    <a class="btn mt-1 mr-1 mb-0" href="../../../cms/managed-files/clh-s3e3-mobile-1125x2436.png" target="_blank" title="1125x2436">1125x2436</a>
+
+                                    <a class="btn mt-1 mb-0" href="../../../cms/managed-files/clh-s3e3-mobile-1440x2560.png" target="_blank" title="1440x2560">1440x2560</a>
+                                </div>
+
+                                <div class="cta-group d-none d-lg-block">
+                                    <a class="btn mb-0" href="../../../cms/managed-files/clh-s3e3-desktop-1920x1080.png" title="1920x1080" download="">1080p</a>
+
+                                    <a class="btn mb-0" href="../../../cms/managed-files/clh-s3e3-desktop-2560x1440.png" title="2560x1440" download="">1440p</a>
+
+                                    <a class="btn mb-0" href="../../../cms/managed-files/clh-s3e3-desktop-3820x2160.png" title="3840x2160" download="">4K</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-featured-guests pb-md-12 bg-pos-cc bg-no-repeat" data-bg-image="https://www.redhat.com/cms/managed-files/bkgd-clh-s3e3-palms.svg">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-white reveal">Featured in this episode</h3>
+
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 d-flex reveal">
+                        <div class="card clh-guest">
+                            <a class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" href="http://www.twitter.com/pomeranian99" target="_blank" title="Clive Thompson" data-bg-image="https://www.redhat.com/cms/managed-files/photo-clive-thompson.png"></a>
+
+                            <a class="mb-1 d-inline-block w-100 h-100" href="http://www.twitter.com/pomeranian99" target="_blank" title="Clive Thompson">
+                                <div class="card-body p-2 bg-white h-100">
+                                    <h4>Clive Thompson</h4>
+
+                                    <p class="mb-0">Columnist at WIRED and author of CODERS</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 d-flex reveal">
+                        <div class="card clh-guest">
+                            <a class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" href="http://www.twitter.com/drchuck" target="_blank" title="Charles Severance" data-bg-image="https://www.redhat.com/cms/managed-files/photo-charles-severance.png"></a>
+
+                            <a class="mb-1 d-inline-block w-100 h-100" href="http://www.twitter.com/drchuck" target="_blank" title="Charles Severance">
+                                <div class="card-body p-2 bg-white h-100">
+                                    <h4>Charles Severance</h4>
+
+                                    <p class="mb-0">Clinical Professor at the University of Michigan School of Information</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-md-3 mt-lg-0 d-flex reveal">
+                        <div class="card clh-guest">
+                            <a class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" href="http://www.twitter.com/mwcz" target="_blank" title="Michael Clayton" data-bg-image="https://www.redhat.com/cms/managed-files/photo-michael-clayton.png"></a>
+
+                            <a class="mb-1 d-inline-block w-100 h-100" href="http://www.twitter.com/mwcz" target="_blank" title="Michael Clayton">
+                                <div class="card-body p-2 bg-white h-100">
+                                    <h4>Michael Clayton</h4>
+
+                                    <p class="mb-0">Senior Software Engineer at Red Hat, Command Line Heroes BASH developer</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-md-3 mt-lg-0 d-flex reveal">
+                        <div class="card clh-guest">
+                            <a class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" href="http://www.twitter.com/klintron" target="_blank" title="Klint Finley" data-bg-image="https://www.redhat.com/cms/managed-files/photo-klint-finley.png"></a>
+
+                            <a class="mb-1 d-inline-block w-100 h-100" href="http://www.twitter.com/klintron" target="_blank" title="Klint Finley">
+                                <div class="card-body p-2 bg-white h-100">
+                                    <h4>Klint Finley</h4>
+
+                                    <p class="mb-0">Contributing writer for WIRED</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img class="img-fluid w-100 d-md-none" src="https://www.redhat.com/cms/managed-files/img-clh-s3e3-palms.svg">
+</section>  <!-- Pattern | raw_html -->
+
+<article class="node-shared">
+      <section class="dms-band clh-newsletter pt-0 pt-md-8">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-5 reveal">
+                <div class="card">
+                    <div class="card-body p-0">
+                        <img class="img-fluid svg svg-white mb-3" src="https://www.redhat.com/cms/managed-files/logo-command-line-heroes.svg" width="166" height="42" alt="Command Line Heroes logo" title="Command Line Heroes">
+
+                        <h3 class="font-family-monospace">Get the newsletter</h3>
+
+                        <p class="mb-0">After each episode drops, we'll send you commentary from the Command Line Heroes team, as well as links that help you take a closer look at the topics we cover. It's as simple as that.</p>
+                    </div>
+
+                    <div class="card-footer pt-3 px-0 pb-0">
+                        <a class="btn btn-primary mb-1 mb-lg-0" href="http://www.redhat.com/forms/?config=19411" title="Sign up">Sign up</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 offset-lg-1 reveal">
+                <div class="card mb-0 bg-white rounded-0 text-black">
+                    <div class="card-body p-2 p-md-3">
+                        <h3 class="font-family-monospace text-red">Presented by Red&nbsp;Hat</h3>
+
+                        <p class="mb-0">For 25 years, Red Hat has been bringing open source technologies to the enterprise. From the operating system to containers, we believe in building better technology together–and celebrating the unsung heroes who are remaking our world from the command line up.</p>
+                    </div>
+
+                    <div class="card-footer pt-0 px-2 px-md-3 pb-2 pb-md-3">
+                        <a class="btn btn-link mb-0" href="http://www.redhat.com/" title="Learn more">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+  </article>
+  <!-- Pattern | raw_html -->
+
+<article class="node-shared">
+  
+  </article>
+
+  
+  
+</article>
+
+</div>
+  </div>
+        
+  </div>
+
+  <footer>
+        <section class="rc-footer-traditional">
+      <div class="container rc-footer-traditional-container">
+        <section class="rc-footer-traditional-section">
+          <div class="rc-footer-traditional-logo">
+            <div class="row">
+              <a href="https://www.redhat.com/en">
+                <img src="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo.svg" class="screen" title="Red Hat" />
+                </a>
+            </div>
+          </div>
+          <div id="legal" class="rc-footer-traditional-legal">
+            <div class="row">
+              <div class="copyright">©2021 Red Hat, Inc.</div>
+              <div >
+                <ul class="menu"><li class="first leaf"><a href="../../about/privacy-policy.html">Privacy statement</a></li>
+<li class="leaf"><a href="../../about/terms-use.html">Terms of use</a></li>
+<li class="leaf"><a href="../../about/all-policies-guidelines.html">All policies and guidelines</a></li>
+<li class="leaf"><a href="../../about/digital-accessibility.html">Digital accessibility</a></li>
+<li class="last leaf"><span id="teconsent" class="nolink">|</span></li>
+</ul>              </div>
+            </div>
+                      </div>
+          <div class="rc-footer-traditional-event-logo">
+            <div id="block-block-5" class="block block-block block-footer-promote">
+
+      
+  <a href="https://www.redhat.com/summit"><img src="https://www.redhat.com/cms/managed-files/Logo-Red_Hat-Summit-A-Standard-RGB-02_0.svg" alt="Red Hat Summit" style="float: right;" width="72px"></a>
+</div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </footer>
+        <script type="text/javascript" src="../../../ux/webdms/js/vendors/jquery.waypoints.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/plyr.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/viewport.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/scripts.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/projects/clh.min6eda.js?qy3uiv"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+  if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
+      _satellite.pageBottom();
+  }
+//--><!]]>
+</script>
+    </div>
+  <script type="text/javascript"  src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"></script></body>
+
+<!-- Mirrored from www.redhat.com/en/command-line-heroes/season-3/creating-javascript by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:27:58 GMT -->
+</html>

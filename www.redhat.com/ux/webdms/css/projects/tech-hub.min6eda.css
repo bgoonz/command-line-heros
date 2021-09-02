@@ -1,0 +1,10 @@
+/* ========================================================================================== */
+/*  Project: Studio - Web
+/*  Author: Digital Business
+/*  Date: Wed Aug 18 2021 17:07:22 GMT+0000 (Coordinated Universal Time)
+/*  
+/*  Copyright © 2021 Red Hat, Inc.
+/*  https://www.redhat.com
+/* ========================================================================================== */
+
+.categ-info{display:none}.categ-info.active{display:block}.applications .product,.row.tech-cards{display:none}.grid.tech-grid{grid-gap:10px}.grid.tech-grid [class*=cell-]{display:none;padding:16px;border:1px solid #bdbdbd}.grid.tech-grid [class*=cell-] .hdr-title{font-size:16px}.grid.tech-grid [class*=cell-] h5{line-height:1.2;text-transform:capitalize}.grid.tech-grid [class*=cell-] p{margin-bottom:0}.grid.tech-grid [class*=cell-].active{display:block;background:#d9e8f8;border:none}.grid.tech-grid [class*=cell-].active .hdr-title{font-weight:700;color:#131313}.grid.tech-grid [class*=cell-].active p{margin-bottom:20px}.active .applications{border:1px solid #06c;background:#fff;padding:10px 10px 0}.applications .product.active{display:block}.row.tech-cards.active{display:-webkit-box;display:-ms-flexbox;display:flex}.dms-band.explore-more hr{width:75%}@media (min-width:768px){.grid.tech-grid [class*=cell-]{display:block}}@media (min-width:768px) and (max-width:1199.98px){.dms-band.explore-more hr{width:1px;height:80%;margin:10% 0;border-top:0;border-left:1px solid}}

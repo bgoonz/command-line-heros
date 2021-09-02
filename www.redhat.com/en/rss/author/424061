@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xml:base="https://www.redhat.com/en/rss/blog-author/424061" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Red Hat Blog for Command Line Heroes Team</title>
+    <link>https://www.redhat.com/en/rss/blog-author/424061</link>
+    <description>Red Hat Blog</description>
+    <language>en</language>
+     <atom:link href="https://www.redhat.com/en/rss/author/424061" rel="self" type="application/rss+xml" />
+<copyright>©2021 Red Hat, Inc.</copyright>
+<dc:rights>©2021 Red Hat, Inc.</dc:rights>      <item>
+    <title>Command Line Heroes: drawing robots and secret labs</title>
+    <link>https://www.redhat.com/en/blog/command-line-heroes-drawing-robots-and-secret-labs</link>
+    <description>&lt;p dir=&quot;ltr&quot;&gt;&lt;span id=&quot;docs-internal-guid-30a15925-7fff-f198-af1d-ec5ead3c2175&quot;&gt;Welcome to the end-of-season artwork double feature. We’re moving from the &lt;a href=&quot;/en/blog/command-line-heroes-takes-bash-script-screen&quot;&gt;Ninja Turtle inspired Bash episode artwork&lt;/a&gt; to robots and secret labs. While that may sound like a villain’s lair, it’s anything but. Our artwork for episode 7: Talking to Machines reflects the complicated history of AI programming. And episode 8: The C Change is all about the heroes who laid the foundation for most of the other languages we’ve covered this season.&lt;/span&gt;&lt;/p&gt;</description>
+     <pubDate>Tue, 17 Dec 2019 00:00:00 -0500</pubDate>
+ 
+ <guid isPermaLink="true">https://www.redhat.com/en/blog/command-line-heroes-drawing-robots-and-secret-labs</guid>
+
+<dc:date>Tue, 17 Dec 2019 00:00:00 -0500</dc:date>  </item>
+  <item>
+    <title>Command Line Heroes takes Bash from script to screen</title>
+    <link>https://www.redhat.com/en/blog/command-line-heroes-takes-bash-script-screen</link>
+    <description>&lt;p dir=&quot;ltr&quot;&gt;&lt;span id=&quot;docs-internal-guid-98da1878-7fff-91d0-6067-e4cf8ceb439d&quot;&gt;Creating visuals for stories about programming language isn’t always straightforward. The artwork for the first few episodes of this season was inspired by origins and functions. But for Episode 6,&lt;/span&gt;&lt;a href=&quot;https://www.redhat.com/en/command-line-heroes/season-3/heroes-in-a-bash-shell&quot;&gt; Heroes in a Bash Shell&lt;/a&gt;, we decided to take a more abstract approach.&lt;/p&gt;</description>
+     <pubDate>Thu, 14 Nov 2019 00:00:00 -0500</pubDate>
+ 
+ <guid isPermaLink="true">https://www.redhat.com/en/blog/command-line-heroes-takes-bash-script-screen</guid>
+
+<dc:date>Thu, 14 Nov 2019 00:00:00 -0500</dc:date>  </item>
+  <item>
+    <title>Making things Go: Command Line Heroes draws infrastructure</title>
+    <link>https://www.redhat.com/en/blog/making-things-go-command-line-heroes-draws-infrastructure</link>
+    <description>&lt;p dir=&quot;ltr&quot;&gt;&lt;span id=&quot;docs-internal-guid-aa5b1a5c-7fff-2cd3-2f42-5abeaa51d444&quot;&gt;Most of our episodes feature languages that have clear arcs. &quot;The Infrastructure Effect&quot; was different. By all accounts, COBOL is a language heading the way of Latin. There are only a few specialists who are proficient COBOL coders. But it’s still vital to many long-lasting institutions that affect millions: the banking industry, the IRS, and manufacturing. And the world of tech infrastructure is moving on—to Go. Where does that leave COBOL in the next few years?&lt;/span&gt;&lt;/p&gt;</description>
+     <pubDate>Mon, 11 Nov 2019 00:00:00 -0500</pubDate>
+ 
+ <guid isPermaLink="true">https://www.redhat.com/en/blog/making-things-go-command-line-heroes-draws-infrastructure</guid>
+
+<dc:date>Mon, 11 Nov 2019 00:00:00 -0500</dc:date>  </item>
+  <item>
+    <title>Uncovering hidden Perls for Command Line Heroes</title>
+    <link>https://www.redhat.com/en/blog/uncovering-hidden-perls-command-line-heroes</link>
+    <description>&lt;p dir=&quot;ltr&quot;&gt;&lt;span id=&quot;docs-internal-guid-ca451b31-7fff-5a94-925a-c8c89bc49fc5&quot;&gt;Diving for Perl presented a unique challenge for us: how do we depict a language that was once one of the most popular in programming, without then implying it’s unwanted or in ruins? We wanted to tell Perl’s story while also staying true to its current status—a powerful language with an active community.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;span&gt;What was your research process for uncovering the history of Perl?&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</description>
+     <pubDate>Tue, 29 Oct 2019 00:00:00 -0400</pubDate>
+ 
+ <guid isPermaLink="true">https://www.redhat.com/en/blog/uncovering-hidden-perls-command-line-heroes</guid>
+
+<dc:date>Tue, 29 Oct 2019 00:00:00 -0400</dc:date>  </item>
+  <item>
+    <title>How we brought JavaScript to life for Command Line Heroes</title>
+    <link>https://www.redhat.com/en/blog/how-we-brought-javascript-life-command-line-heroes</link>
+    <description>&lt;p dir=&quot;ltr&quot;&gt;&lt;span id=&quot;docs-internal-guid-837cd351-7fff-1d6f-3d3e-8c610e49e644&quot;&gt;Animators within Red Hat’s Open Studio help bring Command Line Heroes’ artwork more to life. All throughout Season 3, they’ve added movement to our episode pages and created eye-catching trailers for social and Red Hat’s YouTube channel. This post highlights their important contributions to the Command Line Heroes’ creative process by looking at their work for Episode 3 of Season 4: Creating JavaScript. Also, designer Karen Crowson talks about the easter eggs in that episode’s artwork.&lt;/span&gt;&lt;/p&gt;</description>
+     <pubDate>Tue, 22 Oct 2019 00:00:00 -0400</pubDate>
+ 
+ <guid isPermaLink="true">https://www.redhat.com/en/blog/how-we-brought-javascript-life-command-line-heroes</guid>
+
+<dc:date>Tue, 22 Oct 2019 00:00:00 -0400</dc:date>  </item>
+  <item>
+    <title>Not your BASIC web experience: Creative for Command Line Heroes Season 3 Episode 2</title>
+    <link>https://www.redhat.com/en/blog/not-your-basic-web-experience-creative-command-line-heroes-season-3-episode-2</link>
+    <description>&lt;p dir=&quot;ltr&quot;&gt;&lt;span id=&quot;docs-internal-guid-7d4338db-7fff-a413-271e-9f3c38bf667a&quot;&gt;Last week, we introduced this series with an overview of Command Line Heroes’ artwork. We hope you enjoyed reading about the details in the images for our first episode of season 3 about Python. Now, we’ll briefly cover how our web designers work to bring that artwork to you in its many forms—and we uncover the secrets of Episode 2: Learning the BASICs.&lt;/span&gt;&lt;/p&gt;</description>
+     <pubDate>Tue, 08 Oct 2019 00:00:00 -0400</pubDate>
+ 
+ <guid isPermaLink="true">https://www.redhat.com/en/blog/not-your-basic-web-experience-creative-command-line-heroes-season-3-episode-2</guid>
+
+<dc:date>Tue, 08 Oct 2019 00:00:00 -0400</dc:date>  </item>
+  <item>
+    <title>Behind the artwork and Easter eggs of Command Line Heroes third season</title>
+    <link>https://www.redhat.com/en/blog/behind-artwork-and-easter-eggs-command-line-heroes-third-season</link>
+    <description>&lt;p dir=&quot;ltr&quot;&gt;&lt;span id=&quot;docs-internal-guid-594131d2-7fff-b02f-ec25-256dd5d2d62e&quot;&gt;&lt;a href=&quot;http://redhat.com/commandlineheroes&quot;&gt;Command Line Heroes&lt;/a&gt;&lt;/span&gt; is more than a podcast—we have developed a broad creative ecosystem to support and enhance the audio experience. One of these branches of production is the artwork that accompanies the show. We produce episodic artwork to help Command Line Heroes stand out on podcast platforms, and to promote the podcast online and at events.&lt;/p&gt;</description>
+     <pubDate>Tue, 01 Oct 2019 00:00:00 -0400</pubDate>
+ 
+ <guid isPermaLink="true">https://www.redhat.com/en/blog/behind-artwork-and-easter-eggs-command-line-heroes-third-season</guid>
+
+<dc:date>Tue, 01 Oct 2019 00:00:00 -0400</dc:date>  </item>
+  </channel>
+</rss>

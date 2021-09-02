@@ -1,0 +1,1896 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  
+<!-- Mirrored from www.redhat.com/en/command-line-heroes/season-3/talking-to-machines by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:28:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!--[if IE]><![endif]-->
+<script id="trustarc" type="text/javascript" src="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"></script>
+<script id="ddo" type="text/javascript">
+<!--//--><![CDATA[//><!--
+    var digitalData = {"cart":[],"event":[],"listing":{"browseFilter":"","query":"","queryMethod":"","refinementType":"","refinementValue":"","resultCount":"","searchType":""},"page":{"attributes":{"queryParameters":"","referringSearchEngine":"","analyticsTitle":"brand affinity | command line heroes season 3 episode 7","taxonomyPageSubType":["28051"],"taxonomyRegion":["4521"],"taxonomyMetaHreflang":["29051"]},"category":{"contentType":"","keyPage":"false","keyPageType":"","pageType":"pattern_template","primaryCategory":"command-line-heroes","subCategories":["season-3","talking-to-machines"]},"pageInfo":{"cms":"RH CMS 2021.12.0","contentFindingMethod":"","contentID":"377261","contentPortal":"","destinationURL":"https:\/\/www.redhat.com\/en\/command-line-heroes\/season-3\/talking-to-machines","errorMessage":"","errorType":"","language":"en","pageName":"","referringDomain":"","referringURL":"","sysEnv":"","template":"","title":"Command Line Heroes: Season 3: Talking to Machines"}},"product":[],"user":[{"profile":[{"profileInfo":{"daysSinceLastPurchase":"","demandbaseSID":"","eloquaGUID":"","lastLoginDate":"","lastPurchaseDate":"","loggedIn":"false","profileID":"","subscriptionFrequency":"","subscriptionLevel":""}}]}]};
+    !function(a,b,c){"use strict";function d(a){var c="; "+b.cookie,d=c.split("; "+a+"=");if(2===d.length)return d.pop().split(";").shift()}if(b.referrer){var e=b.createElement("a");e.href=b.referrer,c.page.pageInfo.referringDomain=e.hostname,c.page.pageInfo.referringURL=e.href}c.page.pageInfo.sysEnv=a.innerWidth<=768?"tablet":"desktop";var f=c.user[0].profile[0].profileInfo,g=d("rh_elqCustomerGUID");g&&(f.eloquaGUID=g);var h=d("rh_user");if(h){var i=h.split("\\|");i[0]&&(f.loggedIn="true")}var j=d("s_dmdbase");j&&(f.demandbaseSID=j)}(window,document,digitalData);
+//--><!]]>
+</script>
+<script src="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm.js" data-domain="www.redhat.com"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-functional.js" class="trustecm" data-tracker-type="functional"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-advertising.js" class="trustecm" data-tracker-type="advertising"></script><script id="dpal" type="text/javascript" src="../../../dtm.js"></script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="en" />
+<link href="talking-to-machines.html" rel="alternate" hreflang="en" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "availableLanguages": {
+        "zh": {
+            "@type": "Language",
+            "name": "简体中文",
+            "href": "/zh/command-line-heroes/season-3/talking-to-machines"
+        },
+        "en": {
+            "@type": "Language",
+            "name": "English",
+            "href": "/en/command-line-heroes/season-3/talking-to-machines",
+            "current_lang": true
+        },
+        "fr": {
+            "@type": "Language",
+            "name": "Français",
+            "href": "/fr/command-line-heroes/season-3/talking-to-machines"
+        },
+        "de": {
+            "@type": "Language",
+            "name": "Deutsch",
+            "href": "/de/command-line-heroes/season-3/talking-to-machines"
+        },
+        "it": {
+            "@type": "Language",
+            "name": "Italiano",
+            "href": "/it/command-line-heroes/season-3/talking-to-machines"
+        },
+        "ja": {
+            "@type": "Language",
+            "name": "日本語",
+            "href": "/ja/command-line-heroes/season-3/talking-to-machines"
+        },
+        "ko": {
+            "@type": "Language",
+            "name": "한국어",
+            "href": "/ko/command-line-heroes/season-3/talking-to-machines"
+        },
+        "pt-br": {
+            "@type": "Language",
+            "name": "Português",
+            "href": "/pt-br/command-line-heroes/season-3/talking-to-machines"
+        },
+        "es": {
+            "@type": "Language",
+            "name": "Español",
+            "href": "/es/command-line-heroes/season-3/talking-to-machines"
+        }
+    }
+}</script><meta name="last-publish-date" content="Tue, 25 Jun 2019 04:00:00 GMT" />
+<meta name="node-type" content="pattern_template" />
+<meta name="source" content="rhdc_drupal" />
+<meta name="rhdc_key" content="c4df31e5f474b92eb39f5ec0d61b6ec8" />
+<meta name="taxonomy-region" content="Global" />
+<meta name="taxonomy-region-tid" content="4521" />
+<meta name="taxonomy-page-sub-type" content="Brand affinity" />
+<meta name="taxonomy-page-sub-type-tid" content="28051" />
+<meta name="taxonomy-meta-hreflang" content="en" />
+<meta name="taxonomy-meta-hreflang-tid" content="29051" />
+<link rel="shortcut icon" href="https://www.redhat.com/misc/favicon.ico" type="image/x-icon" />
+<meta property="og:description" content="Creating a machine that thinks may have seemed like science fiction in the 1950s. But John McCarthy decided to make it a reality. And he started with a language he called LISP." />
+<meta name="description" content="Creating a machine that thinks may have seemed like science fiction in the 1950s. But John McCarthy decided to make it a reality. And he started with a language he called LISP." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="image_src" href="../../../cms/managed-files/og-clh-s3-1200x675.png" />
+<link rel="canonical" href="talking-to-machines.html" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.redhat.com/en/command-line-heroes/season-3/talking-to-machines" />
+<meta property="og:title" content="Command Line Heroes: Season 3: Talking to Machines" />
+<meta property="og:image" content="https://www.redhat.com/cms/managed-files/og-clh-s3-1200x675.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Command Line Heroes: Season 3: Talking to Machines" />
+<meta name="twitter:image" content="https://www.redhat.com/cms/managed-files/og-clh-s3-1200x675.png" />
+    <title>Command Line Heroes: Season 3: Talking to Machines</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://static.redhat.com/">
+    <link rel="preload" href="https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/fonts/web_icon/rh-web-iconfont.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatTextVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatDisplayVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__k9aoxkMyjUtSX9AXGCPExPgTYjM0Xv5OYNfbFGDRafY__N9sjJtGj85lXtvOptw2e_YZ01FXbTXcJywP8EaKBijU__uaCwYofnUZLAnB7x3Q6WyVKH" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/all/libraries/webrh/dist/css/webrh.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__cxslYvmVeKFG0RwKl9kcXSrmb2x2VtvkIw-OLkwF8jU___pPNjqO-hMXRnx5HlJupeXtrvaj0Ilhs-XAVxMYy0CM__uaCwYofnUZLAnB7x3Q6WyVKH" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__wpajrf8pWA19ifT2xQXPB3J1TByoCXqZVtt6kXfl4Ow__PFQbFxxWsZl0yTnfrpPiA-o5Pvtu-CXh7nICx08JW0c__uaCwYofnUZLAnB7x3Q6WyVKH" media="print" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/css/trustecm.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/redhat-theme/6/advanced-theme.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/red-hat-font.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/font-awesome/4.7.0/css/font-awesome.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/vendors/plyr.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/styles.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/projects/clh-s3-episodes.min6eda.css?qy3uiv" media="all" />
+    <!--[if lt IE 9]>
+      <script src="/profiles/rh/themes/redhatdotcom/js/selectivizr-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/nwmatcher-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/respond.js" type="text/javascript"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../../../sites/default/files/advagg_js/js__B6wED6l5P_XUdxVmb7Nvh5d9zn074QukFqJa2HLXS6c__VzWs8XZBHHsPW77egi-W-FQw2mAEr5F-GgCJU0wn3Nc__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.vendor.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.webcomponents.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__pDOiYGKaYbdKNp1gvMxR0fWhWZnfUemYDUhADyCn3oM__jCrCuWCJIPYPe1FzZoUvsJWEjkNMmRIQHYek1h7idBE__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.rh = window.rh || {}; window.rh.drupalTrustArcLoaded = true;
+//--><!]]>
+</script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__5nUyGFdhKMGscC9VhukG-UTAhz8BEdhsa8koVlLwAyQ__Lz8gDLbd5fTco1AnHaCqhSeYJB5o0QUXAimK7JOyRNI__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"redhatdotcom","theme_token":"q-le9urtNfr7B_DvUHkjgez2ckQMfSZFR6uVAZ-duNc","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.webcomponents.min.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.min.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/marketing\/latest\/trustarc\/trustecm\/css\/trustecm.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-theme\/6\/advanced-theme.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-font\/4\/webfonts\/red-hat-font.min.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-iconfont.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-web-iconfont.css":1,"sites\/all\/libraries\/patternfly-elements\/pfe-styles\/pfe-typography-classes.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/site-switcher.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/chrome.css":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/print.css":1,"\/\/static.redhat.com\/libs\/font-awesome\/4.7.0\/css\/font-awesome.min.css?qy3uiv":1,"\/ux\/webdms\/css\/vendors\/plyr.min.css?qy3uiv":1,"\/ux\/webdms\/css\/styles.min.css?qy3uiv":1,"\/ux\/webdms\/css\/projects\/clh-s3-episodes.min.css?qy3uiv":1},"js":{"\/ux\/webdms\/js\/vendors\/jquery.waypoints.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/plyr.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/viewport.min.js?qy3uiv":1,"\/ux\/webdms\/js\/scripts.min.js?qy3uiv":1,"\/ux\/webdms\/js\/projects\/clh.min.js?qy3uiv":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/rh\/modules\/redhat_www_ddo\/dist\/post-jquery.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.vendor.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.webcomponents.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"profiles\/rh\/modules\/redhat_www_menu\/js\/rh_nav.js":1,"profiles\/rh\/modules\/redhat_www_share\/js\/rh_share.js":1,"profiles\/rh\/modules\/redhat_www_utility\/js\/redhat_www_utility.js":1,"sites\/all\/libraries\/jquery-cookie\/jquery.cookie-1.4.1.min.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.pushmenu.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery-scrolltofixed.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/rh-chrome.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.fitvids.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.switchIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.viewport\/jquery.viewport.min.js":1}},"redhat_www_menu":{"path":"node\/377261"},"rh_analytics_enabled":false});
+//--><!]]>
+</script>
+    <noscript>
+        <link href="../../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.noscript.min.css" rel="stylesheet" >
+    </noscript>
+  </head>
+  <body unresolved class="bands-index html not-front not-logged-in no-sidebars page-node page-node- page-node-377261 node-type-pattern-template i18n-en clh-s3e7 bg-purple-dark " >
+    <div class="page">
+            <!-- Legacy migrated page support with body.migrated-page-hero -->
+<div class="header-background-image fts-migrated-bg">
+</div>
+
+  <div id="main-content">
+                      <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+      
+  <article class="node-377261 node node-pattern-template clearfix">
+
+  
+    <!-- Pattern | raw_html -->
+
+<article class="node-shared">
+      <header id="top" class="dms-band clh-nav-top py-2">
+    <div class="container text-white">
+        <div class="row d-flex align-items-center">
+            <div class="col-6">
+                <a href="../../command-line-heroes.html" title="Command Line Heroes">
+                    <img class="img-fluid svg svg-white" src="https://www.redhat.com/cms/managed-files/logo-command-line-heroes.svg" width="166" height="42" alt="Command Line Heroes logo">
+                </a>
+            </div>
+
+            <div class="col-6 clh-nav-toggle-wrapper">
+                <span class="text-monospace text-right font-size-16 d-inline-block">Subscribe<br/>& more</span>
+
+                <a href="#" class="btn btn-toggle" data-toggle="nav-shelf">
+                    <div class="d-inline-block">
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="dms-band clh-nav-shelf text-white py-0">
+    <div class="nav-container pb-4">
+        <div id="CLHNav" class="accordion">
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-subscribe.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSubscribe">
+                    <p>Subscribe</p>
+                </button>
+                <div id="clhSubscribe" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <p>Subscribe to the podcast to receive new episodes as soon as we release them</p>
+                    <div class="row pb-2">
+                        <div class="col-6 mb-2">
+                            <a href="http://geo.itunes.apple.com/podcast/us/id1319947289?mt=2&amp;at=1010lbVy&amp;ct=redhatclh_website" target="_blank" title="Listen on Apple Podcasts">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-apple.png" alt="Listen on Apple Podcasts">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://www.google.com/podcasts?feed=aHR0cHM6Ly9mZWVkcy5wYWNpZmljLWNvbnRlbnQuY29tL2NvbW1hbmRsaW5laGVyb2Vz" target="_blank" title="Listen on Google Podcasts">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-google.png" alt="Listen on Google Podcasts">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://www.stitcher.com/s?fid=159833&amp;refid=stpr" target="_blank" title="Listen on Stitcher">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-stitcher.png" alt="Listen on Stitcher">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://open.spotify.com/show/4Jgtgr4mHXNDyLldHkfEMz" target="_blank" title="Listen on Spotify">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-spotify.png" alt="Listen on Spotify">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://feeds.pacific-content.com/commandlineheroes" target="_blank" title="Subscribe via RSS Feed">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-rss.png" alt="Subscribe via RSS Feed">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-about.jpg">
+                <button href="../about.html" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhAbout">
+                    <p>About the podcast</p>
+                </button>
+                <div id="clhAbout" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <p>Discover Red Hat’s original podcast about the people who transform technology from the command line up. Subscribe to our newsletter for commentary from the Command Line Heroes team—and links to take a closer look at the topics we cover.</p>
+                    
+                    <p><a href="../about.html" class="btn btn-primary">Learn about the show</a></p>
+                    <p class="mb-0 pb-4"><a href="https://www.redhat.com/forms/?config=19411" class="btn btn-outline-white">Get the newsletter</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s1.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason1">
+                    <p>Season 1</p>
+                </button>
+                <div id="clhSeason1" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-1/os-wars-part-1.html" title="OS Wars_Part 1">OS Wars_part 1</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/os-wars-part-2-rise-of-linux.html" title="OS Wars_Part 2">OS Wars_part 2</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/agile-revolution.html" title="The Agile_Revolution">The Agile_Revolution</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/devops-tear-down-that-wall.html" title="DevOps_Tear Down That Wall">DevOps_Tear Down That Wall</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/the-containers-derby.html" title="The Containers_Derby">The Containers_Derby</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/crack-the-cloud-open.html" title="Crack the Cloud_Open">Crack the Cloud_Open</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/days-of-future-open.html" title="Days of Future_Open">Days of Future_Open</a>
+                        </li>
+                    </ol>
+                  <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-1.html" title="Explore season 1">Explore Season 1</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s2.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason2">
+                    <p>Season 2</p>
+                </button>
+                <div id="clhSeason2" class="accordion-panel collapse" data-parent="#CLHNav">
+
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-2/press-start.html" title="Press Start">Press Start</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/hello-world.html" title="Hello, World">Hello, World</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/ready-to-commit.html" title="Ready to Commit">Ready to Commit</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/fail-better.html" title="Fail Better">Fail Better</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/the-one-about-devsecops.html" title="The One About DevSecOps">The One About DevSecOps</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/the-data-explosion.html" title="The Data Explosion">The Data Explosion</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/at-your-serverless.html" title="At Your Serverless">At Your Serverless</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/open-curiosity.html" title="Open Curiosity">Open Curiosity</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/developer-advocacy-roundtable.html" title="Bonus_Developer Advocacy Roundtable">Bonus_Developer Advocacy Roundtable</a>
+                        </li>
+                    </ol>
+                   <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-2.html" title="Explore season 2">Explore Season 2</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s3.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason3">
+                    <p>Season 3</p>
+                </button>
+                <div id="clhSeason3" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="pythons-tale.html" title="Python's Tale">Python's Tale</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="learning-the-basics.html" title="Learning the BASICs">Learning the BASICs</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="creating-javascript.html" title="Creating JavaScript">Creating JavaScript</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="diving-for-perl.html" title="Diving for Perl">Diving for Perl</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="the-infrastructure-effect.html" title="The Infrastructure Effect">The Infrastructure Effect</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="heroes-in-a-bash-shell.html" title="Heroes in a Bash Shell">Heroes in a Bash Shell</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="talking-to-machines.html" title="Talking to Machines">Talking to Machines</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="the-c-change.html" title="The C Change">The C Change</a>
+                        </li>
+                    </ol>
+                   <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-3.html" title="Explore season 3">Explore Season 3</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s4.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason4">
+                    <p>Season 4</p>
+                </button>
+                <div id="clhSeason4" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-4/minicomputers.html" title="Minicomputers">Minicomputers</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-4/mainframes.html" title="Mainframes">Mainframes</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/personal-computers.html" title="Personal Computers">Personal Computers</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/floppies.html" title="Floppies">Floppies</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/smarter-phones.html" title="Smarter Phones">Smarter Phones</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/open-source-hardware.html" title="Open Source Hardware">Open Source Hardware</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/consoles.html" title="Consoles">Consoles</a>
+                        </li>
+
+                         <li class="mb-2">
+                            <a href="../season-4/steve-wozniak.html" title="Steve Wozniak">Steve Wozniak</a>
+                        </li>
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-4.html" title="Explore season 4">Explore Season 4</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s5.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason5">
+                    <p>Season 5</p>
+                </button>
+                <div id="clhSeason5" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-5/becoming-a-coder.html" title="Becoming a Coder">Becoming a Coder</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-5/where-coders-code.html" title="Where Coders Code">Where Coders Code</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-5/what-kind-of-coder-will-you-become.html" title="What Kind of Coder Will You Become?">What Kind of Coder Will You Become?</a>
+                        </li>
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-5.html" title="Explore season 5">Explore Season 5</a></p>
+ 
+                </div>
+            </div>
+
+                        <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s6.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason6">
+                    <p>Season 6</p>
+                </button>
+                <div id="clhSeason6" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-6/jerry-lawson.html" title="Jerry Lawson">Jerry Lawson</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/gladys-west.html" title="Dr. Gladys West">Dr. Gladys West</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/mark-dean.html" title="Dr. Mark Dean">Dr. Mark Dean</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/marc-hannah.html" title="Dr. Marc Hannah">Dr. Marc Hannah</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/clarence-ellis.html" title="Dr. Clarence Ellis">Dr. Clarence Ellis</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/roy-clay.html" title="Roy Clay">Roy Clay</a>
+                        </li>
+                       <li class="mb-2">
+                            <a href="../season-6/gladys-perkins.html" title="Gladys Perkins">Gladys Perkins</a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="../season-6/arlan-hamilton.html" title="Arlan Hamilton">Arlan Hamilton</a>
+                        </li>
+            
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link text-monospace text-white" href="../season-6.html" title="Explore season 6">Explore Season 6</a></p>
+                </div>
+            </div>
+
+             <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/season-7_nav.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason7">
+                    <p>Season 7</p>
+                </button>
+                <div id="clhSeason7" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-7/dot-com.html" title="Connecting The Dot-Com">Connecting The Dot-Com</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/nsfnet.html" title="From NSF to ISP">From NSF to ISP</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/html.html" title="A Language for the Web">A Language for the Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/ux.html" title="Web UX Begins">Web UX Begins</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/shopping.html" title="Shopping for the Web">Shopping for the Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/search.html" title="Looking for Search">Looking for Search</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/world.html" title="The World of the World Wide Web">The World of the World Wide Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-7/bubble.html" title="After the Bubble">After the Bubble</a>
+                        </li>
+
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../../command-line-heroes.html" title="Explore season 5">Explore Season 7</a></p>
+ 
+                </div>
+            </div>
+
+        </div>
+        
+        <ul class="social-list list-inline list-unstyled pl-5 pl-sm-6 mt-1">
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F" target="_blank" title="Facebook" onclick="return !window.open(this.href, 'Facebook', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
+                    <span class="web-icon-facebook" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.twitter.com/share?url=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F&amp;text=An%20original%20podcast%20about%20the%20people%20who%20transform%20technology%20from%20the%20command%20line%20up.%20Presented%20by%20Red%20Hat." target="_blank" title="Twitter" onclick="return !window.open(this.href, 'Twitter', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
+                    <span class="web-icon-twitter" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F&amp;title=Command%20Line%20Heroes&amp;summary=Hear%20the%20epic%20true%20tales%20of%20how%20developers%2C%20programmers%2C%20hackers%2C%20geeks%2C%20and%20open%20source%20rebels%20are%20revolutionizing%20the%20technology%20landscape.%20Command%20Line%20Heroes%20is%20a%20new%20podcast%20hosted%20by%20Saron%20Yitbarek%20and%20produced%20by%20Red%20Hat.&amp;source=Red%20Hat" target="_blank" title="LinkedIn" onclick="return !window.open(this.href, 'LinkedIn', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')" aria-current="page">
+                    <span class="web-icon-linkedin" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="mailto:?subject=Command Line Heroes&body=Hear%20the%20epic%20true%20tales%20of%20how%20developers%2C%20programmers%2C%20hackers%2C%20geeks%2C%20and%20open%20source%20rebels%20are%20revolutionizing%20the%20technology%20landscape.%20Command%20Line%20Heroes%20is%20a%20new%20podcast%20hosted%20by%20Saron%20Yitbarek%20and%20produced%20by%20Red%20Hat. https://www.redhat.com/en/command-line-heroes" target="_blank" title="Email" aria-current="page">
+                    <span class="web-icon-envelope" aria-label="true"></span>
+                </a>
+            </li>
+        </ul>
+
+         <div class="language-switcher position-absolute bottom-0 right-0  w-100">
+            <div class="row justify-content-center mx-0">
+
+                <div class="col-6 text-center border-right border-black border-20 language-inactive">
+                    <a href="http://www.redhat.com/es/command-line-heroes" title="Command Line Heroes"><img class="img-fluid py-2" width="90" src="https://www.redhat.com/cms/managed-files/logo_clh-en-espanol_inactive.svg" alt="CLH en espanol logo"></a></div>
+
+                <div class="col-6 text-center language-active"><a href="../../command-line-heroes.html" title="Command Line Heroes"><img class="img-fluid pt-3 pb-2" width="130" src="https://www.redhat.com/cms/managed-files/logo_CLH_small.svg" alt="CLH logo"></a></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+</div>
+
+
+<div class="mb-6">&nbsp;</div>  
+  </article>
+  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-hero-episode pt-3 pt-lg-0 pb-2 pb-lg-1">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-lg-5 pt-lg-8 pt-xl-11 reveal">
+                <h5 class="section-label mb-1">Season 3, Episode 7</h5>
+
+                <h1>Talking to Machines: LISP and the Origins of AI</h1>
+
+                <div class="clh-audio">
+                    <audio src="http://chtbl.com/track/247G8/https://dts.podtrac.com/redirect.mp3/cdn.simplecast.com/audio/a88fbe/a88fbe81-5614-4834-8a78-24c287debbe6/8e47deb9-b0ab-4d3b-a4be-7b0f1037ced0/CLH_S3_E7_Talking_to_Machines_LISP_and_the_Origins_of_A_I_vFINAL_tc.mp3" preload="none" controls></audio>
+                </div>
+
+                <a class="btn btn-link mt-2 mb-0 font-family-monospace text-white" href="#" title="Listen to this episode later" data-toggle="nav-shelf" data-toggle-panel="#clhSubscribe">Listen to this episode later</a>
+            </div>
+
+            <div class="col-12 col-lg-7 pt-4 pt-lg-11 pt-xl-8 d-lg-flex align-items-lg-center justify-content-lg-end text-white text-center text-lg-right reveal">
+                <img class="img-fluid" src="../../../cms/managed-files/img-clh-s3e7-hero.gif">
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-tabs-notes pt-0">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <ul class="nav nav-tabs mb-3">
+                    <li class="nav-item">
+                        <a class="tab-show-notes nav-link mx-0 mr-md-4 p-0 font-size-24 text-white active" href="#show-notes" data-toggle="tab" title="Show notes">Show notes</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="tab-transcript nav-link mt-2 mt-md-0 mx-0 p-0 font-size-24 text-white" href="#transcript-tray" data-toggle="tab" title="Transcript">Transcript</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="show-notes" class="tab-pane fade active show">
+                        <div class="row">
+                            <div class="col-12">
+                                <p>Creating a machine that thinks may have seemed like science fiction in the 1950s. But John McCarthy decided to make it a reality. And he started with a language he called LISP. Colin Garvey describes how McCarthy created the first language for AI. Sam Williams covers how early interest in thinking machines spread from academia to the business world, and how&mdash;after certain projects didn’t deliver on their promises&mdash;a long AI winter eventually set in. Ulrich Drepper explains that the dreams of AI went beyond what the hardware could deliver at the time.</p>
+
+                                <p>But hardware gets more powerful each and every day. Chris Nicholson points out that today’s machines have enough processing power to handle the resource requirements of AI&mdash;so much so that we’re in the middle of a revolutionary resurgence in AI research and development. Finally, Rachel Thomas identifies the languages of AI beyond LISP&mdash;evidence of the different kinds of tasks AI is now being prepared to do.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="transcript-tray" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-12">
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>00:05</strong> - <em>Announcer</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Kasparov is rattled. He defends what he can, and he recognizes that he has already lost.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>00:12</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>In the spring of 1997, world chess champion, Garry Kasparov lost a match to the computer program Deep Blue. It was a pivotal moment in machine intelligence. For some, it was an existential crisis, a challenge to the supremacy of human intellect. But, for the technologists of the world, this was a milestone of another kind, a leap forward in the arena of artificial intelligence (AI). A sign that their dream of a truly intelligent machine might not be so crazy after all.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>00:47</strong> - <em>Announcer</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>A machine that can think remains the dream, and it's still many years and quite a few startling breakthroughs away.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>00:56</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>How did we get to that point though? What breakthroughs led up to Kasparov's famous defeat? Where did we go from there? I'm Saron Yitbarek, and this is Command Line Heroes, an original podcast from Red Hat. All season long, we're exploring the mysteries of programming languages, uncovering their history and their potential. This episode we zoom in on artificial intelligence. What language do you use when your tech has a mind of its own? How did our programming languages help us get to that Deep Blue moment, and way beyond? The question of what language can work best with a thinking machine is something we've been tackling for more than half a century. So our story begins way back in the 1940s, when the term AI hadn't even been coined.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>01:59</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Think back to the end of World War II. There's this sense that technology was how the allies won the war. There was this optimism that technology could accomplish anything. A whole generation believed in the power of computing. Out of that generation comes the godfather of artificial intelligence, John McCarthy. He's this brilliant mathematician who radically shook up the way we talk to our machines. I wanted to know about the origins of his ideas, and how that paradigm shift came about. I mean, for starters, when McCarthy and his peers were imagining the future of intelligent machines, what exactly did they imagine?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>02:43</strong> - <em>Colin Garvey</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Wow, that's a good question.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>02:46</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I got talking with Colin Garvey. He's a historian in the Science and Technologies Studies department at the Rensselaer Polytechnic Institute. Here's some of our chat.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>02:58</strong> - <em>Colin Garvey</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>McCarthy is remarkably kind of reticent about proposing exactly what it's going to look like. But, for example, he has probably his most famous program that was actually never implemented&mdash;but it's kind of a thought piece—was the advice taker. So, the advice taker was written up in 1960 by McCarthy in a paper called Programs with Common Sense. It starts off, you think the advice taker is probably a robot that will learn, and that's it's intention, kind of a domestic robot, it could take advice. You say, "No, you're doing that wrong. Do it this way." And it'll understand what you mean.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>03:44</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That's helpful.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>03:45</strong> - <em>Colin Garvey</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Could be helpful. The whole goal of the advice taker is to drive from his desk to the airport, basically, formalized what his notion of what the advice taker robot should do, which is apparently drive him to the airport. He formalized it into a series of logical statements that, it would need to infer about what needs to happen in the current situation to turn the current situation into the desired situation. He formalizes this in kind of a pseudo code, we'd call it now. So this is actually where LISP originates as well. Then, in the next few years, LISP comes out as his implementation, or his language for implementing it.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>04:39</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>McCarthy's LISP language was a game changer. It would help a machine understand not only commands, but a common sense logic. What McCarthy discovered was that he could write conditional expressions, code that embodied rules, rather than just blunt commands. In fact, there were a bunch of major programming breakthroughs with LISP, conditionals, garbage collection, recursion, and lots more. LISP used lists for both code and data, a simple change with profound effects. All this opened a gateway for an entire field that McCarthy himself dubbed artificial intelligence. It was a language paradigm shift. Imagine, speaking to a machine without giving it every particular of information. Imagine inviting that machine to infer and reason. Through his LISP language, McCarthy hoped to give a kind of intelligence to the machine. Okay, back to my chat with Colin Garvey.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>05:41</strong> - <em>Colin Garvey</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It refined earlier attempts at writing a high-level computer language.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>05:47</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Interesting, because that was going to be my next question was about the relationship between LISP and AI, so it's almost like that first idea of what AI could do, that advice machine was the beginning, it sounds like, of LISP. Tell me more about that relationship between LISP and AI.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>06:04</strong> - <em>Colin Garvey</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Sure. One of the things that these early AI folks was up against was that they're doing programming with punch cards, and probably these early guys knew how to program at the level of machine code. That's very time consuming and difficult. So you needed higher-level languages that you could instruct in ways that were closer in form to human language. So something like LISP gives instructions in literally a list of, and that's where the name comes from, list-based processing, in a list of instructions that are much closer to the human language, in the sense that they are basically logical propositions. So if you could read formal logic, you can basically look at a LISP program, or any of the logic-based programming languages, and have a much better sense of what's happening in the code.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>07:10</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So LISP really helped ... Yeah, I mean, it helped us take our ideas of artificial intelligence, and actually work towards them and make them happen, which makes me wonder what intelligence even means during that time period. So if we go back to the '50s, at that point, what was intelligence? How did people even define that back then, because LISP was first developed for the IBM 704, which does really just one thing at a time. So it doesn't really sound very intelligent. Yeah, how did people think about intelligence at that time?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>07:43</strong> - <em>Colin Garvey</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So this is, of course, incredibly controversial. They have very narrow concepts, as far as I'm concerned, from a social perspective. But, yeah, at the time, for instance, the ability to perform a behavior that would be described as intelligent is kind of the catch-all definition. But, these guys are really mathematicians and logicians and computer programmers. I mean, to be crass, the ability to play chess was considered a definite sign of intelligence. This early generation of AI people, was much more willing to sidestep this question and say, "Well, the philosophers have not agreed on what intelligence is, but if we make a computer that can play chess, I think we can all agree that's intelligent."</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>08:40</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It was a starting place anyway. Baby steps.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>08:45</strong> - <em>Colin Garvey</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>McCarthy had a dream that machines could be intelligent as people, and have common sense. And essentially, you could talk to them. He set about creating a program language to make that dream a reality. That became LISP, and it captured certain aspects of human thought, and especially logical thought, and made it possible to use computers to amplify or extend those features of thought. So from a mathematician's perspective, he was well on his way to realizing intelligent machinery.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>09:32</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Colin Garvey is a historian in the Science and Technologies Studies department at Rensselaer Polytechnic Institute. With LISP, new opportunities to advance AI began to open up, and LISP was the standard language in that new frontier. After McCarthy left his post at MIT for a job at Stanford, other engineers back at MIT kept working on LISP. They refined McCarthy's language into a local dialect called Maclisp, and even developed a LISP operating system. It looked like McCarthy's dream of an AI future was well on its way to becoming a reality. In 1968, McCarthy even made a bet with David Levy, a Scottish chess master. McCarthy bet him that in 10 years a computer would be able to win a chess match against Levy. But, it wouldn't be a Command Line Heroes kind of story if things went that smoothly. McCarthy didn't know it yet, but the AI winter was coming.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>10:45</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Things started to change when that LISP-based operating system from MIT was spun into companies. One of those companies, Symbolix, introduced LISP machines, and even hired away 14 staffers from MIT's AI lab, and that earlier, more blue sky kind of research wasn't the focus anymore.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>11:25</strong> - <em>Sam Williams</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>You get all the spinoff companies that were coming out of the AI lab.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>11:31</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>This is journalist, Sam Williams, who wrote a book called “Arguing AI.”</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>11:36</strong> - <em>Sam Williams</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Symbolix is probably the one that sticks out the most. It was getting the most attention, the most venture funding. John McCarthy's, all his proteges were kind of driving all that innovation. It's just a case, I think, where at the end of the '70s, there was a ripe period where people were like, "Okay, we've done what we can inside academia, let's get this out in the business world and let the private sector finance this."</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>12:01</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Which made sense at the time. AI looked like it was about to take off. There was money to be made.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>12:07</strong> - <em>Sam Williams</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The computing power is cheap enough for a mid-level business to purchase. So I think a lot of companies saw an opportunity, "Okay, we have a market for this, we can get out there and we can sell this to businesses that are trying to be globally competitive." They got investors to buy that pitch. There was a rush of money into the field in the early '80s.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>12:29</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We can argue about why that rush of money ran dry later down the line. But, here's what we know for sure. Things had been incredibly hyped.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>12:39</strong> - <em>Sam Williams</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>A lot of money flowed in. People saw the market as very ripe.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>12:44</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>In a way, that cash boom in AI was like a prelude to the dot com bubble that hit at the turn of the millennium.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>12:52</strong> - <em>Sam Williams</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>As happens a lot in technology, people over-invested and eventually companies failed to deliver on what they were promising. In the course of that, then there's a sort of shut-off to the money supply. Companies have to make their money the old fashioned way, by actually building customer bases and stuff.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>13:08</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So now, McCarthy's dream was crashing back down to reality. Williams describes the AI winter that followed.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>13:16</strong> - <em>Sam Williams</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>You see a company like Symbolix, rises up to $100 million market cap, then a few short years later is filing for Chapter 11. There's a lot of, "In 10 years, we'll do this. In 5 years, you'll be seeing this." These guys are hype merchants, or they're just academics who are trying to squeeze more funding out of the Pentagon, or wherever they're getting money. So there's this dangerous hype, over-hype, AI, let's-move-on-to-something-else phenomenon.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>13:48</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Interest in AI just crashes. It didn't help that the infrastructure wasn't there, or that computing speed wasn't high enough. But, at any rate, this was a case of right idea and wrong decade. By the late '80s, AI research was dwindling.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>14:06</strong> - <em>Sam Williams</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I think that people got away from what drew them to AI as a field, which was it was very adventurous. It was a chance to do the cutting edge. Out in the west coast, a lot of the energies getting drawn into let's make personal computers. Think from 40 years later, the attempt to get a computer into every home in the United States is a way more compelling concept than helping some Fortune 1000 businesses make better decisions.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>14:39</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Sam Williams is the author of “Arguing AI”. What we're describing here is a world of computer programming that was split into two. On the one hand, you've got the John McCarthys, trying to use new kinds of languages like LISP, to inquire into the nature of intelligence. On the other hand, inevitably, you've got folks trying to solve practical problems and make things easier for businesses that are willing to pay for services. The reality was that the John McCarthys of the world, those more abstract dreamers, didn't have much of a chance to explore deep in the possibilities of AI. The equipment they had wasn't even comparable to the cell phones we use today. Their vision was really too big for the hardware realities on hand.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>15:36</strong> - <em>Ulrich Drepper</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We had machines, big honking machines, which are used by many, many people in the work groups.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>15:46</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That's Ulrich Drepper, a distinguished engineer at Red Hat. He explains how that early AI dream just didn't have the basic tools it needed to succeed.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>15:55</strong> - <em>Ulrich Drepper</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We have PDP 10s, PDP 11s, etc., these kind of machines, where you might have 20 people on them. At best, they were really low-power machines, which didn't really have the capability of running a nicely developed user interface in addition to all the functionality necessary for a LISP system.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>16:19</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>As decades rolled on, the hardware that was being developed wasn't friendly towards LISP either.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>16:26</strong> - <em>Ulrich Drepper</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We went down the road for the desktop machines, but also for the server machines. Of the type of processors which we are accustomed to today, so we are having the visions inside the processes based on 8-bit bytes. So we might have a 16-bit processor, or a 32-bit processor, etc. So for these types of machines to implement in LISP system efficiently, one had to jump through quite a few hoops to actually make it work.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>16:56</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So external realities about the computing world were having unintended dampening effects on this fragile field of artificial intelligence.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>17:06</strong> - <em>Ulrich Drepper</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The custom hardware turned out to be such an expensive and slow prospect, especially when compared to the CPUs, which were in common use. The big CPU manufacturers.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>17:21</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It was possible to create those custom hardware workarounds and keep working with LISP, keep trudging toward that AI dream. But, the fact was, exciting new hardware pushed a lot of minds towards other areas of work.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>17:35</strong> - <em>Ulrich Drepper</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The improvements you got by just waiting for the next revision of the processor, that normal processor, was so much bigger than what you can achieve and gain by developing your own hardware for solving, for instance, implementing a LISP system. So that, in the end, the complexity simply didn't work out.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>18:03</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So, was John McCarthy's wide-eyed dream dying a slow death, or was it only sleeping through that long AI winter, waiting for its moment? Through the 2000s, John McCarthy's language, LISP, was used less and less. But, something kind of amazing happened at the same time. The language began to fade, but the dream connected to that language got rekindled. The dream of AI began to live again.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>18:34</strong> - <em>Chris Nicholson</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I want to say this time is different.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>18:36</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That's Chris Nicholson, the founder and CEO of an open source AI software company called Skymind. Chris figures that, after all its ups and downs, AI may be coming into a long sustainable summer at last.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>18:52</strong> - <em>Chris Nicholson</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We're in the midst of an AI summer where there's a lot of excitement around what AI can do. But, that excitement is based on real advances in research, and those advances are based on progress in other areas. Our hardware has gotten a lot better, people are able to use GPUs instead of CPUs, and they're able to use those GPUs in massive clusters to train enormous machine-learning models that can produce really accurate predictions. They do that using massive datasets, more data than we've ever had before, much more data than we had in the '90s, or '80s, or before.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>19:30</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>When you're thinking about AI languages, the rise of enormous datasets is key, because they represent a crucial change in the way we understand what intelligence even is. The focus shifts and becomes all about deep learning.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>19:47</strong> - <em>Chris Nicholson</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>LISP was designed to manipulate symbols. LISP was designed in an era when AI meant symbolic reasoning, when people thought that the human mind and intelligence itself was simply a manipulation of symbols. AI now, the AI we're really excited about, is much more than that. AI now, in machine learning now, is a massive data processing machine that can learn from unstructured data. So, blobs of pixels, blobs of text, you can shove them through machine-learning algorithms and make those algorithms smarter and smarter over time as you push the data through. LISP wasn't designed like that. It was designed to only evolve on the back of human intervention. Whereas, machine-learning algorithms now, the learning part of them means that they adapt themselves on the basis of the data they're exposed to.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>20:40</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>This is about letting our machines be intelligent on their own terms. But, you know, it's not just our machines that are learning to think in powerful new ways. Open source tools have allowed people to up their game, too. Chris figures our open source development styles are going a long way to preventing another AI winter.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>21:03</strong> - <em>Chris Nicholson</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>One reason why winters happen is because ideas slow down, networks break down, funding dries up. With these free open source tools, what we see is an acceleration. So we see ideas getting tested faster, ideas getting shared more quickly. So it's not just the tools, but it's pre-trained machine-learning models that one research group might share with another research group, or with the public-at-large. Finally, it's the ideas themselves, which are getting published in locations like ARXIV. ARXIV, which is hosted by Cornell University. So all those things together are accelerating kind-of the velocity of the flow of ideas. For me, that's kind of insurance against an AI winter. There's this confluence of factors that makes AI a super-exciting place to be, and that actually means that AI is moving even faster than the hype.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>22:03</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Chris Nicholson is the founder and CEO of Skymind. So, open source was able to thaw out the AI winter that older proprietary models had helped to create. The new AI moment came with vast improvements in GPUs. It came with algorithmic breakthroughs that help us train AIs to learn patterns in data. And then, the data itself. Massive datasets are fueling today's AI. That, more than anything, is why new languages are picking up the trail where LISP left off. We ask Rachel Thomas, a co-founder of Fast AI about which languages are suited to next-gen AI.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>22:50</strong> - <em>Rachel Thomas</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We're starting to look at Swift for TensorFlow. Swift is a language developed by Chris Lattner, and I know there are people using Julia, and developing Julia. But, for right now, Python is kind of overwhelmingly what is used in deep learning.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>23:03</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That's because Python is beautifully suited to working with large datasets.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>23:08</strong> - <em>Rachel Thomas</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I think something that's really changed in the last 20 years, is the rise of data and the increase of data. I think that a lot of earlier work on AI going back decades, was more around kind-of symbolic systems, these kind-of abstract symbolic systems. I would say a lot of the work happening in AI right now, is very much around data and identifying something in an image, classifying whether a review somebody has written of a movie is positive or negative. These are problems that are grounded in data. So, one of the reasons, I think, Python has kind-of emerged, at least as an early winner, is because the ecosystem with NumPy and SciPy and pandas, and all the data libraries in Python were well-developed enough.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>24:02</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>In the days when John McCarthy's group worked at MIT, AI really was something only the world's elite academics could get involved in. But, languages and computing environments have evolved so much since then, that AI is now really for everybody. We heard in episode 1 this season, Python is a first language for lots of beginners. It's empowered novice programmers to join the world of AI.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>24:29</strong> - <em>Rachel Thomas</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I just want to tell people that there really is just one year of coding experience is the only background you need. You don't need to be "a bath genius" or to have this really prestigious, or exclusive, background. But, that we need people from all backgrounds. Actually, by having a different background, you have a lot to offer to the field, and that we need your perspective.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>24:52</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Rachel Thomas is a co-founder of Fast AI, and a professor at the University of San Francisco Data Institute. I love that message from Rachel Thomas. The story of AI is a story about discovering languages that everybody can communicate with. That's our real mission here, to develop language solutions for a world filled with AI. Solutions that let us all work together to build that next breakthrough.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>25:22</strong> - <em>Announcer 1</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Folks, you saw history made here today. AlphaGo has won the match in great style.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>25:32</strong> - <em>Announcer 2</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Yeah, and it even showed us its code.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>25:34</strong> - <em>Speaker 7</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And even showed us its code. So I think congratulations to the program.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>25:40</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>In 2015, just a couple decades after Garry Kasparov lost that chess match to Deep Blue, the world champion at the game of Go, Lee Sedol, was defeated by Google's AlphaGo. Deep Blue had shown its intellectual might, pretty much through brute computational force. The thing about AlphaGo's victory that really surprised everyone, was that it won that match by relying on neural networks and reinforcement learning. In other words, AlphaGo had successfully taken that next step towards true intelligence. None of that would have been possible without the new AI spring fueled by open source. New languages are edging toward that dream. Our languages are getting better at maximizing the intelligence of machines. The good news, it's a challenge we can all work on together in an open source world.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple">
+                <p class="mb-0"><strong>26:39</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Command Line Heroes is an original podcast from Red Hat. If you want to dive deeper into LISP and the origins of artificial intelligence, you can check out all our bonus material over at <a href="../../command-line-heroes.html">redhat.com/commandlineheroes</a>. You'll find extra content for every episode. Next time, it's our season finale. We'll uncover some surprising truths about a massive language that influenced nearly every other language we studied this season. It's our in-depth look at C. In the meantime, I'm Saron Yitbarek. Keep on coding.</p>
+    </div>
+</div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-keep-going pt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 reveal">
+                <h3 class="text-white">Keep going</h3>
+
+                <div class="row">
+                    <div class="col-12 col-md-6 d-flex reveal">
+                        <div class="card rounded-0">
+                            <div class="card-body p-2 p-md-3">
+                                <h3>LISP and the Origins of A.I.</h3>
+
+                                <p class="mb-0">This episode of the Command Line Heroes podcast explores shifting programming paradigms, the invention of LISP, and the rise of thinking computers.</p>
+                            </div>
+
+                            <div class="card-footer pt-0 px-2 px-md-3 pb-2 pb-md-3">
+                                <a class="btn btn-link mb-0 text-black" href="http://opensource.com/article/19/9/command-line-heroes-lisp" target="_blank" title="Read more">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 d-flex reveal">
+                        <div class="card rounded-0">
+                            <div class="card-body p-2 p-md-3">
+                                <h3>The Road to AI</h3>
+
+                                <p class="mb-0">Self-driving cars are here, and it's starting to get weird. This is a story about data, decisions, and the future of an entire industry.</p>
+                            </div>
+
+                            <div class="card-footer pt-0 px-2 px-md-3 pb-2 pb-md-3">
+                                <a class="btn btn-link mb-0 text-black" href="../../open-source-stories/road-to-ai.html" title="Watch the film">Watch the film</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<div class="rh-raw"         data-rh-unique-id="1453031">
+        <section class="dms-band clh-featured-art py-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-white reveal">
+                <div class="card rounded-0">
+                    <div class="featured-background bg-no-repeat bg-pos-cb" data-bg-image="https://www.redhat.com/cms/managed-files/bkgd-clhs3-e7-artwork-mobile.svg" data-bg-image-md="https://www.redhat.com/cms/managed-files/bkgd-clhs3-e7-artwork.svg" style="background-image: url(_https_/www.redhat.com/cms/managed-files/bkgd-clhs3-e1-artwork.html);">
+                        <div class="col-12 col-md-7 col-xl-6 px-0">
+                            <div class="card-header pt-2 px-2 pb-0 pt-md-4 px-md-4">
+                                <h3 class="mb-2">Enjoy this episode's artwork on&nbsp;your&nbsp;device</h3>
+                            </div>
+
+                            <div class="card-body py-0 px-2 px-md-4">
+                                <p>Download the Command Line Heroes artwork and set it as your background.</p>
+                            </div>
+
+                            <div class="card-footer pt-0 px-2 pb-2 px-md-4 pb-md-4">
+                                <div class="cta-group mt-2 d-lg-none">
+                                    <a class="btn mt-1 mr-1 mb-0" href="../../../cms/managed-files/clh-s3e7-mobile-1080x1920.png" target="_blank" title="1080x1920">1080x1920</a>
+
+                                    <a class="btn mt-1 mr-1 mb-0" href="../../../cms/managed-files/clh-s3e7-mobile-1125x2436.png" target="_blank" title="1125x2436">1125x2436</a>
+
+                                    <a class="btn mt-1 mb-0" href="../../../cms/managed-files/clh-s3e7-mobile-1440x2560.png" target="_blank" title="1440x2560">1440x2560</a>
+                                </div>
+
+                                <div class="cta-group d-none d-lg-block">
+                                    <a class="btn mb-0" href="../../../cms/managed-files/clh-s3e7-desktop-1920x1080.png" title="1920x1080" download="">1080p</a>
+
+                                    <a class="btn mb-0" href="../../../cms/managed-files/clh-s3e7-desktop-2560x1440.png" title="2560x1440" download="">1440p</a>
+
+                                    <a class="btn mb-0" href="../../../cms/managed-files/clh-s3e7-desktop-3820x2160.png" title="3840x2160" download="">4K</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-featured-guests pb-md-12 bg-pos-cc bg-no-repeat" data-bg-image="https://www.redhat.com/cms/managed-files/section_background-E7-desktop-01.svg">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-white reveal">Featured in this episode</h3>
+
+                 <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 mt-lg-0 d-flex reveal">
+                        <div class="card clh-guest">
+                            <a class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" href="http://www.linkedin.com/in/chrisvnicholson/" target="_blank" title="Chris Nicholson" data-bg-image="https://www.redhat.com/cms/managed-files/chris-nicholson_3.png"></a>
+
+                            <a class="mb-1 d-inline-block w-100 h-100" href="http://www.linkedin.com/in/chrisvnicholson" target="_blank" title="Chris Nicholson">
+                                <div class="card-body p-2 bg-white h-100">
+                                    <h4>Chris Nicholson</h4>
+
+                                <p class="mb-0">Founder and CEO of Skymind</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-3 d-flex reveal">
+                        <div class="card clh-guest">
+                            <a class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" href="http://twitter.com/math_rachel" target="_blank" title="Rachel Thomas" data-bg-image="https://www.redhat.com/cms/managed-files/rachel-thomas.png"></a>
+
+                            <a class="mb-1 d-inline-block w-100 h-100" href="http://twitter.com/math_rachel" target="_blank" title="Rachel Thomas">
+                                <div class="card-body p-2 bg-white h-100">
+                                    <h4>Rachel Thomas</h4>
+
+                                <p class="mb-0">Professor at the University of San Francisco Data Institute, and co-founder of fast.ai</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                   
+                    <div class="col-12 col-md-6 col-lg-3 mt-md-3 mt-lg-0 d-flex reveal">
+                        <div class="card clh-guest">
+                            <a class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" href="http://twitter.com/colinkgarvey" target="_blank" title="Colin Garvey" data-bg-image="https://www.redhat.com/cms/managed-files/colin-garvey_0.png"></a>
+
+                            <a class="mb-1 d-inline-block w-100 h-100" href="http://twitter.com/colinkgarvey" target="_blank" title="Colin Garvey">
+                                <div class="card-body p-2 bg-white h-100">
+                                    <h4>Colin Garvey</h4>
+
+                                <p class="mb-0">Fellow at Stanford University’s Human-Centered Artificial Intelligence Institute and the Center for International Security and Cooperation</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-md-3 mt-lg-0 d-flex reveal">
+                        <div class="card clh-guest">
+                            <a class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" href="http://akkadia.org/drepper/" target="_blank" title="Ulrich Drepper" data-bg-image="https://www.redhat.com/cms/managed-files/ulrich-drepper.png"></a>
+
+                            <a class="mb-1 d-inline-block w-100 h-100" href="http://akkadia.org/drepper" target="_blank" title="Ulrich Drepper">
+                                <div class="card-body p-2 bg-white h-100">
+                                    <h4>Ulrich Drepper</h4>
+
+                                <p class="mb-0">Distinguished Engineer at Red Hat</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+
+                               <h3 class="mt-1 mt-md-4 text-white reveal">Also in this episode</h3>
+
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 d-flex reveal">
+                        <div class="card clh-guest">
+                            <div class="card-body p-2 bg-white">
+                                <div class="mb-1 d-inline-block">
+                                    <h4>Sam Williams </h4>
+                                </div>
+
+                                <p class="mb-0">Journalist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          
+
+
+            </div>
+        </div>
+    </div>
+
+    <img class="img-fluid w-100 d-md-none" src="https://www.redhat.com/cms/managed-files/section_background-E7-mobile.svg">
+</section>  <!-- Pattern | raw_html -->
+
+<article class="node-shared">
+      <section class="dms-band clh-newsletter pt-0 pt-md-8">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-5 reveal">
+                <div class="card">
+                    <div class="card-body p-0">
+                        <img class="img-fluid svg svg-white mb-3" src="https://www.redhat.com/cms/managed-files/logo-command-line-heroes.svg" width="166" height="42" alt="Command Line Heroes logo" title="Command Line Heroes">
+
+                        <h3 class="font-family-monospace">Get the newsletter</h3>
+
+                        <p class="mb-0">After each episode drops, we'll send you commentary from the Command Line Heroes team, as well as links that help you take a closer look at the topics we cover. It's as simple as that.</p>
+                    </div>
+
+                    <div class="card-footer pt-3 px-0 pb-0">
+                        <a class="btn btn-primary mb-1 mb-lg-0" href="http://www.redhat.com/forms/?config=19411" title="Sign up">Sign up</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 offset-lg-1 reveal">
+                <div class="card mb-0 bg-white rounded-0 text-black">
+                    <div class="card-body p-2 p-md-3">
+                        <h3 class="font-family-monospace text-red">Presented by Red&nbsp;Hat</h3>
+
+                        <p class="mb-0">For 25 years, Red Hat has been bringing open source technologies to the enterprise. From the operating system to containers, we believe in building better technology together–and celebrating the unsung heroes who are remaking our world from the command line up.</p>
+                    </div>
+
+                    <div class="card-footer pt-0 px-2 px-md-3 pb-2 pb-md-3">
+                        <a class="btn btn-link mb-0" href="http://www.redhat.com/" title="Learn more">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+  </article>
+  <!-- Pattern | raw_html -->
+
+<article class="node-shared">
+  
+  </article>
+
+  
+  
+</article>
+
+</div>
+  </div>
+        
+  </div>
+
+  <footer>
+        <section class="rc-footer-traditional">
+      <div class="container rc-footer-traditional-container">
+        <section class="rc-footer-traditional-section">
+          <div class="rc-footer-traditional-logo">
+            <div class="row">
+              <a href="https://www.redhat.com/en">
+                <img src="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo.svg" class="screen" title="Red Hat" />
+                </a>
+            </div>
+          </div>
+          <div id="legal" class="rc-footer-traditional-legal">
+            <div class="row">
+              <div class="copyright">©2021 Red Hat, Inc.</div>
+              <div >
+                <ul class="menu"><li class="first leaf"><a href="../../about/privacy-policy.html">Privacy statement</a></li>
+<li class="leaf"><a href="../../about/terms-use.html">Terms of use</a></li>
+<li class="leaf"><a href="../../about/all-policies-guidelines.html">All policies and guidelines</a></li>
+<li class="leaf"><a href="../../about/digital-accessibility.html">Digital accessibility</a></li>
+<li class="last leaf"><span id="teconsent" class="nolink">|</span></li>
+</ul>              </div>
+            </div>
+                      </div>
+          <div class="rc-footer-traditional-event-logo">
+            <div id="block-block-5" class="block block-block block-footer-promote">
+
+      
+  <a href="https://www.redhat.com/summit"><img src="https://www.redhat.com/cms/managed-files/Logo-Red_Hat-Summit-A-Standard-RGB-02_0.svg" alt="Red Hat Summit" style="float: right;" width="72px"></a>
+</div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </footer>
+        <script type="text/javascript" src="../../../ux/webdms/js/vendors/jquery.waypoints.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/plyr.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/viewport.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/scripts.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/projects/clh.min6eda.js?qy3uiv"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+  if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
+      _satellite.pageBottom();
+  }
+//--><!]]>
+</script>
+    </div>
+  <script type="text/javascript"  src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"></script></body>
+
+<!-- Mirrored from www.redhat.com/en/command-line-heroes/season-3/talking-to-machines by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:28:18 GMT -->
+</html>

@@ -1,0 +1,127 @@
+/**
+ * TRUSTe Consent Manager API styles.
+ */
+
+/* --- Placeholder --- */
+
+.trustecm-embed__placeholder {
+  position: relative;
+  height: 0;
+  padding: 0;
+  margin: 0 !important;
+  text-align: center;
+  overflow: visible;
+}
+
+.trustecm-embed__placeholder .trustecm-embed__placeholder--wrapper {
+  background: #000 no-repeat url('../images/TrustArc-Unable-to-Play-Video-BG-Sm-min.png') center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.trustecm-embed__placeholder .trustecm-embed__placeholder--wrapper:before {
+  /* 16:9 aspect ratio. */
+  display: block;
+  content: '';
+  width: 100%;
+  padding-top: calc((9 / 16) * 100%);
+}
+
+.trustecm-embed__placeholder .trustecm-embed__placeholder--inner {
+  width: 100%;
+  padding: 20px;
+  /* Vertically centered. */
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.trustecm-embed__placeholder .trustecm-embed__placeholder--icon,
+.trustecm-embed__placeholder .trustecm-embed__placeholder--label,
+.trustecm-embed__placeholder .trustecm-embed__placeholder--desc {
+  margin: 0 auto;
+}
+
+.trustecm-embed__placeholder .trustecm-embed__placeholder--icon {
+  background: no-repeat url('https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/images/Warning-Icon-sm.svg') center;
+  height: 24px;
+  width: 27px;
+}
+
+.trustecm-embed__placeholder .trustecm-embed__placeholder--label,
+.trustecm-embed__placeholder .trustecm-embed__placeholder--desc {
+  color: #FFF !important;
+}
+
+.trustecm-embed__placeholder .trustecm-embed__placeholder--label {
+  padding: 10px 0 10px 0;
+  font-family: 'RedHatDisplay', Helvetica, helvetica, arial, sans-serif;
+  font-weight: 400;
+  font-size: large;
+}
+
+.trustecm-embed__placeholder .trustecm-embed__placeholder--desc {
+  font-family: 'Red Hat Text', 'RedHatText', 'Overpass', Overpass, Arial, sans-serif;
+  font-size: medium;
+}
+
+/* --- Embeds --- */
+
+iframe[data-trustecm='blocked'].trustecm-embed__advertising.trustecm-embed__advertising--video,
+iframe[data-trustecm='blocked'].trustecm-embed__functional.trustecm-embed__functional--video {
+}
+
+/* --- Responsive --- */
+
+/* Small. */
+.trustecm-embed__placeholder[data-size='small'] .trustecm-embed__placeholder--label {
+  padding: 20px 0 40px 0;
+}
+
+.trustecm-embed__placeholder[data-size='small'] .trustecm-embed__placeholder--desc {
+  padding: 0 10%;
+}
+
+/* Medium. */
+.trustecm-embed__placeholder[data-size='medium'] .trustecm-embed__placeholder--wrapper {
+  background-image: url('../images/TrustArc-Unable-to-Play-Video-BG-Md-min.png');
+}
+
+.trustecm-embed__placeholder[data-size='medium'] .trustecm-embed__placeholder--icon {
+  background-image: url('https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/images/Warning-Icon-md.svg');
+  height: 48px;
+  width: 54px;
+}
+
+.trustecm-embed__placeholder[data-size='medium'] .trustecm-embed__placeholder--label {
+  padding: 40px 0 80px 0;
+  font-size: x-large;
+}
+
+.trustecm-embed__placeholder[data-size='medium'] .trustecm-embed__placeholder--desc {
+  padding: 0 20%;
+  font-size: large;
+}
+
+/* Large. */
+.trustecm-embed__placeholder[data-size='large'] .trustecm-embed__placeholder--wrapper {
+  background: url('../images/TrustArc-Unable-to-Play-Video-BG-Lg-min.png');
+}
+
+.trustecm-embed__placeholder[data-size='large'] .trustecm-embed__placeholder--icon {
+  background-image: url('https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/images/Warning-Icon-lg.svg');
+  height: 72px;
+  width: 81px;
+}
+
+.trustecm-embed__placeholder[data-size='large'] .trustecm-embed__placeholder--label {
+  padding: 80px 0 160px 0;
+  font-size: xx-large;
+}
+
+.trustecm-embed__placeholder[data-size='large'] .trustecm-embed__placeholder--desc {
+  padding: 0 30%;
+  font-size: x-large;
+}

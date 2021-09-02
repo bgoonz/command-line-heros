@@ -1,0 +1,2047 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  
+<!-- Mirrored from www.redhat.com/en/command-line-heroes/season-7/dot-com by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:30:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!--[if IE]><![endif]-->
+<script id="trustarc" type="text/javascript" src="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"></script>
+<script id="ddo" type="text/javascript">
+<!--//--><![CDATA[//><!--
+    var digitalData = {"cart":[],"event":[],"listing":{"browseFilter":"","query":"","queryMethod":"","refinementType":"","refinementValue":"","resultCount":"","searchType":""},"page":{"attributes":{"queryParameters":"","referringSearchEngine":"","analyticsTitle":"brand affinity | command line heroes season 7 episode 1","taxonomyPageSubType":["28051"],"taxonomyRegion":["4521"],"taxonomyMetaHreflang":["29051"]},"category":{"contentType":"","keyPage":"false","keyPageType":"","pageType":"pattern_template","primaryCategory":"command-line-heroes","subCategories":["season-7","dot-com"]},"pageInfo":{"cms":"RH CMS 2021.12.0","contentFindingMethod":"","contentID":"532651","contentPortal":"","destinationURL":"https:\/\/www.redhat.com\/en\/command-line-heroes\/season-7\/dot-com","errorMessage":"","errorType":"","language":"en","pageName":"","referringDomain":"","referringURL":"","sysEnv":"","template":"","title":"Command Line Heroes: Season 7: Connecting The Dot-Com"}},"product":[],"user":[{"profile":[{"profileInfo":{"daysSinceLastPurchase":"","demandbaseSID":"","eloquaGUID":"","lastLoginDate":"","lastPurchaseDate":"","loggedIn":"false","profileID":"","subscriptionFrequency":"","subscriptionLevel":""}}]}]};
+    !function(a,b,c){"use strict";function d(a){var c="; "+b.cookie,d=c.split("; "+a+"=");if(2===d.length)return d.pop().split(";").shift()}if(b.referrer){var e=b.createElement("a");e.href=b.referrer,c.page.pageInfo.referringDomain=e.hostname,c.page.pageInfo.referringURL=e.href}c.page.pageInfo.sysEnv=a.innerWidth<=768?"tablet":"desktop";var f=c.user[0].profile[0].profileInfo,g=d("rh_elqCustomerGUID");g&&(f.eloquaGUID=g);var h=d("rh_user");if(h){var i=h.split("\\|");i[0]&&(f.loggedIn="true")}var j=d("s_dmdbase");j&&(f.demandbaseSID=j)}(window,document,digitalData);
+//--><!]]>
+</script>
+<script src="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm.js" data-domain="www.redhat.com"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-functional.js" class="trustecm" data-tracker-type="functional"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-advertising.js" class="trustecm" data-tracker-type="advertising"></script><script id="dpal" type="text/javascript" src="../../../dtm.js"></script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="en" />
+<link href="dot-com.html" rel="alternate" hreflang="en" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "availableLanguages": {
+        "zh": {
+            "@type": "Language",
+            "name": "简体中文",
+            "href": "/zh/command-line-heroes/season-7/dot-com"
+        },
+        "en": {
+            "@type": "Language",
+            "name": "English",
+            "href": "/en/command-line-heroes/season-7/dot-com",
+            "current_lang": true
+        },
+        "fr": {
+            "@type": "Language",
+            "name": "Français",
+            "href": "/fr/command-line-heroes/season-7/dot-com"
+        },
+        "de": {
+            "@type": "Language",
+            "name": "Deutsch",
+            "href": "/de/command-line-heroes/season-7/dot-com"
+        },
+        "it": {
+            "@type": "Language",
+            "name": "Italiano",
+            "href": "/it/command-line-heroes/season-7/dot-com"
+        },
+        "ja": {
+            "@type": "Language",
+            "name": "日本語",
+            "href": "/ja/command-line-heroes/season-7/dot-com"
+        },
+        "ko": {
+            "@type": "Language",
+            "name": "한국어",
+            "href": "/ko/command-line-heroes/season-7/dot-com"
+        },
+        "pt-br": {
+            "@type": "Language",
+            "name": "Português",
+            "href": "/pt-br/command-line-heroes/season-7/dot-com"
+        },
+        "es": {
+            "@type": "Language",
+            "name": "Español",
+            "href": "/es/command-line-heroes/season-7/dot-com"
+        }
+    }
+}</script><meta name="last-publish-date" content="Tue, 25 Jun 2019 04:00:00 GMT" />
+<meta name="node-type" content="pattern_template" />
+<meta name="source" content="rhdc_drupal" />
+<meta name="rhdc_key" content="69df32dce5184c1b36cf10c81ff4ad6b" />
+<meta name="taxonomy-region" content="Global" />
+<meta name="taxonomy-region-tid" content="4521" />
+<meta name="taxonomy-page-sub-type" content="Brand affinity" />
+<meta name="taxonomy-page-sub-type-tid" content="28051" />
+<meta name="taxonomy-meta-hreflang" content="en" />
+<meta name="taxonomy-meta-hreflang-tid" content="29051" />
+<link rel="shortcut icon" href="https://www.redhat.com/misc/favicon.ico" type="image/x-icon" />
+<meta property="og:description" content="The year is 1995. The internet starts going mainstream and the dot-com bubble begins its rapid inflation. But 10 years before all of this, a small team of systems administrators made a seemingly simple decision that would turn out to have a monumental impact on these events and would set the course of the internet for the foreseeable future." />
+<meta name="description" content="The year is 1995. The internet starts going mainstream and the dot-com bubble begins its rapid inflation. But 10 years before all of this, a small team of systems administrators made a seemingly simple decision that would turn out to have a monumental impact on these events and would set the course of the internet for the foreseeable future." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="image_src" href="../../../cms/managed-files/Opengraph---S7_0.jpg" />
+<link rel="canonical" href="dot-com.html" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.redhat.com/en/command-line-heroes/season-7/dot-com" />
+<meta property="og:title" content="Command Line Heroes: Season 7: Connecting The Dot-Com" />
+<meta property="og:image" content="https://www.redhat.com/cms/managed-files/Opengraph---S7_0.jpg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Command Line Heroes: Season 7: Connecting The Dot-Com" />
+<meta name="twitter:image" content="https://www.redhat.com/cms/managed-files/Opengraph---S7_0.jpg" />
+    <title>Command Line Heroes: Season 7: Connecting The Dot-Com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://static.redhat.com/">
+    <link rel="preload" href="https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/fonts/web_icon/rh-web-iconfont.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatTextVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatDisplayVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__k9aoxkMyjUtSX9AXGCPExPgTYjM0Xv5OYNfbFGDRafY__N9sjJtGj85lXtvOptw2e_YZ01FXbTXcJywP8EaKBijU__uaCwYofnUZLAnB7x3Q6WyVKH" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/all/libraries/webrh/dist/css/webrh.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__cxslYvmVeKFG0RwKl9kcXSrmb2x2VtvkIw-OLkwF8jU___pPNjqO-hMXRnx5HlJupeXtrvaj0Ilhs-XAVxMYy0CM__uaCwYofnUZLAnB7x3Q6WyVKH" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__wpajrf8pWA19ifT2xQXPB3J1TByoCXqZVtt6kXfl4Ow__PFQbFxxWsZl0yTnfrpPiA-o5Pvtu-CXh7nICx08JW0c__uaCwYofnUZLAnB7x3Q6WyVKH" media="print" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/css/trustecm.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/redhat-theme/6/advanced-theme.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/red-hat-font.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/font-awesome/4.7.0/css/font-awesome.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/vendors/plyr.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/vendors/slick.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/styles.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/projects/clh-s7-episodes.min6eda.css?qy3uiv" media="all" />
+    <!--[if lt IE 9]>
+      <script src="/profiles/rh/themes/redhatdotcom/js/selectivizr-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/nwmatcher-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/respond.js" type="text/javascript"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../../../sites/default/files/advagg_js/js__B6wED6l5P_XUdxVmb7Nvh5d9zn074QukFqJa2HLXS6c__VzWs8XZBHHsPW77egi-W-FQw2mAEr5F-GgCJU0wn3Nc__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.vendor.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.webcomponents.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__pDOiYGKaYbdKNp1gvMxR0fWhWZnfUemYDUhADyCn3oM__jCrCuWCJIPYPe1FzZoUvsJWEjkNMmRIQHYek1h7idBE__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.rh = window.rh || {}; window.rh.drupalTrustArcLoaded = true;
+//--><!]]>
+</script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__5nUyGFdhKMGscC9VhukG-UTAhz8BEdhsa8koVlLwAyQ__Lz8gDLbd5fTco1AnHaCqhSeYJB5o0QUXAimK7JOyRNI__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"redhatdotcom","theme_token":"vS-fLtky9wZd46fzKJ-vvrTGiGQ3OC6v4LYvCtKvIqg","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.webcomponents.min.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.min.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/marketing\/latest\/trustarc\/trustecm\/css\/trustecm.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-theme\/6\/advanced-theme.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-font\/4\/webfonts\/red-hat-font.min.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-iconfont.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-web-iconfont.css":1,"sites\/all\/libraries\/patternfly-elements\/pfe-styles\/pfe-typography-classes.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/site-switcher.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/chrome.css":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/print.css":1,"\/\/static.redhat.com\/libs\/font-awesome\/4.7.0\/css\/font-awesome.min.css?qy3uiv":1,"\/ux\/webdms\/css\/vendors\/plyr.min.css?qy3uiv":1,"\/ux\/webdms\/css\/vendors\/slick.min.css?qy3uiv":1,"\/ux\/webdms\/css\/styles.min.css?qy3uiv":1,"\/ux\/webdms\/css\/projects\/clh-s7-episodes.min.css?qy3uiv":1},"js":{"\/ux\/webdms\/js\/vendors\/jquery.waypoints.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/viewport.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/plyr.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/slick.min.js?qy3uiv":1,"\/ux\/webdms\/js\/scripts.min.js?qy3uiv":1,"\/ux\/webdms\/js\/projects\/clh.min.js?qy3uiv":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/rh\/modules\/redhat_www_ddo\/dist\/post-jquery.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.vendor.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.webcomponents.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"profiles\/rh\/modules\/redhat_www_menu\/js\/rh_nav.js":1,"profiles\/rh\/modules\/redhat_www_share\/js\/rh_share.js":1,"profiles\/rh\/modules\/redhat_www_utility\/js\/redhat_www_utility.js":1,"sites\/all\/libraries\/jquery-cookie\/jquery.cookie-1.4.1.min.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.pushmenu.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery-scrolltofixed.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/rh-chrome.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.fitvids.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.switchIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.viewport\/jquery.viewport.min.js":1}},"redhat_www_menu":{"path":"node\/532651"},"rh_analytics_enabled":false});
+//--><!]]>
+</script>
+    <noscript>
+        <link href="../../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.noscript.min.css" rel="stylesheet" >
+    </noscript>
+  </head>
+  <body unresolved class="bands-index html not-front not-logged-in no-sidebars page-node page-node- page-node-532651 node-type-pattern-template i18n-en clh-s7e1  " >
+    <div class="page">
+            <!-- Legacy migrated page support with body.migrated-page-hero -->
+<div class="header-background-image fts-migrated-bg">
+</div>
+
+  <div id="main-content">
+                      <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+      
+  <article class="node-532651 node node-pattern-template clearfix">
+
+  
+    <!-- Pattern | raw_html -->
+
+<article class="node-shared">
+      <header id="top" class="dms-band clh-nav-top py-2">
+    <div class="container text-white">
+        <div class="row d-flex align-items-center">
+            <div class="col-6">
+                <a href="../../command-line-heroes.html" title="Command Line Heroes">
+                    <img class="img-fluid svg svg-white" src="https://www.redhat.com/cms/managed-files/logo-command-line-heroes.svg" width="166" height="42" alt="Command Line Heroes logo">
+                </a>
+            </div>
+
+            <div class="col-6 clh-nav-toggle-wrapper">
+                <span class="text-monospace text-right font-size-16 d-inline-block">Subscribe<br/>& more</span>
+
+                <a href="#" class="btn btn-toggle" data-toggle="nav-shelf">
+                    <div class="d-inline-block">
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="dms-band clh-nav-shelf text-white py-0">
+    <div class="nav-container pb-4">
+        <div id="CLHNav" class="accordion">
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-subscribe.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSubscribe">
+                    <p>Subscribe</p>
+                </button>
+                <div id="clhSubscribe" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <p>Subscribe to the podcast to receive new episodes as soon as we release them</p>
+                    <div class="row pb-2">
+                        <div class="col-6 mb-2">
+                            <a href="http://geo.itunes.apple.com/podcast/us/id1319947289?mt=2&amp;at=1010lbVy&amp;ct=redhatclh_website" target="_blank" title="Listen on Apple Podcasts">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-apple.png" alt="Listen on Apple Podcasts">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://www.google.com/podcasts?feed=aHR0cHM6Ly9mZWVkcy5wYWNpZmljLWNvbnRlbnQuY29tL2NvbW1hbmRsaW5laGVyb2Vz" target="_blank" title="Listen on Google Podcasts">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-google.png" alt="Listen on Google Podcasts">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://www.stitcher.com/s?fid=159833&amp;refid=stpr" target="_blank" title="Listen on Stitcher">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-stitcher.png" alt="Listen on Stitcher">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://open.spotify.com/show/4Jgtgr4mHXNDyLldHkfEMz" target="_blank" title="Listen on Spotify">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-spotify.png" alt="Listen on Spotify">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://feeds.pacific-content.com/commandlineheroes" target="_blank" title="Subscribe via RSS Feed">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-rss.png" alt="Subscribe via RSS Feed">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-about.jpg">
+                <button href="../about.html" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhAbout">
+                    <p>About the podcast</p>
+                </button>
+                <div id="clhAbout" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <p>Discover Red Hat’s original podcast about the people who transform technology from the command line up. Subscribe to our newsletter for commentary from the Command Line Heroes team—and links to take a closer look at the topics we cover.</p>
+                    
+                    <p><a href="../about.html" class="btn btn-primary">Learn about the show</a></p>
+                    <p class="mb-0 pb-4"><a href="https://www.redhat.com/forms/?config=19411" class="btn btn-outline-white">Get the newsletter</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s1.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason1">
+                    <p>Season 1</p>
+                </button>
+                <div id="clhSeason1" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-1/os-wars-part-1.html" title="OS Wars_Part 1">OS Wars_part 1</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/os-wars-part-2-rise-of-linux.html" title="OS Wars_Part 2">OS Wars_part 2</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/agile-revolution.html" title="The Agile_Revolution">The Agile_Revolution</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/devops-tear-down-that-wall.html" title="DevOps_Tear Down That Wall">DevOps_Tear Down That Wall</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/the-containers-derby.html" title="The Containers_Derby">The Containers_Derby</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/crack-the-cloud-open.html" title="Crack the Cloud_Open">Crack the Cloud_Open</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/days-of-future-open.html" title="Days of Future_Open">Days of Future_Open</a>
+                        </li>
+                    </ol>
+                  <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-1.html" title="Explore season 1">Explore Season 1</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s2.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason2">
+                    <p>Season 2</p>
+                </button>
+                <div id="clhSeason2" class="accordion-panel collapse" data-parent="#CLHNav">
+
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-2/press-start.html" title="Press Start">Press Start</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/hello-world.html" title="Hello, World">Hello, World</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/ready-to-commit.html" title="Ready to Commit">Ready to Commit</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/fail-better.html" title="Fail Better">Fail Better</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/the-one-about-devsecops.html" title="The One About DevSecOps">The One About DevSecOps</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/the-data-explosion.html" title="The Data Explosion">The Data Explosion</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/at-your-serverless.html" title="At Your Serverless">At Your Serverless</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/open-curiosity.html" title="Open Curiosity">Open Curiosity</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/developer-advocacy-roundtable.html" title="Bonus_Developer Advocacy Roundtable">Bonus_Developer Advocacy Roundtable</a>
+                        </li>
+                    </ol>
+                   <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-2.html" title="Explore season 2">Explore Season 2</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s3.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason3">
+                    <p>Season 3</p>
+                </button>
+                <div id="clhSeason3" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-3/pythons-tale.html" title="Python's Tale">Python's Tale</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/learning-the-basics.html" title="Learning the BASICs">Learning the BASICs</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/creating-javascript.html" title="Creating JavaScript">Creating JavaScript</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/diving-for-perl.html" title="Diving for Perl">Diving for Perl</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/the-infrastructure-effect.html" title="The Infrastructure Effect">The Infrastructure Effect</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-3/heroes-in-a-bash-shell.html" title="Heroes in a Bash Shell">Heroes in a Bash Shell</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/talking-to-machines.html" title="Talking to Machines">Talking to Machines</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-3/the-c-change.html" title="The C Change">The C Change</a>
+                        </li>
+                    </ol>
+                   <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-3.html" title="Explore season 3">Explore Season 3</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s4.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason4">
+                    <p>Season 4</p>
+                </button>
+                <div id="clhSeason4" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-4/minicomputers.html" title="Minicomputers">Minicomputers</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-4/mainframes.html" title="Mainframes">Mainframes</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/personal-computers.html" title="Personal Computers">Personal Computers</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/floppies.html" title="Floppies">Floppies</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/smarter-phones.html" title="Smarter Phones">Smarter Phones</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/open-source-hardware.html" title="Open Source Hardware">Open Source Hardware</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/consoles.html" title="Consoles">Consoles</a>
+                        </li>
+
+                         <li class="mb-2">
+                            <a href="../season-4/steve-wozniak.html" title="Steve Wozniak">Steve Wozniak</a>
+                        </li>
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-4.html" title="Explore season 4">Explore Season 4</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s5.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason5">
+                    <p>Season 5</p>
+                </button>
+                <div id="clhSeason5" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-5/becoming-a-coder.html" title="Becoming a Coder">Becoming a Coder</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-5/where-coders-code.html" title="Where Coders Code">Where Coders Code</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-5/what-kind-of-coder-will-you-become.html" title="What Kind of Coder Will You Become?">What Kind of Coder Will You Become?</a>
+                        </li>
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-5.html" title="Explore season 5">Explore Season 5</a></p>
+ 
+                </div>
+            </div>
+
+                        <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s6.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason6">
+                    <p>Season 6</p>
+                </button>
+                <div id="clhSeason6" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-6/jerry-lawson.html" title="Jerry Lawson">Jerry Lawson</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/gladys-west.html" title="Dr. Gladys West">Dr. Gladys West</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/mark-dean.html" title="Dr. Mark Dean">Dr. Mark Dean</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/marc-hannah.html" title="Dr. Marc Hannah">Dr. Marc Hannah</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/clarence-ellis.html" title="Dr. Clarence Ellis">Dr. Clarence Ellis</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/roy-clay.html" title="Roy Clay">Roy Clay</a>
+                        </li>
+                       <li class="mb-2">
+                            <a href="../season-6/gladys-perkins.html" title="Gladys Perkins">Gladys Perkins</a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="../season-6/arlan-hamilton.html" title="Arlan Hamilton">Arlan Hamilton</a>
+                        </li>
+            
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link text-monospace text-white" href="../season-6.html" title="Explore season 6">Explore Season 6</a></p>
+                </div>
+            </div>
+
+             <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/season-7_nav.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason7">
+                    <p>Season 7</p>
+                </button>
+                <div id="clhSeason7" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="dot-com.html" title="Connecting The Dot-Com">Connecting The Dot-Com</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="nsfnet.html" title="From NSF to ISP">From NSF to ISP</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="html.html" title="A Language for the Web">A Language for the Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="ux.html" title="Web UX Begins">Web UX Begins</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="shopping.html" title="Shopping for the Web">Shopping for the Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="search.html" title="Looking for Search">Looking for Search</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="world.html" title="The World of the World Wide Web">The World of the World Wide Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="bubble.html" title="After the Bubble">After the Bubble</a>
+                        </li>
+
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../../command-line-heroes.html" title="Explore season 5">Explore Season 7</a></p>
+ 
+                </div>
+            </div>
+
+        </div>
+        
+        <ul class="social-list list-inline list-unstyled pl-5 pl-sm-6 mt-1">
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F" target="_blank" title="Facebook" onclick="return !window.open(this.href, 'Facebook', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
+                    <span class="web-icon-facebook" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.twitter.com/share?url=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F&amp;text=An%20original%20podcast%20about%20the%20people%20who%20transform%20technology%20from%20the%20command%20line%20up.%20Presented%20by%20Red%20Hat." target="_blank" title="Twitter" onclick="return !window.open(this.href, 'Twitter', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
+                    <span class="web-icon-twitter" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F&amp;title=Command%20Line%20Heroes&amp;summary=Hear%20the%20epic%20true%20tales%20of%20how%20developers%2C%20programmers%2C%20hackers%2C%20geeks%2C%20and%20open%20source%20rebels%20are%20revolutionizing%20the%20technology%20landscape.%20Command%20Line%20Heroes%20is%20a%20new%20podcast%20hosted%20by%20Saron%20Yitbarek%20and%20produced%20by%20Red%20Hat.&amp;source=Red%20Hat" target="_blank" title="LinkedIn" onclick="return !window.open(this.href, 'LinkedIn', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')" aria-current="page">
+                    <span class="web-icon-linkedin" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="mailto:?subject=Command Line Heroes&body=Hear%20the%20epic%20true%20tales%20of%20how%20developers%2C%20programmers%2C%20hackers%2C%20geeks%2C%20and%20open%20source%20rebels%20are%20revolutionizing%20the%20technology%20landscape.%20Command%20Line%20Heroes%20is%20a%20new%20podcast%20hosted%20by%20Saron%20Yitbarek%20and%20produced%20by%20Red%20Hat. https://www.redhat.com/en/command-line-heroes" target="_blank" title="Email" aria-current="page">
+                    <span class="web-icon-envelope" aria-label="true"></span>
+                </a>
+            </li>
+        </ul>
+
+         <div class="language-switcher position-absolute bottom-0 right-0  w-100">
+            <div class="row justify-content-center mx-0">
+
+                <div class="col-6 text-center border-right border-black border-20 language-inactive">
+                    <a href="http://www.redhat.com/es/command-line-heroes" title="Command Line Heroes"><img class="img-fluid py-2" width="90" src="https://www.redhat.com/cms/managed-files/logo_clh-en-espanol_inactive.svg" alt="CLH en espanol logo"></a></div>
+
+                <div class="col-6 text-center language-active"><a href="../../command-line-heroes.html" title="Command Line Heroes"><img class="img-fluid pt-3 pb-2" width="130" src="https://www.redhat.com/cms/managed-files/logo_CLH_small.svg" alt="CLH logo"></a></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+</div>
+
+
+<div class="mb-6">&nbsp;</div>  
+  </article>
+  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-hero--episode pt-4 py-md-10  bg-repeat"  data-bg-image="../../../cms/managed-files/S7-blue-static-square.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 pt-lg-6 pt-xl-12 text-white reveal">
+                <h5 class="section-label mb-1 font-weight-light">Season 7, Episode 1</h5>
+
+                <h1 class="mb-lg-4 text-monospace font-size-28 font-size-lg-32"><strong>Connecting The Dot-Com</strong></h1>
+
+                <div class="clh-audio plyr-theme">
+                    <audio src="http://chtbl.com/track/247G8/https://dts.podtrac.com/redirect.mp3/cdn.simplecast.com/audio/a88fbe81-5614-4834-8a78-24c287debbe6/episodes/0661d5a5-7f45-420c-a2bf-62bb7d4c0020/audio/7f0f85cf-8751-4006-b418-18ef11087471/default_tc.mp3" preload="none" controls></audio>
+                </div>
+                <p class="cta-group">
+                    <a class="btn btn-link text-monospace text-white" href="#" data-toggle="nav-shelf" data-toggle-panel="#clhSubscribe" title="Listen to this episode later" data-menu="subscribe">Listen to this episode later </a>
+                </p>
+            </div>
+            <div class="col-lg-6 offset-lg-1 pt-4 text-center reveal">
+                <img class="img-fluid" src="../../../cms/managed-files/CLH-S7-ep1.png" alt="Rolodex">
+            </div>
+            
+           
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-notes py-0">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-lg-7 col-xl-6 mx-auto pt-6 reveal">
+                <ul class="nav nav-tabs mb-3 d-flex justify-content-center text-monospace">
+                    <li class="nav-item text-center">
+                        <a class="tab-show-notes nav-link mx-0 mr-md-6 p-0 font-size-22 text-white active" href="#show-notes" data-toggle="tab" title="Show notes">Show notes</a>
+                    </li>
+
+                    <li class="nav-item text-center">
+                        <a class="tab-transcript nav-link mt-2 mt-md-0 mx-0 p-0 font-size-22 text-white" href="#transcript" data-toggle="tab" title="Transcript">Transcript</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="show-notes" class="tab-pane fade active show">
+                        <div class="row">
+                            <div class="col-12">
+                                <p>The year is 1995. The internet starts going mainstream and the dot-com bubble begins its rapid inflation. But 10 years before all of this, a small team of systems administrators made a seemingly simple decision that would turn out to have a monumental impact on these events and would set the course of the internet for the foreseeable future.</p>
+
+                                <p class="mb-lg-0">Dr. W. Joseph Campbell sets the stage for our season on the internet in 1995. Claire L. Evans explains how hard it was to find anything on the early internet. One team was charged with compiling that information in the early days of the ARPANET. Elizabeth "Jake" Feinler recounts being the internet’s sole librarian in those early days, and how she helped come up with the rules for future domain names. Paul Mockapetris describes designing the domain name system they later implemented as the internet went from a public network to a private business. And Ben Tarnoff explains the results of that increasingly privatized internet.</p>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="transcript" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>00:06</strong> - <em>Speaker 1</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>As we approach the turn of the century, communication methods are changing drastically.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>00:11</strong> - <em>Speaker 2</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Internet technology uses computer networks to link people around the world. Millions of Americans have a personal...</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>00:17</strong> - <em>Speaker 3</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Millions of Americans have a personal computer in their home. These Americans can glimpse into the future online.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>00:22</strong> - <em>Speaker 4</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>By the year 2000, every business will be on the internet.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>00:28</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>1995. That year, the world's imagination was sparked. A networking technology that few understood had been developing for decades, and then it burst into the public sphere. Movies like <em>The Net and Hackers and Johnny Mnemonic</em> captured our new obsession. An arcane series of virtual tubes called the internet had been brought to life by the creation of the World Wide Web. And tens of millions of people were jumping online. 
+</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>01:05</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I'm Saron Yitbarek and this is season 7 of Command Line Heroes, an original podcast from Red Hat. This season, we're looking at that year&mdash;1995&mdash;from every angle. We're exploring how that moment in our tech history gave birth to the online world we know today. From e-commerce to web design, to search engines, and so much more.
+</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>01:31</strong> - <em>W. Joseph Campbell</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It certainly was a watershed year in the popular emergence of the internet.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>01:38</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Professor W. Joseph Campbell is the author of 1995: <em>The Year the Future Began</em>.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>01:45</strong> - <em>W. Joseph Campbell</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It was a moment when the internet goes from obscurity to near ubiquity. There was a critical mass of users, there was a critical mass of content and there was a relatively easy way to get there. And that way to get there was the Netscape browser. And it really just took the web from, and the internet from, obscurity to prominence during that 12-month period.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>02:12</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>In fact, Netscape's IPO on August 9th of that year made it a multi-billion dollar success overnight.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>02:21</strong> - <em>W. Joseph Campbell</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The IPO of Netscape really ignited a great deal of interest and made it very clear to lots of people that there was a lot of money that could be made online.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>02:32</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The dot-com bubble was born. While movie-goers were lining up to see Sandra Bullock in <em>The Net</em>, investors were lining up to buy stocks in anything that had a dot-com attached to its name. The tech-dominated NASDAQ Composite index would quadruple over the next 5 years. That dot-com bubble transformed the tech landscape and few investors had any idea what those words “dot-com” really meant. So we're launching our new season with a little history lesson for those mid-90s traders. It's the story of the invention of dot-com itself. Before the dot-com boom&mdash;long before you could hop on GoDaddy to grab yourself a domain name–there was a woman you'd have to call. The keeper of all domains. Her name was Elizabeth "Jake" Feinler.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>03:34</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Back in 1972, the newly-built ARPANET, godfather of our internet, consisted of about 30 computers. “Three-zero.” And one of the major nodes of that fledgling network was at Stanford Research Institute. That's where information scientist, Elizabeth "Jake" Feinler, worked. And people like her, wizards of information management, indexing and data organization, were about to become incredibly useful. Because networks require order as they grow–or else they collapse. Douglas Engelbart, the engineer who became famous for his work on human-computer interactions, was then running the Stanford lab. And he enlisted Feinler, giving her the task of writing a resource handbook for the first demo of the ARPANET. Basically, that was a contact list of technical liaisons and administrative liaisons for all the host sites. Organizing information for a network of 30 computers was easy enough. This was, after all, just supposed to be a way for researchers to bounce information back and forth between universities. Not a ton of pressure organizing something like that. But–and you're probably ahead of me here–that was about to change.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>05:04</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Try to imagine: a few dozen host sites and a few dozen universities, military bases, and research centers. Each one with different resources. The military sites were way more secure, of course. The university sites were often run by students. There was no consistent organization.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>05:24</strong> - <em>Claire L. Evans</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>There was no search engine to any of this.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>05:26</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Claire L. Evans is the author of Broad Band: <em>The Untold Story of the Women Who Made the Internet</em>.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>05:34</strong> - <em>Claire L. Evans</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>In order for it to be even remotely useful to anyone, they had to know exactly what they were looking for, where that something was, when it was online, and who could give them access. And the only way they could really do that was by getting in touch with Jake Feinler and the Network Information Center, who had all of that information on hand.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>05:56</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That Network Information Center–also called the NIC–was run by the Stanford Research Institute (SRI). And that "Jake Feinler" is actually Elizabeth Feinler. Jake's a nickname she's had since she was a kid. Just 2 years after creating her resource handbook for the ARPANET, Feinler was the principal investigator planning and running the NIC. And, like Evans just mentioned, the NIC was essentially serving as Google for the ARPANET.
+</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>06:26</strong> - <em>Claire L. Evans</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>They were the only people who knew where anything was.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>06:30</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And that was okay, at first...</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>06:32</strong> - <em>Claire L. Evans</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>They had a job that got very complicated very, very quickly. So it went from a few dozen host sites to thousands in a matter of years. And Jake's project at the NIC went from being a 2-person operation with 1 telephone and a file folder of index cards to, like, an $11-million military project with 6 phone lines ringing off the hook from 5 AM to midnight, every day, for 20 years.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>06:55</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>With time, the flood of phone calls became a flood of emails. And Feinler's team was working hard to keep up.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>07:02</strong> - <em>Claire L. Evans</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>All of a sudden, it becomes a really complicated job to actually keep track of where all those host sites are and manually proofing that document, which was called the host table. It was something that was done twice a week. It was an incredibly tedious, kind-of burnout job. And it became too big for some of the hosts on the network to even be able to download the file from the NIC regularly enough to have updated information. It became something that was kind of Sisyphean in nature.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>07:31</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That host table Evans mentions, the original domain registry for the ARPANET, was just a flat ASCII text file that folks could download directly from the NIC servers. It was literally a spreadsheet listing all the different hosts and their addresses. A “Yellow Pages” for the networked world. Soon, that rudimentary Yellow Pages became the original WHOIS: a dedicated server at the NIC, where you could look up names and contact information for every authorized user on the network. They were inching toward a new form of organization.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>08:08</strong> - <em>Claire L. Evans</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I mean, she literally answered the phone for the internet and answered the email for the internet for a really long time. So she knew how explosive that growth was. And I think as an information scientist, as someone who came from library science, she knew that it was going to be something that could get really chaotic and impossible to manage if it wasn't structured correctly, and early on, with thought in mind for how to preserve core structures amid all this growth.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>08:37</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And so, as the small steps were outpaced by the network's growth, it became increasingly clear. Big structural arrangements were going to be necessary. A way to move beyond the host table and the WHOIS. And that would require an information scientist of imagination.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>08:56</strong> - <em>Elizabeth J. Feinler</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Well, I always felt like "Alice through the looking glass."" It was just a whole different world.
+</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>09:03</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Feinler herself spoke with us from her home in California. She's now 90 years old. She still lights up when talking about her work on Douglas Engelbart's team.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>09:14</strong> - <em>Elizabeth J. Feinler</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Doug's group, they're wearing Birkenstocks and jeans, and no bras, and beards to down to here. Because everybody at SRI was saying, “What's with these people up on the second floor?” They were very strange for the time, in the way they were dressed and the way they were acting. It was a lot of fun. It was more like a club, in a way. The way everybody knew everybody and wanted to make this thing work, because we knew, just had this feeling it was good stuff, you know.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>09:49</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>But just think what that club was demanding of Feinler and her team. They were providing the map, the manual, the address book that made the ARPANET usable. They were archiving and indexing its documentation, coordinating technical liaisons, managing the requests for comments. They were the hub and the call center for the whole enormous project.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>10:13</strong> - <em>Elizabeth J. Feinler</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>What our problem was, was running that database and upgrading it and doing the programming needed, because nothing ran on the machines during the day. And they were just so slow. During the days we were answering telephones and emails and people's questions and problems. And during the night, we were trying to run programs.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>10:38</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The simple manual approach of organizing all the network’s users was growing more untenable by the day.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>10:45</strong> - <em>Elizabeth J. Feinler</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Oh, it could be anything. They want a document. They want to know how to use something. They want to know how to contact somebody. We had a hotline. So, it was, "How do I get on the ARPANET? Who's at the site? How do I do this program? Where is this document?"" It didn't matter&mdash;anything you could think of that a reference desk would get, that's what we got.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>11:08</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>A Yellow Pages, a spreadsheet, a reference desk. However you want to describe the project, it was more than mere humans could manage. And that was the moment when Feinler truly organized those online crowds for the very first time. She didn't know it, but Feinler was preparing the internet for that moment Professor Campbell described. The moment in 1995, when the early internet would transform into an information superhighway. It was all being prepared in the offices of Elizabeth Jake Feinler. So, that flat text file that indexed all domain names needed to be replaced. But with what? One computer scientist had a solution.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>12:01</strong> - <em>Paul Mockapetris</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Hi, I'm Paul Mockapetris.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>12:04</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Around 1982, Mockapetris was asked to look at different ideas for replacing SRI's host table. He checked out 5 different proposals.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>12:15</strong> - <em>Paul Mockapetris</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I looked at those proposals and decided that something completely different would be a better idea. So I designed the Domain Name System, and that's how it came to be.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>12:29</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Mockapetris is being a bit modest. The DNS delivered several advantages. For starters: it replaced all those numerical addresses with names that humans could remember. Navigating the internet no longer meant looking up a string of digits on some spreadsheet. By 1986, a few years after the DNS specs came out, the old host table had fallen to the wayside. But that wasn't the only advantage to the new system.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>12:58</strong> - <em>Paul Mockapetris</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The really important things about the Domain Name System was that people could get their own domain and then manage the names under it. So that for example, MIT came along and we gave them mit.edu, and whenever they wanted to change their network, they could do that. They didn't have to call up SRI and find out that it was only open from 9 a.m. to 5 p.m. They could manage their own space. That was one part of the magic, to let people separately manage their own names and addresses and so forth.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>13:29</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So the Domain Name System began to relieve what had become an impossible task for the people on Feinler's team.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>13:39</strong> - <em>Paul Mockapetris</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The second part of the magic was the system was set up so that it could itself tell a server at UCLA or anywhere else how to find the servers at MIT that had that information.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>13:53</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Mockapetris had delivered an elegant form of automation. What he didn't know was that he was arranging a system that would define our lives.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>14:04</strong> - <em>Paul Mockapetris</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>There's a funny thing that runs through a lot of the internet history, which is people talk about how they could have never done what they did if people had realized how important it was. Vint Cerf and Bob Kahn that invented the IP and TCP protocols say that in their Turing Award speech. And people always ask me how I got the fabulous job of designing the DNS. And the answer was that the experts of the time, they thought it was a nice little problem for a recent graduate with a new PhD to work on. But it turned out to be a fundamental building block of the internet that let us get to things like the web.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>14:46</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That's a key point he just made. You can't imagine the World Wide Web that emerged in 1995 without something like the Domain Name System coming into place in the ’80s. It would be impossible to navigate. Most people would never bother trying. Preparing the ground for that new web experience required more than just the delivery of the DNS, though. Feinler's team had a revolutionary task of their own.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>15:16</strong> - <em>Elizabeth J. Feinler</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That was how we got into naming the top-level domains.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>15:20</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Feinler's team established dot-gov, dot-mil, dot-org and the rest. But&mdash;despite best intentions&mdash;choosing names for those top-level domains and deciding who gets what was sometimes fraught. Lots of large companies came knocking, saying they wanted top-level domains of their own. But Feinler made the decision early on that the organization of the internet would be more neutral than that.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>15:46</strong> - <em>Elizabeth J. Feinler</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I felt that the domains had to be generic, and also the structure of the domains was going to be very different. Military structure was not going to be the same as the National Science Foundation. I mean, they just were different worlds. So, the idea would be you came to the top level, you picked which one you wanted, and then after that, you agreed to whatever their terms for the structure were.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>16:12</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Mockapetris remembers those conversations when that neutral sense of organization was anything but guaranteed.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>16:20</strong> - <em>Paul Mockapetris</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>There were people that said that the top-level domain should be phone companies because they would naturally own the networks. There were people that said, "Oh, no. It should be network names." On and on and on. And I said, "No, the names should be totally independent. What we need to do is to think about having the country codes, which will allow us to placate all the different countries that want to do their own thing." And we should try some of these, what are now known as generic, top-level domains, like dot-com.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>16:51</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>At the time, Feinler worried that the U.S. government would decide, "Hey, DARPA isn't a standards body. So hand all these decisions over to the NBS"&mdash;the National Bureau of Standards. But, in the end, they were left alone, and the top-level domain system took hold. Soon, as a kind of afterthought, Feinler realized they would need another domain name–one for commercial entities. At the time, almost everyone online was associated with a government agency or university. So making room for businesses didn't feel like a priority.
+</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>17:30</strong> - <em>Elizabeth J. Feinler</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We didn't know where they would land. They weren't quite org and they weren't quite government. And I was the one that said something like, "Use b-u-s."
+</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>17:39</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>"Bus" for "business." But that sounded too close to pieces of hardware that had the same name. They went back and forth. Dot-bus. Dot-biz with a Z. And, when a young system architect on her team, Ken Harrenstien, was tasked with setting it up, he chose dot-com for "commercial."
+</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>18:00</strong> - <em>Elizabeth J. Feinler</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>He was the one that implemented the whole thing. So he just decided to make it dot-com, and who knew? It was just an afterthought.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>18:11</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It was that simple. Just a holding pen for certain contractors that didn't fit under dot-gov or dot-org. And just like that, one day in 1985, dot-com was born. It would take 10 years for that seed to grow into maturity. But the ultimate year of internet optimism, 1995, was already taking shape. Setting up the Domain Name System meant that, suddenly, all that organization and indexing was scalable. Naming responsibilities were dispersed to a number of servers across the network. The process wasn't centralized anymore. Different groups could manage and organize themselves as they pleased, all while remaining synchronized with the larger network. And that set the stage for some truly extraordinary growth. It also set the stage for a little formula that, today, we take for granted. Here's Claire L. Evans again.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>19:14</strong> - <em>Claire L. Evans</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We still use the same addressing format that they came up with, which is user at host dot domain, right? Well, that's what email addresses look like now.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>19:22</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>User at host dot domain. That basic address grammar that we use, every day, to navigate the internet. Suddenly, we weren't a chaotic crowd manually organized by a team at Stanford. Suddenly, we were a self-sustaining system. A system not just of email addresses, but web addresses too.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>19:43</strong> - <em>Claire L. Evans</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That explosive communications medium quality of the internet was not anticipated by its builders. And it was something that the administrators of the internet had to kind of hustle to make sure it wasn't going to destroy the system that they had built.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>19:58</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We know the internet didn't get destroyed. And yet the process of managing all that growth was about to change once again. For a few years there, the new DNS registry could happily distribute IP address blocks and domain names. But eventually, even that level of automation was more than the U.S. government wanted to handle. In 1993, just as internet use was really taking off, the National Science Foundation awarded a five-year contract to a company called Network Solutions. The task of registering about 7,500 addresses each year would now be theirs. Of course, those numbers were growing–fast. Two years later, Network Solutions processed 145,000 new addresses. Meanwhile, millions of users were flooding online. No single entity was going to be able to handle such exponential growth. And as the process of indexing, organizing, managing the internet grew larger and larger with each iteration, the fundamental nature of the internet's organization began to change, too.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>21:19</strong> - <em>Claire L. Evans</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I think the spirit of the early internet was about this kind of convivial sharing of resources, the collective building of something larger than the sum of its parts. It was really mostly used and inhabited by its builders. So there was this spirit of kind of collective enterprise.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>21:37</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>As the user base grew, though, the potential for profits was growing, too. All that tech was about to be monetized. Soon, Network Solutions was charging&mdash;$100 bucks for 2 years of registration. Meanwhile, in the early ’90s, the National Science Foundation (NSF) handed operation of its backbone to a consortium of Michigan universities that were working with companies like IBM and MCI. But we'll get into that story in our next episode. For now, what you need to know is that the NSF believed that the private sector was a necessary partner if the internet was ever going to grow to its full potential. Ben Tarnoff, author of the book <em>Internet for the People</em>, told us about that moment when the NSF was overseeing privatization. He describes the bind that Stephen Wolff, the foundation's director, was in.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>22:35</strong> - <em>Ben Tarnoff</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Key problems that he was looking at, it's primarily a capacity problem. How are we going to find the money to continue to upgrade our backbone, to keep pace with the type of infrastructure investments that we will need to make in order to accommodate all of this demand, as more and more people want to use the internet? And how are we going to broaden out to serve not just the academic community, not just the researcher community, but the wider public?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>23:03</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>As non-commercial as the internet may have been, there was general agreement that privatization was the only way forward.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>23:11</strong> - <em>Ben Tarnoff</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Indeed, the political climate at the time in the early to mid ’90s&mdash;which was an intensely deregulatory political climate&mdash;there were very few opposition figures who sounded the alarm or raised criticisms to these moves, at least in the mainstream political space.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>23:29</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Government would continue to give away and delegate functions to the private sector. And that process has been rolling out for decades. The handoff hasn't only moved toward companies, though. Non-profits have taken over from the government too.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>23:45</strong> - <em>Ben Tarnoff</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So there's a non-profit called ICANN, The Internet Corporation for Assigned Names and Numbers, which among other things, governs the Domain Name System. And they cut an arrangement in the late ’90s when ICANN was created, with the Commerce Department, which at the time still controlled the Domain Name System nominally. But they reached an agreement where ICANN essentially will run it on the Commerce Department's behalf. And in fact, that arrangement was in place until 2016, at which point ICANN formally took sole control over the Domain Name System.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>24:26</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The withdrawal of government and academic management&mdash;the withdrawal of people like Feinler–felt inevitable. But Tarnoff feels it may have been more ideological in the end.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>24:38</strong> - <em>Ben Tarnoff</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>There was nothing inevitable, nothing technically mandated, about the path that the internet took. It could have taken a different path, and it could still. So I think the privatization of the internet was absolutely an ideological choice. The people who were involved in engineering it were not primarily technical. They were politicians, bureaucrats, policy makers who were participating in this broad ideological consensus around neoliberalism, around deregulation, around the need for the private sector to lead.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>25:11</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>When the people organizing and indexing the internet are no longer library scientists like Feinler, that changes the rules. For example, compare Feinler's decisions about top-level domains with this more recent decision.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>25:27</strong> - <em>Ben Tarnoff</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>ICANN has released these new top-level domains and they released one for instance called dot-sucks. And they were accused of being essentially predatory for releasing this domain because every brand, every corporation in the world has to go out and buy their dot-sucks domain.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>25:53</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The way we organize and manage the internet matters. And when you remember the pioneers who organized it in the first place, the way their decisions live with us still, you can't help but wonder how our decisions are organizing the future right now. When you follow the origin story of top-level domains, you eventually get a story about not just organization, but privatization. And nowhere is that more obvious than in that crazy moment in 1995, when the dot-com bubble began. You had a capitalist feeding frenzy epitomized by two simple words, that a public institution had set up: dot-com. And yet, people like Feinler who managed and organized the online arena, never got rich and famous.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>26:55</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>All those investors back in 1995, probably thought they were pretty smart for picking up any stock with a dot-com in its name. And you can bet that when Network Solutions sold to Verisign for $21 billion, they were pretty pleased with themselves, too. But the people who really gave dot-com its value were heroes like Jake Feinler, Paul Mockapetris, and Ken Harrenstien. </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>27:22</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>You can check out loads of bonus material about Feinler and the invention of top-level domains over at redhat.com/commandlineheroes. Next time: we zoom in on that day in 1995 when the NSFNET was shuttered and the internet's privatization took a giant leap forward. I'm Saron Yitbarek and this is Command Line Heroes, an original podcast from Red Hat. Keep on coding.</p>
+    </div>
+</div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-about" >
+      <div class="container">
+      <div class="row reveal">  
+        <div class="outer-90s-border bg-white px-0">
+            <div class="bg-green py-2"></div>
+            <div class="container">
+              <div class="row pt-2 px-2 px-md-6">
+                <div class="search-box-border col-7 col-md-9 bg-white">
+                <p class="text-monospace text-gray-400 my-1">More from the episode...</p>
+                </div>
+               
+                <div class="search-button-border offset-1 col-4 col-md-2 bg-blue">
+               <p class="bg-blue text-center mt-2 my-md-1"><a href="#" data-toggle="modal" data-target="#search-modal-e1" class="text-white font-size-20 d-none d-md-block" title="Search"><u>Search</u></a>
+                 <span class="d-md-none text-white font-size-20 mt-2"><u>Search</u></span></p>
+                </div>
+              </div>
+            </div>
+              
+
+
+              <div class="container">
+                <div class="row pt-2 px-2 px-md-6 py-4">
+                    <div class="col-lg-5 border border-black pl-md-2">
+                      <h4 class="text-black pt-2 text-monospace">About the art</h4>
+                      <p class="text-black">This season, we’re using the artwork to blend the world before 1995 and one that came after it. We’re taking the analogues of the episodes’ subjects and updating them with their online equivalents. For episode 1, we took the rolodex: Once an object that held all the contact information a person had accumulated. But now, the rolodex is gone. Thanks to the "dot-com" "dot-net" "dot-edu" and the overall DNS, we classify our contacts in a giant, digital rolodex.</p>
+                      <p class="section-label font-size-12">Karen King <br> Senior Designer, Red&nbsp;Hat</p>
+                    </div>
+
+                     <div class="col-lg-6 offset-lg-1">
+                      <h4 class="text-black pt-2 text-monospace">Further Reading</h4>
+                      <p class="text-black">Each episode is based on a lot of research. Here are just a few of the resources we used to learn about the NSFnet:</p>
+
+                        <p class="pr-xl-2"><a class="btn btn-link" href="http://www.wired.com/2012/06/elizabeth-jake-feinler/" target="_blank" title="Before Google and GoDaddy, There Was Elizabeth Feinler">Before Google and GoDaddy, There Was Elizabeth Feinler by Cade Metz</a></p>
+                        <p class="pr-xl-2"><a class="btn btn-link" href="http://www.wired.com/2012/07/paul-mockapetris-dns/" target="_blank" title="Why Does the Net Still Work on Christmas?">Why Does the Net Still Work on Christmas? by Cade Metz</a> </p>
+                        <p class="pr-xl-2"><a class="btn btn-link" href="http://mashable.com/2014/03/10/domain-names-history/" target="_blank" title="A Brief History of the Domain Name">A Brief History of the Domain Name by Max<br class="d-none d-lg-block" > Knoblauch</a>  </p>
+                        <p class="pr-xl-2"><a class="btn btn-link" href="http://tools.ietf.org/html/rfc608" target="_blank" title="Host Names On-Line">Host Names On-Line by M.D. Kudlick</a></p>
+                        <p class="pr-xl-2"><a class="btn btn-link" href="http://www.washingtonpost.com/archive/business/1995/10/16/the-frenzy-over-the-internets-fee-enterprise/2454cce2-eb50-4096-afe0-0c48abf9d4dc/" target="_blank" title="The Frenzy Over The Internet's Fee Enterprise">The Frenzy Over The Internet's Fee Enterprise by Kara Swisher</a> </p>
+
+                    </div>
+                  </div>
+
+          </div>                   
+        </div>
+      </div>
+    </div>
+</section>
+
+<div id="search-modal-e1" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-md mt-md-10">
+        <div class="modal-content bg-size-cover" data-bg-image="../../../cms/managed-files/CLH-s7_modal-bg.jpg">
+
+            <div class="modal-header border-0 bg-teal">
+                <a href="#" class="close" data-dismiss="modal" aria-label="Close" title="close">
+                  <img class="img-fluid" src="../../../cms/managed-files/close-btn.jpg" alt="close button">
+                </a>
+             </div>
+
+            <div class="modal-body px-2 px-md-5">
+
+              <div class="row modal-carousel carousel">
+                <div class="col-12">
+                  <p class="bg-white pl-1 mb-1">In 1995, there were about 350,000</p> <p class="bg-white pl-1 mb-1">domain names registered in the world.</p><p class="bg-white pl-1 mb-1">Near the end of 2020, there</p><p class="bg-white pl-1 mb-1"> were 370.7 million.</p>
+                </div>
+
+              </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-guests bg-pos-cc bg-repeat" data-bg-image="../../../cms/managed-files/CLH-S7-90patterns-e1.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-sm-8 col-lg-5 col-xl-4 pr-sm-0">
+                        <h3 class="text-monospace text-purple-darker reveal bg-white p-1">Featured in this episode</h3>
+                    </div>
+                </div>
+
+                <div class="row guest-carousel pb-2">
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-darker" href="http://twitter.com/TheUniverse" target="_blank" title="Claire L. Evans">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/claire-evans.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="text-monospace">Claire L. Evans</h4>
+
+                                    <p class="mb-0">Writer and musician, and the author of Broad Band: The Untold Story of the Women who Made the Internet</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-darker" href="http://www.internethalloffame.org/inductees/elizabeth-feinler" target="_blank" title="Elizabeth Feinler">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/elizabeth-feinler.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="text-monospace">Elizabeth Feinler</h4>
+
+                                    <p class="mb-0">Internet Hall of Fame Inductee</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-darker" href="http://twitter.com/bentarnoff" target="_blank" title="Ben Tarnoff">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/ben-tarnoff.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="text-monospace">Ben Tarnoff</h4>
+
+                                    <p class="mb-0">Tech Worker, Writer, and Co-Founder of Logic Magazine</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-darker" href="http://www.linkedin.com/in/paulmockapetris" target="_blank" title="Paul Mockapetris">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/paul-mockapetris.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="text-monospace">Paul Mockapetris</h4>
+
+                                    <p class="mb-0">Chief Scientist at ThreatSTOP</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                   
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-darker" href="http://twitter.com/wjosephcampbell" target="_blank" title="Jeremy Saucier">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/joe-campbell.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="text-monospace">Dr. W. Joseph Campbell</h4>
+
+                                    <p class="mb-0">Tenured Full Professor at American University’s School of Communication</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row guest-carousel-nav mb-0 mx-8 px-1 px-sm-0">
+                    <div class="col-1 col-sm-3 col-lg-4 pl-1 pr-0 text-left text-md-right reveal">
+                        <a class="carousel-prev font-size-32 font-size-md-36" href="#" title="Previous">&lt;</a>
+                    </div>
+
+                    <div class="col-9 col-sm-6 col-lg-4 px-0 reveal">
+                        <div class="carousel-dots font-size-32 font-size-md-36 d-flex justify-content-center"></div>
+                    </div>
+
+                    <div class="col-1 col-sm-3 col-lg-4 pl-0 text-right text-md-left reveal">
+                        <a class="carousel-next font-size-32 font-size-md-36" href="#" title="Next">&gt;</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<article class="node-shared">
+      <section class="dms-band clh-newsletter pt-0">
+    <div class="container text-white">
+        <div class="row mt-md-12 pt-4">
+            <div class="col-12 col-md-6 col-lg-5 reveal">
+                <div class="card">
+                    <div class="card-body p-0">
+                        <img class="img-fluid svg svg-white mb-3" src="https://www.redhat.com/cms/managed-files/logo-command-line-heroes.svg" width="166" height="42" alt="Command Line Heroes logo" title="Command Line Heroes">
+
+                        <h3 class="text-monospace">Get the newsletter</h3>
+
+                        <p class="mb-0">After each episode drops, we send commentary from the Command Line Heroes team, as well as links that help you take a closer look at the topics we cover. It’s as simple as that.</p>
+                    </div>
+
+                    <div class="card-footer pt-3 px-0 pb-0">
+                        <a class="btn btn-primary mb-1 mb-lg-0" href="http://www.redhat.com/forms/?config=19411" title="Get the stories">Get the stories</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 offset-lg-1 reveal">
+                <div class="card mb-0 bg-white rounded-0 text-black">
+                    <div class="card-body p-2 p-md-3">
+                        <h3 class="text-monospace text-red">Presented by Red&nbsp;Hat</h3>
+
+                        <p class="mb-0">For 25 years, Red Hat has been bringing open source technologies to the enterprise. From the operating system to containers, we believe in building better technology together–and celebrating the unsung heroes who are remaking our world from the command line up.</p>
+                    </div>
+
+                    <div class="card-footer pt-0 px-2 px-md-3 pb-2 pb-md-3">
+                        <a class="btn btn-link mb-0" href="http://www.redhat.com/" title="Learn more">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+  </article>
+
+  
+  
+</article>
+
+</div>
+  </div>
+        
+  </div>
+
+  <footer>
+        <section class="rc-footer-traditional">
+      <div class="container rc-footer-traditional-container">
+        <section class="rc-footer-traditional-section">
+          <div class="rc-footer-traditional-logo">
+            <div class="row">
+              <a href="https://www.redhat.com/en">
+                <img src="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo.svg" class="screen" title="Red Hat" />
+                </a>
+            </div>
+          </div>
+          <div id="legal" class="rc-footer-traditional-legal">
+            <div class="row">
+              <div class="copyright">©2021 Red Hat, Inc.</div>
+              <div >
+                <ul class="menu"><li class="first leaf"><a href="../../about/privacy-policy.html">Privacy statement</a></li>
+<li class="leaf"><a href="../../about/terms-use.html">Terms of use</a></li>
+<li class="leaf"><a href="../../about/all-policies-guidelines.html">All policies and guidelines</a></li>
+<li class="leaf"><a href="../../about/digital-accessibility.html">Digital accessibility</a></li>
+<li class="last leaf"><span id="teconsent" class="nolink">|</span></li>
+</ul>              </div>
+            </div>
+                      </div>
+          <div class="rc-footer-traditional-event-logo">
+            <div id="block-block-5" class="block block-block block-footer-promote">
+
+      
+  <a href="https://www.redhat.com/summit"><img src="https://www.redhat.com/cms/managed-files/Logo-Red_Hat-Summit-A-Standard-RGB-02_0.svg" alt="Red Hat Summit" style="float: right;" width="72px"></a>
+</div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </footer>
+        <script type="text/javascript" src="../../../ux/webdms/js/vendors/jquery.waypoints.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/viewport.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/plyr.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/slick.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/scripts.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/projects/clh.min6eda.js?qy3uiv"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+  if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
+      _satellite.pageBottom();
+  }
+//--><!]]>
+</script>
+    </div>
+  <script type="text/javascript"  src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"></script></body>
+
+<!-- Mirrored from www.redhat.com/en/command-line-heroes/season-7/dot-com by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:30:21 GMT -->
+</html>

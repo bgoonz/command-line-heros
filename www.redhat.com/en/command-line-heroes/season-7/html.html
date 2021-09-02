@@ -1,0 +1,1828 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  
+<!-- Mirrored from www.redhat.com/en/command-line-heroes/season-7/html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:30:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!--[if IE]><![endif]-->
+<script id="trustarc" type="text/javascript" src="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"></script>
+<script id="ddo" type="text/javascript">
+<!--//--><![CDATA[//><!--
+    var digitalData = {"cart":[],"event":[],"listing":{"browseFilter":"","query":"","queryMethod":"","refinementType":"","refinementValue":"","resultCount":"","searchType":""},"page":{"attributes":{"queryParameters":"","referringSearchEngine":"","analyticsTitle":"brand affinity | command line heroes season 7 episode 3","taxonomyPageSubType":["28051"],"taxonomyRegion":["4521"],"taxonomyMetaHreflang":["29051"]},"category":{"contentType":"","keyPage":"false","keyPageType":"","pageType":"pattern_template","primaryCategory":"command-line-heroes","subCategories":["season-7","html"]},"pageInfo":{"cms":"RH CMS 2021.12.0","contentFindingMethod":"","contentID":"537011","contentPortal":"","destinationURL":"https:\/\/www.redhat.com\/en\/command-line-heroes\/season-7\/html","errorMessage":"","errorType":"","language":"en","pageName":"","referringDomain":"","referringURL":"","sysEnv":"","template":"","title":"Command Line Heroes: Season 7: A Language for the Web"}},"product":[],"user":[{"profile":[{"profileInfo":{"daysSinceLastPurchase":"","demandbaseSID":"","eloquaGUID":"","lastLoginDate":"","lastPurchaseDate":"","loggedIn":"false","profileID":"","subscriptionFrequency":"","subscriptionLevel":""}}]}]};
+    !function(a,b,c){"use strict";function d(a){var c="; "+b.cookie,d=c.split("; "+a+"=");if(2===d.length)return d.pop().split(";").shift()}if(b.referrer){var e=b.createElement("a");e.href=b.referrer,c.page.pageInfo.referringDomain=e.hostname,c.page.pageInfo.referringURL=e.href}c.page.pageInfo.sysEnv=a.innerWidth<=768?"tablet":"desktop";var f=c.user[0].profile[0].profileInfo,g=d("rh_elqCustomerGUID");g&&(f.eloquaGUID=g);var h=d("rh_user");if(h){var i=h.split("\\|");i[0]&&(f.loggedIn="true")}var j=d("s_dmdbase");j&&(f.demandbaseSID=j)}(window,document,digitalData);
+//--><!]]>
+</script>
+<script src="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm.js" data-domain="www.redhat.com"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-functional.js" class="trustecm" data-tracker-type="functional"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-advertising.js" class="trustecm" data-tracker-type="advertising"></script><script id="dpal" type="text/javascript" src="../../../dtm.js"></script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="en" />
+<link href="html.html" rel="alternate" hreflang="en" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "availableLanguages": {
+        "zh": {
+            "@type": "Language",
+            "name": "简体中文",
+            "href": "/zh/command-line-heroes/season-7/html"
+        },
+        "en": {
+            "@type": "Language",
+            "name": "English",
+            "href": "/en/command-line-heroes/season-7/html",
+            "current_lang": true
+        },
+        "fr": {
+            "@type": "Language",
+            "name": "Français",
+            "href": "/fr/command-line-heroes/season-7/html"
+        },
+        "de": {
+            "@type": "Language",
+            "name": "Deutsch",
+            "href": "/de/command-line-heroes/season-7/html"
+        },
+        "it": {
+            "@type": "Language",
+            "name": "Italiano",
+            "href": "/it/command-line-heroes/season-7/html"
+        },
+        "ja": {
+            "@type": "Language",
+            "name": "日本語",
+            "href": "/ja/command-line-heroes/season-7/html"
+        },
+        "ko": {
+            "@type": "Language",
+            "name": "한국어",
+            "href": "/ko/command-line-heroes/season-7/html"
+        },
+        "pt-br": {
+            "@type": "Language",
+            "name": "Português",
+            "href": "/pt-br/command-line-heroes/season-7/html"
+        },
+        "es": {
+            "@type": "Language",
+            "name": "Español",
+            "href": "/es/command-line-heroes/season-7/html"
+        }
+    }
+}</script><meta name="last-publish-date" content="Tue, 25 Jun 2019 04:00:00 GMT" />
+<meta name="node-type" content="pattern_template" />
+<meta name="source" content="rhdc_drupal" />
+<meta name="rhdc_key" content="80848567801074b6822e674290183967" />
+<meta name="taxonomy-region" content="Global" />
+<meta name="taxonomy-region-tid" content="4521" />
+<meta name="taxonomy-page-sub-type" content="Brand affinity" />
+<meta name="taxonomy-page-sub-type-tid" content="28051" />
+<meta name="taxonomy-meta-hreflang" content="en" />
+<meta name="taxonomy-meta-hreflang-tid" content="29051" />
+<link rel="shortcut icon" href="https://www.redhat.com/misc/favicon.ico" type="image/x-icon" />
+<meta property="og:description" content="The Hypertext Markup Language (HTML) gave everyone a foundation for building and viewing the World Wide Web. In 1995, its standardization led to dominance. Its simplicity helped it spread. And its solid, common foundation helped shape the internet." />
+<meta name="description" content="The Hypertext Markup Language (HTML) gave everyone a foundation for building and viewing the World Wide Web. In 1995, its standardization led to dominance. Its simplicity helped it spread. And its solid, common foundation helped shape the internet." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="image_src" href="../../../cms/managed-files/Opengraph---S7_0.jpg" />
+<link rel="canonical" href="html.html" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.redhat.com/en/command-line-heroes/season-7/html" />
+<meta property="og:title" content="Command Line Heroes: Season 7: A Language for the Web" />
+<meta property="og:image" content="https://www.redhat.com/cms/managed-files/Opengraph---S7_0.jpg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Command Line Heroes: Season 7: A Language for the Web" />
+<meta name="twitter:image" content="https://www.redhat.com/cms/managed-files/Opengraph---S7_0.jpg" />
+    <title>Command Line Heroes: Season 7: A Language for the Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://static.redhat.com/">
+    <link rel="preload" href="https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/fonts/web_icon/rh-web-iconfont.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatTextVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatDisplayVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__k9aoxkMyjUtSX9AXGCPExPgTYjM0Xv5OYNfbFGDRafY__N9sjJtGj85lXtvOptw2e_YZ01FXbTXcJywP8EaKBijU__uaCwYofnUZLAnB7x3Q6WyVKH" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/all/libraries/webrh/dist/css/webrh.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__cxslYvmVeKFG0RwKl9kcXSrmb2x2VtvkIw-OLkwF8jU___pPNjqO-hMXRnx5HlJupeXtrvaj0Ilhs-XAVxMYy0CM__uaCwYofnUZLAnB7x3Q6WyVKH" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__wpajrf8pWA19ifT2xQXPB3J1TByoCXqZVtt6kXfl4Ow__PFQbFxxWsZl0yTnfrpPiA-o5Pvtu-CXh7nICx08JW0c__uaCwYofnUZLAnB7x3Q6WyVKH" media="print" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/css/trustecm.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/redhat-theme/6/advanced-theme.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/redhat/redhat-font/4/webfonts/red-hat-font.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../../static.redhat.com/libs/font-awesome/4.7.0/css/font-awesome.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/vendors/plyr.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/vendors/slick.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/styles.min6eda.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../ux/webdms/css/projects/clh-s7-episodes.min6eda.css?qy3uiv" media="all" />
+    <!--[if lt IE 9]>
+      <script src="/profiles/rh/themes/redhatdotcom/js/selectivizr-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/nwmatcher-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/respond.js" type="text/javascript"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../../../sites/default/files/advagg_js/js__B6wED6l5P_XUdxVmb7Nvh5d9zn074QukFqJa2HLXS6c__VzWs8XZBHHsPW77egi-W-FQw2mAEr5F-GgCJU0wn3Nc__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.vendor.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.webcomponents.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/all/libraries/webrh/dist/js/webrh.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__pDOiYGKaYbdKNp1gvMxR0fWhWZnfUemYDUhADyCn3oM__jCrCuWCJIPYPe1FzZoUvsJWEjkNMmRIQHYek1h7idBE__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.rh = window.rh || {}; window.rh.drupalTrustArcLoaded = true;
+//--><!]]>
+</script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__5nUyGFdhKMGscC9VhukG-UTAhz8BEdhsa8koVlLwAyQ__Lz8gDLbd5fTco1AnHaCqhSeYJB5o0QUXAimK7JOyRNI__uaCwYofnUZLAnB7x3Q6WyVKHfq"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"redhatdotcom","theme_token":"CRiZaJItbmQzO9guMt8gGoBroY45gAtVH0EAxmLoMAg","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.webcomponents.min.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.min.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/marketing\/latest\/trustarc\/trustecm\/css\/trustecm.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-theme\/6\/advanced-theme.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-font\/4\/webfonts\/red-hat-font.min.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-iconfont.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-web-iconfont.css":1,"sites\/all\/libraries\/patternfly-elements\/pfe-styles\/pfe-typography-classes.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/site-switcher.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/chrome.css":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/print.css":1,"\/\/static.redhat.com\/libs\/font-awesome\/4.7.0\/css\/font-awesome.min.css?qy3uiv":1,"\/ux\/webdms\/css\/vendors\/plyr.min.css?qy3uiv":1,"\/ux\/webdms\/css\/vendors\/slick.min.css?qy3uiv":1,"\/ux\/webdms\/css\/styles.min.css?qy3uiv":1,"\/ux\/webdms\/css\/projects\/clh-s7-episodes.min.css?qy3uiv":1},"js":{"\/ux\/webdms\/js\/vendors\/jquery.waypoints.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/viewport.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/plyr.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/slick.min.js?qy3uiv":1,"\/ux\/webdms\/js\/scripts.min.js?qy3uiv":1,"\/ux\/webdms\/js\/projects\/clh.min.js?qy3uiv":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/rh\/modules\/redhat_www_ddo\/dist\/post-jquery.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.vendor.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.webcomponents.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"profiles\/rh\/modules\/redhat_www_menu\/js\/rh_nav.js":1,"profiles\/rh\/modules\/redhat_www_share\/js\/rh_share.js":1,"profiles\/rh\/modules\/redhat_www_utility\/js\/redhat_www_utility.js":1,"sites\/all\/libraries\/jquery-cookie\/jquery.cookie-1.4.1.min.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.pushmenu.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery-scrolltofixed.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/rh-chrome.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.fitvids.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.switchIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.viewport\/jquery.viewport.min.js":1}},"redhat_www_menu":{"path":"node\/537011"},"rh_analytics_enabled":false});
+//--><!]]>
+</script>
+    <noscript>
+        <link href="../../../sites/all/libraries/webrh/dist/css/webrh.webcomponents.noscript.min.css" rel="stylesheet" >
+    </noscript>
+  </head>
+  <body unresolved class="bands-index html not-front not-logged-in no-sidebars page-node page-node- page-node-537011 node-type-pattern-template i18n-en clh-s7e1  " >
+    <div class="page">
+            <!-- Legacy migrated page support with body.migrated-page-hero -->
+<div class="header-background-image fts-migrated-bg">
+</div>
+
+  <div id="main-content">
+                      <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+      
+  <article class="node-537011 node node-pattern-template clearfix">
+
+  
+    <!-- Pattern | raw_html -->
+
+<article class="node-shared">
+      <header id="top" class="dms-band clh-nav-top py-2">
+    <div class="container text-white">
+        <div class="row d-flex align-items-center">
+            <div class="col-6">
+                <a href="../../command-line-heroes.html" title="Command Line Heroes">
+                    <img class="img-fluid svg svg-white" src="https://www.redhat.com/cms/managed-files/logo-command-line-heroes.svg" width="166" height="42" alt="Command Line Heroes logo">
+                </a>
+            </div>
+
+            <div class="col-6 clh-nav-toggle-wrapper">
+                <span class="text-monospace text-right font-size-16 d-inline-block">Subscribe<br/>& more</span>
+
+                <a href="#" class="btn btn-toggle" data-toggle="nav-shelf">
+                    <div class="d-inline-block">
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="dms-band clh-nav-shelf text-white py-0">
+    <div class="nav-container pb-4">
+        <div id="CLHNav" class="accordion">
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-subscribe.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSubscribe">
+                    <p>Subscribe</p>
+                </button>
+                <div id="clhSubscribe" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <p>Subscribe to the podcast to receive new episodes as soon as we release them</p>
+                    <div class="row pb-2">
+                        <div class="col-6 mb-2">
+                            <a href="http://geo.itunes.apple.com/podcast/us/id1319947289?mt=2&amp;at=1010lbVy&amp;ct=redhatclh_website" target="_blank" title="Listen on Apple Podcasts">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-apple.png" alt="Listen on Apple Podcasts">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://www.google.com/podcasts?feed=aHR0cHM6Ly9mZWVkcy5wYWNpZmljLWNvbnRlbnQuY29tL2NvbW1hbmRsaW5laGVyb2Vz" target="_blank" title="Listen on Google Podcasts">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-google.png" alt="Listen on Google Podcasts">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://www.stitcher.com/s?fid=159833&amp;refid=stpr" target="_blank" title="Listen on Stitcher">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-stitcher.png" alt="Listen on Stitcher">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://open.spotify.com/show/4Jgtgr4mHXNDyLldHkfEMz" target="_blank" title="Listen on Spotify">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-spotify.png" alt="Listen on Spotify">
+                            </a>
+                        </div>
+    
+                        <div class="col-6 mb-2">
+                            <a href="http://feeds.pacific-content.com/commandlineheroes" target="_blank" title="Subscribe via RSS Feed">
+                                <img class="img-fluid" src="../../../cms/managed-files/badge-podcast-rss.png" alt="Subscribe via RSS Feed">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-about.jpg">
+                <button href="../about.html" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhAbout">
+                    <p>About the podcast</p>
+                </button>
+                <div id="clhAbout" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <p>Discover Red Hat’s original podcast about the people who transform technology from the command line up. Subscribe to our newsletter for commentary from the Command Line Heroes team—and links to take a closer look at the topics we cover.</p>
+                    
+                    <p><a href="../about.html" class="btn btn-primary">Learn about the show</a></p>
+                    <p class="mb-0 pb-4"><a href="https://www.redhat.com/forms/?config=19411" class="btn btn-outline-white">Get the newsletter</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s1.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason1">
+                    <p>Season 1</p>
+                </button>
+                <div id="clhSeason1" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-1/os-wars-part-1.html" title="OS Wars_Part 1">OS Wars_part 1</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/os-wars-part-2-rise-of-linux.html" title="OS Wars_Part 2">OS Wars_part 2</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/agile-revolution.html" title="The Agile_Revolution">The Agile_Revolution</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/devops-tear-down-that-wall.html" title="DevOps_Tear Down That Wall">DevOps_Tear Down That Wall</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/the-containers-derby.html" title="The Containers_Derby">The Containers_Derby</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/crack-the-cloud-open.html" title="Crack the Cloud_Open">Crack the Cloud_Open</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-1/days-of-future-open.html" title="Days of Future_Open">Days of Future_Open</a>
+                        </li>
+                    </ol>
+                  <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-1.html" title="Explore season 1">Explore Season 1</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s2.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason2">
+                    <p>Season 2</p>
+                </button>
+                <div id="clhSeason2" class="accordion-panel collapse" data-parent="#CLHNav">
+
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-2/press-start.html" title="Press Start">Press Start</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/hello-world.html" title="Hello, World">Hello, World</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/ready-to-commit.html" title="Ready to Commit">Ready to Commit</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/fail-better.html" title="Fail Better">Fail Better</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/the-one-about-devsecops.html" title="The One About DevSecOps">The One About DevSecOps</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/the-data-explosion.html" title="The Data Explosion">The Data Explosion</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/at-your-serverless.html" title="At Your Serverless">At Your Serverless</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/open-curiosity.html" title="Open Curiosity">Open Curiosity</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-2/developer-advocacy-roundtable.html" title="Bonus_Developer Advocacy Roundtable">Bonus_Developer Advocacy Roundtable</a>
+                        </li>
+                    </ol>
+                   <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-2.html" title="Explore season 2">Explore Season 2</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s3.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason3">
+                    <p>Season 3</p>
+                </button>
+                <div id="clhSeason3" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-3/pythons-tale.html" title="Python's Tale">Python's Tale</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/learning-the-basics.html" title="Learning the BASICs">Learning the BASICs</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/creating-javascript.html" title="Creating JavaScript">Creating JavaScript</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/diving-for-perl.html" title="Diving for Perl">Diving for Perl</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/the-infrastructure-effect.html" title="The Infrastructure Effect">The Infrastructure Effect</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-3/heroes-in-a-bash-shell.html" title="Heroes in a Bash Shell">Heroes in a Bash Shell</a>
+                        </li>
+            
+                        <li class="mb-2">
+                            <a href="../season-3/talking-to-machines.html" title="Talking to Machines">Talking to Machines</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-3/the-c-change.html" title="The C Change">The C Change</a>
+                        </li>
+                    </ol>
+                   <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-3.html" title="Explore season 3">Explore Season 3</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s4.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason4">
+                    <p>Season 4</p>
+                </button>
+                <div id="clhSeason4" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-4/minicomputers.html" title="Minicomputers">Minicomputers</a>
+                        </li>
+            
+                         <li class="mb-2">
+                            <a href="../season-4/mainframes.html" title="Mainframes">Mainframes</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/personal-computers.html" title="Personal Computers">Personal Computers</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/floppies.html" title="Floppies">Floppies</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/smarter-phones.html" title="Smarter Phones">Smarter Phones</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/open-source-hardware.html" title="Open Source Hardware">Open Source Hardware</a>
+                        </li> 
+            
+                         <li class="mb-2">
+                            <a href="../season-4/consoles.html" title="Consoles">Consoles</a>
+                        </li>
+
+                         <li class="mb-2">
+                            <a href="../season-4/steve-wozniak.html" title="Steve Wozniak">Steve Wozniak</a>
+                        </li>
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-4.html" title="Explore season 4">Explore Season 4</a></p>
+                </div>
+            </div>
+            
+            <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s5.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason5">
+                    <p>Season 5</p>
+                </button>
+                <div id="clhSeason5" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-5/becoming-a-coder.html" title="Becoming a Coder">Becoming a Coder</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-5/where-coders-code.html" title="Where Coders Code">Where Coders Code</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-5/what-kind-of-coder-will-you-become.html" title="What Kind of Coder Will You Become?">What Kind of Coder Will You Become?</a>
+                        </li>
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../season-5.html" title="Explore season 5">Explore Season 5</a></p>
+ 
+                </div>
+            </div>
+
+                        <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/bg_clh-nav-s6.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason6">
+                    <p>Season 6</p>
+                </button>
+                <div id="clhSeason6" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="../season-6/jerry-lawson.html" title="Jerry Lawson">Jerry Lawson</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/gladys-west.html" title="Dr. Gladys West">Dr. Gladys West</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/mark-dean.html" title="Dr. Mark Dean">Dr. Mark Dean</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/marc-hannah.html" title="Dr. Marc Hannah">Dr. Marc Hannah</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/clarence-ellis.html" title="Dr. Clarence Ellis">Dr. Clarence Ellis</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../season-6/roy-clay.html" title="Roy Clay">Roy Clay</a>
+                        </li>
+                       <li class="mb-2">
+                            <a href="../season-6/gladys-perkins.html" title="Gladys Perkins">Gladys Perkins</a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="../season-6/arlan-hamilton.html" title="Arlan Hamilton">Arlan Hamilton</a>
+                        </li>
+            
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link text-monospace text-white" href="../season-6.html" title="Explore season 6">Explore Season 6</a></p>
+                </div>
+            </div>
+
+             <div class="nav-group-wrapper pl-2 pl-sm-3 pr-sm-8" data-bg-image="https://www.redhat.com/cms/managed-files/season-7_nav.jpg">
+                <button href="#" class="accordion-toggle collapsed py-2" data-toggle="collapse" data-target="#clhSeason7">
+                    <p>Season 7</p>
+                </button>
+                <div id="clhSeason7" class="accordion-panel collapse" data-parent="#CLHNav">
+                    <ol class="mb-0 pl-2">
+                        <li class="mb-2">
+                            <a href="dot-com.html" title="Connecting The Dot-Com">Connecting The Dot-Com</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="nsfnet.html" title="From NSF to ISP">From NSF to ISP</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="html.html" title="A Language for the Web">A Language for the Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="ux.html" title="Web UX Begins">Web UX Begins</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="shopping.html" title="Shopping for the Web">Shopping for the Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="search.html" title="Looking for Search">Looking for Search</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="world.html" title="The World of the World Wide Web">The World of the World Wide Web</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="bubble.html" title="After the Bubble">After the Bubble</a>
+                        </li>
+
+                    </ol>
+                    <p class="pb-2"><a class="btn btn-link font-family-monospace text-white" href="../../command-line-heroes.html" title="Explore season 5">Explore Season 7</a></p>
+ 
+                </div>
+            </div>
+
+        </div>
+        
+        <ul class="social-list list-inline list-unstyled pl-5 pl-sm-6 mt-1">
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F" target="_blank" title="Facebook" onclick="return !window.open(this.href, 'Facebook', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
+                    <span class="web-icon-facebook" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.twitter.com/share?url=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F&amp;text=An%20original%20podcast%20about%20the%20people%20who%20transform%20technology%20from%20the%20command%20line%20up.%20Presented%20by%20Red%20Hat." target="_blank" title="Twitter" onclick="return !window.open(this.href, 'Twitter', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')">
+                    <span class="web-icon-twitter" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.redhat.com%2Fen%2Fcommand-line-heroes%2F&amp;title=Command%20Line%20Heroes&amp;summary=Hear%20the%20epic%20true%20tales%20of%20how%20developers%2C%20programmers%2C%20hackers%2C%20geeks%2C%20and%20open%20source%20rebels%20are%20revolutionizing%20the%20technology%20landscape.%20Command%20Line%20Heroes%20is%20a%20new%20podcast%20hosted%20by%20Saron%20Yitbarek%20and%20produced%20by%20Red%20Hat.&amp;source=Red%20Hat" target="_blank" title="LinkedIn" onclick="return !window.open(this.href, 'LinkedIn', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=600,width=600')" aria-current="page">
+                    <span class="web-icon-linkedin" aria-label="true"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item mr-1">
+                <a class="text-white" href="mailto:?subject=Command Line Heroes&body=Hear%20the%20epic%20true%20tales%20of%20how%20developers%2C%20programmers%2C%20hackers%2C%20geeks%2C%20and%20open%20source%20rebels%20are%20revolutionizing%20the%20technology%20landscape.%20Command%20Line%20Heroes%20is%20a%20new%20podcast%20hosted%20by%20Saron%20Yitbarek%20and%20produced%20by%20Red%20Hat. https://www.redhat.com/en/command-line-heroes" target="_blank" title="Email" aria-current="page">
+                    <span class="web-icon-envelope" aria-label="true"></span>
+                </a>
+            </li>
+        </ul>
+
+         <div class="language-switcher position-absolute bottom-0 right-0  w-100">
+            <div class="row justify-content-center mx-0">
+
+                <div class="col-6 text-center border-right border-black border-20 language-inactive">
+                    <a href="http://www.redhat.com/es/command-line-heroes" title="Command Line Heroes"><img class="img-fluid py-2" width="90" src="https://www.redhat.com/cms/managed-files/logo_clh-en-espanol_inactive.svg" alt="CLH en espanol logo"></a></div>
+
+                <div class="col-6 text-center language-active"><a href="../../command-line-heroes.html" title="Command Line Heroes"><img class="img-fluid pt-3 pb-2" width="130" src="https://www.redhat.com/cms/managed-files/logo_CLH_small.svg" alt="CLH logo"></a></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+</div>
+
+
+<div class="mb-6">&nbsp;</div>  
+  </article>
+  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-hero--episode pt-4 py-md-10  bg-repeat"  data-bg-image="../../../cms/managed-files/S7-teal-static-bg1.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 pt-lg-6 pt-xl-12 text-purple-darkest reveal">
+                <h5 class="section-label mb-1 font-weight-light">Season 7, Episode 3</h5>
+
+                <h1 class="mb-lg-4 text-monospace font-size-28 font-size-lg-32"><strong>A Language for the Web</strong></h1>
+
+                <div class="clh-audio plyr-theme">
+                    <audio src="http://chtbl.com/track/247G8/https://dts.podtrac.com/redirect.mp3/cdn.simplecast.com/audio/a88fbe81-5614-4834-8a78-24c287debbe6/episodes/6b38c551-17d0-4549-8458-1856cb152358/audio/eff248b5-928c-47ca-98d5-8addd187f66f/default_tc.mp3" preload="none" controls></audio>
+                </div>
+                <p class="cta-group">
+                    <a class="btn btn-link text-monospace text-purple-darkest" href="#" data-toggle="nav-shelf" data-toggle-panel="#clhSubscribe" title="Listen to this episode later" data-menu="subscribe">Listen to this episode later </a>
+                </p>
+            </div>
+            <div class="col-lg-6 offset-lg-1 pt-4 text-center reveal">
+                <img class="img-fluid" src="../../../cms/managed-files/CLH-S7-ep3-op.png" alt="Typewriter">
+            </div>
+            
+           
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-notes py-0">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-lg-7 col-xl-6 mx-auto pt-6 reveal">
+                <ul class="nav nav-tabs mb-3 d-flex justify-content-center text-monospace">
+                    <li class="nav-item text-center">
+                        <a class="tab-show-notes nav-link mx-0 mr-md-6 p-0 font-size-22 text-white active" href="#show-notes" data-toggle="tab" title="Show notes">Show notes</a>
+                    </li>
+
+                    <li class="nav-item text-center">
+                        <a class="tab-transcript nav-link mt-2 mt-md-0 mx-0 p-0 font-size-22 text-white" href="#transcript" data-toggle="tab" title="Transcript">Transcript</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="show-notes" class="tab-pane fade active show">
+                        <div class="row">
+                            <div class="col-12">
+                                <p>The Hypertext Markup Language (HTML) gave everyone a foundation for building and viewing the World Wide Web. In 1995, its standardization led to dominance. Its simplicity helped it spread. And its solid common foundation helped shape the internet.</p>
+
+                                <p class="mb-lg-0">Dr. Belinda Barnet explains what kind of framework was initially needed to build and navigate the web. Jeff Veen describes the three ingredients Tim Berners-Lee combined to create HTML: the ideal language for the web. Gavin Nicol recounts the need to standardize the quickly-growing language. And Gretchen McCulloch points out how HTML instills an inherent bias for English-speaking web developers.</p>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="transcript" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>00:04</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>In Medieval Europe, scholars had to converse in... Latin. For centuries the British monarchs spoke... French. And today the business language of India is... English. Official languages have the power to unify people, but they don't always reflect everybody's lived experience. And when we look at not just a country, but a world wide web, that struggle to impose a standard language can grow to epic proportions. This season, we've been exploring a pivotal year in the history of tech—1995.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>00:51</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We already heard how it launched the dot-com bubble, and how it led to the privatization of the internet. But 1995 was also the year when HTML, the language of the web, was standardized. HTML's rapid evolution was crucial to the web's development and growth, but some basic assumptions about who a coder is and whose language mattered were locked into place at the same time. And once we began digging into HTML's past, we realized: a language can become a standard, but it can never be neutral. I'm Saron Yitbarek and this is Command Line Heroes, an original podcast from Red Hat.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>01:40</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Today, hypertext markup language, HTML, is the mother tongue of the web. The standard markup language for pretty much everything you see in a browser, but right there in its name is a much older concept that predates HTML and that's the idea of hypertext. Back in 1945, the engineer Vannevar Bush wrote an article for Life magazine, where he imagined a futuristic machine. This machine would allow you to display information on a screen, and that information could be retrieved from a microfiche storage device that sat under the desk. Bush was thinking this up decades before anything like the world wide web, but what he proposed was the start of something big. Belinda Barnet, Senior Lecturer in Media and Communications at Swinburne University of Technology explains.
+</p>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>02:38</strong> - <em>Belinda Barnet</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>What was most interesting is that you could create links between pieces of information from different articles in order to create what he called a trail through information. And so this was really the first instance of a technical device that would create hyperlinks.
+</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>03:01</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>For years, Bush worked as the Head of the U.S. Office of Scientific Research and Development. So even when he was delving into a bit of fantasy, he was still being influenced by academic practices—that classic rule of academia, where one person's work is constantly linked to other authorities. Bush imagined a machine that would make those links come to life, a machine that would work like an academic's mind, connecting to every other mind it had ever encountered. He called this imaginary machine, the “Memex”—combining together the words, memory and extender and that's what it was: an extension of human memory, an extension of human thought.
+</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>03:46</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Bush's Memex inspired generations of computer scientists to pursue that Holy Grail of preserved and interlinked knowledge. But yeah, he still lived in the 1940s. He'd have to wait another decade until the Memex started coming to life. In the 1950s, Douglas Engelbart, who we've talked about on this podcast before was inspired to build a system of links, a living network of linked information.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>04:16</strong> - <em>Belinda Barnet</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And he brought together this idea of using a computer screen to display knowledge and information and link it together in the manner of the Vannevar Bush's trails and create a system, which he eventually got funding for at the Stanford Research Institute, that was the first hypertext system.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>04:40</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Of course, he didn't call it hypertext yet. The word itself was coined a decade later in the 1960s by philosopher Ted Nelson. Though, as Barnet tells it, Nelson's version differed from Engelbart's in important ways.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>04:58</strong> - <em>Belinda Barnet</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Ted wanted something far more freeform, more like, as he put it thought itself, which kind of meanders between things and there's no restrictions to what you can connect to or at what level you can connect it. He had also imagined that hyperlinks would not be one-way, but that they would be two-way. But this basic concept of connecting together different pieces of information associatively and forming trails through the information was certainly evident in Ted's thinking in the 60s.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>05:46</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That distinction between one-way links and two-way links has pretty profound consequences. A web composed of two-way links would arguably create an entirely different online experience and at that point in history, there was no obvious form that hypertext had to take. Our linked future was still being imagined. Douglas Engelbart's hypertext system, which was called the online system, was not especially user-friendly. Only the truly technical were able to use it. And for years, most early hypertext attempts had the same roadblock, but then along came a computer scientist named Tim Berners-Lee. While working as a contractor for CERN in 1980, he created a document-sharing program called Enquire. And 9 years after that, he wrote a memo laying out a plan to use hypertext to take his work onto the global stage. The result? A Hypertext Markup Language was unlike any hypertext system that had yet been developed.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>06:55</strong> - <em>Tim Berners-Lee</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Designing HTML was really, really easy because I was the only one doing it.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>07:00</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Berners-Lee had delivered something deceptively simple, something democratic, something that took hypertext across all borders.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>07:11</strong> - <em>Belinda Barnet</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>What Berners-Lee did is to realize that the real power of the link is to link not just between documents on your own computer, but to link between countries and to all kinds of different places outside of your own machine and your own unique operating environment.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>07:35</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>That vision of a system to link computers and share files across huge distances brought us closer than ever to Vannevar Bush's idea of a Memex. What had begun as a bit of abstract philosophy had suddenly transformed into a reality. We asked Jeff Veen who was part of the founding web team at Wired magazine to talk us through the 3 ingredients that made HTML an ideal language for the web. Today, Veen is a partner at VC Fund True Ventures. First, there was the format's utter simplicity.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>08:13</strong> - <em>Jeff Veen</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So you would essentially do a lowest common denominator for all kinds of documents because back then every word processor had proprietary format. We didn't all just use Word docs. There was Word Perfect and, you know, there were so many other types of files that it was impossible to share files with each other. So he made it a very, very simple file format.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>08:33</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Next ingredient, a way to transport those simple files over the web.
+</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>08:38</strong> - <em>Jeff Veen</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So you still see that when you type in a web address or something, and you see that HTTP, that hypertext transport protocol. And that was again, very, very simple, but easy enough that anybody could quickly make a browser and make a web server and so it caught on really quickly as being very simple.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>08:55</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And the third and final ingredient, Berners-Lee created URLs.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>09:00</strong> - <em>Jeff Veen</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Uniform resource locators, right? And that was a standard address so you could find things. Because again, back then there were all kinds of different systems. There was FTP for file transferring, Gopher was a rudimentary information system and you could Telnet to other servers, like, there are all of these different protocols and places where servers would be.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>09:22</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>With those 3 ingredients, a simple file format, simple transport protocol, and URLs, Tim Berners-Lee had created a framework so easy, so infinitely adaptable, it seemed to appeal to everybody that was racing onto the world wide web. He had taken the established idea of hypertext and made it global for the first time, allowing us to not just link between our own set of documents, but to the world's. And yet the simplicity that surrounded HTML would turn out to be a double-edged sword.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>10:04</strong> - <em>Jeff Veen</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The problem or benefit depending on your frame of reference is that it was so simple that it didn't remotely capture all the things that everybody was used to doing on their computers.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>10:17</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>If you wanted to build elaborate tables, if you wanted to create elegant layouts, if you wanted the advanced features that previous hypertext systems had offered, you weren't going to find any of that with your basic HTML.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>10:30</strong> - <em>Jeff Veen</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It didn't have any of it. So many people I think discounted like, oh, this stuff is way too simple. It'll never catch on.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>10:36</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Except those people were wrong. In fact, it was exactly the paired down simplicity that made HTML incredibly popular. In the mid-90s it didn't even have 20 tags, 20 things you could do. A few headers, some citations and block quotes it was pretty bare bones, but that meant the barrier to entry was super low. You could easily learn HTML in an afternoon and everybody did. That's why a tech thriller movie like <em>The Net</em> made sense in 1995.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>11:12</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Hacking into the internet guts felt like something that, sure, Sandra Bullock could probably pull off. Another obstacle that turned out to be a mirage was the question of broken links. In the past, people had fussed about the fact that moving a document meant you have to alert everyone who linked to it, get them to update their link or else the connection will be broken. Maintaining all those links seemed incredibly onerous, but Berners-Lee decided not to worry about the broken link problem at all. He gamed it out: a few broken links were the cost of simplicity and easy connections.
+</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>11:51</strong> - <em>Jeff Veen</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Look, I'll just make my stuff, and you make your stuff, and we'll link them together and if they move, it breaks, or, you know... and things like that helped with the popularity at the growth of the web.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>12:01</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>As the web grew, fueled by the rapid adoption of HTML, that pioneering attitude—if it breaks, it breaks—was going to spread. Soon, people were sprucing HTML up adding their own tags without asking anybody's permission. And everybody had their own idea of how it should evolve. A young Marc Andreessen was a classic example. He was working on the Netscape browser and decided to give it an image tag. The authorities back at CERN thought they'd instigate a thoughtful back and forth to determine how an image tag might work. Were we talking about embedded objects of any kind? Maybe just icons? But Andreessen wrote back to inform those so-called authorities: "Yeah. I already made the image tag. You guys can make your own if you want." And things just got more tangled from there.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>12:54</strong> - <em>Jeff Veen</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It was sort of the “wild west” for a number of years, especially as Silicon Valley sort-of woke up to, like okay, this web thing is huge, and there is the potential for very big businesses to be created here.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>13:08</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>If you're a long-time listener of this podcast, you've probably heard me talk about the browser wars. Starting in the late 1990s web browsers, like Microsoft's Internet Explorer and Netscape's Navigator, and a whole bunch of others began competing for dominance. They all wanted to be the world's portal to the world wide web. To distinguish themselves, everybody was doing what Marc Andreessen had done with this image tag. They were just creating their own thing, modifying HTML however they wanted. The language and the experience of coding for the web was beginning to branch.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>13:46</strong> - <em>Jeff Veen</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I would say that standardization was a necessity.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>13:49</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Gavin Nicol is a technology evangelist and CTO at Context Labs. He was in the field at the time and remembers Tim Berners-Lee's first proposals for the world wide web. He pointed out that it wasn't so much all those new tags that created a problem. It was the fact that nobody was making the tags cohesive.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>14:11</strong> - <em>Gavin Nicol</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Okay. Hey, anybody can create a tag, but the question becomes, if you have a tag, how do you display it? And how do you hook up an event handler to that tag? So to a certain degree, even though, there were some issues about, okay, well, who gets to define the common set of tags in the big scheme of things? That was probably less interesting than trying to decide how to interpret those tags.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>14:34</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>All those different browser companies rushing to capitalize on the brand new web, were throwing any kind of tag they wanted into the mix, but they weren't adhering to any kind of standard. If the web kept going down that road, it would soon become so disjointed there'd be siloed experiences in each proprietary browser. In the same way that engineering task forces created SMTP to standardize email or FTP to standardized file transfers, there needed to be a standard for how HTML would work.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>15:07</strong> - <em>Gavin Nicol</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It was absolutely crucial to the adoption of HTML. It would have happened with or without the W3C, but it was crucial.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>15:14</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>The W3C that Nicol just mentioned is the World Wide Web Consortium founded in 1994. The consortium took it upon themselves to bring a little order to the growing chaos of the browser wars. The W3C will provide guidance and standardization for HTML so that whatever tags anybody might create, they would all be interoperable across any browser. This was the task, standardization, that would allow the web's potential to be fully realized. Standardization would allow a truly global web experience.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>15:51</strong> - <em>Gavin Nicol</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>To be honest, the W3C was a great convening body and a great, kind-of-like, independent third party to get everybody who had strong commercial interest to sit down and talk about interoperability.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>16:04</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So in 1995, HTML was elevated from a bare set of tags to HTML 2.0. In its new life, HTML became aligned with SGML, the standard generalized markup language, and standardization was brought to its processing model, to its data representation, and to the handling of characters and coding.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>16:27</strong> - <em>Gavin Nicol</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So was the first rigorous standard and that was key for interoperability.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>16:35</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>HTML 2.0, the first standardized version, was released in 1995. Problem solved, right? Everyone in the global internet community could look forward to a happy interoperable future. Not quite. Think for a moment about the global tech reality that people lived with in 1995. Things may have been nicely ordered from the perspective of Silicon Valley, or from the perspective of big shots at the World Wide Web Consortium, but that's not the whole world. It was far from including everybody.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>17:13</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>At that point, much of Asia and Sub-Saharan Africa were still offline. The idea of a global village was introduced by Marshall McLuhan in the 1960s, but decades later, much of the world remained disconnected. And that meant they didn't have a seat at the table. They weren't part of any standardization process. The new standardized HTML was a gateway to web development, but a gateway created by English speakers with all their biases along for the ride. The only way to read HTML was from left-to-right and the only way to write it was in English. A standardization may have been inevitable, but it also created exclusions. It ran the risk of turning non-English speakers into second class citizens of the web. And that was not inevitable, that was something people could fight to fix.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>18:15</strong> - <em>Gretchen McCulloch</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>One of the big things that having programming languages be based on English does—is it creates this barrier for access to the field of coding.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>18:27</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Gretchen McCulloch is an internet linguist and the author of <em>Because Internet: Understanding the New Rules of Language.</em> We asked her to walk us through some of the ways English programming languages and markup languages give one part of the population an advantage. And it goes way beyond being able to read commands.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>18:48</strong> - <em>Gretchen McCulloch</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>If you can't read what people have put on Stack Exchange (an online community for developers), or it takes you twice as long to read because you don't speak the language, then that's also a significant barrier to using a programming language. It's not just the technical words used in the code, it's also reading the help documentation, reading the Q&As, reading all of the meta information about how to use that code, the libraries, all of this additional stuff, that all exists in English.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>19:15</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>After 1995, a non-English coder working on the web would have been guaranteed to run into those barriers everywhere, standardization guaranteed it. Those of us in the English-speaking world often forget about these hurdles. We think we're on an even playing field coding alongside our peers in China or India or Germany. But if you're a coder and your first language is English, just ask yourself, what would your career look like if the code you were writing and all the supporting documents and communities you rely on, if all of that were in Chinese or Swahili, would your career be the same? Would your ambitions? Gavin Nicol was inspired to make HTML work for everybody. In the 1990s, he was living in Japan and he noticed firsthand how difficult it was for non-English speakers to code for the web.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>20:11</strong> - <em>Gavin Nicol</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It was a mess to be frank.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>20:13</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Nicol was the one who looked at HTML, which at the time had no real character-processing model, and decided to find a way to let everybody use it. His solution was to use Unicode, a standard that handles text in almost all the world's languages. By adopting Unicode, as his character set, he managed to establish a formal model for the internationalization of HTML.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>20:39</strong> - <em>Gavin Nicol</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Partially it was practical, but also there was a mission aspect to it as well. You know, the practicality came from the fact that I was working at NIC while living in Japan. I was like, "Hey, listen, you know, I would love to be part of this global conversation." But then also I still believe there's an under-representation of non-Latin voices in the global commentary. So I really wanted to accelerate the pace of that.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>21:05</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Despite the great work that the W3C folks had done in 1995, it was up to people like Nicol to take the HTML standard and open it up to all the world's languages.
+</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>21:17</strong> - <em>Gavin Nicol</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>And it became kind-of a mission for me to make that easy for non-native speakers, because I firmly believe that if you force everyone to speak in English, you force everyone to sort-of think in English and that's a very sad thing, because you end up losing the culture that is associated with the language.
+</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>21:36</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>Nicol believes people must be allowed to communicate and work in their own language. To make the web an English-only zone would mean cutting off part of our shared humanity.
+</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>21:47</strong> - <em>Gavin Nicol</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>There's a thing called Conway's law, and it's, kind-of-like, systems tend to evolve to represent the organizational structures that created them.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>21:57</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>To me Conway's law is a kind-of warning. Make sure the organizational structures represent all of us or else don't be surprised when the systems that evolve lock some people out. 1995 was a quarter-century ago and HTML has evolved to HTML5 today, but the work is far from finished. Look around at the coding landscape and English is still taking up a lot of the oxygen. Sometimes it can feel like a forgone conclusion. Pascal for example, was created by a Swedish [correction: Swiss] computer scientist who made it in English to appeal to the rest of the world. Python, same thing, written in English by a creator in the Netherlands and Ruby uses English too, even though it was made in Japan. Here's Gretchen McCulloch again.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>22:55</strong> - <em>Gretchen McCulloch</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>So if you're a non-native English speaker and you're thinking, oh, I want my programming language to be adopted by the most number of people. You might say, well, I know that people are used to coding in English-based things. I know that I've gotten used to coding in English-based programming languages, so I'm also going to create my programming language that has English-based keywords, because that's what people are used to.
+</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>23:15</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>It's a feedback loop and not a great one.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>23:18</strong> - <em>Gretchen McCulloch</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>One of the things that I think we could do as a short-term way of calling attention to the problem is when we talk about programming languages, where the keywords are based on English, we could call them that. The first website wasn't written in HTML, it was written in English HTML, which opens up the possibility of what would Spanish HTML look like? What would Russian HTML look like?</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>23:44</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>What does your HTML look like? How will you get to program on the web, and how will you make sure everyone else can do the same? I mentioned at the top of this episode that, in Medieval Europe, reading and writing was working in Latin, even if you didn't speak Latin every day. Only Latin was allowed as a tool for accessing the technology of writing, the technology of the printing press. Today, we look back on that and it makes little sense, but how different are we really? Isn't it just as ridiculous to expect everyone to code in English? And by the way, all you English speaking coders out there one day the shoe could be on the other foot.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>24:32</strong> - <em>Gretchen McCulloch</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>I don't think it's likely in the short term for a programming language based on language other than English to become dominant, but it's entirely possible in the long term because we know that Latin didn't last forever as the lingua franca.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>24:52</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>1995 was the year that HTML became standardized, but that moment in tech history sparked a decade-long discussion that's continuing to this day. We're still finding ways to make the web language a platform for everybody. And this matters because we have no way of knowing what people from different backgrounds, different languages, will build; what apps they'll design; what code they might write once they're given the chance to work with their own voice.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-body p-1 bg-white text-purple-dark">
+                <p class="mb-0"><strong>25:23</strong> - <em>Saron Yitbarek</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>We just might be amazed by our own diversity and maybe that is the standard we should all be reaching for. Next time, we're diving into another of 1995’s biggest transformations, the fantastic emergence of web designers. Until then find bonus material about HTML and all our 1995 stories over at redhat.com/commandlineheroes. I'm Saron Yitbarek and this is Command Line Heroes, an original podcast from Red Hat. Keep on coding.</p>
+    </div>
+</div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-about" >
+      <div class="container">
+      <div class="row reveal">  
+        <div class="outer-90s-border bg-white px-0">
+            <div class="bg-yellow py-2"></div>
+            <div class="container">
+              <div class="row pt-2 px-2 px-md-6">
+                <div class="search-box-border col-7 col-md-9 bg-white">
+                <p class="text-monospace text-gray-400 my-1">More from the episode...</p>
+                </div>
+               
+                <div class="search-button-border offset-1 col-4 col-md-2 bg-blue">
+               <p class="bg-blue text-center mt-2 my-md-1"><a href="#" data-toggle="modal" data-target="#search-modal-e3" class="text-white font-size-20 d-none d-md-block" title="Search"><u>Search</u></a>
+                 <span class="d-md-none text-white font-size-20 mt-2"><u>Search</u></span></p>
+                </div>
+              </div>
+            </div>
+              
+
+
+              <div class="container">
+                <div class="row pt-2 px-2 px-md-6 py-4">
+                    <div class="col-lg-5 border border-black pl-md-2">
+                      <h4 class="text-black pt-2 text-monospace">About the art</h4>
+                      <p class="text-black">The typewriter was the tool to turn thoughts into literary masterpieces. These works helped shape our world. HTML has now supplanted the typewriter—helping new generations of artists to publish their work on the internet. It has shaped the past three decades by bringing about opportunity and progression.
+</p>
+                      <p class="section-label font-size-12">By Karen King<br> Senior Designer, Lead</p>
+                    </div>
+
+                     <div class="col-lg-6 offset-lg-1">
+                      <h4 class="text-black pt-2 text-monospace">Further Reading</h4>
+                      <p class="text-black">Each episode is based on a lot of research. Here are just a few of the resources we used to learn about HTML:</p>
+
+                        <p class="pr-xl-2"><a class="btn btn-link" href="http://tools.ietf.org/html/rfc1866" target="_blank" title="Hypertext Markup Language - 2.0">Hypertext Markup Language - 2.0 by <br> T.&nbsp;Berners-Lee</a></p>
+                        <p class="pr-xl-2"><a class="btn btn-link" href="http://www.w3.org/International/francois.yergeau.html" target="_blank" title="A world-wide World Wide Web">A world-wide World Wide Web by François Yergeau</a> </p>
+                        <p class="pr-xl-2"><a class="btn btn-link" href="http://medium.com/@jennymandl/why-are-all-programming-languages-in-english-12b1312bada4" target="_blank" title="Why are all programming languages in English?">Why are all programming languages in English? by Jenny Mandl</a>  </p>
+                        <p class="pr-xl-2"><a class="btn btn-link" href="http://www.wired.com/1997/04/a-brief-history-of-html/" target="_blank" title="A Brief History of HTML">A Brief History of HTML by Jeffrey Veen</a></p>
+
+                    </div>
+                  </div>
+
+          </div>                   
+        </div>
+      </div>
+    </div>
+</section>
+
+<div id="search-modal-e3" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-md mt-md-10">
+        <div class="modal-content bg-size-cover" data-bg-image="../../../cms/managed-files/CLH-s7_modal-bg.jpg">
+
+            <div class="modal-header border-0 bg-teal">
+                <a href="#" class="close" data-dismiss="modal" aria-label="Close" title="close">
+                  <img class="img-fluid" src="../../../cms/managed-files/close-btn.jpg" alt="close button">
+                </a>
+             </div>
+
+            <div class="modal-body px-2 px-md-5">
+
+              <div class="row modal-carousel carousel">
+                <div class="col-12">
+                  <p class="bg-white pl-1 mb-1">The original version of HTML had only 22 tags.</p> <p class="bg-white pl-1 mb-1">Today, there are over 100.</p><p class="bg-white pl-1 mb-1"></p>
+                </div>
+
+              </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>  <!-- Pattern | raw_html -->
+
+<section class="dms-band clh-guests bg-pos-cc bg-repeat" data-bg-image="../../../cms/managed-files/CLH-S7-90patterns-squiggles-noise.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-sm-8 col-lg-5 col-xl-4 pr-sm-0">
+                        <h3 class="text-monospace text-purple-darker reveal bg-white p-1">Featured in this episode</h3>
+                    </div>
+                </div>
+
+                <div class="row guest-carousel pb-2">
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-darker" href="http://twitter.com/manjusrii" target="_blank" title="Dr. Belinda Barnet">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/Dr-Belinda-Barnet.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="text-monospace">Dr. Belinda Barnet</h4>
+
+                                    <p class="mb-0">Senior Lecturer in Media at Swinburne</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-darker" href="http://twitter.com/gretchenamcc" target="_blank" title="Gretchen McCulloch">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/gretchen-mcculloch.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="text-monospace">Gretchen McCulloch</h4>
+
+                                    <p class="mb-0">Internet Linguist and Author of <em>Because Internet: Understanding the New Rules of Language</em></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-darker" href="http://www.linkedin.com/in/gtnicol/" target="_blank" title="Gavin Nicol">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/Gavin-Nicol.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="text-monospace">Gavin Nicol</h4>
+
+                                    <p class="mb-0">Technology Evangelist and CTO at Context Labs</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="card mb-0 h-100 bg-white rounded-0">
+                            <a class="d-flex d-md-block w-100 h-100 text-purple-darker" href="http://twitter.com/veen" target="_blank" title="Jeff Veen">
+                                <div class="card-header p-0 bg-no-repeat bg-pos-cc bg-size-cover rounded-0" data-bg-image="../../../cms/managed-files/Jeff%20Veen-edit.jpg"></div>
+
+                                <div class="card-body p-2 bg-white">
+                                    <h4 class="text-monospace">Jeff Veen</h4>
+
+                                    <p class="mb-0">Partner at True Ventures</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row guest-carousel-nav mb-0 mx-8 px-1 px-sm-0 d-lg-none">
+                    <div class="col-1 col-sm-3 col-lg-4 pl-1 pr-0 text-left text-md-right reveal">
+                        <a class="carousel-prev font-size-32 font-size-md-36" href="#" title="Previous">&lt;</a>
+                    </div>
+
+                    <div class="col-9 col-sm-6 col-lg-4 px-0 reveal">
+                        <div class="carousel-dots font-size-32 font-size-md-36 d-flex justify-content-center"></div>
+                    </div>
+
+                    <div class="col-1 col-sm-3 col-lg-4 pl-0 text-right text-md-left reveal">
+                        <a class="carousel-next font-size-32 font-size-md-36" href="#" title="Next">&gt;</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>  <!-- Pattern | raw_html -->
+
+<article class="node-shared">
+      <section class="dms-band clh-newsletter pt-0">
+    <div class="container text-white">
+        <div class="row mt-md-12 pt-4">
+            <div class="col-12 col-md-6 col-lg-5 reveal">
+                <div class="card">
+                    <div class="card-body p-0">
+                        <img class="img-fluid svg svg-white mb-3" src="https://www.redhat.com/cms/managed-files/logo-command-line-heroes.svg" width="166" height="42" alt="Command Line Heroes logo" title="Command Line Heroes">
+
+                        <h3 class="text-monospace">Get the newsletter</h3>
+
+                        <p class="mb-0">After each episode drops, we send commentary from the Command Line Heroes team, as well as links that help you take a closer look at the topics we cover. It’s as simple as that.</p>
+                    </div>
+
+                    <div class="card-footer pt-3 px-0 pb-0">
+                        <a class="btn btn-primary mb-1 mb-lg-0" href="http://www.redhat.com/forms/?config=19411" title="Get the stories">Get the stories</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 offset-lg-1 reveal">
+                <div class="card mb-0 bg-white rounded-0 text-black">
+                    <div class="card-body p-2 p-md-3">
+                        <h3 class="text-monospace text-red">Presented by Red&nbsp;Hat</h3>
+
+                        <p class="mb-0">For 25 years, Red Hat has been bringing open source technologies to the enterprise. From the operating system to containers, we believe in building better technology together–and celebrating the unsung heroes who are remaking our world from the command line up.</p>
+                    </div>
+
+                    <div class="card-footer pt-0 px-2 px-md-3 pb-2 pb-md-3">
+                        <a class="btn btn-link mb-0" href="http://www.redhat.com/" title="Learn more">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+  </article>
+
+  
+  
+</article>
+
+</div>
+  </div>
+        
+  </div>
+
+  <footer>
+        <section class="rc-footer-traditional">
+      <div class="container rc-footer-traditional-container">
+        <section class="rc-footer-traditional-section">
+          <div class="rc-footer-traditional-logo">
+            <div class="row">
+              <a href="https://www.redhat.com/en">
+                <img src="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo.svg" class="screen" title="Red Hat" />
+                </a>
+            </div>
+          </div>
+          <div id="legal" class="rc-footer-traditional-legal">
+            <div class="row">
+              <div class="copyright">©2021 Red Hat, Inc.</div>
+              <div >
+                <ul class="menu"><li class="first leaf"><a href="../../about/privacy-policy.html">Privacy statement</a></li>
+<li class="leaf"><a href="../../about/terms-use.html">Terms of use</a></li>
+<li class="leaf"><a href="../../about/all-policies-guidelines.html">All policies and guidelines</a></li>
+<li class="leaf"><a href="../../about/digital-accessibility.html">Digital accessibility</a></li>
+<li class="last leaf"><span id="teconsent" class="nolink">|</span></li>
+</ul>              </div>
+            </div>
+                      </div>
+          <div class="rc-footer-traditional-event-logo">
+            <div id="block-block-5" class="block block-block block-footer-promote">
+
+      
+  <a href="https://www.redhat.com/summit"><img src="https://www.redhat.com/cms/managed-files/Logo-Red_Hat-Summit-A-Standard-RGB-02_0.svg" alt="Red Hat Summit" style="float: right;" width="72px"></a>
+</div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </footer>
+        <script type="text/javascript" src="../../../ux/webdms/js/vendors/jquery.waypoints.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/viewport.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/plyr.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/vendors/slick.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/scripts.min6eda.js?qy3uiv"></script>
+<script type="text/javascript" src="../../../ux/webdms/js/projects/clh.min6eda.js?qy3uiv"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+  if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
+      _satellite.pageBottom();
+  }
+//--><!]]>
+</script>
+    </div>
+  <script type="text/javascript"  src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"></script></body>
+
+<!-- Mirrored from www.redhat.com/en/command-line-heroes/season-7/html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:30:29 GMT -->
+</html>

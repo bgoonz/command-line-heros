@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  
+<!-- Mirrored from www.redhat.com/en/solutions/cloud-native-development by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:36:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!--[if IE]><![endif]-->
+<script id="trustarc" type="text/javascript" src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustarc.js"></script>
+<script id="ddo" type="text/javascript">
+<!--//--><![CDATA[//><!--
+    var digitalData = {"cart":[],"event":[],"listing":{"browseFilter":"","query":"","queryMethod":"","refinementType":"","refinementValue":"","resultCount":"","searchType":""},"page":{"attributes":{"queryParameters":"","referringSearchEngine":"","analyticsTitle":"technologies | about red hat story | topic | solutions cloud native development","taxonomyPageSubType":["4641"],"taxonomyBusinessChallenge":["131"],"taxonomyProduct":["1931","6921","791"],"taxonomyProductLine":["851","861"],"taxonomyRegion":["4521"],"taxonomySolution":["1081"],"taxonomyTopic":["9011","9001","27021","27031","27091","4491"],"taxonomyCategory":["14441"],"taxonomyMetaHreflang":["29051"]},"category":{"contentType":"","keyPage":"false","keyPageType":"","pageType":"pattern_template","primaryCategory":"solutions","subCategories":["cloud-native-development"]},"pageInfo":{"cms":"RH CMS 2021.12.0","contentFindingMethod":"","contentID":"206061","contentPortal":"","destinationURL":"https:\/\/www.redhat.com\/en\/solutions\/cloud-native-development","errorMessage":"","errorType":"","language":"en","pageName":"","referringDomain":"","referringURL":"","sysEnv":"","template":"","title":"Cloud-native app development: Build smarter. Ship faster."}},"product":[],"user":[{"profile":[{"profileInfo":{"daysSinceLastPurchase":"","demandbaseSID":"","eloquaGUID":"","lastLoginDate":"","lastPurchaseDate":"","loggedIn":"false","profileID":"","subscriptionFrequency":"","subscriptionLevel":""}}]}]};
+    !function(a,b,c){"use strict";function d(a){var c="; "+b.cookie,d=c.split("; "+a+"=");if(2===d.length)return d.pop().split(";").shift()}if(b.referrer){var e=b.createElement("a");e.href=b.referrer,c.page.pageInfo.referringDomain=e.hostname,c.page.pageInfo.referringURL=e.href}c.page.pageInfo.sysEnv=a.innerWidth<=768?"tablet":"desktop";var f=c.user[0].profile[0].profileInfo,g=d("rh_elqCustomerGUID");g&&(f.eloquaGUID=g);var h=d("rh_user");if(h){var i=h.split("\\|");i[0]&&(f.loggedIn="true")}var j=d("s_dmdbase");j&&(f.demandbaseSID=j)}(window,document,digitalData);
+//--><!]]>
+</script>
+<script src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm.js" data-domain="www.redhat.com"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-functional.js" class="trustecm" data-tracker-type="functional"></script><script data-src="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/js/trustecm-advertising.js" class="trustecm" data-tracker-type="advertising"></script><script id="dpal" type="text/javascript" src="http://www.redhat.com/dtm.js"></script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="en" />
+<link href="https://www.redhat.com/en/solutions/cloud-native-development" rel="alternate" hreflang="en" />
+<link href="https://www.redhat.com/pt-br/solutions/cloud-native-development" rel="alternate" hreflang="pt-br" />
+<link href="https://www.redhat.com/es/solutions/cloud-native-development" rel="alternate" hreflang="es" />
+<link href="https://www.redhat.com/fr/solutions/cloud-native-development" rel="alternate" hreflang="fr" />
+<link href="https://www.redhat.com/it/solutions/cloud-native-development" rel="alternate" hreflang="it" />
+<link href="https://www.redhat.com/ja/solutions/cloud-native-development" rel="alternate" hreflang="ja" />
+<link href="https://www.redhat.com/ko/solutions/cloud-native-development" rel="alternate" hreflang="ko" />
+<link href="https://www.redhat.com/zh/solutions/cloud-native-development" rel="alternate" hreflang="zh" />
+<link href="https://www.redhat.com/de/solutions/cloud-native-development" rel="alternate" hreflang="de" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "availableLanguages": {
+        "en": {
+            "@type": "Language",
+            "name": "English",
+            "href": "/en/solutions/cloud-native-development",
+            "current_lang": true
+        },
+        "pt-br": {
+            "@type": "Language",
+            "name": "Português",
+            "href": "/pt-br/solutions/cloud-native-development"
+        },
+        "es": {
+            "@type": "Language",
+            "name": "Español",
+            "href": "/es/solutions/cloud-native-development"
+        },
+        "fr": {
+            "@type": "Language",
+            "name": "Français",
+            "href": "/fr/solutions/cloud-native-development"
+        },
+        "it": {
+            "@type": "Language",
+            "name": "Italiano",
+            "href": "/it/solutions/cloud-native-development"
+        },
+        "ja": {
+            "@type": "Language",
+            "name": "日本語",
+            "href": "/ja/solutions/cloud-native-development"
+        },
+        "ko": {
+            "@type": "Language",
+            "name": "한국어",
+            "href": "/ko/solutions/cloud-native-development"
+        },
+        "zh": {
+            "@type": "Language",
+            "name": "简体中文",
+            "href": "/zh/solutions/cloud-native-development"
+        },
+        "de": {
+            "@type": "Language",
+            "name": "Deutsch",
+            "href": "/de/solutions/cloud-native-development"
+        }
+    }
+}</script><link rel="prefetch" href="https://www.redhat.com/en/redhat_www_menu/ajax/menus-nav2" />
+<meta name="last-publish-date" content="Mon, 05 Mar 2018 05:00:00 GMT" />
+<meta name="node-type" content="pattern_template" />
+<meta name="source" content="rhdc_drupal" />
+<meta name="rhdc_key" content="e19c992ec90a1e14bd8a5752ec8d3877" />
+<meta name="taxonomy-category" content="Technologies" />
+<meta name="taxonomy-category-tid" content="14441" />
+<meta name="taxonomy-business-challenge" content="Cloud-native development" />
+<meta name="taxonomy-business-challenge-tid" content="131" />
+<meta name="taxonomy-product" content="Red Hat JBoss Enterprise Application Platform" />
+<meta name="taxonomy-product" content="Red Hat OpenShift" />
+<meta name="taxonomy-product" content="Red Hat Virtualization" />
+<meta name="taxonomy-product-tid" content="1931" />
+<meta name="taxonomy-product-tid" content="6921" />
+<meta name="taxonomy-product-tid" content="791" />
+<meta name="taxonomy-product-line" content="Application services" />
+<meta name="taxonomy-product-line" content="Cloud computing" />
+<meta name="taxonomy-product-line-tid" content="851" />
+<meta name="taxonomy-product-line-tid" content="861" />
+<meta name="taxonomy-region" content="Global" />
+<meta name="taxonomy-region-tid" content="4521" />
+<meta name="taxonomy-solution" content="Application integration and development" />
+<meta name="taxonomy-solution-tid" content="1081" />
+<meta name="taxonomy-page-sub-type" content="Hub page" />
+<meta name="taxonomy-page-sub-type-tid" content="4641" />
+<meta name="taxonomy-topic" content="Cloud" />
+<meta name="taxonomy-topic" content="Containers" />
+<meta name="taxonomy-topic" content="Culture" />
+<meta name="taxonomy-topic" content="Development" />
+<meta name="taxonomy-topic" content="Process" />
+<meta name="taxonomy-topic" content="Security" />
+<meta name="taxonomy-topic-tid" content="9011" />
+<meta name="taxonomy-topic-tid" content="9001" />
+<meta name="taxonomy-topic-tid" content="27021" />
+<meta name="taxonomy-topic-tid" content="27031" />
+<meta name="taxonomy-topic-tid" content="27091" />
+<meta name="taxonomy-topic-tid" content="4491" />
+<meta name="taxonomy-meta-hreflang" content="en" />
+<meta name="taxonomy-meta-hreflang-tid" content="29051" />
+<link rel="shortcut icon" href="https://www.redhat.com/misc/favicon.ico" type="image/x-icon" />
+<meta property="og:description" content="Our world changed overnight. As customer demand suddenly surges, delivering cloud-ready apps faster has become essential. Red Hat is here to help." />
+<meta name="description" content="Our world changed overnight. As customer demand suddenly surges, delivering cloud-ready apps faster has become essential. Red Hat is here to help." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="image_src" href="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/red-hat-social-share.jpg" />
+<link rel="canonical" href="https://www.redhat.com/en/solutions/cloud-native-development" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.redhat.com/en/solutions/cloud-native-development" />
+<meta property="og:title" content="Cloud-native app development: Build smarter. Ship faster." />
+<meta property="og:image" content="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/red-hat-social-share.jpg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Cloud-native app development: Build smarter. Ship faster." />
+<meta name="twitter:image" content="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/red-hat-social-share.jpg" />
+    <title>Cloud-native app development: Build smarter. Ship faster.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://static.redhat.com/">
+    <link rel="preload" href="https://www.redhat.com/sites/all/libraries/rh_iconfont/dist/fonts/web_icon/rh-web-iconfont.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="https://static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatTextVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://static.redhat.com/libs/redhat/redhat-font/4/webfonts/modified/RedHatDisplayVFModified.woff2" as="font" type="font/woff2" crossorigin>
+    <link type="text/css" rel="stylesheet" href="https://www.redhat.com/sites/default/files/advagg_css/css__k9aoxkMyjUtSX9AXGCPExPgTYjM0Xv5OYNfbFGDRafY__N9sjJtGj85lXtvOptw2e_YZ01FXbTXcJywP8EaKBijU__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.redhat.com/sites/all/libraries/webrh/dist/css/webrh.webcomponents.min.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.redhat.com/sites/all/libraries/webrh/dist/css/webrh.min.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.redhat.com/sites/default/files/advagg_css/css__tGiEQsQDn6crQYTrB0M12yBnTK1h9gNiW2X_q2dZgIs__aiWKfx-dekcWjaWc8aH83BM7xjUDTIuDIt2oJOILfqs__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.redhat.com/sites/default/files/advagg_css/css__wpajrf8pWA19ifT2xQXPB3J1TByoCXqZVtt6kXfl4Ow__PFQbFxxWsZl0yTnfrpPiA-o5Pvtu-CXh7nICx08JW0c__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.css" media="print" />
+<link type="text/css" rel="stylesheet" href="https://www.redhat.com/ux/webux/css/solutions/solutions.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="https://static.redhat.com/libs/redhat/marketing/latest/trustarc/trustecm/css/trustecm.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://static.redhat.com/libs/redhat/redhat-theme/6/advanced-theme.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://static.redhat.com/libs/redhat/redhat-font/4/webfonts/red-hat-font.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.redhat.com/ux/webdms/css/styles.min.css?qy3uiv" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.redhat.com/ux/webdms/css/projects/solution-hub.min.css?qy3uiv" media="all" />
+    <!--[if lt IE 9]>
+      <script src="/profiles/rh/themes/redhatdotcom/js/selectivizr-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/nwmatcher-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/respond.js" type="text/javascript"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://www.redhat.com/sites/default/files/advagg_js/js__B6wED6l5P_XUdxVmb7Nvh5d9zn074QukFqJa2HLXS6c__VzWs8XZBHHsPW77egi-W-FQw2mAEr5F-GgCJU0wn3Nc__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.js"></script>
+<script type="text/javascript" src="https://www.redhat.com/sites/all/libraries/webrh/dist/js/webrh.vendor.min.js?qy3uiv"></script>
+<script type="text/javascript" src="https://www.redhat.com/sites/all/libraries/webrh/dist/js/webrh.webcomponents.min.js?qy3uiv"></script>
+<script type="text/javascript" src="https://www.redhat.com/sites/all/libraries/webrh/dist/js/webrh.min.js?qy3uiv"></script>
+<script type="text/javascript" src="https://www.redhat.com/sites/default/files/advagg_js/js__pDOiYGKaYbdKNp1gvMxR0fWhWZnfUemYDUhADyCn3oM__jCrCuWCJIPYPe1FzZoUvsJWEjkNMmRIQHYek1h7idBE__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.rh = window.rh || {}; window.rh.drupalTrustArcLoaded = true;
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.redhat.com/sites/default/files/advagg_js/js__lv6fK5xRdDJsd2ooRnwTwq5cxQaJt96Va8adEl4bZbg__h5Gctx_NNSx669_g2PxDfvZeshS_sXO0TgJ7ceYoI6o__uaCwYofnUZLAnB7x3Q6WyVKHfqU6f9iB6Wi31ydea6c.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"redhatdotcom","theme_token":"Nuliog36wsBqTs4EWmpfpTMjyreTJp0Q2ld4yVGQ4Xg","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.webcomponents.min.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.min.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/marketing\/latest\/trustarc\/trustecm\/css\/trustecm.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-theme\/6\/advanced-theme.css":1,"https:\/\/static.redhat.com\/libs\/redhat\/redhat-font\/4\/webfonts\/red-hat-font.min.css":1,"modules\/locale\/locale.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-iconfont.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-web-iconfont.css":1,"sites\/all\/libraries\/patternfly-elements\/pfe-styles\/pfe-typography-classes.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/site-switcher.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/chrome.css":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/print.css":1,"\/ux\/webdms\/css\/styles.min.css?qy3uiv":1,"\/ux\/webdms\/css\/projects\/solution-hub.min.css?qy3uiv":1,"ux\/webux\/css\/solutions\/solutions.css":1},"js":{"\/ux\/webdms\/js\/scripts.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/gsap.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/DrawSVGPlugin.min.js?qy3uiv":1,"\/ux\/webdms\/js\/vendors\/MotionPathPlugin.min.js?qy3uiv":1,"\/ux\/webdms\/js\/projects\/solution-hub.min.js?qy3uiv":1,"\/ux\/webux\/js\/solutions\/solutions.js":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/rh\/modules\/redhat_www_ddo\/dist\/post-jquery.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.vendor.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.webcomponents.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"profiles\/rh\/modules\/redhat_www_menu\/js\/rh_nav.js":1,"profiles\/rh\/modules\/redhat_www_share\/js\/rh_share.js":1,"profiles\/rh\/modules\/redhat_www_utility\/js\/redhat_www_utility.js":1,"sites\/all\/libraries\/jquery-cookie\/jquery.cookie-1.4.1.min.js":1,"profiles\/rh\/modules\/redhat_www_solr\/js\/rh_solr.js":1,"profiles\/rh\/modules\/redhat_www_solr\/js\/redhat_www_solr_suggestions.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.pushmenu.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery-scrolltofixed.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/rh-chrome.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.fitvids.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.switchIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.viewport\/jquery.viewport.min.js":1}},"redhat_www_menu":{"path":"node\/206061"},"rh_analytics_enabled":false,"urlIsAjaxTrusted":{"\/en\/search\/node":true}});
+//--><!]]>
+</script>
+    <noscript>
+        <link href="https://www.redhat.com/sites/all/libraries/webrh/dist/css/webrh.webcomponents.noscript.min.css" rel="stylesheet" >
+    </noscript>
+  </head>
+  <body unresolved class="bands-index html not-front not-logged-in no-sidebars page-node page-node- page-node-206061 node-type-pattern-template i18n-en cloud-native " >
+    <div class="page">
+            <!-- Legacy migrated page support with body.migrated-page-hero -->
+<div class="header-background-image fts-migrated-bg">
+</div>
+
+  <div id="main-content">
+                      <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+      
+  <article class="node-206061 node node-pattern-template clearfix">
+
+  
+    <!-- Pattern group | hero -->
+
+        
+    
+
+<div class="header-background-image"></div>
+<style>
+body[unresolved] pfe-navigation {display: none;}.no-js body pfe-navigation,body:not(unresolved) pfe-navigation {display: block;}.no-js #main-menu{background:#000!important;padding:10px}[unresolved] pfe-navigation{background:#000!important;color:#fff;display:block;width:100%}[unresolved] pfe-navigation [slot=logo],[unresolved] pfe-navigation [slot=skip],[unresolved] pfe-navigation ul li,[unresolved] pfe-navigation-item,[unresolved] pfe-navigation-main{padding:0 7px 6px;display:inline-block}[unresolved] pfe-navigation [slot=skip] a{font-size:0}[unresolved] pfe-navigation [slot=skip] a:focus{font-size:14px}[unresolved] pfe-navigation [slot=logo]{vertical-align:middle}[unresolved] pfe-navigation a{font-size:14px;color:#fff}[unresolved] pfe-navigation-item [slot]>a:focus{outline-offset:1px;outline-style:dotted;outline-width:1px;outline-color:#d2d3d4}
+</style>
+<pfe-navigation  id="main-menu" class="main-header" pfe-sticky pfe-full-width pfe-close-on-click="external" pfe-menu-label="Menu">
+ 
+  <!-- Skip navigation -->
+  <div slot="skip">
+    <ul>
+      <li><a href="#rh-main-content">Skip to content</a></li>
+    </ul>
+  </div>
+
+  <!-- Site logo -->
+  <p slot="logo">
+    <a href="https://www.redhat.com/en" title="Red Hat">
+      <img class="redhat-logo" src="https://static.redhat.com/libs/redhat/brand-assets/2/corp/logo--200.png" class="screen" alt="" aria-hidden="true" style="margin:0;width: 135px;"/>
+    </a>
+  </p>
+
+  <!-- Search -->
+  <pfe-navigation-item slot="search" pfe-icon="web-search" id="utility-search">
+    <div slot="trigger">
+      <a href="https://www.redhat.com/en/search" data-analytics-region="utility" data-analytics="Search" data-analytics-label="Search">Search</a>    </div>
+    <div slot="tray" hidden>
+      <div class="pfe-navigation-item__tray--container">
+        <form class="search-form" autocomplete="off" action="https://www.redhat.com/en/search/node" method="post" id="redhat-www-solr-search-box" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-basic"><div class="form-item form-type-textfield form-item-keys">
+  <label class="element-invisible" for="edit-keys">Enter your keywords </label>
+ <input maxlength="128" size="15" placeholder="Enter your search term" type="text" id="edit-keys" name="keys" value="" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div></div><input type="hidden" name="form_build_id" value="form-ryU7kFhe3l0byD2fRAQ1a1L-hnUv5e21Rnk72_96Cjk" />
+<input type="hidden" name="form_id" value="redhat_www_solr_search_box" />
+</div></form>      </div>
+    </div>
+  </pfe-navigation-item>
+  <form class="search-form" autocomplete="off" slot="mobile-search" hidden="" action="https://www.redhat.com/en/search/node" method="post" id="redhat-www-solr-search-box--2" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-basic--2"><div class="form-item form-type-textfield form-item-keys">
+  <label class="element-invisible" for="edit-keys--2">Enter your keywords </label>
+ <input maxlength="128" size="15" placeholder="Enter your search term" type="text" id="edit-keys--2" name="keys" value="" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit--2" name="op" value="Search" class="form-submit" /></div></div><input type="hidden" name="form_build_id" value="form-69tm4XHrIrSrhdlAsacFnup0WtZHjXcZAjeJ5UYYlHA" />
+<input type="hidden" name="form_id" value="redhat_www_solr_search_box" />
+</div></form>
+  <!-- Main navigation -->
+  <pfe-navigation-main>
+    <ul>
+              <li>
+          <pfe-navigation-item>
+            <div slot="trigger">
+              <a href="https://www.redhat.com/en/technologies" data-analytics-region="nav" data-analytics="Products" data-analytics-label="Products" data-analytics-level="1">Products</a>
+            </div>
+            <div slot="tray" data-column="10311" hidden>
+            </div>
+          </pfe-navigation-item>
+        </li>        <li>
+          <pfe-navigation-item>
+            <div slot="trigger">
+              <a href="https://www.redhat.com/en/solutions" class="active-trail active" data-analytics-region="nav" data-analytics="Solutions" data-analytics-label="Solutions" data-analytics-level="1">Solutions</a>
+            </div>
+            <div slot="tray" data-column="10331" hidden>
+            </div>
+          </pfe-navigation-item>
+        </li>        <li>
+          <pfe-navigation-item>
+            <div slot="trigger">
+              <a href="https://www.redhat.com/en/services" data-analytics-region="nav" data-analytics="Services &amp; support" data-analytics-label="Services &amp; support" data-analytics-level="1">Services & support</a>
+            </div>
+            <div slot="tray" data-column="138281" hidden>
+            </div>
+          </pfe-navigation-item>
+        </li>        <li>
+          <pfe-navigation-item>
+            <div slot="trigger">
+              <a href="https://www.redhat.com/en/resources" data-analytics-region="nav" data-analytics="Resources" data-analytics-label="Resources" data-analytics-level="1">Resources</a>
+            </div>
+            <div slot="tray" data-column="169591" hidden>
+            </div>
+          </pfe-navigation-item>
+        </li>        <li>
+          <pfe-navigation-item>
+            <div slot="trigger">
+              <a href="https://www.redhat.com/en/about" data-analytics-region="nav" data-analytics="Red Hat &amp; open source" data-analytics-label="Red Hat &amp; open source" data-analytics-level="1">Red Hat & open source</a>
+            </div>
+            <div slot="tray" data-column="10351" hidden>
+            </div>
+          </pfe-navigation-item>
+        </li>    </ul>
+  </pfe-navigation-main>
+
+  <!-- Language -->
+  <pfe-navigation-item slot="language" pfe-icon="web-globe" id="utility-globe">
+    <div slot="trigger">
+      <a href="https://www.redhat.com/en/select-language" data-analytics-region="utility" data-analytics="Language" data-analytics-label="Language">English</a>    </div>
+    <div slot="tray" hidden>
+      <div class="pfe-navigation-item__tray--container">
+        <div class="language-picker">
+  <h3 class="pfe-headline-2">Select a language</h3>
+  <ul><li class="pfe-headline-5"><a href="https://www.redhat.com/zh/solutions/cloud-native-development" class="language-link" xml:lang="zh" hreflang="zh" title="topic | solutions: cloud native development">简体中文</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/en/solutions/cloud-native-development" class="language-link active" xml:lang="en" hreflang="en" title="hub | solutions: cloud native development">English</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/fr/solutions/cloud-native-development" class="language-link" xml:lang="fr" hreflang="fr" title="topic | solutions: cloud native development">Français</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/de/solutions/cloud-native-development" class="language-link" xml:lang="de" hreflang="de" title="topic | solutions: cloud native development">Deutsch</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/it/solutions/cloud-native-development" class="language-link" xml:lang="it" hreflang="it" title="topic | solutions: cloud native development">Italiano</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/ja/solutions/cloud-native-development" class="language-link" xml:lang="ja" hreflang="ja" title="topic | solutions: cloud native development">日本語</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/ko/solutions/cloud-native-development" class="language-link" xml:lang="ko" hreflang="ko" title="topic | solutions: cloud native development">한국어</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/pt-br/solutions/cloud-native-development" class="language-link" xml:lang="pt-br" hreflang="pt-br" title="topic | solutions: cloud native development">Português</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/es/solutions/cloud-native-development" class="language-link" xml:lang="es" hreflang="es" title="topic | solutions: cloud native development">Español</a></li></ul></div>      </div>
+    </div>
+  </pfe-navigation-item>
+  <div slot="mobile-language" pfe-icon="web-globe" data-analytics-region="utility" data-analytics="Language" data-analytics-label="Language"><a id="pfe-modal--trigger" tabindex="0">English</a></div>
+  <!-- Log in -->
+  <pfe-navigation-item slot="login" pfe-icon="web-user" id="utility-account">
+    <div slot="trigger">
+      <a href="https://sso.redhat.com/auth/realms/redhat-external/protocol/saml/clients/legacy-idp-servlets" class="rh-user-loggedout" data-analytics-region="utility" data-analytics="login" data-analytics-label="login">Log in</a>      <a href="https://sso.redhat.com/auth/realms/redhat-external/logout" class="rh-user-loggedin" data-analytics-region="utility" data-analytics="login" data-analytics-label="login">Account</a>    </div>
+    <div slot="tray" hidden>
+      <div class="pfe-navigation-item__tray--container">
+        <section class="account-tray">
+  <header>
+    <div class="container">
+              <p class="rh-login-heading rh-user-loggedin">Welcome, <span class='rh-name'></span></p>
+                    <p class="rh-login-heading rh-user-loggedout">Log in to your Red Hat account</p>
+          </div>
+  </header>
+  <div class="content">
+    <div class="container">
+      <section class="account-login rh-user-loggedout">
+        <div class="account-login-wrapper">
+                      <a href="https://sso.redhat.com/auth/realms/redhat-external/protocol/saml/clients/legacy-idp-servlets" id="redhat-account-login-link" class="account-login-link utility-user-login-link" data-analytics-region="utility" data-analytics="Log in" data-analytics-label="Log in">Log in</a>                                <p>Your Red Hat account gives you access to your member profile and preferences, and the following services based on your customer status:</p>
+                                <div class="utility-user-additional-links"><div class="item-list"><ul><li class="first">Customer Portal</li>
+<li class="last">Red Hat Connect for Business Partners</li>
+</ul></div><div class="item-list"><ul><li class="first">User management</li>
+<li class="last">Certification Central</li>
+</ul></div></div>                  </div>
+        <div class="account-register-wrapper">
+                      <a href="https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/registrations?client_id=https%3A%2F%2Fwww.redhat.com%2Fwapps%2Fugc-oidc&amp;redirect_uri=https%3A%2F%2Fwww.redhat.com%2Fwapps%2Fugc%2Fprotected%2Faccount.html&amp;response_type=code&amp;scope=openid" class="account-register-link" data-analytics-region="utility" data-analytics="Register now" data-analytics-label="Register now">Register now</a>                                <p class="account-register-heading">Not registered yet? Here are a few reasons why you should be:</p><div class="item-list"><ul><li class="first">Browse Knowledgebase articles, manage support cases and subscriptions, download updates, and more from one place.</li>
+<li>View users in your organization, and edit their account information, preferences, and permissions.</li>
+<li class="last">Manage your Red Hat certifications, view exam history, and download certification-related logos and documents.</li>
+</ul></div>                  </div>
+      </section>
+      <section class="account-logout rh-user-loggedin">
+        <div class="account-welcome-wrapper">
+                      <a href="https://www.redhat.com/wapps/ugc/protected/account.html" class="account-edit-link" data-analytics-region="utility" data-analytics="Edit your profile and preferences" data-analytics-label="Edit your profile and preferences">Edit your profile and preferences</a>                                <p>Your Red Hat account gives you access to your member profile, preferences, and other services depending on your customer status.</p>
+                            </div>
+        <div class="account-logout-wrapper">
+                      <p>For your security, if you&#039;re on a public computer and have finished using your Red Hat services, please be sure to log out.</p>
+                                <a href="https://sso.redhat.com/auth/realms/redhat-external/logout" id="redhat-account-logout-link" class="account-logout-link" data-analytics-region="utility" data-analytics="Log out" data-analytics-label="Log out">Log out</a>                  </div>
+      </section>
+    </div>
+  </div>
+</section>
+      </div>
+    </div>
+  </pfe-navigation-item>
+  <a href="https://sso.redhat.com/auth/realms/redhat-external/protocol/saml/clients/legacy-idp-servlets" class="rh-user-loggedout" slot="mobile-login" pfe-icon="web-user">Log in / Register</a>  <a href="https://www.redhat.com/wapps/ugc/protected/account.html" class="rh-user-loggedin" slot="mobile-login" pfe-icon="web-user">Account</a>
+  <!-- Site switcher -->
+  <pfe-navigation-item slot="site-switcher" pfe-icon="web-grid-3x3" id="site-switcher">
+    <div slot="trigger">
+      <a href="https://www.redhat.com/en/cms/ajax/site-switcher" id="355871" data-analytics-region="utility" data-analytics="Websites" data-analytics-label="Websites">All Red Hat</a>    </div>
+    <div slot="tray" hidden>
+      <div class="pfe-navigation-item__tray--container">
+        <!-- Added via JS -->
+              </div>
+    </div>
+  </pfe-navigation-item>
+</pfe-navigation>
+
+<!-- Language switcher modal, must be outside the navigation component -->
+<pfe-modal class="language-picker" id="language-picker" hidden>
+  <h3 class="pfe-headline-2">Select a language</h3>
+  <ul><li class="pfe-headline-5"><a href="https://www.redhat.com/zh/solutions/cloud-native-development" class="language-link" xml:lang="zh" hreflang="zh" title="topic | solutions: cloud native development">简体中文</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/en/solutions/cloud-native-development" class="language-link active" xml:lang="en" hreflang="en" title="hub | solutions: cloud native development">English</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/fr/solutions/cloud-native-development" class="language-link" xml:lang="fr" hreflang="fr" title="topic | solutions: cloud native development">Français</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/de/solutions/cloud-native-development" class="language-link" xml:lang="de" hreflang="de" title="topic | solutions: cloud native development">Deutsch</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/it/solutions/cloud-native-development" class="language-link" xml:lang="it" hreflang="it" title="topic | solutions: cloud native development">Italiano</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/ja/solutions/cloud-native-development" class="language-link" xml:lang="ja" hreflang="ja" title="topic | solutions: cloud native development">日本語</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/ko/solutions/cloud-native-development" class="language-link" xml:lang="ko" hreflang="ko" title="topic | solutions: cloud native development">한국어</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/pt-br/solutions/cloud-native-development" class="language-link" xml:lang="pt-br" hreflang="pt-br" title="topic | solutions: cloud native development">Português</a></li><li class="pfe-headline-5"><a href="https://www.redhat.com/es/solutions/cloud-native-development" class="language-link" xml:lang="es" hreflang="es" title="topic | solutions: cloud native development">Español</a></li></ul></pfe-modal><span id="rh-main-content"></span>
+
+        
+<div class="rh-band-group--layout" data-rh-group-size="content" data-rh-unique-id="94801">
+                    <div class="rh-band-group-wrapper">
+                <div class="rh-band-group-background" data-rh-background-align="center-center" data-rh-background="white"></div><div class="rh-band-group-body"><!-- Pattern | raw_html -->
+
+<div class="rh-raw"        >
+        <section class="dms-band cloud-native-hero bg-gray-800 text-white bg-pos-cc bg-no-repeat" data-bg-image="https://www.redhat.com/cms/managed-files/bg_translucent-clouds-and-containers.svg">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h3 class="section-label">Cloud-native development solutions</h3>
+                <h1>Deliver innovative applications faster</h1>
+                <p>Bring new application services and features to market without compromising security or quality.</p>
+                <p><a href="https://tracks.redhat.com/cloud-native" class="btn btn-primary">Take our cloud-native assessment</a></p>
+            </div>
+
+            <div class="col-sm-8 col-md-5 col-xl-4 mx-auto text-center">
+                <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="740px" height="680.2px" viewBox="0 0 740 680.2">
+
+    <circle id="white-circle" class="fill-none stroke-white stroke-width-4 stroke-miter-10 stroke-width-4" cx="351.4" cy="341.8" r="301.4"/>
+
+    <g id="container-3" transform="translate(1695.089 306.203)">
+        <path class="fill-pink-100" d="M-1011.5,22.9l-0.1,34.9l-29,16.9l0.1-34.9L-1011.5,22.9z"/>
+        <path class="fill-pink-400" d="M-1040.5,39.7l-0.1,34.9l-29.3-16.9l0.1-34.9L-1040.5,39.7z"/>
+        <path class="fill-white stroke-pink-400 stroke-width-5 stroke-miter-10" d="M-1040.5,37.1l-24.6-14.2l24.4-14.2l24.6,14.2L-1040.5,37.1z"/>
+    </g>
+
+    <g id="container-2" transform="translate(1695.089 306.203)">
+        <path class="fill-pink-100" d="M-1011.5,22.9l-0.1,34.9l-29,16.9l0.1-34.9L-1011.5,22.9z"/>
+        <path class="fill-pink-400" d="M-1040.5,39.7l-0.1,34.9l-29.3-16.9l0.1-34.9L-1040.5,39.7z"/>
+        <path class="fill-white stroke-pink-400 stroke-width-5 stroke-miter-10" d="M-1040.5,37.1l-24.6-14.2l24.4-14.2l24.6,14.2L-1040.5,37.1z"/>
+    </g>
+
+    <g id="container-1" transform="translate(1670.743 353.052)">
+        <path class="fill-red" d="M-943.7,85.9l-68.8,40l-69.3-40l68.8-40L-943.7,85.9z"/>
+        <path class="fill-pink-400" d="M-943.7,85.9l-0.2,82.6l-68.8,40l0.2-82.6L-943.7,85.9z"/>
+        <path class="fill-red" d="M-1012.5,125.9l-0.2,82.6l-69.3-40l0.2-82.6L-1012.5,125.9z"/>
+    </g>
+
+    <g id="gray-cloud" transform="translate(40 -20)">
+        <path class="cloud fill-gray-900 stroke-white stroke-width-2 stroke-miter-10" d="M580.8,165.9H396.5c-8,0-15.6-3.1-21.3-8.8c-5.7-5.7-8.8-13.2-8.8-21.3s3.1-15.6,8.8-21.3 c5.7-5.7,13.2-8.8,21.3-8.8c2.5,0,5.1,0.3,7.5,0.9l1.5,0.4l0.6-1.5c3.2-7.6,8.4-14.1,15.2-18.8c6.9-4.8,15-7.5,23.5-7.8l1.2,0 l0.4-1.1c2.3-6,5.5-11.7,9.5-16.8c4-5.1,8.7-9.5,13.9-13.2c10.9-7.6,23.8-11.7,37.2-11.7c12,0,23.7,3.3,33.9,9.5 c9.9,6.1,18,14.7,23.4,24.9l0.7,1.3l1.5-0.4c4.6-1.4,9.4-2.1,14.2-2.1c6.5,0,12.8,1.3,18.8,3.8c5.7,2.4,10.9,5.9,15.3,10.3 c4.4,4.4,7.9,9.6,10.3,15.3c2.5,6,3.8,12.3,3.8,18.8s-1.3,12.8-3.8,18.8c-2.4,5.7-5.9,10.9-10.3,15.3c-4.4,4.4-9.6,7.9-15.3,10.3 C593.6,164.6,587.3,165.9,580.8,165.9z"/>
+        <path class="fill-none stroke-gray-800 stroke-width-2 linecap-round stroke-miter-10" d="M507.1,45c20.7,0,39.7,11.4,49.4,29.7"/>
+        <path class="fill-none stroke-gray-800 stroke-width-2 linecap-round stroke-miter-10" d="M580.8,78.3c21.7,0,39.3,17.6,39.3,39.3"/>
+    </g>
+
+
+        
+
+    <g id="monitor">
+        <clipPath id="mask_monitor-right">
+            <rect x="343.9" y="41.4" width="307.9" height="609.2"/>
+        </clipPath>
+        <g style="clip-path:url(#mask_monitor-right);">
+            <g transform="translate(-123.467 80.63)">
+                <rect x="424.8" y="357.6" class="fill-white stroke-pink-400 stroke-width-2 stroke-miter-10" width="87.8" height="87.8"/>
+                <path class="fill-pink-100" d="M512.5,406.5l-87.8,14.2v-63h87.8V406.5z"/>
+                <g >
+                    <rect x="238.8" y="110" class="fill-red" width="460.8" height="291.4"/>
+                    <rect x="249.8" y="121.1" class="fill-white" width="438.8" height="269.4"/>
+                </g>
+                <line class="fill-none stroke-white stroke-width-2 linecap-round linejoin-round" x1="310.9" y1="175.7" x2="420.4" y2="175.7"/>
+            </g>
+            <path class="fill-white stroke-pink-400 stroke-width-2 linejoin-round" d="M257.2,529.1v-11.7h132.7l43,11.7"/>
+            <rect x="260.8" y="529.6" class="fill-white stroke-pink-400 stroke-width-2 stroke-miter-10" width="171.7" height="15.1"/>
+        </g>
+    
+        <clipPath id="mask-monitor-left">
+            <rect x="46.4" y="30.2" width="298.1" height="620"/>
+        </clipPath>
+        <g style="clip-path:url(#mask-monitor-left);">
+            <path class="fill-white stroke-pink-100 stroke-width-2 linejoin-round" d="M388.6,529.3v-91.4h-87.8v56.4c0,10.3-6.1,19.6-15.4,23.8l-25.1,11.2"/>
+            <rect x="260.3" y="529.3" class="fill-white stroke-pink-400 stroke-width-2 linejoin-round" width="171.7" height="15.1"/>
+            <path class="fill-none stroke-pink-100 stroke-width-2 linejoin-round" d="M260.3,543.3v-14H432"/>
+            <g transform="translate(115.515 220.196)">
+                <clipPath id="mask_monitor-stand">
+                    <path d="M273.1,217.7h-87.8v56.4c0,10.3-6.1,19.6-15.4,23.8l-25.1,11.2h102.6v-3.6h25.7L273.1,217.7z"/>
+                </clipPath>
+                <g style="clip-path:url(#mask_monitor-stand);">
+                    <path class="fill-pink-400" d="M273.1,266.6l-93.8,15.5l6-64.3h87.8V266.6z"/>
+                </g>
+            </g>
+            <path d="M141.6,190.6h406.2c15.3,0,27.8,12.4,27.8,27.8v235.8c0,15.3-12.4,27.8-27.8,27.8H141.6 c-15.3,0-27.8-12.4-27.8-27.8V218.3C113.8,203,126.2,190.6,141.6,190.6z"/>
+            <g transform="translate(47.891 97.877)">
+                <path class="fill-white" d="M512.6,132.1v212.6c0,10.2-8.3,18.5-18.5,18.5H96.4c-5.1,0-9.3-4.1-9.3-9.3V122.8 c0-5.1,4.1-9.3,9.3-9.3h397.7C504.3,113.6,512.6,121.8,512.6,132.1z"/>
+            </g>
+        </g>
+
+        <rect x="170.3" y="246.6" class="fill-pink-100" width="343.4" height="190.6"/>
+        <rect x="179.2" y="237.7" class="stroke-red stroke-width-2 stroke-miter-10" width="343.4" height="190.6"/>
+        <rect x="179.2" y="237.7" class="fill-red" width="343.4" height="38.3"/>
+        <line class="fill-none stroke-white stroke-width-2 linecap-round linejoin-round" x1="198.4" y1="261.8" x2="340.2" y2="261.8"/>
+        <circle class="fill-white" cx="476" cy="256.8" r="5.6"/>
+        <circle class="fill-white" cx="498.1" cy="256.8" r="5.6"/>
+
+        <g id="code">
+            <line class="fill-none stroke-pink-400 stroke-width-2 linecap-round linejoin-round" x1="230.8" y1="314.4" x2="265.5" y2="314.4"/>
+            <line class="fill-none stroke-white stroke-width-2 linecap-round linejoin-round" x1="220" y1="334.2" x2="293.8" y2="334.2"/>
+            <line class="fill-none stroke-pink-400 stroke-width-2 linecap-round linejoin-round" x1="230.8" y1="354" x2="265.5" y2="354"/>
+            <line class="fill-none stroke-white stroke-width-2 linecap-round linejoin-round" x1="241.6" y1="373.8" x2="340.2" y2="373.8"/>
+            <line class="fill-none stroke-pink-400 stroke-width-2 linecap-round linejoin-round" x1="230.8" y1="393.6" x2="295.9" y2="393.6"/>
+            <line class="fill-none stroke-white stroke-width-2 linecap-round linejoin-round" x1="220" y1="413.4" x2="329.4" y2="413.4"/>
+            <line class="fill-none stroke-red stroke-width-2 linecap-round linejoin-round" x1="198.4" y1="294.6" x2="198.4" y2="413.9"/>
+            <line class="fill-none stroke-white stroke-width-2 linecap-round linejoin-round" x1="315.4" y1="294.6" x2="220" y2="294.6"/>
+        </g>
+
+        <g id="pie-chart" transform="translate(1555.574 303.344)">
+            <clipPath id="mask_pie-chart">
+                <path d="M-1146.5-1.1c-26.3,3.2-45,27.1-41.8,53.4c3.2,26.3,27.1,45,53.4,41.8c26.3-3.2,45-27.1,41.8-53.4 c0,0,0,0,0,0C-1096.3,14.4-1120.2-4.3-1146.5-1.1z M-1138.2,66.9c-11.3,1.4-21.6-6.7-22.9-18c-1.4-11.3,6.7-21.6,18-22.9 c11.3-1.4,21.6,6.7,22.9,18C-1118.9,55.3-1126.9,65.6-1138.2,66.9L-1138.2,66.9L-1138.2,66.9z"/>
+            </clipPath>
+            <g style="clip-path:url(#mask_pie-chart);">
+                <circle class="fill-red" cx="-1140.7" cy="46.5" r="47.9"/>
+                <path class="fill-white" d="M-1190.5,4.3l49.8,42.2l62.4-7.6c0,0,5.5-31.3-32.1-50.6S-1190.5,4.3-1190.5,4.3z"/>
+                <path class="fill-pink-400" d="M-1192.6,32.4l52,14.1l29.5-50.3c0,0-31.9-14.6-54.1-5.1S-1192.6,32.4-1192.6,32.4z"/>
+                <path class="fill-pink-100" d="M-1140.7,46.5l40.5-39.9c0,0-17.9-13.7-30.3-14.5L-1140.7,46.5z"/>
+            </g>
+        </g>
+    </g>
+
+    <path id="red-cloud" class="fill-red stroke-white stroke-width-2" d="M197.6,545.7c-4.5,0-9,0.7-13.3,2c-15.5-29.3-51.9-40.4-81.2-24.9 c-12.8,6.8-22.7,18-27.9,31.5c-15.9,0.5-30.1,10.3-36.3,25c-15.4-3.9-31,5.3-35,20.7c-3.9,15.4,5.3,31,20.7,35 c2.3,0.6,4.7,0.9,7.1,0.9h165.8c24.9,0,45.1-20.2,45.1-45.1C242.7,565.9,222.5,545.7,197.6,545.7L197.6,545.7z"/>
+    
+    <g id="api">
+        <circle class="fill-gray-900 stroke-white stroke-width-2 stroke-miter-10" cx="179.9" cy="92.2" r="85.6"/>
+        <rect x="148" y="57.4" class="fill-pink-400" width="49.2" height="81.7"/>
+        <line class="fill-none stroke-pink-400 stroke-width-2 linecap-round linejoin-round" x1="130.9" y1="91.7" x2="228.3" y2="91.7"/>
+        <line class="fill-none stroke-pink-400 stroke-width-2 linecap-round linejoin-round" x1="130.9" y1="70.8" x2="228.3" y2="70.8"/>
+        <line class="fill-none stroke-pink-400 stroke-width-2 linecap-round linejoin-round" x1="130.9" y1="112.7" x2="228.3" y2="112.7"/>
+        <rect x="222" y="64.5" class="fill-red" width="12.6" height="12.6"/>
+        <path class="fill-red" d="M228.3,106.4L228.3,106.4c3.5,0,6.3,2.8,6.3,6.3l0,0c0,3.5-2.8,6.3-6.3,6.3l0,0 c-3.5,0-6.3-2.8-6.3-6.3l0,0C222,109.2,224.8,106.4,228.3,106.4z"/>
+        <path class="fill-red" d="M222,98V85.4l12.6,6.3L222,98z"/>
+        <rect x="125.6" y="106.4" class="fill-red" width="12.6" height="12.6"/>
+        <path class="fill-red" d="M131.9,85.4L131.9,85.4c3.5,0,6.3,2.8,6.3,6.3l0,0c0,3.5-2.8,6.3-6.3,6.3l0,0 c-3.5,0-6.3-2.8-6.3-6.3l0,0C125.6,88.2,128.4,85.4,131.9,85.4z"/>
+        <path class="fill-red" d="M138.2,64.5V77l-12.6-6.3L138.2,64.5z"/>
+        <line class="fill-none stroke-black stroke-width-2" x1="148.5" y1="91.7" x2="198.1" y2="91.7"/>
+        <line class="fill-none stroke-black stroke-width-2" x1="148.5" y1="70.8" x2="198.1" y2="70.8"/>
+        <line class="fill-none stroke-black stroke-width-2" x1="148.5" y1="112.7" x2="198.1" y2="112.7"/>
+        <rect x="155.5" y="50.9" class="fill-white" width="49.2" height="81.7"/>
+        <rect x="157.5" y="52.9" class="fill-none stroke-pink-100 stroke-width-2 stroke-miter-10" width="45.2" height="77.7"/>
+        <path class="fill-none stroke-pink-100 stroke-width-2 linecap-round linejoin-round" d="M165.2,60.9h30.7v61.7"/>
+    </g>
+</svg>    
+            </div>
+        </div>
+    </div>
+</section>
+    </div></div></div></div><!-- Pattern | secondary_nav_bar -->
+
+
+
+
+    
+    
+    
+
+
+
+
+
+
+<section class="rh-menu" aria-hidden    data-rh-menu="dynamic"     data-rh-collapse="full"    data-rh-menu-id="rh-8l6f9"
+    data-rh-background="light-gray">
+        <div class="rh-menu-mobile"    data-rh-hidden="sm md lg"
+>
+        <div class="rh-menu-mobile-bar">
+            <div class="rh-menu-mobile-bar-top" data-rh-menu-context="top-mobile"     data-rh-background="white"
+    data-rh-layout="flex-right-end"
+    data-rh-theme="light">
+                                <span    data-rh-toggle-open="click"
+    data-rh-toggle-id="rh-8l6f9"
+    data-rh-state="closed" aria-expanded=false
+>
+                    <ul class="rh-navigation-link--component"            data-rh-nav-type="utility"
+                    ><li class="rh-navigation-link-container"><a class="rh-navigation-link-icon"                                    data-rh-icon-type="web-icon-mobile-menu"
+                                                ><span class="rh-navigation-link-label">Jump to section</span><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17"><path d="M1.5 2.028a.5.5 0 0 1 0-1l14-.007a.5.5 0 0 1 0 1l-14 .008zM15.494 9.007H1.5a.5.5 0 1 1 0-1h14a.5.5 0 0 1 0 1zM15.494 16.007H1.5a.5.5 0 0 1 0-1h14a.5.5 0 0 1 0 1z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M30 16.67v-1.332c0-.363-.13-.675-.394-.938s-.575-.394-.938-.394h-10.67V3.356c0-.362-.13-.675-.393-.938s-.575-.394-.938-.394h-1.33c-.364 0-.676.13-.94.394s-.393.575-.393.938V14H3.33c-.363 0-.676.13-.94.394s-.393.575-.393.938v1.33c0 .364.13.676.394.94s.576.393.94.393h10.668V28.64c0 .362.13.674.394.937.262.262.575.394.938.394h1.33c.364 0 .676-.13.94-.393s.393-.575.393-.938V18h10.67c.362 0 .674-.13.937-.394.27-.262.4-.575.4-.938z"/></svg></a></li></ul>                </span>
+            </div>
+            <nav class="rh-menu-mobile-dropdown" data-rh-menu-context="dropdown-mobile" id="rh-8l6f9"     data-rh-background="white"
+    data-rh-theme="light"    data-rh-state="closed" aria-expanded=false
+    data-rh-toggle-target="xxs xs sm md lg"
+></nav>
+                    </div>
+    </div>
+
+    <div class="rh-menu-desktop"data-rh-hidden="xxs xs">
+        <div class="rh-menu-desktop-container">
+            <div class="rh-secondary-nav-placeholder"data-rh-hidden="xxs xs">Jump to section</div>
+                                        <nav class="rh-menu-main-nav" data-rh-theme="light"    data-rh-menu-main-type="secondary" data-rh-dynamic>
+                                                            <div class="rh-menu-main-nav-links" data-rh-menu-context="main-links">
+                        <ul class="rh-navigation-link--component"            data-rh-nav-type="secondary-navigation-bar"
+            aria-label="template" aria-hidden        ><li class="rh-navigation-link-container" aria-template=true><a class="rh-navigation-link-item" href="#" title=""></a></li></ul>                    </div>
+                                                        </nav>
+                    </div>
+    </div>
+</section>
+  <!-- Pattern | raw_html -->
+
+<div class="rh-raw"         data-rh-unique-id="95121">
+        <!-- Sticky Nav -->
+<section class="ux-band" data-ux-band-collapse="mobile-padded" data-ux-band-background="gray-alt" id="sticky-nav">
+	<div class="ux-band-container">
+		<div class="ux-band-body" data-ux-layout-special="sticky-nav">
+			<div class="ux-sticky-nav" data-ux-text-align="center">
+				<ul class="ux-sticky-nav-list">
+					<li class="ux-sticky-nav-list-item">
+						<a class="ux-sticky-nav-list-link" href="#why">Why cloud-native?</a>
+					</li>
+					<li class="ux-sticky-nav-list-item">
+						<a class="ux-sticky-nav-list-link" href="#faster">Deliver apps faster</a>
+					</li>
+					<li class="ux-sticky-nav-list-item">
+						<a class="ux-sticky-nav-list-link" href="#build">Build for the cloud</a>
+					</li>
+					<!--li class="ux-sticky-nav-list-item">
+						<a class="ux-sticky-nav-list-link" href="#redhat">Why Red Hat?</a>
+					</li-->
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+    </div>  <!-- Pattern | raw_html -->
+
+<div class="rh-raw"         data-rh-unique-id="95111">
+        <!-- BAND - Why cloud-native? -->
+<section class="ux-band" data-ux-band-padding="x2" id="why">
+    <div class="ux-band-container">
+        <div class="ux-band-body" data-ux-layout-special="grid 5 2 4 1">
+            <div class="ux-group" data-ux-layout="stacked">
+                <header class="ux-band-header">
+                    <h2 class="ux-band-header-headline">Why cloud-native?</h2>
+                </header>
+                <div class="ux-group">
+                    <div class="ux-generic">
+                        <p>Your ability to win, serve, and retain customers depends on delivering new capabilities through software applications, rapidly and continuously. You can create and run innovative, differentiated apps on any public, private, or hybrid cloud with a cloud-native development platform from Red Hat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ux-group">
+                <div class="ux-image-embed">
+                    <div class="ux-image-embed-container">
+                        <div class="media media-element-container media-default"><img class="media-element file-default ux-image-embed-img" alt="Cloud native graphic" title="Cloud native graphic" src="https://www.redhat.com/cms/managed-files/illustrations_person-interacting-with-form.svg" width="740" height="599" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ux-band">
+    <div class="ux-band-container">
+        <div class="ux-band-body" data-ux-layout-special="grid 6 1 4 1" data-ux-theme="light">
+            <div class="ux-group" data-ux-layout="stacked">
+                <div clase="ux-video-embed">
+                    <a class="ux-video-embed-image" href="https://www.youtube.com/watch?v=0IOVmBLBwvo">
+                        <div class="ux-video-thumb">
+                            <div class="media media-element-container media-default"><img class="media-element file-default ux-image-embed-img" alt="How would you describe Cloud-native App Dev?" title="How would you describe Cloud-native App Dev?" src="https://www.redhat.com/cms/managed-files/cloud-native-video-card.jpg" width="650" height="366" /></div>
+                        </div>
+                    </a>
+                    <div class="ux-video-embed-details" data-ux-state="hidden">
+                        <div class="ux-video-embed-media-container">
+                            <div class="ux-video-embed-iframe-container">
+                                <iframe width="560" height="315" src="http://www.youtube.com/embed/0IOVmBLBwvo?autoplay=0&amp;rel=0" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="ux-group">
+                <div class="ux-quote2" data-eq-pts="large: 400">
+                    <blockquote class="ux-quote2-container">
+                        <p class="ux-quote2-quotation">[Cloud-native development is] DevOps. It’s containers. It’s microservices. It’s hybrid cloud. It’s really about changing your mindset to embrace what’s important with regard to building application services quicker.</p>
+                        <footer class="ux-quote2-reference">
+                            <span class="ux-quote2-attribution">Ashesh Badani</span>
+                            <br>Senior vice president of cloud platforms, Red Hat
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Grouping of bands for gray background blobs image-->
+
+
+    <!-- 6 6 cards-->
+    <section class="ux-group" >
+        <div class="ux-band-container">
+            <div class="ux-band-body" data-ux-layout="6 6 flex">
+                <div class="ux-card" data-ux-border="thin" data-ux-justify="justify">
+                    <a class="ux-card-asset-link" data-ux-spacing="gray-surround" href="https://www.redhat.com/en/engage/kubernetes-containers-architecture-s-201910240918">
+                        <div class="media media-element-container media-default"><img class="media-element file-default ux-image-embed-img" alt="Deliver apps anywhere with Red Hat OpenShift 4" title="Deliver apps anywhere with Red Hat OpenShift 4" src="https://www.redhat.com/cms/managed-files/webinar-openshift-255x185.png" width="255" height="185" /></div>
+                    </a>
+                    <div class="ux-card-body">
+                        <div class="ux-generic">
+                            <p><a href="https://www.redhat.com/en/engage/kubernetes-containers-architecture-s-201910240918">Reusable Elements for Designing Cloud-Native Applications</a></p>
+                            <p>Go beyond the basic concepts of Kubernetes and learn how to harness its full capabilities with patterns in this e-book from O’Reilly and Red Hat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ux-card" data-ux-border="thin" data-ux-justify="justify">
+                    <a class="ux-card-asset-link" data-ux-spacing="gray-surround" href="https://www.openshift.com/devops-with-openshift/">
+                        <div class="media media-element-container media-default"><img class="media-element file-default ux-image-embed-img" alt="DevOps and
+containers with OpenShift" title="DevOps and containers with OpenShift" src="https://www.redhat.com/cms/managed-files/asset-devops-openshift-255x185.png" width="255" height="185" /></div>
+                    </a>
+                    <div class="ux-card-body">
+                        <div class="ux-generic">
+                            <p><a href="https://www.redhat.com/en/engage/cloud-native-application-development-20180622">The path to cloud-native applications</a></p>
+                            <p>The speed of of app development in the digital era is vital to competitive advantage. Download this e-book and discover the 8 fundamental steps to cloud-native apps--and accelerate your time to market.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7 1 4 What’s your IT optimization challenge? -->
+    <section class="ux-group" id="faster" data-ux-band-padding="x2">
+        <div class="ux-band-container">
+            <header class="ux-band-header" data-ux-text-align="center">
+                <h2 class="ux-band-header-headline">What’s your cloud-native challenge?</h2>
+            </header>
+            <div class="ux-band-body" data-ux-layout-special="7 1 4" data-ux-special-padding="stackedx2">
+                <div class="ux-group">
+                    <div class="ux-generic" data-ux-border="teal-left">
+                        <h2><strong>I need to deliver apps faster</strong> without abandoning what I’ve already built</h2>
+                        <p>User demand for new functions grows faster than your development processes can meet. You need a platform, methods, application services, and tools that can keep up without forcing you to leave behind the existing apps that your customers depend on.</p>
+                        <p>Cloud-native development provides strategic flexibility and agility to build and run applications on any cloud and embodies well-known development best practices of continuous integration and deployment. Enterprises are also modernizing enterprise middleware. A cloud-native platform is a modern app platform that can replace aging and expensive application servers.</p>
+                    </div>
+                </div>
+                <div></div>
+                <div class="ux-group" data-ux-border="gray">
+                    <div class="ux-card" data-ux-border="thin">
+                        <a class="ux-card-asset-link" data-ux-spacing="gray-surround" href="https://www.redhat.com/en/engage/containers-microservices-modernization-s-201905201011?intcmp=701f2000000uHrJAAU">
+                            <div class="media media-element-container media-default"><img class="media-element file-default ux-image-embed-img" alt="A developer&#039;s guide to lift-and-shift cloud migration" title="A developer&#039;s guide to lift-and-shift cloud migration" src="https://www.redhat.com/cms/managed-files/illustration_cloud-apps.svg" width="255" height="184" /></div>
+                        </a>
+                        <div class="ux-card-body">
+                            <div class="ux-generic">
+                            <p><a href="https://www.redhat.com/en/resources/event-driven-architecture-hybrid-cloud-blueprint-detail?intcmp=701f2000000uHrJAAU">Event-driven architecture for a hybrid cloud blueprint</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ux-band-body" data-ux-layout-special="7 1 4" id="build">
+                <div class="ux-group">
+                    <div class="ux-generic" data-ux-border="teal-left">
+                        <h2><strong>I need to build new apps</strong> that make the most of the cloud</h2>
+                        <p>A cloud-native development platform can empower you to respond to market trends and quickly turn ideas into products and services. But how do organizations get started? How do teams design and implement a strategy that’s specific to their current situations and needs?</p>
+                        <p>This e-book presents enterprise architects and IT leaders with a step-by-step guide for how to tackle modern IT strategy.</p>
+                    </div>
+                </div>
+                <div></div>
+                <div class="ux-group" data-ux-border="gray">
+                    <div class="ux-card" data-ux-border="thin">
+                        <a class="ux-card-asset-link" data-ux-spacing="gray-surround" href="https://www.redhat.com/en/resources/cloud-native-meets-hybrid-cloud-strategy-guide-ebook?intcmp=701f2000000uHrJAAU">
+                            <div class="media media-element-container media-default"><img class="media-element file-default ux-image-embed-img" alt="Accelerating DevOps" title="Accelerating DevOps" src="https://www.redhat.com/cms/managed-files/HCI_PDF-thumbnail-C.svg" width="255" height="184" /></div>
+                        </a>
+                        <div class="ux-card-body">
+                            <div class="ux-generic">
+                                <p><a href="https://www.redhat.com/en/resources/cloud-native-meets-hybrid-cloud-strategy-guide-ebook?intcmp=701f2000000uHrJAAU">Build application environments for reliability, productivity, and change</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</section>
+    </div>  <!-- Pattern | raw_html -->
+
+<!-- BAND - UPS Success Story -->
+<section id="customer-success" class="ux-band" data-ux-band-background="ups-story" data-ux-band-padding="custom-success">
+    <div class="ux-band-container">
+        <div class="ux-group" data-ux-special-layout="12, 8, 6" data-ux-align="both">
+            <header class="ux-band-header" data-ux-text-align="center">
+                <h2 class="ux-band-header-headline">UPS makes apps happen faster with containers</h2>
+            </header>
+        </div>
+        <div class="ux-band-body" data-ux-theme="dark" data-ux-special-layout="12, 10" data-ux-align="horizontal">
+            <div class="ux-group" data-ux-layout="stacked">
+                <div clase="ux-video-embed">
+                    <a class="ux-video-embed-image" href="http://www.youtube.com/watch?tygx7BF3YpM&amp;autoplay=0&amp;rel=0" data-ux-theme="light">
+                        <div class="ux-video-thumb">
+                            <div class="media media-element-container media-default"><img class="media-element file-default ux-image-embed-img" alt="UPS video" title="UPS video" src="https://www.redhat.com/cms/managed-files/UPS-video-img-1000x562.jpg" width="1000" height="562" /></div>
+                        </div>
+                    </a>
+                    <div class="ux-video-embed-details" data-ux-state="hidden">
+                        <div class="ux-video-embed-media-container">
+                            <div class="ux-video-embed-iframe-container">
+                                <iframe title="UPS video" width="560" height="315" src="http://www.youtube.com/embed/tygx7BF3YpM?autoplay=0&amp;rel=0" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ux-group" data-ux-special-layout="12, 8, 6" data-ux-align="both">
+                <div class="ux-group" data-ux-layout="stacked">
+                    <div class="ux-image-embed" data-ux-align="both">
+                        <div class="ux-image-embed-container">
+                            <a href="https://www.redhat.com/en/success-stories/ups">
+                              <div class="media media-element-container media-default"><img class="media-element file-default ux-image-embed-img" alt="UPS Success Story" title="UPS Success Story" src="https://www.redhat.com/cms/managed-files/ups-logo-white-96x115b.png" width="96" height="115" /></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ux-generic">
+                        <p>UPS delivers more than 20 million packages a day. The company needed a better system for managing the data connected to all those parcels. Red Hat helped the shipping giant build a flexible, container-based solution to move workloads to the cloud. The result? A reduction in UPS’ app development cycle, from more than a year to a matter of weeks. </p>
+                    </div>
+                    <div class="ux-cta" data-ux-align="both">
+                        <a class="ux-cta-link" data-ux-cta-type="primary" href="https://www.redhat.com/en/success-stories/ups">See how UPS did it</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  <div class="patternbuilder-item patternbuilder-item--shared-content rh-band clearfix" data-rh-unique-id="2529651">
+    <div class="entity entity-paragraphs-item paragraphs-item-shared-content">
+  <div class="content">
+    <div class="field field-name-field-shared-content field-type-entityreference field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"></div>
+      </div>
+</div>
+  </div>
+</div>
+  </div>
+  <!-- Pattern | raw_html -->
+
+<div class="rh-raw"         data-rh-unique-id="218731">
+        <!-- BAND - Resource Cards -->
+<section class="ux-band" data-ux-band-background="gray">
+    <div class="ux-band-container">
+        <div class="ux-band-body" data-ux-layout="4 4 4 flex">
+            <div class="ux-card" data-ux-theme="white">
+                <div class="ux-card-header">
+                    <h3 class="ux-card-header-title">Keep learning</h3>
+                </div>
+                <div class="ux-card-body">
+                    <div class="ux-list" data-ux-theme="subtle">
+                        <ul class="ux-listing">
+                            <li class="ux-listing-item">
+                                <a class="ux-listing-item-link" href="https://www.redhat.com/en/engage/interactive-learning-scenarios-s-202008280622">OpenShift Interactive Learning Portal</a>
+                            </li>
+                            <li class="ux-listing-item">
+                                <a class="ux-listing-item-link" href="https://www.redhat.com/en/topics/cloud-native-apps">Understanding cloud-native development</a>
+                            </li>
+                            <li class="ux-listing-item">
+                                <a class="ux-listing-item-link" href="https://www.redhat.com/en/resources/event-driven-applications-amq-streams-analyst-paper">Event-driven applications with Red Hat AMQ Streams</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="ux-card" data-ux-theme="white">
+                <div class="ux-card-header">
+                    <h3 class="ux-card-header-title">Get trained</h3>
+                </div>
+                <div class="ux-card-body">
+                    <div class="ux-list" data-ux-theme="subtle">
+                        <ul class="ux-listing">
+                            <li class="ux-listing-item">
+                                <a class="ux-listing-item-link" href="https://www.redhat.com/en/services/training/do092-developing-cloud-native-applications-microservices-architectures">Developing Cloud-Native Applications with Microservices Architectures (DO092)</a>
+                            </li>
+                            <li class="ux-listing-item">
+                                <a class="ux-listing-item-link" href="https://www.redhat.com/en/services/training/do180-red-hat-openshift-I-containers-kubernetes">Red Hat OpenShift I: Containers & Kubernetes (DO180)</a>
+                            </li>
+                            <li class="ux-listing-item">
+                                <a class="ux-listing-item-link" href="https://www.redhat.com/en/services/training/do289-red-hat-openshift-development-ii-containerizing-applications-exam">Red Hat OpenShift Development II: Containerizing Applications with exam (DO289)</a>
+                            </li>
+                            <li class="ux-listing-item">
+                                <a class="ux-listing-item-link" href="https://www.redhat.com/en/services/training/all-courses-exams">Browse our curriculum</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="ux-card" data-ux-theme="white">
+                <div class="ux-card-header">
+                    <h3 class="ux-card-header-title">Get started</h3>
+                </div>
+                <div class="ux-card-body">
+                    <div class="ux-list--component" data-ux-theme="subtle">
+                        <ul class="ux-listing">
+                            <li class="ux-listing-item">
+                                <a href="https://www.redhat.com/en/technologies/cloud-computing/openshift" class="ux-listing-item-link">Red Hat OpenShift</a>
+                            </li>
+                            <li class="ux-listing-item">
+                                <a href="https://www.redhat.com/en/products/runtimes" class="ux-listing-item-link">Red Hat Runtimes</a>
+                            </li>
+                            <li class="ux-listing-item">
+                                <a href="https://www.redhat.com/en/products/integration" class="ux-listing-item-link">Red Hat Integration</a>
+                            </li>
+                            <li class="ux-listing-item">
+                                <a href="https://www.redhat.com/en/products/process-automation" class="ux-listing-item-link">Red Hat Process Automation</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>
+  
+  
+</article>
+
+</div>
+  </div>
+        
+  </div>
+
+  <footer>
+      <section class="rc-footer-menu" data-rc-toggle-id="footer-extended" >
+      <div class="container rc-footer-menu-container">
+        <nav class="row rc-footer-menu-about-items"><div class="rc-footer-menu-about-col foot-about foot-about"><div class="rc-footer-menu-list-header"><h3 class="rc-footer-menu-list-header-title">About</h3></div><p class="rc-footer-menu-about-description">We’re the world’s leading provider of enterprise open source solutions, using a community-powered approach to deliver high-performing Linux, cloud, container, and Kubernetes technologies. We help you standardize across environments, develop cloud-native applications, and integrate, automate, secure, and manage complex environments with award-winning support, training, and consulting services.</p><ul class="rc-footer-menu-about-list"><li><a href="https://www.redhat.com/en/about/company">Company information</a></li>
+<li><a href="https://www.redhat.com/en/jobs-overview">Jobs</a></li>
+<li><a href="https://www.redhat.com/en/about/office-locations">Locations</a></li>
+<li><a href="https://www.redhat.com/en/about/development-model">Development model</a></li>
+<li><a href="https://www.redhat.com/en/events">Events</a></li>
+<li><a href="https://www.redhat.com/en/about/newsroom">Newsroom</a></li>
+<li><a href="https://www.redhat.com/en/blog">Blog</a></li>
+<li><a href="https://coolstuff.redhat.com/">Cool Stuff Store</a></li>
+</ul><div class="rc-footer-menu-social-links"><nav id="foot-social"><ul><li class="first leaf"><a href="http://www.linkedin.com/company/red-hat" class="icon-linkedin-sign"></a></li>
+<li class="leaf"><a href="http://www.youtube.com/user/RedHatVideos" class="icon-youtube"></a></li>
+<li class="leaf"><a href="https://www.facebook.com/redhatinc" class="icon-facebook"></a></li>
+<li class="last leaf"><a href="https://twitter.com/RedHat" class="icon-twitter"></a></li>
+</ul></nav></div></div>
+</nav>        <nav class="row rc-footer-menu-items"><div class="rc-footer-menu-col foot-products"><div class="rc-footer-menu-list-header" data-rc-state="closed" data-rc-toggle-visuals="xxs xs sm " aria-expanded="false" tabindex="0"><span class="rc-footer-menu-list-header-indicator" data-rc-indicator-symbol="plus" data-rc-hidden-at="lg "></span><h3 class="rc-footer-menu-list-header-title">Products</h3></div><ul class="rc-footer-menu-list" data-rc-toggle-target="xxs xs sm" data-rc-state="closed" data-rc-toggle="hide" aria-expanded="false"><li><a href="https://www.redhat.com/en/technologies/management/ansible">Red Hat Ansible Automation Platform</a></li>
+<li><a href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux">Red Hat Enterprise Linux</a></li>
+<li><a href="https://www.redhat.com/en/technologies/cloud-computing/openshift">Red Hat OpenShift</a></li>
+<li><a href="https://www.redhat.com/en/technologies/cloud-computing/openshift-data-foundation">Red Hat OpenShift Data Foundation</a></li>
+<li><a href="https://www.redhat.com/en/technologies/linux-platforms/openstack-platform">Red Hat  OpenStack Platform</a></li>
+<li><a href="https://www.redhat.com/en/technologies/all-products">See all products</a></li>
+</ul></div>
+<div class="rc-footer-menu-col foot-tools"><div class="rc-footer-menu-list-header" data-rc-state="closed" data-rc-toggle-visuals="xxs xs sm " aria-expanded="false" tabindex="0"><span class="rc-footer-menu-list-header-indicator" data-rc-indicator-symbol="plus" data-rc-hidden-at="lg "></span><h3 class="rc-footer-menu-list-header-title">Tools</h3></div><ul class="rc-footer-menu-list" data-rc-toggle-target="xxs xs sm" data-rc-state="closed" data-rc-toggle="hide" aria-expanded="false"><li><a href="https://sso.redhat.com/">My account</a></li>
+<li><a href="https://access.redhat.com/">Customer support</a></li>
+<li><a href="https://connect.redhat.com/">Partner resources</a></li>
+<li><a href="https://developers.redhat.com/">Developer resources</a></li>
+<li><a href="https://www.redhat.com/en/services/training-and-certification">Training and certification</a></li>
+<li><a href="https://catalog.redhat.com/">Red Hat Ecosystem Catalog</a></li>
+<li><a href="https://www.redhat.com/en/resources">Resource library</a></li>
+</ul></div>
+<div class="rc-footer-menu-col foot-try-buy-sell"><div class="rc-footer-menu-list-header" data-rc-state="closed" data-rc-toggle-visuals="xxs xs sm " aria-expanded="false" tabindex="0"><span class="rc-footer-menu-list-header-indicator" data-rc-indicator-symbol="plus" data-rc-hidden-at="lg "></span><h3 class="rc-footer-menu-list-header-title">Try, buy, sell</h3></div><ul class="rc-footer-menu-list" data-rc-toggle-target="xxs xs sm" data-rc-state="closed" data-rc-toggle="hide" aria-expanded="false"><li><a href="https://www.redhat.com/en/products/trials">Product trial center</a></li>
+<li><a href="https://www.redhat.com/en/store">Red Hat Store</a></li>
+<li><a href="https://marketplace.redhat.com/">Red Hat Marketplace</a></li>
+<li><a href="https://www.redhat.com/en/about/japan-buy">Buy online (Japan)</a></li>
+<li><a href="http://redhat.force.com/finder/">Find a partner</a></li>
+<li><a href="https://www.redhat.com/en/contact">Contact sales</a></li>
+<li><a href="https://www.redhat.com/en/services/training-and-certification/contact-us">Contact training</a></li>
+<li><a href="https://www.redhat.com/en/services/consulting-overview#contact-form">Contact consulting</a></li>
+</ul></div>
+<div class="rc-footer-menu-col foot-communicate"><div class="rc-footer-menu-list-header" data-rc-state="closed" data-rc-toggle-visuals="xxs xs sm " aria-expanded="false" tabindex="0"><span class="rc-footer-menu-list-header-indicator" data-rc-indicator-symbol="plus" data-rc-hidden-at="lg "></span><h3 class="rc-footer-menu-list-header-title">Communicate</h3></div><ul class="rc-footer-menu-list" data-rc-toggle-target="xxs xs sm" data-rc-state="closed" data-rc-toggle="hide" aria-expanded="false"><li><a href="https://www.redhat.com/en/contact">Contact us</a></li>
+<li><a href="https://www.redhat.com/en/about/feedback">Feedback</a></li>
+<li><a href="https://www.redhat.com/en/about/social">Social</a></li>
+<li><a href="https://engage.redhat.com/Global-Preference-Center?newsletter=RH-Shares&amp;intcmp=7016000000154xCAAQ">Red Hat newsletter</a></li>
+</ul></div>
+</nav>      </div>
+    </section>
+        <section class="rc-footer-traditional">
+      <div class="container rc-footer-traditional-container">
+        <section class="rc-footer-traditional-section">
+          <div class="rc-footer-traditional-logo">
+            <div class="row">
+              <a href="https://www.redhat.com/en">
+                <img src="https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo.svg" class="screen" title="Red Hat" />
+                </a>
+            </div>
+          </div>
+          <div id="legal" class="rc-footer-traditional-legal">
+            <div class="row">
+              <div class="copyright">©2021 Red Hat, Inc.</div>
+              <div >
+                <ul class="menu"><li class="first leaf"><a href="https://www.redhat.com/en/about/privacy-policy">Privacy statement</a></li>
+<li class="leaf"><a href="https://www.redhat.com/en/about/terms-use">Terms of use</a></li>
+<li class="leaf"><a href="https://www.redhat.com/en/about/all-policies-guidelines">All policies and guidelines</a></li>
+<li class="leaf"><a href="https://www.redhat.com/en/about/digital-accessibility">Digital accessibility</a></li>
+<li class="last leaf"><span id="teconsent" class="nolink">|</span></li>
+</ul>              </div>
+            </div>
+                      </div>
+          <div class="rc-footer-traditional-event-logo">
+            <div id="block-block-5" class="block block-block block-footer-promote">
+
+      
+  <a href="https://www.redhat.com/summit"><img src="https://www.redhat.com/cms/managed-files/Logo-Red_Hat-Summit-A-Standard-RGB-02_0.svg" alt="Red Hat Summit" style="float: right;" width="72px"></a>
+</div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </footer>
+        <script type="text/javascript" src="https://www.redhat.com/ux/webdms/js/scripts.min.js?qy3uiv"></script>
+<script type="text/javascript" src="https://www.redhat.com/ux/webdms/js/vendors/gsap.min.js?qy3uiv"></script>
+<script type="text/javascript" src="https://www.redhat.com/ux/webdms/js/vendors/DrawSVGPlugin.min.js?qy3uiv"></script>
+<script type="text/javascript" src="https://www.redhat.com/ux/webdms/js/vendors/MotionPathPlugin.min.js?qy3uiv"></script>
+<script type="text/javascript" src="https://www.redhat.com/ux/webdms/js/projects/solution-hub.min.js?qy3uiv"></script>
+<script type="text/javascript" src="https://www.redhat.com/ux/webux/js/solutions/solutions.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+  if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
+      _satellite.pageBottom();
+  }
+//--><!]]>
+</script>
+    </div>
+  <script type="text/javascript"  src="https://www.redhat.com/C38U6mfSyelSTOBZNmfx/J3aYDScQVEYu/UnYtbhQD/DxlKJW/B2bG4"></script></body>
+
+<!-- Mirrored from www.redhat.com/en/solutions/cloud-native-development by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 04:36:44 GMT -->
+</html>

@@ -1,0 +1,211 @@
+@import "fonts/fonts.css";
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  background: var(--clh-black);
+  color: var(--clh-white);
+
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+
+  font-family: overpass;
+
+  --clh-white: #dbdbdb;
+  --clh-black: #101114;
+  --clh-purple: #200a5f;
+  --clh-purple-light: #6b45a0;
+  --clh-yellow: #f4be4a;
+  --clh-yellow-light: #f7cf78;
+  --clh-orange: #ef702b;
+  --clh-orange-light: #f7a060;
+  --clh-blue: #00a9e0;
+  --clh-blue-light: #68cceb;
+
+  --title-reveal-interval: 600ms;
+}
+
+a {
+  color: var(--clh-blue);
+}
+a:active {
+  color: var(--clh-white);
+}
+a:visited {
+  color: var(--clh-purple-light);
+}
+
+textarea#cmd {
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--clh-blue-light);
+
+  border: 3px solid var(--clh-blue);
+  outline: none;
+  font-family: monospace;
+  padding: 8px;
+  font-size: 32px;
+  text-transform: lowercase;
+  text-align: left;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 20vw;
+  height: 30vw;
+
+  opacity: 0;
+}
+
+#game-canvas {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#console-canvas {
+  position: absolute;
+  width: calc(1920px / 7);
+  bottom: 20px;
+  right: 20px;
+  border: 3px solid var(--clh-blue);
+  user-select: none; /* disable ctrl+a to select all text */
+
+  /* letter-spacing: -0.5em; */
+
+  opacity: 0;
+}
+
+#test-pattern {
+  display: none;
+}
+
+/* Title screen */
+#title-screen > * {
+  opacity: 0;
+  transition: opacity 100ms linear;
+  width: 100%;
+}
+#title-screen > *.show {
+  opacity: 1;
+  transition: opacity 1800ms linear;
+}
+
+#title-screen {
+  opacity: 0;
+  transition: opacity 100ms linear;
+  position: absolute;
+  top: 20vh;
+  left: 10vw;
+  width: 40vw;
+  height: 70vh;
+  display: grid;
+
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+#title-screen.show {
+  opacity: 1;
+}
+
+#credits {
+  font-size: 0.7em;
+  color: var(--clh-white);
+  display: none;
+}
+
+/* delay the reveal of each title screen element so the reveals cacade down the screen */
+#title-screen > *:nth-child(1) {
+  transition-delay: calc(0 * var(--title-reveal-interval));
+}
+#title-screen > *:nth-child(2) {
+  transition-delay: calc(1 * var(--title-reveal-interval));
+}
+#title-screen > *:nth-child(3) {
+  transition-delay: calc(2 * var(--title-reveal-interval));
+}
+#title-screen > *:nth-child(4) {
+  transition-delay: calc(3 * var(--title-reveal-interval));
+}
+#title-screen > *:nth-child(5) {
+  transition-delay: calc(4 * var(--title-reveal-interval));
+}
+#title-screen > *:nth-child(6) {
+  transition-delay: calc(5 * var(--title-reveal-interval));
+}
+#title-screen > *:nth-child(7) {
+  transition-delay: calc(6 * var(--title-reveal-interval));
+}
+#title-screen > *:nth-child(8) {
+  transition-delay: calc(6 * var(--title-reveal-interval));
+}
+#title-screen > *:nth-child(9) {
+  transition-delay: calc(6 * var(--title-reveal-interval));
+}
+#title-screen > *:nth-child(10) {
+  transition-delay: calc(6 * var(--title-reveal-interval));
+}
+
+/* individual elements of the title screen */
+#langs {
+  text-align: center;
+  font-size: 0.8em;
+  color: var(--clh-yellow-light);
+  font-family: overpass-mono;
+}
+#langs .sep {
+  color: var(--clh-white);
+}
+#listen {
+  font-size: 0.7em;
+  color: var(--clh-white);
+}
+
+#intro {
+  opacity: 0;
+  transition: opacity linear 300ms;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--clh-black);
+  color: var(--clh-white);
+  font-size: 3rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+#intro .cursor {
+  animation: blink 666ms steps(2, start) infinite;
+}
+#intro.show {
+  opacity: 1;
+}
+#intro .logo {
+  display: block;
+  clear: both;
+  max-width: 100%;
+  width: 600px;
+  margin-bottom: 10vh;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
